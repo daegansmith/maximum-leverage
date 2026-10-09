@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E60 Fitness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0A0A; --bone:#F4F1EC; --accent:#FF6A1F;
+  --panel:#141414; --line:#242424; --muted:#9A9791; --body:#C4C0B9;
+  --sans:'Archivo',system-ui,-apple-system,sans-serif;
+  --serif:Arial,Helvetica,sans-serif;
+  --quote:'Source Serif 4',Georgia,serif;
+}
+*{box-sizing:border-box;min-width:0}
+html{-webkit-text-size-adjust:100%}
+html,body{overflow-x:hidden;width:100%}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--serif);line-height:1.5}
+img{max-width:100%}
+.wrap{max-width:1180px;width:100%;margin:0 auto;padding-left:clamp(28px,5vw,72px);padding-right:clamp(28px,5vw,72px)}
+.sans{font-family:var(--sans)}
+a{color:var(--accent)}
+
+nav{border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:clamp(14px,2.5vw,30px);padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.logo{font-family:var(--sans);font-size:23px;font-weight:900;letter-spacing:-.02em}
+.btn{font-family:var(--sans);background:var(--accent);color:var(--ink);text-decoration:none;padding:12px 22px;border-radius:6px;font-size:15px;font-weight:700;display:inline-block}
+.btn-dark{background:var(--ink);color:var(--accent)}
+.navlinks{margin-left:auto;display:flex;gap:clamp(14px,2vw,30px);font-family:var(--sans);font-size:15px;font-weight:500}
+.navlinks a{color:var(--bone);text-decoration:none}
+
+.hero{padding-top:clamp(52px,8vw,90px);padding-bottom:clamp(52px,7vw,78px)}
+h1{font-family:var(--sans);margin:0 0 22px;font-size:clamp(34px,6vw,72px);font-weight:800;line-height:1.0;letter-spacing:-.035em;max-width:820px}
+.sub{margin:0 0 26px;font-size:clamp(17px,1.9vw,21px);line-height:1.45;color:var(--body);max-width:520px}
+.reassure{font-family:var(--sans);font-size:15px;font-weight:500;color:#8E8B86;margin-top:12px}
+.card{background:var(--panel);border:1px solid #2C2C2C;border-radius:12px;padding:30px}
+.card h4{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8E8B86;margin:0 0 20px}
+.day{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+.day b{font-family:var(--sans);font-size:13px;font-weight:800;color:var(--accent);min-width:42px;padding-top:2px}
+.day span{font-size:16px;line-height:1.45}
+
+.proof{background:var(--bone);color:var(--ink)}
+.proof-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:clamp(18px,2.5vw,28px);padding-top:34px;padding-bottom:34px}
+.proof b{display:block;font-family:var(--sans);font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.02em;margin-bottom:7px}
+.proof span{font-size:15px;line-height:1.4;color:#4A4742}
+
+h2{font-family:var(--sans);margin:0;font-size:clamp(25px,3.6vw,38px);font-weight:800;letter-spacing:-.025em;line-height:1.1}
+section{padding-top:clamp(44px,6vw,64px);padding-bottom:clamp(44px,6vw,64px)}
+
+.quote{background:var(--panel);border-left:3px solid var(--accent);border-radius:4px;padding:clamp(24px,4vw,38px);margin-top:32px}
+.quote p{margin:0 0 17px;font-family:var(--quote);font-size:clamp(17px,2vw,20px);line-height:1.62}
+.quote p.hit{color:var(--accent)}
+.quote .attr{font-family:var(--sans);font-size:15px;font-weight:600;color:#8E8B86}
+
+.beat{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(20px,3vw,34px);border-top:1px solid var(--line);padding-top:26px;margin-top:26px}
+.beat h3{font-family:var(--sans);margin:0;font-size:clamp(20px,2.3vw,25px);font-weight:800;line-height:1.18;letter-spacing:-.02em}
+.beat p{margin:0 0 11px;font-size:17px;line-height:1.5;color:var(--body)}
+.beat p.strong{color:var(--bone)}
+.pausebox{display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,232px);gap:clamp(18px,2.5vw,26px);align-items:start}
+.pausewidget{background:var(--bone);color:var(--ink);border-radius:10px;padding:18px}
+.pausewidget .lbl{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6B6862;margin-bottom:10px}
+.pausewidget .sel{font-family:var(--sans);font-size:15px;font-weight:600;border:1px solid #C8C3BA;border-radius:6px;padding:10px 12px;display:flex;justify-content:space-between}
+.pausewidget .opts{background:#fff;border:1px solid #C8C3BA;border-radius:6px;margin-top:5px;padding:5px 0}
+.pausewidget .opts div{font-family:var(--sans);font-size:14px;padding:7px 12px}
+.pausewidget .go{font-family:var(--sans);margin-top:10px;background:var(--accent);color:var(--ink);text-align:center;font-size:14px;font-weight:700;padding:11px;border-radius:6px}
+
+.closing{border-top:1px solid var(--line);padding-top:30px;margin-top:40px}
+.closing .big{font-family:var(--sans);font-size:clamp(18px,2.4vw,21px);font-weight:700;line-height:1.4;margin-bottom:9px}
+.closing p{margin:0 0 9px;font-size:18px;line-height:1.5;color:var(--body)}
+.closing p.accent{color:var(--accent)}
+
+.becomes{background:var(--panel)}
+.becomes-in{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:clamp(26px,4vw,46px);align-items:start;padding-top:58px;padding-bottom:58px}
+.becomes p{margin:0 0 15px;font-size:18px;line-height:1.55;color:var(--body)}
+.becomes p.strong{color:var(--bone)}
+.becomes .punch{font-family:var(--sans);font-size:clamp(18px,2.4vw,21px);font-weight:700;line-height:1.35}
+
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:26px}
+.tcard{background:var(--panel);border:1px solid #2C2C2C;border-radius:10px;overflow:hidden}
+.tphoto{height:132px;background:#242424;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px;font-family:var(--sans);font-size:11px;color:#6E6B67}
+.tbody{padding:16px 16px 18px}
+.tbody b{display:block;font-family:var(--sans);font-size:18px;font-weight:800;margin-bottom:7px}
+.tbody .was{font-size:14px;line-height:1.4;color:var(--muted);margin-bottom:7px}
+.tbody .for{font-size:14px;line-height:1.4;color:var(--accent)}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:22px 0}
+.rcard{background:var(--panel);border:1px solid #2C2C2C;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.stars{font-family:var(--sans);font-size:15px;letter-spacing:.1em;color:var(--accent)}
+.rcard q{font-family:var(--quote);font-size:17px;line-height:1.55;quotes:'"' '"'}
+.gv{font-family:var(--sans);margin-top:auto;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6E6B67}
+
+.ask{background:var(--bone);color:var(--ink)}
+.ask-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:clamp(30px,4vw,52px);align-items:start;padding-top:62px;padding-bottom:62px}
+.ask h2{font-size:clamp(26px,3.8vw,40px);line-height:1.06;letter-spacing:-.03em;max-width:520px;margin-bottom:18px}
+.ask p{margin:0 0 14px;font-size:19px;line-height:1.55;color:#33302C;max-width:480px}
+.ask .loc{font-family:var(--sans);font-size:15px;font-weight:600;color:#6B6862;margin-top:14px}
+.aside{border-left:2px solid var(--ink);padding-left:30px}
+.aside b{display:block;font-family:var(--sans);font-size:20px;font-weight:800;margin-bottom:14px}
+.aside p{font-size:16px;max-width:none}
+.aside p.strong{font-weight:600;color:var(--ink)}
+
+footer{border-top:1px solid var(--line)}
+.foot-in{display:flex;justify-content:space-between;align-items:center;padding-top:32px;padding-bottom:32px;flex-wrap:wrap;gap:16px}
+.foot-in .links{display:flex;gap:26px;font-family:var(--sans);font-size:14px;color:#8E8B86}
+
+@media(max-width:1060px){
+  .becomes-in,.ask-in,.beat,.pausebox{grid-template-columns:minmax(0,1fr)}
+  .aside{border-left:0;border-top:2px solid var(--ink);padding-left:0;padding-top:24px}
+}
+@media(max-width:820px){
+  .navlinks{display:none}
+  .nav-in{padding:14px 0}
+}
+@media(max-width:560px){
+  .quote{padding:20px}
+  .btn{padding:14px 20px!important;font-size:16px!important}
+}
+
+.midcta{margin-top:34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.midcta .note{font-family:var(--sans);font-size:14px;font-weight:500;color:#8E8B86}
+.becomes .midcta .note{color:#8E8B86}
+</style>
+</head>
+<body>
+<div style="background:#FF6A1F;color:#0A0A0A;font-family:Archivo,system-ui,sans-serif;font-size:14px;font-weight:700;text-align:center;padding:10px 16px">Concept mock-up by Daegan Smith for E60 Fitness. Not the official E60 site. Reviews and coach details are samples.</div>
+
+<nav><div class="wrap nav-in">
+  <span class="logo">E60</span>
+  <a class="btn" href="#ask">Start your free week</a>
+  <span class="navlinks"><a href="#becomes">Classes</a><a href="#coaches">Coaches</a><a href="#coaches">Training</a><a href="#ask">Pricing</a></span>
+</div></nav>
+
+<div class="wrap hero">
+  <h1>5.0 across 100+ Google reviews.</h1>
+  <p class="sub">That means we're doing something different. Come experience it for yourself.</p>
+  <a class="btn" href="#ask" style="font-size:18px;padding:20px 38px">Start your free week</a>
+  <div class="reassure">Seven days. No card. No contract.</div>
+</div>
+
+<div class="proof"><div class="wrap proof-in">
+  <div><b>5.0</b><span>across 100+ Google reviews</span></div>
+  <div><b>Yes</b><span>whatever your goal, this <strong style="font-weight:700;text-decoration:underline;text-underline-offset:3px">IS</strong> the path</span></div>
+  <div><b>2</b><span>locations, Clarendon and Alexandria</span></div>
+  <div><b>Live</b><span>heart-rate screens, so you see what you actually did</span></div>
+</div></div>
+
+<section class="wrap">
+  <h2>It's not what we say. It's what they say.</h2>
+  <div class="quote">
+    <p>"I tried every boutique gym in the area on a ClassPass. Then I did the workout here and said: this. This I could do. This feels like going to practice.</p>
+    <p>Here's the part nobody tells you. I walk out of there feeling better that same day. Relaxed. Clear. I eat better that night without deciding to. I'm a better person to be around at dinner.</p>
+    <p class="hit">That's after one workout. Not after six months.</p>
+    <p>I had a shoulder thing from sixth grade that had been with me ever since. One day I realized it was gone. I hadn't noticed for about a year. It went away doing band work I thought was a waste of time.</p>
+    <p>I looked at photos of myself from a few years ago and hadn't noticed how much had changed until I saw them side by side.</p>
+    <p>It works for me at my age. It works for a twenty-year-old woman. It works for a sixty-year-old man. You go in and make it the practice you want.</p>
+    <p>Ask me what it's worth and I'd pay anything. Nothing in your life is worth more than your health."</p>
+    <div class="attr">&mdash; Daegan Smith, Clarendon, 250+ classes</div>
+  </div>
+  <div class="midcta">
+    <a class="btn" href="#ask">Start your free week</a>
+    <span class="note">Seven days. No card. No contract.</span>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0!important">
+  <div class="grid3">
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>I've paid more for gyms I quit in a month. I'm three years in here.</q><div class="gv">Sample review</div></div>
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>I'm 58 and I'm not the oldest one in there. Nobody treats me like I'm 58.</q><div class="gv">Sample review</div></div>
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>They know my name, my knees, and exactly how much I'm sandbagging.</q><div class="gv">Sample review</div></div>
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>Walked in terrified on day one. By Thursday I was the one showing somebody where the towels were.</q><div class="gv">Sample review</div></div>
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>First place I've ever gone six months without skipping.</q><div class="gv">Sample review</div></div>
+    <div class="rcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><q>Came from another studio in the neighborhood. Not going back.</q><div class="gv">Sample review</div></div>
+  </div>
+  <div class="midcta">
+    <a class="btn" href="#ask">Start your free week</a>
+    <span class="note">Seven days. No card. No contract.</span>
+  </div>
+</section>
+
+<div class="becomes" id="becomes"><div class="wrap becomes-in">
+  <h2>Twenties through sixties. Same room, same hour.</h2>
+  <div>
+    <p>Somebody in there is training for a race. Somebody's coming back from an injury. Somebody hasn't worked out since college.</p>
+    <p class="strong">Whoever you are, the answer is yes.</p>
+    <p>Plyometrics, weights, bands, conditioning. You decide how hard you go, and you decide again tomorrow.</p>
+    <p>Want to lift heavy? Lift heavy. Want to just move today? Move today. Rehabbing something? Half the room is, and the coaching knows the difference.</p>
+    <p>And you're never left to figure it out alone. Somebody is watching your form, changing the weight before you ask, telling you to push or telling you that's enough for today.</p>
+    <p class="strong">Whatever you walk in able to do, somebody in that room has your back.</p>
+    <p>Which means this isn't a phase you age out of.</p>
+    <div class="punch">You can start at 28 and still be in that room at 58, and it will still be hard.</div>
+  <div class="midcta">
+    <a class="btn" href="#ask">Start your free week</a>
+    <span class="note">Seven days. No card. No contract.</span>
+  </div>
+  </div>
+</div></div>
+
+<section class="wrap" id="different">
+  <h2>What makes this place different.</h2>
+
+  <div class="beat">
+    <h3>Every coach is also an owner.</h3>
+    <div>
+      <p>When the gym wins, they win.</p>
+      <p>They're locked in. They learn your name, they know which shoulder you're favoring, and they remember what you were working on last month.</p>
+      <p class="strong">Their business is your results, and you feel that immediately.</p>
+    </div>
+  </div>
+
+  <div class="beat">
+    <h3>Your first week is free.</h3>
+    <div>
+      <p>Seven days, every class you want, both locations.</p>
+      <p>We don't take a card and there's nothing to cancel.</p>
+      <p class="strong">That's how confident we are about what you'll experience from your first session and everything after.</p>
+    </div>
+  </div>
+  <div class="midcta">
+    <a class="btn" href="#ask">Start your free week</a>
+    <span class="note">Seven days. No card. No contract.</span>
+  </div>
+</section>
+
+<div class="ask" id="ask"><div class="wrap ask-in">
+  <div>
+    <h2>Come see what a 5.0 feels like from the inside.</h2>
+    <p>Seven days, every class, both locations. No card. No contract. Nothing to cancel.</p>
+    <a class="btn btn-dark" href="#ask" style="font-size:19px;padding:21px 40px;margin-top:6px">Start your free week</a>
+    <div class="loc">Clarendon &middot; Alexandria</div>
+  </div>
+  <div class="aside">
+    <b>What happens when you show up.</b>
+    <p>Pick any class on the schedule. Don't overthink it &mdash; there isn't a beginner version and an advanced version. One class, and you go at your own speed.</p>
+    <p>Tell whoever's at the desk it's your first time. That's the whole preparation.</p>
+    <p class="strong">By the end of the week you'll know exactly why that 5.0 is up there.</p>
+  </div>
+</div></div>
+
+<section class="wrap" id="coaches">
+  <h2>The same coaches, every time.</h2>
+  <p style="font-size:18px;line-height:1.5;color:var(--body);max-width:720px;margin:9px 0 0">Come at 6am or come at 7pm &mdash; you get somebody who knows what they're doing either way. And the coach who learns about your shoulder in your first month still knows about it three years later. You never start over.</p>
+  <div class="grid4">
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>Erin</b><div class="was">Swam competitively. Now she's deep in Hyrox and race season.</div><div class="for">Come see her if you've started wondering whether you could actually compete at something.</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+    <div class="tcard"><div class="tphoto">[PHOTO]</div><div class="tbody"><b>[Name]</b><div class="was">[What they were before this. What they're into now.]</div><div class="for">Come see them if you want [the specific thing they're for].</div></div></div>
+  </div>
+  <div class="midcta">
+    <a class="btn" href="#ask">Start your free week</a>
+    <span class="note">Seven days. No card. No contract.</span>
+  </div>
+</section>
+
+<footer><div class="wrap foot-in">
+  <span class="logo">E60</span>
+  <span class="links"><span>Clarendon</span><span>Alexandria</span><span>Schedule</span><span>Contact</span></span>
+</div></footer>
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Assessment — AI Local Workshop (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --paper:#F6F7F9; --sheet:#FFFFFF; --ink:#16202B; --ink-soft:#4E5A66; --rule:#D9DEE4;
+  --steel:#1F3A5F; --steel-soft:#E7EDF4; --signal:#E8B21E; --signal-ink:#5A4300;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#10161D; --sheet:#18212B; --ink:#E9EDF1; --ink-soft:#A9B4BF; --rule:#2C3845;
+    --steel:#9DB9DA; --steel-soft:#22303F; --signal:#E8B21E; --signal-ink:#1A1400;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10161D; --sheet:#18212B; --ink:#E9EDF1; --ink-soft:#A9B4BF; --rule:#2C3845;
+  --steel:#9DB9DA; --steel-soft:#22303F; --signal:#E8B21E; --signal-ink:#1A1400;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:640px;margin:0 auto;padding:48px 20px 64px}
+.demo-note{font-size:13px;color:var(--ink-soft);margin:0 0 28px}
+h1{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:700;font-size:clamp(30px,6vw,44px);line-height:1.12;letter-spacing:-0.01em;margin:0}
+h1 .ask{font-style:italic;color:var(--steel)}
+.sub{font-size:19px;color:var(--ink-soft);margin:22px 0 36px;max-width:34ch}
+.lead-in{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:600;font-size:18px;margin:18px 0 10px}
+.lead-in em{font-style:italic}
+.facts{list-style:none;margin:0 0 20px;padding:0;border-top:1px solid var(--rule)}
+.facts li{padding:18px 0 18px 18px;border-bottom:1px solid var(--rule);position:relative;font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-size:18px;line-height:1.55}
+.facts li::before{content:"";position:absolute;left:0;top:26px;width:6px;height:6px;border-radius:50%;background:var(--signal)}
+.facts em{font-style:italic;color:var(--steel)}
+.facts b{font-weight:700;font-style:italic}
+sup{font-size:11px;color:var(--ink-soft);margin-left:2px}
+.cta-line{font-size:17px;font-weight:500;margin:0 0 20px;max-width:44ch}
+
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:24px 20px 26px}
+.progress{margin:0 0 22px}
+.progress .ends{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-soft);margin-bottom:6px}
+.bar{height:8px;border-radius:99px;background:var(--steel-soft);overflow:hidden}
+.bar span{display:block;height:100%;width:8%;background:var(--signal);border-radius:99px;transition:width .35s ease}
+.step-name{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:22px;margin:0 0 18px}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend{font-weight:600;margin:0 0 10px;padding:0;line-height:1.4}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-block;padding:9px 14px;border:1px solid var(--rule);border-radius:10px;font-size:15px;cursor:pointer;background:var(--sheet);color:var(--ink);line-height:1.3}
+.opts input:checked + span{border-color:var(--steel);background:var(--steel-soft);font-weight:500}
+.opts input:focus-visible + span{outline:2px solid var(--steel);outline-offset:2px}
+input[type=text],input[type=email],input[type=tel],input[type=url],select{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:11px 12px}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--steel);outline-offset:2px}
+.field{margin:0 0 16px}
+.field label{display:block;font-weight:600;font-size:17px;margin:0 0 8px;line-height:1.4}
+.field small{color:var(--ink-soft);font-weight:400}
+.other{margin-top:8px}
+.bonus{border-top:1px dashed var(--rule);padding-top:18px}
+.bonus p{margin:0 0 10px}
+.btn{display:block;width:100%;font:inherit;font-weight:600;font-size:17px;padding:14px 18px;border:0;border-radius:12px;background:var(--steel);color:var(--sheet);cursor:pointer}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.back{background:none;border:0;color:var(--ink-soft);font:inherit;font-size:14px;margin-top:12px;cursor:pointer;text-decoration:underline}
+.after{font-size:15px;color:var(--ink-soft);margin:14px 0 0}
+.note{font-size:13px;color:var(--ink-soft);margin:6px 0 0;line-height:1.45}
+.slot{border:1px dashed var(--steel);border-radius:12px;padding:22px 18px;color:var(--steel);font-weight:500;text-align:center;margin:18px 0 0}
+.sources{font-size:12px;color:var(--ink-soft);margin:40px 0 0;padding-top:16px;border-top:1px solid var(--rule)}
+[hidden]{display:none !important}
+@media (prefers-reduced-motion:reduce){.bar span{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="demo-note">Demo of the cold-traffic opt-in. Bracketed items are placeholders. This is a preview only: nothing you type here is sent or saved.</p>
+
+<h1>The AI shift is happening right now. Most businesses won't survive it. <span class="ask">Will yours?</span></h1>
+
+
+<p class="lead-in"><em>According to the latest statistics...</em></p>
+<ul class="facts">
+  <li>A year ago, 6 out of every 100 people asked AI to find a local business. Now it's 45. Tomorrow, it'll be more... <em>Will you be there when they do?</em><sup>1</sup></li>
+  <li>Ask ChatGPT for the best plumber in town and it names a few. Out of every 100 local businesses, only about 1 makes the list. <em>If you don't know how to get on it... it's not you.</em><sup>2</sup></li>
+  <li><b>Google won't tell you this...</b> With AI answers now showing up at the top of Google searches, only about 8 out of 100 people ever visit a website from the regular search results.<sup>3</sup></li>
+</ul>
+
+<p class="cta-line">Complete the business assessment below to see how this shift is affecting your business and what to do about it.</p>
+
+<div class="panel" id="assessment">
+  <div class="progress" aria-hidden="true">
+    <div class="ends"><span>Start</span><span>Finish</span></div>
+    <div class="bar"><span id="bar"></span></div>
+  </div>
+
+  <!-- STEP 1 -->
+  <form class="step" data-step="1" novalidate>
+    <h2 class="step-name">Step 1: Your business</h2>
+    <fieldset><legend>How did you hear about this assessment?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="SiriusXM"><span>SiriusXM</span></label>
+        <label><input type="radio" name="q1" value="Spotify"><span>Spotify</span></label>
+        <label><input type="radio" name="q1" value="Facebook" checked><span>Facebook</span></label>
+        <label><input type="radio" name="q1" value="Google"><span>Google</span></label>
+      </div></fieldset>
+    <fieldset><legend>Do you have a website?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="yes"><span>Yes</span></label>
+        <label><input type="radio" name="q2" value="no"><span>No</span></label>
+        <label><input type="radio" name="q2" value="yes-not-proud"><span>Yes, but I'm not proud of it</span></label>
+      </div></fieldset>
+    <fieldset><legend>Where are most of your customers?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="local"><span>Local, near my business</span></label>
+        <label><input type="radio" name="q3" value="national"><span>All over the country</span></label>
+        <label><input type="radio" name="q3" value="online"><span>Online</span></label>
+      </div></fieldset>
+    <fieldset><legend>How long have you been in business?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="<2"><span>Under 2 years</span></label>
+        <label><input type="radio" name="q4" value="2-5"><span>2 to 5</span></label>
+        <label><input type="radio" name="q4" value="5-10"><span>5 to 10</span></label>
+        <label><input type="radio" name="q4" value="10+"><span>10+</span></label>
+      </div></fieldset>
+    <fieldset><legend>How many people work in the business, including you?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="1"><span>Just me</span></label>
+        <label><input type="radio" name="q5" value="2-5"><span>2 to 5</span></label>
+        <label><input type="radio" name="q5" value="6-20"><span>6 to 20</span></label>
+        <label><input type="radio" name="q5" value="20+"><span>20+</span></label>
+      </div></fieldset>
+    <button type="submit" class="btn">Next</button>
+  </form>
+
+  <!-- STEP 2 -->
+  <form class="step" data-step="2" novalidate hidden>
+    <h2 class="step-name">Step 2: How customers find you</h2>
+    <fieldset><legend>How do most new customers find you today?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="referrals"><span>Referrals and word of mouth</span></label>
+        <label><input type="radio" name="q6" value="search"><span>Online search</span></label>
+        <label><input type="radio" name="q6" value="social"><span>Social media</span></label>
+        <label><input type="radio" name="q6" value="paid"><span>Paid advertising</span></label>
+        <label><input type="radio" name="q6" value="repeat"><span>Repeat customers</span></label>
+        <label><input type="radio" name="q6" value="unsure"><span>Not sure</span></label>
+      </div></fieldset>
+    <fieldset><legend>Is your business on social media?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="yes"><span>Yes</span></label>
+        <label><input type="radio" name="q7" value="no"><span>No</span></label>
+      </div></fieldset>
+    <fieldset id="q7b" hidden><legend>Where? <small style="font-weight:400;color:var(--ink-soft)">(pick all that apply)</small></legend>
+      <div class="opts">
+        <label><input type="checkbox" name="q7b" value="facebook"><span>Facebook</span></label>
+        <label><input type="checkbox" name="q7b" value="instagram"><span>Instagram</span></label>
+        <label><input type="checkbox" name="q7b" value="tiktok"><span>TikTok</span></label>
+        <label><input type="checkbox" name="q7b" value="youtube"><span>YouTube</span></label>
+        <label><input type="checkbox" name="q7b" value="linkedin"><span>LinkedIn</span></label>
+        <label><input type="checkbox" name="q7b" value="other"><span>Other</span></label>
+      </div></fieldset>
+    <fieldset><legend>Has a customer told you they found you through ChatGPT or AI yet?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="never"><span>Never</span></label>
+        <label><input type="radio" name="q8" value="few"><span>Once or twice</span></label>
+        <label><input type="radio" name="q8" value="regular"><span>Regularly</span></label>
+        <label><input type="radio" name="q8" value="never-asked"><span>I've never asked</span></label>
+      </div></fieldset>
+    <fieldset><legend>How much are you using AI in your business today?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q9" value="none"><span>Not at all</span></label>
+        <label><input type="radio" name="q9" value="little"><span>A little</span></label>
+        <label><input type="radio" name="q9" value="lot"><span>A lot</span></label>
+        <label><input type="radio" name="q9" value="unsure"><span>Not sure what counts</span></label>
+      </div></fieldset>
+    <button type="submit" class="btn">Next</button>
+    <button type="button" class="back">Back</button>
+  </form>
+
+  <!-- STEP 3 -->
+  <form class="step" data-step="3" novalidate hidden>
+    <h2 class="step-name">Step 3: What's getting in the way</h2>
+    <fieldset><legend>If you stopped all marketing for two weeks, new work would...</legend>
+      <div class="opts">
+        <label><input type="radio" name="q10" value="keep"><span>Keep coming</span></label>
+        <label><input type="radio" name="q10" value="slow"><span>Slow down</span></label>
+        <label><input type="radio" name="q10" value="dry"><span>Dry up</span></label>
+      </div></fieldset>
+    <fieldset><legend>What's the biggest thing holding your business back right now?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q11" value="customers"><span>Not enough customers</span></label>
+        <label><input type="radio" name="q11" value="time"><span>Not enough time</span></label>
+        <label><input type="radio" name="q11" value="me"><span>Everything depends on me</span></label>
+        <label><input type="radio" name="q11" value="marketing"><span>My marketing doesn't work</span></label>
+        <label><input type="radio" name="q11" value="tech"><span>Keeping up with technology</span></label>
+      </div></fieldset>
+    <button type="submit" class="btn">Next</button>
+    <button type="button" class="back">Back</button>
+  </form>
+
+  <!-- STEP 4 -->
+  <form class="step" data-step="4" novalidate hidden>
+    <h2 class="step-name">Step 4: Where you're headed</h2>
+    <fieldset><legend>What's most important for you next?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q12" value="grow"><span>Growing</span></label>
+        <label><input type="radio" name="q12" value="repeat"><span>Getting more repeat business</span></label>
+        <label><input type="radio" name="q12" value="systems"><span>Getting organized and systematized</span></label>
+        <label><input type="radio" name="q12" value="website"><span>Fixing my website and marketing</span></label>
+        <label><input type="radio" name="q12" value="ai"><span>Using AI the right way</span></label>
+        <label><input type="radio" name="q12" value="step-out"><span>Stepping out of the day-to-day</span></label>
+      </div></fieldset>
+    <div class="field"><label for="q13">What kind of business do you run?</label>
+      <select id="q13" name="q13">
+        <option value="">Choose one</option>
+        <option>Home services (plumbing, HVAC, cleaning)</option><option>Construction or contracting</option><option>Health, wellness, or fitness</option><option>Restaurant or food</option><option>Retail store</option><option>Real estate</option><option>Professional services (legal, accounting, insurance)</option><option>Consulting or coaching</option><option>Marketing or advertising agency</option><option>E-commerce or Amazon</option><option>Courses, info products, or direct response</option><option>Creator or influencer</option><option>Other</option>
+      </select></div>
+    <fieldset><legend>Roughly what does your business bring in per year?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q14" value="<250k"><span>Under $250K</span></label>
+        <label><input type="radio" name="q14" value="250k-1m"><span>$250K to $1M</span></label>
+        <label><input type="radio" name="q14" value="1m-5m"><span>$1M to $5M</span></label>
+        <label><input type="radio" name="q14" value="5m+"><span>$5M+</span></label>
+        <label><input type="radio" name="q14" value="na"><span>Prefer not to say</span></label>
+      </div></fieldset>
+    <fieldset><legend>If you could wave a magic wand, what would change first?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q15" value="customers"><span>More good customers than I can handle</span></label>
+        <label><input type="radio" name="q15" value="hours"><span>Working fewer hours</span></label>
+        <label><input type="radio" name="q15" value="without-me"><span>A business that runs without me</span></label>
+        <label><input type="radio" name="q15" value="ahead"><span>Finally feeling ahead instead of behind</span></label>
+        <label><input type="radio" name="q15" value="other"><span>Something else</span></label>
+      </div>
+      <input type="text" class="other" name="q15other" id="q15other" placeholder="Optional" hidden aria-label="Something else (optional)">
+    </fieldset>
+    <div class="bonus" id="bonus" hidden>
+      <p><b>Bonus (optional):</b> Want us to review your website too? Drop the link below and we'll show you what's working and what you might be missing.</p>
+      <input type="url" name="website" placeholder="yourwebsite.com" aria-label="Your website (optional)">
+    </div>
+    <button type="submit" class="btn" style="margin-top:22px">Next</button>
+    <button type="button" class="back">Back</button>
+  </form>
+
+  <!-- CONTACT -->
+  <form class="step" data-step="5" novalidate hidden>
+    <h2 class="step-name">Where should we send your report?</h2>
+    <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name"></div>
+    <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email"></div>
+    <div class="field"><label for="phone">Phone <small>(optional)</small></label><input type="tel" id="phone" name="phone" autocomplete="tel"><p class="note">We'll also text you the link, in case your report gets sucked into the black hole we call the spam folder.</p></div>
+    <button type="submit" class="btn" style="margin-top:8px">Build My Report</button>
+    <p class="after">Your report takes about [15] minutes to build. Keep the next page open. It'll appear there as soon as it's ready.</p>
+    <button type="button" class="back">Back</button>
+  </form>
+
+  <!-- NEXT PAGE PLACEHOLDER -->
+  <div class="step" data-step="6" hidden>
+    <h2 class="step-name">Your report is being built.</h2>
+    <div class="slot">[WAITING PAGE: Jamon's registration video plays here while the report builds]</div>
+    <div class="slot">[REPORT: appears on this page when ready, with the workshop invitation]</div>
+  </div>
+</div>
+
+<p class="sources">Statistics cited from: <sup>1</sup> BrightLocal Local Consumer Review Survey 2026. <sup>2</sup> SOCi Local Visibility Index 2026. <sup>3</sup> Pew Research Center, 2025.</p>
+
+</div>
+
+<script>
+(function(){
+  var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
+  var bar = document.getElementById('bar');
+  var current = 1;
+  var required = {1:['q1','q2','q3','q4','q5'],2:['q6','q7','q8','q9'],3:['q10','q11'],4:['q12','q13','q14','q15'],5:['name','email']};
+
+  function val(name){
+    var el = document.querySelector('[name="'+name+'"]:checked') || document.querySelector('select[name="'+name+'"], input[type=text][name="'+name+'"], input[type=email][name="'+name+'"]');
+    if(!el) return '';
+    return (el.value || '').trim();
+  }
+  function stepComplete(n){
+    var list = (required[n]||[]).slice();
+    if(n===2 && val('q7')==='yes') list.push('q7b');
+    return list.every(function(q){ return val(q) !== ''; });
+  }
+  function totalAnswered(){
+    var all = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15','name','email'];
+    return all.filter(function(q){ return val(q)!==''; }).length / all.length;
+  }
+  function update(){
+    var pct = current>=6 ? 100 : Math.max(8, Math.round(totalAnswered()*100));
+    bar.style.width = pct+'%';
+    var form = steps[current-1];
+    var btn = form && form.querySelector('.btn');
+    if(btn) btn.disabled = !stepComplete(current);
+    document.getElementById('q7b').hidden = val('q7')!=='yes';
+    var site = val('q2');
+    document.getElementById('bonus').hidden = !(site==='yes' || site==='yes-not-proud');
+    document.getElementById('q15other').hidden = val('q15')!=='other';
+  }
+  function show(n){
+    current = n;
+    steps.forEach(function(s){ s.hidden = Number(s.dataset.step)!==n; });
+    update();
+    document.getElementById('assessment').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth', block:'start'});
+  }
+  steps.forEach(function(s){
+    s.addEventListener('input', update);
+    s.addEventListener('change', update);
+    if(s.tagName==='FORM'){
+      s.addEventListener('submit', function(e){ e.preventDefault(); if(stepComplete(current)) show(current+1); });
+    }
+    var back = s.querySelector('.back');
+    if(back) back.addEventListener('click', function(){ show(current-1); });
+  });
+  update();
+})();
+</script>
+</body>
+</html>
