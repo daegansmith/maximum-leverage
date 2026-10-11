@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How the whole system works</title>
+<style>
+:root{--bg:#fff;--ink:#111;--muted:#555;--line:#ddd;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#151515;--ink:#ececec;--muted:#a9a9a9;--line:#333;}}
+:root[data-theme="dark"]{--bg:#151515;--ink:#ececec;--muted:#a9a9a9;--line:#333;}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Tahoma,Geneva,Verdana,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+.wrapper{max-width:660px;margin:0 auto;padding:50px 24px 64px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;line-height:1.4}
+h1{font-size:42px;font-weight:bold;line-height:1.2;margin-bottom:24px}
+h2{font-size:20px;font-weight:bold;margin-top:48px;margin-bottom:16px}
+p{margin-bottom:16px}
+ul,ol{margin:20px 0 20px 24px}
+li{margin-bottom:12px}
+a{color:var(--ink);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.muted{color:var(--muted)}
+.lede{font-size:19px}
+.doodle{margin:8px 0 20px;max-width:520px}
+.doodle svg{display:block;width:100%;height:auto}
+.ink path,.ink line,.ink circle,.ink rect,.ink polyline{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ink .bgfill{fill:var(--bg)}
+.ink .dash{stroke-dasharray:5 6}
+svg text{font-family:Tahoma,Geneva,Verdana,sans-serif;fill:var(--ink)}
+.lb{font-size:16px;font-weight:bold}
+.sm{font-size:13px;fill:var(--muted)}
+.hand{font-size:13px;font-style:italic;fill:var(--muted)}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="kicker">Updated October 3, 2026</div>
+<h1>How the whole system works</h1>
+<p class="lede">One rulebook seeds every project. The living documents sit in Claude Docs, and Drive is the filing cabinet. Every business moves through two projects, with you in the middle.</p>
+
+<h2>The structure</h2>
+<div class="doodle">
+<svg viewBox="0 0 400 395" role="img" aria-labelledby="d1t">
+<title id="d1t">The Master Prompt hands a pasted copy of its rules to four projects: Prompts, Marketing, Research and ThinkingBetter. All four read two shared documents live and write back to them: the Voice Reference and Cross-Project Learnings. The one direct line between projects is the copy brief Research hands to Marketing.</title>
+<defs><filter id="sk1"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></defs>
+<g class="ink" filter="url(#sk1)">
+<path d="M150 40 Q175 30 200 42 Q225 30 250 40 L250 90 Q225 80 200 92 Q175 80 150 90 Z"/>
+<path d="M200 42 L200 92"/>
+<path d="M162 52 L190 54 M162 62 L188 64 M162 72 L184 73 M210 54 L238 52 M212 64 L238 62 M214 73 L236 72"/>
+<path d="M200 96 L200 118 M55 118 L345 118"/>
+<path d="M55 118 L55 145 M150 118 L150 145 M250 118 L250 145 M345 118 L345 145"/>
+<path d="M50 139 L55 146 L60 139 M145 139 L150 146 L155 139 M245 139 L250 146 L255 139 M340 139 L345 146 L350 139"/>
+<path d="M32 166 L32 150 L78 150 L78 166 M127 166 L127 150 L173 150 L173 166 M227 166 L227 150 L273 150 L273 166 M322 166 L322 150 L368 150 L368 166"/>
+<path class="bgfill" d="M20 205 L20 162 L40 162 L46 157 L90 157 L90 205 Z"/>
+<path class="bgfill" d="M115 205 L115 162 L135 162 L141 157 L185 157 L185 205 Z"/>
+<path class="bgfill" d="M215 205 L215 162 L235 162 L241 157 L285 157 L285 205 Z"/>
+<path class="bgfill" d="M310 205 L310 162 L330 162 L336 157 L380 157 L380 205 Z"/>
+<path d="M55 236 L55 262 M150 236 L150 262 M250 236 L250 262 M345 236 L345 262 M55 262 L345 262"/>
+<path d="M120 262 L120 280 M290 262 L290 272 M115 274 L120 281 L125 274 M285 266 L290 273 L295 266 M115 269 L120 262 L125 269 M285 269 L290 262 L295 269"/>
+<path d="M215 188 L189 188 M195 183 L188 188 L195 193"/>
+<path d="M80 308 Q80 292 120 292 Q160 292 160 310 Q160 328 126 328 L110 342 L113 328 Q80 326 80 308 Z"/>
+<path d="M96 310 q6 -7 12 0 t12 0 t12 0 t12 0"/>
+<circle cx="290" cy="312" r="9"/>
+<path d="M290 303 L290 288 M298 307 L313 300 M297 318 L310 328 M283 318 L270 328 M282 307 L267 300"/>
+<circle cx="290" cy="284" r="4"/><circle cx="316" cy="298" r="4"/><circle cx="313" cy="331" r="4"/><circle cx="267" cy="331" r="4"/><circle cx="264" cy="298" r="4"/>
+</g>
+<text class="lb" x="262" y="58">Master Prompt</text>
+<text class="sm" x="262" y="76">the rulebook</text>
+<text class="hand" x="12" y="110">each gets its own copy</text>
+<text class="lb" x="55" y="228" text-anchor="middle" style="font-size:14px">Prompts</text>
+<text class="lb" x="150" y="228" text-anchor="middle" style="font-size:14px">Marketing</text>
+<text class="lb" x="250" y="228" text-anchor="middle" style="font-size:14px">Research</text>
+<text class="lb" x="345" y="228" text-anchor="middle" style="font-size:14px">ThinkingBetter</text>
+<text class="hand" x="205" y="280" text-anchor="middle">read live, written back</text>
+<text class="sm" x="202" y="207" text-anchor="middle" style="font-size:11px">brief</text>
+<text class="lb" x="120" y="368" text-anchor="middle" style="font-size:14px">Voice Reference</text>
+<text class="sm" x="120" y="386" text-anchor="middle">how you sound</text>
+<text class="lb" x="290" y="368" text-anchor="middle" style="font-size:14px">Cross-Project Learnings</text>
+<text class="sm" x="290" y="386" text-anchor="middle">what travels between</text>
+</svg>
+</div>
+<p>Every project gets its rules from the Master Prompt, but none of them can see it. So each one carries its own copy, pasted into its instructions. The last line of every copy says which version it is. If that line falls behind, the next session says so.</p>
+<p>Once a prompt is out in its own project, it stops being a child and becomes a peer. The projects don't read each other's prompts. They connect through two shared documents that all four read live and write back to at the end of a session: the Voice Reference, which is how you sound and the picks you've made, and Cross-Project Learnings, which is what one project learned that the others can use. Every project can also read the Master itself.</p>
+<p>There is one direct line between projects: Research hands Marketing a copy brief. Nothing else passes project to project except through the shared docs.</p>
+
+<h2>Where things live</h2>
+<div class="doodle">
+<svg viewBox="0 0 400 235" role="img" aria-labelledby="d2t">
+<title id="d2t">A notebook with a pencil stands for Claude Docs, where living documents are edited in place. A filing cabinet stands for Drive, which holds history, backups and source files. An arrow labeled weekly backup runs from the notebook to the cabinet.</title>
+<defs><filter id="sk2"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></defs>
+<g class="ink" filter="url(#sk2)">
+<path d="M50 40 L150 40 L150 150 L50 150 Z"/>
+<circle cx="50" cy="56" r="4"/><circle cx="50" cy="74" r="4"/><circle cx="50" cy="92" r="4"/><circle cx="50" cy="110" r="4"/><circle cx="50" cy="128" r="4"/>
+<path d="M66 64 L138 64 M66 84 L132 84 M66 104 L136 104 M66 124 L120 124"/>
+<path d="M118 168 L166 120 L176 130 L128 178 Z M118 168 L112 184 L128 178 M160 126 L170 136"/>
+<path d="M250 40 L350 40 L350 160 L250 160 Z M250 80 L350 80 M250 120 L350 120"/>
+<path d="M288 60 L312 60 M288 100 L312 100 M288 140 L312 140"/>
+<path d="M158 76 Q200 46 242 76"/>
+<path d="M232 72 L243 77 L238 66"/>
+</g>
+<text class="hand" x="200" y="40" text-anchor="middle">weekly backup</text>
+<text class="lb" x="100" y="204" text-anchor="middle">Claude Docs</text>
+<text class="sm" x="100" y="222" text-anchor="middle">living docs, edited in place</text>
+<text class="lb" x="300" y="204" text-anchor="middle">Drive</text>
+<text class="sm" x="300" y="222" text-anchor="middle">history, backups, source files</text>
+</svg>
+</div>
+<p>Anything that changes as we work is a Claude Doc. One doc per subject, edited in place, with its version and changelog inside. Every earlier state stays in its history.</p>
+<p>Drive holds what doesn't change: source files, references, the old numbered versions, and the weekly backups.</p>
+
+<h2>How a business moves through it</h2>
+<div class="doodle">
+<svg viewBox="0 0 400 575" role="img" aria-labelledby="d3t">
+<title id="d3t">A business URL goes into the Research project, which produces the report, the gap and the bridge. You review it: correct, add, decide. The copy brief goes to the Marketing project, which writes the copy, sets the order and builds the mockup. The result goes in front of the owner.</title>
+<defs><filter id="sk3"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="2"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></defs>
+<g class="ink" filter="url(#sk3)">
+<path d="M38 28 L104 28 L104 74 L38 74 Z M38 40 L104 40"/>
+<circle cx="45" cy="34" r="1.5"/><circle cx="51" cy="34" r="1.5"/><circle cx="57" cy="34" r="1.5"/>
+<path d="M48 54 L94 54 M48 63 L80 63"/>
+<path class="dash" d="M71 82 Q78 96 71 110"/><path d="M66 104 L71 112 L76 104"/>
+<path d="M40 136 L71 118 L102 136 M46 136 L46 172 L96 172 L96 136 M62 172 L62 152 L78 152 L78 172"/>
+<circle class="bgfill" cx="94" cy="150" r="14"/><path d="M104 160 L116 172"/>
+<path class="dash" d="M71 182 Q64 196 71 210"/><path d="M66 204 L71 212 L76 204"/>
+<circle cx="71" cy="232" r="11"/>
+<path d="M71 243 L71 274 M71 252 L52 264 M71 252 L92 244 M71 274 L58 292 M71 274 L84 292"/>
+<path d="M92 244 L108 226 M104 222 L112 230"/>
+<path class="dash" d="M71 300 Q78 312 71 324"/><path d="M66 318 L71 326 L76 318"/>
+<path d="M50 332 L82 332 L92 342 L92 378 L50 378 Z M82 332 L82 342 L92 342 M58 352 L84 352 M58 362 L84 362 M58 370 L74 370"/>
+<path class="dash" d="M71 386 Q64 398 71 410"/><path d="M66 404 L71 412 L76 404"/>
+<path d="M44 418 L88 418 L88 468 L44 468 Z M52 432 Q60 426 66 434 T80 432 M52 446 Q62 440 70 448 T82 444"/>
+<path d="M84 470 L110 438 L116 444 L90 476 Z M84 470 L82 480 L90 476"/>
+<path class="dash" d="M71 486 Q78 498 71 510"/><path d="M66 504 L71 512 L76 504"/>
+<circle cx="50" cy="526" r="8"/><circle cx="92" cy="526" r="8"/>
+<path d="M50 534 L50 552 M92 534 L92 552 M30 556 L112 556 M36 556 L36 570 M106 556 L106 570"/>
+</g>
+<text class="lb" x="130" y="48">A business URL</text>
+<text class="sm" x="130" y="66">the only input</text>
+<text class="lb" x="130" y="142">Research project</text>
+<text class="sm" x="130" y="160">the report, the gap, the bridge</text>
+<text class="lb" x="130" y="250" style="font-size:18px">Your review</text>
+<text class="sm" x="130" y="282">correct, add, decide</text>
+<path d="M130 258 q12 5 24 0 t24 0 t24 0 t24 0" style="fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round"/>
+<text class="lb" x="130" y="350">The copy brief</text>
+<text class="sm" x="130" y="368">what you decided, carried forward</text>
+<text class="lb" x="130" y="438">Marketing project</text>
+<text class="sm" x="130" y="456">the copy, the order, the mockup</text>
+<text class="lb" x="130" y="530">In front of the owner</text>
+<text class="sm" x="130" y="548">workshop or consultation</text>
+</svg>
+</div>
+<p>Your review is the step that can't be skipped. Everything after it depends on what you correct and add there. The E60 page only worked because three years inside that room went into the brief.</p>
+
+<h2>The weekly rhythm</h2>
+<div class="doodle">
+<svg viewBox="0 0 400 240" role="img" aria-labelledby="d4t">
+<title id="d4t">A sawtooth line over four weeks. Each week the prompts grow. At the end of each week they get backed up, then refined, and the line drops. Each drop lands a little higher than the last, because the system keeps what it learned.</title>
+<defs><filter id="sk4"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="6"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter></defs>
+<g class="ink" filter="url(#sk4)">
+<path d="M40 30 L40 200 L380 200"/>
+<path d="M50 170 L128 110 L130 155 L208 98 L210 142 L288 86 L290 130 L368 74"/>
+<path d="M124 146 L130 155 L136 146 M204 133 L210 142 L216 133 M284 121 L290 130 L296 121"/>
+<path class="dash" d="M50 170 L130 155 L210 142 L290 130"/>
+<path d="M134 94 L129 106"/>
+<path d="M130 200 L130 206 M210 200 L210 206 M290 200 L290 206 M370 200 L370 206"/>
+</g>
+<text class="sm" x="48" y="24">how big the prompts get</text>
+<text class="hand" x="128" y="88" text-anchor="middle">back up, then refine</text>
+<text class="hand" x="54" y="192">grows all week</text>
+<text class="hand" x="388" y="178" text-anchor="end">keeps what it learned</text>
+<text class="sm" x="90" y="222" text-anchor="middle">week 1</text>
+<text class="sm" x="170" y="222" text-anchor="middle">week 2</text>
+<text class="sm" x="250" y="222" text-anchor="middle">week 3</text>
+<text class="sm" x="330" y="222" text-anchor="middle">week 4</text>
+</svg>
+</div>
+<p>All week, the prompts grow. Every real session ends with quick checks: what worked, what broke, whether the Voice Reference needs a new pick, and whether anything applies beyond this project. Each answer can add a rule.</p>
+<p>Once a week, two things happen together. First the backup: you export each living doc to Google Docs, and Claude files the copies in Archive and checks them. Then the refine: cut the repetition out of the four prompts without losing a rule.</p>
+<p>Then it grows again. Each week ends a little smarter and no fatter.</p>
+
+<h2>What keeps it all working</h2>
+<p class="muted">None of these show up in the pictures.</p>
+<ul>
+<li><b>Find by rule.</b> No prompt names a version number. Living docs are found by their title, Drive files by "the newest in this folder." Updating a document never breaks anything that points at it.</li>
+<li><b>The version line.</b> Every prompt ends with the version it reflects, so a stale copy can't hide.</li>
+<li><b>Never let context go unused.</b> Anything you've shared, a story, a detail, a decision, has to show up in the work. Missing it counts as a failure, not a slip.</li>
+<li><b>The ambiguity pass.</b> In Marketing, every line on a page gets read as the reader before the page is handed over.</li>
+<li><b>One correction fixes the whole class.</b> A note on one line gets applied to every line like it before anything comes back.</li>
+<li><b>A standing to-do.</b> Marketing and Research each keep one, read at session start, so nothing depends on you remembering where you left off.</li>
+</ul>
+
+<h2>How a research run works</h2>
+<p>The step-by-step lives on the <a href="/#research">Project Maximum Leverage page</a>, in the Research Tool section.</p>
+
+<h2>The idea underneath it all</h2>
+<p>Every business talks from the position it earned. Every buyer listens from the position they're stuck in. The thing a business is proudest of is almost always the proof of the thing its buyers fear. And nobody has drawn the line between them.</p>
+<p class="muted">Bread argued nutrition; the objection was taste. A gym argued components; the objection was experience. A contractor argued competence; the objection was fear of the process.</p>
+
+<h2>Go deeper</h2>
+<ul>
+<li><a href="inside.html">Inside each prompt</a>: how each prompt moves on its own, drawn as a flow</li>
+<li><a href="/">Project Maximum Leverage</a>: the project these prompts are built for</li>
+<li><a href="/e60-mockup.html">E60 Fitness mockup</a>: the first finished example</li>
+</ul>
+
+<footer>This page gets updated at the same link whenever the system changes.</footer>
+</div>
+</body>
+</html>
