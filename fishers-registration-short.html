@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fishers Registration Page, Short Version</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:50px max(24px,env(safe-area-inset-right,0px)) 80px max(24px,env(safe-area-inset-left,0px))}
+.back{display:inline-block;font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink);margin:0 0 26px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:42px;font-weight:900;letter-spacing:-0.5px;line-height:1.15;margin:0 0 24px;text-wrap:balance}
+h2{font-size:26px;font-weight:bold;line-height:1.25;margin:44px 0 18px;text-wrap:balance}
+h3{font-size:20px;font-weight:bold;line-height:1.3;margin:30px 0 10px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+.sub{font-size:22px;font-weight:bold;line-height:1.4;margin:0 0 24px}
+.beats p{margin:0 0 8px}
+.beats p.gap{margin-top:22px}
+.lead-in{margin:14px 0 0}
+.video{background:#111;color:#fff;aspect-ratio:16/9;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:bold;text-align:center;padding:10px;margin:0 0 18px;border:1px solid var(--rule)}
+.play{width:0;height:0;border-left:24px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.video small{font-weight:normal;font-size:13px;opacity:.75}
+.under{margin:0 0 10px}
+.qhead{margin:44px 0 6px}
+.qsub{color:var(--soft);font-size:16px;margin:0 0 14px}
+.quote,blockquote{margin:24px 0 20px;padding-left:14px;border-left:3px solid var(--ink)}
+.quote p{margin:0 0 10px}
+.who{font-size:15px;color:var(--soft);margin-top:6px}
+.cta{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;text-align:center;text-decoration:none;margin:24px 0 6px}
+.cta:hover,.form button:hover{background:var(--bg);color:var(--ink)}
+.cta:focus-visible,.form button:focus-visible{outline:3px solid var(--soft);outline-offset:3px}
+.cta-note,.exp{font-size:15px;color:var(--soft);text-align:center;margin:6px 0 10px}
+ul{list-style:none;padding:0;margin:0 0 22px}
+li{padding-left:22px;position:relative;margin-bottom:14px}
+li:before{content:"\2022";position:absolute;left:4px}
+.form{display:flex;flex-direction:column;gap:6px;margin:10px 0 0}
+.form label{font-weight:bold;font-size:16px;margin-top:8px}
+.form .why{display:block;font-weight:normal;color:var(--soft);font-size:15px;margin:0}
+.form input,.form textarea{display:block;width:100%;font:inherit;font-size:17px;padding:12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);border-radius:0;margin:0 0 4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.row>div,.row3>div{min-width:0;display:flex;flex-direction:column;gap:6px}
+.wish{font-size:20px;font-weight:bold;line-height:1.4;margin:6px 0 4px}
+.form button{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;margin-top:14px;cursor:pointer}
+.done{font-weight:bold;margin-top:12px}
+.details{margin:30px 0 22px}
+.details p{margin:0 0 6px}
+.callout{border:2px solid var(--ink);padding:20px 20px 4px;margin:0 0 34px}
+.callout h2{margin:0 0 12px}
+.fine{font-size:13px;color:var(--soft);margin-top:24px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 0;padding:0;list-style:none}
+.links li{padding:0;margin:0}.links li:before{content:none}
+.links a{display:inline-block;padding:10px 16px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-size:16px;font-weight:bold}
+.links a:hover{background:var(--ink);color:var(--bg)}
+@media (max-width:600px){h1{font-size:34px}.wrap{padding-top:32px}.row3{grid-template-columns:1fr 1fr}.row3>div:first-child{grid-column:1/-1}}
+@media (max-width:400px){.row{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<a class="back" href="./#fishers">&larr; The Fishers Workshop Funnel</a>
+<p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+
+<h1>One Night In Fishers, Real Local Businesses Get Transformed Live, Right In Front Of The Room... And The Next One On The Screen Might Be Yours</h1>
+
+<div class="video"><div class="play"></div>JAMON'S STORY<small>His full testimonial from the last workshop in Fishers, September 10. Captions on.</small></div>
+
+<p class="under"><b>Click play to hear Jamon tell his story himself,</b> standing in front of a room full of local business owners at our last live workshop in Fishers. No script. Just him. He and his son Chase were getting by month to month. Then came a couple of meetings with me, Jimmy. Now they're on TV and the radio, with more business and more money than they can handle. Here's how it happened, in his own words.</p>
+<div class="beats lead-in">
+<p>That happened in the room last time.</p>
+<p>On October 27, it happens again. And this time, you can be there live.</p>
+<p>Your seat is free. Save it now.</p>
+</div>
+
+<a class="cta" href="#s-seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+<h2 class="qhead">"Nobody Wants To Hear Their Baby's Ugly."</h2>
+<p class="qsub">Jamon, in his own words, from the last workshop in Fishers.</p>
+<div class="quote">
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<div class="who">Jamon Jack, GottaCallJack.com</div>
+</div>
+
+<div class="beats">
+<p>He didn't learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+</div>
+
+<a class="cta" href="#s-seat">Click Here To Save Your Seat Now</a>
+
+<h2>On October 27, In The Room, You'll See:</h2>
+<ul>
+<li>How a one-man pizza shop that couldn't answer its phone now answers every call... so every call to your business turns into a job, even when you're slammed.</li>
+<li>What Jimmy can spot in a business in about ninety seconds that the owner never noticed... and what it's worth once you see it in yours.</li>
+<li>The one question almost nobody asks about their business name... and why it's the difference between being found and being forgotten.</li>
+<li>How a handful of small changes turned Jamon's business into one he can't keep up with... and which ones apply to yours.</li>
+<li>How a bread company that thought it was losing money found out it was sitting on gold... and how to find the gold you're standing on.</li>
+<li>Why you're earlier than you think, even if you've never touched any of this... and why that's the best news you'll get this year.</li>
+</ul>
+
+<a class="cta" href="#s-seat">Save My Seat In The Room</a>
+
+<h2>What You Walk Away With</h2>
+<div class="beats">
+<p>You'll know how to put the right marketing and AI to work together, so you can shape your business exactly the way you want it.</p>
+<p>And you'll do it yourself, on your own phone, before you leave. That's when it clicks.</p>
+<p class="gap">You'll drive home with a handful of new directions for your business.</p>
+<p>Every time we strike gold in somebody else's business, you'll catch yourself thinking, wait. We could use that too.</p>
+<p class="gap">And you'll have the chance to see your business transformed right in front of you. Live, in the room. A few businesses go up on the big screen.</p>
+<p>Maybe yours.</p>
+</div>
+
+<a class="cta" href="#s-seat">Save My Free Seat For October 27</a>
+
+<h2>Why It's Free</h2>
+<div class="beats">
+<p>Here's the honest reason.</p>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p class="gap">October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<p class="gap">And there's no risk. Save your seat, show up, and see what happens when somebody who knows where to look gets his hands on your business.</p>
+</div>
+
+<h2 id="s-seat">Save Your Seat</h2>
+<form class="form reg" novalidate>
+<p class="wish">If a genie showed up for your business, what's the one thing you'd wish for?</p>
+<p class="why">I read every one before the 27th. A few, I'll read out loud in the room.</p>
+<textarea id="s-wish" rows="3" aria-label="Your wish for your business"></textarea>
+<div class="row">
+<div><label for="s-first">First Name</label><input id="s-first" autocomplete="given-name"></div>
+<div><label for="s-last">Last Name</label><input id="s-last" autocomplete="family-name"></div>
+</div>
+<label for="s-email">Email <span class="why">Where your "You're in" email goes, with the address and where to park.</span></label>
+<input id="s-email" type="email" autocomplete="email">
+<label for="s-phone">Mobile <span class="why">One text the day of, with directions.</span></label>
+<input id="s-phone" type="tel" autocomplete="tel">
+<label for="s-biz">Business Name</label>
+<input id="s-biz" autocomplete="organization">
+<label for="s-site">Website, If You Have One <span class="why">No website? You need to be there more than anybody.</span></label>
+<input id="s-site" autocomplete="url">
+<label for="s-street">Street Address <span class="why">So I know where everybody's coming from.</span></label>
+<input id="s-street" autocomplete="address-line1">
+<div class="row3">
+<div><label for="s-city">City</label><input id="s-city" autocomplete="address-level2"></div>
+<div><label for="s-state">State</label><input id="s-state" autocomplete="address-level1" value="IN"></div>
+<div><label for="s-zip">Zip</label><input id="s-zip" autocomplete="postal-code" inputmode="numeric"></div>
+</div>
+<button type="submit">Save My Seat For October 27</button>
+<div class="exp">Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</div>
+<div class="done" hidden>You're in. (Mockup: in GoHighLevel, this sends the "You're in" email.)</div>
+</form>
+
+<div class="details">
+<p><b>When:</b> Tuesday, October 27 ·</p>
+<p><b>Where:</b>, Fishers, Indiana</p>
+<p><b>Cost:</b> Free</p>
+<p><b>Bring:</b> Your phone</p>
+</div>
+
+<p>Jimmy</p>
+<p><b>P.S.</b> Bring your phone. When that pizza shop's line picks up on speaker, try not to count the calls you missed last week. <a href="#s-seat">Save your seat.</a></p>
+
+<p class="fine">This is Jamon's story. Yours will be your own.</p>
+<p class="fine">Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p>
+<ul class="links"><li><a href="./#fishers">Back to Project Maximum Leverage</a></li></ul>
+</div>
+<script>
+(function(){var f=document.querySelector('form.reg');if(f)f.addEventListener('submit',function(e){e.preventDefault();f.querySelector('.done').hidden=false;});})();
+</script>
+</body></html>
