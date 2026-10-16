@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fishers Thank-You</title>
+
+<style>
+/* Layout: Marlon Pure Tahoma baseline (locked Sept 27). Single light look by choice: black and white, 660px column, Tahoma 16/20/42, black square buttons, left-aligned, no boxes or dividers. The stamp bar holds the version switch. */
+:root{color-scheme:light only;--ink:#111;--muted:#555;--paper:#fff;--rule:#ddd;--open:#7a7a7a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:16px;line-height:1.65}
+.stamp{max-width:660px;margin:0 auto;padding-block:10px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));font-size:13px;color:var(--muted);border-bottom:1px solid var(--rule)}
+.switch{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.switch button{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--ink);background:#fff;color:var(--ink);border-radius:0;cursor:pointer}
+.switch button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.page{max-width:660px;margin:0 auto;padding-block:50px 70px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.kicker{color:var(--muted);font-size:16px;margin:0 0 14px}
+h1{font-size:42px;line-height:1.15;font-weight:bold;margin:0 0 24px;text-wrap:balance}
+h2{font-size:20px;font-weight:bold;margin:40px 0 14px;text-wrap:balance}
+h3{font-size:16px;font-weight:bold;margin:26px 0 10px}
+p{margin:0 0 16px}
+.beats p{margin:0 0 10px}
+.beats p.gap{margin-top:22px}
+.video{background:#111;color:#fff;aspect-ratio:16/9;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:bold;text-align:center;padding:10px;margin:0 0 14px}
+.play{width:0;height:0;border-left:24px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.video small{font-weight:normal;font-size:13px;opacity:.75}
+.under{font-size:16px;line-height:1.6;margin:0 0 8px}
+.under b{font-weight:bold}
+.lead-in{margin:14px 0 0}
+.qhead{font-size:26px;line-height:1.25;margin:44px 0 6px}
+.qsub{color:var(--muted);font-size:15px;margin:0 0 14px}
+.qhead + .qsub + .quote{margin-top:0}
+.cta{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:#fff;border:0;border-radius:0;text-align:center;text-decoration:none;margin:22px 0 6px}
+.cta:focus-visible,.form button:focus-visible,.switch button:focus-visible{outline:3px solid var(--muted);outline-offset:3px}
+.cta-note{font-size:14px;color:var(--muted);text-align:center;margin:0 0 10px}
+.quote{border-left:3px solid var(--ink);padding-left:16px;margin:28px 0 20px}
+.quote p{margin:0 0 12px}
+.quote .who{font-size:14px;color:var(--muted);margin-top:6px}
+.open{color:var(--open);font-size:14px}
+ul{list-style:none;padding:0;margin:0 0 20px}
+li{padding-left:22px;position:relative;margin-bottom:14px}
+li:before{content:"•";position:absolute;left:4px}
+.form{display:flex;flex-direction:column;gap:6px;margin:10px 0 0}
+.form label{font-weight:bold;font-size:15px;margin-top:8px}
+.form .why{display:block;font-weight:normal;color:var(--muted);font-size:14px}
+.form input,.form textarea{display:block;width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid var(--ink);background:#fff;color:var(--ink);border-radius:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.row>div,.row3>div{min-width:0;display:flex;flex-direction:column;gap:6px}
+.wish{font-size:18px;font-weight:bold;line-height:1.4;margin:6px 0 4px}
+.form button{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:#fff;border:0;border-radius:0;margin-top:16px;cursor:pointer}
+.exp{font-size:14px;color:var(--muted);margin-top:8px;text-align:center}
+.done{font-weight:bold;margin-top:12px}
+.details{margin:28px 0 20px}
+.details p{margin:0 0 6px}
+.fine{font-size:13px;color:var(--muted);margin-top:24px}
+@media (max-width:600px){h1{font-size:32px}.page{padding-block:32px 60px}.row3{grid-template-columns:1fr 1fr}.row3>div:first-child{grid-column:1/-1}}
+@media (max-width:400px){.row{grid-template-columns:1fr}}
+.callout{border:2px solid var(--ink);padding:18px 18px 6px;margin:0 0 30px}
+.callout h2{margin:0 0 10px;font-size:26px}
+.backbar{max-width:660px;margin:0 auto;padding-block:10px;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));font-size:13px}.backbar a{color:#111;font-weight:bold}
+</style>
+<div class="backbar"><a href="./#fishers">&larr; Back to Project Maximum Leverage</a></div>
+<div class="page">
+
+<div class="callout">
+<h2>You're Invited.</h2>
+<p>You're in for Jamon's full story. It's on its way to your inbox right now, in an email from me with the subject line <b>"You're Invited."</b></p>
+<p>Don't see it in a couple of minutes? Check your spam or promotions folder, and drag it into your main inbox. That way you don't miss anything I send you between now and October 27.</p>
+<p>Then keep reading. There's a seat with your name on it.</p>
+</div>
+<p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+
+<h1>One Night In Fishers, Real Local Businesses Get Transformed Live, Right In Front Of The Room... And The Next One On The Screen Might Be Yours</h1>
+
+<div class="video"><div class="play"></div>JAMON'S STORY<small>His full testimonial from the last workshop in Fishers, September 10. Captions on.</small></div>
+
+<p class="under"><b>Click play to hear Jamon tell his story himself,</b> standing in front of a room full of local business owners at our last live workshop in Fishers. No script. Just him. He and his son Chase were getting by month to month. Then came a couple of meetings with me, Jimmy. Now they're on TV and the radio, with more business and more money than they can handle. Here's how it happened, in his own words.</p>
+<div class="beats lead-in">
+<p>That happened in the room last time.</p>
+<p>On October 27, it happens again. And this time, you can be there live.</p>
+<p>Your seat is free. Save it now.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+<h2 class="qhead">"Nobody Wants To Hear Their Baby's Ugly."</h2>
+<p class="qsub">Jamon, in his own words, from the last workshop in Fishers.</p>
+<div class="quote">
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<div class="who">Jamon Jack, GottaCallJack.com</div>
+</div>
+
+<div class="beats">
+<p>He didn't learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Save Your Seat Now</a>
+
+<h2>Here's What Happens In The Room</h2>
+<div class="beats">
+<p>You walk in with your phone. That's it. No laptop. No homework.</p>
+<p>First, I hand you the simple rules that make everything you're about to see work. If you can talk, you can do this.</p>
+<p>You'll try it on your own phone before we move on.</p>
+<p>Then we go to work on real businesses. A few of them go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p class="gap">Here's a taste of what that looks like.</p>
+</div>
+
+<h3>The Pizza Guy Who Couldn't Answer His Own Phone</h3>
+<div class="beats">
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>And when I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>So I built him something.</p>
+<p>A phone line that answers like his best employee. It knows the menu. It gives you the specials. It takes your order and sends it straight to him.</p>
+<p><b>In the room, I call it on speaker. You'll hear it pick up.</b></p>
+</div>
+<h3>Now Be Honest With Yourself For A Second.</h3>
+<div class="beats">
+<p>How many calls went to your voicemail last week while your hands were full?</p>
+<p>How many of those people just called the next guy?</p>
+<p>You don't know. Neither did he.</p>
+<p class="gap"><b>Here's what his day looks like now.</b></p>
+<p>Every call gets answered, whether he picks up or not. No more dropping everything to grab the phone. No more digging through voicemails at closing time, wondering who he lost.</p>
+<p>The people who used to hang up now order. And he gets to make pizza again, and actually enjoy it.</p>
+<p class="gap">Picture that at your place. Every call answered. Every customer caught. One less thing pulling at you all day.</p>
+<p>That alone is worth the drive.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Be There</a>
+
+<h3>The Bread Company That Thought It Was Failing</h3>
+<div class="beats">
+<p>Jim makes bread his customers write him letters about. That's how much they love it.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live. What it costs to make. What he charges. What it costs to ship.</p>
+<p><b>He was losing $4.58 on every box he shipped.</b></p>
+<p>Here's why. Shipping costs him about the same whether a box holds three loaves or six. And everything he sold came in threes.</p>
+<p>I looked at him and said, "Jim, you don't have a bread problem. You have a box problem."</p>
+<p class="gap">That's a fix. But it wasn't the big find that night.</p>
+<p>The big find was his story.</p>
+</div>
+
+<h2>The Story You've Never Told</h2>
+<div class="beats">
+<p>Here's the part almost none of his customers knew.</p>
+<p>Jim never started baking to sell bread.</p>
+<p>When his little girl started kindergarten, she got sick. An autoimmune disease. Almost everything she loved to eat was suddenly off the table.</p>
+<p>So he set out to make her a bread she could actually eat. And enjoy.</p>
+<p>He tried fifteen times. One loaf came out right, almost by accident.</p>
+<p>She could eat it.</p>
+<p>Later, a bakery owner baked a batch with Jim's flour. His own daughter couldn't eat bread either. She could eat Jim's.</p>
+<p>That's when Jim knew he had something.</p>
+</div>
+<h3>And That Story Was Nowhere.</h3>
+<div class="beats">
+<p>Not on his website. Not on his box.</p>
+<p>Put it there, and his bread stops being just bread.</p>
+<p>It becomes the answer for people who'd given up on ever eating bread again. People who write to him, "This is the only bread I can eat after twenty years."</p>
+<p>Somebody who hasn't eaten bread in twenty years isn't comparing prices. She just found the only loaf she can eat.</p>
+<p class="gap">Jim isn't really selling bread anymore.</p>
+</div>
+<h3>He's Changing Lives.</h3>
+<div class="beats">
+<p>Same bread. Same oven. Look what that one change opens up:</p>
+</div>
+<ul>
+<li><b>Price stops being the question.</b> People pay for what this bread does for them, not what it costs to bake.</li>
+<li><b>Leads he could never reach before.</b> Companies that sell water filters, probiotics, supplements, and diet plans all want in front of the exact people who buy from Jim. And with his story, their customers become his too.</li>
+<li><b>Brand-new streams of income.</b> Partners pay to put their offers in his box. He sends his customers the products he trusts, and gets paid when they buy.</li>
+</ul>
+<div class="beats">
+<p>Add it up, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from a story that was there the whole time.</p>
+</div>
+
+<h3>Your Business Has A Story Like That.</h3>
+<div class="beats">
+<p>The reason you started. The thing you'd do even if nobody paid you. The difference your customers feel that you've never once put into words.</p>
+<p>Most owners never tell it. So their customers see one more option, and they shop on price.</p>
+</div>
+
+<h3>Yours Is Sitting There Right Now. Waiting.</h3>
+<div class="beats">
+<p>On October 27, we find yours. Live.</p>
+<p>So what are you waiting for?</p>
+<p>Click the button below and save your seat. I'll see you in the room.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat In The Room</a>
+
+<h2>No Two People Walk Out With The Same Thing</h2>
+<div class="beats">
+<p>A business doesn't walk into that room. A person does.</p>
+</div>
+<ul>
+<li><b>Bruce</b> plays piano in a bar here in Indiana. Everybody knows him. The night my wife and I went, he called us out all show long. He didn't have a website. The next day he texted me to say thanks, and I wrote back, "Practice your excited face. I'll send you something in a little bit." What I sent him was his whole show on one page. Tap his wig and it flips to rock mode. His reply: "Holy cow. I'm blown away, Jimmy."</li>
+<li><b>Ian</b> is one of the busiest wedding photographers in the state. Companies kept asking him for headshots, then waiting a whole year for the next headshot day every time they hired someone. In about an hour, we built him a second business that fixes it: Headshot Plan. Now picture the second business hiding inside yours.</li>
+<li><b>Jamon,</b> the retired cop you just heard from, got a name for his business nobody can forget: GottaCallJack.com.</li>
+</ul>
+<div class="beats">
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p class="gap">That's what happens for you on October 27.</p>
+<p>Even I don't know yet what yours will be. That's the part I love.</p>
+<p>Be there and find out.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat For October 27</a>
+
+<div class="beats lead-in">
+<p class="gap">That's just a few of them. Here's what else you'll see that night.</p>
+</div>
+
+<h2>On October 27, In The Room, You'll See:</h2>
+<ul>
+<li>How a one-man pizza shop that couldn't answer its phone now answers every call... so every call to your business turns into a job, even when you're slammed.</li>
+<li>What Jimmy can spot in a business in about ninety seconds that the owner never noticed... and what it's worth once you see it in yours.</li>
+<li>The one question almost nobody asks about their business name... and why it's the difference between being found and being forgotten.</li>
+<li>How a handful of small changes turned Jamon's business into one he can't keep up with... and which ones apply to yours.</li>
+<li>How a bread company that thought it was losing money found out it was sitting on gold... and how to find the gold you're standing on.</li>
+<li>Why you're earlier than you think, even if you've never touched any of this... and why that's the best news you'll get this year.</li>
+</ul>
+
+<h2>What You Walk Away With</h2>
+<div class="beats">
+<p>You'll know how to put the right marketing and AI to work together, so you can shape your business exactly the way you want it.</p>
+<p>And you'll do it yourself, on your own phone, before you leave. That's when it clicks.</p>
+<p class="gap">You'll drive home with a handful of new directions for your business.</p>
+<p>Every time we strike gold in somebody else's business, you'll catch yourself thinking, wait. We could use that too.</p>
+<p class="gap">And you'll have the chance to see your business transformed right in front of you. Live, in the room. And afterward, if it makes sense for us to work together.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+
+<h2>Why It's Free</h2>
+<div class="beats">
+<p>Here's the honest reason.</p>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p class="gap">October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<p class="gap">And there's no risk. Save your seat, show up, and see what happens when somebody who knows where to look gets his hands on your business.</p>
+</div>
+
+<h2 id="seat">Save Your Seat</h2>
+<form class="form reg" novalidate>
+<p class="wish">If a genie showed up for your business, what's the one thing you'd wish for?</p>
+<p class="why">I read every one before the 27th. A few, I'll read out loud in the room.</p>
+<textarea id="r-wish" rows="3" aria-label="Your wish for your business"></textarea>
+<div class="row">
+<div><label for="r-first">First Name</label><input id="r-first" autocomplete="given-name"></div>
+<div><label for="r-last">Last Name</label><input id="r-last" autocomplete="family-name"></div>
+</div>
+<label for="r-email">Email <span class="why">Where your "You're in" email goes, with the address and where to park.</span></label>
+<input id="r-email" type="email" autocomplete="email">
+<label for="r-phone">Mobile <span class="why">One text the day of, with directions.</span></label>
+<input id="r-phone" type="tel" autocomplete="tel">
+<label for="r-biz">Business Name</label>
+<input id="r-biz" autocomplete="organization">
+<label for="r-site">Website, If You Have One <span class="why">No website? You need to be there more than anybody.</span></label>
+<input id="r-site" autocomplete="url">
+<label for="r-street">Street Address <span class="why">So I know where everybody's coming from.</span></label>
+<input id="r-street" autocomplete="address-line1">
+<div class="row3">
+<div><label for="r-city">City</label><input id="r-city" autocomplete="address-level2"></div>
+<div><label for="r-state">State</label><input id="r-state" autocomplete="address-level1" value="IN"></div>
+<div><label for="r-zip">Zip</label><input id="r-zip" autocomplete="postal-code" inputmode="numeric"></div>
+</div>
+<button type="submit">Save My Seat For October 27</button>
+<div class="exp">Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</div>
+<div class="done" hidden>You're in. (Mockup: in GoHighLevel, this sends the "You're in" email.)</div>
+</form>
+
+<div class="details">
+<p><b>When:</b> Tuesday, October 27 ·</p>
+<p><b>Where:</b>, Fishers, Indiana</p>
+<p><b>Cost:</b> Free</p>
+<p><b>Bring:</b> Your phone</p>
+</div>
+
+<p>Jimmy</p>
+<p><b>P.S.</b> Bring your phone. When that pizza shop's line picks up on speaker, try not to count the calls you missed last week. <a href="#seat">Save your seat.</a></p>
+
+<p class="fine">This is Jamon's story. Yours will be your own.</p>
+<p class="fine">Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p>
+</div>
+
+<script>
+(function(){var f=document.querySelector('form.reg');if(f)f.addEventListener('submit',function(e){e.preventDefault();f.querySelector('.done').hidden=false;});})();
+</script>
