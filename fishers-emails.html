@@ -14,10 +14,10 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Ve
 .kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
 h1{font-size:42px;font-weight:900;letter-spacing:-0.5px;line-height:1.15;margin:0 0 20px;text-wrap:balance}
 .sub{font-size:21px;font-weight:bold;line-height:1.4;margin:0 0 24px}
-.howto{border:2px solid var(--ink);padding:18px 18px 4px;margin:0 0 26px}
-.howto p{margin:0 0 14px;font-size:17px}
+.howto{border:2px solid var(--ink);padding:20px 20px 4px;margin:0 0 34px}
+.howto p{margin:0 0 18px}
 .switch{position:sticky;top:env(safe-area-inset-top,0px);z-index:3;background:var(--bg);padding:10px 0;margin:0 0 18px;display:flex;gap:0}
-.switch button{flex:1;font:inherit;font-size:15px;font-weight:bold;padding:10px 8px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer}
+.switch button{flex:1;font:inherit;font-size:16px;font-weight:bold;padding:12px 8px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer}
 .switch button+button{border-left:0}
 .switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .switch button:focus-visible{outline:3px solid var(--soft);outline-offset:2px}
@@ -27,26 +27,27 @@ ol.toc a{display:grid;grid-template-columns:2em 1fr;gap:0 8px;padding:10px 0;col
 ol.toc .n{font-weight:bold;grid-row:span 2}
 ol.toc .s{font-weight:bold}
 ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
-.mail{border:1px solid var(--rule);margin:0 0 30px;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.55}
-.mail header{background:var(--card);border-bottom:1px solid var(--rule);padding:12px 16px}
+.mail{border-top:2px solid var(--ink);padding-top:30px;margin:0 0 40px}
+.mail header{margin:0 0 24px}
 .mail header p{margin:0}
-.when{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
-.subj{font-size:19px;font-weight:bold;margin:2px 0 4px!important}
-.meta{font-size:14px;color:var(--soft)}
-.body{padding:16px}
+.when{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px!important}
+.subj{font-size:26px;font-weight:bold;line-height:1.25;margin:0 0 10px!important;text-wrap:balance}
+.meta{font-size:16px;color:var(--soft)}
+.body{padding:0}
 .para{margin:0}
-.ln{display:block;margin:0 0 1.1em}
-.body blockquote{margin:0;padding-left:12px;border-left:3px solid var(--rule)}
-.body a{color:var(--link)}
-.ps{border-top:1px dashed var(--rule);padding-top:14px}
-.lab{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
+.ln{display:block;margin:0 0 18px}
+.body blockquote{margin:4px 0 18px;padding-left:14px;border-left:3px solid var(--ink)}
+.body blockquote .ln{margin:0 0 10px}
+.body a{color:var(--ink);font-weight:bold}
+.ps{margin-top:8px}
+.lab{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 14px}
 .open{background:var(--tag);color:var(--tagink);font-size:.85em;font-weight:bold;padding:0 4px}
 .merge{border-bottom:1px dotted var(--soft)}
-.top{font-size:14px;margin:-18px 0 30px;text-align:right}
+.top{font-size:15px;margin:-10px 0 34px}
 .top a{color:var(--soft)}
-.fine{font-size:15px;color:var(--soft);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px}
+.fine{font-size:13px;color:var(--soft);border-top:1px solid var(--rule);padding-top:14px;margin-top:24px}
 [hidden]{display:none!important}
-@media (max-width:480px){h1{font-size:34px}.mail{font-size:17px}}
+@media (max-width:480px){h1{font-size:34px}.subj{font-size:23px}}
 </style></head><body><main class="wrap">
 <a class="back" href="./#fishers">&larr; The Fishers Workshop Funnel</a>
 <p class="kicker">Fishers Workshop Funnel &middot; Emails &middot; Draft for review, Oct 17</p>
@@ -63,7 +64,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <button type="button" data-tr="B" aria-pressed="false">Registered</button>
 </div>
 <ol class="toc"><li><a href="#email-1"><span class="n">1</span><span class="s">You're Invited</span><span class="w">On opt-in · sends immediately</span></a></li><li><a href="#email-2"><span class="n">2</span><span class="s">four out of ten</span><span class="w">Sat Oct 17 · 7:00 a.m.</span></a></li><li><a href="#email-3"><span class="n">3</span><span class="s">the Colts' chiropractor</span><span class="w">Sun Oct 18 · 7:00 a.m.</span></a></li><li><a href="#email-4"><span class="n">4</span><span class="s">T-J-O-A-T</span><span class="w">Mon Oct 19 · 7:00 a.m.</span></a></li><li><a href="#email-5"><span class="n">5</span><span class="s">her name, her deck</span><span class="w">Tue Oct 20 · 7:00 a.m.</span></a></li><li><a href="#email-6"><span class="n">6</span><span class="s">$4.58</span><span class="w">Wed Oct 21 · 7:00 a.m.</span></a></li><li><a href="#email-7"><span class="n">7</span><span class="s">two or three in a hundred</span><span class="w">Thu Oct 22 · 7:00 a.m.</span></a></li><li><a href="#email-8"><span class="n">8</span><span class="s">holy cow</span><span class="w">Fri Oct 23 · 7:00 a.m.</span></a></li><li><a href="#email-9"><span class="n">9</span><span class="s">a second business in an hour</span><span class="w">Sat Oct 24 · 7:00 a.m.</span></a></li><li><a href="#email-10"><span class="n">10</span><span class="s">$80,000 and six months</span><span class="w">Sun Oct 25 · 7:00 a.m.</span></a></li><li><a href="#email-11"><span class="n">11</span><span class="s">why it's free</span><span class="w">Mon Oct 26 · 7:00 a.m. · day before</span></a></li><li><a href="#email-12"><span class="n">12</span><span class="s">tonight</span><span class="w">Tue Oct 27 · 7:00 a.m. · day of</span></a></li><li><a href="#email-13"><span class="n">13</span><span class="s">You're in</span><span class="w">On registration · sends immediately</span></a></li><li><a href="#email-14"><span class="n">14</span><span class="s">Text message</span><span class="w">Tue Oct 27 · 4:00 p.m. · text, Track B only</span></a></li></ol>
-<article class="mail" id="email-1"><header><p class="when">1 &middot; On opt-in · sends immediately &middot; Not registered</p><p class="subj">You're Invited</p><p class="meta">Preview: Jamon's whole story, start to finish. And a seat with your name on it.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Hey <span class="merge" title="Merge field: first name">Dave</span>,</span></div>
+<article class="mail" id="email-1"><header><p class="when">1 &middot; On opt-in · sends immediately &middot; Not registered</p><p class="subj">You're Invited</p><p class="meta">Preview: Jamon's whole story, start to finish. And a seat with your name on it.</p></header><div class="body"><div class="para"><span class="ln">Hey <span class="merge" title="Merge field: first name">Dave</span>,</span></div>
 <div class="para"><span class="ln">You asked for the whole story.</span></div>
 <div class="para"><span class="ln">Here it is, start to finish.</span></div>
 <div class="para"><span class="ln">If you'd rather hear it from Jamon himself, he tells it on video right here:</span></div>
@@ -164,7 +165,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">P.P.S. Tomorrow, I'm going to tell you about the pizza guy down the street.</span></div>
 <div class="para"><span class="ln">About four out of every ten times I called him, I got his voicemail.</span></div>
 <div class="para"><span class="ln">You'll find out what I did about it, and why I'm calling his line on speaker in front of the whole room on the 27th.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "four out of ten."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-2"><header><p class="when">2 &middot; Sat Oct 17 · 7:00 a.m. &middot; Everyone</p><p class="subj">four out of ten</p><p class="meta">Preview: Some of your best customers already picked you. Here's how to make sure they get through.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, a retired cop and a barefoot stranger squared off in a backyard.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "four out of ten."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-2"><header><p class="when">2 &middot; Sat Oct 17 · 7:00 a.m. &middot; Everyone</p><p class="subj">four out of ten</p><p class="meta">Preview: Some of your best customers already picked you. Here's how to make sure they get through.</p></header><div class="body"><div class="para"><span class="ln">Last time, a retired cop and a barefoot stranger squared off in a backyard.</span></div>
 <div class="para"><span class="ln">And two months later, the cop was shutting off his own ads, because the work wouldn't stop coming.</span></div>
 <div class="para"><span class="ln">It all started with one fresh look at his business.</span></div>
 <div class="para"><span class="ln">That's exactly what happens at the workshop I'm inviting you to, on Tuesday, October 27, in Fishers.</span></div>
@@ -248,7 +249,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">You'd never know it from his website.</span></div>
 <div class="para"><span class="ln">You'll find out why, and what we did about it.</span></div>
 <div class="para"><span class="ln">You're going to love this one.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "the Colts' chiropractor."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-3"><header><p class="when">3 &middot; Sun Oct 18 · 7:00 a.m. &middot; Everyone</p><p class="subj">the Colts' chiropractor</p><p class="meta">Preview: The best thing about your business might be the thing nobody sees.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you about a pizza guy who couldn't answer his own phone.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "the Colts' chiropractor."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-3"><header><p class="when">3 &middot; Sun Oct 18 · 7:00 a.m. &middot; Everyone</p><p class="subj">the Colts' chiropractor</p><p class="meta">Preview: The best thing about your business might be the thing nobody sees.</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you about a pizza guy who couldn't answer his own phone.</span></div>
 <div class="para"><span class="ln">Now every call gets answered, and he's back to making pizza.</span></div>
 <div class="para"><span class="ln">And on the 27th, I'm calling his line on speaker, in front of the whole room in Fishers.</span></div>
 <div class="para"><span class="ln">You'll hear exactly what picks up.</span></div>
@@ -362,7 +363,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">Almost nobody asks it.</span></div>
 <div class="para"><span class="ln">You'll find out how it took Jamon from "nobody's ever gonna find you" to never giving out his phone number again.</span></div>
 <div class="para"><span class="ln">You're going to want to try this one on your own name.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "T-J-O-A-T."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-4"><header><p class="when">4 &middot; Mon Oct 19 · 7:00 a.m. &middot; Everyone</p><p class="subj">T-J-O-A-T</p><p class="meta">Preview: Your business name has one job. Here's how to tell if it's doing it.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, you met a chiropractor who works on the Colts.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "T-J-O-A-T."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-4"><header><p class="when">4 &middot; Mon Oct 19 · 7:00 a.m. &middot; Everyone</p><p class="subj">T-J-O-A-T</p><p class="meta">Preview: Your business name has one job. Here's how to tell if it's doing it.</p></header><div class="body"><div class="para"><span class="ln">Last time, you met a chiropractor who works on the Colts.</span></div>
 <div class="para"><span class="ln">And you'd never have known it from his website.</span></div>
 <div class="para"><span class="ln">So we put it right up front.</span></div>
 <div class="para"><span class="ln">Once his new site's live, people will know he's the best before they read a single paragraph.</span></div>
@@ -460,7 +461,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">Her name, her deck, and a question about her grandkids.</span></div>
 <div class="para"><span class="ln">You'll find out why it's one of the reasons people keep calling Jamon, and why he never has to touch it.</span></div>
 <div class="para"><span class="ln">It's the smallest thing in this whole series, and one of my favorites.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "her name, her deck."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-5"><header><p class="when">5 &middot; Tue Oct 20 · 7:00 a.m. &middot; Everyone</p><p class="subj">her name, her deck</p><p class="meta">Preview: One small thing that keeps customers coming back, and it costs you nothing.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, Jamon's van said TJOAT, and nobody could remember it.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "her name, her deck."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-5"><header><p class="when">5 &middot; Tue Oct 20 · 7:00 a.m. &middot; Everyone</p><p class="subj">her name, her deck</p><p class="meta">Preview: One small thing that keeps customers coming back, and it costs you nothing.</p></header><div class="body"><div class="para"><span class="ln">Last time, Jamon's van said TJOAT, and nobody could remember it.</span></div>
 <div class="para"><span class="ln">Now it says GottaCallJack.com, and nobody forgets it.</span></div>
 <div class="para"><span class="ln">One new name.</span></div>
 <div class="para"><span class="ln">That's the kind of thing we find on the big screen on the 27th, in Fishers.</span></div>
@@ -552,7 +553,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">You'll find out why that turned out to be the best news its owner ever got.</span></div>
 <div class="para"><span class="ln">And what he'd been sitting on the whole time.</span></div>
 <div class="para"><span class="ln">This one surprised even me.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "$4.58."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-6"><header><p class="when">6 &middot; Wed Oct 21 · 7:00 a.m. &middot; Everyone</p><p class="subj">$4.58</p><p class="meta">Preview: The money in your business might be hiding in a number nobody's run for you yet.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, Jamon's thank-you note asked about the grandkids, and never asked for a thing.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "$4.58."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-6"><header><p class="when">6 &middot; Wed Oct 21 · 7:00 a.m. &middot; Everyone</p><p class="subj">$4.58</p><p class="meta">Preview: The money in your business might be hiding in a number nobody's run for you yet.</p></header><div class="body"><div class="para"><span class="ln">Last time, Jamon's thank-you note asked about the grandkids, and never asked for a thing.</span></div>
 <div class="para"><span class="ln">It's one of a handful of small changes that gave his crew more work than they could handle.</span></div>
 <div class="para"><span class="ln">Small changes like that are what we hunt for on the 27th, in Fishers.</span></div>
 <div class="para cta-para" data-end="A"><span class="ln">If you haven't saved your seat yet, here it is:</span><span class="ln"><a href="fishers-registration.html">Save my free seat</a></span></div>
@@ -651,7 +652,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">Most owners haven't noticed it yet.</span></div>
 <div class="para"><span class="ln">You'll find out how few are doing anything about it, and why that's good news for you.</span></div>
 <div class="para"><span class="ln">You're going to like where this one lands.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "two or three in a hundred."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-7"><header><p class="when">7 &middot; Thu Oct 22 · 7:00 a.m. &middot; Everyone</p><p class="subj">two or three in a hundred</p><p class="meta">Preview: When your next customer asks their phone who's the best, whose name comes back?</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, a baker who was losing $4.58 a box found out he was sitting on about $673,000 a year.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "two or three in a hundred."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-7"><header><p class="when">7 &middot; Thu Oct 22 · 7:00 a.m. &middot; Everyone</p><p class="subj">two or three in a hundred</p><p class="meta">Preview: When your next customer asks their phone who's the best, whose name comes back?</p></header><div class="body"><div class="para"><span class="ln">Last time, a baker who was losing $4.58 a box found out he was sitting on about $673,000 a year.</span></div>
 <div class="para"><span class="ln">Same bread.</span></div>
 <div class="para"><span class="ln">Same oven.</span></div>
 <div class="para"><span class="ln">He found it at my last workshop in Fishers.</span></div>
@@ -730,7 +731,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">I sent him one text message.</span></div>
 <div class="para"><span class="ln">You'll find out the two words he sent back, and why I'm after that same reaction on the 27th.</span></div>
 <div class="para"><span class="ln">This one still makes me smile.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "holy cow."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-8"><header><p class="when">8 &middot; Fri Oct 23 · 7:00 a.m. &middot; Everyone</p><p class="subj">holy cow</p><p class="meta">Preview: Picture opening your own website and saying "holy cow."</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you only two or three in a hundred business owners are doing this in a way that matters.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "holy cow."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-8"><header><p class="when">8 &middot; Fri Oct 23 · 7:00 a.m. &middot; Everyone</p><p class="subj">holy cow</p><p class="meta">Preview: Picture opening your own website and saying "holy cow."</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you only two or three in a hundred business owners are doing this in a way that matters.</span></div>
 <div class="para"><span class="ln">Which means you're not behind.</span></div>
 <div class="para"><span class="ln">You're early.</span></div>
 <div class="para"><span class="ln">On the 27th, in Fishers, you'll try it yourself, on your own phone, before you leave.</span></div>
@@ -813,7 +814,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">His customers kept asking him for something he wasn't really selling.</span></div>
 <div class="para"><span class="ln">You'll find out how we turned it into a second business in about an hour.</span></div>
 <div class="para"><span class="ln">And you'll get to meet him on the 27th.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "a second business in an hour."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-9"><header><p class="when">9 &middot; Sat Oct 24 · 7:00 a.m. &middot; Everyone</p><p class="subj">a second business in an hour</p><p class="meta">Preview: The thing your customers keep asking for might be your next business.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, a piano player named Bruce got his whole show on one page.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "a second business in an hour."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-9"><header><p class="when">9 &middot; Sat Oct 24 · 7:00 a.m. &middot; Everyone</p><p class="subj">a second business in an hour</p><p class="meta">Preview: The thing your customers keep asking for might be your next business.</p></header><div class="body"><div class="para"><span class="ln">Last time, a piano player named Bruce got his whole show on one page.</span></div>
 <div class="para"><span class="ln">Tap his wig, and it flips to rock mode.</span></div>
 <div class="para"><span class="ln">His reply was two words: holy cow.</span></div>
 <div class="para"><span class="ln">On the 27th, in Fishers, somebody in the room is going to say it again.</span></div>
@@ -887,7 +888,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">It belongs to my buddy Daegan Smith.</span></div>
 <div class="para"><span class="ln">It cost him $80,000 and six months, and every thousand leads it brought in made him $15,000.</span></div>
 <div class="para"><span class="ln">You'll find out why it doesn't take that anymore.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "$80,000 and six months."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-10"><header><p class="when">10 &middot; Sun Oct 25 · 7:00 a.m. &middot; Everyone</p><p class="subj">$80,000 and six months</p><p class="meta">Preview: What cost $80,000 and six months back then is within reach of a one-person shop now.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, a wedding photographer named Ian found a second business hiding inside his first one.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "$80,000 and six months."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-10"><header><p class="when">10 &middot; Sun Oct 25 · 7:00 a.m. &middot; Everyone</p><p class="subj">$80,000 and six months</p><p class="meta">Preview: What cost $80,000 and six months back then is within reach of a one-person shop now.</p></header><div class="body"><div class="para"><span class="ln">Last time, a wedding photographer named Ian found a second business hiding inside his first one.</span></div>
 <div class="para"><span class="ln"><b>Headshot Plan.</b></span></div>
 <div class="para"><span class="ln">We built it in about an hour.</span></div>
 <div class="para"><span class="ln">Ian will be in the room on the 27th, in Fishers.</span></div>
@@ -958,7 +959,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">No fine print.</span></div>
 <div class="para"><span class="ln">You'll also find out why you shouldn't wait for the next one.</span></div>
 <div class="para"><span class="ln">You'll want to read this one.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "why it's free."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-11"><header><p class="when">11 &middot; Mon Oct 26 · 7:00 a.m. · day before &middot; Everyone</p><p class="subj">why it's free</p><p class="meta">Preview: Tomorrow night in Fishers. What you walk out with, whether we ever work together or not.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you about my buddy Daegan.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "why it's free."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-11"><header><p class="when">11 &middot; Mon Oct 26 · 7:00 a.m. · day before &middot; Everyone</p><p class="subj">why it's free</p><p class="meta">Preview: Tomorrow night in Fishers. What you walk out with, whether we ever work together or not.</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you about my buddy Daegan.</span></div>
 <div class="para"><span class="ln">He spent six months and $80,000 building a system that made him $15,000 for every thousand leads.</span></div>
 <div class="para"><span class="ln">Tomorrow night, you'll see what that takes now.</span></div>
 <div class="para"><span class="ln">Live, in Fishers.</span></div>
@@ -1035,7 +1036,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">P.P.S. Tomorrow morning, I'm going to send you one short email.</span></div>
 <div class="para"><span class="ln">Everything you need for the night, in one place.</span></div>
 <div class="para"><span class="ln">See you soon.</span></div>
-<div class="para"><span class="ln">Look for my email with the subject line "tonight."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-12"><header><p class="when">12 &middot; Tue Oct 27 · 7:00 a.m. · day of &middot; Everyone</p><p class="subj">tonight</p><p class="meta">Preview: Tonight in Fishers. A few businesses go up on the big screen. Maybe yours.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you the honest reason tonight is free.</span></div>
+<div class="para"><span class="ln">Look for my email with the subject line "tonight."</span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-12"><header><p class="when">12 &middot; Tue Oct 27 · 7:00 a.m. · day of &middot; Everyone</p><p class="subj">tonight</p><p class="meta">Preview: Tonight in Fishers. A few businesses go up on the big screen. Maybe yours.</p></header><div class="body"><div class="para"><span class="ln">Last time, I told you the honest reason tonight is free.</span></div>
 <div class="para"><span class="ln">Every business we work on in that room becomes the next story.</span></div>
 <div class="para"><span class="ln">Tonight, the next one gets written.</span></div>
 <div class="para"><span class="ln">Maybe it's yours.</span></div>
@@ -1082,7 +1083,7 @@ ol.toc .w{font-size:14px;color:var(--soft);grid-column:2}
 <div class="para"><span class="ln">And if you want to bring a friend who runs a business, there's still time.</span></div>
 <div class="para"><span class="ln">Better they're there tonight than hearing about it from you tomorrow.</span></div>
 <div class="para"><span class="ln">Send them here this morning to grab their own seat:</span></div>
-<div class="para"><span class="ln"><a href="fishers-registration.html">Save a seat for a friend</a></span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-13"><header><p class="when">13 &middot; On registration · sends immediately &middot; Registered</p><p class="subj">You're in</p><p class="meta">Preview: Tuesday, October 27, Fishers. Where, when, and where to park.</p><p class="meta">From: Jimmy</p></header><div class="body"><div class="para"><span class="ln"><span class="merge" title="Merge field: first name">Dave</span>, you're in.</span></div>
+<div class="para"><span class="ln"><a href="fishers-registration.html">Save a seat for a friend</a></span></div></div></div></article><p class="top"><a href="#">Back to the list</a></p><article class="mail" id="email-13"><header><p class="when">13 &middot; On registration · sends immediately &middot; Registered</p><p class="subj">You're in</p><p class="meta">Preview: Tuesday, October 27, Fishers. Where, when, and where to park.</p></header><div class="body"><div class="para"><span class="ln"><span class="merge" title="Merge field: first name">Dave</span>, you're in.</span></div>
 <div class="para"><span class="ln">Thanks for grabbing a seat.</span></div>
 <div class="para"><span class="ln">Here's everything you need.</span></div>
 <div class="para"><span class="ln"><b>When:</b> Tuesday, October 27, <span class="open">TIME</span></span><span class="ln"><b>Where:</b> <span class="open">VENUE NAME</span>, <span class="open">ADDRESS</span>, Fishers, Indiana</span><span class="ln"><b>Parking:</b> <span class="open">PARKING</span></span><span class="ln"><b>Cost:</b> free</span><span class="ln"><b>Bring:</b> your phone. That's it.</span></div>
