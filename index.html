@@ -28,6 +28,10 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
 .btn:hover{background:var(--bg);color:var(--ink)}
 .foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
 </style>
 </head><body><div class="wrap">
 
@@ -36,6 +40,24 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 <h1>Daegan Smith</h1>
 <p>Direct response marketer.</p>
 </header>
+
+<figure class="qotd" id="qotd" hidden>
+<p class="kicker">Quote of the day</p>
+<blockquote id="qotd-text"></blockquote>
+<figcaption id="qotd-by"></figcaption>
+<a href="quotes/">All the quotes &rarr;</a>
+</figure>
+<script>
+// One quote a day from the master list, the same for everyone on a given day.
+fetch("quotes/daily.json").then(function(r){return r.json();}).then(function(list){
+  if(!list.length)return;
+  var d=new Date(),day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);
+  var q=list[day%list.length];
+  document.getElementById("qotd-text").textContent=q.text;
+  document.getElementById("qotd-by").textContent="— "+q.by;
+  document.getElementById("qotd").hidden=false;
+}).catch(function(){});
+</script>
 
 <section style="border-top:none;margin-top:16px;padding-top:0">
 <div class="cards">

@@ -154,6 +154,50 @@ def build_section(name, cfg):
     return len(entries)
 
 
+def build_quotes():
+    """quotes/index.html lists every quote; quotes/daily.json feeds the home page."""
+    import json
+
+    quotes = json.loads((SRC / "quotes.json").read_text())
+    out_dir = ROOT / "quotes"
+    out_dir.mkdir(exist_ok=True)
+
+    items = []
+    for q in quotes:
+        if q.get("list"):
+            lines = "".join(f"<li>{html.escape(l)}</li>" for l in q["text"].split("\n"))
+            text = f"<ol>{lines}</ol>"
+        else:
+            text = f"<p>{html.escape(q['text'])}</p>"
+        by = f'<p class="by">{html.escape(q["by"])}</p>' if q["by"] else ""
+        items.append(f'<blockquote class="q">{text}{by}</blockquote>')
+
+    body = (
+        '<p class="kicker">The master list</p><h1>Quotes</h1>'
+        f"<p>{len(quotes)} quotes from my master list.</p>"
+        + "".join(items)
+    )
+    extra_css = (
+        "<style>.q{margin:0;padding:22px 0;border-top:1px solid var(--rule)}"
+        ".q p{margin:0 0 8px}.q .by{font-size:15px;font-weight:bold;color:var(--soft)}"
+        ".q .by::before{content:'\\2014\\00a0'}</style>"
+    )
+    (out_dir / "index.html").write_text(
+        page("Quotes", body, [("Home", "/")]).replace("</head>", extra_css + "</head>")
+    )
+
+    # The home page shows one a day: short, attributed, and fit for a front page.
+    daily = [
+        {"text": q["text"], "by": q["by"]}
+        for q in quotes
+        if q["by"] and not q.get("list") and len(q["text"].split()) <= 30
+        and "fuck" not in q["text"].lower()
+    ]
+    (out_dir / "daily.json").write_text(json.dumps(daily, ensure_ascii=False))
+    return len(quotes), len(daily)
+
+
 if __name__ == "__main__":
     for name, cfg in SECTIONS.items():
         print(name, build_section(name, cfg), "pages")
+    print("quotes", *build_quotes())
