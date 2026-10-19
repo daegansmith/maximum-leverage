@@ -13,7 +13,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Ve
 .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px}
 .top a{color:var(--ink);font-weight:bold}
 .top span{color:var(--soft)}
-.row{display:grid;grid-template-columns:1fr 1fr;border:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));border:2px solid var(--ink)}
 .row button{font:inherit;font-size:15px;font-weight:bold;padding:10px 6px;background:var(--bg);color:var(--ink);border:0;cursor:pointer}
 .row button+button{border-left:2px solid var(--ink)}
 .row button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
@@ -21,12 +21,13 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Ve
 iframe{flex:1;width:100%;border:0;background:var(--bg)}
 </style></head><body>
 <div class="bar"><div class="in">
-<div class="top"><a href="./#fishers">&larr; Fishers Funnel</a><span id="note">Original + Skills: revised Oct 19, cold-read twice</span></div>
+<div class="top"><a href="./#fishers">&larr; Fishers Funnel</a><span id="note"></span></div>
 <div class="row" role="group" aria-label="Which page">
 <button type="button" data-page="registration" aria-pressed="true">Registration</button>
+<button type="button" data-page="registration-short" aria-pressed="false">Registration, Short</button>
 <button type="button" data-page="thankyou" aria-pressed="false">Thank-You</button>
 </div>
-<div class="row" role="group" aria-label="Which version">
+<div class="row" id="vers" role="group" aria-label="Which version">
 <button type="button" data-ver="live" aria-pressed="false">Original (Oct 15)</button>
 <button type="button" data-ver="oct19" aria-pressed="true">Original + Skills (Oct 19)</button>
 </div>
@@ -34,14 +35,18 @@ iframe{flex:1;width:100%;border:0;background:var(--bg)}
 <iframe id="view" title="Page preview" src="fishers-registration-oct19.html"></iframe>
 <script>
 (function(){
-  var page='registration',ver='oct19',f=document.getElementById('view');
+  var page='registration',ver='oct19',f=document.getElementById('view'),vers=document.getElementById('vers'),note=document.getElementById('note');
   function go(){
-    f.src='fishers-'+page+(ver==='oct19'?'-oct19':'')+'.html';
+    var short=page==='registration-short';
+    vers.hidden=short;
+    f.src='fishers-'+page+(!short&&ver==='oct19'?'-oct19':'')+'.html';
+    note.textContent=short?'The short version (original only)':(ver==='oct19'?'Original + Skills, Oct 19':'Original, Oct 15');
     document.querySelectorAll('[data-page]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-page')===page)});
     document.querySelectorAll('[data-ver]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-ver')===ver)});
   }
   document.querySelectorAll('[data-page]').forEach(function(b){b.addEventListener('click',function(){page=b.getAttribute('data-page');go()})});
   document.querySelectorAll('[data-ver]').forEach(function(b){b.addEventListener('click',function(){ver=b.getAttribute('data-ver');go()})});
+  go();
 })();
 </script>
 </body></html>
