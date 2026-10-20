@@ -40,9 +40,9 @@ iframe{flex:1;width:100%;border:0;background:var(--bg)}
   function go(){
     var short=page==='registration-short';
     vers.hidden=short;
-    var suf=short?'':(ver==='live'?'':(ver==='oct20'&&page==='registration'?'-oct20':'-oct19'));
+    var suf=short?'':(ver==='live'?'':(ver==='oct20'?'-oct20':'-oct19'));
     f.src='fishers-'+page+suf+'.html';
-    note.textContent=short?'The short version (original only)':(ver==='oct20'?(page==='registration'?'With Jimmy and Paul, Oct 20':'Thank-you page unchanged since Oct 19'):(ver==='oct19'?'Original + Skills, Oct 19':'Original, Oct 15'));
+    note.textContent=short?'The short version (original only)':(ver==='oct20'?'With Jimmy and Paul, Oct 20, with the live GoHighLevel form':(ver==='oct19'?'Original + Skills, Oct 19':'Original, Oct 15'));
     document.querySelectorAll('[data-page]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-page')===page)});
     document.querySelectorAll('[data-ver]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-ver')===ver)});
   }

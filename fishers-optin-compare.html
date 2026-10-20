@@ -54,6 +54,10 @@ ol li{margin-bottom:14px}
 .cta{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;text-align:center;text-decoration:none;margin:24px 0 6px}
 .cta:hover{background:var(--bg);color:var(--ink)}
 .cta:focus-visible{outline:3px solid var(--soft);outline-offset:3px}
+.ghl{margin:10px 0 0}
+.ghl iframe{display:block;width:100%;border:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ghl{background:#FFFFFF;padding:12px}}
+:root[data-theme="dark"] .ghl{background:#FFFFFF;padding:12px}
 </style></head><body>
 <div class="switch">
   <div class="switch-in">
@@ -416,12 +420,10 @@ ol li{margin-bottom:14px}
 <p>Everything since came down to that one decision.</p>
 <p>Put your email in and see what he saw.</p>
 
-<form class="form" id="form-skills20" onsubmit="event.preventDefault()">
-<input id="skills20-name" placeholder="First Name" aria-label="First Name">
-<input id="skills20-email" placeholder="Email" aria-label="Email">
-<button type="submit">Show Me What He Saw</button>
+<div class="ghl" id="form-skills20">
+<iframe data-ghl-src="https://api.leadconnectorhq.com/widget/form/8Qt2X0Fm8xSYsKHBRyjF" data-ghl-page="optin-oct20" style="height:270px" id="inline-8Qt2X0Fm8xSYsKHBRyjF" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Fishers Oct 27 · Opt-In" data-height="270" data-layout-iframe-id="inline-8Qt2X0Fm8xSYsKHBRyjF" data-form-id="8Qt2X0Fm8xSYsKHBRyjF" title="Fishers Oct 27 · Opt-In"></iframe>
+</div>
 <div class="exp">Jamon's full story arrives in about a minute, subject line "You're Invited."</div>
-</form>
 
 <p class="sign">Jimmy</p>
 
@@ -462,4 +464,15 @@ ol li{margin-bottom:14px}
   show(start,true);
 })();
 </script>
+<script>
+(function(){
+  var q=location.search.slice(1);
+  var hasUtm=/(^|&)utm_/.test(q);
+  document.querySelectorAll('iframe[data-ghl-src]').forEach(function(f){
+    var extra=hasUtm?q:'utm_source=site&utm_medium=page&utm_campaign=fishers-oct27&utm_content='+encodeURIComponent(f.getAttribute('data-ghl-page'))+(q?'&'+q:'');
+    f.src=f.getAttribute('data-ghl-src')+'?'+extra;
+  });
+})();
+</script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </body></html>
