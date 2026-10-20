@@ -11,7 +11,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Ve
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bar)}
 .switch{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bar);border-bottom:2px solid var(--ink);padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .switch-in{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
-.tabs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:2px solid var(--ink)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink)}
 .tabs button{font:inherit;font-size:15px;font-weight:bold;padding:10px 8px;background:var(--bg);color:var(--ink);border:0;cursor:pointer;line-height:1.3}
 .tabs button+button{border-left:2px solid var(--ink)}
 @media (max-width:420px){.tabs button{font-size:13px;padding:10px 4px}}
@@ -51,6 +51,9 @@ ol li{margin-bottom:14px}
 .alts b{display:block;font-size:13px;color:var(--soft);font-weight:bold}
 @media (max-width:600px){h1{font-size:34px}.wrap{padding-block:28px 64px}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:auto}}
+.cta{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;text-align:center;text-decoration:none;margin:24px 0 6px}
+.cta:hover{background:var(--bg);color:var(--ink)}
+.cta:focus-visible{outline:3px solid var(--soft);outline-offset:3px}
 </style></head><body>
 <div class="switch">
   <div class="switch-in">
@@ -58,6 +61,7 @@ ol li{margin-bottom:14px}
       <button type="button" id="btn-live" aria-pressed="true" data-v="live">Original</button>
       <button type="button" id="btn-skills" aria-pressed="false" data-v="skills">Skills</button>
       <button type="button" id="btn-combined" aria-pressed="false" data-v="combined">Combined</button>
+      <button type="button" id="btn-skills20" aria-pressed="false" data-v="skills20">Skills + Buttons</button>
     </div>
     <p class="score" id="score">Blind grade: voice 5/10, conversion C · Cold owner: "Maybe"</p>
   </div>
@@ -305,13 +309,140 @@ ol li{margin-bottom:14px}
 </div>
 </main>
 
+<main id="skills20" class="wrap one" hidden>
+<p class="kicker">For Indiana Business Owners Who've Built Something Good... That Not Enough People Can See Yet</p>
+
+<h1>Two Months After A Barefoot Stranger Told Him "Nobody's Ever Gonna Find You," This Retired Indianapolis Cop Had To Shut Off His Own Ads</h1>
+
+<p>He didn't take a course.</p>
+<p>He didn't figure out the internet.</p>
+<p>Somebody saw what he couldn't see from inside his own business.</p>
+<p>Watch what it was.</p>
+
+<div class="video"><div class="play"></div>JAMON'S VIDEO<small>Short cut of his testimonial. Captions on.</small></div>
+<a class="cta" href="#form-skills20">Get The Rest Of Jamon's Story</a>
+<p class="exp">Free. It lands in your inbox in about a minute.</p>
+
+
+<h2>The Morning A Stranger Walked Out Barefoot And Called His Baby Ugly</h2>
+
+<p>Jamon was down on one knee in the clay, building a gazebo.</p>
+<p>Busiest he'd ever been.</p>
+<p>Still barely keeping the lights on.</p>
+<p>The back door slapped open.</p>
+<p>Out came a guy with no shoes and hair going six directions.</p>
+<p>He didn't say hello.</p>
+<p>He pointed at the truck.</p>
+<p>"T-J-O-A-T? Nobody's ever gonna find you."</p>
+<p>Jamon's jaw locked up.</p>
+<p>Hands at his sides, in fists.</p>
+<p>That barefoot stranger was me.</p>
+<p>Ten minutes later I came back out with a laptop.</p>
+<p>On the screen was his business.</p>
+<p>Same name. Same work.</p>
+<p>Except now it looked like the company you'd call if your own house needed fixing.</p>
+<p>He read it twice.</p>
+<p>Then I showed him one more thing.</p>
+<p>GottaCallJack.com.</p>
+<p>All they gotta remember is they gotta call Jack.</p>
+<p>He waived his fee for the whole job, right there.</p>
+<p>About twelve thousand dollars.</p>
+<p>Two months later he was on the radio, with a jingle and a TV spot running in Indianapolis.</p>
+<p>Then he had to turn the ads off.</p>
+<p>Not because they weren't working.</p>
+<p>Because the crew couldn't keep up.</p>
+
+<div class="quote">"Remember when I couldn't grow because there was no time? Now there's no time because we're growing."<div class="who">Jamon Jack, GottaCallJack.com</div></div>
+<a class="cta" href="#form-skills20">Show Me What He Saw</a>
+<p class="exp">Free. Just your name and email.</p>
+
+
+<h2>What He Saw On That Laptop Is Sitting In Your Business Right Now</h2>
+
+<p>It isn't something you did wrong.</p>
+<p>Nobody can see their own business from the inside.</p>
+<p>You're too close to it, the same way Jamon was too close to the side of his own truck.</p>
+<p>And this year, the way people find a business changed.</p>
+<p>More of them ask a question and take the first answer they get.</p>
+<p>The owners who get named in that answer are about to have Jamon's problem.</p>
+<p>Too much work.</p>
+<p>Picture that at your place.</p>
+<p>The phone ringing with more than you can take.</p>
+<p>A calendar booked out for weeks.</p>
+<p>Lying in bed thinking about what to build next, not how to get through next month.</p>
+<p>For Jamon, that's not a daydream.</p>
+<p>That's a regular Tuesday.</p>
+
+<h2>Put Your Email In, And In The Next Ten Minutes You'll Discover:</h2>
+
+<ul>
+<li>The two-word fix that made Jamon's phone number unnecessary, so customers remember him without trying. (Hint: it was painted on the side of his truck the whole time.)</li>
+<li>Why a one-man pizza shop that sent 4 of every 10 calls to voicemail now answers every single one, even with dough on his hands. (Hint: it took about ten minutes, and he hasn't touched it since.)</li>
+<li>The $4.58 a bread maker was losing on every box, and how that "problem" turned out to be the most valuable thing he owns. (Hint: he doesn't have a bread problem.)</li>
+<li>What a trained eye spots in your business in about ninety seconds, so you finally see it the way a brand-new customer does.</li>
+<li>How a few small changes stack up into a full calendar, so next month stops being a guess.</li>
+<li>How to become the business people get sent to when they ask "who's the best around here?", so you're the first call, not the third.</li>
+<li>Why you're not behind, even if you've never touched any of this. (Hint: Jamon hadn't either.)</li>
+</ul>
+<a class="cta" href="#form-skills20">Send Me Jamon's Story Now</a>
+<p class="exp">Free. One click and you're off the list, any time.</p>
+
+
+<h2>"I Don't Have Time To Learn Any Of This." Good. You Won't Have To.</h2>
+
+<p>That's exactly what Jamon told me.</p>
+<p>"I didn't have time to learn any of this. Jimmy, just let me drive."</p>
+<p>He didn't learn a thing.</p>
+<p>He just needed somebody who's spent twenty years learning what makes a customer pick up the phone, and who can now do in an afternoon what used to take a year.</p>
+
+<h2>Here's Everything You Get For Your Name And Email</h2>
+
+<ol>
+<li>Jamon's whole story, start to finish, in his own words. It lands in your inbox in about a minute.</li>
+<li>The 10-Minute Maestro's Process. Five steps to a phone that answers every call, day or night, the way the pizza shop's does now. <span class="slot">Slot: not built yet</span></li>
+<li>Your invitation to the live workshop in Fishers, Tuesday evening, October 27. Real local businesses get worked on live, in front of the room. Yours might be the one on the screen.</li>
+</ol>
+<a class="cta" href="#form-skills20">Yes, Send It To Me</a>
+<p class="exp">Free. It costs you an email address.</p>
+
+
+<p>It costs you an email address.</p>
+<p>If Jamon's story doesn't make you look at your own business differently, one click and you're off the list.</p>
+
+<h2>Jamon Almost Walked Off That Job</h2>
+
+<p>He was kneeling in that hole, thinking about loading the truck and going home.</p>
+<p>He stayed and listened instead.</p>
+<p>Everything since came down to that one decision.</p>
+<p>Put your email in and see what he saw.</p>
+
+<form class="form" id="form-skills20" onsubmit="event.preventDefault()">
+<input id="skills20-name" placeholder="First Name" aria-label="First Name">
+<input id="skills20-email" placeholder="Email" aria-label="Email">
+<button type="submit">Show Me What He Saw</button>
+<div class="exp">Jamon's full story arrives in about a minute, subject line "You're Invited."</div>
+</form>
+
+<p class="sign">Jimmy</p>
+
+<p class="fine">This is Jamon's story. Yours will be your own.</p>
+<p class="fine">Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p>
+
+<div class="alts">
+<h3>Alternate Headlines</h3>
+<p><b>Hook-engine, hidden belief</b>The Thing You're Proudest Of In Your Business Might Be The Reason Nobody Finds It</p>
+<p><b>Ray's formula, curiosity plus the quantified benefit</b>How A Retired Indianapolis Cop Went From Running The Numbers At Midnight To Booked Six Months Out, Without Learning A Single Thing He Didn't Already Know</p>
+</div>
+</main>
+
 <script>
 (function(){
-  var ids=['live','skills','combined'];
+  var ids=['live','skills','combined','skills20'];
   var scores={
     live:'Blind grade: voice 5/10, conversion C \u00b7 Cold owner: "Maybe"',
     skills:'Blind grade: voice 6/10 (about 8.6 uncapped), conversion B \u00b7 Cold owner: "Probably yes"',
-    combined:'Your headline, the story on the page, the early ask, the hint bullets'
+    combined:'Your headline, the story on the page, the early ask, the hint bullets',
+    skills20:'Skills, Oct 20: four buttons that jump to the form, nothing else changed'
   };
   function show(v,keepScroll){
     ids.forEach(function(id){
