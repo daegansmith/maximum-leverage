@@ -30,6 +30,7 @@ iframe{flex:1;width:100%;border:0;background:var(--bg)}
 <div class="row" id="vers" role="group" aria-label="Which version">
 <button type="button" data-ver="live" aria-pressed="false">Original (Oct 15)</button>
 <button type="button" data-ver="oct19" aria-pressed="true">Original + Skills (Oct 19)</button>
+<button type="button" data-ver="oct20" aria-pressed="false">With Jimmy And Paul (Oct 20)</button>
 </div>
 </div></div>
 <iframe id="view" title="Page preview" src="fishers-registration-oct19.html"></iframe>
@@ -39,8 +40,9 @@ iframe{flex:1;width:100%;border:0;background:var(--bg)}
   function go(){
     var short=page==='registration-short';
     vers.hidden=short;
-    f.src='fishers-'+page+(!short&&ver==='oct19'?'-oct19':'')+'.html';
-    note.textContent=short?'The short version (original only)':(ver==='oct19'?'Original + Skills, Oct 19':'Original, Oct 15');
+    var suf=short?'':(ver==='live'?'':(ver==='oct20'&&page==='registration'?'-oct20':'-oct19'));
+    f.src='fishers-'+page+suf+'.html';
+    note.textContent=short?'The short version (original only)':(ver==='oct20'?(page==='registration'?'With Jimmy and Paul, Oct 20':'Thank-you page unchanged since Oct 19'):(ver==='oct19'?'Original + Skills, Oct 19':'Original, Oct 15'));
     document.querySelectorAll('[data-page]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-page')===page)});
     document.querySelectorAll('[data-ver]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-ver')===ver)});
   }
