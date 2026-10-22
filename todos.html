@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>To-dos</title>
+<style>
+  :root { --bg:#f6f3ec; --ink:#1d1b18; --muted:#7a7268; --line:#d9d2c4; --accent:#a3301f; --card:#fffdf8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16140f; --ink:#ece6da; --muted:#9a9184; --line:#36312a; --accent:#e0634e; --card:#1e1b16; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.5 Georgia, "Times New Roman", serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 16px 80px; }
+  h1 { font:700 13px/1 ui-monospace, Menlo, monospace; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 28px; }
+  h2 { font:700 12px/1 ui-monospace, Menlo, monospace; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:32px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--line); }
+  ul { list-style:none; padding:0; margin:0; }
+  li { display:flex; gap:12px; align-items:flex-start; padding:12px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+  li input { margin-top:5px; width:18px; height:18px; accent-color:var(--accent); flex:none; cursor:pointer; }
+  li.done span.t { color:var(--muted); text-decoration:line-through; }
+  .due { color:var(--accent); }
+  .stamp { font:12px ui-monospace, Menlo, monospace; color:var(--muted); margin:0; }
+  #gate { max-width:320px; margin:18vh auto 0; text-align:center; }
+  #gate input { width:100%; padding:12px 14px; font:18px ui-monospace, Menlo, monospace; letter-spacing:.3em; text-align:center; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:6px; }
+  #gate button { margin-top:10px; width:100%; padding:11px; font:600 14px ui-monospace, Menlo, monospace; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--bg); border:0; border-radius:6px; cursor:pointer; }
+  #err { color:var(--accent); font-size:14px; min-height:20px; margin-top:10px; }
+  #app { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <form id="gate" autocomplete="off">
+    <h1>Private</h1>
+    <input id="pw" type="password" inputmode="numeric" placeholder="••••••" aria-label="Password" autofocus>
+    <button type="submit">Open</button>
+    <div id="err"></div>
+  </form>
+  <div id="app"><h1>To-dos</h1><div id="list"></div></div>
+</main>
+<script>
+// Contents are AES-GCM encrypted; the password is never stored in this file.
+const P = {"salt": "W0/IQsj53kbmj6tPdVdtEw==", "iv": "DH+irnOaM76BKQKU", "iter": 600000, "ct": "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"};
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function unlock(pw) {
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name:"PBKDF2", salt:b64(P.salt), iterations:P.iter, hash:"SHA-256" },
+    base, { name:"AES-GCM", length:256 }, false, ["decrypt"]);
+  const pt = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64(P.iv) }, key, b64(P.ct));
+  return new TextDecoder().decode(pt);
+}
+const store = {
+  get(k){ try { return JSON.parse(localStorage.getItem(k) || "{}"); } catch(e){ return {}; } },
+  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+function render(html) {
+  const list = document.getElementById("list");
+  list.innerHTML = html;
+  const done = store.get("todos-done");
+  list.querySelectorAll("li[data-id]").forEach(li => {
+    const id = li.dataset.id;
+    const box = document.createElement("input"); box.type = "checkbox"; box.checked = !!done[id];
+    const t = document.createElement("span"); t.className = "t";
+    while (li.firstChild) t.appendChild(li.firstChild);
+    li.append(box, t);
+    li.classList.toggle("done", box.checked);
+    li.addEventListener("click", e => { if (e.target !== box) box.checked = !box.checked;
+      done[id] = box.checked; li.classList.toggle("done", box.checked); store.set("todos-done", done); });
+  });
+  document.getElementById("gate").style.display = "none";
+  document.getElementById("app").style.display = "block";
+}
+document.getElementById("gate").addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = document.getElementById("err"); err.textContent = "";
+  try {
+    const pw = document.getElementById("pw").value;
+    render(await unlock(pw));
+    try { sessionStorage.setItem("todos-pw", pw); } catch(e){}
+  } catch(x) { err.textContent = "Not that one."; }
+});
+(async () => { try { const pw = sessionStorage.getItem("todos-pw"); if (pw) render(await unlock(pw)); } catch(e){} })();
+</script>
+</body>
+</html>
