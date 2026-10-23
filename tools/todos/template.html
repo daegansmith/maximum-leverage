@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>To-dos</title>
+<style>
+  :root { --bg:#f6f3ec; --ink:#1d1b18; --muted:#7a7268; --line:#d9d2c4; --accent:#a3301f; --card:#fffdf8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16140f; --ink:#ece6da; --muted:#9a9184; --line:#36312a; --accent:#e0634e; --card:#1e1b16; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.5 Georgia, "Times New Roman", serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 16px 80px; }
+  h1 { font:700 13px/1 ui-monospace, Menlo, monospace; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 28px; }
+  h2 { font:700 12px/1 ui-monospace, Menlo, monospace; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:32px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--line); }
+  ul { list-style:none; padding:0; margin:0; }
+  li { display:flex; gap:12px; align-items:flex-start; padding:12px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+  li input { margin-top:5px; width:18px; height:18px; accent-color:var(--accent); flex:none; cursor:pointer; }
+  li.done span.t { color:var(--muted); text-decoration:line-through; }
+  .due { color:var(--accent); }
+  .stamp { font:12px ui-monospace, Menlo, monospace; color:var(--muted); margin:0; }
+  #gate { max-width:320px; margin:18vh auto 0; text-align:center; }
+  #gate input { width:100%; padding:12px 14px; font:18px ui-monospace, Menlo, monospace; letter-spacing:.3em; text-align:center; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:6px; }
+  #gate button { margin-top:10px; width:100%; padding:11px; font:600 14px ui-monospace, Menlo, monospace; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--bg); border:0; border-radius:6px; cursor:pointer; }
+  #err { color:var(--accent); font-size:14px; min-height:20px; margin-top:10px; }
+  #app { display:none; }
+  .donelist li { color:var(--muted); }
+  .donelist li b { font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <form id="gate" autocomplete="off">
+    <h1>Private</h1>
+    <input id="pw" type="password" inputmode="numeric" placeholder="••••••" aria-label="Password" autofocus>
+    <button type="submit">Open</button>
+    <div id="err"></div>
+  </form>
+  <div id="app"><h1>To-dos</h1><div id="list"></div></div>
+</main>
+<script>
+// Contents are AES-GCM encrypted; the password is never stored in this file.
+const P = __PAYLOAD__;
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function unlock(pw) {
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name:"PBKDF2", salt:b64(P.salt), iterations:P.iter, hash:"SHA-256" },
+    base, { name:"AES-GCM", length:256 }, false, ["decrypt"]);
+  const pt = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64(P.iv) }, key, b64(P.ct));
+  return new TextDecoder().decode(pt);
+}
+const store = {
+  get(k){ try { return JSON.parse(localStorage.getItem(k) || "{}"); } catch(e){ return {}; } },
+  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+function render(html) {
+  const list = document.getElementById("list");
+  list.innerHTML = html;
+  const done = store.get("todos-done");
+  list.querySelectorAll("li[data-id]").forEach(li => {
+    const id = li.dataset.id;
+    const box = document.createElement("input"); box.type = "checkbox"; box.checked = !!done[id] || !!li.closest(".donelist");
+    const t = document.createElement("span"); t.className = "t";
+    while (li.firstChild) t.appendChild(li.firstChild);
+    li.append(box, t);
+    li.classList.toggle("done", box.checked);
+    li.addEventListener("click", e => { if (e.target !== box) box.checked = !box.checked;
+      done[id] = box.checked; li.classList.toggle("done", box.checked); store.set("todos-done", done); });
+  });
+  document.getElementById("gate").style.display = "none";
+  document.getElementById("app").style.display = "block";
+}
+document.getElementById("gate").addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = document.getElementById("err"); err.textContent = "";
+  try {
+    const pw = document.getElementById("pw").value;
+    render(await unlock(pw));
+    try { sessionStorage.setItem("todos-pw", pw); } catch(e){}
+  } catch(x) { err.textContent = "Not that one."; }
+});
+(async () => { try { const pw = sessionStorage.getItem("todos-pw"); if (pw) render(await unlock(pw)); } catch(e){} })();
+</script>
+</body>
+</html>
