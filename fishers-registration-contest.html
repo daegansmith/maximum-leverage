@@ -1,0 +1,1309 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fishers Copywriter Contest</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:50px max(24px,env(safe-area-inset-right,0px)) 80px max(24px,env(safe-area-inset-left,0px))}
+.back{display:inline-block;font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink);margin:0 0 26px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:42px;font-weight:900;letter-spacing:-0.5px;line-height:1.15;margin:0 0 24px;text-wrap:balance}
+h2{font-size:26px;font-weight:bold;line-height:1.25;margin:44px 0 18px;text-wrap:balance}
+h3{font-size:20px;font-weight:bold;line-height:1.3;margin:30px 0 10px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+.sub{font-size:22px;font-weight:bold;line-height:1.4;margin:0 0 24px}
+.beats p{margin:0 0 8px}
+.beats p.gap{margin-top:22px}
+.lead-in{margin:14px 0 0}
+.video{background:#111;color:#fff;aspect-ratio:16/9;max-width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:bold;text-align:center;padding:10px;margin:0 0 18px;border:1px solid var(--rule)}
+.play{width:0;height:0;border-left:24px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.video small{font-weight:normal;font-size:13px;opacity:.75}
+.under{margin:0 0 10px}
+.qhead{margin:44px 0 6px}
+.qsub{color:var(--soft);font-size:16px;margin:0 0 14px}
+.quote,blockquote{margin:24px 0 20px;padding-left:14px;border-left:3px solid var(--ink)}
+.quote p{margin:0 0 10px}
+.who{font-size:15px;color:var(--soft);margin-top:6px}
+.cta{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;text-align:center;text-decoration:none;margin:24px 0 6px}
+.cta:hover,.form button:hover{background:var(--bg);color:var(--ink)}
+.cta:focus-visible,.form button:focus-visible{outline:3px solid var(--soft);outline-offset:3px}
+.cta-note,.exp{font-size:15px;color:var(--soft);text-align:center;margin:6px 0 10px}
+ul{list-style:none;padding:0;margin:0 0 22px}
+li{padding-left:22px;position:relative;margin-bottom:14px}
+li:before{content:"\2022";position:absolute;left:4px}
+.form{display:flex;flex-direction:column;gap:6px;margin:10px 0 0}
+.form label{font-weight:bold;font-size:16px;margin-top:8px}
+.form .why{display:block;font-weight:normal;color:var(--soft);font-size:15px;margin:0}
+.form input,.form textarea{display:block;width:100%;font:inherit;font-size:17px;padding:12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);border-radius:0;margin:0 0 4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}
+.row>div,.row3>div{min-width:0;display:flex;flex-direction:column;gap:6px}
+.wish{font-size:20px;font-weight:bold;line-height:1.4;margin:6px 0 4px}
+.form button{display:block;width:100%;font:inherit;font-weight:bold;font-size:18px;padding:16px;background:var(--ink);color:var(--bg);border:2px solid var(--ink);border-radius:0;margin-top:14px;cursor:pointer}
+.done{font-weight:bold;margin-top:12px}
+.details{margin:30px 0 22px}
+.details p{margin:0 0 6px}
+.callout{border:2px solid var(--ink);padding:20px 20px 4px;margin:0 0 34px}
+.callout h2{margin:0 0 12px}
+.fine{font-size:13px;color:var(--soft);margin-top:24px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 0;padding:0;list-style:none}
+.links li{padding:0;margin:0}.links li:before{content:none}
+.links a{display:inline-block;padding:10px 16px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-size:16px;font-weight:bold}
+.links a:hover{background:var(--ink);color:var(--bg)}
+@media (max-width:600px){h1{font-size:34px}.wrap{padding-top:32px}.row3{grid-template-columns:1fr 1fr}.row3>div:first-child{grid-column:1/-1}}
+@media (max-width:400px){.row{grid-template-columns:1fr}}
+h3.q{font-size:20px;margin:30px 0 10px}
+.ghl{margin:10px 0 0}
+.ghl iframe{display:block;width:100%;border:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ghl{background:#FFFFFF;padding:12px}}
+:root[data-theme="dark"] .ghl{background:#FFFFFF;padding:12px}
+
+
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bar);color:var(--barink);border-bottom:1px solid var(--rule)}
+:root{--bar:#F2F2EE;--barink:#111111;--chip:#111111;--chipink:#FFFFFF;--fill:#111111;--track:#E4E3DD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bar:#1E1E1C;--barink:#EDEBE5;--chip:#EDEBE5;--chipink:#141414;--fill:#EDEBE5;--track:#33322F;color-scheme:dark}}
+:root[data-theme="dark"]{--bar:#1E1E1C;--barink:#EDEBE5;--chip:#EDEBE5;--chipink:#141414;--fill:#EDEBE5;--track:#33322F;color-scheme:dark}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bar)}
+.bar-in{max-width:620px;margin:0 auto;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px))}
+.seg{display:grid;grid-template-columns:repeat(6,1fr);border:2px solid var(--barink)}
+.seg button{font:inherit;font-size:13px;font-weight:bold;line-height:1.2;padding:7px 4px;background:transparent;color:var(--barink);border:0;border-left:1px solid var(--rule);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0}
+.seg button:first-child{border-left:0}
+.seg button span{font-size:17px}
+.seg button[aria-pressed="true"]{background:var(--chip);color:var(--chipink)}
+.seg button:focus-visible{outline:3px solid var(--soft);outline-offset:2px}
+.top,.vnote{max-width:620px;margin:0 auto;padding:22px max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));font-size:16px;line-height:1.55;color:var(--soft)}
+.top h1{font-size:28px;color:var(--ink);margin:0 0 10px}
+.top b,.vnote b{color:var(--ink)}
+.top p,.vnote p{margin:0 0 10px}
+.score{margin:16px 0 18px}
+.sr{display:grid;grid-template-columns:118px 1fr 28px;gap:10px;align-items:center;margin:0 0 8px;color:var(--ink);font-size:15px}
+.sb{height:14px;background:var(--track);position:relative}
+.sb i{position:absolute;inset:0 auto 0 0;background:var(--fill)}
+.sv{font-weight:bold;text-align:right}
+.vnote{border-top:1px solid var(--rule);margin-top:18px}
+.vh{font-size:18px}
+.how{margin:6px 0 10px;border:2px solid var(--ink);padding:10px 14px}.how summary{cursor:pointer;color:var(--ink)}.how p{margin:10px 0 0}
+.top .back{margin:0 0 14px}
+.note{font-size:14px;color:var(--soft);font-style:italic}
+.formph{border:2px dashed var(--ink);padding:18px;margin:10px 0 0;display:flex;flex-direction:column;gap:6px}
+.formph span{font-size:15px;color:var(--soft)}
+.wrap{padding-top:30px}
+@media (max-width:520px){.seg{grid-template-columns:repeat(3,1fr)}.seg button:nth-child(4){border-left:0}.seg button:nth-child(n+4){border-top:1px solid var(--rule)}}@media (max-width:420px){.seg button{font-size:12px}.seg button span{font-size:15px}.sr{grid-template-columns:96px 1fr 26px}}
+</style></head><body>
+<div class="bar"><div class="bar-in"><div class="seg" role="group" aria-label="Version"><button type="button" data-v="ours" aria-pressed="false">Ours<span>16</span></button><button type="button" data-v="brunson" aria-pressed="false">Brunson<span>18</span></button><button type="button" data-v="jdb" aria-pressed="false">Jimmy D. Brown<span>17</span></button><button type="button" data-v="belcher" aria-pressed="false">Belcher<span>16</span></button><button type="button" data-v="council" aria-pressed="false">Council<span>15</span></button><button type="button" data-v="plank" aria-pressed="false">Plank<span>14</span></button></div></div></div>
+<div class="top"><a class="back" href="projects.html#fishers">&larr; Fishers Funnel</a>
+<h1>Who Wins The Registration Page?</h1>
+<p>Four copywriters each rewrote our Fishers registration page (the live October 20 version), and the council's six-change revision ran too. The same 100 simulated local owners read every version cold on a phone, each version blind to the others.</p>
+<div class="score"><div class="sr"><span class="sn">Brunson</span><span class="sb"><i style="width:90%"></i></span><span class="sv">18</span></div><div class="sr"><span class="sn">Jimmy D. Brown</span><span class="sb"><i style="width:85%"></i></span><span class="sv">17</span></div><div class="sr"><span class="sn">Ours</span><span class="sb"><i style="width:80%"></i></span><span class="sv">16</span></div><div class="sr"><span class="sn">Belcher</span><span class="sb"><i style="width:80%"></i></span><span class="sv">16</span></div><div class="sr"><span class="sn">Council</span><span class="sb"><i style="width:75%"></i></span><span class="sv">15</span></div><div class="sr"><span class="sn">Plank</span><span class="sb"><i style="width:70%"></i></span><span class="sv">14</span></div></div>
+<p><b>No clear winner.</b> Our own page against an almost identical revision moved 5 readers and landed 16 to 15, so a gap of one or two is noise. Brunson's +2 and Jimmy D. Brown's +1 are inside it.</p>
+<p><b>What every version shared:</b> people who said no mostly said Tuesday night (55 to 64 readers), the drive (41 to 47), or "free means a pitch" (35 to 42). No rewrite moved those numbers.</p>
+<p><b>The one lever that showed up:</b> the form. It cost registrations in four of the five versions, and the more the copy spelled out the address and website fields, the more it cost: Plank lost 4 to it, Belcher 2, Jimmy D. Brown 2, Brunson 1. Readers wanted in and said "I'll do it later."</p>
+
+<p><b>Use these for split testing.</b> Every version here is a ready option for the live split test once traffic runs. Its simulated number is the prediction the real result gets compared to: if the live page beats or trails its simulation, that gap tells us how well the simulation reads this audience. Brunson's P.S. line "it may be the last free one" isn't in our facts and comes out before it runs.</p>
+<details class="how"><summary><b>How the simulation ran</b></summary>
+<p>October 25, 2026. 100 simulated local business owners within driving distance of Fishers, varied by business, years open, team size, tech comfort, attitude, distance, Tuesday availability, age and reading habits. 57 came through the opt-in, 43 landed cold.</p>
+<p>Each version was read by four separate readers, 25 owners each, on a phone, without seeing any other version. Each owner reported: registered or not, how likely to show up, how far they read, the line that moved them, the line where they stopped, and why, in their own words.</p>
+<p>Every version is paired owner by owner against ours, so a flip is one person changing their mind. The noise check is ours against the council's near-identical revision: 5 flips, 16 to 15. A version needs to beat ours by more than two or three before we call it a win.</p>
+</details>
+</div>
+<section class="pane" data-v="ours" hidden><div class="vnote"><p class="vh"><b>Ours: 16 of 100 registered</b></p><p>The live October 20 page. The baseline every other version is paired against.</p><p>Moved readers: the pizza shop's phone, Jim's bread, Jamon's "just let me drive."</p><p>Lost readers: Tuesday night after a long day, the drive, and "free usually means a pitch."</p></div><div class="wrap">
+<p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+
+<h1>One Night In Fishers, Real Local Businesses Get Transformed Live, Right In Front Of The Room... And The Next One On The Screen Might Be Yours</h1>
+
+<div class="video"><div class="play"></div>JAMON'S STORY<small>His full testimonial from the last workshop in Fishers, September 10. Captions on.</small></div>
+
+<p class="under"><b>Click play to hear Jamon tell his story himself,</b> standing in front of a room full of local business owners at our last live workshop in Fishers. No script. Just him. He and his son Chase were getting by month to month. Then came a couple of meetings with me, Jimmy. Now they're on TV and the radio, with more business and more money than they can handle.</p>
+<div class="beats lead-in">
+<p>That happened in the room last time.</p>
+<p>On October 27, it happens again. And this time, you can be there live.</p>
+<p>Your seat is free. Save it now.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+<h2 class="qhead">"Nobody Wants To Hear Their Baby's Ugly."</h2>
+<p class="qsub">Jamon, in his own words, from the last workshop in Fishers.</p>
+<div class="quote">
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<div class="who">Jamon Jack, GottaCallJack.com</div>
+</div>
+
+<div class="beats">
+<p>He didn't have to learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Save Your Seat Now</a>
+
+<h2>Here's What Happens In The Room</h2>
+<div class="beats">
+<p>You walk in with your phone. That's it. No laptop. No homework.</p>
+<p>First, I hand you the simple rules that make everything you're about to see work. If you can talk, you can do this.</p>
+<p>You'll try it on your own phone before we move on.</p>
+<p>Then we go to work on real businesses. A few of them go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p class="gap">Here's a taste of what that looks like.</p>
+</div>
+
+<h3>The Pizza Guy Who Couldn't Answer His Own Phone</h3>
+<div class="beats">
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>And when I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>So I built him something.</p>
+<p>A phone line that answers like his best employee. It knows the menu. It gives you the specials. It takes your order and sends it straight to him.</p>
+<p><b>In the room, I call it on speaker. You'll hear it pick up.</b></p>
+</div>
+<h3>Most Missed Calls Never Call Back.</h3>
+<div class="beats">
+<p>Most people who hit a voicemail don't leave a message.</p>
+<p>They call the next place on the list.</p>
+<p>And the owner never knows they existed.</p>
+<p>He was too busy doing the work they wanted to hire him for.</p>
+<p class="gap"><b>Here's what his day looks like now.</b></p>
+<p>Every call gets answered, whether he picks up or not. No more dropping everything to grab the phone. No more digging through voicemails at closing time, wondering who he lost.</p>
+<p>The people who used to hang up now order. And he gets to make pizza again, and actually enjoy it.</p>
+<p class="gap">Picture that at your place. Every call answered. Every customer caught. One less thing pulling at you all day.</p>
+<p>That alone is worth the drive.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Be There</a>
+
+<h3>The Bread Company That Thought It Was Failing</h3>
+<div class="beats">
+<p>Jim makes bread his customers write him letters about. That's how much they love it.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live. What it costs to make. What he charges. What it costs to ship.</p>
+<p><b>He was losing $4.58 on every box he shipped.</b></p>
+<p>Here's why. Shipping costs him about the same whether a box holds three loaves or six. And everything he sold came in threes.</p>
+<p>I looked at him and said, "Jim, you don't have a bread problem. You have a box problem."</p>
+<p class="gap">That's a fix. But it wasn't the big find that night.</p>
+<p>The big find was his story.</p>
+</div>
+
+<h2>The Story You've Never Told</h2>
+<div class="beats">
+<p>Here's the part almost none of his customers knew.</p>
+<p>Jim never started baking to sell bread.</p>
+<p>When his little girl started kindergarten, she got sick. An autoimmune disease. Almost everything she loved to eat was suddenly off the table.</p>
+<p>So he set out to make her a bread she could actually eat. And enjoy.</p>
+<p>He tried fifteen times. One loaf came out right, almost by accident.</p>
+<p>She could eat it.</p>
+<p>Later, a bakery owner baked a batch with Jim's flour. His own daughter couldn't eat bread either. She could eat Jim's.</p>
+<p>That's when Jim knew he had something.</p>
+</div>
+<h3>And That Story Was Nowhere.</h3>
+<div class="beats">
+<p>Not on his website. Not on his box.</p>
+<p>Put it there, and his bread stops being just bread.</p>
+<p>It becomes the answer for people who'd given up on ever eating bread again. People who write to him, "This is the only bread I can eat after twenty years."</p>
+<p>Somebody who hasn't eaten bread in twenty years isn't comparing prices. She just found the only loaf she can eat.</p>
+<p class="gap">Jim isn't really selling bread anymore.</p>
+</div>
+<h3>He's Changing Lives.</h3>
+<div class="beats">
+<p>Same bread. Same oven. Look what that one change opens up:</p>
+</div>
+<ul>
+<li><b>Price stops being the question.</b> People pay for what this bread does for them, not what it costs to bake.</li>
+<li><b>Leads he could never reach before.</b> Companies that sell water filters, probiotics, supplements, and diet plans all want in front of the exact people who buy from Jim. And with his story, their customers become his too.</li>
+<li><b>Brand-new streams of income.</b> Partners pay to put their offers in his box. He sends his customers the products he trusts, and gets paid when they buy.</li>
+</ul>
+<div class="beats">
+<p>Add it up, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from a story that was there the whole time.</p>
+</div>
+
+<h3>Your Business Has A Story Like That.</h3>
+<div class="beats">
+<p>The reason you started. The thing you'd do even if nobody paid you. The difference your customers feel that you've never once put into words.</p>
+<p>Most owners never tell it. So their customers see one more option, and they shop on price.</p>
+</div>
+
+<h3>Yours Is Sitting There Right Now. Waiting.</h3>
+<div class="beats">
+<p>On October 27, we find yours. Live.</p>
+<p>Save your seat, and bring the story you've never told.</p>
+<p>I'll see you in the room.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat In The Room</a>
+
+<h2>No Two People Walk Out With The Same Thing</h2>
+<div class="beats">
+<p>A business doesn't walk into that room. A person does.</p>
+</div>
+<ul>
+<li><b>Bruce</b> plays piano in a bar here in Indiana. Everybody knows him. The night my wife and I went, he called us out all show long. He didn't have a website. The next day he texted me to say thanks, and I wrote back, "Practice your excited face. I'll send you something in a little bit." What I sent him was his whole show on one page. Tap his wig and it flips to rock mode. His reply: "Holy cow. I'm blown away, Jimmy."</li>
+<li><b>Ian</b> is one of the busiest wedding photographers in the state. Companies kept asking him for headshots, then waiting a whole year for the next headshot day every time they hired someone. In about an hour, we built him a second business that fixes it: Headshot Plan. Now picture the second business hiding inside yours.</li>
+<li><b>Jamon,</b> the retired cop you just heard from, got a name for his business nobody can forget: GottaCallJack.com.</li>
+</ul>
+<div class="beats">
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p class="gap">That's what happens for you on October 27.</p>
+<p>Even I don't know yet what yours will be. That's the part I love.</p>
+<p>Be there and find out.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat For October 27</a>
+
+<div class="beats lead-in">
+<p class="gap">That's just a few of them. Here's what else you'll see that night.</p>
+</div>
+
+<h2>On October 27, In The Room, You'll See:</h2>
+<ul>
+<li>Why a one-man pizza shop that sent 4 of every 10 calls to voicemail now answers every single one, even with dough on his hands, so every call to your business turns into a job. (Hint: you'll hear it pick up, on speaker.)</li>
+<li>What a trained eye spots in your business in about ninety seconds, so you finally see it the way a brand-new customer does.</li>
+<li>The one question about your business name that took Jamon from "nobody's ever gonna find you" to a name nobody forgets. (Hint: he doesn't give out his phone number anymore.)</li>
+<li>How a few small changes stack up into a full calendar, so next month stops being a guess.</li>
+<li>The $4.58 a bread maker was losing on every box, and how that "problem" turned out to be the most valuable thing he owns. (Hint: he doesn't have a bread problem.)</li>
+<li>Why you're not behind, even if you've never touched any of this. (Hint: Jamon hadn't either.)</li>
+</ul>
+
+<h2>What You Walk Away With</h2>
+<div class="beats">
+<p>You'll know how to put the right marketing and AI to work together, so you can shape your business exactly the way you want it.</p>
+<p>And you'll do it yourself, on your own phone, before you leave. That's when it clicks.</p>
+<p class="gap">You'll drive home with a handful of new directions for your business.</p>
+<p>Every time we strike gold in somebody else's business, you'll catch yourself thinking, wait. We could use that too.</p>
+<p class="gap">And you'll have the chance to see your business transformed right in front of you. Live, in the room. And afterward, if it makes sense for us to work together.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+
+<h2>Two Neighbors. One Genie.</h2>
+<div class="beats">
+<p>We met at a garage sale.</p>
+<p>Paul lives down the street from me.</p>
+<p>One Saturday he had his stuff out on the driveway, so I wandered down.</p>
+<p>I bought a few things.</p>
+<p>Then Paul quietly slipped a couple more into my bag, for free.</p>
+<p>That's Paul.</p>
+</div>
+<h3>Paul Lorkowski, The Guy Who Gives It To You Straight</h3>
+<div class="beats">
+<p>Paul built a logistics business from scratch, then sold it.</p>
+<p>For thirty years, business owners around here have called Paul when they want it straight.</p>
+<p>He watched me work on Jamon's business.</p>
+<p>Then he turned to me and said, "We could do this for other business owners."</p>
+<p>That's how this started. His idea.</p>
+<p class="gap">Remember Jim, the bread maker?</p>
+<p>Paul's the one who wouldn't let it go.</p>
+<p>"We got to help him. We got to do stuff for him."</p>
+<p>That's how Jim ended up in front of the room, and how we found the $4.58.</p>
+<p>At the last workshop, Paul made sure we held nothing back. Every owner walked out with every tool we used that night.</p>
+<p>On the 27th, he'll make sure of it again.</p>
+<p>He's also undefeated at cornhole. Just ask him.</p>
+<p><b>And on the 27th, he's in the room with me, looking at your business.</b></p>
+</div>
+<h3>Jimmy Davis, The Barefoot Guy</h3>
+<div class="beats">
+<p>You heard Jamon. Some weird guy walking out of the back of a house, barefoot.</p>
+<p>That's me.</p>
+<p>Here's what he didn't know.</p>
+<p>I've spent more than twenty years in direct response marketing. That's the kind where every word has to make the phone ring, or it gets cut.</p>
+<p>I've sold more than $20 million, most of it one phone call at a time.</p>
+<p>What I love most is figuring out why people do what they do.</p>
+<p>Sit down with me for an hour, and I'll show you why your customers call, and why some never do.</p>
+<p>This year I've done it for a retired cop, a pizza shop, a bread maker, a piano man, a wedding photographer, a law firm, and a chiropractor who works on the Indianapolis Colts.</p>
+</div>
+<a class="cta" href="#seat">Come Meet Paul And Me On October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+<h3>And The Genie</h3>
+<div class="beats">
+<p>Jamon calls me the genie.</p>
+<p>I'll take it. But I've got help: a third member of the team.</p>
+<p>It answers the phone. It writes. It researches. It builds.</p>
+<p>It never sleeps. It never calls in sick.</p>
+<p>It's how I do in an afternoon what used to take me a year.</p>
+<p>It's fast. Paul and I make sure it's right.</p>
+</div>
+<h3>So Here's Who's Looking At Your Business</h3>
+<div class="beats">
+<p>If your business goes up on the screen on October 27, that's who's working on it.</p>
+<p>Paul, me, and the genie.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+</div>
+<a class="cta" href="#seat">Save My Seat With Paul And Jimmy</a>
+<p class="cta-note">Free. If Paul sent you, he'll be looking for you at the door.</p>
+<h2>Why It's Free</h2>
+<div class="beats">
+<p>Here's the reason.</p>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p class="gap">October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<p class="gap">Save your seat. Bring your phone and your story. I'll see you in the room.</p>
+</div>
+
+<h2 id="seat">Save Your Seat</h2>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form sits here on the live page: the genie question, then name, email, mobile, business, website and address.</span></div>
+<div class="exp">Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</div>
+
+<div class="details">
+<p><b>When:</b> Tuesday, October 27 · Doors open at 6:30, we start at 7:00</p>
+<p><b>Where:</b> Launch Fishers, 12175 Visionary Way, Fishers, Indiana</p>
+<p><b>Cost:</b> Free</p>
+<p><b>Bring:</b> Your phone</p>
+</div>
+
+<p>Jimmy</p>
+<p><b>P.S.</b> Bring your phone. When that pizza shop's line picks up on speaker, you'll be picturing your own phone ringing just like that. <a href="#seat">Save your seat.</a></p>
+<h2>A Few Quick Questions</h2>
+<h3 class="q">What Kinds Of Businesses Is This For?</h3>
+<div class="beats">
+<p>Any business with customers.</p>
+<p>Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers.</p>
+<p>If people pay you, bring it.</p>
+</div>
+<h3 class="q">I'm Not Good With Technology. Is This For Me?</h3>
+<div class="beats">
+<p>If you can send a text, you can do this.</p>
+<p>Jamon's a retired cop, not a tech guy.</p>
+<p>Bring your phone. I'll show you where to tap.</p>
+</div>
+<h3 class="q">If I Get A Phone Line Like Maestro's, Will It Sound Like A Robot?</h3>
+<div class="beats">
+<p>Don't take my word for it. Listen for yourself on the 27th.</p>
+<p>It handles the order, so he only picks up when he wants to.</p>
+<p>And here's the thing. Your customers don't hate robots. They hate voicemail.</p>
+</div>
+<h3 class="q">Where Is It, And How Long Does It Take?</h3>
+<div class="beats">
+<p>Launch Fishers, Tuesday, October 27. Doors open at 6:30, and we wrap up by 9.</p>
+<p>Your "You're in" email has the address and exactly where to park.</p>
+</div>
+<h3 class="q">What Should I Bring?</h3>
+<div class="beats">
+<p>Just your phone.</p>
+<p>If you've been reading my emails, bring the numbers you jotted down too.</p>
+</div>
+<h3 class="q">Can I Bring Someone?</h3>
+<div class="beats">
+<p>Please do.</p>
+<p>Bring a business-owner friend, or whoever answers your phone.</p>
+<p>Have them save their own seat so there's a chair with their name on it.</p>
+<p>They'll thank you on the drive home.</p>
+</div>
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+
+<p class="fine">This is Jamon's story. Yours will be your own.</p>
+<p class="fine">Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p>
+
+</div></section><section class="pane" data-v="brunson" hidden><div class="vnote"><p class="vh"><b>Brunson: 18 of 100 registered</b></p><p>Story-first rewrite: new cop-and-son headline, three "Belief / New Truth" blocks, a stack of what you get, a long FAQ.</p><p>Gained 3: a plumber (the P.S.: "all you bring is your phone"), a landscaper ("Just let me drive"), a pizza shop ("I call that line on speaker").</p><p>Lost 1: a barber, to the length of the form. Truth check: the P.S. says "it may be the last free one." That's not in our facts, so it can't run as written.</p></div><div class="wrap"><p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+<h1>How A Retired Cop And His Son Went From Getting By Month To Month To TV Commercials And Radio Jingles... Without Learning A Thing About Marketing</h1>
+<p class="sub">On Tuesday Night, October 27, Real Local Businesses Get Worked On Live, Right In Front Of The Room In Fishers. Come See How It's Done. The Next One On The Screen Might Be Yours.</p>
+<div class="video"><div class="play"></div>JAMON'S STORY<small>Video plays here</small></div>
+<p>Jamon, telling it himself, in front of a room full of local business owners at our last workshop in Fishers, September 10. No script. Captions on.</p>
+<p>That's Jamon.</p>
+<p>Retired Indianapolis cop.</p>
+<p>He and his son Chase built a handyman business together, and they were getting by month to month.</p>
+<p>Then came a couple of meetings with me, Jimmy.</p>
+<p>Now they're on TV and the radio, with more business and more money than they can handle.</p>
+<p>Here's the part I want you to catch.</p>
+<p>Jamon didn't learn a thing.</p>
+<p>He didn't have the time. Four kids, another business.</p>
+<p>He sat down with somebody who knew where to look.</p>
+<p>That's the whole secret.</p>
+<p>Most owners think fixing their marketing means learning marketing.</p>
+<p>It doesn't.</p>
+<p>It means getting the right eyes on your business.</p>
+<p>On October 27, that's what happens in the room.</p>
+<div class="cta">Yes! Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<h2>This Night Is For You If...</h2>
+<p>You own a business with customers. Contractor, chiropractor, restaurant, photographer, lawyer, baker, coach, entertainer. If people pay you, bring it.</p>
+<p>You're great at the work, and you've got no time to also become a marketer.</p>
+<p>You've got a feeling there's more in your business than you're getting out of it, and you can't quite see it from the inside.</p>
+<p>You can send a text. That's all the tech you need.</p>
+<p>If that's you, keep reading. Because you're about to hear Jamon say it better than I can.</p>
+<p>"Nobody Wants To Hear Their Baby's Ugly."</p>
+<p>Jamon, in his own words, from the last workshop in Fishers.</p>
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<p>Jamon Jack, GottaCallJack.com</p>
+<p>"Just let me drive."</p>
+<p>That's the moment everything changed for him.</p>
+<p>Not when he learned something.</p>
+<p>When he let somebody who knew where to look take a look.</p>
+<p>Can you imagine what that same look might find in yours?</p>
+<div class="cta">Save My Seat In The Room</div>
+<h2>Here's How The Night Works</h2>
+<p>You walk in with your phone. That's it. No laptop. No homework.</p>
+<p>First, I hand you the simple rules that make everything you're about to see work. If you can talk, you can do this.</p>
+<p>You'll try it on your own phone before we move on.</p>
+<p>Then we go to work on real businesses. A few of them go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p>And along the way, you're going to watch three things most owners believe about their business fall apart, one at a time.</p>
+<p>Here they are.</p>
+<h2>Belief #1: "I Just Need To Work Harder."</h2>
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>And when I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>That man was not short on hard work.</p>
+<p>He was short on hands.</p>
+<p>Most people who hit a voicemail don't leave a message. They call the next place on the list. And the owner never knows they existed.</p>
+<p>So I built him something.</p>
+<p>A phone line that answers like his best employee. It knows the menu. It gives you the specials. It takes your order and sends it straight to him.</p>
+<p>Now every call gets answered, whether he picks up or not. No more digging through voicemails at closing time, wondering who he lost.</p>
+<p>The people who used to hang up now order. And he gets to make pizza again, and actually enjoy it.</p>
+<p>On October 27, I call that line on speaker. You'll hear it pick up.</p>
+<h2>The New Truth: You Don't Need More Hours. You Need Every Call Caught.</h2>
+<p>Picture that at your place. Every call answered. Every customer caught. One less thing pulling at you all day.</p>
+<p>That alone is worth the drive.</p>
+<div class="cta">Yes! I Want To Hear It Pick Up</div>
+<h2>Belief #2: "My Business Is Just Like Everybody Else's."</h2>
+<p>Jim makes bread his customers write him letters about. That's how much they love it.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live. What it costs to make. What he charges. What it costs to ship.</p>
+<p>He was losing $4.58 on every box he shipped.</p>
+<p>Shipping costs him about the same whether a box holds three loaves or six. And everything he sold came in threes.</p>
+<p>I looked at him and said, "Jim, you don't have a bread problem. You have a box problem."</p>
+<p>That's a fix. But it wasn't the big find that night.</p>
+<p>The big find was his story.</p>
+<p>When his little girl started kindergarten, she got sick. An autoimmune disease. Almost everything she loved to eat was suddenly off the table.</p>
+<p>So he set out to make her a bread she could actually eat. And enjoy.</p>
+<p>He tried fifteen times. One loaf came out right, almost by accident.</p>
+<p>She could eat it.</p>
+<p>Later, a bakery owner baked a batch with Jim's flour. His own daughter couldn't eat bread either. She could eat Jim's.</p>
+<p>That's when Jim knew he had something.</p>
+<p>And that story was nowhere. Not on his website. Not on his box.</p>
+<p>Put it there, and his bread stops being just bread. It becomes the answer for people who write to him, "This is the only bread I can eat after twenty years."</p>
+<p>Somebody who hasn't eaten bread in twenty years isn't comparing prices.</p>
+<p>Price stops being the question. Companies that sell water filters, probiotics, supplements, and diet plans all want in front of the exact people who buy from Jim. Partners pay to put their offers in his box.</p>
+<p>Add it up, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from a story that was there the whole time.</p>
+<h2>The New Truth: Your Story Is The Most Valuable Thing You Own. You Just Haven't Told It Yet.</h2>
+<p>The reason you started. The thing you'd do even if nobody paid you. The difference your customers feel that you've never once put into words.</p>
+<p>On October 27, we go looking for yours. Live.</p>
+<p>Bring the story you've never told.</p>
+<div class="cta">Save My Seat And Bring My Story</div>
+<h2>Belief #3: "I'm Not A Tech Person. This Isn't For Me."</h2>
+<p>Jamon's a retired cop, not a tech guy. He told me, "Jimmy, just let me drive."</p>
+<p>Bruce plays piano in a bar here in Indiana. He didn't have a website. I sent him his whole show on one page. Tap his wig and it flips to rock mode. His reply: "Holy cow. I'm blown away, Jimmy."</p>
+<p>Ian is one of the busiest wedding photographers in the state. In about an hour, we built him a second business: Headshot Plan.</p>
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p>And here's the thing nobody tells you.</p>
+<p>You're not behind.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters.</p>
+<p>This is early. And you're right on time.</p>
+<h2>The New Truth: If You Can Send A Text, You Can Do This. I'll Show You Where To Tap.</h2>
+<h2>Who's Looking At Your Business</h2>
+<p>If your business goes up on the screen on October 27, here's who's working on it.</p>
+<h2>Me, Jimmy. The Barefoot Guy.</h2>
+<p>You heard Jamon. Some weird guy walking out of the back of a house, barefoot.</p>
+<p>That's me.</p>
+<p>I've spent more than twenty years in direct response marketing. That's the kind where every word has to make the phone ring, or it gets cut. I've sold more than $20 million, most of it one phone call at a time.</p>
+<p>What I love most is figuring out why people do what they do.</p>
+<h2>Paul Lorkowski. The Guy Who Gives It To You Straight.</h2>
+<p>Paul lives down the street from me. We met at a garage sale. I bought a few things, and Paul quietly slipped a couple more into my bag, for free.</p>
+<p>That's Paul.</p>
+<p>He built a logistics business from scratch, then sold it. For thirty years, business owners around here have called Paul when they want it straight.</p>
+<p>He watched me work on Jamon's business, turned to me, and said, "We could do this for other business owners."</p>
+<p>That's how this started. His idea.</p>
+<h2>And The Genie.</h2>
+<p>Jamon calls me the genie. I'll take it. But I've got help.</p>
+<p>It answers the phone. It writes. It researches. It builds. It never sleeps.</p>
+<p>It's how I do in an afternoon what used to take me a year.</p>
+<p>It's fast. Paul and I make sure it's right.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+<h2>Here's Everything You Get When You Save Your Free Seat</h2>
+<p>A seat in the room with Paul and me on Tuesday night, October 27, in Fishers.</p>
+<p>The simple rules that make all of it work, so you leave doing it, not just knowing it.</p>
+<p>Your own phone, put to work before we move on, so you see it click with your own eyes.</p>
+<p>The Maestro's line, called live on speaker, so you can hear for yourself what your callers would hear.</p>
+<p>What a trained eye spots in a business in about ninety seconds, so you finally see yours the way a brand-new customer does.</p>
+<p>Real local businesses worked on live on the big screen, with the whole room pitching in. Yours might be one of them.</p>
+<p>Every tool we use that night. At the last workshop, Paul made sure every owner walked out with every one. On the 27th, he'll make sure of it again.</p>
+<p>A handful of new directions to drive home with, and that moment when you catch yourself thinking, wait. We could use that too.</p>
+<p>A chair for a business-owner friend, if you bring one.</p>
+<p>What does all that cost you?</p>
+<p>Nothing. Your seat is free.</p>
+<h2>Why Would I Do This For Free?</h2>
+<p>Fair question. Here's the honest answer.</p>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p>But know this going in.</p>
+<p>October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>So if you've been thinking "maybe next time," there may not be a free next time.</p>
+<p>Save your seat now, while it's still free.</p>
+<div class="cta">Yes! Save My Free Seat For October 27</div>
+<h2>Save Your Free Seat Right Here</h2>
+<p>Start with the genie question at the top. Give it a real answer.</p>
+<p>Then tell me who you are and where your business lives, so I know who I'm looking for at the door.</p>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form: the genie question, then name, email, mobile, business, website and address.</span></div>
+<p>Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</p>
+<p>When you save your seat, there's a chair with your name on it. And I'll be looking for you.</p>
+<p>If Paul sent you, he'll be looking for you at the door too.</p>
+<p>When: Tuesday, October 27 · Doors open at 6:30, we start at 7:00, we wrap up by 9</p>
+<p><b>Where: Launch Fishers, 12175 Visionary Way, Fishers, Indiana</b></p>
+<p><b>Cost: Free</b></p>
+<p>Bring: Your phone</p>
+<p>I'll see you in the room.</p>
+<p>Jimmy</p>
+<p>P.S. If you skimmed down here, here's the whole thing in one breath. Jamon didn't learn a thing. He sat down with somebody who knew where to look, and now he's on TV and the radio. On Tuesday, October 27, in Fishers, Paul and I go looking in real local businesses, live. Yours might be on the screen. It's free, it may be the last free one, and all you bring is your phone. Save your seat.</p>
+<p>P.P.S. When that pizza shop's line picks up on speaker, you'll be picturing your own phone ringing just like that. Bring a business-owner friend so you've got someone to talk it over with on the drive home.</p>
+<h2>A Few Quick Questions</h2>
+<h2>Is This A Sales Pitch?</h2>
+<p>It's a workshop. You'll do the work on your own phone and watch real businesses get worked on, live.</p>
+<p>Afterward, if it makes sense for us to work together, we can talk about it. If not, you drive home with every tool we used that night and a handful of new directions.</p>
+<h2>What Kinds Of Businesses Is This For?</h2>
+<p>Any business with customers.</p>
+<p>Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers.</p>
+<p>If people pay you, bring it.</p>
+<h2>I'm Not Good With Technology. Is This For Me?</h2>
+<p>If you can send a text, you can do this.</p>
+<p>Jamon's a retired cop, not a tech guy.</p>
+<p>Bring your phone. I'll show you where to tap.</p>
+<h2>If I Get A Phone Line Like Maestro's, Will It Sound Like A Robot?</h2>
+<p>Don't take my word for it. Listen for yourself on the 27th.</p>
+<p>And here's the thing. Your customers don't hate robots. They hate voicemail.</p>
+<h2>It's A Weeknight. How Long Does It Take?</h2>
+<p>Doors open at 6:30. We start at 7:00. We wrap up by 9.</p>
+<p>Your "You're in" email has the address and exactly where to park.</p>
+<h2>What Should I Bring?</h2>
+<p>Just your phone.</p>
+<p>If you've been reading my emails, bring the numbers you jotted down too.</p>
+<h2>Can I Bring Someone?</h2>
+<p>Please do.</p>
+<p>Bring a business-owner friend, or whoever answers your phone.</p>
+<p>Have them save their own seat so there's a chair with their name on it.</p>
+<p>They'll thank you on the drive home.</p>
+<div class="cta">Yes! Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<p>This is Jamon's story. Yours will be your own.</p>
+<p>Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p></div></section><section class="pane" data-v="jdb" hidden><div class="vnote"><p class="vh"><b>Jimmy D. Brown: 17 of 100 registered</b></p><p>Curiosity rewrite: the headline opens on the pizza shop and the bread maker, blind "you'll see" bullets, a "Why It's Free" answer.</p><p>Gained 3: a bar owner (Bruce's piano show on one page), a landscaper, a florist (the voicemail line plus "Why It's Free"). The steadiest lift in interest: 48 readers up, 29 down.</p><p>Lost 2: a financial advisor and a barber, both to the form asking for address and website.</p></div><div class="wrap"><p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+<h1>A Pizza Shop Sending 4 Of Every 10 Calls To Voicemail. A Bread Maker Losing $4.58 On Every Box. A Family Handyman Business With A Name That Wasn't Going To Work.</h1>
+<p class="sub">On October 27, You'll See What Was Hiding In Each One, Live In Fishers... And The Next Business On The Big Screen Might Be Yours</p>
+<div class="video"><div class="play"></div>JAMON'S STORY<small>Video plays here</small></div>
+<p>Click play. That's Jamon, a retired Indianapolis cop, standing in front of a room full of local business owners at our last workshop in Fishers. No script. Just him.</p>
+<p>He and his son Chase were getting by month to month.</p>
+<p>Now they're on TV and the radio, with more business than they can handle.</p>
+<p>And he didn't have to learn a thing.</p>
+<p>On October 27, it happens again. Your seat is free.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<h2>Here's The Truth About Your Business</h2>
+<p>You're too close to it to see it.</p>
+<p>Every owner is.</p>
+<p>You see the work. Your customers see something else. And the gap between the two is where the calls, the jobs and the money slip away.</p>
+<p>On October 27, you walk in with your phone. No laptop. No homework.</p>
+<p>I hand you the simple rules that make everything work. You try them on your own phone before we move on.</p>
+<p>Then we go to work on real businesses, up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<h2>On October 27, In The Room, You'll See:</h2>
+<p>Why a one-man pizza shop that sent 4 of every 10 calls to voicemail now answers EVERY one, even with dough on his hands. HINT: You'll hear it pick up, on speaker.</p>
+<p>What a trained eye spots in your business in about ninety seconds, so you finally see it the way a brand-new customer does.</p>
+<p>The $4.58 a bread maker was losing on every box he shipped, and the one sentence that explained it. HINT: He doesn't have a bread problem.</p>
+<p>The one question about your business name that took a retired cop from "nobody's ever gonna find you" to a name nobody forgets. NOTE: He doesn't give out his phone number anymore.</p>
+<p>Why you don't need to learn any of this to put it to work. Jamon didn't.</p>
+<p>The second business that was hiding inside one of the busiest wedding photographers in the state, found in about an hour. And how to picture the one hiding inside yours.</p>
+<p>But we're not finished yet.</p>
+<p>How a business losing money on every box turned out to be sitting on about $673,000 a year. Same bread. Same oven. HINT: The answer was on nobody's website and nobody's box.</p>
+<p>Why your customers don't actually hate talking to a machine, and the thing they DO hate that sends them to the next place on the list.</p>
+<p>What a piano man with no website got from me the next day that made him text back, "Holy cow. I'm blown away, Jimmy." HINT: Tap the wig.</p>
+<p>How a few small changes stack up into a full calendar, so next month stops being a guess.</p>
+<p>The story almost every owner has and never tells, and why telling it means your customers stop shopping you on price.</p>
+<p>Why you're not behind, even if you've never touched any of this, never built a website and don't have a free minute to learn.</p>
+<p>That's what you'll see. Here's what you'll leave with.</p>
+<p>You'll put it to work yourself, on your own phone, before you leave. That's when it clicks.</p>
+<p>You'll drive home with a handful of new directions for your business.</p>
+<p>And every time we strike gold in somebody else's business, you'll catch yourself thinking, wait. We could use that too.</p>
+<div class="cta">Save My Seat In The Room</div>
+<p>"Nobody Wants To Hear Their Baby's Ugly."</p>
+<p>Jamon, in his own words, from the last workshop in Fishers.</p>
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<p>Jamon Jack, GottaCallJack.com</p>
+<p>He didn't have to learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+<h2>What Happens When The Owner Is The Only One Who Can Answer The Phone?</h2>
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>When I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>Most people who hit a voicemail don't leave a message. They call the next place on the list. And the owner never knows they existed.</p>
+<p>So I built him something.</p>
+<p>Now every call gets answered, whether he picks up or not. And he gets to make pizza again, and actually enjoy it.</p>
+<p>In the room, I call it on speaker. You'll hear for yourself what picks up.</p>
+<p>Picture that at your place. Every call answered. Every customer caught.</p>
+<p>That alone is worth the drive.</p>
+<div class="cta">Click Here To Be There</div>
+<h2>Why Was A Bread Maker With Fan Mail Losing Money On Every Box?</h2>
+<p>Jim makes bread his customers write him letters about.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live. What it costs to make. What he charges. What it costs to ship.</p>
+<p>He was losing $4.58 on every box.</p>
+<p>I looked at him and said, "Jim, you don't have a bread problem. You have a box problem."</p>
+<p>That's a fix. But it wasn't the big find that night.</p>
+<p>The big find was something almost none of his customers knew. It wasn't on his website. It wasn't on his box.</p>
+<p>HINT: It started the year his little girl started kindergarten.</p>
+<p>Put it where people can see it, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from something that was there the whole time.</p>
+<p>On October 27, you'll hear the whole thing. Then we go looking for yours.</p>
+<h2>Your Business Has One Too</h2>
+<p>The reason you started. The thing you'd do even if nobody paid you. The difference your customers feel that you've never once put into words.</p>
+<p>Most owners never tell it. So their customers see one more option, and they shop on price.</p>
+<p>Bring yours. We'll find it in the room.</p>
+<div class="cta">Save My Seat For October 27</div>
+<h2>Three Owners. Nothing Alike.</h2>
+<p>Bruce plays piano in a bar here in Indiana. No website. The next day, I sent him his whole show on one page. Tap his wig and it flips to rock mode.</p>
+<p>Ian is one of the busiest wedding photographers in the state. In about an hour, we built him a second business: Headshot Plan.</p>
+<p>Jamon got a name nobody forgets: GottaCallJack.com.</p>
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p>Even I don't know yet what yours will be. That's the part I love.</p>
+<h2>Who's Looking At Your Business</h2>
+<p>Me. Jimmy Davis. The barefoot guy Jamon told you about.</p>
+<p>I've spent more than twenty years in direct response marketing. That's the kind where every word has to make the phone ring, or it gets cut. I've sold more than $20 million, most of it one phone call at a time.</p>
+<p>This year I've done it for a retired cop, a pizza shop, a bread maker, a piano man, a wedding photographer, a law firm, and a chiropractor who works on the Indianapolis Colts.</p>
+<p>Paul Lorkowski. My neighbor down the street. He built a logistics business from scratch, then sold it. For thirty years, business owners around here have called Paul when they want it straight.</p>
+<p>This whole thing was his idea. He watched me work on Jamon's business and said, "We could do this for other business owners." And he's the one who wouldn't let Jim's bread go.</p>
+<p>At the last workshop, Paul made sure we held nothing back. Every owner walked out with every tool we used that night. On the 27th, he'll make sure of it again.</p>
+<p>He's also undefeated at cornhole. Just ask him.</p>
+<p>And the genie. Jamon calls me the genie, and I'll take it. But I've got help. It answers the phone. It writes. It researches. It builds. It's how I do in an afternoon what used to take me a year. It's fast. Paul and I make sure it's right.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+<div class="cta">Save My Seat With Paul And Jimmy</div>
+<p>Free. If Paul sent you, he'll be looking for you at the door.</p>
+<h2>Why It's Free</h2>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p>October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<h2>Save Your Seat Now</h2>
+<p>Answer the first question, fill in the rest, and there's a chair in that room with your name on it.</p>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form: the genie question, then name, email, mobile, business, website and address.</span></div>
+<p>Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</p>
+<p>When: Tuesday, October 27 · Doors open at 6:30, we start at 7:00, we wrap up by 9</p>
+<p><b>Where: Launch Fishers, 12175 Visionary Way, Fishers, Indiana</b></p>
+<p><b>Cost: Free</b></p>
+<p>Bring: Your phone</p>
+<p>I'll see you in the room.</p>
+<p>Jimmy</p>
+<p>P.S. Bring your phone. When that pizza shop's line picks up on speaker, you'll be picturing your own phone ringing just like that.</p>
+<p>P.P.S. Remember the thing Jim's customers didn't know? Your business has one too. On the 27th, we go find it.</p>
+<h2>A Few Quick Questions</h2>
+<h2>What Kinds Of Businesses Is This For?</h2>
+<p>Any business with customers. Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers.</p>
+<p>If people pay you, bring it.</p>
+<h2>I'm Not Good With Technology. Is This For Me?</h2>
+<p>If you can send a text, you can do this. Jamon's a retired cop, not a tech guy.</p>
+<p>Bring your phone. I'll show you where to tap.</p>
+<h2>If I Get A Phone Line Like Maestro's, Will It Sound Like A Robot?</h2>
+<p>Don't take my word for it. Listen for yourself on the 27th.</p>
+<p>It handles the order, so he only picks up when he wants to.</p>
+<p>And here's the thing. Your customers don't hate robots. They hate voicemail.</p>
+<h2>Where Is It, And How Long Does It Take?</h2>
+<p>Launch Fishers, Tuesday, October 27. Doors open at 6:30, and we wrap up by 9.</p>
+<p>Your "You're in" email has the address and exactly where to park.</p>
+<h2>What Should I Bring?</h2>
+<p>Just your phone.</p>
+<p>If you've been reading my emails, bring the numbers you jotted down too.</p>
+<h2>Can I Bring Someone?</h2>
+<p>Please do. Bring a business-owner friend, or whoever answers your phone.</p>
+<p>Have them save their own seat so there's a chair with their name on it.</p>
+<p>They'll thank you on the drive home.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<p>This is Jamon's story. Yours will be your own.</p>
+<p>Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p></div></section><section class="pane" data-v="belcher" hidden><div class="vnote"><p class="vh"><b>Belcher: 16 of 100 registered</b></p><p>Sales-letter rewrite: "Attention business owners" pre-head, Dear Friend, "Pioneers get scalped," a Warning section, a P.S. stack.</p><p>Gained 2: a roofer, on the TV-and-radio headline, and the landscaper.</p><p>Lost 2: an advisor to the spelled-out form, and an electrician who read "wrap up by 9" after a ten-hour day. The most form complaints of any version (14).</p></div><div class="wrap"><p class="kicker">Attention Business Owners Within Driving Distance Of Fishers, Indiana: Once You See How Easy This Is, You'll Wonder Why You Waited So Long</p>
+<p class="kicker">Free. Live. In Person. Tuesday, October 27. Launch Fishers.</p>
+<h1>How A Retired Cop Ended Up On TV And Radio With More Business Than He Can Handle, Without Learning A Single Thing... And Why The Next Business On The Screen Might Be Yours</h1>
+<p>One free Tuesday night in Fishers. Real local businesses get worked on live, right in front of the room.</p>
+<p>No laptop. No homework. Even if you've never touched marketing or AI.</p>
+<div class="video"><div class="play"></div>JAMON'S STORY<small>Video plays here</small></div>
+<p>Click play and hear it from him. That's Jamon, standing in front of a room full of local business owners at our last workshop in Fishers, September 10. No script. Captions on.</p>
+<p>He and his son Chase were getting by month to month.</p>
+<p>Then came a couple of meetings with me.</p>
+<p>Now they're on TV and the radio, with more business and more money than they can handle.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<p><b>From: Jimmy Davis</b></p>
+<p>Re: Your free seat on Tuesday, October 27</p>
+<p>Dear Friend,</p>
+<p>Let me ask you three quick questions.</p>
+<p>Did you know most people who hit your voicemail never leave a message? They just call the next place on the list.</p>
+<p>Have you ever wondered why the business down the road has more work than it can handle, while next month still feels like a guess for you?</p>
+<p>Are you stuck because you know your marketing could be better, but you don't have one spare hour to learn any of it?</p>
+<p>If you said yes even once, keep reading.</p>
+<p>I totally understand. And it's not your fault.</p>
+<p>You're busy doing the work people pay you for. Nobody hands you a second lifetime to go learn marketing too.</p>
+<p>Jamon didn't have the time either. So he let me drive.</p>
+<p>This is what I do. So help is on the way.</p>
+<p>Here's the only thing you have to believe:</p>
+<p>You don't have to learn any of this. You just have to sit in a room with somebody who knows where to look.</p>
+<p>Here's what Jamon says about that.</p>
+<p>"Nobody Wants To Hear Their Baby's Ugly."</p>
+<p>Jamon, in his own words, from the last workshop in Fishers.</p>
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<p>Jamon Jack, GottaCallJack.com</p>
+<p>He didn't have to learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+<p>On October 27, that somebody is looking at businesses like yours.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<h2>Here's Just A Little Of What You'll See On October 27</h2>
+<p>The phone line that answers like a pizza shop's best employee, so the calls that used to die in voicemail turn into orders. (You'll hear it pick up, on speaker.)</p>
+<p>The simple math that showed a bread maker he was losing $4.58 on every box, and how that "problem" turned out to be the most valuable thing he owns.</p>
+<p>Why 4 of every 10 calls to one busy shop went to voicemail, and how to stop wondering at closing time who you lost.</p>
+<p>The one question about a business name that took Jamon to a name nobody forgets. (Hint: he doesn't give out his phone number anymore.)</p>
+<p>How one of the busiest wedding photographers in the state walked out with a second business in about an hour, and how to spot the one hiding inside yours.</p>
+<p>What a trained eye spots in your business in about ninety seconds, so you finally see it the way a brand-new customer does.</p>
+<p>Why customers who never hear your story shop you on price, and the story sitting in your business right now that changes that.</p>
+<p>The story a bread maker never told a single customer, and how it left a business losing $4.58 a box sitting on about $673,000 a year. (Hint: it was there the whole time.)</p>
+<p>Why you're not behind, even if you've never touched any of this. (Hint: Jamon hadn't either.)</p>
+<div class="cta">Yes, Save My Free Seat</div>
+<h2>Pioneers Get Scalped. Settlers Prosper.</h2>
+<p>You could figure all this out the hard way.</p>
+<p>Read everything. Watch the videos. Try things on your own business and see what breaks.</p>
+<p>Or you could spend one Tuesday night watching it done on real businesses from around here, and drive home with what works.</p>
+<p>At the last workshop, every owner walked out with every tool we used that night.</p>
+<p>Here's what happens in the room.</p>
+<p>You walk in with your phone. That's it.</p>
+<p>First, I hand you the simple rules that make everything work. If you can talk, you can do this.</p>
+<p>You try it on your own phone before we move on. That's when it clicks.</p>
+<p>Then we go to work on real businesses. A few go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p>Here are two from this year.</p>
+<h2>The Pizza Guy Who Couldn't Answer His Own Phone</h2>
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>When I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>So I built him a phone line that answers like his best employee. It knows the menu. It gives you the specials. It takes your order and sends it straight to him.</p>
+<p>Now every call gets answered, whether he picks up or not.</p>
+<p>The people who used to hang up now order. And he gets to make pizza again.</p>
+<p>In the room, I call it on speaker. You'll hear it pick up.</p>
+<h2>The Bread Maker Losing $4.58 On Every Box</h2>
+<p>Jim makes bread his customers write him letters about.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live.</p>
+<p>He was losing $4.58 on every box he shipped.</p>
+<p>That's a fix. But it wasn't the big find.</p>
+<p>The big find was his story.</p>
+<p>When his little girl started kindergarten, she got sick. An autoimmune disease. Almost everything she loved to eat was suddenly off the table.</p>
+<p>So Jim set out to make her a bread she could eat. He tried fifteen times. One loaf came out right.</p>
+<p>She could eat it.</p>
+<p>And that story was nowhere. Not on his website. Not on his box.</p>
+<p>Put it there, and his bread stops being just bread. It becomes the only loaf for people who'd given up on bread for twenty years. They're not comparing prices.</p>
+<p>Add it up, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from a story that was there the whole time.</p>
+<p>Your business has a story like that. Most owners never tell it.</p>
+<h2>Now Imagine It's Your Business On The Screen</h2>
+<p>Imagine every call answered, whether you pick up or not.</p>
+<p>Imagine customers who stop asking what it costs, because they finally see what you do for them.</p>
+<p>Imagine a business so busy, you literally have to grow.</p>
+<p>Imagine driving home Tuesday night with a handful of new directions, and every one of them yours.</p>
+<p>Imagine never having to learn any of it.</p>
+<div class="cta">Save My Seat In The Room</div>
+<h2>Here's The Real Proof</h2>
+<p>Bruce plays piano in a bar here in Indiana. He didn't have a website. What I sent him was his whole show on one page. Tap his wig and it flips to rock mode. His reply: "Holy cow. I'm blown away, Jimmy."</p>
+<p>Ian is one of the busiest wedding photographers in the state. Companies kept waiting a whole year for his next headshot day. In about an hour, we built him a second business that fixes it: Headshot Plan.</p>
+<p>Jamon, the retired cop you just heard from, got a name nobody forgets: GottaCallJack.com. Now it's TV commercials, radio spots and jingles.</p>
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p>Even I don't know yet what yours will be. That's the part I love.</p>
+<h2>I Can't Take All The Credit</h2>
+<p>This whole thing was my neighbor Paul's idea.</p>
+<p>Paul Lorkowski built a logistics business from scratch, then sold it. For thirty years, business owners around here have called Paul when they want it straight.</p>
+<p>He watched me work on Jamon's business. Then he turned to me and said, "We could do this for other business owners."</p>
+<p>He's also the one who wouldn't let Jim go. "We got to help him. We got to do stuff for him." That's how we found the $4.58.</p>
+<p>And me? I'm the barefoot guy Jamon told you about.</p>
+<p>I've spent more than twenty years in direct response marketing, the kind where every word has to make the phone ring, or it gets cut. I've sold more than $20 million, most of it one phone call at a time.</p>
+<p>This year alone: a retired cop, a pizza shop, a bread maker, a piano man, a wedding photographer, a law firm, and a chiropractor who works on the Indianapolis Colts.</p>
+<p>Jamon calls me the genie. I'll take it. But I've got help. It answers the phone. It writes. It researches. It builds. It never sleeps.</p>
+<p>It's how I do in an afternoon what used to take me a year. It's fast. Paul and I make sure it's right.</p>
+<p>On October 27, all three of us are in the room. Paul, me, and the genie.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+<div class="cta">Save My Seat With Paul And Jimmy</div>
+<p>If Paul sent you, he'll be looking for you at the door.</p>
+<h2>Why Is It Free?</h2>
+<p>Fair question. Here are the three reasons.</p>
+<p>One. Every business we work on in that room becomes the next story on a page like this one. Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story. Yours could be next.</p>
+<p>Two. It's early. Right now, maybe two or three in a hundred business owners are using this in a way that matters. Being in that room puts you early.</p>
+<p>Three. October 27 is the second workshop, and it may be the last one I do for free.</p>
+<h2>Quick Answers</h2>
+<p>What kinds of businesses is this for? Any business with customers. Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers. If people pay you, bring it.</p>
+<p>I'm not good with technology. If you can send a text, you can do this. Jamon's a retired cop, not a tech guy. Bring your phone. I'll show you where to tap.</p>
+<p>Will a phone line like Maestro's sound like a robot? Listen for yourself on the 27th. And here's the thing. Your customers don't hate robots. They hate voicemail.</p>
+<p>Is it a pitch? It's a working night. You'll do it yourself, on your own phone, before you leave. And afterward, if it makes sense for us to work together, you'll have that chance. Either way, you drive home with a handful of new directions for your business.</p>
+<p>Can I bring someone? Please do. Bring a business-owner friend, or whoever answers your phone. Have them save their own seat so there's a chair with their name on it. They'll thank you on the drive home.</p>
+<h2>Warning: Something Will Come Up</h2>
+<p>Here's how it usually goes.</p>
+<p>You read this. You think, that sounds good, I'll sign up later.</p>
+<p>Then a customer calls. A truck breaks down. Tuesday shows up, and you never saved the seat.</p>
+<p>That's how good things don't happen.</p>
+<p>It takes about a minute. Do it now, while you're thinking about it.</p>
+<h2>Here's Exactly What To Do Right Now</h2>
+<p>Fill in the form below.</p>
+<p>The first question is the genie question. Don't overthink it. Just tell me what you'd wish for.</p>
+<p>Then your name, email, mobile, your business and your website, and your address.</p>
+<p>Hit the button at the bottom.</p>
+<p>Then watch for an email with the subject line "You're in." It has the time, the address, and where to park.</p>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form: the genie question, then name, email, mobile, business, website and address.</span></div>
+<p>When: Tuesday, October 27. Doors open at 6:30, we start at 7:00, and we wrap up by 9.</p>
+<p><b>Where: Launch Fishers, 12175 Visionary Way, Fishers, Indiana</b></p>
+<p><b>Cost: Free</b></p>
+<p>Bring: Your phone, and the story you've never told</p>
+<p>I'll see you in the room.</p>
+<p>Jimmy</p>
+<p>P.S. Tuesday night comes either way. You can spend it digging through voicemails, wondering who hung up and called the next place on the list. Or you can spend it in a room where the next business on the screen might be yours. Save your seat now.</p>
+<p>P.P.S. Still thinking "I'll do it later"? I get it. Jamon didn't have time either. Four kids, another business. He let somebody who knew where to look do the looking, and now his son's business is so busy they have to grow. You deserve a night like that. Scroll up, fill in the form, and hit the button.</p>
+<p>P.P.P.S. Here it is in one breath. Free. Tuesday, October 27, at Launch Fishers. Doors 6:30, start 7:00, done by 9. Bring your phone. You'll see a pizza shop's phone pick up on speaker, a $4.58 problem turn into about $673,000 a year, and real local businesses get worked on live. October 27 may be the last one I do for free. Save your seat.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<p>Free. Takes about a minute.</p>
+<p>This is Jamon's story. Yours will be your own.</p>
+<p>Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p></div></section><section class="pane" data-v="council" hidden><div class="vnote"><p class="vh"><b>Council-revised: 15 of 100 registered</b></p><p>Our page with the six changes the copywriter council pulled from the Brunson, Clemens and Plank lens versions, applied as written, nothing else touched.</p><p>Gained 2: a plumber and the landscaper. Lost 3, for reasons that had nothing to do with the six changes.</p><p>This pairing is the noise check: two nearly identical pages, 5 readers flipped, 16 to 15.</p></div><div class="wrap">
+<p class="kicker">For Local Business Owners. Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+
+<h1>One Night In Fishers, Real Local Businesses Get Transformed Live, Right In Front Of The Room... And The Next One On The Screen Might Be Yours</h1>
+
+<p class="sub chgblock">Watch A Retired Indianapolis Cop Tell A Room Full Of Local Business Owners How His Son's Business Got So Busy It Has To Grow... Without Him Learning A Thing</p>
+
+<div class="video"><div class="play"></div>JAMON'S STORY<small>His full testimonial from the last workshop in Fishers, September 10. Captions on.</small></div>
+
+<p class="under"><b>Click play to hear Jamon tell his story himself,</b> standing in front of a room full of local business owners at our last live workshop in Fishers. No script. Just him. He and his son Chase were getting by month to month. Then came a couple of meetings with me, Jimmy. Now they're on TV and the radio, with more business and more money than they can handle.</p>
+<div class="beats lead-in">
+<p>That happened in the room last time.</p>
+<p>On October 27, it happens again. And this time, you can be there live.</p>
+<p>One Tuesday night. We start at 7:00. We wrap up by 9.</p>
+<p>Your seat is free. Save it now.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+<h2 class="qhead">"Nobody Wants To Hear Their Baby's Ugly."</h2>
+<p class="qsub">Jamon, in his own words, from the last workshop in Fishers.</p>
+<div class="quote">
+<p>"I'm a retired Indianapolis cop. My son Chase and I built a handyman business together. The Jack of All Trades.</p>
+<p>The day I met Jimmy, this guy wanders out of the back of the house, barefoot, looks at our van, and tells me our name isn't going to work.</p>
+<p>Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly. That's a business my son and I created. Our family works in it.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<div class="who">Jamon Jack, GottaCallJack.com</div>
+</div>
+
+<div class="beats">
+<p>He didn't have to learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+<p class="gap">On October 27, I'll be looking again. Live, in the room.</p>
+<p>And the next business on that screen might be yours.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Save Your Seat Now</a>
+
+<h2>Here's What Happens In The Room</h2>
+<div class="beats">
+<p>You walk in with your phone. That's it. No laptop. No homework.</p>
+<p>First, I hand you the simple rules that make everything you're about to see work. If you can talk, you can do this.</p>
+<p>You'll try it on your own phone before we move on.</p>
+<p>Then we go to work on real businesses. A few of them go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p class="gap">Here's a taste of what that looks like.</p>
+</div>
+
+<h3>The Pizza Guy Who Couldn't Answer His Own Phone</h3>
+<div class="beats">
+<p>There's a sandwich and pizza place down the street from me called Maestro's. My wife and I eat there about once a week.</p>
+<p>When I called to order, about four times out of ten it went to voicemail.</p>
+<p>And when I walked in, there he was. Phone pinned to his shoulder. Making the pizzas, taking the orders, ringing people up. All of it, himself.</p>
+<p>So I built him something.</p>
+<p>A phone line that answers like his best employee. It knows the menu. It gives you the specials. It takes your order and sends it straight to him.</p>
+<p><b>In the room, I call it on speaker. You'll hear it pick up.</b></p>
+</div>
+<h3>Most Missed Calls Never Call Back.</h3>
+<div class="beats">
+<p>Most people who hit a voicemail don't leave a message.</p>
+<p>They call the next place on the list.</p>
+<p>And the owner never knows they existed.</p>
+<p>He was too busy doing the work they wanted to hire him for.</p>
+<p class="gap"><b>Here's what his day looks like now.</b></p>
+<p>Every call gets answered, whether he picks up or not. No more dropping everything to grab the phone. No more digging through voicemails at closing time, wondering who he lost.</p>
+<p>The people who used to hang up now order. And he gets to make pizza again, and actually enjoy it.</p>
+<p class="gap">Picture that at your place. Every call answered. Every customer caught. One less thing pulling at you all day.</p>
+<p>That alone is worth the drive.</p>
+</div>
+
+<a class="cta" href="#seat">Click Here To Be There</a>
+
+<h3>The Bread Company That Thought It Was Failing</h3>
+<div class="beats">
+<p>Jim makes bread his customers write him letters about. That's how much they love it.</p>
+<p>But at the last workshop, he sat in front of the whole room and said it straight: "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>So we asked him a few questions. Live. What it costs to make. What he charges. What it costs to ship.</p>
+<p><b>He was losing $4.58 on every box he shipped.</b></p>
+<p>Here's why. Shipping costs him about the same whether a box holds three loaves or six. And everything he sold came in threes.</p>
+<p>I looked at him and said, "Jim, you don't have a bread problem. You have a box problem."</p>
+<p class="gap">That's a fix. But it wasn't the big find that night.</p>
+<p>The big find was his story.</p>
+</div>
+
+<h2>The Story You've Never Told</h2>
+<div class="beats">
+<p>Here's the part almost none of his customers knew.</p>
+<p>Jim never started baking to sell bread.</p>
+<p>When his little girl started kindergarten, she got sick. An autoimmune disease. Almost everything she loved to eat was suddenly off the table.</p>
+<p>So he set out to make her a bread she could actually eat. And enjoy.</p>
+<p>He tried fifteen times. One loaf came out right, almost by accident.</p>
+<p>She could eat it.</p>
+<p>Later, a bakery owner baked a batch with Jim's flour. His own daughter couldn't eat bread either. She could eat Jim's.</p>
+<p>That's when Jim knew he had something.</p>
+</div>
+<h3>And That Story Was Nowhere.</h3>
+<div class="beats">
+<p>Not on his website. Not on his box.</p>
+<p>Put it there, and his bread stops being just bread.</p>
+<p>It becomes the answer for people who'd given up on ever eating bread again. People who write to him, "This is the only bread I can eat after twenty years."</p>
+<p>Somebody who hasn't eaten bread in twenty years isn't comparing prices. She just found the only loaf she can eat.</p>
+<p class="gap">Jim isn't really selling bread anymore.</p>
+</div>
+<h3>He's Changing Lives.</h3>
+<div class="beats">
+<p>Same bread. Same oven. Look what that one change opens up:</p>
+</div>
+<ul>
+<li><b>Price stops being the question.</b> People pay for what this bread does for them, not what it costs to bake.</li>
+<li><b>Leads he could never reach before.</b> Companies that sell water filters, probiotics, supplements, and diet plans all want in front of the exact people who buy from Jim. And with his story, their customers become his too.</li>
+<li><b>Brand-new streams of income.</b> Partners pay to put their offers in his box. He sends his customers the products he trusts, and gets paid when they buy.</li>
+</ul>
+<div class="beats">
+<p>Add it up, and the business losing $4.58 on every box is sitting on about $673,000 a year.</p>
+<p>All from a story that was there the whole time.</p>
+</div>
+
+<h3>Your Business Has A Story Like That.</h3>
+<div class="beats">
+<p>The reason you started. The thing you'd do even if nobody paid you. The difference your customers feel that you've never once put into words.</p>
+<p>Most owners never tell it. So their customers see one more option, and they shop on price.</p>
+</div>
+
+<h3>Yours Is Sitting There Right Now. Waiting.</h3>
+<div class="beats">
+<p>On October 27, we find yours. Live.</p>
+<p>Save your seat, and bring the story you've never told.</p>
+<p>I'll see you in the room.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat In The Room</a>
+
+<h2>No Two People Walk Out With The Same Thing</h2>
+<div class="beats">
+<p>A business doesn't walk into that room. A person does.</p>
+</div>
+<ul>
+<li><b>Bruce</b> plays piano in a bar here in Indiana. Everybody knows him. The night my wife and I went, he called us out all show long. He didn't have a website. The next day he texted me to say thanks, and I wrote back, "Practice your excited face. I'll send you something in a little bit." All he'd done was say thanks. What I sent him was his whole show on one page. Tap his wig and it flips to rock mode. His reply: "Holy cow. I'm blown away, Jimmy."</li>
+<li><b>Ian</b> is one of the busiest wedding photographers in the state. Companies kept asking him for headshots, then waiting a whole year for the next headshot day every time they hired someone. In about an hour, we built him a second business that fixes it: Headshot Plan. Now picture the second business hiding inside yours.</li>
+<li><b>Jamon,</b> the retired cop you just heard from, got a name for his business nobody can forget: GottaCallJack.com.</li>
+</ul>
+<div class="beats">
+<p>None of them got a template. Each one walked out with exactly what they needed.</p>
+<p class="gap">That's what happens for you on October 27.</p>
+<p>Even I don't know yet what yours will be. That's the part I love.</p>
+<p>Be there and find out.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Seat For October 27</a>
+
+<div class="beats lead-in">
+<p class="gap">That's just a few of them. Here's what else you'll see that night.</p>
+</div>
+
+<h2>On October 27, In The Room, You'll See:</h2>
+<ul>
+<li>Why a one-man pizza shop that sent 4 of every 10 calls to voicemail now answers every single one, even with dough on his hands, so every call to your business turns into a job. (Hint: you'll hear it pick up, on speaker.)</li>
+<li>What a trained eye spots in your business in about ninety seconds, so you finally see it the way a brand-new customer does.</li>
+<li>The one question about your business name that took Jamon from "nobody's ever gonna find you" to a name nobody forgets. (Hint: he doesn't give out his phone number anymore.)</li>
+<li>How a few small changes stack up into a full calendar, so next month stops being a guess.</li>
+<li>The $4.58 a bread maker was losing on every box, and how that "problem" turned out to be the most valuable thing he owns. (Hint: he doesn't have a bread problem.)</li>
+<li>Why you're not behind, even if you've never touched any of this. (Hint: Jamon hadn't either.)</li>
+</ul>
+
+<h2>What You Walk Away With</h2>
+<div class="beats">
+<p>You'll know how to put the right marketing and AI to work together, so you can shape your business exactly the way you want it.</p>
+<p>And you'll do it yourself, on your own phone, before you leave. That's when it clicks.</p>
+<p class="gap">You'll drive home with a handful of new directions for your business.</p>
+<p>Every time we strike gold in somebody else's business, you'll catch yourself thinking, wait. We could use that too.</p>
+<p class="gap">And you'll have the chance to see your business transformed right in front of you. Live, in the room. And afterward, if it makes sense for us to work together.</p>
+</div>
+
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+
+<h2>Two Neighbors. One Genie.</h2>
+<div class="beats">
+<p>We met at a garage sale.</p>
+<p>Paul lives down the street from me.</p>
+<p>One Saturday he had his stuff out on the driveway, so I wandered down.</p>
+<p>I bought a few things.</p>
+<p>Then Paul quietly slipped a couple more into my bag, for free.</p>
+<p>That's Paul.</p>
+</div>
+<h3>Paul Lorkowski, The Guy Who Gives It To You Straight</h3>
+<div class="beats">
+<p>Paul built a logistics business from scratch, then sold it.</p>
+<p>For thirty years, business owners around here have called Paul when they want it straight.</p>
+<p>He watched me work on Jamon's business.</p>
+<p>Then he turned to me and said, "We could do this for other business owners."</p>
+<p>That's how this started. His idea.</p>
+<p class="gap">Remember Jim, the bread maker?</p>
+<p>Paul's the one who wouldn't let it go.</p>
+<p>"We got to help him. We got to do stuff for him."</p>
+<p>That's how Jim ended up in front of the room, and how we found the $4.58.</p>
+<p>At the last workshop, Paul made sure we held nothing back. Every owner walked out with every tool we used that night.</p>
+<p>On the 27th, he'll make sure of it again.</p>
+<p>He's also undefeated at cornhole. Just ask him.</p>
+<p><b>And on the 27th, he's in the room with me, looking at your business.</b></p>
+</div>
+<h3>Jimmy Davis, The Barefoot Guy</h3>
+<div class="beats">
+<p>You heard Jamon. Some weird guy walking out of the back of a house, barefoot.</p>
+<p>That's me.</p>
+<p>Here's what he didn't know.</p>
+<p>I've spent more than twenty years in direct response marketing. That's the kind where every word has to make the phone ring, or it gets cut.</p>
+<p>I've sold more than $20 million, most of it one phone call at a time.</p>
+<p>What I love most is figuring out why people do what they do.</p>
+<p>Sit down with me for an hour, and I'll show you why your customers call, and why some never do.</p>
+<p>This year I've done it for a retired cop, a pizza shop, a bread maker, a piano man, a wedding photographer, a law firm, and a chiropractor who works on the Indianapolis Colts.</p>
+</div>
+<a class="cta" href="#seat">Come Meet Paul And Me On October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+<h3>And The Genie</h3>
+<div class="beats">
+<p>Jamon calls me the genie.</p>
+<p>I'll take it. But I've got help: a third member of the team.</p>
+<p>It answers the phone. It writes. It researches. It builds.</p>
+<p>It never sleeps. It never calls in sick.</p>
+<p>It's how I do in an afternoon what used to take me a year.</p>
+<p>It's fast. Paul and I make sure it's right.</p>
+</div>
+<h3>So Here's Who's Looking At Your Business</h3>
+<div class="beats">
+<p>If your business goes up on the screen on October 27, that's who's working on it.</p>
+<p>Paul, me, and the genie.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+</div>
+<a class="cta" href="#seat">Save My Seat With Paul And Jimmy</a>
+<p class="cta-note">Free. If Paul sent you, he'll be looking for you at the door.</p>
+<h2>Why It's Free</h2>
+<div class="beats">
+<p>Here's the reason.</p>
+<p>Every business we work on in that room becomes the next story on a page like this one.</p>
+<p>Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story.</p>
+<p>Yours could be next.</p>
+<p class="gap">October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<p class="gap">Save your seat. There'll be a chair with your name on it.</p>
+<p>Bring your phone and your story. I'll see you in the room.</p>
+<p class="yes">Yes, Jimmy. Save my seat for Tuesday, October 27. I'll bring my phone.</p>
+</div>
+
+<h2 id="seat">Save Your Seat</h2>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form sits here on the live page: the genie question, then name, email, mobile, business, website and address.</span></div>
+<div class="exp">Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</div>
+
+<div class="details">
+<p><b>When:</b> Tuesday, October 27 · Doors open at 6:30, we start at 7:00</p>
+<p><b>Where:</b> Launch Fishers, 12175 Visionary Way, Fishers, Indiana</p>
+<p><b>Cost:</b> Free</p>
+<p><b>Bring:</b> Your phone</p>
+</div>
+
+<p>Jimmy</p>
+<p><b>P.S.</b> Bring your phone. When that pizza shop's line picks up on speaker, you'll be picturing your own phone ringing just like that. <a href="#seat">Save your seat.</a></p>
+<h2>A Few Quick Questions</h2>
+<h3 class="q">What Kinds Of Businesses Is This For?</h3>
+<div class="beats">
+<p>Any business with customers.</p>
+<p>Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers.</p>
+<p>If people pay you, bring it.</p>
+</div>
+<h3 class="q">I'm Not Good With Technology. Is This For Me?</h3>
+<div class="beats">
+<p>If you can send a text, you can do this.</p>
+<p>Jamon's a retired cop, not a tech guy.</p>
+<p>Bring your phone. I'll show you where to tap.</p>
+</div>
+<h3 class="q">If I Get A Phone Line Like Maestro's, Will It Sound Like A Robot?</h3>
+<div class="beats">
+<p>Don't take my word for it. Listen for yourself on the 27th.</p>
+<p>It handles the order, so he only picks up when he wants to.</p>
+<p>And here's the thing. Your customers don't hate robots. They hate voicemail.</p>
+</div>
+<h3 class="q">Where Is It, And How Long Does It Take?</h3>
+<div class="beats">
+<p>Launch Fishers, Tuesday, October 27. Doors open at 6:30, and we wrap up by 9.</p>
+<p>Your "You're in" email has the address and exactly where to park.</p>
+</div>
+<h3 class="q">What Should I Bring?</h3>
+<div class="beats">
+<p>Just your phone.</p>
+<p>If you've been reading my emails, bring the numbers you jotted down too.</p>
+</div>
+<h3 class="q">Can I Bring Someone?</h3>
+<div class="beats">
+<p>Please do.</p>
+<p>Bring a business-owner friend, or whoever answers your phone.</p>
+<p>Have them save their own seat so there's a chair with their name on it.</p>
+<p>They'll thank you on the drive home.</p>
+</div>
+<a class="cta" href="#seat">Save My Free Seat For October 27</a>
+<p class="cta-note">Free. Takes about a minute.</p>
+
+
+<p class="fine">This is Jamon's story. Yours will be your own.</p>
+<p class="fine">Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p>
+
+</div></section><section class="pane" data-v="plank" hidden><div class="vnote"><p class="vh"><b>Plank: 14 of 100 registered</b></p><p>The short version: "Two hours, one Tuesday night" headline, the least copy, every form field listed in the copy.</p><p>Gained 2: the bar owner and the landscaper.</p><p>Lost 4, all to the form: listing every field on the page made the ask feel like typing work. Interest dropped for 62 of 100 readers.</p></div><div class="wrap"><p class="kicker">Free. Live. In Person. Fishers, Indiana. Tuesday, October 27.</p>
+<h1>Two Hours. One Tuesday Night In Fishers. Real Local Businesses Get Transformed Live On The Big Screen... And Yours Might Be Next</h1>
+<p>No laptop. No homework. Nothing to learn first. Just bring your phone and watch somebody who knows where to look go to work.</p>
+<div class="video"><div class="play"></div>JAMON'S STORY<small>Video plays here</small></div>
+<p>Hi, it's Jimmy.</p>
+<p>Press play and meet Jamon.</p>
+<p>He's a retired Indianapolis cop. He and his son Chase run a handyman business.</p>
+<p>They were getting by month to month.</p>
+<p>A couple of meetings with me later, they're on TV and the radio, with more business than they can handle.</p>
+<p>And Jamon didn't learn a thing to get there. He told me, "Jimmy, just let me drive."</p>
+<p>On October 27, we do it again. Live, in a room full of local business owners.</p>
+<p>Your seat is free. Saving it takes about a minute.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<h2>Your Whole Tuesday Night, Start To Finish</h2>
+<p>6:30. Doors open. You walk in with your phone. That's it.</p>
+<p>7:00. I hand you the simple rules that make everything you're about to see work. If you can talk, you can do this. You try it on your own phone before we move on.</p>
+<p>Then we go to work on real businesses. A few of them go up on the big screen, with the whole room working on them.</p>
+<p>Maybe yours.</p>
+<p>By 9:00. We wrap. You drive home with a handful of new directions for your business, and you've already done it yourself, on your own phone.</p>
+<h2>On October 27, In The Room, You'll See:</h2>
+<p>A pizza shop's phone line pick up on speaker, give the specials, and take an order... so you stop losing the callers who hit voicemail and dial the next place on the list. (He used to send 4 of every 10 calls to voicemail.)</p>
+<p>What a trained eye spots in your business in about ninety seconds... so you finally see it the way a brand-new customer does.</p>
+<p>The one question about a business name that took Jamon to GottaCallJack.com... so he doesn't even have to give people his number anymore.</p>
+<p>Why a bread maker losing $4.58 on every box didn't have a bread problem. He had a box problem.</p>
+<p>How the story that bread maker never told left the same bread, from the same oven, sitting on about $673,000 a year.</p>
+<p>How a wedding photographer walked out with a whole second business in about an hour... so you can spot the one hiding inside yours.</p>
+<p>How a piano man with no website got his whole show on one page. Tap his wig and it flips to rock mode.</p>
+<p>How a few small changes stack up into a full calendar... so next month stops being a guess.</p>
+<p>Why you're not behind, even if you've never touched any of this. Jamon hadn't either.</p>
+<h2>What You Won't Need</h2>
+<p>You won't need a laptop. Your phone is plenty.</p>
+<p>You won't need to learn marketing first. Jamon didn't.</p>
+<p>You won't need to be good with technology. If you can send a text, you can do this.</p>
+<p>You won't need homework, or one more online course you'll never finish.</p>
+<p>You won't need to pay. It's free.</p>
+<p>You won't need to stay late. We start at 7:00 and wrap by 9.</p>
+<p>Faster than figuring it out yourself.</p>
+<p>Cheaper than hiring anybody. It's free.</p>
+<p>And more real than another webinar, because the businesses on that screen are from right around here.</p>
+<div class="cta">Save My Seat. It Takes About A Minute.</div>
+<p>"Jimmy, Just Let Me Drive."</p>
+<p>Jamon, in his own words, from the last workshop in Fishers, September 10.</p>
+<p>"I didn't have time to learn any of this. Four kids, another business, no time for any of it. I told him, Jimmy, just let me drive.</p>
+<p>So he did. He sat down with me, sat down with Chase, figured out what our heart was, and took it on for us. He came up with GottaCallJack.com. I don't even have to give people my number anymore.</p>
+<p>Now we've got TV commercials. Radio spots. Jingles. My son's business is so busy, we literally have to grow.</p>
+<p>He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day. I'm glad I trusted him. And I hope you'll do the exact same thing."</p>
+<p>Jamon Jack, GottaCallJack.com</p>
+<p>He didn't have to learn a thing.</p>
+<p>He just sat down with somebody who knew where to look.</p>
+<h2>The Bread Maker, In Two Minutes</h2>
+<p>Jim makes bread his customers write him letters about.</p>
+<p>At the last workshop he told the whole room, "I need to get to profitability. Right now, I'm not making any money at it."</p>
+<p>We asked a few questions. Live.</p>
+<p>He was losing $4.58 on every box. Shipping cost him about the same for three loaves or six, and everything he sold came in threes.</p>
+<p>That was the small find.</p>
+<p>The big one was his story. Jim started baking for his little girl. She got sick with an autoimmune disease, and almost everything she loved to eat was off the table. Fifteen tries later, one loaf came out right.</p>
+<p>She could eat it.</p>
+<p>That story was nowhere. Not on his website. Not on his box.</p>
+<p>Put it there, and somebody who hasn't eaten bread in twenty years isn't comparing prices anymore. She just found the only loaf she can eat.</p>
+<p>Same bread. Same oven. About $673,000 a year, from a story that was there the whole time.</p>
+<p>Your business has a story like that. On October 27, we go looking for it. Live.</p>
+<div class="cta">Save My Seat In The Room</div>
+<h2>Who's Looking At Your Business</h2>
+<p>Me. Jimmy Davis, the barefoot guy. More than twenty years in direct response marketing, where every word has to make the phone ring or it gets cut. More than $20 million sold, most of it one phone call at a time.</p>
+<p>Paul Lorkowski. He built a logistics business from scratch, then sold it. For thirty years, owners around here have called Paul when they want it straight. These workshops were his idea. At the last one, he made sure every owner walked out with every tool we used that night. On the 27th, he'll make sure of it again.</p>
+<p>And the genie. It answers the phone. It writes. It researches. It builds. It's how I do in an afternoon what used to take me a year. It's fast. Paul and I make sure it's right.</p>
+<p>Most owners never get all three looking at their business at once.</p>
+<p>You get them for a Tuesday night.</p>
+<h2>You're Probably Thinking...</h2>
+<p>"It's a weeknight."</p>
+<p>Two hours. Doors at 6:30, we start at 7:00, we wrap by 9.</p>
+<p>"Is it worth the drive?"</p>
+<p>Hear a pizza shop's phone get answered every single time, even with dough on his hands. Then picture yours. That alone is worth the drive.</p>
+<p>"Is this a pitch?"</p>
+<p>Here's why it's free. Every business we work on in that room becomes the next story on a page like this one. Jim's numbers came out of the first workshop. Jamon stood up in that same room and told his story. If it makes sense for us to work together afterward, you'll have the chance. Either way, you walk out with every tool we used that night.</p>
+<p>"I'm not good with technology."</p>
+<p>Jamon's a retired cop, not a tech guy. Bring your phone. I'll show you where to tap.</p>
+<p>"What kinds of businesses is this for?"</p>
+<p>Any business with customers. Contractors, chiropractors, restaurants, photographers, lawyers, bakers, coaches, entertainers. If people pay you, bring it.</p>
+<p>"Can I bring someone?"</p>
+<p>Please do. Bring a business-owner friend, or whoever answers your phone. Have them save their own seat so there's a chair with their name on it.</p>
+<p>"Something will probably come up."</p>
+<p>Save the seat anyway. There'll be a chair with your name on it, and I'll be looking for you.</p>
+<p>October 27 is the second workshop. And it may be the last one I do for free.</p>
+<p>Right now, maybe two or three in a hundred business owners are using this in a way that matters. This is early.</p>
+<h2>Save Your Seat In About A Minute</h2>
+<p>Answer the one question at the top. Then tell me where to send your "You're in" email.</p>
+<div class="formph"><b>Registration form</b><span>The GoHighLevel form: the genie question, then name, email, mobile, business, website and address.</span></div>
+<p>Free. Watch for an email with the subject line "You're in." It has the time, the address, and where to park.</p>
+<p>When: Tuesday, October 27 · Doors open at 6:30, we start at 7:00, we wrap by 9</p>
+<p><b>Where: Launch Fishers, 12175 Visionary Way, Fishers, Indiana</b></p>
+<p><b>Cost: Free</b></p>
+<p>Bring: Your phone</p>
+<p>I'll see you in the room.</p>
+<p>Jimmy</p>
+<p>P.S. All you need is your phone. Your "You're in" email tells you exactly where to park, so the only thing left is walking in the door. If Paul sent you, he'll be looking for you there.</p>
+<p>P.P.S. Doors open at 6:30 on Tuesday, October 27. When that pizza shop's line picks up on speaker, you'll be picturing your own phone ringing just like that.</p>
+<div class="cta">Save My Free Seat For October 27</div>
+<p>This is Jamon's story. Yours will be your own.</p>
+<p>Privacy Policy · Terms · Contact · This site is not part of Facebook or Meta.</p></div></section>
+<script>
+(function(){
+var bs=[].slice.call(document.querySelectorAll('.seg button')),ps=[].slice.call(document.querySelectorAll('.pane'));
+function show(v){bs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.v===v))});ps.forEach(function(p){p.hidden=p.dataset.v!==v});try{localStorage.setItem('fishers-contest-view',v)}catch(e){}}
+bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.v)})});
+var s=location.hash.slice(1);if(!bs.some(function(b){return b.dataset.v===s})){try{s=localStorage.getItem('fishers-contest-view')}catch(e){s=null}}
+show(bs.some(function(b){return b.dataset.v===s})?s:'brunson');
+})();
+</script>
+</body></html>
