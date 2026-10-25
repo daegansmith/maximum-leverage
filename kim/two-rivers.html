@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrianne Kim Yoga — Two Rivers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&display=swap">
+<style>
+/* Layout: one river runs down the left edge of the page, from the Ganges at Rishikesh (top) to the Anacostia at the Navy Yard boardwalk (bottom). Content sits right of it, left-aligned. Dark river-at-dawn palette, single committed theme. */
+:root{
+  --night:#12202A; --river:#1F4E5F; --deep:#173643; --marigold:#F2A541; --clay:#E8B4A0; --fog:#F3F1EC; --mist:#B9C9CF;
+  --display:"Instrument Serif", Georgia, serif;
+  --body:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--fog);font-family:var(--body);font-size:18px;line-height:1.6}
+a{color:inherit}
+.page{position:relative;max-width:1080px;margin:0 auto;padding-left:max(64px, calc(env(safe-area-inset-left,0px) + 48px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+@media (max-width:620px){.page{padding-left:max(44px, calc(env(safe-area-inset-left,0px) + 30px))}}
+#river{position:absolute;top:0;left:max(8px, env(safe-area-inset-left,0px));width:44px;height:100%;pointer-events:none}
+@media (max-width:620px){#river{width:28px}}
+.place{position:absolute;left:0;font-size:.78rem;color:var(--marigold);writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.06em}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.3rem,5vw,3.4rem);margin-bottom:12px}
+h3{font-size:1.6rem}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;cursor:pointer;font-family:var(--body);border:1.5px solid var(--marigold)}
+.btn-primary{background:var(--marigold);color:var(--night)}
+.btn-ghost{background:transparent;color:var(--marigold)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+.slot{background:linear-gradient(160deg,var(--river),var(--deep));border:1px solid rgba(242,165,65,.35);display:flex;align-items:flex-end;padding:18px;color:var(--mist);font-size:.9rem;max-width:100%}
+.confirm{color:var(--night);background:var(--clay);border-radius:6px;padding:0 6px;font-size:.85em;font-weight:500}
+section{padding-block:76px}
+.lead{color:var(--mist);max-width:52ch}
+
+.top{padding-block:24px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.mark{font-family:var(--display);font-size:1.7rem;text-decoration:none}
+.top a.ig{font-size:.95rem;color:var(--mist)}
+
+.hero{padding-block:36px 72px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:end}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);margin-bottom:26px}
+.hero .sub{font-size:1.15rem;color:var(--mist);max-width:36ch;margin-bottom:28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.trust{color:var(--mist);font-size:.95rem}
+.hero .slot{aspect-ratio:3/4;border-radius:200px 200px 24px 24px;width:100%}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.hero .slot{aspect-ratio:1/1;max-width:420px}}
+
+.proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2px;background:rgba(242,165,65,.25);border-radius:20px;overflow:hidden}
+.proof div{background:var(--deep);padding:20px;font-size:.98rem}
+.proof b{display:block;font-family:var(--display);font-weight:400;font-size:1.45rem;color:var(--marigold);line-height:1.1;margin-bottom:4px}
+
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start}
+@media (max-width:860px){.notes{grid-template-columns:1fr}}
+form{display:grid;gap:16px;background:var(--deep);border-radius:24px;padding:28px}
+label{font-weight:600;font-size:.95rem;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:12px;border:1px solid var(--river);background:var(--night);color:var(--fog)}
+textarea{min-height:120px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+.check input{width:22px;height:22px;flex:none;margin-top:3px;accent-color:var(--marigold)}
+.check label{font-weight:400;margin:0}
+.thanks{color:var(--marigold)}
+.wall{display:grid;gap:18px}
+.note{border-left:2px solid var(--marigold);padding:6px 0 6px 20px;font-family:var(--display);font-size:1.5rem;line-height:1.25;color:var(--mist)}
+.note small{display:block;font-family:var(--body);font-size:.88rem;color:var(--clay);margin-top:6px}
+
+.rooms{margin-top:28px;display:grid;gap:0}
+.room{display:grid;grid-template-columns:200px 1fr auto;gap:20px;align-items:baseline;padding-block:20px;border-bottom:1px solid rgba(185,201,207,.2)}
+.room p{color:var(--mist)}
+.room a{color:var(--marigold);font-weight:600;font-size:.95rem}
+@media (max-width:700px){.room{grid-template-columns:1fr;gap:4px}}
+
+.ph{display:block;max-width:100%;object-fit:cover}
+.hero-ph{width:100%;aspect-ratio:3/4;border-radius:200px 200px 24px 24px;object-position:50% 70%}
+.story-ph{width:100%;aspect-ratio:4/5;border-radius:24px}
+.pair{display:grid;grid-template-columns:1fr 1.5fr;gap:14px;margin-bottom:18px}
+.pair img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;border:1px solid rgba(242,165,65,.35)}
+@media (max-width:860px){.hero-ph{aspect-ratio:1/1;max-width:420px}.story-ph{aspect-ratio:4/5;max-width:420px}}
+.calm{background:var(--river);border-radius:28px;padding:44px clamp(24px,5vw,56px)}
+.calm p.big{font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;margin-bottom:14px}
+.calm p{color:var(--fog)}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.story .slot{aspect-ratio:4/5;border-radius:24px;width:100%}
+.story-text{display:grid;gap:18px;max-width:58ch}
+.voice{font-family:var(--display);font-size:1.4rem;color:var(--clay)}
+@media (max-width:860px){.story{grid-template-columns:1fr}.story .slot{aspect-ratio:16/10}}
+
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:28px}
+.door{padding-block:22px;border-top:1px solid rgba(185,201,207,.2);display:grid;gap:8px}
+.door p{color:var(--mist)}
+.door a{color:var(--marigold);font-weight:600;justify-self:start;min-height:44px;display:inline-flex;align-items:center}
+@media (max-width:700px){.doors{grid-template-columns:1fr}}
+
+details{border-top:1px solid rgba(185,201,207,.2);padding-block:16px;max-width:760px}
+summary{font-family:var(--display);font-size:1.5rem;cursor:pointer;min-height:44px;display:flex;align-items:center}
+details p{color:var(--mist);margin-top:6px}
+
+.end h2{font-size:clamp(2.8rem,7vw,5rem);margin-bottom:24px}
+footer{padding-block:40px 120px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;color:var(--mist);font-size:.95rem}
+footer .slot{width:200px;aspect-ratio:1;border-radius:50%;align-items:center;justify-content:center;text-align:center}
+
+.sticky{display:none}
+@media (max-width:720px){.sticky{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:12px max(16px, env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));background:rgba(18,32,42,.96);border-top:1px solid var(--river);z-index:5}.sticky .btn{flex:1}}
+</style>
+<style>img{max-width:100%}body{margin:0}</style>
+</head>
+<body>
+
+<div class="page" id="page">
+  <svg id="river" aria-hidden="true"></svg>
+
+  <header class="top">
+    <a class="mark" href="#">Adrianne Kim</a>
+    <a class="ig" href="https://www.instagram.com/adriannekim/">@adriannekim</a>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Every note gets read out loud to my cats. How was your practice?</h1>
+      <p class="sub">Vinyasa, Hot Power, Slow Flow and more, every week at VIDA, OneLife and District Flow, across DC and Arlington.</p>
+      <div class="ctas"><a class="btn btn-primary" href="#notes">Tell me</a><a class="btn btn-ghost" href="#where">Find my classes</a></div>
+      <p class="trust">Lead faculty, VIDA 200-Hour Teacher Training · 1,000+ classes taught</p>
+    </div>
+    <img class="ph hero-ph" src="img/warrior.jpg" alt="Adrianne in a headstand variation on the Navy Yard boardwalk, the Douglass Bridge behind her" style="">
+  </div>
+
+  <div class="proof">
+    <div><b>Lead faculty</b>VIDA 200-Hour Teacher Training</div>
+    <div><b>Master Trainer</b>Formerly CorePower Yoga</div>
+    <div><b>Rishikesh</b>Sattva Yoga Academy, 2026</div>
+    <div><b>Audi Field</b>Before DC Power FC</div>
+    <div><b><span class="confirm">[CONFIRM]</span></b>FOX 5 · Noom</div>
+  </div>
+
+  <section id="notes">
+    <h2>Notes from class</h2>
+    <p class="lead">Every note here was left by someone who just walked out of class.</p>
+    <div class="notes">
+      <form id="noteform" novalidate>
+        <div><label for="n-name">First name</label><input id="n-name" name="name" autocomplete="given-name"></div>
+        <div><label for="n-where">Where we practiced</label><select id="n-where" name="where"><option>VIDA</option><option>OneLife</option><option>District Flow</option><option>Life Time Clarendon</option><option>An event or outdoor class</option><option>Teacher training</option></select></div>
+        <div><label for="n-note">How was your practice?</label><textarea id="n-note" name="note"></textarea></div>
+        <div class="check"><input type="checkbox" id="n-ok"><label for="n-ok">OK to share this on the site</label></div>
+        <button class="btn btn-primary" type="submit">Send my note</button>
+        <p class="thanks" id="n-thanks" hidden>Thank you. This is a preview, so nothing was sent yet. On the live site, your note goes straight to Adrianne (and the cats).</p>
+      </form>
+      <div class="wall">
+        <p class="note">[NOTE FROM A STUDENT]<small>First name · Studio</small></p>
+        <p class="note">[NOTE FROM A STUDENT]<small>First name · Studio</small></p>
+        <p class="note">[NOTE FROM A STUDENT]<small>First name · Studio</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="where">
+    <h2>Where I teach</h2>
+    <div class="rooms">
+      <div class="room"><h3>VIDA</h3><p>Navy Yard, U Street, City Vista, Ballston</p><a href="https://vidafitness.com/">Schedule</a></div>
+      <div class="room"><h3>OneLife</h3><p>Capitol Hill, Old Town, Crystal City, Ballston</p><a href="https://www.onelifefitness.com/">Schedule</a></div>
+      <div class="room"><h3>District Flow</h3><p>Capitol Hill, 405 8th St SE</p><a href="https://www.districtflowyoga.com/">Schedule</a></div>
+      <div class="room"><h3>Life Time</h3><p>Clarendon</p><a href="https://www.lifetime.life/">Schedule</a></div>
+    </div>
+    <p class="lead" style="margin-top:18px">Subs and pop-up classes go up here first.</p>
+  </section>
+
+  <div class="pair"><img class="ph " src="img/audi.jpg" alt="Adrianne leading a class on the pitch at Audi Field" style=""><img class="ph " src="img/bridge.jpg" alt="Adrianne at Yards Park, the Douglass Bridge arches behind her" style=""></div>
+  <div class="calm">
+    <p class="big">Rest whenever you want. Child's pose counts.</p>
+    <p>Hot Power and Slow Flow are both welcome here, and so is your very first class. <span class="confirm">[CONFIRM: her words]</span></p>
+  </div>
+
+  <section id="story">
+    <div class="story">
+      <div class="story-text">
+        <h2>My story</h2>
+        <p>I came to yoga as a student, in Hawaii, at a moment when I didn't know what came next.</p>
+        <p class="voice">[What happened in that first class]</p>
+        <p>I trained to teach, then spent years at CorePower managing studios and training teachers, including during COVID, when a small team of us shaped how teachers were trained across the company.</p>
+        <p>In 2026 I went to Sattva Yoga Academy, outside Rishikesh, to study where yoga started.</p>
+        <p>On my days off, I'm in someone else's class, in the back row, still learning.</p>
+      </div>
+      <img class="ph story-ph" src="img/holi.jpg" alt="Adrianne covered in Holi colors, laughing, in India" style="">
+    </div>
+  </section>
+
+  <section id="work" style="padding-top:0">
+    <h2>Work with me</h2>
+    <div class="doors">
+      <div class="door"><h3>Studios and gyms</h3><p>Need a teacher, a sub, or someone to train your team? I've trained the teachers you're hiring.</p><a href="#contact">Let's talk</a></div>
+      <div class="door"><h3>Companies and events</h3><p>One session for your team, at your desk or on the field. No mats required.</p><a href="#contact">Try one session</a></div>
+      <div class="door"><h3>Schools</h3><p>Yoga that fits your schedule and your students.</p><a href="#contact">Get the one-page overview</a></div>
+      <div class="door"><h3>Teacher training</h3><p>I'm on the faculty for VIDA's 200-Hour Training. The next cohort starts November 14.</p><a href="https://vidafitness.com/200-hour-yoga-teacher-training/">Train with me</a></div>
+      <div class="door"><h3>Retreats</h3><p>Be first to hear about the next one.</p><a href="#contact">Get first word</a></div>
+      <div class="door"><h3>Private sessions</h3><p>One-on-one, built around your body. <span class="confirm">[CONFIRM: rate]</span></p><a href="#contact">Book a private</a></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <h2>Questions</h2>
+    <details><summary>I'm new. Is this for me?</summary><p>Yes. Every class has a version for your first day.</p></details>
+    <details><summary>Can you teach at my studio, or sub?</summary><p>Yes. Tell me your schedule.</p></details>
+    <details><summary>How do I bring you to my team?</summary><p>Start with one session, and we'll go from there.</p></details>
+    <details><summary>Do you teach privates?</summary><p>Yes. <span class="confirm">[CONFIRM: rate]</span></p></details>
+  </section>
+
+  <section class="end" id="contact" style="padding-top:0">
+    <h2>See you on the mat.</h2>
+    <div class="ctas"><a class="btn btn-primary" href="#notes">Tell me</a><a class="btn btn-ghost" href="#where">Find my classes</a></div>
+    <p class="lead">Email: <span class="confirm">[ASK: email]</span></p>
+  </section>
+
+  <footer>
+    <p><strong style="color:var(--fog)">adrianne.yoga</strong> · DC and Arlington · <a href="https://www.instagram.com/adriannekim/">@adriannekim</a></p>
+    <div class="slot" role="img" aria-label="Photo placeholder: the cats">[PHOTO: the studio supervisors]</div>
+  </footer>
+</div>
+
+<div class="sticky"><a class="btn btn-primary" href="#notes">Tell me</a><a class="btn btn-ghost" href="#where">Classes</a></div>
+
+<script>
+document.getElementById('noteform').addEventListener('submit',function(e){e.preventDefault();document.getElementById('n-thanks').hidden=false;});
+(function(){
+  var svg=document.getElementById('river'),page=document.getElementById('page');
+  function draw(){
+    var h=page.scrollHeight,w=svg.getBoundingClientRect().width||44,mid=w/2,amp=w*0.32,step=180,d='M'+mid+' 0';
+    for(var y=0;y<h;y+=step){var dir=((y/step)%2)?-1:1;d+=' Q'+(mid+amp*dir)+' '+(y+step/2)+' '+mid+' '+(y+step);}
+    svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.height=h+'px';
+    svg.innerHTML='<path d="'+d+'" fill="none" stroke="#2E6E85" stroke-width="10" stroke-linecap="round"/>'+
+      '<path d="'+d+'" fill="none" stroke="#F2A541" stroke-width="1.5" stroke-dasharray="2 14" stroke-linecap="round"/>'+
+      '<text x="'+(mid+0.5)+'" y="110" fill="#F2A541" font-size="11" font-family="Instrument Sans, sans-serif" transform="rotate(-90 '+mid+' 110)" text-anchor="middle" dy="4" style="paint-order:stroke" stroke="#12202A" stroke-width="5">Ganges · Rishikesh</text>'+
+      '<text x="'+mid+'" y="'+(h-140)+'" fill="#F2A541" font-size="11" font-family="Instrument Sans, sans-serif" transform="rotate(-90 '+mid+' '+(h-140)+')" text-anchor="middle" dy="4" style="paint-order:stroke" stroke="#12202A" stroke-width="5">Anacostia · Navy Yard</text>';
+  }
+  draw();addEventListener('resize',draw);addEventListener('load',draw);
+})();
+</script>
+
+</body>
+</html>

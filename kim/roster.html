@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrianne Kim Yoga — The Roster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<style>
+/* Layout: a studio class board. Above the fold: the note card and this week's rooms side by side, so the two things a student came for are both one tap away. Big condensed type does the shouting; everything else is plain. Single committed light theme. */
+:root{
+  --paper:#FFFFFF; --wash:#F2F0F6; --char:#1C1C1E; --grey:#55535C; --coral:#FF5A36; --lilac:#C9B8F0; --line:#DEDBE6;
+  --display:"Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body:"Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--char);font-family:var(--body);font-size:18px;line-height:1.55;font-stretch:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(18px, env(safe-area-inset-left,0px));padding-right:max(18px, env(safe-area-inset-right,0px))}
+.cond{font-family:var(--display);font-stretch:68%;font-weight:850;line-height:.92;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(2.6rem,7vw,4.6rem);margin:0 0 12px}
+h3{margin:0;font-size:1.3rem;font-weight:800}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:12px;font-weight:800;font-size:1rem;text-decoration:none;cursor:pointer;font-family:var(--body);border:2px solid var(--char)}
+.btn-primary{background:var(--coral);border-color:var(--coral);color:var(--char)}
+.btn-ghost{background:var(--paper);color:var(--char)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--char);outline-offset:3px}
+.confirm{background:var(--lilac);border-radius:4px;padding:0 6px;font-size:.85em;font-weight:600}
+.slot{background:var(--wash);border:2px dashed var(--lilac);border-radius:16px;display:flex;align-items:flex-end;padding:16px;color:var(--grey);font-size:.9rem;font-weight:600;max-width:100%}
+section{padding-block:72px}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding-block:18px;border-bottom:3px solid var(--char);gap:12px}
+.top .name{font-size:1.9rem;text-decoration:none}
+.top a.ig{font-weight:700;font-size:.95rem}
+
+.hero{padding-block:30px 20px}
+.hero h1{font-size:clamp(3rem,9.5vw,7.4rem);margin:0 0 18px}
+.hero .sub{font-size:1.15rem;color:var(--grey);max-width:44ch}
+.trust{margin-top:14px;font-weight:700}
+
+.ph{display:block;max-width:100%;object-fit:cover}
+.story-ph{width:100%;aspect-ratio:4/5;border-radius:16px;border:3px solid var(--char)}
+.strip{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:12px;margin-block:8px 10px}
+.strip img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;border:3px solid var(--char)}
+.strip img:nth-child(2){aspect-ratio:1.6/1}
+@media (max-width:820px){.strip{grid-template-columns:1fr 1fr}.strip img:nth-child(3){display:none}.strip img:nth-child(2){aspect-ratio:1/1}}
+.board{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;padding-block:20px 56px}
+@media (max-width:900px){.board{grid-template-columns:1fr}}
+.panel{border:3px solid var(--char);border-radius:20px;padding:24px;background:var(--paper)}
+.panel.tell{background:var(--coral)}
+.panel h2{font-size:clamp(2.2rem,5vw,3.2rem)}
+form{display:grid;gap:12px;margin-top:12px}
+label{font-weight:800;font-size:.95rem;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:10px;border:2px solid var(--char);background:var(--paper);color:var(--char)}
+textarea{min-height:100px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.check input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--char)}
+.check label{margin:0;font-weight:600}
+.panel.tell .btn{background:var(--char);color:var(--paper);border-color:var(--char)}
+.thanks{background:var(--paper);border-radius:10px;padding:12px;font-weight:700}
+
+.rooms{margin-top:8px}
+.room{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding-block:14px;border-bottom:2px solid var(--line)}
+.room:last-child{border-bottom:0}
+.room .tag{font-size:1.6rem;min-width:7.2ch}
+.room p{color:var(--grey);font-size:.95rem}
+.room a{font-weight:800;font-size:.92rem;min-height:44px;display:inline-flex;align-items:center}
+@media (max-width:520px){.room{grid-template-columns:1fr auto}.room p{grid-column:1/-1;grid-row:2}}
+.formats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.formats span{background:var(--wash);border-radius:999px;padding:6px 12px;font-weight:700;font-size:.85rem}
+
+.proof{background:var(--char);color:var(--paper)}
+.proof ul{list-style:none;margin:0;padding-left:0;padding-block:20px;display:flex;flex-wrap:wrap;gap:10px 28px;font-weight:700}
+.proof li{display:flex;align-items:center;gap:10px}
+.proof li::before{content:"";width:10px;height:10px;background:var(--coral);border-radius:2px}
+
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+@media (max-width:820px){.wall{grid-template-columns:1fr}}
+.note{border:2px dashed var(--lilac);border-radius:16px;padding:20px;color:var(--grey);min-height:130px;display:flex;flex-direction:column;justify-content:space-between}
+.note b{color:var(--char);font-size:.9rem}
+
+.calm{background:var(--lilac)}
+.calm .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end}
+.calm .cond{font-size:clamp(2.4rem,6vw,4.2rem)}
+@media (max-width:820px){.calm .wrap{grid-template-columns:1fr}}
+
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;border:3px solid var(--char);border-radius:20px;overflow:hidden}
+.door{padding:22px;border-right:2px solid var(--char);border-bottom:2px solid var(--char);display:flex;flex-direction:column;gap:8px}
+.door:nth-child(3n){border-right:0}
+.door:nth-last-child(-n+3){border-bottom:0}
+.door p{color:var(--grey);flex:1}
+.door a{font-weight:800;color:var(--char);text-decoration-color:var(--coral);text-decoration-thickness:3px;text-underline-offset:5px;min-height:44px;display:inline-flex;align-items:center}
+@media (max-width:820px){.doors{grid-template-columns:1fr}.door{border-right:0!important;border-bottom:2px solid var(--char)!important}.door:last-child{border-bottom:0!important}}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.story .slot{aspect-ratio:1/1;width:100%}
+.story-text{display:grid;gap:16px;max-width:58ch}
+.voice{font-weight:800;color:var(--coral)}
+@media (max-width:820px){.story{grid-template-columns:1fr}.story .slot{aspect-ratio:16/10}}
+
+details{border-top:2px solid var(--char);padding-block:14px;max-width:780px}
+summary{font-weight:800;font-size:1.15rem;cursor:pointer;min-height:44px;display:flex;align-items:center}
+details p{color:var(--grey);margin-top:4px}
+
+.end{background:var(--coral)}
+.end .cond{font-size:clamp(3rem,10vw,7rem);margin-bottom:22px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.end .btn-primary{background:var(--char);color:var(--paper);border-color:var(--char)}
+footer{padding-block:36px 120px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;color:var(--grey);font-weight:600}
+footer .slot{width:190px;aspect-ratio:1;border-radius:50%;align-items:center;justify-content:center;text-align:center}
+
+.sticky{display:none}
+@media (max-width:720px){.sticky{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:12px max(16px, env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));background:var(--paper);border-top:3px solid var(--char);z-index:5}.sticky .btn{flex:1}}
+</style>
+<style>img{max-width:100%}body{margin:0}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="name cond" href="#">Adrianne Kim</a>
+    <a class="ig" href="https://www.instagram.com/adriannekim/">@adriannekim</a>
+  </header>
+
+  <div class="hero">
+    <h1 class="cond">Every note gets read out loud to my cats. How was your practice?</h1>
+    <p class="sub">Vinyasa, Hot Power, Slow Flow and more, every week at VIDA, OneLife and District Flow, across DC and Arlington.</p>
+    <p class="trust">Lead faculty, VIDA 200-Hour Teacher Training · 1,000+ classes taught</p>
+  </div>
+  <div class="strip"><img class="ph " src="img/warrior.jpg" alt="Adrianne in a headstand variation on the Navy Yard boardwalk" style=""><img class="ph " src="img/bridge.jpg" alt="Adrianne at Yards Park with the Douglass Bridge arches behind her" style=""><img class="ph " src="img/holi.jpg" alt="Adrianne covered in Holi colors in India" style=""></div>
+
+  <div class="board">
+    <div class="panel tell" id="notes">
+      <h2 class="cond">Tell me</h2>
+      <form id="noteform" novalidate>
+        <div><label for="n-name">First name</label><input id="n-name" autocomplete="given-name"></div>
+        <div><label for="n-where">Where we practiced</label><select id="n-where"><option>VIDA</option><option>OneLife</option><option>District Flow</option><option>Life Time Clarendon</option><option>An event or outdoor class</option><option>Teacher training</option></select></div>
+        <div><label for="n-note">How was your practice?</label><textarea id="n-note"></textarea></div>
+        <div class="check"><input type="checkbox" id="n-ok"><label for="n-ok">OK to share this on the site</label></div>
+        <button class="btn" type="submit">Send my note</button>
+        <p class="thanks" id="n-thanks" hidden>Thank you. This is a preview, so nothing was sent yet. On the live site, your note goes straight to Adrianne (and the cats).</p>
+      </form>
+    </div>
+    <div class="panel" id="where">
+      <h2 class="cond">Find my classes</h2>
+      <div class="rooms">
+        <div class="room"><span class="tag cond">VIDA</span><p>Navy Yard · U Street · City Vista · Ballston</p><a href="https://vidafitness.com/">Schedule</a></div>
+        <div class="room"><span class="tag cond">OneLife</span><p>Capitol Hill · Old Town · Crystal City · Ballston</p><a href="https://www.onelifefitness.com/">Schedule</a></div>
+        <div class="room"><span class="tag cond">D Flow</span><p>District Flow, 405 8th St SE</p><a href="https://www.districtflowyoga.com/">Schedule</a></div>
+        <div class="room"><span class="tag cond">Life Time</span><p>Clarendon</p><a href="https://www.lifetime.life/">Schedule</a></div>
+      </div>
+      <div class="formats"><span>Vinyasa</span><span>Hot Power Vinyasa</span><span>Slow Flow</span><span>Yoga Sculpt</span><span>Yang-Yin Flow &amp; Restore</span><span>Breath &amp; Meditation</span></div>
+      <p style="margin-top:14px;color:var(--grey);font-size:.95rem">Subs and pop-up classes go up here first.</p>
+    </div>
+  </div>
+</div>
+
+<div class="proof">
+  <div class="wrap">
+    <ul>
+      <li>Lead faculty, VIDA 200-Hour Teacher Training</li>
+      <li>Former CorePower Master Trainer</li>
+      <li>Sattva Yoga Academy, Rishikesh</li>
+      <li>Audi Field, DC Power FC</li>
+      <li><span class="confirm" style="color:var(--char)">[CONFIRM: FOX 5 · Noom]</span></li>
+    </ul>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="cond">Notes from class</h2>
+    <p style="color:var(--grey)">Every note here was left by someone who just walked out of class.</p>
+    <div class="wall">
+      <div class="note">[NOTE FROM A STUDENT]<b>First name · Studio</b></div>
+      <div class="note">[NOTE FROM A STUDENT]<b>First name · Studio</b></div>
+      <div class="note">[NOTE FROM A STUDENT]<b>First name · Studio</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="calm">
+  <div class="wrap">
+    <p class="cond">Rest whenever you want. Child's pose counts.</p>
+    <p>Hot Power and Slow Flow are both welcome here, and so is your very first class. <span class="confirm" style="background:var(--paper)">[CONFIRM: her words]</span></p>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2 class="cond">Work with me</h2>
+    <div class="doors">
+      <div class="door"><h3>Studios and gyms</h3><p>Need a teacher, a sub, or someone to train your team? I've trained the teachers you're hiring.</p><a href="#contact">Let's talk</a></div>
+      <div class="door"><h3>Companies and events</h3><p>One session for your team, at your desk or on the field. No mats required.</p><a href="#contact">Try one session</a></div>
+      <div class="door"><h3>Schools</h3><p>Yoga that fits your schedule and your students.</p><a href="#contact">Get the one-page overview</a></div>
+      <div class="door"><h3>Teacher training</h3><p>I'm on the faculty for VIDA's 200-Hour Training. The next cohort starts November 14.</p><a href="https://vidafitness.com/200-hour-yoga-teacher-training/">Train with me</a></div>
+      <div class="door"><h3>Retreats</h3><p>Be first to hear about the next one.</p><a href="#contact">Get first word</a></div>
+      <div class="door"><h3>Private sessions</h3><p>One-on-one, built around your body. <span class="confirm">[CONFIRM: rate]</span></p><a href="#contact">Book a private</a></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap story">
+    <div class="story-text">
+      <h2 class="cond">My story</h2>
+      <p>I came to yoga as a student, in Hawaii, at a moment when I didn't know what came next.</p>
+      <p class="voice">[What happened in that first class]</p>
+      <p>I trained to teach, then spent years at CorePower managing studios and training teachers, including during COVID, when a small team of us shaped how teachers were trained across the company.</p>
+      <p>In 2026 I went to Sattva Yoga Academy, outside Rishikesh, to study where yoga started.</p>
+      <p>On my days off, I'm in someone else's class, in the back row, still learning.</p>
+    </div>
+    <img class="ph story-ph" src="img/audi.jpg" alt="Adrianne leading a class on the pitch at Audi Field" style="">
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="cond">Questions</h2>
+    <details><summary>I'm new. Is this for me?</summary><p>Yes. Every class has a version for your first day.</p></details>
+    <details><summary>Can you teach at my studio, or sub?</summary><p>Yes. Tell me your schedule.</p></details>
+    <details><summary>How do I bring you to my team?</summary><p>Start with one session, and we'll go from there.</p></details>
+    <details><summary>Do you teach privates?</summary><p>Yes. <span class="confirm">[CONFIRM: rate]</span></p></details>
+  </div>
+</section>
+
+<section class="end" id="contact">
+  <div class="wrap">
+    <p class="cond">See you on the mat.</p>
+    <div class="ctas"><a class="btn btn-primary" href="#notes">Tell me</a><a class="btn btn-ghost" href="#where">Find my classes</a></div>
+    <p style="margin-top:18px;font-weight:700">Email: <span class="confirm" style="background:var(--paper)">[ASK: email]</span></p>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <p><strong style="color:var(--char)">adrianne.yoga</strong> · DC and Arlington · <a href="https://www.instagram.com/adriannekim/">@adriannekim</a></p>
+    <div class="slot" role="img" aria-label="Photo placeholder: the cats">[PHOTO: the studio supervisors]</div>
+  </footer>
+</div>
+
+<div class="sticky"><a class="btn btn-primary" href="#notes">Tell me</a><a class="btn btn-ghost" href="#where">Classes</a></div>
+
+<script>
+document.getElementById('noteform').addEventListener('submit',function(e){e.preventDefault();document.getElementById('n-thanks').hidden=false;});
+</script>
+
+</body>
+</html>
