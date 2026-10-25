@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrianne Kim Yoga</title>
+<meta name="description" content="Adrianne Kim teaches yoga across DC and Arlington and trains the teachers who teach it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter+Tight:wght@400;500;600&display=swap">
+<style>
+/* Concept: the page is a class. Arrive → breathe → flow → meet the supervisors → tell me → rest.
+   Scroll is the practice: a progress line fills like a breath, pinned chapters change as you move,
+   the sky warms at the start and dims to dusk at savasana. Calm surface, everything working underneath. */
+:root{
+  --paper:#F7F4EE; --paper-2:#EEE9E0; --card:#FFFFFF; --ink:#1A2828; --ink-2:#54625E; --line:#DCD5C8;
+  --sage:#6F9384; --sage-2:#CFDDD4; --dawn:#E7A06C; --dawn-2:#F6DCC6; --dusk:#16242A; --dusk-2:#22343B;
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --breath:8s;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;overflow-x:hidden;transition:background-color .6s linear,color .6s linear}
+body.dusk{background:var(--dusk);color:#EEF2EF}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:300;letter-spacing:-.012em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.02}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:.9rem;font-weight:600;color:var(--sage);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.eyebrow i{display:inline-block;width:22px;height:1.5px;background:currentColor}
+.lead{font-size:1.15rem;color:var(--ink-2);max-width:46ch;margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;font:600 1rem/1 var(--body);text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;background:transparent;color:var(--ink);transition:transform .25s var(--ease),background .25s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-dawn{background:var(--dawn);border-color:var(--dawn);color:var(--ink)}
+:focus-visible{outline:3px solid var(--dawn);outline-offset:3px;border-radius:8px}
+.confirm{background:var(--dawn-2);color:#7A451A;border-radius:6px;padding:0 6px;font-size:.82em;font-weight:500;white-space:nowrap}
+
+/* reveal */
+.rise{opacity:1;transform:none}
+@media (prefers-reduced-motion:no-preference){
+  .js .rise{opacity:0;transform:translateY(26px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+  .js .rise.in{opacity:1;transform:none}
+}
+
+/* ---------- top bar ---------- */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:31;background:var(--paper)}
+.bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;transition:background .4s,backdrop-filter .4s}
+.bar.solid{background:rgba(247,244,238,.78);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px)}
+body.dusk .bar.solid{background:rgba(22,36,42,.78)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:16px}
+.mark{font-family:var(--display);font-size:1.3rem;text-decoration:none;font-weight:400}
+.bar nav{display:flex;gap:24px;font-size:.92rem;font-weight:500}
+.bar nav a{text-decoration:none;opacity:.7}
+.bar nav a:hover{opacity:1}
+.bar .tellbtn{min-height:38px;padding:0 16px;font-size:.9rem}
+@media (max-width:820px){.bar nav{display:none}}
+.progress{position:absolute;left:0;bottom:0;height:2px;width:100%;background:transparent}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sage),var(--dawn))}
+.stage-label{position:absolute;right:max(20px,env(safe-area-inset-right,0px));bottom:-26px;font-size:.78rem;font-weight:600;color:var(--sage);letter-spacing:.02em;opacity:0;transition:opacity .4s}
+.bar.solid .stage-label{opacity:1}
+
+/* ---------- 1 ARRIVE ---------- */
+.arrive{position:relative;height:190vh}
+.arrive .pin{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center}
+.sky{position:absolute;inset:0;background:radial-gradient(120% 80% at 70% 18%,#FBE6D2 0%,var(--paper) 55%)}
+.sun{position:absolute;width:min(70vw,640px);aspect-ratio:1;border-radius:50%;right:-8vw;top:6vh;background:radial-gradient(circle at 40% 38%,#FDEBDB 0%,var(--dawn) 42%,rgba(231,160,108,0) 70%);opacity:.9}
+@media (prefers-reduced-motion:no-preference){.sun{animation:breathe var(--breath) ease-in-out infinite}}
+@keyframes breathe{0%,100%{transform:scale(.88)}50%{transform:scale(1.06)}}
+.hero-photo{position:absolute;left:50%;top:50%;width:min(88vw,520px);aspect-ratio:4/5;transform:translate(-50%,-50%);border-radius:44% 44% 30px 30px / 34% 34% 30px 30px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(26,40,40,.55);will-change:transform,border-radius,width}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero-copy{position:relative;z-index:2;text-align:left;width:min(1180px,100%);padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));align-self:end;padding-bottom:9vh;pointer-events:none}
+.hero-copy *{pointer-events:auto}
+.hero-copy h1{font-size:clamp(2.5rem,7.2vw,6rem);line-height:.98;max-width:13ch;color:var(--ink);text-shadow:0 1px 30px rgba(247,244,238,.65)}
+.hero-copy .sub{margin-top:18px;font-size:1.12rem;color:var(--ink-2);max-width:38ch}
+.hero-copy .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:.82rem;font-weight:500;color:var(--ink-2)}
+.cue b{width:12px;height:12px;border-radius:50%;background:var(--sage)}
+@media (prefers-reduced-motion:no-preference){.cue b{animation:dot var(--breath) ease-in-out infinite}}
+@keyframes dot{0%,100%{transform:scale(.7);opacity:.6}50%{transform:scale(1.6);opacity:1}}
+.cue span::after{content:"breathe in"}
+@media (prefers-reduced-motion:no-preference){.cue span::after{animation:words var(--breath) steps(1) infinite}}
+@keyframes words{0%,49%{content:"breathe in"}50%,100%{content:"breathe out"}}
+@media (min-width:900px){
+  .hero-photo{left:auto;right:6vw;transform:translate(0,-50%);width:min(36vw,520px)}
+  .hero-copy{align-self:center;padding-bottom:0}
+}
+@media (max-width:899px){
+  .arrive .pin{display:flex;flex-direction:column;justify-content:flex-start;padding-top:calc(70px + env(safe-area-inset-top,0px))}
+  .hero-photo{position:relative;left:auto;top:auto;transform:none;width:min(78vw,360px);height:auto;aspect-ratio:4/4.4;margin:0 auto;flex:none}
+  .hero-copy{align-self:stretch;padding-bottom:0;margin-top:22px}
+  .hero-copy h1{font-size:clamp(2.1rem,9vw,2.8rem);max-width:none}
+  .hero-copy .sub{font-size:1rem;margin-top:12px}
+  .hero-copy .ctas{margin-top:16px}
+  .cue{display:none}
+  .sun{right:-30vw;top:4vh;width:96vw}
+}
+
+/* ---------- 2 ONE TAP (bento) ---------- */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(150px,auto);gap:14px;margin-top:36px}
+.tile{position:relative;border-radius:26px;overflow:hidden;background:var(--card);padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;text-decoration:none;min-height:170px;box-shadow:0 24px 50px -36px rgba(26,40,40,.4);transition:transform .45s var(--ease)}
+.tile:hover{transform:translateY(-4px)}
+.tile h3{font-size:1.5rem;font-weight:400;line-height:1.08}
+.tile p{font-size:.95rem;color:var(--ink-2)}
+.tile .go{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(26,40,40,.06);font-size:1rem}
+.tile.photo{color:#fff;padding:0}
+.tile.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.tile.photo:hover img{transform:scale(1.04)}
+.tile.photo .cap{position:relative;padding:22px;background:linear-gradient(0deg,rgba(20,30,30,.72),rgba(20,30,30,0));}
+.tile.photo p{color:rgba(255,255,255,.85)}
+.tile.photo .go{background:rgba(255,255,255,.22);color:#fff}
+.tile.dawn{background:var(--dawn-2)}
+.tile.sage{background:var(--sage-2)}
+.t-note{grid-column:span 2;grid-row:span 2}
+.t-classes{grid-column:span 2}
+.t-train{grid-row:span 2}
+.t-book{}
+.t-cats{grid-column:span 2}
+.t-retreat{}
+@media (max-width:900px){.bento{grid-template-columns:1fr 1fr}.t-note{grid-column:span 2;grid-row:span 1;min-height:320px}.t-classes,.t-cats{grid-column:span 2}.t-train{grid-row:span 1;min-height:240px}}
+
+/* ---------- 3 FLOW (pinned chapters) ---------- */
+.flow{position:relative;height:520vh}
+.flow .pin{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6vw;overflow:hidden}
+.flow-photos{position:relative;height:min(74svh,660px);aspect-ratio:4/5;justify-self:end;max-width:44vw}
+.flow-photos figure{position:absolute;inset:0;margin:0;border-radius:30px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(26,40,40,.55);opacity:0;transform:scale(1.04) rotate(.6deg);transition:opacity .9s var(--ease),transform 1.2s var(--ease)}
+.flow-photos figure.on{opacity:1;transform:none}
+.flow-photos figure.past{opacity:0;transform:scale(.94) rotate(-1deg)}
+.flow-photos img{width:100%;height:100%;object-fit:cover}
+.flow-text{position:relative;min-height:46svh;max-width:520px}
+.chap{position:absolute;inset:0 auto auto 0;opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .9s var(--ease)}
+.chap.on{opacity:1;transform:none}
+.chap .yr{font-family:var(--display);font-style:italic;color:var(--dawn);font-size:1.25rem;margin-bottom:8px}
+.chap h3{font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.04}
+.chap p{margin-top:16px;font-size:1.12rem;color:var(--ink-2);max-width:42ch}
+.chap .quote{font-family:var(--display);font-style:italic;color:var(--sage);font-size:1.2rem}
+.dots{display:flex;gap:8px;margin-top:30px;position:absolute;bottom:-70px;left:0}
+.dots b{width:30px;height:3px;border-radius:2px;background:var(--line);transition:background .4s}
+.dots b.on{background:var(--ink)}
+@media (max-width:899px){
+  .flow{height:560vh}
+  .flow .pin{grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:18px;align-content:start;padding-top:84px}
+  .flow-photos{justify-self:center;height:46svh;max-width:88vw}
+  .flow-text{padding:0 max(20px,env(safe-area-inset-left,0px));min-height:34svh}
+  .chap{left:max(20px,env(safe-area-inset-left,0px));right:max(20px,env(safe-area-inset-right,0px))}
+  .chap h3{font-size:2rem}.chap p{font-size:1rem;margin-top:10px}
+  .dots{position:static;margin-top:0}
+}
+
+/* ---------- 4 SUPERVISORS ---------- */
+.cats{padding-block:clamp(90px,13vh,150px)}
+.cat-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:34px max(20px,calc((100vw - 1180px)/2 + 20px)) 30px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cat-row::-webkit-scrollbar{display:none}
+.cat{flex:0 0 min(78vw,320px);aspect-ratio:3/4.2;perspective:1200px;scroll-snap-align:center;cursor:pointer;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left}
+.cat .inner{position:relative;width:100%;height:100%;transition:transform .9s var(--ease);transform-style:preserve-3d}
+.cat.flip .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;border-radius:28px;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 30px 60px -36px rgba(26,40,40,.5)}
+.face.front img{width:100%;height:100%;object-fit:cover}
+.face.front .nm{position:absolute;left:0;right:0;bottom:0;padding:22px;color:#fff;background:linear-gradient(0deg,rgba(18,26,26,.75),rgba(18,26,26,0))}
+.face.front .nm h3{font-size:2rem;font-weight:400}
+.face.front .nm small{font-size:.85rem;opacity:.85}
+.face.back{transform:rotateY(180deg);background:var(--card);padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.face.back .title{font-family:var(--display);font-size:1.7rem;line-height:1.1}
+.face.back .her{font-family:var(--display);font-style:italic;font-size:1.25rem;color:var(--sage);line-height:1.3}
+.face.back small{color:var(--ink-2);font-size:.85rem}
+.face.front.blank{background:linear-gradient(160deg,#2A3A3A,#162222);display:flex;align-items:center;justify-content:center}
+.face.front.blank svg{width:52%;opacity:.9}
+.flip-hint{font-size:.88rem;color:var(--ink-2);margin-top:4px}
+.moment{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;margin-top:70px}
+.moment img{border-radius:30px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 40px 80px -40px rgba(26,40,40,.5)}
+.moment blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(1.7rem,3.6vw,2.6rem);line-height:1.15}
+.moment cite{display:block;margin-top:16px;font-style:normal;color:var(--ink-2);font-size:.95rem}
+@media (max-width:860px){.moment{grid-template-columns:1fr;gap:26px}.moment img{max-width:420px}}
+
+/* ---------- 5 TELL ME ---------- */
+.tellme{background:var(--paper-2);padding-block:clamp(90px,13vh,150px)}
+.tell-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media (max-width:860px){.tell-grid{grid-template-columns:1fr;gap:28px}}
+.notecard{position:relative;background:var(--card);border-radius:30px;padding:30px;box-shadow:0 30px 60px -40px rgba(26,40,40,.4)}
+.peek{position:absolute;top:-40px;right:34px;width:120px;height:56px;overflow:hidden}
+.peek img{width:120px;height:120px;object-fit:cover;border-radius:50%;transform:translateY(8px);transition:transform .6s var(--ease)}
+.notecard:hover .peek img,.notecard:focus-within .peek img{transform:translateY(-4px)}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.92rem;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:13px 15px;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--sage);outline:none}
+textarea{min-height:120px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}
+.check input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--ink)}
+.check label{font-weight:500;margin:0}
+.wall{display:grid;gap:12px;margin-top:28px}
+.note{background:var(--card);border-radius:22px;padding:20px 22px;box-shadow:0 20px 40px -34px rgba(26,40,40,.4)}
+.note q{font-family:var(--display);font-size:1.3rem;line-height:1.25;display:block}
+.note small{display:flex;align-items:center;gap:8px;margin-top:10px;color:var(--ink-2);font-size:.86rem}
+.note small img{width:22px;height:22px;border-radius:50%;object-fit:cover}
+.note.empty{background:transparent;border:1.5px dashed var(--line);box-shadow:none;color:var(--ink-2)}
+/* cat reaction overlay */
+.react{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(22,36,42,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .4s}
+.react.on{opacity:1;pointer-events:auto}
+.react .box{background:var(--card);border-radius:30px;padding:26px;width:min(88vw,380px);text-align:center;transform:translateY(30px) scale(.96);transition:transform .6s var(--ease)}
+.react.on .box{transform:none}
+.react img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 16px}
+.react h3{font-size:1.7rem}
+.react p{color:var(--ink-2);margin-top:8px;font-size:.98rem}
+.react .btn{margin-top:18px}
+
+/* ---------- 6 WHERE ---------- */
+.where{padding-block:clamp(90px,13vh,150px)}
+.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.room{background:var(--card);border-radius:24px;padding:22px;display:grid;gap:6px;box-shadow:0 20px 40px -34px rgba(26,40,40,.4)}
+.room h3{font-size:1.6rem;font-weight:400}
+.room p{color:var(--ink-2);font-size:.95rem}
+.room a{font-weight:600;font-size:.92rem;text-decoration-color:var(--dawn);text-decoration-thickness:2px;text-underline-offset:5px;min-height:44px;display:inline-flex;align-items:center}
+@media (max-width:900px){.rooms{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.rooms{grid-template-columns:1fr}}
+.formats{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.formats span{border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:.88rem;font-weight:500;color:var(--ink-2)}
+.sunrise{margin-top:56px;border-radius:30px;overflow:hidden;position:relative;aspect-ratio:21/9;max-height:520px}
+.sunrise img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.sunrise p{position:absolute;left:24px;bottom:22px;color:#fff;font-family:var(--display);font-size:clamp(1.3rem,3vw,2rem);text-shadow:0 2px 20px rgba(0,0,0,.4);max-width:22ch}
+@media (max-width:640px){.sunrise{aspect-ratio:4/3}}
+
+/* ---------- 7 WORK WITH ME ---------- */
+.work{padding-block:clamp(90px,13vh,150px);background:var(--dusk);color:#EEF2EF}
+.work .eyebrow{color:var(--dawn)}
+.work .lead{color:#B8C7C1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.tabs button{font:600 .92rem var(--body);min-height:42px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#EEF2EF;cursor:pointer}
+.tabs button[aria-selected="true"]{background:#EEF2EF;color:var(--dusk)}
+.door-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:22px;padding-bottom:10px;scrollbar-width:none}
+.door-track::-webkit-scrollbar{display:none}
+.door{flex:0 0 min(84vw,420px);scroll-snap-align:start;background:var(--dusk-2);border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:28px;display:flex;flex-direction:column;gap:12px;min-height:280px}
+.door h3{font-size:1.9rem;font-weight:400}
+.door p{color:#B8C7C1;flex:1}
+.door ul{margin:0;padding-left:18px;color:#B8C7C1;font-size:.95rem}
+.door .btn{align-self:flex-start}
+
+/* ---------- 8 FAQ ---------- */
+.faq{padding-block:clamp(90px,13vh,150px)}
+details{border-top:1px solid var(--line);padding-block:18px;max-width:780px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{font-weight:600;font-size:1.08rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:44px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--display);font-size:1.6rem;font-weight:300;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);margin-top:6px;max-width:62ch}
+
+/* ---------- 9 SAVASANA ---------- */
+.savasana{min-height:100svh;display:grid;place-items:center;text-align:center;padding-block:120px 160px;position:relative;overflow:hidden}
+.savasana h2{font-size:clamp(3rem,10vw,8rem);line-height:.95}
+.savasana .lead{margin:20px auto 0;color:#B8C7C1}
+.savasana .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.savasana .btn{border-color:#EEF2EF;color:#EEF2EF}
+.savasana .btn-dawn{color:var(--dusk);border-color:var(--dawn)}
+.moon{position:absolute;width:120px;aspect-ratio:1;border-radius:50%;top:12%;left:50%;transform:translateX(-50%);background:radial-gradient(circle at 42% 40%,#F6E7D8 0%,#E9CDB4 48%,rgba(233,205,180,0) 72%);opacity:.55;filter:blur(.5px)}
+.stars{position:absolute;inset:0;pointer-events:none}
+footer{padding-block:30px 120px;font-size:.9rem;color:#9FB0AA}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+/* sticky phone action */
+.dock{display:none}
+@media (max-width:820px){
+  .dock{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px max(14px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px));background:rgba(247,244,238,.86);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .5s var(--ease)}
+  .dock.on{transform:none}
+  .dock .btn{flex:1;min-height:46px}
+  body.dusk .dock{background:rgba(22,36,42,.86);border-color:rgba(255,255,255,.1)}
+  body.dusk .dock .btn-ghost{color:#EEF2EF;border-color:#EEF2EF}
+}
+@media (prefers-reduced-motion:reduce){
+  .arrive{height:auto}.arrive .pin{position:relative;height:auto;min-height:100svh}
+  .flow{height:auto}.flow .pin{position:relative;height:auto;display:block;padding-block:80px}
+  .flow-photos,.flow-text,.dots{display:none}
+  .flow-static{display:grid!important}
+}
+.flow-static{display:none;gap:40px}
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="mark" href="#top">Adrianne Kim</a>
+    <nav aria-label="Main"><a href="#flow">Her story</a><a href="#cats">The supervisors</a><a href="#where">Classes</a><a href="#work">Work with me</a></nav>
+    <a class="btn btn-primary tellbtn" href="#tell">Tell me</a>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="prog"></span></div>
+  <div class="stage-label" id="stage" aria-hidden="true">arrive</div>
+</header>
+
+<!-- 1 ARRIVE -->
+<section class="arrive" id="top" data-stage="arrive">
+  <div class="pin">
+    <div class="sky"></div>
+    <div class="sun" aria-hidden="true"></div>
+    <div class="hero-photo" id="heroPhoto"><img src="img/hero-headstand.jpg" alt="Adrianne in a headstand variation on the Navy Yard boardwalk, the Douglass Bridge arching behind her"></div>
+    <div class="hero-copy">
+      <h1>Every note gets read out loud to Sammy and Salem.<br>How was your practice?</h1>
+      <p class="sub">Vinyasa, Hot Power, Slow Flow and more, every week across DC and Arlington. Lead faculty for VIDA's 200-Hour Teacher Training.</p>
+      <div class="ctas"><a class="btn btn-primary" href="#tell">Tell me</a><a class="btn" href="#where">Find my classes</a></div>
+    </div>
+    <div class="cue" aria-hidden="true"><b></b><span></span></div>
+  </div>
+</section>
+
+<!-- 2 ONE TAP -->
+<section class="wrap" data-stage="arrive" style="padding-block:20px 120px">
+  <div class="rise"><p class="eyebrow"><i></i>Everything, one tap</p><h2>Where would you like to go?</h2></div>
+  <div class="bento">
+    <a class="tile photo t-note rise" href="#tell"><img src="img/kim-salem.jpg" alt="Adrianne holding Salem, a black cat, at Christmas"><span class="go">→</span><div class="cap"><h3>Loved class? Tell me.</h3><p>Salem's waiting to hear it.</p></div></a>
+    <a class="tile dawn t-classes rise" href="#where"><span class="go">→</span><h3>Find a class this week</h3><p>VIDA, OneLife, District Flow, Life Time. Nine rooms, one teacher.</p></a>
+    <a class="tile photo t-train rise" href="#work" data-tab="train"><img src="img/graduation-2015.jpg" alt="Adrianne in a handstand under an I DID IT teacher training banner, 2015"><span class="go">→</span><div class="cap"><h3>Train to teach</h3><p>I did it in 2015. Now I teach it.</p></div></a>
+    <a class="tile sage t-book rise" href="#work" data-tab="studios"><span class="go">→</span><h3>Book me</h3><p>Studios, companies, schools, events.</p></a>
+    <a class="tile photo t-cats rise" href="#cats"><img src="img/sammy-hooray.jpg" alt="Sammy, a tabby cat, lounging on the couch under a HOORAY banner" style="object-position:50% 70%"><span class="go">→</span><div class="cap"><h3>Meet the studio supervisors</h3><p>Sammy, Salem, Smurf, Sylvester and Big Black.</p></div></a>
+    <a class="tile t-retreat rise" href="#work" data-tab="retreats"><span class="go">→</span><h3>Retreats</h3><p>First word on the next one.</p></a>
+  </div>
+</section>
+
+<!-- 3 FLOW -->
+<section class="flow" id="flow" data-stage="flow">
+  <div class="pin">
+    <div class="flow-photos" id="flowPhotos">
+      <figure data-i="0"><img src="img/graduation-2015.jpg" alt="Adrianne in a handstand at her teacher training graduation, 2015"></figure>
+      <figure data-i="1"><img src="img/yards-park.jpg" alt="Adrianne in a standing pose at Yards Park, the Douglass Bridge arches behind her" style="object-position:30% 50%"></figure>
+      <figure data-i="2"><img src="img/sunrise-class.jpg" alt="A sunrise yoga class on the Navy Yard boardwalk"></figure>
+      <figure data-i="3"><img src="img/audi-field.jpg" alt="Adrianne leading a class on the pitch at Audi Field"></figure>
+      <figure data-i="4"><img src="img/holi.jpg" alt="Adrianne covered in Holi colors, laughing, at Sattva Yoga Academy in India"></figure>
+    </div>
+    <div class="flow-text">
+      <div class="chap" data-i="0"><p class="yr">2015</p><h3>"I did it."</h3><p>Graduated Power Yoga Teacher Training at CorePower Georgetown. A year before, I was terrified of inversions.</p></div>
+      <div class="chap" data-i="1"><p class="yr">The studio</p><h3>Where I took my first class, I ended up running the place.</h3><p>Teacher, then studio manager, then Area Leader for Virginia and Maryland. Teaching every format, coaching new teachers through graduation.</p></div>
+      <div class="chap" data-i="2"><p class="yr">Master Trainer</p><h3>I trained the teachers.</h3><p>During COVID, a small team of us shaped how teachers were trained across CorePower. Today I'm lead faculty for VIDA's 200-Hour Teacher Training.</p></div>
+      <div class="chap" data-i="3"><p class="yr">Summer 2026</p><h3>A stadium full of mats.</h3><p>Power yoga on the pitch at Audi Field before a DC Power FC match. Sunrise classes on the Navy Yard boardwalk, too.</p></div>
+      <div class="chap" data-i="4"><p class="yr">March 2026</p><h3>Back to the source.</h3><p>Sattva Yoga Academy, outside Rishikesh. My first time in India.</p><p class="quote">"Unforgettable."</p></div>
+      <div class="dots" id="dots"><b></b><b></b><b></b><b></b><b></b></div>
+    </div>
+  </div>
+  <div class="wrap flow-static" aria-hidden="true"></div>
+</section>
+
+<!-- 4 SUPERVISORS -->
+<section class="cats" id="cats" data-stage="supervisors">
+  <div class="wrap rise">
+    <p class="eyebrow"><i></i>The studio supervisors</p>
+    <h2>Every note gets read to them. Tap to meet the crew.</h2>
+    <p class="flip-hint">Tap a card to flip it.</p>
+  </div>
+  <div class="cat-row" id="catRow">
+    <button class="cat" type="button" aria-label="Sammy. Tap to flip.">
+      <div class="inner">
+        <div class="face front"><img src="img/kim-sammy.jpg" alt="Adrianne holding Sammy, a tabby cat"><div class="nm"><h3>Sammy</h3><small>Sammy Dean · tap me</small></div></div>
+        <div class="face back"><div><p class="title">Head of Meditation.<br>Chief Cuddle Officer.</p></div><p class="her">"The sweetest, loudest cat I've ever met."</p><small>Specialty: plopping his full weight on you for belly rubs.</small></div>
+      </div>
+    </button>
+    <button class="cat" type="button" aria-label="Salem. Tap to flip.">
+      <div class="inner">
+        <div class="face front"><img src="img/kim-salem.jpg" alt="Adrianne holding Salem, a black cat"><div class="nm"><h3>Salem</h3><small>tap me</small></div></div>
+        <div class="face back"><div><p class="title">Director of Outdoor Classes.</p></div><p class="her">"She's super sweet!"</p><small>Runs the backyard from her own cat house.</small></div>
+      </div>
+    </button>
+    <button class="cat" type="button" aria-label="Smurf. Tap to flip.">
+      <div class="inner">
+        <div class="face front"><img src="img/smurf-window.jpg" alt="Smurf, a black and white cat, stretched out in the window"><div class="nm"><h3>Smurf</h3><small>Sasha Smurf · tap me</small></div></div>
+        <div class="face back"><div><p class="title">Freestyle Flow.<br>Sets her own schedule.</p></div><p class="her">"Smurf does whatever she wants."</p><small>Salem's sister. Window stretch: excellent form.</small></div>
+      </div>
+    </button>
+    <button class="cat" type="button" aria-label="Sylvester. Tap to flip.">
+      <div class="inner">
+        <div class="face front blank"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M22 86 L30 30 L46 48 Z M78 86 L70 30 L54 48 Z" fill="#EEF2EF"/><path d="M18 90 C18 58 34 46 50 46 C66 46 82 58 82 90 Z" fill="#EEF2EF"/></svg><div class="nm"><h3>Sylvester</h3><small>photo coming · tap me</small></div></div>
+        <div class="face back"><div><p class="title">[Sylvester's job, in Kim's words]</p></div><p class="her">[What Kim says about him]</p><small>Studio supervisor</small></div>
+      </div>
+    </button>
+    <button class="cat" type="button" aria-label="Big Black. Tap to flip.">
+      <div class="inner">
+        <div class="face front blank"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M22 86 L30 30 L46 48 Z M78 86 L70 30 L54 48 Z" fill="#EEF2EF"/><path d="M18 90 C18 58 34 46 50 46 C66 46 82 58 82 90 Z" fill="#EEF2EF"/></svg><div class="nm"><h3>Big Black</h3><small>photo coming · tap me</small></div></div>
+        <div class="face back"><div><p class="title">[Big Black's job, in Kim's words]</p></div><p class="her">[What Kim says about him]</p><small>Studio supervisor</small></div>
+      </div>
+    </button>
+  </div>
+  <div class="wrap moment rise">
+    <img src="img/sammy-shoulder.jpg" alt="Sammy perched on Adrianne's shoulder after her meditation" loading="lazy">
+    <div>
+      <p class="eyebrow"><i></i>A practice at home</p>
+      <blockquote>"Here's Sammy Dean on my shoulder as I opened my eyes post meditation, instead of being asleep in my lap."</blockquote>
+      <cite>Adrianne, on her meditation cat</cite>
+    </div>
+  </div>
+</section>
+
+<!-- 5 TELL ME -->
+<section class="tellme" id="tell" data-stage="tell me">
+  <div class="wrap tell-grid">
+    <div class="rise">
+      <p class="eyebrow"><i></i>Notes from class</p>
+      <h2>How was your practice?</h2>
+      <p class="lead">Every note here was left by someone who just walked out of class. Yours gets read out loud tonight. Sammy and Salem are the toughest critics in DC.</p>
+      <div class="wall" id="wall"><div class="note empty">The first notes land here.</div></div>
+    </div>
+    <div class="notecard rise">
+      <div class="peek" aria-hidden="true"><img src="img/sammy-hooray.jpg" alt=""></div>
+      <form id="noteform" novalidate>
+        <div><label for="n-name">First name</label><input id="n-name" autocomplete="given-name" required></div>
+        <div><label for="n-where">Where we practiced</label><select id="n-where"><option>VIDA</option><option>OneLife</option><option>District Flow</option><option>Life Time Clarendon</option><option>An event or outdoor class</option><option>Teacher training</option></select></div>
+        <div><label for="n-note">How was your practice?</label><textarea id="n-note" required placeholder="Tell me how it felt…"></textarea></div>
+        <div class="check"><input type="checkbox" id="n-ok"><label for="n-ok">OK to share this on the site</label></div>
+        <button class="btn btn-primary" type="submit">Send it to the cats</button>
+        <p id="n-msg" aria-live="polite" style="font-size:.92rem;color:var(--sage);min-height:1.3em"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 6 WHERE -->
+<section class="where wrap" id="where" data-stage="flow">
+  <div class="rise"><p class="eyebrow"><i></i>Where I teach</p><h2>Nine rooms. One teacher.</h2><p class="lead">Pick the one near you. Subs and pop-up classes go up here first.</p></div>
+  <div class="rooms">
+    <div class="room rise"><h3>VIDA</h3><p>Navy Yard · U Street · City Vista · Ballston</p><a href="https://vidafitness.com/">VIDA schedule</a></div>
+    <div class="room rise"><h3>OneLife</h3><p>Capitol Hill · Old Town · Crystal City · Ballston</p><a href="https://www.onelifefitness.com/">OneLife schedule</a></div>
+    <div class="room rise"><h3>District Flow</h3><p>Capitol Hill, 405 8th St SE</p><a href="https://www.districtflowyoga.com/">District Flow schedule</a></div>
+    <div class="room rise"><h3>Life Time</h3><p>Clarendon</p><a href="https://www.lifetime.life/">Life Time schedule</a></div>
+  </div>
+  <div class="formats rise"><span>Vinyasa</span><span>Hot Power Vinyasa</span><span>Slow Flow</span><span>Yoga Sculpt</span><span>Yang-Yin Flow &amp; Restore</span><span>Candlelight</span><span>Breath &amp; Meditation</span><span>Your very first class</span></div>
+  <div class="sunrise rise"><img src="img/sunrise-class.jpg" alt="Students practicing at sunrise on the Navy Yard boardwalk" loading="lazy"><p>New here? Rest whenever you want. Child's pose counts.</p></div>
+</section>
+
+<!-- 7 WORK WITH ME -->
+<section class="work" id="work" data-stage="work">
+  <div class="wrap">
+    <div class="rise"><p class="eyebrow"><i></i>Work with me</p><h2>I've trained the teachers you're hiring.</h2><p class="lead">Pick your door. Every one starts with a conversation.</p></div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" aria-selected="true" data-k="studios">Studios</button>
+      <button role="tab" aria-selected="false" data-k="companies">Companies &amp; events</button>
+      <button role="tab" aria-selected="false" data-k="schools">Schools</button>
+      <button role="tab" aria-selected="false" data-k="train">Teacher training</button>
+      <button role="tab" aria-selected="false" data-k="retreats">Retreats</button>
+      <button role="tab" aria-selected="false" data-k="privates">Privates</button>
+    </div>
+    <div class="door-track" id="doors">
+      <article class="door" data-k="studios"><h3>Studios &amp; gyms</h3><p>A teacher, a reliable sub, or someone to train your team to one standard. I've managed studios and coached teachers from day one to graduation.</p><a class="btn btn-dawn" href="#contact">Let's talk</a></article>
+      <article class="door" data-k="companies"><h3>Companies &amp; events</h3><p>One session for your team, at your desk or on the field. No mats required. I've led a stadium full of mats at Audi Field.</p><a class="btn btn-dawn" href="#contact">Try one session</a></article>
+      <article class="door" data-k="schools"><h3>Schools</h3><p>Yoga that fits your schedule and your students, from PE blocks to faculty wellness.</p><a class="btn btn-dawn" href="#contact">Get the one-page overview</a></article>
+      <article class="door" data-k="train"><h3>Teacher training</h3><p>I'm on the faculty for VIDA's 200-Hour Teacher Training. Next cohort: City Vista, November 14.</p><a class="btn btn-dawn" href="https://vidafitness.com/200-hour-yoga-teacher-training/">Train with me</a></article>
+      <article class="door" data-k="retreats"><h3>Retreats</h3><p>Be first to hear about the next one. <span class="confirm">[CONFIRM: where]</span></p><a class="btn btn-dawn" href="#contact">Get first word</a></article>
+      <article class="door" data-k="privates"><h3>Private sessions</h3><p>One-on-one, built around your body. <span class="confirm">[CONFIRM: rate]</span></p><a class="btn btn-dawn" href="#contact">Book a private</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- 8 FAQ -->
+<section class="faq wrap" data-stage="rest">
+  <div class="rise"><p class="eyebrow"><i></i>Before you come</p><h2>Questions</h2></div>
+  <div style="margin-top:28px">
+    <details class="rise"><summary>I'm new. Is this for me?</summary><p>Yes. Every class has a version for your first day. Rest whenever you want.</p></details>
+    <details class="rise"><summary>Can you teach at my studio, or sub?</summary><p>Yes. Tell me your schedule.</p></details>
+    <details class="rise"><summary>How do I bring you to my team?</summary><p>Start with one session, and we'll go from there.</p></details>
+    <details class="rise"><summary>Do you teach privates?</summary><p>Yes. <span class="confirm">[CONFIRM: rate]</span></p></details>
+  </div>
+</section>
+
+<!-- 9 SAVASANA -->
+<section class="savasana" id="contact" data-stage="savasana">
+  <div class="moon" aria-hidden="true"></div>
+  <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+  <div class="wrap" style="position:relative">
+    <h2>See you on the mat.</h2>
+    <p class="lead">Rest here as long as you like. Then tell me how it went.</p>
+    <div class="ctas"><a class="btn btn-dawn" href="#tell">Tell me</a><a class="btn" href="#where">Find my classes</a><a class="btn" href="https://www.instagram.com/adriannekim/">@adriannekim</a></div>
+    <p style="margin-top:22px;color:#9FB0AA;font-size:.92rem">Email: <span class="confirm">[ASK: email]</span></p>
+  </div>
+</section>
+<footer><div class="wrap"><span>adrianne.yoga · DC and Arlington</span><span>Notes reviewed nightly by Sammy and Salem.</span></div></footer>
+
+<div class="dock" id="dock"><a class="btn btn-primary" href="#tell">Tell me</a><a class="btn btn-ghost" href="#where">Classes</a></div>
+
+<div class="react" id="react" role="dialog" aria-modal="true" aria-labelledby="react-h">
+  <div class="box"><img id="react-img" src="img/kim-sammy.jpg" alt=""><h3 id="react-h">Sammy heard it.</h3><p id="react-p">He approves. Thank you for practicing with me.</p><button class="btn btn-primary" type="button" id="react-close">Back to the page</button></div>
+</div>
+
+<script>
+(function(){
+  var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+  var bar=document.getElementById('bar'),prog=document.getElementById('prog'),stage=document.getElementById('stage'),dock=document.getElementById('dock');
+  var hero=document.getElementById('heroPhoto'),arrive=document.querySelector('.arrive');
+  var flow=document.getElementById('flow'),figs=[].slice.call(document.querySelectorAll('#flowPhotos figure')),chaps=[].slice.call(document.querySelectorAll('.chap')),dots=[].slice.call(document.querySelectorAll('#dots b'));
+  var stages=[].slice.call(document.querySelectorAll('[data-stage]'));
+  var sav=document.getElementById('contact');
+  var desktop=matchMedia('(min-width:900px)');
+  var lastChap=-1;
+  function setChap(i){if(i===lastChap)return;lastChap=i;figs.forEach(function(f,k){f.classList.toggle('on',k===i);f.classList.toggle('past',k<i);});chaps.forEach(function(c,k){c.classList.toggle('on',k===i);});dots.forEach(function(d,k){d.classList.toggle('on',k===i);});}
+  setChap(0);
+  function frame(){
+    var y=scrollY,vh=innerHeight,H=document.documentElement.scrollHeight-vh;
+    prog.style.width=(Math.min(1,y/H)*100).toFixed(2)+'%';
+    bar.classList.toggle('solid',y>40);
+    dock.classList.toggle('on',y>vh*.7);
+    // hero: photo grows from arch to full-bleed card as you breathe in
+    if(!RM){var a=arrive.getBoundingClientRect();var t=Math.min(1,Math.max(0,-a.top/(a.height-vh)));
+      var s=1+t*(desktop.matches?0.12:0.08);var r=Math.round(44*(1-t));
+      hero.style.transform=(desktop.matches?'translate(0,-50%) ':'')+'scale('+s.toFixed(3)+')';
+      hero.style.borderRadius=r+'% '+r+'% 30px 30px / '+Math.round(34*(1-t))+'% '+Math.round(34*(1-t))+'% 30px 30px';
+      hero.style.filter='saturate('+(1+t*.15).toFixed(2)+')';}
+    // flow chapters
+    var f=flow.getBoundingClientRect();if(f.top<=0&&f.bottom>=vh){var p=-f.top/(f.height-vh);setChap(Math.min(4,Math.floor(p*5)));}
+    else if(f.top>0)setChap(0);
+    // stage label
+    var cur='arrive';stages.forEach(function(s){if(s.getBoundingClientRect().top<vh*.45)cur=s.getAttribute('data-stage');});stage.textContent=cur;
+    // dusk
+    var sv=sav.getBoundingClientRect();document.body.classList.toggle('dusk',sv.top<vh*.55);
+  }
+  var ticking=false;addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(function(){frame();ticking=false;});}},{passive:true});
+  addEventListener('resize',frame);frame();
+
+  // reveals
+  var els=document.querySelectorAll('.rise');
+  if('IntersectionObserver' in window&&!RM){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px',threshold:.06});els.forEach(function(el,i){el.style.transitionDelay=((i%4)*80)+'ms';io.observe(el);});}
+  else els.forEach(function(el){el.classList.add('in');});
+
+  // cat cards flip
+  document.querySelectorAll('.cat').forEach(function(c){c.addEventListener('click',function(){c.classList.toggle('flip');});});
+
+  // tabs + doors
+  var tabs=[].slice.call(document.querySelectorAll('#tabs button')),track=document.getElementById('doors');
+  function showDoor(k){tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.k===k?'true':'false');});var d=track.querySelector('.door[data-k="'+k+'"]');if(d)track.scrollTo({left:d.offsetLeft-track.offsetLeft,behavior:RM?'auto':'smooth'});}
+  tabs.forEach(function(t){t.addEventListener('click',function(){showDoor(t.dataset.k);});});
+  track.addEventListener('scroll',function(){var best=null,bd=1e9;track.querySelectorAll('.door').forEach(function(d){var dd=Math.abs(d.offsetLeft-track.offsetLeft-track.scrollLeft);if(dd<bd){bd=dd;best=d;}});if(best)tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.k===best.dataset.k?'true':'false');});},{passive:true});
+  document.querySelectorAll('[data-tab]').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){showDoor(a.dataset.tab);},500);});});
+
+  // notes + cat reaction
+  var cats=[{img:'img/kim-sammy.jpg',h:'Sammy heard it.',p:'He approves, loudly. Thank you for practicing with me.'},{img:'img/kim-salem.jpg',h:'Salem heard it.',p:'She says thank you. So do I.'},{img:'img/smurf-window.jpg',h:'Smurf heard it.',p:'She pretended not to listen. She was listening.'}];
+  var react=document.getElementById('react'),form=document.getElementById('noteform'),wall=document.getElementById('wall'),msg=document.getElementById('n-msg');
+  form.addEventListener('submit',function(e){e.preventDefault();
+    var name=document.getElementById('n-name').value.trim(),where=document.getElementById('n-where').value,note=document.getElementById('n-note').value.trim(),ok=document.getElementById('n-ok').checked;
+    if(!name||!note){msg.textContent='Add your name and a note, and the cats will hear it tonight.';return;}
+    var c=cats[Math.floor(Math.random()*cats.length)];
+    document.getElementById('react-img').src=c.img;document.getElementById('react-h').textContent=c.h;document.getElementById('react-p').textContent=c.p+' (Preview: notes start saving when the site goes live.)';
+    react.classList.add('on');document.getElementById('react-close').focus();
+    if(ok){var empty=wall.querySelector('.empty');if(empty)empty.remove();var d=document.createElement('div');d.className='note';var q=document.createElement('q');q.textContent=note;var s=document.createElement('small');var im=document.createElement('img');im.src=c.img;im.alt='';s.appendChild(im);s.appendChild(document.createTextNode(name+' · '+where+' · read to '+c.h.split(' ')[0]));d.appendChild(q);d.appendChild(s);wall.prepend(d);}
+    form.reset();msg.textContent='';
+  });
+  function closeR(){react.classList.remove('on');}
+  document.getElementById('react-close').addEventListener('click',closeR);
+  react.addEventListener('click',function(e){if(e.target===react)closeR();});
+  addEventListener('keydown',function(e){if(e.key==='Escape')closeR();});
+
+  // savasana stars
+  var cv=document.getElementById('stars'),g=cv.getContext('2d'),pts=[];
+  function sizeStars(){var r=cv.getBoundingClientRect();cv.width=r.width*devicePixelRatio;cv.height=r.height*devicePixelRatio;pts=[];for(var i=0;i<70;i++)pts.push({x:Math.random(),y:Math.random()*.7,r:Math.random()*1.4+.3,p:Math.random()*6.28});}
+  function stars(t){g.clearRect(0,0,cv.width,cv.height);pts.forEach(function(s){var a=.35+.35*Math.sin(t/1400+s.p);g.fillStyle='rgba(238,242,239,'+a.toFixed(2)+')';g.beginPath();g.arc(s.x*cv.width,s.y*cv.height,s.r*devicePixelRatio,0,6.283);g.fill();});if(!RM)requestAnimationFrame(stars);}
+  sizeStars();addEventListener('resize',sizeStars);requestAnimationFrame(stars);
+})();
+</script>
+</body>
+</html>
