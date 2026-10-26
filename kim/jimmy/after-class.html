@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>adrianne.yoga · After Class</title>
+<meta name="description" content="Adrianne Kim teaches Vinyasa, Hot Power and Slow Flow at VIDA, OneLife and District Flow across DC and Arlington. Leave a note after class.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Nanum+Pen+Script&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · custom run (Website Studio v2, Direction A "After Class", round 2) · genre: playful · posture: committed · hero: type + object (the note card) · nav: 4 links + phone sticky bar · footer: close + wordmark + supervisors polaroid · signature: the note flies to the wall */
+/* critique: round-1 critic P0/P1 applied; review marks off by default; copy verbatim from COPY.md with tagged suggestions */
+:root{
+  /* palette */
+  --ground:#24304A;          /* studio-mirror dusk blue */
+  --ground-deep:#1C2640;
+  --field:#2E3D60;           /* photo-field navy */
+  --field-deep:#1A2338;
+  --surface:#F7F7F4;         /* index-card paper */
+  --paper-tint:#FDFDFB;      /* focused input, near-white tinted */
+  --butter:#FFE9A8;
+  --blush:#F9D3CF;
+  --mint:#CFEBDD;
+  --ink:#18202E;
+  --ink-2:#3C4658;
+  --muted:#5B6577;
+  --on-dark:#F7F7F4;
+  --on-dark-muted:#BAC3D4;
+  --accent:#F08A24;          /* monarch orange: buttons, stamp, butterfly */
+  --accent-press:#9A4F0B;
+  --accent-ink:#E27A12;
+  --green:#2F6B54;
+  --green-deep:#1E4D3A;
+  --brown:#8A4B12;
+  --rule-red:#E8A39B;
+  --err:#A1231B;
+  --err-line:#B3261E;
+  --err-bg:#FFF4F2;
+  --placeholder:#6A7488;
+  --card-date:#2A3A5E;
+  /* translucent roles */
+  --ink-08:rgba(24,32,46,.08);
+  --ink-12:rgba(24,32,46,.12);
+  --ink-25:rgba(24,32,46,.25);
+  --ink-40:rgba(24,32,46,.4);
+  --ink-55:rgba(24,32,46,.55);
+  --ink-85:rgba(24,32,46,.85);
+  --paper-08:rgba(247,247,244,.08);
+  --paper-22:rgba(247,247,244,.22);
+  --paper-50:rgba(247,247,244,.5);
+  --paper-55:rgba(255,255,255,.55);
+  --tape:rgba(247,247,244,.72);
+  --tape-butter:rgba(255,233,168,.88);
+  --tape-strip:rgba(255,233,168,.94);
+  /* shadows */
+  --sh-card:0 2px 0 rgba(0,0,0,.08), 0 22px 50px rgba(5,10,25,.45);
+  --sh-note:0 14px 30px rgba(5,10,25,.38);
+  --sh-polaroid:0 18px 40px rgba(5,10,25,.42);
+  --sh-tape:0 2px 4px rgba(0,0,0,.14);
+  --sh-strip:0 6px 14px rgba(0,0,0,.25);
+  --sh-bar:0 -10px 30px rgba(0,0,0,.25);
+  --sh-menu:0 18px 40px rgba(0,0,0,.35);
+  --sh-ghost:0 12px 30px rgba(0,0,0,.25);
+  --sh-board:0 3px 0 rgba(24,32,46,.18), 0 26px 50px rgba(120,90,10,.22);
+  --sh-btn:0 4px 0 var(--accent-press);
+  --sh-btn-hover:0 2px 0 var(--accent-press);
+  --sh-focus:0 0 0 3px var(--ink-85);
+  /* textures (SVG, no gradients) */
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  --streaks:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='30,0 38,0 22,100 14,100' fill='white' fill-opacity='.055'/><polygon points='58,0 61,0 45,100 42,100' fill='white' fill-opacity='.035'/><rect x='33.2' width='.12' height='100' fill='white' fill-opacity='.07'/><rect x='66.5' width='.12' height='100' fill='white' fill-opacity='.07'/></svg>");
+  --ruled:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='36'><rect y='35' width='8' height='1' fill='%2324304A' fill-opacity='.10'/></svg>");
+  --ruled-sm:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='30'><rect y='29' width='8' height='1' fill='%2324304A' fill-opacity='.10'/></svg>");
+  --chev:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='9'><path d='M1 1l6 6 6-6' stroke='%2318202E' stroke-width='2.2' fill='none' stroke-linecap='round'/></svg>");
+  /* type */
+  --display:"Syne", "Arial Black", sans-serif;
+  --body:"Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hand:"Nanum Pen Script", "Comic Sans MS", cursive;
+  --gutter:20px;
+  --wrap:1280px;
+  --bar-h:0px;
+  --focus:var(--ink);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;overflow-x:clip;padding-bottom:var(--bar-h)}
+img,svg{display:block}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gutter)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.dark,.mirror{color:var(--on-dark);--focus:var(--butter)}
+.mirror{position:relative;background:var(--ground);isolation:isolate}
+.mirror::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:var(--streaks);background-size:100% 100%}
+.mirror::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:var(--grain);opacity:.09;mix-blend-mode:overlay}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--butter);color:var(--ink);padding:12px 16px;z-index:100;font-weight:700;border-radius:8px}
+.skip:focus{top:12px}
+
+/* ---------- review marks (hidden unless body.marks) ---------- */
+.tag{display:inline-flex;align-items:center;font:700 13px/1 var(--body);padding:4px 8px;border:1.5px dotted currentColor;border-radius:4px;vertical-align:.24em;margin-left:.4em;white-space:nowrap;font-style:normal;letter-spacing:0}
+.tag--s{color:var(--green)}
+.tag--c{color:var(--brown)}
+.mirror .tag--s,.dark .tag--s{color:var(--mint)}
+.mirror .tag--c,.dark .tag--c{color:var(--butter)}
+.mirror .notecard .tag--s,.mirror .thanks .tag--s,.mirror .note .tag--s,.mirror .polaroid .tag--s,.mirror .door-card .tag--s{color:var(--green)}
+.mirror .notecard .tag--c,.mirror .tapes .tag--c,.mirror .door-card .tag--c{color:var(--brown)}
+h1 .tag,h2 .tag,h3 .tag{font-size:13px}
+.sample{display:inline-block;font:700 13px/1 var(--body);color:var(--ink);background:var(--ink-08);border:1.5px solid var(--ink-55);padding:4px 8px;border-radius:4px}
+.mirror .wall-head .sample{background:var(--butter);border-color:var(--butter)}
+body:not(.marks) .tag,
+body:not(.marks) .sample,
+body:not(.marks) .mk{display:none!important}
+body.marks .mk-off{display:none!important}
+/* unverified facts keep a faint dotted underline even with marks off */
+.unv{text-decoration:underline dotted;text-decoration-thickness:1.5px;text-underline-offset:4px}
+
+.review-pill{position:fixed;left:12px;bottom:calc(var(--bar-h) + 12px);z-index:55;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 12px;border-radius:999px;border:1.5px solid var(--paper-50);background:var(--ink);color:var(--on-dark-muted);font:700 13px/1 var(--body);cursor:pointer;box-shadow:var(--sh-tape)}
+.review-pill .dot{width:10px;height:10px;border-radius:50%;border:1.5px solid currentColor}
+.review-pill[aria-pressed=true]{color:var(--butter);border-color:var(--butter)}
+.review-pill[aria-pressed=true] .dot{background:var(--butter)}
+.legend{position:fixed;left:12px;bottom:calc(var(--bar-h) + 64px);z-index:55;background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 12px;box-shadow:var(--sh-note);font-size:14px;line-height:1.5;max-width:260px}
+.legend p{margin:0}
+.legend .tag{margin:0 4px 0 0;vertical-align:0}
+body:not(.marks) .legend{display:none}
+@media (max-width:599px){.legend{display:none!important}.review-pill{font-size:12px;padding:4px 10px;gap:6px;left:8px}.review-pill .dot{width:8px;height:8px}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:12px 24px;border-radius:10px;font:700 18px/1.1 var(--body);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform .15s ease, box-shadow .15s ease;-webkit-tap-highlight-color:transparent;white-space:nowrap}
+.btn:active{transform:translateY(2px)}
+.btn--go{background:var(--accent);color:var(--ink);box-shadow:var(--sh-btn)}
+.btn--go:hover{box-shadow:var(--sh-btn-hover);transform:translateY(2px)}
+.btn--line{background:transparent;color:currentColor;border-color:currentColor}
+.btn--line:hover{background:var(--paper-08)}
+.btn--ink{background:var(--ink);color:var(--surface)}
+.btn--small{min-height:48px;padding:8px 16px;font-size:17px}
+.btn:disabled,.btn[aria-disabled=true]{opacity:.55;cursor:not-allowed;box-shadow:none;transform:none}
+.textlink{font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px}
+
+/* ---------- header ---------- */
+.site-head{position:relative;z-index:20}
+.head-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-block:12px 4px}
+.wordmark{display:inline-flex;align-items:center;min-height:44px;font:800 24px/1 var(--display);letter-spacing:-.02em;text-decoration:none;color:var(--on-dark)}
+.wordmark .bfly{width:20px;height:16px;margin:0 1px 0 2px}
+.alias{font-size:15px;color:var(--on-dark-muted);margin:0;line-height:1.3}
+.alias .tag{margin-left:.3em;vertical-align:0}
+.menu-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;padding:8px 16px;border-radius:10px;border:2px solid var(--paper-50);background:transparent;color:var(--on-dark);font:700 16px var(--body);cursor:pointer}
+.menu-btn svg{width:18px;height:18px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:700;font-size:17px;color:var(--on-dark);border-radius:8px}
+.nav a:hover{background:var(--paper-08)}
+@media (max-width:899px){
+  .nav{position:absolute;left:var(--gutter);right:var(--gutter);top:100%;background:var(--ink);border-radius:16px;padding:8px;box-shadow:var(--sh-menu);display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column}
+  .nav a{width:100%;font-size:20px;padding:8px 16px;min-height:52px}
+}
+@media (min-width:900px){.menu-btn{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding-block:16px 40px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1fr;position:relative}
+.hero h1{position:relative;z-index:1;color:var(--on-dark)}
+.hero h1 .cats{display:block;font-size:clamp(2rem, 1.2rem + 3.4vw, 4.2rem);line-height:1;letter-spacing:-.03em}
+.hero h1 .q{display:block;font-size:clamp(2.9rem, 1.4rem + 5.4vw, 6.2rem);line-height:.94;letter-spacing:-.04em;color:var(--butter);margin-top:.12em}
+.hero-copy{position:relative;z-index:1}
+.hero-sub{font-size:19px;color:var(--on-dark);max-width:36ch;margin:24px 0 20px}
+.hero-sub .tag{vertical-align:.12em}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px}
+.hero-btns .textlink{color:var(--on-dark)}
+.trust{font-size:17px;color:var(--on-dark-muted);margin:0;max-width:44ch;line-height:1.5}
+.trust strong{color:var(--on-dark)}
+
+/* the note card */
+.card-zone{position:relative;margin-top:-24px;z-index:3;padding-top:52px}
+.card-ghost{position:absolute;inset:60px -8px 12px 16px;background:var(--blush);border-radius:6px;transform:rotate(4.5deg);box-shadow:var(--sh-ghost);z-index:-1}
+.notecard,.thanks{position:relative;background-color:var(--surface);background-image:var(--ruled);background-position:0 24px;color:var(--ink);border-radius:6px;padding:24px 20px 20px;transform:rotate(-1.4deg);box-shadow:var(--sh-card)}
+.notecard::before{content:"";position:absolute;left:50%;top:-14px;width:112px;height:28px;transform:translateX(-50%) rotate(-3deg);background:var(--tape-butter);box-shadow:var(--sh-tape)}
+.peek-cat{position:absolute;right:28px;top:4px;width:112px;height:60px;z-index:4;pointer-events:none;transform-origin:50% 100%}
+.card-date{font-family:var(--hand);font-size:30px;line-height:1;margin:0 -20px 12px;padding:0 20px 12px;border-bottom:2px solid var(--rule-red);color:var(--card-date)}
+.breath{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin:0 0 8px;padding:0;background:none;border:0;font:700 17px/1.3 var(--body);color:var(--ink-2);cursor:pointer;text-align:left}
+.breath svg{width:24px;height:20px;flex:none;transition:transform 4s ease-in-out}
+.breath:hover .lbl{text-decoration:underline;text-underline-offset:4px}
+.field{margin-bottom:16px;position:relative}
+.field label{display:block;font-weight:700;font-size:16px;margin-bottom:4px;color:var(--ink)}
+.field input[type=text],.field input[type=email],.field select,.field textarea{width:100%;font:500 18px/1.4 var(--body);color:var(--ink);background:var(--paper-55);border:0;border-bottom:2px solid var(--ink-55);border-radius:6px 6px 0 0;padding:12px 12px 8px;min-height:48px;-webkit-appearance:none;appearance:none}
+.field textarea{min-height:88px;resize:vertical;font-family:var(--hand);font-size:28px;line-height:1.15;padding-top:8px}
+.field input::placeholder,.field textarea::placeholder{font-family:var(--body);font-size:17px;color:var(--placeholder);opacity:1}
+.field select{background-image:var(--chev);background-repeat:no-repeat;background-position:right 12px center;padding-right:36px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--ink);background-color:var(--paper-tint);box-shadow:var(--sh-focus)}
+.field [aria-invalid=true]{border-bottom-color:var(--err-line);background-color:var(--err-bg)}
+.err{display:none;color:var(--err);font-size:16px;font-weight:700;margin-top:4px;line-height:1.35}
+.err.show{display:block}
+.two{display:grid;grid-template-columns:1fr;gap:0 16px}
+.check{display:flex;gap:12px;align-items:flex-start;min-height:44px;padding:8px 0;cursor:pointer;font-size:17px;line-height:1.4}
+.check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--ink);cursor:pointer;margin-top:1px}
+.check small{display:block;color:var(--muted);font-size:16px;margin-top:2px}
+.opt-toggle{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;background:none;border:0;font:700 17px var(--body);color:var(--ink);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;cursor:pointer}
+.opt-toggle .pm{font:800 20px/1 var(--body);text-decoration:none;width:16px;display:inline-block}
+.extras{border-top:1.5px dashed var(--ink-25);margin-top:4px;padding-top:4px}
+.extras[hidden]{display:none}
+.email-wrap{margin-top:8px}
+.send-row{display:flex;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}
+.send-row .btn{flex:1 1 auto}
+.private-note{font-size:16px;color:var(--muted);margin:8px 0 0;line-height:1.4}
+
+/* thank-you */
+.thanks{padding:24px 24px 24px}
+.thanks:focus{outline:none}
+.thanks h2{font-size:clamp(1.9rem, 1.2rem + 2.4vw, 2.7rem);line-height:1.02;margin:8px 0 16px}
+.thanks .btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.thanks .btn--line{color:var(--ink)}
+.again{background:none;border:0;font:700 17px var(--body);color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer;min-height:44px;padding:0 4px}
+.hear{margin-top:16px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;border:2px solid var(--ink);background:var(--surface);color:var(--ink);font:700 16px var(--body)}
+.hear:disabled{opacity:.6;cursor:not-allowed}
+.hear svg{width:16px;height:16px}
+
+/* ---------- wall items ---------- */
+.note{position:relative;color:var(--ink);border-radius:4px;padding:28px 16px 16px;transform:rotate(var(--r,0deg));box-shadow:var(--sh-note);background:var(--surface)}
+.note .tape{position:absolute;top:-12px;left:50%;width:72px;height:24px;transform:translateX(-50%) rotate(var(--tr,-4deg));background:var(--tape);box-shadow:var(--sh-tape)}
+.note--butter{background:var(--butter)}
+.note--blush{background:var(--blush)}
+.note--mint{background:var(--mint)}
+.note .hand{font-family:var(--hand);font-size:30px;line-height:1.05;margin:4px 0 8px;color:var(--ink)}
+.note .tags{min-height:0;margin:0}
+.note .meta{font-size:16px;font-weight:700;color:var(--ink-2);margin:0;line-height:1.35}
+.note .meta span{display:block}
+.note .flag{font-size:15px;font-weight:700;color:var(--ink-2);margin:0;line-height:1.3}
+.note--empty{background:transparent;box-shadow:none;border:2.5px dashed var(--paper-50);color:var(--on-dark);display:flex;align-items:center;justify-content:center;min-height:132px;text-align:center}
+.note--empty .hand{color:var(--on-dark);font-size:34px;margin:0}
+.note--empty[hidden]{display:none}
+.note--new{background-color:var(--surface);background-image:var(--ruled-sm);padding-right:112px;padding-bottom:28px;min-height:150px}
+.note--new .hand{font-size:31px;overflow-wrap:anywhere}
+.note .stamp{position:absolute;right:-8px;bottom:-22px;width:108px;height:108px;transform:rotate(-14deg)}
+.note--new .stamp{opacity:0}
+.note--new.stamped .stamp{opacity:1;animation:thump .42s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes thump{0%{opacity:0;transform:rotate(-30deg) scale(1.9)}60%{opacity:1}100%{opacity:1;transform:rotate(-14deg) scale(1)}}
+
+/* ---------- polaroids: designed duotone fields ---------- */
+.polaroid{margin:0;background:var(--surface);padding:12px 12px 16px;border-radius:3px;transform:rotate(var(--r,0deg));box-shadow:var(--sh-polaroid);position:relative}
+.polaroid .pin{position:absolute;top:-12px;left:50%;width:88px;height:24px;transform:translateX(-50%) rotate(3deg);background:var(--tape-butter);box-shadow:var(--sh-tape);z-index:2}
+.shot{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:2px;background:var(--field)}
+.shot::after{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.5;mix-blend-mode:overlay;pointer-events:none}
+.shot .art{position:absolute;inset:0;width:100%;height:100%}
+.art .n{fill:var(--field)}
+.art .d{fill:var(--field-deep)}
+.art .b{fill:var(--butter)}
+.art .bs{fill:none;stroke:var(--butter)}
+.art .bl{fill:var(--blush)}
+.shot .slot-label{position:absolute;left:12px;top:12px;z-index:1;font:700 13px/1 var(--body);color:var(--ink);background:var(--surface);padding:4px 8px;border-radius:4px}
+.shot .spec{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:8px 12px;font:700 14px/1.3 var(--body);color:var(--surface);background:var(--field-deep)}
+.shot--wide{aspect-ratio:4/3}
+.shot--tall{aspect-ratio:3/4}
+.polaroid figcaption{font-family:var(--hand);font-size:26px;line-height:1.05;margin-top:8px;color:var(--ink);min-height:20px}
+
+/* ---------- wall band ---------- */
+.wall{padding-block:24px 72px;position:relative}
+.wall-head{margin-bottom:32px;max-width:40ch}
+.wall-head h2{font-size:clamp(2.4rem,1.4rem + 4vw,4.6rem)}
+.wall-head p{font-size:19px;margin:16px 0 8px}
+.wall-head .disclaim{font-size:17px;color:var(--on-dark-muted);margin:0}
+.wall-grid{display:grid;grid-template-columns:1fr;gap:36px}
+.wall-a .polaroid{max-width:520px}
+.wall-b{display:grid;grid-template-columns:1fr 1fr;gap:32px 16px;align-items:start}
+.wall-b .wide{grid-column:1 / -1}
+.wall-b .polaroid figcaption{font-size:23px}
+.wall-b > .lift{margin-top:24px}
+
+/* ---------- proof ---------- */
+.proof{padding-block:8px 80px}
+.proof-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+.tapes{display:flex;flex-wrap:wrap;gap:16px 12px;list-style:none;margin:0;padding:0}
+.tapes li{background:var(--tape-strip);color:var(--ink);font:700 19px/1.2 var(--display);letter-spacing:-.01em;padding:12px 20px;transform:rotate(var(--r,0deg));box-shadow:var(--sh-strip);clip-path:polygon(0 6%,3% 0,97% 4%,100% 0,99% 50%,100% 96%,96% 100%,4% 96%,0 100%,1% 50%)}
+.proof .polaroid{width:100%;max-width:340px;justify-self:center}
+.proof-kicker{font:800 clamp(1.7rem,1.1rem + 2.4vw,2.8rem)/1.05 var(--display);letter-spacing:-.02em;color:var(--on-dark);margin:0 0 24px;max-width:18ch}
+
+/* ---------- where I teach ---------- */
+.band-butter{background:var(--butter)}
+.teach{padding-block:72px 80px}
+.teach h2{font-size:clamp(3rem,1.6rem + 6vw,7rem);letter-spacing:-.04em}
+.today{font:800 clamp(1.25rem,1rem + 1vw,1.7rem)/1.2 var(--display);margin:16px 0 4px;letter-spacing:-.01em}
+.teach .lead{font-size:20px;margin:8px 0 24px}
+.picker{font:800 clamp(1.4rem,1.1rem + 1.2vw,2rem)/1.25 var(--display);letter-spacing:-.01em;margin:0 0 8px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.picker label{cursor:pointer}
+.picker select{font:800 clamp(1.3rem,1rem + 1.1vw,1.9rem)/1.2 var(--display);letter-spacing:-.01em;color:var(--ink);background-color:transparent;background-image:var(--chev);background-repeat:no-repeat;background-position:right 4px center;border:0;border-bottom:3px solid var(--ink);padding:4px 32px 4px 0;min-height:48px;-webkit-appearance:none;appearance:none;cursor:pointer;max-width:100%}
+.picker select:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.pick-note{font-size:18px;margin:0 0 20px;min-height:0}
+.pick-note:empty{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;border:0}
+.chips legend{font-weight:700;font-size:16px;margin-bottom:8px;padding:0;display:flex;align-items:center}
+.chip{min-height:48px;padding:8px 16px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:700 17px var(--body);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--butter)}
+.chip:hover{background:var(--ink-08)}
+.chip[aria-pressed=true]:hover{background:var(--ink)}
+.board{background:var(--surface);border-radius:8px;box-shadow:var(--sh-board);overflow:hidden}
+.board-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:12px 16px;background:var(--ink);color:var(--surface);font-weight:700;font-size:17px}
+.board-top .count{color:var(--on-dark-muted);font-weight:500}
+.board-top .tag--c{color:var(--butter)}
+.days{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:12px 12px 0}
+.days .view{min-height:48px;border-radius:8px;border:2px solid var(--ink);background:transparent;font:700 17px var(--body);color:var(--ink);cursor:pointer}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:8px 12px 12px;border-bottom:1.5px solid var(--ink-12)}
+.day{min-height:56px;border-radius:8px;border:2px solid transparent;background:transparent;color:var(--ink);font:700 15px/1.1 var(--body);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:4px 0;position:relative}
+.day b{font:800 17px/1 var(--display);font-variant-numeric:tabular-nums}
+.day .has{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.day .none{width:6px;height:6px}
+.day.is-today{border-color:var(--ink-40);border-style:dashed}
+.days .view[aria-pressed=true],.day[aria-pressed=true]{background:var(--ink);color:var(--butter);border-color:var(--ink);border-style:solid}
+.days .view:hover,.day:hover{background:var(--ink-08)}
+.days .view[aria-pressed=true]:hover,.day[aria-pressed=true]:hover{background:var(--ink)}
+.pinned{padding:12px 16px 0}
+.pinned h3{font:700 16px/1.2 var(--body);letter-spacing:0;color:var(--brown);margin:0 0 4px}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:76px 1fr auto;grid-template-areas:"d t b" "d i b";gap:4px 12px;align-items:center;padding:16px;border-top:1.5px solid var(--ink-12)}
+.row > :nth-child(1){grid-area:d;align-self:start}
+.row > :nth-child(2){grid-area:t}
+.row > :nth-child(3){grid-area:i}
+.row > :nth-child(4){grid-area:b}
+.rows .row:first-child{border-top:0}
+.row .dayname{font:800 20px/1 var(--display);letter-spacing:-.02em}
+.row .date{display:block;font:500 15px/1.3 var(--body);color:var(--muted);margin-top:4px;font-variant-numeric:tabular-nums}
+.row .time{display:block;font:700 20px/1.2 var(--body);font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .style{display:block;font-weight:800;font-size:18px;line-height:1.3}
+.row .where{display:block;color:var(--muted);font-size:17px;line-height:1.35}
+.row .badges{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.row .badges:empty{display:none}
+.badge{font:700 14px/1 var(--body);padding:4px 8px;border-radius:4px}
+.badge--sub{background:var(--accent);color:var(--ink)}
+.badge--next{background:var(--mint);color:var(--green-deep);border:1.5px solid var(--green)}
+.badge--start{background:var(--ink);color:var(--butter)}
+.row.is-sub{background:var(--paper-tint)}
+.row.is-start{background:var(--butter)}
+.row--weekly{grid-template-areas:"t t b" "i i b"}
+.row--weekly > :nth-child(1){display:none}
+.row--weekly .time{white-space:normal;font:800 20px/1.15 var(--display);letter-spacing:-.01em}
+.pinned .row{border:2px solid var(--accent);border-radius:8px;padding:12px}
+.empty{padding:24px 16px;font-size:18px}
+.empty p{margin:0 0 8px}
+.empty b{font-family:var(--display);font-size:22px;display:block;margin-bottom:8px;letter-spacing:-.01em}
+.studios{margin-top:24px;font-size:18px}
+.studios ul{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:4px 24px}
+.studios a{font:800 22px/1.2 var(--display);letter-spacing:-.01em;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px;display:inline-flex;min-height:44px;align-items:center}
+
+/* ---------- new to my class ---------- */
+.band-mint{background:var(--mint)}
+.newbie{padding-block:72px}
+.newbie-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+.newbie h2{font-size:clamp(2.6rem,1.4rem + 5.6vw,6.4rem);letter-spacing:-.045em;line-height:.94}
+.newbie h2 .l2{display:block;font-size:1.16em;margin-top:.06em}
+.newbie .welcome{font-size:21px;max-width:40ch;margin:24px 0 24px}
+.easy{list-style:none;margin:0;padding:0;max-width:640px;border-top:2px solid var(--ink)}
+.easy li{font:700 20px/1.35 var(--body);padding:12px 0;border-bottom:2px solid var(--ink);display:flex;gap:12px;align-items:baseline}
+.easy li svg{width:22px;height:18px;flex:none;transform:translateY(2px)}
+.easy-head{display:flex;align-items:center;font-weight:700;margin:0 0 8px;font-size:17px}
+.nap{position:relative;max-width:520px;justify-self:center;width:100%;padding-top:72px}
+.nap svg{width:100%;height:auto}
+.nap .note{position:absolute;left:0;top:0;width:52%;max-width:240px}
+.nap .note .hand{font-size:30px;margin:0}
+
+/* ---------- story ---------- */
+.story{padding-block:80px}
+.story-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+.story h2{font-size:clamp(2.6rem,1.5rem + 4.6vw,5.4rem);margin-bottom:24px}
+.story-lines p{max-width:56ch;font-size:19px;margin:0 0 16px;padding-left:36px;position:relative}
+.story-lines p svg{position:absolute;left:0;top:6px;width:24px;height:20px}
+.slot{display:block;border:2px dashed var(--ink-40);border-radius:6px;padding:12px 16px;color:var(--muted);font-size:16px;margin:0 0 16px 36px}
+.slot b{color:var(--ink)}
+.confirm-note{display:block;font-size:16px;color:var(--brown);margin-top:4px}
+.story-side{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+.story-side .polaroid{max-width:280px}
+.pull{margin:0;padding:0}
+.pull blockquote{margin:0;font:800 clamp(2.2rem,1.3rem + 3.8vw,4.4rem)/1 var(--display);letter-spacing:-.035em}
+.pull .bfly-big{width:72px;height:58px;margin-bottom:12px}
+.pull figcaption{font-size:16px;color:var(--muted);margin-top:12px}
+
+/* ---------- work with me: one door at a time ---------- */
+.work{padding-block:80px}
+.work h2{font-size:clamp(2.6rem,1.5rem + 4.6vw,5.4rem);margin-bottom:8px}
+.work .lead{color:var(--on-dark-muted);font-size:18px;margin-bottom:28px}
+.doors{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+.door-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.door-tab{min-height:56px;padding:8px 12px;border-radius:10px;border:2px solid var(--paper-50);background:transparent;color:var(--on-dark);font:800 16px/1.15 var(--display);letter-spacing:-.01em;text-align:left;cursor:pointer}
+.door-tab:hover{background:var(--paper-08)}
+.door-tab[aria-selected=true]{background:var(--butter);color:var(--ink);border-color:var(--butter)}
+.door-card{position:relative;background:var(--butter);color:var(--ink);border-radius:6px;padding:32px 24px 28px;box-shadow:var(--sh-card);transform:rotate(-.8deg);min-height:320px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.door-card[hidden]{display:none}
+.door-card::before{content:"";position:absolute;left:32px;top:-12px;width:96px;height:26px;transform:rotate(-4deg);background:var(--tape);box-shadow:var(--sh-tape)}
+.door-card .who{font:700 17px/1.2 var(--body);margin:0 0 12px;color:var(--ink-2)}
+.door-card .big{font:800 clamp(1.9rem,1.2rem + 2.8vw,3.6rem)/1.02 var(--display);letter-spacing:-.03em;margin:0;max-width:18ch}
+.door-card .act{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.door-card .bfly-mark{position:absolute;right:20px;top:20px;width:56px;height:46px;opacity:.9}
+.nextround{font-size:17px;color:var(--ink);background:var(--paper-55);border:1.5px solid var(--ink-25);padding:8px 12px;border-radius:6px;max-width:42ch;margin:0}
+.nextround[hidden]{display:none}
+
+/* ---------- FAQ ---------- */
+.band-blush{background:var(--blush)}
+.faq{padding-block:80px;position:relative;overflow:hidden}
+.faq-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+.faq h2{font-size:clamp(2.6rem,1.5rem + 4.6vw,5.4rem)}
+.faq .sitcat{width:180px;height:auto;margin-top:16px}
+.faq .sitcat-cap{font-family:var(--hand);font-size:28px;margin-top:4px;line-height:1.1}
+details{border-top:2px solid var(--ink)}
+details:last-of-type{border-bottom:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;font:800 clamp(1.2rem,1rem + .8vw,1.6rem)/1.2 var(--display);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);position:relative}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2.5px;background:var(--ink);transform:translate(-50%,-50%)}
+summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s}
+details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0deg)}
+details .ans{font-size:19px;padding:0 0 16px;max-width:58ch;margin:0}
+
+/* ---------- close + footer ---------- */
+.close{padding-block:88px 40px}
+.close h2{font-size:clamp(3.2rem,1.4rem + 8vw,9.5rem);letter-spacing:-.05em;line-height:.9;color:var(--on-dark)}
+.close h2 .bfly{display:inline-block;width:.7em;height:.56em;vertical-align:baseline;margin-left:.06em}
+.close .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 0}
+.foot{padding-block:40px 48px;border-top:1.5px solid var(--paper-22);margin-top:56px}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:end}
+.foot .polaroid{width:300px;max-width:100%}
+.foot .wordmark{font-size:30px}
+.foot p{color:var(--on-dark-muted);font-size:17px;margin:8px 0}
+.foot .lines{list-style:none;margin:8px 0;padding:0;color:var(--on-dark-muted);font-size:17px}
+.foot .lines a{color:var(--on-dark);display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.foot .cats-line{font-family:var(--hand);font-size:28px;color:var(--butter);line-height:1.1}
+
+/* ---------- phone sticky bar ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);display:grid;grid-template-columns:1.15fr 1fr;gap:12px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));box-shadow:var(--sh-bar)}
+.bar .btn{min-height:52px;width:100%;font-size:17px;padding:8px 12px}
+.bar .btn--paper{background:var(--surface);color:var(--ink)}
+@media (max-width:899px){:root{--bar-h:calc(68px + env(safe-area-inset-bottom))}}
+@media (min-width:900px){.bar{display:none}}
+
+.flyer{position:absolute;z-index:60;margin:0;pointer-events:none;will-change:transform}
+
+/* ---------- tablet ---------- */
+@media (max-width:767px){
+  .teach{padding-block:56px 64px}
+  .newbie,.story,.work,.faq{padding-block:56px}
+  .proof{padding-block:8px 56px}
+  .wall{padding-block:16px 56px}
+  .close{padding-block:64px 24px}
+  .foot{margin-top:40px}
+  .story-side .polaroid{max-width:240px}
+  .nap{max-width:340px;padding-top:56px}
+}
+@media (min-width:600px){
+  :root{--gutter:32px}
+  .two{grid-template-columns:1fr 1.3fr}
+  .wall-b{gap:36px 24px}
+  .door-tabs{grid-template-columns:repeat(3,1fr)}
+  .story-side{grid-template-columns:auto 1fr}
+}
+@media (min-width:768px){
+  .card-zone{max-width:560px}
+  .proof-grid{grid-template-columns:1.4fr 1fr}
+  .row .dayname{font-size:24px}
+  .row{grid-template-columns:88px 120px 1fr auto;grid-template-areas:"d t i b";padding:16px 20px}
+  .row--weekly{grid-template-areas:"t t i b"}
+  .row > :nth-child(1){align-self:center}
+  .foot-grid{grid-template-columns:1fr auto}
+  .week{gap:8px}
+}
+
+/* ---------- desktop ---------- */
+@media (min-width:1024px){
+  :root{--gutter:48px}
+  body{font-size:18.5px}
+  .head-row{padding-top:20px}
+  .hero{padding-block:24px 56px;min-height:min(900px,100svh)}
+  .hero-grid{grid-template-columns:minmax(0,1fr) 452px;grid-template-rows:auto 1fr;column-gap:0}
+  .hero h1{grid-column:1 / -1;grid-row:1;white-space:nowrap}
+  .hero h1 .cats{font-size:clamp(2.6rem,3.9vw,4.2rem)}
+  .hero h1 .q{font-size:clamp(4rem,6vw,6.6rem)}
+  .head-row{padding-top:16px}
+  .breath{margin-bottom:0}
+  .notecard .two .field{margin-bottom:8px}
+  .hero-copy{grid-column:1;grid-row:2;padding-right:56px;align-self:start}
+  .card-zone{grid-column:2;grid-row:1 / span 2;margin-top:var(--card-top,250px);max-width:none;padding-top:52px}
+  .hero-sub{font-size:20px;margin-top:24px}
+  .notecard{padding:20px 20px 16px}
+  .card-date{margin-bottom:8px;padding-bottom:8px}
+  .notecard .field{margin-bottom:12px}
+  .field textarea{min-height:60px}
+  .notecard .check{padding:4px 0}
+  .send-row{margin-top:8px}
+  .wall{padding-top:40px}
+  .wall-grid{grid-template-columns:1.05fr 1fr;gap:56px;align-items:start}
+  .wall-head{grid-column:2;grid-row:1;margin:0;max-width:none}
+  .wall-a{grid-column:1;grid-row:1 / span 2}
+  .wall-b{grid-column:2;grid-row:2;padding-top:8px}
+  .wall-a .polaroid{max-width:none;margin-top:8px}
+  .proof-grid{grid-template-columns:1.5fr 1fr}
+  .newbie-grid{grid-template-columns:1.1fr .9fr}
+  .faq-grid{grid-template-columns:.8fr 1.2fr}
+  .row--weekly{grid-template-areas:"t t i b"}
+  .teach-grid{display:grid;grid-template-columns:.9fr 1.3fr;grid-template-rows:auto 1fr;gap:0 56px;align-items:start}
+  .teach-intro{grid-column:1;grid-row:1}
+  .teach-grid > div:nth-child(2){grid-column:2;grid-row:1 / span 2}
+  .teach-grid .studios{grid-column:1;grid-row:2;margin-top:0}
+  .row{grid-template-columns:88px 128px 1fr auto;grid-template-areas:"d t i b"}
+  .story-grid{grid-template-columns:1fr 1.1fr;gap:64px}
+  .story-side{grid-template-columns:1fr}
+  .story-side .polaroid{max-width:440px}
+  .doors{grid-template-columns:.85fr 1.4fr;gap:48px}
+  .door-tabs{grid-template-columns:1fr}
+  .door-tab{font-size:22px;min-height:60px;padding:8px 16px}
+  .door-card{min-height:420px;padding:48px 40px 40px}
+  .foot .polaroid{max-width:320px}
+  .review-pill{left:16px;bottom:16px}
+  .legend{left:16px;bottom:68px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="bfly" viewBox="0 0 40 32">
+      <path d="M19.2 14.6C15.8 5.9 7.6 1.2 3.2 3.4.6 4.8 1.3 9.6 4.6 12.3c3.3 2.7 9 3.6 14.6 3.4z" fill="#F08A24"/>
+      <path d="M20.8 14.4c3.6-8.9 11.4-13.4 15.9-11.2 2.7 1.3 1.9 6.3-1.5 8.9-3.3 2.6-8.8 3.4-14.4 3.3z" fill="#F08A24"/>
+      <path d="M19 17.3c-6.6.2-11.7 3.1-11.4 7.5.2 3.3 3.6 4.3 6.6 2.4 2.6-1.6 4.2-5.4 4.8-9.9z" fill="#F08A24"/>
+      <path d="M21 17.2c6.4.4 11.2 3.4 10.8 7.6-.3 3.1-3.8 4-6.6 2.1-2.5-1.7-3.8-5.4-4.2-9.7z" fill="#F08A24"/>
+      <path d="M5.5 6.2c4 1 8.6 4.5 13.4 9.6M34.6 5.8c-4 1.1-8.4 4.6-13.6 9.8M10.2 25c2.7-2.4 5.6-4.7 8.8-7.2M29.6 25c-2.6-2.4-5.4-4.8-8.6-7.4" stroke="#18202E" stroke-width="1.1" fill="none" stroke-linecap="round" opacity=".55"/>
+      <path d="M20 12.6c.9 0 1.3 1 1.3 3.4 0 3.4-.4 9.6-1.3 9.6s-1.3-6.2-1.3-9.6c0-2.4.4-3.4 1.3-3.4z" fill="#18202E"/>
+      <path d="M19.6 13c-.9-3.4-2.6-6.6-5-8.6M20.5 13c1-3.4 2.8-6.4 5.4-8.2" stroke="#18202E" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cat-peek" viewBox="0 0 120 64">
+      <path d="M22 55C20 41 22 31 28.5 24.5L26.2 6.4 42 18.2C52 14.3 68 14.1 78.4 18.3L93.6 6 91.8 24.6C98.2 31 100 41.5 98.2 55z" fill="#F7F7F4"/>
+      <path d="M22 55C20 41 22 31 28.5 24.5L26.2 6.4 42 18.2C52 14.3 68 14.1 78.4 18.3L93.6 6 91.8 24.6C98.2 31 100 41.5 98.2 55" fill="none" stroke="#18202E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M41.5 36.5q5 4.6 10 0M68 36.3q5 4.8 10.2.2" fill="none" stroke="#18202E" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M57.8 43.4l2.5 2.6 2.5-2.6z" fill="#18202E" stroke="#18202E" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M31 44.5l-15-2.5M31.5 48.8l-14.6 2.6M89.5 44.3l15.2-2.7M89 48.6l14.8 2.8" stroke="#18202E" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M14.5 63c0-6.6 3.4-9.8 8.6-9.8s8.7 3.3 8.7 9.8M88.4 63c0-6.4 3.4-9.6 8.5-9.6 5.2 0 8.6 3.2 8.6 9.6" fill="#F7F7F4" stroke="#18202E" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M20.4 63v-3.2M25.8 63v-3.4M94.3 63v-3.2M99.6 63v-3.3" stroke="#18202E" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <filter id="inky"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.2"/></filter>
+    <path id="ring" d="M50 50m-35 0a35 35 0 1 1 70 0a35 35 0 1 1-70 0"/>
+    <symbol id="stamp" viewBox="0 0 100 100">
+      <g filter="url(#inky)" fill="none" stroke="#F08A24">
+        <circle cx="50" cy="50" r="46" stroke-width="3.4"/>
+        <circle cx="50" cy="50" r="27" stroke-width="1.8"/>
+      </g>
+      <text font-family="Karla, sans-serif" font-weight="800" font-size="9.6" letter-spacing="1.4" fill="#E27A12" filter="url(#inky)"><textPath href="#ring" startOffset="0">THE STUDIO SUPERVISORS · ADRIANNE.YOGA ·</textPath></text>
+      <g filter="url(#inky)" stroke="#E27A12" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M37 52c-.6-6 .4-10 3-12.6l-1-8 6.8 5c4.4-1.6 9.6-1.6 14 0l6.8-5-1 8c2.6 2.6 3.6 6.6 3 12.6"/>
+        <path d="M44 47q2 2 4 0M53 47q2 2 4 0"/>
+      </g>
+      <g filter="url(#inky)">
+        <rect x="9" y="55" width="82" height="18" rx="2" fill="#F08A24"/>
+        <text x="50" y="67.6" text-anchor="middle" font-family="Karla, sans-serif" font-weight="800" font-size="8" letter-spacing=".2" fill="#18202E" textLength="74" lengthAdjust="spacingAndGlyphs">READ ALOUD TONIGHT ✓</text>
+      </g>
+    </symbol>
+    <!-- a sleeping supervisor, curled up: child's pose, cat edition -->
+    <symbol id="cat-nap" viewBox="0 0 320 200">
+      <path d="M52 168c-26-6-36-34-22-60 16-30 58-48 110-50 46-2 92 10 118 34 22 20 26 50 8 66-12 10-30 12-52 12H70z" fill="#F7F7F4" stroke="#18202E" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M60 120c-4-18 2-36 16-48l-4-30 24 20c14-4 30-4 44 2l22-18-2 30c12 12 16 30 12 46" fill="#F7F7F4" stroke="#18202E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M88 104q8 6 16 0M128 104q8 6 16 0" fill="none" stroke="#18202E" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M113 116l4 4 4-4z" fill="#18202E" stroke="#18202E" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M270 150c30 4 40 26 22 38-14 10-60 10-110 8" fill="none" stroke="#18202E" stroke-width="4" stroke-linecap="round"/>
+      <path d="M70 168c10-6 26-8 40-2" fill="none" stroke="#18202E" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M210 40q8-10 16 0M232 22q6-8 12 0M246 6q5-6 10 0" fill="none" stroke="#18202E" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to the page</a>
+
+<div class="mirror">
+  <header class="site-head">
+    <div class="wrap head-row">
+      <div>
+        <a class="wordmark" href="#top" aria-label="adrianne.yoga, back to top">adrianne<svg class="bfly" aria-hidden="true"><use href="#bfly"/></svg>yoga</a>
+        <p class="alias">Du’Sauzay on studio schedules.<span class="tag tag--s">suggested</span><span class="tag tag--c" title="Confirm she’s OK with this line">confirm</span></p>
+      </div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" id="menuBtn">
+        <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 9.5h14M2 14h9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Menu
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#work">Work with me</a></li>
+          <li><a href="#story">Story</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <section class="hero" id="top" aria-labelledby="heroQ">
+    <div class="wrap hero-grid" id="heroGrid">
+      <h1 id="heroQ"><span class="cats">Every note gets read <br>out loud to my cats.</span> <span class="q">How was your <br>practice?</span></h1>
+
+      <div class="card-zone" id="note">
+        <div class="card-ghost" aria-hidden="true"></div>
+        <svg class="peek-cat" id="peekCat" aria-hidden="true"><use href="#cat-peek"/></svg>
+        <form class="notecard" id="noteForm" novalidate aria-labelledby="noteTitle">
+          <h2 id="noteTitle" class="sr-only">Leave a note for Adrianne</h2>
+          <p class="card-date" id="cardDate" aria-hidden="true">after class</p>
+          <button type="button" class="breath" id="breathBtn" aria-describedby="breathLive"><svg aria-hidden="true" id="breathFly"><use href="#bfly"/></svg><span class="lbl">Take one breath. Then tell me.</span><span class="tag tag--s">suggested</span></button>
+          <span class="sr-only" id="breathLive" aria-live="polite"></span>
+          <div class="two">
+            <div class="field">
+              <label for="fName">First name</label>
+              <input type="text" id="fName" name="fname" autocomplete="given-name" placeholder="Just your first name" aria-describedby="eName">
+              <p class="err" id="eName">The cats like to know who it’s from. First name is plenty.</p>
+            </div>
+            <div class="field">
+              <label for="fStudio">Where we practiced</label>
+              <select id="fStudio" name="studio" aria-describedby="eStudio">
+                <option value="">Pick the studio</option>
+                <option>District Flow Capitol Hill</option>
+                <option>VIDA U Street</option>
+                <option>VIDA Navy Yard/The Yards</option>
+                <option>VIDA City Vista</option>
+                <option>VIDA Ballston</option>
+                <option>OneLife Capitol Hill</option>
+                <option>OneLife Old Town</option>
+                <option>OneLife Crystal City</option>
+                <option>OneLife Ballston</option>
+                <option>Somewhere else</option>
+              </select>
+              <p class="err" id="eStudio">Pick where we practiced. “Somewhere else” counts.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fNote">How was your practice?</label>
+            <textarea id="fNote" name="note" rows="2" maxlength="400" placeholder="Tell me anything. Two words is plenty." aria-describedby="eNote"></textarea>
+            <p class="err" id="eNote">Tell me anything, even two words. Child’s pose counts.</p>
+          </div>
+          <label class="check"><input type="checkbox" id="fShare" name="share"> <span>OK to share this on the site.<small>Unticked, it stays private.</small></span></label>
+          <button type="button" class="opt-toggle" id="optToggle" aria-expanded="false" aria-controls="extras"><span class="pm" aria-hidden="true">+</span>Two optional boxes</button>
+          <div class="extras" id="extras" hidden>
+            <label class="check"><input type="checkbox" id="fFirst" name="first"> <span>This was my first class ever.<span class="tag tag--s" title="Notes tagged this way help nervous beginners see people like them came back.">suggested</span><small>It helps the next nervous beginner.</small></span></label>
+            <label class="check"><input type="checkbox" id="fList" name="list" aria-controls="emailWrap" aria-expanded="false"> <span>Send me first word on subs, pop-ups and retreats.<span class="tag tag--s">suggested</span></span></label>
+            <div class="field email-wrap" id="emailWrap" hidden>
+              <label for="fEmail">Email</label>
+              <input type="email" id="fEmail" name="email" autocomplete="email" inputmode="email" placeholder="Where first word should go" aria-describedby="eEmail">
+              <p class="err" id="eEmail">That email looks a little off. Fix it, or leave it blank.</p>
+            </div>
+          </div>
+          <div class="send-row">
+            <button class="btn btn--go" type="submit" id="sendBtn">Send it to the cats</button>
+          </div>
+          <p class="private-note">No account. Private by default. Only notes you OK, and Adrianne OKs, ever go on the wall.</p>
+        </form>
+        <div class="thanks" id="thanks" tabindex="-1" hidden aria-live="polite">
+          <p class="card-date" aria-hidden="true">sent</p>
+          <h2 id="thanksTitle">Got it. The supervisors will hear it tonight.</h2>
+          <p id="thanksPrivacy"></p>
+          <div class="btn-row">
+            <a class="btn btn--go btn--small" href="#classes">Find my classes</a>
+            <a class="btn btn--line btn--small" href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">Follow @adriannekim</a>
+            <button class="again" type="button" id="againBtn">Write another note</button>
+          </div>
+          <button class="hear mk" type="button" disabled><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>Hear Adrianne say thanks (voice clip coming)<span class="tag tag--s">suggested</span></button>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="hero-sub">Vinyasa, Hot Power, Slow Flow, Yoga Sculpt<span class="tag tag--s">suggested</span> and more, every week at VIDA, OneLife and District Flow, across DC and Arlington.</p>
+        <div class="hero-btns">
+          <a class="btn btn--go" href="#note" data-focus="fNote">Tell me</a>
+          <a class="btn btn--line" href="#classes">Find my classes</a>
+          <a class="textlink" href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">Follow @adriannekim</a>
+        </div>
+        <p class="trust"><strong class="unv">Faculty, VIDA 200-Hour Teacher Training</strong><span class="tag tag--c" title="Brief said “Lead faculty”; VIDA’s page says faculty">confirm</span>. <span class="unv">1,000+ classes taught</span><span class="tag tag--c" title="Confirm the current number">confirm</span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== the wall ===== -->
+  <section class="wall" id="notes" aria-labelledby="notesH">
+    <div class="wrap wall-grid">
+      <div class="wall-head">
+        <h2 id="notesH">Notes from class</h2>
+        <p>Every note here was left by someone who just walked out of class.</p>
+        <p class="disclaim mk"><span class="sample">Sample</span> Real notes appear here after Adrianne approves them, signed with a first name, the studio and the day.</p>
+      </div>
+      <div class="wall-a" data-drift="-0.06">
+        <figure class="polaroid" style="--r:-2.2deg">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="shot" role="img" aria-label="Window light falling across rows of mats in a studio (a photo of Adrianne teaching goes here)">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect class="n" width="400" height="500"/>
+              <rect class="d" y="300" width="400" height="200"/>
+              <g class="b" opacity=".92"><polygon points="70,40 140,40 140,150 70,150"/><polygon points="160,40 230,40 230,150 160,150"/><polygon points="250,40 320,40 320,150 250,150"/><polygon points="70,170 140,170 140,270 70,270"/><polygon points="160,170 230,170 230,270 160,270"/><polygon points="250,170 320,170 320,270 250,270"/></g>
+              <g class="b" opacity=".5"><polygon points="40,320 120,320 60,420 -40,420"/><polygon points="140,320 220,320 180,420 80,420"/><polygon points="240,320 320,320 300,420 200,420"/><polygon points="20,436 100,436 30,500 -70,500"/><polygon points="120,436 200,436 150,500 50,500"/><polygon points="220,436 300,436 270,500 170,500"/></g>
+              <g class="d" opacity=".7"><polygon points="20,350 180,350 170,372 6,372"/><polygon points="210,350 380,350 392,372 214,372"/><polygon points="0,410 170,410 158,438 -14,438"/><polygon points="214,410 400,410 414,438 218,438"/></g>
+            </svg>
+            <span class="slot-label mk">Photo needed</span>
+            <span class="spec mk">Shot: wide, from the back row. Window light, a full room, her mid-cue. 4:5.</span>
+          </div>
+          <figcaption><span class="mk">PHOTO: Adrianne mid-cue, a full room, District Flow</span></figcaption>
+        </figure>
+      </div>
+      <div class="wall-b" id="wallB" data-drift="0.05">
+        <div class="note note--empty wide" id="landing" style="--r:-1deg"><p class="hand">Your note lands here.</p></div>
+        <article class="note note--butter" style="--r:-3deg;--tr:5deg">
+          <span class="tape" aria-hidden="true"></span>
+          <p class="tags"><span class="tag tag--s">suggested prompt</span></p>
+          <p class="hand">Your first class? Tell me how it went.</p>
+        </article>
+        <article class="note note--mint lift" style="--r:2.6deg">
+          <span class="tape" aria-hidden="true"></span>
+          <p class="tags"><span class="tag tag--s">suggested prompt</span></p>
+          <p class="hand">What did you need today? Did you get it?</p>
+        </article>
+        <figure class="polaroid" style="--r:3deg">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="shot shot--tall" role="img" aria-label="A square of window light on the floor (a close-up of a hands-on cue goes here)">
+            <svg class="art" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect class="n" width="300" height="400"/>
+              <g class="b" opacity=".85"><polygon points="60,120 150,90 190,190 100,220"/><polygon points="160,86 240,60 280,156 200,186"/></g>
+              <rect class="d" y="300" width="300" height="100"/>
+              <use href="#bfly" x="200" y="318" width="60" height="48"/>
+            </svg>
+            <span class="slot-label mk">Photo needed</span>
+            <span class="spec mk">Shot: tight, hands on a back. Soft focus behind. 3:4.</span>
+          </div>
+          <figcaption><span class="mk">PHOTO: close-up, hands-on cue on a student’s back</span></figcaption>
+        </figure>
+        <article class="note note--blush lift" style="--r:-1.6deg;--tr:3deg">
+          <span class="tape" aria-hidden="true"></span>
+          <p class="tags"><span class="tag tag--s">suggested prompt</span></p>
+          <p class="hand">Hardest pose today?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== proof strip ===== -->
+  <section class="proof" aria-labelledby="proofH">
+    <div class="wrap proof-grid">
+      <div>
+        <h2 class="proof-kicker" id="proofH">The teacher behind the cats.<span class="tag tag--s">suggested</span></h2>
+        <ul class="tapes">
+          <li style="--r:-1.6deg"><span class="unv">Faculty, VIDA 200-Hour YTT</span><span class="tag tag--c" title="Confirm wording">confirm</span></li>
+          <li style="--r:1.2deg"><span class="unv">Former CorePower Master Trainer</span></li>
+          <li style="--r:-.8deg"><span class="unv">Sattva Yoga Academy, Rishikesh</span><span class="tag tag--c" title="Confirm the program">confirm</span></li>
+          <li style="--r:1.8deg"><span class="unv">Audi Field, DC Power FC</span></li>
+          <li style="--r:-1.2deg"><span class="unv">FOX 5 · Noom</span><span class="tag tag--c" title="Confirm both appearances">confirm</span></li>
+        </ul>
+      </div>
+      <figure class="polaroid" style="--r:2.4deg">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="shot shot--wide" role="img" aria-label="Pitch lines under stadium lights (a photo from Audi Field goes here)">
+          <svg class="art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect class="n" width="400" height="300"/>
+            <circle class="b" cx="56" cy="36" r="22"/><circle class="b" cx="344" cy="36" r="22"/>
+            <rect class="d" y="130" width="400" height="170"/>
+            <g class="bs" stroke-width="4"><path d="M200 130v170"/><ellipse cx="200" cy="215" rx="72" ry="34"/><path d="M0 130h400"/></g>
+            <g class="b" opacity=".55"><rect x="36" y="160" width="40" height="12" rx="2"/><rect x="92" y="160" width="40" height="12" rx="2"/><rect x="268" y="160" width="40" height="12" rx="2"/><rect x="324" y="160" width="40" height="12" rx="2"/><rect x="24" y="250" width="44" height="14" rx="2"/><rect x="84" y="250" width="44" height="14" rx="2"/><rect x="272" y="250" width="44" height="14" rx="2"/><rect x="332" y="250" width="44" height="14" rx="2"/></g>
+          </svg>
+          <span class="slot-label mk">Photo needed</span>
+          <span class="spec mk">Shot: rows of mats on the pitch, Aug 15. 4:3.</span>
+        </div>
+        <figcaption><span class="mk">PHOTO: Audi Field, Aug 15</span></figcaption>
+      </figure>
+    </div>
+  </section>
+  </main>
+</div>
+
+<!-- ===== where I teach ===== -->
+<section class="band-butter" id="classes" aria-labelledby="teachH">
+  <div class="wrap teach teach-grid">
+    <div class="teach-intro">
+      <h2 id="teachH">Where I teach</h2>
+      <p class="today"><span id="todayLine">Here’s where I’m teaching.</span><span class="tag tag--s">suggested</span></p>
+      <p class="lead">Subs and pop-up classes go up here first.</p>
+      <p class="picker"><label for="pickFor">Take a class for</label>
+        <select id="pickFor" aria-describedby="pickNote">
+          <option value="any">any reason</option>
+          <option value="first">your first time</option>
+          <option value="sweaty">a sweaty one</option>
+          <option value="slow">a slow one</option>
+          <option value="tough">a tough week</option>
+        </select><span class="tag tag--s">suggested</span></p>
+      <p class="pick-note" id="pickNote" aria-live="polite"></p>
+      <fieldset class="chips" id="chips">
+        <legend>Find me near<span class="tag tag--s">suggested</span></legend>
+        <button type="button" class="chip" aria-pressed="true" data-area="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-area="capitol-hill">Capitol Hill</button>
+        <button type="button" class="chip" aria-pressed="false" data-area="navy-yard">Navy Yard</button>
+        <button type="button" class="chip" aria-pressed="false" data-area="u-street">U Street</button>
+        <button type="button" class="chip" aria-pressed="false" data-area="arlington">Arlington/Alexandria</button>
+      </fieldset>
+    </div>
+    <div>
+      <div class="board" id="board">
+        <div class="board-top"><span>This week<span class="tag tag--c">sample week, confirm</span></span><span class="count" id="rowCount" aria-live="polite"></span></div>
+        <div class="days" role="group" aria-label="Show">
+          <button type="button" class="view" data-view="next" aria-pressed="true">Next up</button>
+          <button type="button" class="view" data-view="week" aria-pressed="false">Whole week</button>
+        </div>
+        <div class="week" id="week" role="group" aria-label="Pick a day"></div>
+        <div class="pinned" id="pinned" hidden><h3>New this week</h3><ul class="rows" id="pinnedRows"></ul></div>
+        <ul class="rows" id="rows"></ul>
+        <div class="empty" id="emptyState" hidden></div>
+      </div>
+    </div>
+    <div class="studios">
+        <p style="margin:0">Every Book button opens that studio’s own schedule:</p>
+        <ul>
+          <li><a href="https://vidafitness.com" target="_blank" rel="noopener">VIDA Fitness</a></li>
+          <li><a href="https://www.onelifefitness.com" target="_blank" rel="noopener">OneLife Fitness</a></li>
+          <li><a href="https://districtflowyoga.com" target="_blank" rel="noopener">District Flow Yoga</a></li>
+        </ul>
+      </div>
+  </div>
+</section>
+
+<!-- ===== new to my class ===== -->
+<section class="band-mint" aria-labelledby="newH">
+  <div class="wrap newbie newbie-grid">
+    <div>
+      <h2 id="newH">Rest whenever you want. <span class="l2">Child’s pose counts.</span></h2>
+      <p class="welcome">Hot Power and Slow Flow are both welcome here, and so is your very first class.</p>
+      <p class="easy-head">Three things to know<span class="tag tag--s">suggested</span></p>
+      <ul class="easy">
+        <li><svg aria-hidden="true"><use href="#bfly"/></svg>You don’t need to be flexible.</li>
+        <li><svg aria-hidden="true"><use href="#bfly"/></svg>Come alone; most people do.</li>
+        <li><svg aria-hidden="true"><use href="#bfly"/></svg>Bring water. I’ll tell you everything else.</li>
+      </ul>
+    </div>
+    <div class="nap">
+      <div class="note note--butter" style="--r:-4deg"><span class="tape" aria-hidden="true"></span><p class="hand">New to my class</p></div>
+      <svg viewBox="0 0 320 200" role="img" aria-label="A line drawing of a cat asleep, curled up like child’s pose"><use href="#cat-nap"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== story ===== -->
+<section id="story" aria-labelledby="storyH">
+  <div class="wrap story story-grid">
+    <div>
+      <h2 id="storyH">My story</h2>
+      <div class="story-lines">
+        <p><svg aria-hidden="true"><use href="#bfly"/></svg>Came to yoga as a student, <span class="unv">in Hawaii</span><span class="tag tag--c" title="Her bio says she began practising in her apartment after college">confirm</span>, at a moment when she didn’t know what came next.<span class="confirm-note mk">Confirm: her bio says she began practising in her apartment after college.</span></p>
+        <span class="slot mk"><b>Slot: her first class.</b> One thing she remembers from that room, in her words.</span>
+        <p><svg aria-hidden="true"><use href="#bfly"/></svg>Trained to teach, then years at CorePower managing studios and training teachers, including during COVID.</p>
+        <p><svg aria-hidden="true"><use href="#bfly"/></svg>2026: Sattva Yoga Academy, outside Rishikesh, to study where yoga started.</p>
+        <p><svg aria-hidden="true"><use href="#bfly"/></svg>On her days off, she’s in someone else’s class, in the back row, still learning.</p>
+      </div>
+    </div>
+    <div class="story-side">
+      <figure class="polaroid" style="--r:-2deg">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="shot" role="img" aria-label="A low sun over hills and a river (a photo from Rishikesh goes here)">
+          <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect class="n" width="400" height="500"/>
+            <circle class="b" cx="250" cy="200" r="86"/>
+            <polygon class="d" points="0,250 70,196 140,238 210,178 290,236 360,200 400,222 400,500 0,500"/>
+            <polygon class="n" points="0,330 90,290 180,322 270,284 400,330 400,500 0,500"/>
+            <g class="bs" stroke-width="4" stroke-linecap="round"><path d="M20 400c80-16 160-8 240 6s110 10 140 2"/><path d="M60 444c70-10 140-4 210 6" opacity=".7"/><path d="M120 480c50-6 100-2 150 4" opacity=".45"/></g>
+          </svg>
+          <span class="slot-label mk">Photo needed</span>
+          <span class="spec mk">Shot: the river at first light, March 2026. 4:5.</span>
+        </div>
+        <figcaption><span class="mk">PHOTO: Rishikesh, March 2026</span></figcaption>
+      </figure>
+      <figure class="pull">
+        <svg class="bfly-big" aria-hidden="true"><use href="#bfly"/></svg>
+        <blockquote>“Inspire curiosity to explore.”</blockquote>
+        <figcaption>Her own line. The butterfly is her symbol.<span class="tag tag--s">suggested</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== work with me ===== -->
+<section class="mirror" id="work" aria-labelledby="workH">
+  <div class="wrap work">
+    <h2 id="workH">Work with me</h2>
+    <p class="lead">One door each. Knock on the one that’s yours.<span class="tag tag--s">suggested</span></p>
+    <div class="doors">
+      <div class="door-tabs" role="tablist" aria-label="Who are you?" id="doorTabs">
+        <button class="door-tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Studios and gyms</button>
+        <button class="door-tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Companies and events</button>
+        <button class="door-tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Schools</button>
+        <button class="door-tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Teacher training</button>
+        <button class="door-tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1">Retreats</button>
+        <button class="door-tab" role="tab" id="t6" aria-controls="p6" aria-selected="false" tabindex="-1">Private sessions</button>
+      </div>
+      <div>
+        <div class="door-card" role="tabpanel" id="p1" aria-labelledby="t1" tabindex="0">
+          <div><p class="who">Studios and gyms</p><p class="big">“I’ve trained the teachers you’re hiring.”</p></div>
+          <div class="act">
+            <button class="btn btn--go" type="button" data-next="n1" aria-expanded="false" aria-controls="n1">Ask about subs and hiring</button>
+            <p class="nextround" id="n1" hidden><span class="mk">Page next round. </span><span class="mk-off">This door gets its own page soon. Until then, catch me after class.</span><span class="tag tag--s">suggested</span></p>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+        <div class="door-card" role="tabpanel" id="p2" aria-labelledby="t2" tabindex="0" hidden>
+          <div><p class="who">Companies and events</p><p class="big">One session for your team, no mats required.</p></div>
+          <div class="act">
+            <button class="btn btn--go" type="button" data-next="n2" aria-expanded="false" aria-controls="n2">Bring me to your team</button>
+            <p class="nextround" id="n2" hidden><span class="mk">Its own page next round: dates, headcount, room. </span><span class="mk-off">This door gets its own page soon. Until then, catch me after class.</span><span class="tag tag--s">suggested</span></p>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+        <div class="door-card" role="tabpanel" id="p3" aria-labelledby="t3" tabindex="0" hidden>
+          <div><p class="who">Schools</p><p class="big">A one-page overview.</p></div>
+          <div class="act">
+            <button class="btn btn--go" type="button" data-next="n3" aria-expanded="false" aria-controls="n3">Get the overview</button>
+            <p class="nextround" id="n3" hidden><span class="mk">The one-pager lands here next round. </span><span class="mk-off">The one-pager is on its way. Until then, catch me after class.</span><span class="tag tag--s">suggested</span></p>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+        <div class="door-card" role="tabpanel" id="p4" aria-labelledby="t4" tabindex="0" hidden>
+          <div><p class="who">Teacher training</p><p class="big">VIDA’s 200-hour training (next cohort Nov 14).</p></div>
+          <div class="act">
+            <a class="btn btn--go" href="https://vidafitness.com/200-hour-yoga-teacher-training/" target="_blank" rel="noopener">See the training</a>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+        <div class="door-card" role="tabpanel" id="p5" aria-labelledby="t5" tabindex="0" hidden>
+          <div><p class="who">Retreats</p><p class="big">First word on the next one.</p></div>
+          <div class="act">
+            <a class="btn btn--go" href="#note" data-focus="fList">Get first word</a>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+        <div class="door-card" role="tabpanel" id="p6" aria-labelledby="t6" tabindex="0" hidden>
+          <div><p class="who">Private sessions</p><p class="big"><span class="unv">Rate to confirm.</span><span class="tag tag--c">confirm</span></p></div>
+          <div class="act">
+            <button class="btn btn--go" type="button" data-next="n6" aria-expanded="false" aria-controls="n6">Ask about privates</button>
+            <p class="nextround" id="n6" hidden><span class="mk">Its own page next round, once the rate is set. </span><span class="mk-off">This door gets its own page soon. Until then, catch me after class.</span><span class="tag tag--s">suggested</span></p>
+          </div>
+          <svg class="bfly-mark" aria-hidden="true"><use href="#bfly"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="band-blush" aria-labelledby="faqH">
+  <div class="wrap faq faq-grid">
+    <div>
+      <h2 id="faqH">Questions</h2>
+      <svg class="sitcat" viewBox="0 0 180 170" aria-hidden="true">
+        <g fill="none" stroke="#18202E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M58 162c-14-8-22-26-20-48 2-20 12-34 24-42L56 40l22 16c10-4 24-4 34 0l22-16-6 32c12 8 22 22 24 42 2 22-6 40-20 48z" fill="#F7F7F4"/>
+          <path d="M76 92q6 6 12 0M102 92q6 6 12 0"/>
+          <path d="M93 104l3 3 3-3z" fill="#18202E"/>
+          <path d="M62 106l-22-4M62 112l-22 4M128 106l22-4M128 112l22 4" stroke-width="2.2"/>
+          <path d="M152 160c16-2 24-14 20-30-3-10-10-12-14-8"/>
+        </g>
+      </svg>
+      <p class="sitcat-cap">The supervisors also take questions.<span class="tag tag--s">suggested</span></p>
+    </div>
+    <div>
+      <details>
+        <summary>Is this for me if I’m new?<span class="pm" aria-hidden="true"></span></summary>
+        <p class="ans">Yes. Child’s pose counts, and so does your first class.</p>
+      </details>
+      <details>
+        <summary>Can you teach at my studio or sub?<span class="pm" aria-hidden="true"></span></summary>
+        <p class="ans">Yes. Tell me the date and the class.</p>
+      </details>
+      <details>
+        <summary>How do I bring you to my team?<span class="pm" aria-hidden="true"></span></summary>
+        <p class="ans">One session, no mats required. Send me the date.</p>
+      </details>
+      <details>
+        <summary>Do you teach privates?<span class="pm" aria-hidden="true"></span></summary>
+        <p class="ans">Yes. <span class="unv">Rate to confirm.</span><span class="tag tag--c">confirm</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== close + footer ===== -->
+<footer class="mirror" aria-labelledby="closeH">
+  <div class="wrap close">
+    <h2 id="closeH">See you on the mat<svg class="bfly" aria-hidden="true"><use href="#bfly"/></svg></h2>
+    <div class="btn-row">
+      <a class="btn btn--go" href="#classes">Find my classes</a>
+      <a class="btn btn--line" href="#note" data-focus="fName">Leave a note</a>
+    </div>
+    <div class="foot foot-grid">
+      <div>
+        <a class="wordmark" href="#top" aria-label="adrianne.yoga, back to top">adrianne<svg class="bfly" aria-hidden="true"><use href="#bfly"/></svg>yoga</a>
+        <ul class="lines">
+          <li>DC and Arlington</li>
+          <li><a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">@adriannekim</a></li>
+        </ul>
+        <p class="cats-line">Every note gets read out loud. The supervisors insist.<span class="tag tag--s">suggested</span></p>
+      </div>
+      <figure class="polaroid" style="--r:3deg">
+        <span class="pin" aria-hidden="true"></span>
+        <div class="shot shot--wide" role="img" aria-label="A drawing of one of the cats (a photo of the studio supervisors goes here)">
+          <svg class="art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect class="n" width="400" height="300"/>
+            <rect class="d" y="210" width="400" height="90"/>
+            <g class="b" opacity=".9"><polygon points="40,30 120,30 120,120 40,120"/><polygon points="136,30 216,30 216,120 136,120"/></g>
+            <use href="#cat-peek" x="150" y="128" width="190" height="102"/>
+          </svg>
+          <span class="slot-label mk">Photo needed</span>
+          <span class="spec mk">Shot: the cats, mid-judgement, on a stack of notes. 4:3.</span>
+        </div>
+        <figcaption>the studio supervisors</figcaption>
+      </figure>
+    </div>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Quick actions">
+  <a class="btn btn--go" href="#classes">Find my classes</a>
+  <a class="btn btn--paper" href="#note" data-focus="fName">Leave a note</a>
+</nav>
+
+<button type="button" class="review-pill" id="reviewPill" aria-pressed="false"><span class="dot" aria-hidden="true"></span><span id="reviewLabel">Review marks: off</span></button>
+<div class="legend" id="legend" role="note">
+  <p><span class="tag tag--s">suggested</span>our idea; keep or cut</p>
+  <p><span class="tag tag--c">confirm</span>fact to check with Adrianne</p>
+  <p><span class="sample">Sample</span>placeholder content</p>
+  <p>Dotted underline: not yet verified.</p>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var now = new Date(), dow = now.getDay();
+
+  /* ---- review marks ---- */
+  var pill=document.getElementById('reviewPill'), pillLabel=document.getElementById('reviewLabel');
+  function markCount(){ return document.querySelectorAll('main .tag, main .sample, section .tag, section .sample, footer .tag, header .tag, .shot .spec').length; }
+  function setMarks(on, save){
+    document.body.classList.toggle('marks', on);
+    pill.setAttribute('aria-pressed', String(on));
+    pillLabel.textContent = on ? 'Review marks: on (' + markCount() + ')' : 'Review marks: off';
+    if(save){ try{ localStorage.setItem('ay-marks', on ? '1' : '0'); }catch(e){} }
+  }
+  var q = location.search, h = location.hash, start = false;
+  try{ start = localStorage.getItem('ay-marks') === '1'; }catch(e){}
+  if(/[?&](review=1|marks=on)/.test(q) || h === '#review') start = true;
+  if(/[?&](review=0|marks=off)/.test(q)) start = false;
+  setMarks(start, false);
+  pill.addEventListener('click', function(){ setMarks(!document.body.classList.contains('marks'), true); });
+  window.addEventListener('hashchange', function(){ if(location.hash === '#review') setMarks(true, true); });
+
+  /* ---- time-aware bits ---- */
+  document.getElementById('cardDate').textContent = DAYS[dow] + ', after class';
+  document.getElementById('todayLine').textContent = 'It’s ' + DAYS[dow] + '. Here’s where I’m teaching.';
+
+  /* ---- menu ---- */
+  var menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('nav');
+  function closeMenu(){ menuBtn.setAttribute('aria-expanded','false'); nav.classList.remove('open'); }
+  menuBtn.addEventListener('click',function(){ var open=menuBtn.getAttribute('aria-expanded')==='true'; menuBtn.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('open', !open); });
+  nav.addEventListener('click',function(e){ if(e.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && nav.classList.contains('open')){ closeMenu(); menuBtn.focus(); } });
+
+  /* ---- the note form ---- */
+  var form=document.getElementById('noteForm'), thanks=document.getElementById('thanks');
+  var F={name:document.getElementById('fName'),studio:document.getElementById('fStudio'),note:document.getElementById('fNote'),email:document.getElementById('fEmail'),list:document.getElementById('fList'),share:document.getElementById('fShare'),first:document.getElementById('fFirst')};
+  var optToggle=document.getElementById('optToggle'), extras=document.getElementById('extras'), emailWrap=document.getElementById('emailWrap');
+  function setExtras(open){ extras.hidden=!open; optToggle.setAttribute('aria-expanded',String(open)); optToggle.querySelector('.pm').textContent = open ? '−' : '+'; }
+  optToggle.addEventListener('click',function(){ setExtras(extras.hidden); });
+  F.list.addEventListener('change',function(){ emailWrap.hidden=!F.list.checked; F.list.setAttribute('aria-expanded',String(F.list.checked)); if(!F.list.checked){F.email.value='';setErr(F.email,'eEmail',false);} else { F.email.focus(); } });
+
+  /* links that land in a field */
+  document.querySelectorAll('[data-focus]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.dataset.focus;
+      if(form.hidden) resetCard();
+      if(id==='fList') setExtras(true);
+      var el=document.getElementById(id); if(!el) return;
+      e.preventDefault();
+      document.getElementById('note').scrollIntoView({behavior: reduce.matches?'auto':'smooth', block:'start'});
+      setTimeout(function(){ el.focus({preventScroll:true}); }, reduce.matches?0:450);
+    });
+  });
+
+  /* one breath: 4 in, 6 out, then the first field */
+  var breathBtn=document.getElementById('breathBtn'), breathFly=document.getElementById('breathFly'), peek=document.getElementById('peekCat'), live=document.getElementById('breathLive'), breathing=false;
+  breathBtn.addEventListener('click',function(){
+    if(breathing) return;
+    if(reduce.matches || !peek.animate){ F.name.focus(); return; }
+    breathing=true; var lbl=breathBtn.querySelector('.lbl'), orig=lbl.textContent;
+    lbl.textContent='Breathe in…'; live.textContent='Breathe in for four.';
+    var kf=[{transform:'translateY(0) scale(1)'},{transform:'translateY(-10px) scale(1.06)',offset:.4},{transform:'translateY(0) scale(1)'}];
+    peek.animate(kf,{duration:10000,easing:'ease-in-out'});
+    breathFly.animate([{transform:'translateY(0) scale(1)'},{transform:'translateY(-6px) scale(1.25)',offset:.4},{transform:'translateY(0) scale(1)'}],{duration:10000,easing:'ease-in-out'});
+    setTimeout(function(){ lbl.textContent='…and out.'; live.textContent='And out for six.'; },4000);
+    setTimeout(function(){ lbl.textContent=orig; live.textContent=''; breathing=false; F.name.focus(); },10000);
+  });
+
+  function setErr(el,errId,bad,msg){
+    var e=document.getElementById(errId); if(msg) e.textContent=msg;
+    e.classList.toggle('show',bad); el.setAttribute('aria-invalid', bad?'true':'false'); return bad;
+  }
+  function validate(){
+    var bad=[];
+    if(setErr(F.name,'eName',!F.name.value.trim())) bad.push(F.name);
+    if(setErr(F.studio,'eStudio',!F.studio.value)) bad.push(F.studio);
+    if(setErr(F.note,'eNote',!F.note.value.trim())) bad.push(F.note);
+    if(F.list.checked){
+      var em=F.email.value.trim(), msg='That email looks a little off. Fix it, or leave it blank.', emBad=false;
+      if(!em){ emBad=true; msg='Add an email so I can send you first word. Or untick the box.'; }
+      else if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) emBad=true;
+      if(setErr(F.email,'eEmail',emBad,msg)) bad.push(F.email);
+    } else setErr(F.email,'eEmail',false);
+    if(bad.length){ bad[0].focus(); return false; }
+    return true;
+  }
+  [F.name,F.studio,F.note,F.email].forEach(function(el){
+    el.addEventListener('input',function(){ if(el.getAttribute('aria-invalid')==='true'){ el.setAttribute('aria-invalid','false'); var d=document.getElementById(el.getAttribute('aria-describedby')); d && d.classList.remove('show'); } });
+  });
+  function shortStudio(s){ return s.replace(' Capitol Hill','').replace('Navy Yard/The Yards','The Yards'); }
+
+  var landing=document.getElementById('landing');
+  function buildNote(d){
+    var a=document.createElement('article');
+    a.className='note note--new wide'; a.style.setProperty('--r','1.6deg'); a.setAttribute('aria-label','Your note');
+    a.innerHTML='<span class="tape" aria-hidden="true"></span><p class="flag"></p><p class="hand"></p><p class="meta"><span class="m1"></span><span class="m2"></span></p><svg class="stamp" role="img" aria-label="Stamp: read aloud tonight"><use href="#stamp"/></svg>';
+    a.querySelector('.flag').textContent=(d.share ? 'Only you can see this until Adrianne OKs it.' : 'Private: just for Adrianne (and the cats).') + (d.first ? ' First class ever!' : '');
+    a.querySelector('.hand').textContent=d.note;
+    a.querySelector('.m1').textContent=d.name;
+    a.querySelector('.m2').textContent=shortStudio(d.studio) + ', ' + SHORT[dow];
+    return a;
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!validate()) return;
+    var d={name:F.name.value.trim(),studio:F.studio.value,note:F.note.value.trim(),share:F.share.checked,first:F.first.checked};
+    var from=form.getBoundingClientRect(), sx=window.scrollX, sy=window.scrollY;
+    var wall=document.getElementById('wallB'), note=buildNote(d);
+    note.style.visibility='hidden';
+    wall.insertBefore(note, landing); landing.hidden=true;
+    document.getElementById('thanksPrivacy').textContent = d.share
+      ? 'You said OK to share. I read every note first, and it only goes on the wall once I approve it.'
+      : 'This one stays private: just for me and the cats. Notes only go on the wall when you tick “OK to share” and I approve them.';
+    form.hidden=true; thanks.hidden=false;
+    if(reduce.matches || !note.animate){ note.style.visibility=''; note.classList.add('stamped'); thanks.focus({preventScroll:true}); return; }
+    var to=note.getBoundingClientRect();
+    var fly=buildNote(d); fly.classList.add('flyer'); fly.querySelector('.stamp').remove();
+    fly.style.left=(to.left+sx)+'px'; fly.style.top=(to.top+sy)+'px'; fly.style.width=to.width+'px'; fly.style.height=to.height+'px';
+    document.body.appendChild(fly);
+    var dx=(from.left+from.width/2)-(to.left+to.width/2), dy=(from.top+from.height/2)-(to.top+to.height/2);
+    var s0x=from.width/to.width, s0y=from.height/to.height;
+    var anim=fly.animate([
+      {transform:'translate('+dx+'px,'+dy+'px) scale('+s0x+','+s0y+') rotate(-1.4deg)', offset:0},
+      {transform:'translate('+dx+'px,'+(dy+10)+'px) perspective(900px) rotateX(62deg) scale('+(s0x*.62)+','+(s0y*.42)+') rotate(-4deg)', offset:.28},
+      {transform:'translate('+(dx*.45)+'px,'+(dy*.45-90)+'px) perspective(900px) rotateX(18deg) scale(1.12) rotate(10deg)', offset:.66},
+      {transform:'translate(0,-14px) scale(1.04) rotate(4deg)', offset:.88},
+      {transform:'translate(0,0) scale(1) rotate(1.6deg)', offset:1}
+    ],{duration:1250, easing:'cubic-bezier(.55,.05,.3,1)', fill:'forwards'});
+    var vh=window.innerHeight;
+    if(to.bottom > vh-90 || to.top < 0) window.scrollTo({top: to.top+sy - vh*0.28, behavior:'smooth'});
+    anim.onfinish=function(){ note.style.visibility=''; fly.remove(); requestAnimationFrame(function(){ note.classList.add('stamped'); }); setTimeout(function(){ thanks.focus({preventScroll:true}); }, 450); };
+  });
+  function resetCard(){
+    form.reset(); emailWrap.hidden=true; F.list.setAttribute('aria-expanded','false'); setExtras(false);
+    [F.name,F.studio,F.note,F.email].forEach(function(el){el.setAttribute('aria-invalid','false');});
+    document.querySelectorAll('.err').forEach(function(x){x.classList.remove('show');});
+    thanks.hidden=true; form.hidden=false; landing.hidden=false;
+    landing.parentNode.insertBefore(landing, landing.parentNode.firstChild);
+  }
+  document.getElementById('againBtn').addEventListener('click',function(){ resetCard(); F.name.focus(); });
+
+  /* ---- the week board (SAMPLE data from COPY.md) ---- */
+  var CLASSES=[
+    {day:6,min:540, time:'9:00 AM', style:'Hot Power', studio:'VIDA', hood:'City Vista', area:'city-vista', sub:true, kinds:['sweaty'], url:'https://vidafitness.com/class-schedule/city-vista/'},
+    {day:1,min:1140,time:'7:00 PM', style:'Vinyasa', studio:'OneLife', hood:'Capitol Hill', area:'capitol-hill', kinds:['first','tough'], url:'https://www.onelifefitness.com/class-schedules'},
+    {day:3,min:420, time:'7:00 AM', style:'Vinyasa', studio:'OneLife', hood:'Capitol Hill', area:'capitol-hill', kinds:['first'], url:'https://www.onelifefitness.com/class-schedules'},
+    {day:4,min:600, time:'10:00 AM',style:'Hot Power', studio:'VIDA', hood:'The Yards (Navy Yard)', area:'navy-yard', kinds:['sweaty'], url:'https://vidafitness.com/class-schedule/the-yards/'},
+    {day:4,min:720, time:'12:00 PM',style:'Vinyasa', studio:'VIDA', hood:'U Street', area:'u-street', kinds:['first','tough'], url:'https://vidafitness.com/class-schedule/u-street/'},
+    {weekly:true, style:'Vinyasa / Yoga Sculpt', studio:'District Flow', hood:'Capitol Hill', area:'capitol-hill', kinds:['sweaty'], url:'https://www.districtflowyoga.com/schedule'}
+  ];
+  var nowMin=dow*1440+now.getHours()*60+now.getMinutes();
+  CLASSES.forEach(function(c){
+    if(c.weekly) return;
+    c.gap=((c.day*1440+c.min)-nowMin+10080)%10080;
+    var dt=new Date(now.getTime()+c.gap*60000); c.date=MON[dt.getMonth()]+' '+dt.getDate();
+  });
+  var state={view:'next', day:null, area:'all', pick:'any'};
+  var PICK_NOTE={
+    any:'',
+    first:'Start with a Vinyasa class. Rest whenever you want; child’s pose counts.',
+    sweaty:'Hot Power and Yoga Sculpt. Bring a towel.',
+    slow:'',
+    tough:'Come as you are. The back row is a great place to be.'
+  };
+  var weekEl=document.getElementById('week');
+  for(var i=0;i<7;i++){
+    var dd=(dow+i)%7, dt=new Date(now.getTime()+i*86400000);
+    var has=CLASSES.some(function(c){return c.day===dd;});
+    var b=document.createElement('button'); b.type='button'; b.className='day'+(i===0?' is-today':''); b.dataset.day=dd; b.setAttribute('aria-pressed','false');
+    b.setAttribute('aria-label', DAYS[dd]+' '+MON[dt.getMonth()]+' '+dt.getDate()+(i===0?', today':'')+(has?', has classes':', no classes'));
+    b.innerHTML='<span>'+(i===0?'Today':SHORT[dd])+'</span><b>'+dt.getDate()+'</b><span class="'+(has?'has':'none')+'"></span>';
+    weekEl.appendChild(b);
+  }
+  function match(c){
+    if(state.area!=='all' && c.area!==state.area) return false;
+    if(state.pick!=='any' && c.kinds.indexOf(state.pick)<0) return false;
+    return true;
+  }
+  function rowHTML(c, badges){
+    var li=document.createElement('li');
+    li.className='row'+(c.weekly?' row--weekly':'')+(c.sub?' is-sub':'')+(badges.indexOf('start')>-1?' is-start':'');
+    var dayHTML = c.weekly ? '<span class="dayname">Every week</span>' : '<span class="dayname">'+SHORT[c.day]+'</span>';
+    var dateHTML = c.weekly ? '' : '<span class="date">'+c.date+'</span>';
+    var timeHTML = c.weekly ? '<span class="time">Several weekly classes</span>' : '<span class="time">'+c.time+'</span>';
+    var bHTML = badges.map(function(k){ return {sub:'<span class="badge badge--sub">Sub</span>',next:'<span class="badge badge--next">Next up</span>',start:'<span class="badge badge--start">Start here</span>'}[k]; }).join('');
+    var label=(c.weekly?'Several weekly classes, ':DAYS[c.day]+' '+c.time+', ')+c.style+' at '+c.studio+' '+c.hood+' (opens the studio’s schedule)';
+    li.innerHTML='<div>'+dayHTML+dateHTML+'</div><div class="tw">'+timeHTML+'</div><div><span class="style">'+c.style+'</span><span class="where">'+c.studio+', '+c.hood+'</span><span class="badges">'+bHTML+'</span></div><a class="btn btn--ink btn--small" target="_blank" rel="noopener" href="'+c.url+'" aria-label="Book '+label+'">Book</a>';
+    return li;
+  }
+  var rowsEl=document.getElementById('rows'), pinnedEl=document.getElementById('pinned'), pinnedRows=document.getElementById('pinnedRows'), emptyEl=document.getElementById('emptyState'), countEl=document.getElementById('rowCount'), pickNote=document.getElementById('pickNote');
+  function render(){
+    rowsEl.innerHTML=''; pinnedRows.innerHTML='';
+    var dated=CLASSES.filter(function(c){return !c.weekly && match(c);}).sort(function(a,b){return a.gap-b.gap;});
+    var weekly=CLASSES.filter(function(c){return c.weekly && match(c);});
+    var list, pinned=[];
+    if(state.view==='day'){ list=dated.filter(function(c){return c.day===state.day;}); weekly=[]; }
+    else {
+      pinned=dated.filter(function(c){return c.sub;});
+      var rest=dated.filter(function(c){return !c.sub;});
+      list = state.view==='next' ? rest.slice(0,3) : rest;
+    }
+    var soonest = state.pick==='first' ? dated.filter(function(c){return !c.sub;})[0] : null;
+    var firstUp = dated[0];
+    function badgesFor(c){ var b=[]; if(c.sub) b.push('sub'); if(c===firstUp && state.view!=='day') b.push('next'); if(c===soonest) b.push('start'); return b; }
+    pinned.forEach(function(c){ pinnedRows.appendChild(rowHTML(c,badgesFor(c))); });
+    pinnedEl.hidden=!pinned.length;
+    list.forEach(function(c){ rowsEl.appendChild(rowHTML(c,badgesFor(c))); });
+    weekly.forEach(function(c){ rowsEl.appendChild(rowHTML(c,[])); });
+    var n=pinned.length+list.length+weekly.length;
+    emptyEl.hidden = n>0;
+    if(!n){
+      if(state.pick==='slow') emptyEl.innerHTML='<b>No Slow Flow on this sample week.</b><p>When the real week goes up, Slow Flow classes show here first.</p>';
+      else if(state.area==='arlington') emptyEl.innerHTML='<b>Nothing in Arlington this sample week.</b><p>The supervisors checked twice. I also teach at OneLife Ballston, Crystal City and Old Town, and VIDA Ballston, so look at <a href="https://www.onelifefitness.com/class-schedules" target="_blank" rel="noopener">OneLife’s schedule</a> or <a href="https://vidafitness.com/class-schedule/ballston/" target="_blank" rel="noopener">VIDA Ballston’s</a>.</p>';
+      else if(state.view==='day') emptyEl.innerHTML='<b>No classes on '+DAYS[state.day]+'.</b><p>Rest days count too. Tap “Next up” to see what’s coming.</p>';
+      else emptyEl.innerHTML='<b>Nothing matches that this sample week.</b><p>Try “All” or “any reason”.</p>';
+    }
+    var viewWord = state.view==='next' ? 'next up' : state.view==='week' ? 'this week' : 'on '+DAYS[state.day];
+    countEl.textContent = n ? n+(n===1?' class ':' classes ')+viewWord : 'no classes '+viewWord;
+    pickNote.textContent = PICK_NOTE[state.pick] || '';
+  }
+  function pressViews(){
+    document.querySelectorAll('.days .view').forEach(function(v){ v.setAttribute('aria-pressed', String(state.view===v.dataset.view)); });
+    weekEl.querySelectorAll('.day').forEach(function(d){ d.setAttribute('aria-pressed', String(state.view==='day' && +d.dataset.day===state.day)); });
+  }
+  document.querySelectorAll('.days .view').forEach(function(v){ v.addEventListener('click',function(){ state.view=v.dataset.view; state.day=null; pressViews(); render(); }); });
+  weekEl.addEventListener('click',function(e){ var d=e.target.closest('.day'); if(!d) return; state.view='day'; state.day=+d.dataset.day; pressViews(); render(); });
+  document.querySelectorAll('.chip').forEach(function(c){ c.addEventListener('click',function(){ document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed', String(x===c));}); state.area=c.dataset.area; render(); }); });
+  document.getElementById('pickFor').addEventListener('change',function(e){ state.pick=e.target.value; if(state.view==='day'){ state.view='next'; state.day=null; pressViews(); } render(); });
+  render();
+
+  /* ---- work with me: tabs ---- */
+  var tabs=[].slice.call(document.querySelectorAll('.door-tab'));
+  function selectTab(t, focus){
+    tabs.forEach(function(x){ var on=x===t; x.setAttribute('aria-selected',String(on)); x.tabIndex=on?0:-1; document.getElementById(x.getAttribute('aria-controls')).hidden=!on; });
+    if(focus) t.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ selectTab(t,false); });
+    t.addEventListener('keydown',function(e){
+      var k=e.key, j=null;
+      if(k==='ArrowRight'||k==='ArrowDown') j=(i+1)%tabs.length;
+      else if(k==='ArrowLeft'||k==='ArrowUp') j=(i-1+tabs.length)%tabs.length;
+      else if(k==='Home') j=0; else if(k==='End') j=tabs.length-1;
+      if(j!==null){ e.preventDefault(); selectTab(tabs[j],true); }
+    });
+  });
+  document.querySelectorAll('[data-next]').forEach(function(b){
+    b.addEventListener('click',function(){ var p=document.getElementById(b.dataset.next), open=b.getAttribute('aria-expanded')==='true'; b.setAttribute('aria-expanded', String(!open)); p.hidden=open; });
+  });
+
+  /* ---- desktop: card tucks under the question's first line ---- */
+  var grid=document.getElementById('heroGrid'), mqd=window.matchMedia('(min-width:1024px)');
+  function placeCard(){
+    if(!mqd.matches){ grid.style.removeProperty('--card-top'); return; }
+    var q=document.querySelector('#heroQ .q').getBoundingClientRect(), g=grid.getBoundingClientRect();
+    var lh=parseFloat(getComputedStyle(document.querySelector('#heroQ .q')).fontSize)*.94;
+    grid.style.setProperty('--card-top', Math.round(q.top - g.top + lh - 44) + 'px');
+  }
+  placeCard(); window.addEventListener('resize',placeCard);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(placeCard);
+
+  /* ---- desktop: the wall drifts ---- */
+  var drifters=[].slice.call(document.querySelectorAll('[data-drift]')), ticking=false;
+  function drift(){
+    ticking=false;
+    if(reduce.matches || !mqd.matches){ drifters.forEach(function(el){el.style.transform='';}); return; }
+    var vh=window.innerHeight;
+    drifters.forEach(function(el){
+      var r=el.parentNode.getBoundingClientRect(), p=Math.max(0,Math.min(1,(vh - r.top)/(vh + r.height)));
+      el.style.transform='translate3d(0,'+((p-.5)*(+el.dataset.drift)*900).toFixed(1)+'px,0)';
+    });
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(drift);} },{passive:true});
+  window.addEventListener('resize',drift); drift();
+})();
+</script>
+<script>
+/* phone: the review switch only appears on review links (#review, ?review=1, ?marks=on), so it never covers content in the client view */
+(function(){var on=/[#&?](review|marks=on|review=1)/.test(location.href);var el=document.getElementById('reviewPill')||document.getElementById('marks');if(!el)return;var box=el.closest('[role="region"]')||el;function fit(){box.style.display=(!on&&window.innerWidth<768)?'none':'';}fit();window.addEventListener('resize',fit);})();
+</script>
+</body>
+</html>

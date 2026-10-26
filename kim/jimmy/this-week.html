@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>adrianne.yoga · This Week</title>
+<meta name="description" content="Adrianne Kim teaches Vinyasa, Hot Power and Slow Flow at VIDA, OneLife and District Flow across DC and Arlington. Leave a note, find this week’s classes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · custom direction "This Week" for adrianne.yoga (by request) · posture: committed (cobalt + sun bands) · hero: type + week board · nav: short top bar · footer: dark close band */
+/* critique: round 2 — no gradients, no outline type, flat printed fields, review marks off by default */
+:root{
+  --ground:#F6F5F1; --paper:#FFFDF8; --ink:#121418; --ink-2:#2C3038; --muted:#5C616B; --hair:#DCDCD6;
+  --cobalt:#2B48E0; --cobalt-deep:#1A2B9E; --cobalt-ink:#101C6B; --on-cobalt:#F7F6F2; --on-cobalt-soft:#E3E8FF; --on-dark-soft:#C9CCD3;
+  --sun:#FFD23F; --sun-deep:#FFC400; --sun-ink:#3A3000; --confirm:#7A5600; --confirm-on-sun:#5A3F00;
+  --error:#A3221B; --error-ring:rgba(179,38,30,.16); --sun-glow:rgba(255,210,63,.28); --scrim:rgba(16,28,107,.86);
+  --display:"Unbounded", ui-rounded, system-ui, sans-serif;
+  --body:"Manrope", ui-sans-serif, system-ui, sans-serif;
+  --gut:20px; --max:1360px; --tab:44px; --dock:76px; --pill:52px;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --dots:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Ccircle cx='7' cy='7' r='3.4' fill='%23121418'/%3E%3C/svg%3E");
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'%3E%3Cpath d='M1.5 2 7 7.5 12.5 2' fill='none' stroke='%23121418' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --chev-cobalt:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cpath d='M2 2.5 8 9l6-6.5' fill='none' stroke='%232B48E0' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:16px;overflow-x:clip}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ground);color:var(--ink);font:500 17px/1.6 var(--body);overflow-x:clip;padding-bottom:calc(var(--dock) + var(--pill) + env(safe-area-inset-bottom))}
+@media (min-width:1024px){body{font-size:18px;padding-bottom:0}}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:6px}
+.on-dark :focus-visible,.on-cobalt :focus-visible{outline-color:var(--sun)}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+@media (min-width:768px){:root{--gut:40px}}
+@media (min-width:1024px){:root{--gut:56px}}
+.skip{position:absolute;left:12px;top:-60px;z-index:99;background:var(--sun);color:var(--ink);padding:12px 16px;border-radius:8px;font-weight:800}
+.skip:focus{top:12px}
+
+/* ---------- review marks (hidden unless the switch is on) ---------- */
+body:not(.marks-on) .tag,
+body:not(.marks-on) .sample,
+body:not(.marks-on) .slot-cap,
+body:not(.marks-on) .rm{display:none!important}
+body:not(.marks-on) .sugg-word{text-decoration:none}
+.unv{text-decoration:underline dotted 1.5px;text-underline-offset:4px;text-decoration-color:currentColor}
+.tag{display:inline-flex;align-items:center;gap:4px;font:700 13px/1 var(--body);padding:4px 8px;border:1.5px dotted currentColor;border-radius:4px;vertical-align:.18em;white-space:nowrap;margin-left:4px;cursor:help}
+.tag--sugg{color:var(--cobalt)}
+.tag--conf{color:var(--confirm)}
+.tag--conf::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 1px var(--confirm)}
+.on-cobalt .tag--sugg,.on-dark .tag--sugg,.f-cobalt .tag--sugg,.f-ink .tag--sugg{color:var(--on-cobalt)}
+.on-cobalt .tag--conf,.on-dark .tag--conf,.f-cobalt .tag--conf,.f-ink .tag--conf{color:var(--sun)}
+.on-cobalt .tag--conf::before,.on-dark .tag--conf::before,.f-cobalt .tag--conf::before{box-shadow:none}
+.on-sun .tag--sugg{color:var(--cobalt-ink)}
+.on-sun .tag--conf{color:var(--confirm-on-sun)}
+.on-sun .tag--conf::before{background:var(--ink);box-shadow:none}
+.paperish .tag--sugg{color:var(--cobalt)}
+.paperish .tag--conf{color:var(--confirm)}
+.paperish .tag--conf::before{background:var(--sun);box-shadow:0 0 0 1px var(--confirm)}
+.sample{display:inline-block;font:800 13px/1 var(--body);background:var(--ink);color:var(--sun);padding:4px 8px;border-radius:4px}
+.sugg-word{text-decoration:underline dotted 2px;text-underline-offset:4px}
+.rm-note{font-size:15px;font-weight:700;color:var(--muted)}
+
+.marks{position:fixed;left:8px;bottom:calc(var(--dock) + 2px + env(safe-area-inset-bottom));z-index:45;min-height:44px;padding:0;border:0;background:transparent;color:var(--ink);font:700 13px/1 var(--body);display:inline-flex;align-items:center;cursor:pointer;transition:transform .2s ease}
+.marks .face{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px 0 8px;border-radius:999px;border:1.5px solid var(--ink);background:var(--paper)}
+.marks:focus-visible{outline:none}
+.marks:focus-visible .face{outline:3px solid var(--cobalt);outline-offset:2px}
+.marks .sw{width:28px;height:16px;border-radius:999px;background:var(--hair);position:relative;flex:none;transition:background-color .2s ease}
+.marks .sw::after{content:"";position:absolute;left:2px;top:2px;width:12px;height:12px;border-radius:50%;background:var(--ink);transition:transform .2s ease}
+.marks[aria-checked="true"] .face{background:var(--ink);color:var(--sun)}
+.marks[aria-checked="true"] .sw{background:var(--sun)}
+.marks[aria-checked="true"] .sw::after{transform:translateX(12px)}
+.marks.tuck{transform:translateY(calc(100% + var(--dock) + 24px))}
+@media (min-width:1024px){.marks{bottom:16px;left:16px}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 20px;border-radius:14px;border:2px solid transparent;font:800 17px/1 var(--body);text-decoration:none;cursor:pointer;transition:transform .15s ease, background-color .15s ease, color .15s ease;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn--cobalt{background:var(--cobalt);color:var(--on-cobalt)}
+.btn--cobalt:hover{background:var(--cobalt-deep)}
+.btn--sun{background:var(--sun);color:var(--ink)}
+.btn--sun:hover{background:var(--sun-deep)}
+.btn--ink{background:var(--ink);color:var(--on-cobalt)}
+.btn--ink:hover{background:var(--ink-2)}
+.btn--line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn--line:hover{background:var(--ink);color:var(--on-cobalt)}
+.btn--line-light{border-color:var(--on-cobalt);color:var(--on-cobalt);background:transparent}
+.btn--line-light:hover{background:var(--on-cobalt);color:var(--ink)}
+.btn--text{padding:0 4px;min-height:44px;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px;font-weight:700;background:none;border:0}
+.arr{width:16px;height:16px;flex:none}
+
+/* ---------- header ---------- */
+.head{background:var(--cobalt);color:var(--on-cobalt);position:relative;z-index:20}
+.head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;min-height:64px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;min-height:44px}
+.brand svg{width:26px;height:26px;flex:none;color:var(--sun)}
+.wordmark{font:700 20px/1 var(--display);letter-spacing:-.02em}
+.wordmark i{font-style:normal;color:var(--sun)}
+.brand-col{display:contents}
+.aka{order:3;flex:1 0 100%;font-size:15px;line-height:1.35;color:var(--on-cobalt-soft);font-weight:600}
+.menu-btn{min-height:44px;min-width:44px;padding:0 16px;border-radius:12px;border:2px solid var(--on-cobalt-soft);background:transparent;color:var(--on-cobalt);font-weight:800;cursor:pointer}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+.nav a{display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:700;border-radius:10px}
+.nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.head-cta{display:none}
+@media (max-width:1023px){
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--cobalt-ink);padding:8px var(--gut) 16px;display:none}
+  .nav.open{display:block}
+  .nav ul{flex-direction:column}
+  .nav a{font-size:20px;min-height:52px}
+}
+@media (min-width:1024px){
+  .brand-col{display:flex;flex-direction:column}
+  .aka{order:0;flex:none;margin-top:0}
+  .head-row{flex-wrap:nowrap;min-height:80px}
+  .menu-btn{display:none}
+  .nav{margin-left:auto}
+  .head-cta{display:inline-flex;min-height:48px}
+}
+
+/* ---------- printed fields: flat colour, grain, one coarse halftone disc, one bold printed object ---------- */
+.field{position:relative;isolation:isolate}
+.field-clip{position:absolute;inset:0;overflow:hidden;z-index:-1;border-radius:inherit;pointer-events:none}
+.field-clip::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background-image:var(--dots);background-size:14px 14px;opacity:.16}
+.field-clip::after{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.24;mix-blend-mode:soft-light}
+.f-cobalt{background:var(--cobalt);color:var(--on-cobalt)}
+.f-sun{background:var(--sun);color:var(--ink)}
+.f-sun .field-clip::before{opacity:.10}
+.f-sun .field-clip::after{opacity:.35}
+.f-ink{background:var(--ink-2);color:var(--on-cobalt)}
+.f-ink .field-clip::before{filter:invert(1);opacity:.07}
+.dots-tr .field-clip::before{right:-160px;top:-180px}
+.dots-bl .field-clip::before{left:-200px;bottom:-220px}
+.dots-br .field-clip::before{right:-220px;bottom:-200px}
+.slot{border-radius:4px var(--tab) 4px 4px;overflow:hidden;margin:0;display:grid;place-items:center}
+.slot .obj{width:58%;max-width:300px;height:auto;aspect-ratio:1}
+.slot .obj--sm{width:40%}
+.slot .printed{position:absolute;left:20px;bottom:20px;right:20px;font:800 clamp(28px,6vw,56px)/1 var(--display);letter-spacing:-.035em;text-wrap:balance}
+.slot-cap{position:absolute;left:12px;top:12px;font:700 14px/1.35 var(--body);color:var(--on-cobalt);background:var(--scrim);padding:8px 12px;border-radius:8px;max-width:calc(100% - 24px)}
+.slot-cap b{color:var(--sun);font-weight:800}
+
+/* ---------- HERO ---------- */
+.hero{position:relative}
+.hero-field{padding:20px 0 0}
+.dateline{font:700 17px/1.6 var(--body);margin-bottom:12px}
+.dateline a{text-decoration:none;display:inline-block;padding:12px 0}
+.dateline .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px var(--sun-glow);margin-right:8px;vertical-align:.05em}
+.dateline u{text-decoration-thickness:2px;text-underline-offset:4px}
+.h1-lead{display:block;font-size:28px;line-height:1.08;font-weight:700;letter-spacing:-.03em;color:var(--sun);margin-bottom:12px}
+.h1-q{display:block;font-size:44px;line-height:1;font-weight:800;letter-spacing:-.035em;color:var(--on-cobalt)}
+.hero-sub{margin-top:16px;max-width:46ch;color:var(--on-cobalt);font-size:17px;font-weight:600}
+.notecard{position:relative;z-index:3;background:var(--paper);color:var(--ink);border-radius:4px var(--tab) 16px 16px;box-shadow:6px 6px 0 var(--ink);padding:24px 20px 20px;margin-top:48px;margin-bottom:-120px;border:2px solid var(--ink)}
+.stamp{position:absolute;right:-8px;top:-48px;width:96px;height:96px;transform:rotate(-10deg);filter:drop-shadow(2px 3px 0 var(--ink))}
+.nc-label{font:700 16px/1.35 var(--body);color:var(--muted);margin:0 96px 12px 0}
+.nc-label b{color:var(--ink)}
+.tell{width:100%;min-height:60px;font-size:20px;justify-content:space-between;padding:0 24px}
+.tell .pen{width:22px;height:22px}
+.nc-more{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
+.nc-more .btn--line{flex:1 1 auto;min-height:52px}
+.trust{margin-top:16px;padding-top:12px;border-top:1.5px dashed var(--hair);font-size:16px;line-height:1.5;color:var(--muted);font-weight:600}
+.trust b{color:var(--ink)}
+.note-form{margin-top:8px}
+.note-form[hidden],.thanks[hidden],.nc-closed[hidden]{display:none!important}
+.nf-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:4px}
+.nf-head h2{font-size:20px}
+.fld{margin-top:16px}
+.fld label{display:block;font-weight:800;font-size:16px;margin-bottom:8px}
+.fld .opt{font-weight:600;color:var(--muted)}
+.inp{width:100%;min-height:52px;border:2px solid var(--ink);border-radius:12px;padding:12px 16px;background:var(--paper);font-size:17px}
+.inp::placeholder{color:var(--muted);opacity:1}
+textarea.inp{min-height:112px;resize:vertical;line-height:1.5}
+select.inp{appearance:none;background-image:var(--chev);background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+.inp[aria-invalid="true"]{border-color:var(--error);box-shadow:0 0 0 3px var(--error-ring)}
+.err{display:block;color:var(--error);font-weight:700;font-size:16px;margin-top:8px}
+.err:empty{display:none}
+.chk{display:flex;gap:12px;align-items:center;margin-top:12px;font-weight:600;font-size:17px;line-height:1.4;cursor:pointer;min-height:48px}
+.chk input{width:24px;height:24px;flex:none;margin:0;accent-color:var(--cobalt)}
+.private{font-size:16px;color:var(--muted);margin-top:0;font-weight:600}
+.send{width:100%;margin-top:20px;min-height:60px;font-size:19px}
+.thanks{padding:4px 0 0}
+.thanks h2{font-size:26px;line-height:1.15}
+.thanks h2:focus{outline:none}
+.thanks .wall-link{margin:12px 0 16px;display:inline-flex;align-items:center;min-height:44px;font-weight:800;text-underline-offset:5px;text-decoration-thickness:2px}
+.thanks .row2{display:flex;flex-wrap:wrap;gap:12px}
+.hero-board-wrap{padding:156px 0 8px;position:relative}
+
+/* the polaroid stand-in (one picture-shaped object on screen 1) */
+.polaroid{position:absolute;z-index:1;background:var(--paper);border:2px solid var(--ink);padding:8px 8px 32px;border-radius:4px;box-shadow:4px 4px 0 var(--ink);transform:rotate(6deg)}
+.polaroid .print{position:relative;width:100%;aspect-ratio:4/5;border-radius:2px;display:grid;place-items:center;overflow:hidden}
+.polaroid .print .obj{width:64%}
+@media (min-width:1024px){.polaroid .print{place-items:start start;padding:10% 0 0 12%}.polaroid .print .obj{width:50%}}
+.polaroid .slot-cap{position:static;display:block;margin-top:8px;font-size:13px;background:var(--ink)}
+.polaroid--hero{right:16px;top:148px;width:100px}
+.board .bd-head,.board .bd-line{max-width:calc(100% - 132px)}
+.bd-head{padding-right:0!important}
+
+/* ---------- WEEK BOARD (signature) ---------- */
+.board{position:relative;z-index:2}
+.bd-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.bd-head h2{font-size:34px}
+.bd-line{margin-top:8px;font-weight:600;color:var(--muted);font-size:18px}
+.bd-line b{color:var(--ink)}
+.picker{margin-top:20px;font:700 24px/1.25 var(--display);letter-spacing:-.02em;display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px}
+.pick-label{cursor:pointer;display:inline-flex;align-items:center;min-height:48px}
+.pick{appearance:none;border:0;border-bottom:4px solid var(--cobalt);border-radius:0;background:transparent var(--chev-cobalt) no-repeat right 4px center;font:800 24px/1.2 var(--display);letter-spacing:-.02em;color:var(--cobalt);padding:4px 36px 8px 0;min-height:48px;cursor:pointer;max-width:100%}
+.rail{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;margin:0 calc(var(--gut) * -1);padding:12px var(--gut) 8px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.days{margin-top:8px}
+.day{scroll-snap-align:start;flex:none;width:64px;min-height:68px;border:2px solid var(--ink);border-radius:14px;background:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;position:relative;padding:8px 4px}
+.day .d1{font:700 14px/1 var(--display);white-space:nowrap}
+.day .d2{font:800 19px/1 var(--body);font-variant-numeric:tabular-nums;white-space:nowrap}
+.day .has{position:absolute;bottom:6px;width:6px;height:6px;border-radius:50%;background:var(--cobalt)}
+.day.is-today{border-color:var(--cobalt)}
+.day.is-today .d1{color:var(--cobalt)}
+.day .today-tag{position:absolute;top:-12px;background:var(--sun);color:var(--ink);font:800 12px/1 var(--body);padding:4px 6px;border-radius:4px;border:1.5px solid var(--ink)}
+.day--view{width:84px}
+.day--view .d2{font-size:15px;font-weight:700}
+.day[aria-pressed="true"]{background:var(--ink);color:var(--on-cobalt);border-color:var(--ink)}
+.day[aria-pressed="true"] .d1{color:var(--sun)}
+.day[aria-pressed="true"] .has{background:var(--sun)}
+.areas{margin-top:0;padding-top:4px;align-items:center}
+.area{flex:none;min-height:44px;padding:0 16px;border-radius:999px;border:2px solid var(--hair);background:transparent;font-weight:800;font-size:15px;cursor:pointer;white-space:nowrap}
+.area:hover{border-color:var(--ink)}
+.area[aria-pressed="true"]{background:var(--cobalt);border-color:var(--cobalt);color:var(--on-cobalt)}
+.areas .tag{flex:none}
+.bd-count{margin:12px 0 4px;font-weight:700;color:var(--muted);font-size:16px}
+.rows{list-style:none;margin:0;padding:0;position:relative}
+.grp{font:700 16px/1.2 var(--display);letter-spacing:-.01em;padding:16px 8px 8px;color:var(--ink);display:flex;align-items:center;gap:8px}
+.grp .gdot{width:10px;height:10px;border-radius:50%;background:var(--sun);border:2px solid var(--ink);flex:none}
+.grp--week .gdot{background:var(--cobalt);border-color:var(--cobalt)}
+.grp[hidden]{display:none!important}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'when when' 'what book';gap:4px 12px;align-items:end;padding:12px 8px;border-top:1.5px solid var(--hair);background:var(--ground);position:relative;border-radius:12px;transition:background-color .3s ease}
+.grp + .row{border-top-color:transparent}
+.row[hidden]{display:none!important}
+.row .when{grid-area:when;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.row .what{grid-area:what;min-width:0}
+.row .book{grid-area:book}
+.row .when .dd{display:block;font:700 14px/1.2 var(--display);color:var(--muted)}
+.row .when .tt{display:block;font:800 20px/1.2 var(--body);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.row .when .tt.small{font-size:17px;line-height:1.25}
+.row .st{display:block;font:700 19px/1.2 var(--display);letter-spacing:-.015em;overflow-wrap:anywhere}
+.row .wh{display:block;font-size:16px;line-height:1.35;color:var(--muted);font-weight:700;margin-top:4px}
+.row .flags{display:flex;gap:8px;align-items:center;margin-bottom:4px;flex-wrap:wrap}
+.row .flags:empty{display:none}
+.flag{font:800 13px/1 var(--body);padding:4px 8px;border-radius:4px;background:var(--sun);color:var(--ink);border:1.5px solid var(--ink)}
+.flag--pop{background:var(--ink);color:var(--sun)}
+.new{font:800 13px/1 var(--body);color:var(--cobalt);display:inline-flex;align-items:center;gap:4px}
+.new::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--cobalt)}
+.book{min-height:48px;padding:0 16px;border-radius:12px;font-size:16px;background:var(--paper);border:2px solid var(--ink);color:var(--ink)}
+.book:hover{background:var(--ink);color:var(--on-cobalt)}
+.row.is-pick{background:var(--sun);border-top-color:transparent}
+.row.is-pick + .row{border-top-color:transparent}
+.row.is-pick .wh,.row.is-pick .when .dd{color:var(--sun-ink)}
+.starthere{display:none;font:800 13px/1 var(--body);background:var(--ink);color:var(--on-cobalt);padding:4px 8px;border-radius:4px}
+.row.is-pick .starthere{display:inline-block}
+.row.ghosting{position:absolute;left:0;right:0;pointer-events:none;z-index:0}
+.bd-empty{padding:16px;border:2px dashed var(--ink);border-radius:14px;margin-top:8px;font-weight:700}
+.bd-empty[hidden]{display:none}
+.bd-empty p + p{margin-top:8px}
+.bd-empty .btn{margin-top:12px;min-height:48px}
+.bd-empty a{font-weight:800}
+.bd-foot{margin-top:16px;font-size:17px;color:var(--muted);font-weight:600}
+.bd-foot ul{list-style:none;margin:8px 0 0;padding:0;border-top:2px solid var(--ink)}
+.bd-foot a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:56px;padding:8px 0;border-bottom:2px solid var(--ink);color:var(--ink);font:700 19px/1.2 var(--display);letter-spacing:-.02em;text-decoration:none}
+.bd-foot a .arr{width:20px;height:20px}
+
+/* ---------- section scaffolding ---------- */
+.band{padding:64px 0}
+.on-dark{background:var(--ink);color:var(--on-cobalt)}
+.on-cobalt{background:var(--cobalt);color:var(--on-cobalt)}
+.on-sun{background:var(--sun);color:var(--ink)}
+.h2xl{font-size:40px;line-height:1.02;letter-spacing:-.035em}
+.lede{font-size:19px;line-height:1.55;font-weight:600;max-width:42ch;margin-top:16px}
+
+/* proof ledger */
+.ledger{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink-2)}
+.ledger li{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:20px 0;border-bottom:2px solid var(--ink-2);font:700 24px/1.15 var(--display);letter-spacing:-.025em}
+.ledger li .lk{color:var(--sun)}
+.proof-grid{display:grid;gap:36px}
+.proof-slot{aspect-ratio:4/5}
+
+/* note wall */
+.wall-head{display:grid;gap:16px}
+.wall{margin-top:32px;display:grid;gap:16px}
+.wcard{position:relative;background:var(--paper);border:2px solid var(--ink);border-radius:4px 24px 16px 16px;padding:20px;text-align:left;width:100%}
+.wcard .by{font:700 15px/1.35 var(--body);color:var(--muted)}
+.wcard .by b{display:block;color:var(--ink);font-weight:800;font-size:17px}
+.wcard .body{font:700 21px/1.3 var(--body);margin-top:8px;letter-spacing:-.01em}
+.wcard--q{cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-height:168px;transition:transform .2s ease, background-color .2s ease}
+.wcard--q:hover{background:var(--sun)}
+.wcard--q .body{font:700 24px/1.15 var(--display);letter-spacing:-.03em;margin:0}
+.wcard--q .write{font:800 16px/1 var(--body);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.wcard--prompt{background:var(--cobalt);color:var(--on-cobalt);border-color:var(--cobalt-ink);box-shadow:6px 6px 0 var(--cobalt-ink)}
+.wcard--prompt .by{color:var(--on-cobalt-soft)}
+.wcard--prompt .body{font:800 30px/1.08 var(--display);letter-spacing:-.03em;margin:4px 0 20px}
+.wcard--empty{background:transparent;border-style:dashed;border-color:var(--muted);display:grid;place-items:center;text-align:center;min-height:168px;color:var(--muted)}
+.wcard--empty .body{font:700 22px/1.2 var(--display);letter-spacing:-.02em}
+.wcard--mine{background:var(--paper);border-color:var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.wcard--mine .body{font-size:22px}
+.wcard--mine .status{margin-top:12px;font-size:16px;font-weight:700;color:var(--muted)}
+.wcard .mini{position:absolute;right:-12px;top:-28px;width:72px;height:72px;transform:rotate(9deg)}
+.wall > :nth-child(2){transform:rotate(-1.2deg)}
+.wall > :nth-child(3){transform:rotate(.9deg)}
+.wall > :nth-child(4){transform:rotate(-.6deg)}
+.wcard--q .mini{top:auto;bottom:-24px;right:-8px}
+.wall > .wcard--q:hover{transform:rotate(0) translateY(-2px)}
+
+/* new to my class */
+.new-grid{display:grid;gap:36px}
+.h2-small{display:block;font-size:22px;letter-spacing:-.02em;margin-bottom:16px}
+.h2-line{display:block}
+.hl{display:inline;background:var(--paper);padding:0 8px;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:4px}
+.easy{list-style:none;margin:24px 0 0;padding:0;border-top:2px solid var(--ink)}
+.easy li{padding:16px 0;border-bottom:2px solid var(--ink);font:800 19px/1.35 var(--body);display:flex;gap:12px;align-items:baseline}
+.easy li svg{width:22px;height:22px;flex:none;transform:translateY(4px)}
+.new-slot{aspect-ratio:1/1}
+
+/* story */
+.story-grid{display:grid;gap:36px}
+.story-slot{aspect-ratio:3/4}
+.beats{list-style:none;margin:28px 0 0;padding:0;position:relative}
+.beats::before{content:"";position:absolute;left:7px;top:12px;bottom:12px;width:2px;background:var(--hair)}
+.beats li{position:relative;padding:0 0 24px 36px}
+.beats li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--ground);border:3px solid var(--cobalt)}
+.beats .bl{display:block;font:700 16px/1.2 var(--display);color:var(--cobalt);margin-bottom:8px}
+.beats p{font-size:18px;line-height:1.6;max-width:60ch}
+.firstclass{display:block;margin-top:12px;border:2px dashed var(--muted);border-radius:12px;padding:12px 16px;color:var(--muted);font-weight:700;font-size:16px}
+.pull{margin-top:12px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.pull q{font:800 34px/1.05 var(--display);letter-spacing:-.035em;quotes:"\201C" "\201D";color:var(--cobalt)}
+.pull svg{width:56px;height:56px;flex:none;color:var(--cobalt)}
+
+/* work with me: a flat band, one door at a time */
+.doors{margin-top:28px}
+.door-tabs{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;margin:0 calc(var(--gut) * -1);padding:4px var(--gut) 12px;scrollbar-width:none}
+.door-tabs::-webkit-scrollbar{display:none}
+.dtab{flex:none;scroll-snap-align:start;min-height:48px;padding:0 20px;border-radius:999px;border:2px solid var(--on-cobalt-soft);background:transparent;color:var(--on-cobalt);font-weight:800;font-size:16px;cursor:pointer;white-space:nowrap}
+.dtab:hover{border-color:var(--on-cobalt)}
+.dtab[aria-selected="true"]{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.door{margin-top:12px;background:var(--sun);color:var(--ink);border-radius:4px var(--tab) 16px 16px;padding:28px 24px 24px;min-height:300px;display:flex;flex-direction:column}
+.door[hidden]{display:none}
+.door h3{font-size:30px;line-height:1.08;letter-spacing:-.035em}
+.door .act{margin-top:auto;padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.door .soon{font-size:17px;font-weight:700;margin-top:16px;max-width:44ch}
+.door .soon[hidden]{display:none}
+.door .soon a{font-weight:800;text-underline-offset:4px;text-decoration-thickness:2px;display:inline-flex;align-items:center;min-height:44px}
+.work-cat{position:absolute;right:-60px;top:24px;width:340px;height:340px;opacity:.12}
+
+/* faq */
+.faq{margin-top:24px;border-top:2px solid var(--ink)}
+.faq details{border-bottom:2px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;padding:12px 0;font:700 20px/1.25 var(--display);letter-spacing:-.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:36px;height:36px;border-radius:50%;border:2px solid var(--ink);position:relative}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s ease}
+.faq details[open] summary .pm{background:var(--sun)}
+.faq details[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.faq .ans{padding:0 0 20px;font-size:18px;max-width:60ch;font-weight:600}
+.faq-grid{display:grid;gap:12px}
+.faq-side{display:flex;align-items:center;gap:20px}
+.faq-stamp{width:120px;height:120px;transform:rotate(-8deg);flex:none}
+
+/* close + footer */
+.close{padding:72px 0 40px}
+.close h2{font-size:52px;line-height:.98;letter-spacing:-.04em}
+.close .row2{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.close-grid{display:grid;gap:40px}
+.cats-slot{aspect-ratio:5/4}
+.cats-slot .obj{width:46%}
+.foot{border-top:2px solid var(--ink-2);margin-top:44px;padding-top:20px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;font-weight:700;color:var(--on-dark-soft);font-size:17px}
+.foot a{color:var(--on-cobalt);min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px}
+.foot .brand svg{width:22px;height:22px}
+
+/* ---------- sticky dock (phone): solid, no blur ---------- */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px 12px calc(12px + env(safe-area-inset-bottom));background:var(--ground);border-top:2px solid var(--ink);transition:transform .2s ease}
+.dock .btn{min-height:52px;padding:0 12px;font-size:16px}
+.dock.tuck{transform:translateY(110%)}
+@media (min-width:1024px){.dock{display:none}}
+
+/* ---------- tablet ---------- */
+@media (min-width:768px){
+  .h1-lead{font-size:44px}
+  .h1-q{font-size:72px}
+  .notecard{max-width:560px}
+  .polaroid--hero{width:132px;right:40px}
+  .board .bd-head,.board .bd-line{max-width:calc(100% - 160px)}
+  .wall{grid-template-columns:1fr 1fr}
+  .proof-grid{grid-template-columns:1.4fr 1fr;align-items:end}
+  .new-grid,.story-grid,.close-grid{grid-template-columns:1fr 1fr;align-items:center}
+  .h2xl{font-size:60px}
+  .close h2{font-size:84px}
+  .ledger li{font-size:32px}
+  .faq-stamp{width:160px;height:160px}
+}
+
+/* ---------- desktop: two-column hero, board pinned across the field's edge ---------- */
+@media (min-width:1024px){
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(560px,628px);align-items:start;max-width:1600px;margin:0 auto}
+  .hero-field{grid-column:1;grid-row:1;border-radius:0 0 var(--tab) 0;padding:16px 0 0;min-height:696px;display:flex;flex-direction:column}
+  .hero-field > .wrap{padding-left:max(var(--gut), calc((100vw - 1600px)/2 + var(--gut)));padding-right:112px;max-width:none;flex:1;display:flex;flex-direction:column}
+  .hero-copy{flex:1;display:flex;flex-direction:column}
+  .dateline{margin-bottom:4px}
+  .h1-lead{font-size:48px;line-height:1.02;margin-bottom:12px}
+  .h1-q{font-size:80px;line-height:.95}
+  .hero-sub{font-size:19px;max-width:44ch}
+  .notecard{margin-top:auto;margin-bottom:-56px;max-width:640px;padding:24px 24px 20px}
+  .notecard-spacer{height:24px}
+  .nc-closed{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .nc-top,.nc-more{display:contents}
+  .nc-label{flex:1 0 100%;margin:0 112px 0 0}
+  .tell{width:auto;min-width:0;flex:0 0 auto;gap:20px}
+  .nc-more .btn--line{flex:0 0 auto}
+  .hero-board-wrap{grid-column:2;grid-row:1 / span 2;margin-left:-72px;padding:132px var(--gut) 0 0;position:relative;z-index:4}
+  .hero-board-wrap > .wrap{padding:0}
+  .board{background:var(--paper);border:2px solid var(--ink);border-radius:4px var(--tab) 16px 16px;box-shadow:8px 8px 0 var(--ink);padding:24px 24px 20px}
+  .board .bd-head,.board .bd-line{max-width:none}
+  .polaroid--hero{left:-80px;right:auto;top:20px;width:196px;transform:rotate(-6deg)}
+  body.marks-on .polaroid--hero{width:188px}
+  .picker,.pick{font-size:23px}
+  .picker{margin-top:16px}
+  .rail{margin:0;padding-left:0;padding-right:0;flex-wrap:wrap}
+  .days{gap:6px;margin-top:4px}
+  .day{width:auto;flex:1 1 0;min-width:0;padding:8px 2px}
+  .day .d1{font-size:13px}
+  .day--view{flex:1.45 1 0}
+  .day--view .d2{font-size:13px}
+  .areas{gap:6px;padding-top:0}
+  .area{padding:0 12px;font-size:14px}
+  .areas .tag{display:none}
+  .row{grid-template-columns:104px minmax(0,1fr) auto;grid-template-areas:'when what book';align-items:center;padding:8px;background:var(--paper)}
+  .row .when{display:block}
+  .row .when .tt{margin-top:4px}
+  .row .st{font-size:18px}
+  .row.is-pick{background:var(--sun)}
+  .grp{padding:12px 8px 4px}
+  .band{padding:104px 0}
+  .proof-grid{grid-template-columns:1.5fr 1fr;gap:72px}
+  .ledger li{font-size:40px;padding:24px 0}
+  #notes{padding-bottom:88px}
+  .wall-head{grid-template-columns:1.1fr 1fr;align-items:end;gap:40px}
+  .wall{grid-template-columns:1.15fr 1fr 1fr;align-items:stretch;gap:24px}
+  .wcard--prompt{grid-row:span 2;display:flex;flex-direction:column;justify-content:space-between;padding:32px 28px}
+  .wcard--prompt .body{font-size:46px}
+  .h2xl{font-size:96px}
+  .h2-small{font-size:32px}
+  .new-grid{grid-template-columns:1.2fr 1fr;gap:80px}
+  .story-grid{grid-template-columns:1fr 1.25fr;gap:80px;align-items:start}
+  .pull q{font-size:56px}
+  .doors{display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:stretch}
+  .door-tabs{flex-direction:column;margin:0;padding:0;overflow:visible}
+  .dtab{text-align:left;display:flex;align-items:center;font-size:18px;min-height:56px;border-radius:16px}
+  .door{margin-top:0;padding:48px;min-height:400px}
+  .door h3{font-size:60px;max-width:16ch}
+  .faq-grid{grid-template-columns:1fr 2fr;gap:80px;align-items:start}
+  .faq-side{flex-direction:column;align-items:flex-start;gap:28px}
+  .faq-stamp{width:200px;height:200px}
+  .faq{margin-top:0}
+  .faq summary{font-size:24px;min-height:88px}
+  .close{padding:120px 0 48px}
+  .close h2{font-size:132px}
+  .close-grid{grid-template-columns:1.3fr 1fr;gap:80px}
+  .studios{display:block}
+}
+
+/* studio block under the desktop hero (the board footer carries these on phone) */
+.studios{display:none}
+@media (min-width:1024px){
+  .studios{display:block;grid-column:1;grid-row:2;padding:96px 112px 24px max(var(--gut), calc((100vw - 1600px)/2 + var(--gut)))}
+  .bd-foot{display:none}
+  .st-label{font-weight:800;color:var(--muted);font-size:18px;margin-bottom:12px}
+  .studios ul{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+  .studios a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 20px;padding:20px 4px;border-bottom:2px solid var(--ink);text-decoration:none;min-height:72px}
+  .studios a:hover .sn{color:var(--cobalt)}
+  .studios .sn{font:700 34px/1.05 var(--display);letter-spacing:-.03em}
+  .studios .sl{grid-column:1;font-weight:700;color:var(--muted);font-size:17px;line-height:1.4}
+  .studios .arr{grid-column:2;grid-row:1 / span 2;width:28px;height:28px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+
+<!-- SVG library: hand-drawn butterfly (her symbol), the line cat (the studio supervisor), the supervisor stamp -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="butterfly" viewBox="0 0 64 64">
+      <path d="M31 22c-3-9-12-15-20-13-6 2-6 10-1 15 3 3 8 5 13 6-6 1-11 5-11 11 0 6 7 8 12 4 4-3 6-8 7-13" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M33 22c3-9 12-15 20-13 6 2 6 10 1 15-3 3-8 5-13 6 6 1 11 5 11 11 0 6-7 8-12 4-4-3-6-8-7-13" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 20v26M32 20c-1-5-4-8-7-9M32 20c1-5 4-8 7-9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cat" viewBox="0 0 120 120">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45.5 51.5 47 37.8l9.2 7.4c2.6-.9 5.4-1.2 8-.9l9.6-7.1 1 13.9c2.2 3.4 2.6 7.6.5 11.1-2.6 4.4-8.3 6.8-15.2 6.6-6.6-.2-12-2.9-14.3-7.1-1.8-3.3-1.5-7.1-.3-10.2z"/>
+        <path d="M51.7 54.6c1.6-1.3 3.4-1.3 5 .1M63.6 54.4c1.6-1.4 3.5-1.4 5.1-.1"/>
+        <path d="M58.9 59.6l1.6 1.5 1.7-1.6"/>
+        <path d="M47.6 59.8l-8.6-1.3M48 62.6l-8.1 1.9M73.6 59.4l8.7-1.6M73.2 62.3l8.3 1.6"/>
+        <path d="M50.6 66.2c-6.4 6.3-8.9 15.7-6.6 23.6 1.1 3.9 5.4 5.6 16.8 5.6 11.6 0 15.5-1.9 16.5-5.9 2-7.7-.6-16.9-6.9-23"/>
+        <path d="M54.4 95.2v-7.6M66.6 95.3v-7.4"/>
+        <path d="M76.9 89.3c8.8 1.6 14.6-2.6 13.8-9.4-.6-4.6-4.9-6.4-8-4.6"/>
+      </g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="pen" viewBox="0 0 24 24"><path d="M4 20l1.2-4.6L15.8 4.8a2 2 0 0 1 2.8 0l.6.6a2 2 0 0 1 0 2.8L8.6 18.8zM13.5 7l3.5 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="stamp" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="57" fill="#FFD23F" stroke="#121418" stroke-width="2.5"/>
+      <circle cx="60" cy="60" r="40" fill="none" stroke="#121418" stroke-width="1.6" stroke-dasharray="2.5 3.5"/>
+      <path id="ring" d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0" fill="none"/>
+      <text font-family="Unbounded, sans-serif" font-weight="700" font-size="10.4" fill="#121418"><textPath href="#ring" startOffset="2%">Supervisor approved · adrianne.yoga ·</textPath></text>
+      <use href="#cat" x="20" y="16" width="80" height="80" color="#121418"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="head on-cobalt">
+  <div class="wrap head-row">
+    <div class="brand-col">
+      <a class="brand" href="#top" aria-label="adrianne.yoga, back to top">
+        <svg aria-hidden="true"><use href="#butterfly"/></svg>
+        <span class="wordmark">adrianne<i>.</i>yoga</span>
+      </a>
+      <p class="aka">Du’Sauzay on studio schedules. <span class="tag tag--sugg" title="Suggested by our research: students find her by her studio name">suggested</span><span class="tag tag--conf" title="Confirm Adrianne is OK with showing this">confirm</span></p>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#work">Work with me</a></li>
+        <li><a href="#story">Story</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sun head-cta" href="#note" data-open-note>Leave a note</a>
+  </div>
+</header>
+
+<main id="main">
+<div class="hero" id="top">
+  <section class="hero-field field f-cobalt dots-br" aria-labelledby="hero-title">
+    <span class="field-clip" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="dateline"><a href="#classes"><span class="dot" aria-hidden="true"></span><u id="dateline">It’s Sunday. Here’s where I’m teaching.</u></a><span class="tag tag--sugg" title="Suggested: a date-aware line, updates every day">suggested</span></p>
+        <h1 id="hero-title"><span class="h1-lead">Every note gets read out loud to my cats.</span> <span class="h1-q">How was your practice?</span></h1>
+        <p class="hero-sub">Vinyasa, Hot Power, Slow Flow<span class="sugg-word">, Yoga Sculpt</span><span class="tag tag--sugg" title="Suggested: Yoga Sculpt is her most-reviewed class">suggested</span> and more, every week at VIDA, OneLife and District Flow, across DC and Arlington.</p>
+        <div class="notecard-spacer" aria-hidden="true"></div>
+
+        <div class="notecard paperish" id="note">
+          <svg class="stamp" aria-hidden="true"><use href="#stamp"/></svg>
+          <div class="nc-closed" id="nc-closed">
+            <div class="nc-top">
+              <p class="nc-label"><b>A note for Adrianne.</b> Short is perfect. Private unless you tick the box.</p>
+              <button class="btn btn--cobalt tell" type="button" id="tell" aria-expanded="false" aria-controls="note-form">Tell me <svg class="pen" aria-hidden="true"><use href="#pen"/></svg></button>
+            </div>
+            <div class="nc-more">
+              <a class="btn btn--line" href="#classes">Find my classes <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+              <a class="btn btn--text" href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">Follow @adriannekim</a>
+            </div>
+          </div>
+
+          <form class="note-form" id="note-form" novalidate hidden aria-labelledby="nf-title">
+            <div class="nf-head"><h2 id="nf-title">How was your practice?</h2><button type="button" class="btn btn--text" id="nf-close">Not now</button></div>
+            <div class="fld">
+              <label for="f-name">First name</label>
+              <input class="inp" id="f-name" name="name" autocomplete="given-name" aria-describedby="e-name">
+              <span class="err" id="e-name" aria-live="polite"></span>
+            </div>
+            <div class="fld">
+              <label for="f-where">Where we practiced</label>
+              <select class="inp" id="f-where" name="where" aria-describedby="e-where">
+                <option value="">Pick the room</option>
+                <option>District Flow Capitol Hill</option>
+                <option>VIDA U Street</option>
+                <option>VIDA Navy Yard/The Yards</option>
+                <option>VIDA City Vista</option>
+                <option>VIDA Ballston</option>
+                <option>OneLife Capitol Hill</option>
+                <option>OneLife Old Town</option>
+                <option>OneLife Crystal City</option>
+                <option>OneLife Ballston</option>
+                <option>Somewhere else</option>
+              </select>
+              <span class="err" id="e-where" aria-live="polite"></span>
+            </div>
+            <div class="fld">
+              <label for="f-note">How was your practice?</label>
+              <textarea class="inp" id="f-note" name="note" rows="3" aria-describedby="e-note"></textarea>
+              <span class="err" id="e-note" aria-live="polite"></span>
+            </div>
+            <label class="chk"><input type="checkbox" name="share" id="f-share"> <span>OK to share this on the site.</span></label>
+            <p class="private">Leave it unticked and it stays between you, me and the cats.</p>
+            <label class="chk"><input type="checkbox" name="first" id="f-first"> <span>This was my first class ever. <span class="tag tag--sugg" title="Suggested: notes tagged this way help nervous beginners see people like them came back">suggested</span></span></label>
+            <div class="fld">
+              <label for="f-email">Email <span class="opt">(optional)</span> <span class="tag tag--sugg" title="Suggested: optional email with its own opt-in box">suggested</span></label>
+              <input class="inp" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="e-email">
+              <span class="err" id="e-email" aria-live="polite"></span>
+            </div>
+            <label class="chk"><input type="checkbox" name="firstword" id="f-firstword"> <span>Send me first word on subs, pop-ups and retreats.</span></label>
+            <button class="btn btn--cobalt send" type="submit">Send it to the cats</button>
+          </form>
+
+          <div class="thanks" id="thanks" hidden>
+            <h2 tabindex="-1" id="thanks-title">Got it. The supervisors will hear it tonight.</h2>
+            <a class="wall-link" href="#notes" id="see-wall">See it on the wall</a>
+            <p class="rm rm-note">Mockup only: nothing was sent or stored.</p>
+            <div class="row2">
+              <a class="btn btn--cobalt" href="#classes">Find my classes <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+              <a class="btn btn--line" href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">Follow @adriannekim</a>
+            </div>
+          </div>
+          <p class="trust"><b class="unv">Faculty, VIDA 200-Hour Teacher Training</b><span class="tag tag--conf" title="Brief said ‘Lead faculty’; VIDA’s page says faculty">confirm</span>. <b class="unv">1,000+ classes taught</b><span class="tag tag--conf" title="Confirm the current number">confirm</span>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="studios" aria-label="Studio schedules">
+    <p class="st-label">Book on each studio’s own schedule:</p>
+    <ul>
+      <li><a href="https://vidafitness.com" target="_blank" rel="noopener"><span class="sn">VIDA Fitness</span><span class="sl">U Street, Navy Yard/The Yards, City Vista and Ballston</span><svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+      <li><a href="https://www.onelifefitness.com" target="_blank" rel="noopener"><span class="sn">OneLife Fitness</span><span class="sl">Capitol Hill, Old Town, Crystal City and Ballston</span><svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+      <li><a href="https://districtflowyoga.com" target="_blank" rel="noopener"><span class="sn">District Flow Yoga</span><span class="sl">Capitol Hill</span><svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <!-- WHERE I TEACH: the week board (signature interaction) -->
+  <div class="hero-board-wrap">
+    <figure class="polaroid polaroid--hero" role="img" aria-label="Photo to come: Adrianne cueing a full room at District Flow">
+      <span class="print field f-sun dots-tr"><span class="field-clip" aria-hidden="true"></span><svg class="obj" aria-hidden="true"><use href="#butterfly"/></svg></span>
+      <span class="slot-cap"><b>PHOTO:</b> Adrianne cueing a full room, District Flow</span>
+    </figure>
+    <div class="wrap">
+      <section class="board paperish" id="classes" aria-labelledby="board-title">
+        <div class="bd-head">
+          <h2 id="board-title">Where I teach</h2>
+          <span class="sample">Sample week</span><span class="tag tag--conf" title="Every row is sample data until Adrianne confirms her real week">confirm</span>
+        </div>
+        <p class="bd-line"><b>Subs and pop-up classes go up here first.</b></p>
+
+        <div class="picker">
+          <label class="pick-label" for="pick">Take a class for</label>
+          <select class="pick" id="pick">
+            <option value="any">any reason</option>
+            <option value="first">your first time</option>
+            <option value="sweaty">a sweaty one</option>
+            <option value="slow">a slow one</option>
+            <option value="tough">a tough week</option>
+          </select>
+          <span class="tag tag--sugg" title="Suggested: a picker in the spirit of The Class. Matches are sample; Adrianne confirms which class fits.">suggested</span>
+        </div>
+
+        <div class="rail days" id="days" role="group" aria-label="Pick what to show"></div>
+        <div class="rail areas" id="areas" role="group" aria-label="Pick a neighbourhood">
+          <button class="area" type="button" data-area="all" aria-pressed="true">All</button>
+          <button class="area" type="button" data-area="caphill" aria-pressed="false">Capitol Hill</button>
+          <button class="area" type="button" data-area="navy" aria-pressed="false">Navy Yard</button>
+          <button class="area" type="button" data-area="ustreet" aria-pressed="false">U Street</button>
+          <button class="area" type="button" data-area="arl" aria-pressed="false">Arlington/Alexandria</button>
+          <span class="tag tag--sugg" title="Suggested filter chips">suggested</span>
+        </div>
+        <p class="bd-count" id="count" aria-live="polite">Loading the week…</p>
+        <ol class="rows" id="rows"></ol>
+        <div class="bd-empty" id="empty" hidden></div>
+        <div class="bd-foot">
+          <p>Book on each studio’s own schedule:</p>
+          <ul>
+            <li><a href="https://vidafitness.com" target="_blank" rel="noopener">VIDA Fitness <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+            <li><a href="https://www.onelifefitness.com" target="_blank" rel="noopener">OneLife Fitness <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+            <li><a href="https://districtflowyoga.com" target="_blank" rel="noopener">District Flow Yoga <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- PROOF STRIP -->
+<section class="band on-dark" aria-label="Where I’ve taught and trained">
+  <div class="wrap proof-grid">
+    <ul class="ledger">
+      <li><span class="unv">Faculty, VIDA 200-Hour YTT</span><span class="tag tag--conf" title="Confirm the exact wording">confirm</span></li>
+      <li><span><span class="lk">Former</span> CorePower Master Trainer</span></li>
+      <li><span class="unv">Sattva Yoga Academy, Rishikesh</span><span class="tag tag--conf" title="Confirm which program (200-hour, module or Summit)">confirm</span></li>
+      <li><span>Audi Field, <span class="lk">DC Power FC</span></span></li>
+      <li><span class="unv">FOX 5 · Noom</span><span class="tag tag--conf" title="Appearances not yet confirmed">confirm</span></li>
+    </ul>
+    <figure class="field slot f-cobalt dots-tr proof-slot" role="img" aria-label="Photo to come: Audi Field, August 15">
+      <span class="field-clip" aria-hidden="true"></span>
+      <svg class="obj" aria-hidden="true" style="color:var(--sun)"><use href="#butterfly"/></svg>
+      <span class="slot-cap"><b>PHOTO:</b> Audi Field, Aug 15</span>
+    </figure>
+  </div>
+</section>
+
+<!-- NOTES FROM CLASS (the wall) -->
+<section class="band" id="notes" aria-labelledby="notes-title">
+  <div class="wrap">
+    <div class="wall-head">
+      <h2 class="h2xl" id="notes-title">Notes from class</h2>
+      <p class="lede">Every note here was left by someone who just walked out of class.</p>
+    </div>
+    <div class="wall paperish" id="wall">
+      <article class="wcard wcard--prompt on-cobalt">
+        <p class="by">The supervisors are waiting. <span class="sample">Sample</span></p>
+        <p class="body">Your first class? Tell me how it went.</p>
+        <a class="btn btn--sun" href="#note" data-open-note="first">Tell me</a>
+      </article>
+      <button class="wcard wcard--q" type="button" data-prompt="What did you need today? Did you get it?">
+        <span class="body">What did you need today? Did you get it?</span>
+        <span class="write">Write this one <span class="tag tag--sugg">suggested</span></span>
+      </button>
+      <button class="wcard wcard--q" type="button" data-prompt="Hardest pose today?">
+        <span class="body">Hardest pose today?</span>
+        <span class="write">Write this one <span class="tag tag--sugg">suggested</span></span>
+        <svg class="mini" aria-hidden="true"><use href="#stamp"/></svg>
+      </button>
+      <button class="wcard wcard--q" type="button" data-prompt="Which song is stuck in your head?">
+        <span class="body">Which song is stuck in your head?</span>
+        <span class="write">Write this one <span class="tag tag--sugg">suggested</span></span>
+      </button>
+      <div class="wcard wcard--empty" id="lands">
+        <p class="body">Your note lands here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW TO MY CLASS -->
+<section class="band on-sun" id="new" aria-labelledby="new-title">
+  <div class="wrap new-grid">
+    <div>
+      <h2 class="h2xl" id="new-title"><span class="h2-small">New to my class.</span><span class="h2-line">Rest whenever you want.</span> <span class="h2-line"><span class="hl">Child’s pose counts.</span></span></h2>
+      <p class="lede">Hot Power and Slow Flow are both welcome here, and so is your very first class.</p>
+      <ul class="easy" aria-label="Three things to know">
+        <li><svg aria-hidden="true"><use href="#butterfly"/></svg><span>You don’t need to be flexible.</span></li>
+        <li><svg aria-hidden="true"><use href="#butterfly"/></svg><span>Come alone; most people do.</span></li>
+        <li><svg aria-hidden="true"><use href="#butterfly"/></svg><span>Bring water. I’ll tell you everything else. <span class="tag tag--sugg" title="Suggested: three beginner lines from our research">suggested</span></span></li>
+      </ul>
+    </div>
+    <figure class="field slot f-ink dots-bl new-slot" role="img" aria-label="Photo to come: a close-up hands-on cue">
+      <span class="field-clip" aria-hidden="true"></span>
+      <svg class="obj" aria-hidden="true" style="color:var(--sun)"><use href="#cat"/></svg>
+      <span class="slot-cap"><b>PHOTO:</b> Adrianne mid-cue, hands on a student’s back, District Flow</span>
+    </figure>
+  </div>
+</section>
+
+<!-- MY STORY -->
+<section class="band" id="story" aria-labelledby="story-title">
+  <div class="wrap story-grid">
+    <figure class="field slot f-sun dots-tr story-slot" role="img" aria-label="Photo to come: Rishikesh, March 2026">
+      <span class="field-clip" aria-hidden="true"></span>
+      <svg class="obj" aria-hidden="true" style="color:var(--cobalt)"><use href="#butterfly"/></svg>
+      <span class="slot-cap"><b>PHOTO:</b> Rishikesh, March 2026</span>
+    </figure>
+    <div>
+      <h2 class="h2xl" id="story-title">My story</h2>
+      <ol class="beats">
+        <li><span class="bl">The first room</span><p>Came to yoga as a student, in <span class="unv">Hawaii</span><span class="tag tag--conf" title="Her bio says she began practising in her apartment after college">confirm</span>, at a moment when she didn’t know what came next.</p><span class="firstclass rm">[slot: her first class]</span></li>
+        <li><span class="bl">CorePower</span><p>Trained to teach, then years at CorePower managing studios and training teachers, including during COVID.</p></li>
+        <li><span class="bl">2026</span><p>Sattva Yoga Academy, outside Rishikesh, to study where yoga started.</p></li>
+        <li><span class="bl">Days off</span><p>On her days off, she’s in someone else’s class, in the back row, still learning.</p></li>
+      </ol>
+      <div class="pull"><svg aria-hidden="true"><use href="#butterfly"/></svg><q>Inspire curiosity to explore.</q><span class="tag tag--sugg" title="Suggested pull line: her own tagline">suggested</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK WITH ME -->
+<section class="band on-cobalt field" id="work" aria-labelledby="work-title">
+  <span class="field-clip" aria-hidden="true"><svg class="work-cat"><use href="#cat"/></svg></span>
+  <div class="wrap">
+    <h2 class="h2xl" id="work-title">Work with me</h2>
+    <div class="doors">
+      <div class="door-tabs" role="tablist" aria-label="Who’s asking">
+        <button class="dtab" role="tab" id="t-studios" aria-controls="p-studios" aria-selected="true">Studios and gyms</button>
+        <button class="dtab" role="tab" id="t-companies" aria-controls="p-companies" aria-selected="false" tabindex="-1">Companies and events</button>
+        <button class="dtab" role="tab" id="t-schools" aria-controls="p-schools" aria-selected="false" tabindex="-1">Schools</button>
+        <button class="dtab" role="tab" id="t-ytt" aria-controls="p-ytt" aria-selected="false" tabindex="-1">Teacher training</button>
+        <button class="dtab" role="tab" id="t-retreats" aria-controls="p-retreats" aria-selected="false" tabindex="-1">Retreats</button>
+        <button class="dtab" role="tab" id="t-privates" aria-controls="p-privates" aria-selected="false" tabindex="-1">Private sessions</button>
+      </div>
+      <div class="paperish">
+        <div class="door on-sun" role="tabpanel" id="p-studios" aria-labelledby="t-studios" tabindex="0">
+          <h3>“I’ve trained the teachers you’re hiring.”</h3>
+          <div class="act"><button class="btn btn--ink" type="button" data-soon>Ask about subs and hiring</button></div>
+          <p class="soon" hidden>This door gets its own short form soon. Until then, <a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">DM me @adriannekim</a>. <span class="rm">(Mockup: page next round.)</span></p>
+        </div>
+        <div class="door on-sun" role="tabpanel" id="p-companies" aria-labelledby="t-companies" tabindex="0" hidden>
+          <h3>One session for your team, no mats required.</h3>
+          <div class="act"><button class="btn btn--ink" type="button" data-soon>Bring me to your team</button></div>
+          <p class="soon" hidden>This door gets its own short form soon. Until then, <a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">DM me @adriannekim</a>. <span class="rm">(Mockup: page next round.)</span></p>
+        </div>
+        <div class="door on-sun" role="tabpanel" id="p-schools" aria-labelledby="t-schools" tabindex="0" hidden>
+          <h3>A one-page overview.</h3>
+          <div class="act"><button class="btn btn--ink" type="button" data-soon>Get the overview</button></div>
+          <p class="soon" hidden>The one-pager is on its way. Until then, <a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">DM me @adriannekim</a>. <span class="rm">(Mockup: PDF next round.)</span></p>
+        </div>
+        <div class="door on-sun" role="tabpanel" id="p-ytt" aria-labelledby="t-ytt" tabindex="0" hidden>
+          <h3>VIDA’s 200-hour training (next cohort Nov 14).</h3>
+          <div class="act"><a class="btn btn--ink" href="https://vidafitness.com/200-hour-yoga-teacher-training/" target="_blank" rel="noopener">See the training</a></div>
+        </div>
+        <div class="door on-sun" role="tabpanel" id="p-retreats" aria-labelledby="t-retreats" tabindex="0" hidden>
+          <h3>First word on the next one.</h3>
+          <div class="act"><a class="btn btn--ink" href="#note" data-open-note="firstword">Get first word</a></div>
+        </div>
+        <div class="door on-sun" role="tabpanel" id="p-privates" aria-labelledby="t-privates" tabindex="0" hidden>
+          <h3>Rate to confirm.<span class="tag tag--conf" title="Confirm the private-session rate">confirm</span></h3>
+          <div class="act"><button class="btn btn--ink" type="button" data-soon>Ask about privates</button></div>
+          <p class="soon" hidden>This door gets its own short form soon. Until then, <a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">DM me @adriannekim</a>. <span class="rm">(Mockup: page next round.)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="band" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <h2 class="h2xl" id="faq-title">FAQ</h2>
+      <svg class="faq-stamp" aria-hidden="true"><use href="#stamp"/></svg>
+    </div>
+    <div class="faq">
+      <details><summary>Is this for me if I’m new?<span class="pm" aria-hidden="true"></span></summary><p class="ans">Yes. Child’s pose counts, and so does your first class.</p></details>
+      <details><summary>Can you teach at my studio or sub?<span class="pm" aria-hidden="true"></span></summary><p class="ans">Yes. Tell me the date and the class.</p></details>
+      <details><summary>How do I bring you to my team?<span class="pm" aria-hidden="true"></span></summary><p class="ans">One session, no mats required. Send me the date.</p></details>
+      <details><summary>Do you teach privates?<span class="pm" aria-hidden="true"></span></summary><p class="ans">Yes. Rate to confirm.<span class="tag tag--conf" title="Confirm the private-session rate">confirm</span></p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- CLOSE + FOOTER -->
+<footer class="close on-dark">
+  <div class="wrap">
+    <div class="close-grid">
+      <div>
+        <h2>See you on the mat.</h2>
+        <div class="row2">
+          <a class="btn btn--sun" href="#classes">Find my classes <svg class="arr" aria-hidden="true"><use href="#arrow"/></svg></a>
+          <a class="btn btn--line-light" href="#note" data-open-note>Leave a note</a>
+        </div>
+      </div>
+      <figure class="field slot f-sun dots-bl cats-slot" role="img" aria-label="Photo to come: the studio supervisors, Adrianne’s cats">
+        <span class="field-clip" aria-hidden="true"></span>
+        <svg class="obj" aria-hidden="true"><use href="#stamp"/></svg>
+        <span class="slot-cap"><b>PHOTO:</b> the studio supervisors, on duty</span>
+      </figure>
+    </div>
+    <div class="foot">
+      <a class="brand" href="#top"><svg aria-hidden="true"><use href="#butterfly"/></svg><span class="wordmark" style="font-size:17px">adrianne<i>.</i>yoga</span></a>
+      <span>DC and Arlington</span>
+      <a href="https://www.instagram.com/adriannekim/" target="_blank" rel="noopener">@adriannekim</a>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock" role="region" aria-label="Quick actions">
+  <a class="btn btn--line" href="#classes">Find my classes</a>
+  <a class="btn btn--cobalt" href="#note" data-open-note>Leave a note</a>
+</div>
+<div role="region" aria-label="Review marks switch"><button class="marks" id="marks" type="button" role="switch" aria-checked="false"><span class="face"><span class="sw" aria-hidden="true"></span><span id="marks-label">Review marks</span></span></button></div>
+
+<script>
+/* =====================================================================
+   SAMPLE WEEK. NOT REAL DATA. Every row is a placeholder until Adrianne
+   confirms her week; later this comes from a small JSON file.
+   day: 0=Sun … 6=Sat (null = no fixed day). mins = minutes after midnight.
+   fits: SAMPLE matches for the "Take a class for" picker.
+   ===================================================================== */
+const WEEK = [
+  { id:'mon-ol',  day:1, time:'7:00 PM',  mins:1140, style:'Vinyasa',   studio:'OneLife', hood:'Capitol Hill', area:'caphill', link:'https://www.onelifefitness.com/class-schedules', fits:['first','tough'] },
+  { id:'wed-ol',  day:3, time:'7:00 AM',  mins:420,  style:'Vinyasa',   studio:'OneLife', hood:'Capitol Hill', area:'caphill', link:'https://www.onelifefitness.com/class-schedules', fits:['first','slow'] },
+  { id:'thu-yds', day:4, time:'10:00 AM', mins:600,  style:'Hot Power', studio:'VIDA',    hood:'The Yards (Navy Yard)', area:'navy', link:'https://vidafitness.com/class-schedule/the-yards/', fits:['sweaty','tough'] },
+  { id:'thu-ust', day:4, time:'12:00 PM', mins:720,  style:'Vinyasa',   studio:'VIDA',    hood:'U Street', area:'ustreet', link:'https://vidafitness.com/class-schedule/u-street/', fits:['first'] },
+  { id:'sat-sub', day:6, time:'9:00 AM',  mins:540,  style:'Hot Power', studio:'VIDA City Vista', hood:'City Vista', area:'cityvista', link:'https://vidafitness.com/class-schedule/city-vista/', flag:'Sub', fits:['sweaty'] },
+  { id:'pop-sun', day:null, popup:true, time:'Date TBC', mins:0, style:'Sunrise yoga', studio:'Navy Yard boardwalk', hood:'Navy Yard', area:'navy', link:'https://www.instagram.com/adriannekim/', cta:'Details', flag:'Pop-up', fits:['slow','tough','first'] },
+  { id:'df-wk',   day:null, weekly:true, time:'Several weekly classes', mins:0, style:'Vinyasa / Yoga Sculpt', studio:'District Flow', hood:'Capitol Hill', area:'caphill', link:'https://www.districtflowyoga.com/schedule', fits:['sweaty','first'] }
+];
+const BEST = { first:'thu-ust', sweaty:'thu-yds', slow:'pop-sun', tough:'mon-ol' };
+const PICK_LABEL = { any:'any reason', first:'your first time', sweaty:'a sweaty one', slow:'a slow one', tough:'a tough week' };
+
+(function(){
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const desk = window.matchMedia('(min-width: 1024px)');
+  const DAYS_LONG = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const DAYS_SHORT = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const now = new Date();
+  const today = now.getDay();
+  const nowMins = now.getHours() * 60 + now.getMinutes();
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  /* ---------------- review marks ---------------- */
+  const marksBtn = document.getElementById('marks');
+  const marksLabel = document.getElementById('marks-label');
+  const params = new URLSearchParams(location.search);
+  let marksOn = false;
+  try { const s = localStorage.getItem('adrianne-review-marks'); if (s) marksOn = s === 'on'; } catch (e) {}
+  if (params.get('review') === '1' || params.get('marks') === 'on' || location.hash === '#review') marksOn = true;
+  if (params.get('review') === '0' || params.get('marks') === 'off') marksOn = false;
+  function setMarks(on, save){
+    marksOn = on;
+    document.body.classList.toggle('marks-on', on);
+    marksBtn.setAttribute('aria-checked', String(on));
+    const n = document.querySelectorAll('.tag, .sample, .slot-cap').length;
+    marksLabel.textContent = on ? 'Review marks: on (' + n + ')' : 'Review marks';
+    if (save) { try { localStorage.setItem('adrianne-review-marks', on ? 'on' : 'off'); } catch (e) {} }
+  }
+  marksBtn.addEventListener('click', () => setMarks(!marksOn, true));
+  window.addEventListener('hashchange', () => { if (location.hash === '#review') setMarks(true, false); });
+  setMarks(marksOn, false);
+
+  /* date-aware line */
+  document.getElementById('dateline').textContent = 'It’s ' + DAYS_LONG[today] + '. Here’s where I’m teaching.';
+
+  /* rolling 7-day strip starting today */
+  const strip = [];
+  for (let i = 0; i < 7; i++) { const d = new Date(now); d.setDate(now.getDate() + i); strip.push({ dow:d.getDay(), date:d.getDate(), offset:i }); }
+  const offsetOf = dow => strip.find(s => s.dow === dow).offset;
+  const dateOf = dow => strip.find(s => s.dow === dow).date;
+  const dayWord = dow => { const o = offsetOf(dow); return o === 0 ? 'Today' : o === 1 ? 'Tomorrow' : DAYS_SHORT[dow] + ' ' + dateOf(dow); };
+  /* minutes from now until a dated class (classes earlier today roll to next week) */
+  const until = r => { let m = offsetOf(r.day) * 1440 + r.mins - nowMins; if (m < 0) m += 7 * 1440; return m; };
+  const NEXT = WEEK.filter(r => r.day != null).sort((a,b) => until(a) - until(b)).slice(0, 3).map(r => r.id);
+
+  const state = { day: desk.matches ? 'all' : 'next', area:'all', pick:'any' };
+
+  /* chips */
+  const daysEl = document.getElementById('days');
+  function chip(html, val, label, cls){ const b = document.createElement('button'); b.type = 'button'; b.className = 'day' + (cls ? ' ' + cls : ''); b.dataset.day = val; b.innerHTML = html; b.setAttribute('aria-label', label); daysEl.appendChild(b); return b; }
+  chip('<span class="d1">Next up</span><span class="d2">3 classes</span>', 'next', 'Next up: the next 3 classes', 'day--view');
+  const weekBtn = chip('<span class="d1">Week</span><span class="d2">all 7</span>', 'all', 'Whole week', 'day--view');
+  strip.forEach(s => {
+    const n = WEEK.filter(r => r.day === s.dow).length;
+    chip((s.offset === 0 ? '<span class="today-tag" aria-hidden="true">Today</span>' : '') + '<span class="d1">' + DAYS_SHORT[s.dow] + '</span><span class="d2">' + s.date + '</span>' + (n ? '<span class="has" aria-hidden="true"></span>' : ''),
+      String(s.dow), DAYS_LONG[s.dow] + ' ' + s.date + (s.offset === 0 ? ', today' : '') + ', ' + (n ? n + (n > 1 ? ' classes' : ' class') : 'no fixed classes'), s.offset === 0 ? 'is-today' : '');
+  });
+
+  /* rows + group headers, built once; filtering moves them (FLIP) */
+  const list = document.getElementById('rows');
+  const els = {};
+  const grp = {};
+  [['next','Next up',''],['new','New this week',''],['week','The week, in order','grp--week']].forEach(([k, t, c]) => {
+    const li = document.createElement('li'); li.className = 'grp ' + c; li.innerHTML = '<span class="gdot" aria-hidden="true"></span>' + t; li.hidden = true; grp[k] = li;
+  });
+  WEEK.forEach(r => {
+    const li = document.createElement('li');
+    li.className = 'row'; li.dataset.id = r.id;
+    const dayLabel = r.weekly ? 'Every week' : r.popup ? 'Pop-up' : dayWord(r.day);
+    const flags = (r.flag ? '<span class="flag' + (r.popup ? ' flag--pop' : '') + '">' + r.flag + '</span><span class="new">new</span>' : '') + '<span class="starthere">Start here</span>';
+    li.innerHTML =
+      '<div class="when"><span class="dd">' + esc(dayLabel) + '</span><span class="tt' + (r.time.length > 9 ? ' small' : '') + '">' + esc(r.time) + '</span></div>' +
+      '<div class="what"><span class="flags">' + flags + '</span><span class="st">' + esc(r.style) + '</span><span class="wh">' + esc(r.studio) + ', ' + esc(r.hood) + '</span></div>' +
+      '<a class="btn book" href="' + r.link + '" target="_blank" rel="noopener" aria-label="' + esc((r.cta || 'Book') + ': ' + r.style + ', ' + dayLabel + ' ' + r.time + ', ' + r.studio + ', ' + r.hood + ' (opens the studio site)') + '">' + (r.cta || 'Book') + '</a>';
+    els[r.id] = li;
+  });
+
+  const countEl = document.getElementById('count');
+  const emptyEl = document.getElementById('empty');
+  const pickEl = document.getElementById('pick');
+
+  const areaOk = r => state.area === 'all' || r.area === state.area;
+  const pickOk = r => state.pick === 'any' || r.fits.includes(state.pick);
+  const key = r => r.weekly ? 1e9 : r.day == null ? 1e8 : offsetOf(r.day) * 2000 + r.mins;
+  const chrono = (a,b) => key(a) - key(b);
+
+  /* returns [[groupKey, rows], …] */
+  function plan(){
+    const base = WEEK.filter(r => areaOk(r) && pickOk(r));
+    if (state.day === 'next' && state.pick === 'any') {
+      const nx = NEXT.map(id => WEEK.find(r => r.id === id)).filter(areaOk);
+      const nw = base.filter(r => r.flag && !NEXT.includes(r.id));
+      return [['next', nx], ['new', nw]];
+    }
+    if (state.day === 'all' || state.day === 'next') {
+      return [['new', base.filter(r => r.flag).sort(chrono)], ['week', base.filter(r => !r.flag).sort(chrono)]];
+    }
+    const d = Number(state.day);
+    return [['week', base.filter(r => r.day === d || r.weekly).sort(chrono)]];
+  }
+
+  function render(animate){
+    const doAnim = animate && !reduce.matches && 'animate' in Element.prototype;
+    const before = new Map();
+    WEEK.forEach(r => { const el = els[r.id]; if (el.isConnected && !el.hidden) before.set(r.id, el.getBoundingClientRect()); });
+
+    const groups = plan();
+    const visIds = new Set();
+    Object.values(grp).forEach(g => { g.hidden = true; });
+    groups.forEach(([k, rows]) => {
+      if (!rows.length) return;
+      grp[k].hidden = false; list.appendChild(grp[k]);
+      rows.forEach(r => { visIds.add(r.id); list.appendChild(els[r.id]); });
+    });
+    WEEK.forEach(r => {
+      const el = els[r.id];
+      if (!visIds.has(r.id)) { el.hidden = true; if (!el.isConnected) list.appendChild(el); }
+      else el.hidden = false;
+      el.classList.toggle('is-pick', state.pick !== 'any' && BEST[state.pick] === r.id && visIds.has(r.id));
+    });
+    /* keep hidden rows at the end so they never sit between visible ones */
+    WEEK.forEach(r => { if (!visIds.has(r.id)) list.appendChild(els[r.id]); });
+
+    const total = visIds.size;
+    const datedOnDay = state.day !== 'all' && state.day !== 'next' ? WEEK.filter(r => r.day === Number(state.day) && areaOk(r) && pickOk(r)).length : 1;
+    const where = state.day === 'next' && state.pick === 'any' ? 'next up first' : state.day === 'all' || state.day === 'next' ? 'the whole week' : DAYS_LONG[state.day];
+    countEl.textContent = total ? total + (total === 1 ? ' class' : ' classes') + ' on the board, ' + where + (state.pick !== 'any' ? ', for ' + PICK_LABEL[state.pick] : '') + '.' : 'Nothing on the board for that pick.';
+
+    let msg = '';
+    if (state.area === 'arl' && !total) {
+      msg = '<p>Nothing in Arlington or Alexandria this sample week.</p><p>Check <a href="https://vidafitness.com/class-schedule/ballston/" target="_blank" rel="noopener">VIDA Ballston</a> or <a href="https://www.onelifefitness.com/class-schedules" target="_blank" rel="noopener">OneLife</a> for Ballston, Crystal City and Old Town.</p>';
+    } else if (!total) {
+      msg = '<p>Nothing matches that combo this week.</p>';
+    } else if (!datedOnDay) {
+      msg = '<p>Nothing else on the board for ' + DAYS_LONG[state.day] + '. Rest days count too.</p>';
+    }
+    if (msg) { emptyEl.innerHTML = msg + '<button class="btn btn--line" type="button" id="reset">Show what’s next</button>'; emptyEl.hidden = false; }
+    else { emptyEl.hidden = true; emptyEl.innerHTML = ''; }
+
+    if (!doAnim) return;
+    const listBox = list.getBoundingClientRect();
+    before.forEach((box, id) => {
+      if (visIds.has(id)) return;
+      const g = els[id].cloneNode(true);
+      g.hidden = false; g.classList.add('ghosting'); g.setAttribute('aria-hidden','true');
+      g.querySelectorAll('a,button').forEach(n => n.setAttribute('tabindex','-1'));
+      g.style.top = (box.top - listBox.top) + 'px';
+      list.appendChild(g);
+      g.animate([{opacity:1, transform:'scale(1)'},{opacity:0, transform:'scale(.96) translateX(-12px)'}], {duration:260, easing:'ease-in'}).onfinish = () => g.remove();
+    });
+    let i = 0;
+    WEEK.forEach(r => {
+      if (!visIds.has(r.id)) return;
+      const el = els[r.id]; const nb = el.getBoundingClientRect(); const was = before.get(r.id);
+      if (was) {
+        const dy = was.top - nb.top;
+        if (Math.abs(dy) > 1) el.animate([{transform:'translateY(' + dy + 'px)'},{transform:'translateY(0)'}], {duration:520, easing:'cubic-bezier(.2,.9,.25,1)'});
+      } else {
+        el.animate([{opacity:0, transform:'translateY(14px) scale(.98)'},{opacity:1, transform:'none'}], {duration:420, delay:120 + (i++) * 45, easing:'cubic-bezier(.2,.9,.25,1)', fill:'backwards'});
+      }
+      if (el.classList.contains('is-pick')) el.animate([{boxShadow:'0 0 0 0 rgba(255,210,63,.9)'},{boxShadow:'0 0 0 10px rgba(255,210,63,0)'}], {duration:700, delay:300});
+    });
+  }
+
+  function syncChips(){
+    daysEl.querySelectorAll('.day').forEach(b => b.setAttribute('aria-pressed', String(String(state.day) === b.dataset.day)));
+    document.querySelectorAll('.area').forEach(b => b.setAttribute('aria-pressed', String(state.area === b.dataset.area)));
+    pickEl.value = state.pick;
+  }
+  daysEl.addEventListener('click', e => { const b = e.target.closest('.day'); if (!b) return; const v = b.dataset.day; state.day = (v === 'all' || v === 'next') ? v : Number(v); if (v !== 'all' && state.pick !== 'any') state.pick = 'any'; syncChips(); render(true); });
+  document.getElementById('areas').addEventListener('click', e => { const b = e.target.closest('.area'); if (!b) return; state.area = b.dataset.area; syncChips(); render(true); });
+  pickEl.addEventListener('change', () => { state.pick = pickEl.value; if (state.pick !== 'any') state.day = 'all'; syncChips(); render(true); });
+  emptyEl.addEventListener('click', e => { if (e.target.id === 'reset') { state.day = 'next'; state.area = 'all'; state.pick = 'any'; syncChips(); render(true); daysEl.querySelector('[data-day="next"]').focus(); } });
+  syncChips(); render(false);
+
+  /* ---------------- note card ---------------- */
+  const form = document.getElementById('note-form');
+  const closed = document.getElementById('nc-closed');
+  const tell = document.getElementById('tell');
+  const thanks = document.getElementById('thanks');
+  const card = document.getElementById('note');
+  const dock = document.getElementById('dock');
+  const noteEl = document.getElementById('f-note');
+  function openNote(opts){
+    opts = opts || {};
+    if (!thanks.hidden) { card.scrollIntoView({behavior: reduce.matches ? 'auto' : 'smooth', block:'start'}); thanks.querySelector('h2').focus({preventScroll:true}); return; }
+    closed.hidden = true; form.hidden = false; tell.setAttribute('aria-expanded','true');
+    if (opts.firstword) document.getElementById('f-firstword').checked = true;
+    if (opts.first) document.getElementById('f-first').checked = true;
+    noteEl.placeholder = opts.prompt || '';
+    card.scrollIntoView({behavior: reduce.matches ? 'auto' : 'smooth', block:'start'});
+    const target = opts.firstword ? document.getElementById('f-email') : document.getElementById('f-name');
+    setTimeout(() => target.focus({preventScroll:true}), reduce.matches ? 0 : 350);
+  }
+  function closeNote(){ form.hidden = true; closed.hidden = false; tell.setAttribute('aria-expanded','false'); tell.focus(); }
+  tell.addEventListener('click', () => openNote());
+  document.getElementById('nf-close').addEventListener('click', closeNote);
+  document.querySelectorAll('[data-open-note]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); closeMenu(); const v = a.dataset.openNote; openNote({firstword: v === 'firstword', first: v === 'first'}); }));
+  document.querySelectorAll('[data-prompt]').forEach(b => b.addEventListener('click', () => openNote({prompt: b.dataset.prompt})));
+
+  const setErr = (id, msg) => { const inp = document.getElementById('f-' + id); const er = document.getElementById('e-' + id); er.textContent = msg; if (msg) inp.setAttribute('aria-invalid','true'); else inp.removeAttribute('aria-invalid'); return !msg; };
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const v = id => document.getElementById('f-' + id).value.trim();
+    const email = v('email'); const wantsWord = document.getElementById('f-firstword').checked;
+    const checks = [
+      ['name', v('name') ? '' : 'The supervisors need a first name.'],
+      ['where', v('where') ? '' : 'Which room were we in?'],
+      ['note', v('note').length >= 2 ? '' : 'A few words is plenty. One is fine.'],
+      ['email', email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? 'That email looks a little off.' : (wantsWord && !email ? 'Add an email so I can send first word.' : '')]
+    ];
+    let first = null;
+    checks.forEach(([id, msg]) => { if (!setErr(id, msg) && !first) first = id; });
+    if (first) { document.getElementById('f-' + first).focus(); return; }
+    landOnWall({ name: v('name'), where: v('where'), note: v('note'), share: document.getElementById('f-share').checked, firstClass: document.getElementById('f-first').checked });
+    form.hidden = true; thanks.hidden = false;
+    thanks.querySelector('h2').focus();
+  });
+  ['name','where','note','email'].forEach(id => document.getElementById('f-' + id).addEventListener('input', () => setErr(id, '')));
+
+  /* the reward: the sent note lands on the wall and gets stamped */
+  function landOnWall(n){
+    const slot = document.getElementById('lands');
+    const art = document.createElement('article');
+    art.className = 'wcard wcard--mine'; art.id = 'my-note'; art.tabIndex = -1;
+    art.innerHTML = '<p class="by"><b>' + esc(n.name) + '</b>' + esc(n.where) + ', ' + DAYS_SHORT[today] + (n.firstClass ? ', first class ever' : '') + '</p>' +
+      '<p class="body">' + esc(n.note) + '</p>' +
+      '<p class="status">' + (n.share ? 'Only you can see this until Adrianne OKs it.' : 'Private. Just you, me and the cats.') + '</p>' +
+      '<svg class="mini" aria-hidden="true"><use href="#stamp"/></svg>';
+    slot.replaceWith(art);
+    const stamp = art.querySelector('.mini');
+    if (reduce.matches || !('IntersectionObserver' in window)) return;
+    stamp.style.opacity = '0';
+    const io = new IntersectionObserver(es => { if (!es[0].isIntersecting) return; io.disconnect();
+      stamp.animate([{opacity:0, transform:'scale(2.2) rotate(-20deg)'},{opacity:1, transform:'scale(.92) rotate(9deg)', offset:.7},{opacity:1, transform:'scale(1) rotate(9deg)'}], {duration:520, delay:250, easing:'cubic-bezier(.3,1.4,.5,1)', fill:'forwards'});
+    }, {threshold:.6});
+    io.observe(art);
+  }
+  document.getElementById('see-wall').addEventListener('click', e => {
+    const m = document.getElementById('my-note'); if (!m) return; e.preventDefault();
+    m.scrollIntoView({behavior: reduce.matches ? 'auto' : 'smooth', block:'center'}); setTimeout(() => m.focus({preventScroll:true}), reduce.matches ? 0 : 400);
+  });
+
+  /* tuck the dock and the marks pill while typing */
+  form.addEventListener('focusin', () => { dock.classList.add('tuck'); marksBtn.classList.add('tuck'); });
+  form.addEventListener('focusout', () => setTimeout(() => { if (!form.contains(document.activeElement)) { dock.classList.remove('tuck'); marksBtn.classList.remove('tuck'); } }, 50));
+
+  /* ---------------- menu (phone) ---------------- */
+  const menuBtn = document.querySelector('.menu-btn'); const nav = document.getElementById('nav');
+  function closeMenu(){ nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
+  menuBtn.addEventListener('click', () => { const o = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(o)); });
+  nav.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('open')) { closeMenu(); menuBtn.focus(); } });
+
+  /* ---------------- work-with-me doors (tabs) ---------------- */
+  const tabs = [...document.querySelectorAll('.dtab')];
+  function selectTab(t, focus){
+    tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+    if (focus) t.focus();
+    t.scrollIntoView({block:'nearest', inline:'nearest', behavior: reduce.matches ? 'auto' : 'smooth'});
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectTab(t));
+    t.addEventListener('keydown', e => {
+      const k = e.key; let j = null;
+      if (k === 'ArrowRight' || k === 'ArrowDown') j = (i + 1) % tabs.length;
+      if (k === 'ArrowLeft' || k === 'ArrowUp') j = (i - 1 + tabs.length) % tabs.length;
+      if (k === 'Home') j = 0; if (k === 'End') j = tabs.length - 1;
+      if (j !== null) { e.preventDefault(); selectTab(tabs[j], true); }
+    });
+  });
+  document.querySelectorAll('[data-soon]').forEach(b => b.addEventListener('click', () => { b.closest('.door').querySelector('.soon').hidden = false; }));
+})();
+</script>
+<script>
+/* phone: the review switch only appears on review links (#review, ?review=1, ?marks=on), so it never covers content in the client view */
+(function(){var on=/[#&?](review|marks=on|review=1)/.test(location.href);var el=document.getElementById('reviewPill')||document.getElementById('marks');if(!el)return;var box=el.closest('[role="region"]')||el;function fit(){box.style.display=(!on&&window.innerWidth<768)?'none':'';}fit();window.addEventListener('resize',fit);})();
+</script>
+</body>
+</html>
