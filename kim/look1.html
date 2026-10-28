@@ -65,10 +65,10 @@
       opacity: 0.7;
     }
 
-    /* Hero */
+    /* Hero with Image */
     .hero {
       position: relative;
-      min-height: 100vh;
+      min-height: 85vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -77,8 +77,7 @@
       overflow: hidden;
     }
 
-    .hero::before {
-      content: '';
+    .hero-image {
       position: absolute;
       top: 0;
       left: 0;
@@ -86,10 +85,9 @@
       bottom: 0;
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
-      opacity: 0.4;
+      opacity: 0.35;
       z-index: 0;
-      transition: background-image 0.8s ease;
+      transition: opacity 0.8s ease;
     }
 
     .hero-content {
@@ -97,6 +95,10 @@
       z-index: 1;
       text-align: center;
       max-width: 600px;
+    }
+
+    .hero-content h1 {
+      margin-bottom: 1rem;
     }
 
     .quote {
@@ -179,6 +181,26 @@
       max-width: 70ch;
     }
 
+    /* Image Grid */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .grid-image {
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--accent-soft);
+    }
+
+    .grid-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .credentials {
       list-style: none;
       margin: 2rem 0;
@@ -248,6 +270,11 @@
       .featured-note {
         padding: 2rem 1.5rem;
       }
+
+      .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -259,8 +286,10 @@
   </style>
 </head>
 <body>
-  <div class="hero" id="hero">
+  <div class="hero">
+    <div class="hero-image" id="hero-bg"></div>
     <div class="hero-content">
+      <h1>Adrianne Kim</h1>
       <div class="quote" id="quote">Loading wisdom...</div>
       <a href="#wall" class="cta-button">Share Your Practice</a>
     </div>
@@ -275,9 +304,13 @@
     <section class="section">
       <h2>Her Journey</h2>
       <div class="story">
-        <p>Adrianne has dedicated her life to the practice and teaching of yoga. Beginning in Hawaii, she discovered yoga as a way to explore curiosity and connect deeply with herself and others. Her journey led her through intensive trainings, including time at <a href="#">Sattva Yoga Academy</a> in Rishikesh, India, where she deepened her understanding of yoga philosophy and practice.</p>
+        <p>Adrianne has dedicated her life to the practice and teaching of yoga. Beginning in Hawaii, she discovered yoga as a way to explore curiosity and connect deeply with herself and others. Her journey led her through intensive trainings, including time at Sattva Yoga Academy in Rishikesh, India, where she deepened her understanding of yoga philosophy and practice.</p>
 
         <p>As a CorePower Yoga Master Trainer, she taught hundreds of classes and trained teachers across multiple studios. Today, she teaches at some of DC's finest yoga studios and leads private sessions, corporate wellness programs, and retreats. Her students come back not just for her skill, but for the way she holds space—present, curious, and completely dedicated to their practice.</p>
+      </div>
+
+      <div class="image-grid" id="image-grid">
+        <!-- Images will be inserted here -->
       </div>
     </section>
 
@@ -293,14 +326,6 @@
       </ul>
     </section>
 
-    <section class="section">
-      <h2>What Students Say</h2>
-      <div class="featured-note" style="border: none; background: transparent; padding: 0; margin: 2rem 0;">
-        <p id="featured-note-full" style="font-style: italic; font-size: 1.1rem; margin: 0;"></p>
-        <div class="note-author" id="featured-note-full-author"></div>
-      </div>
-    </section>
-
     <div class="wall-cta">
       <h3>Share Your Practice</h3>
       <p>Have you taken a class with Adrianne? We'd love to hear about your experience.</p>
@@ -311,13 +336,15 @@
   <footer>
     <p><strong>Adrianne Kim</strong></p>
     <p>Yoga Teacher | Master Trainer | Studio Director</p>
-    <p><a href="mailto:adrianne@adriankim.com">Share your experience</a></p>
     <p><a href="https://www.instagram.com/adriannekim">@adriannekim on Instagram</a></p>
     <p style="margin-top: 2rem; font-size: 0.85rem; color: #999;">© 2026 Adrianne Kim</p>
   </footer>
 
   <script>
-    // Rotating yoga quotes
+    const heroImages = ["class/img/hero-headstand.jpg","img/warrior.jpg","class/img/sunrise-class.jpg","class/img/yards-park.jpg"];
+
+    const gridImages = ["class/img/audi-field.jpg","class/img/holi.jpg","class/img/kim-sammy.jpg","class/img/graduation-2015.jpg","class/img/kim-salem.jpg","img/bridge.jpg"];
+
     const quotes = [
       "The practice is not about touching your toes. It is what you learn on the way down.",
       "Yoga is the journey of the self, through the self, to the self.",
@@ -329,7 +356,6 @@
       "In the midst of movement and chaos, keep stillness inside of you."
     ];
 
-    // Rotating student notes
     const studentNotes = [
       {
         text: "Adrianne has this incredible ability to make you feel completely welcome in her class, whether you're a beginner or advanced. She remembers details about your practice and adjusts accordingly.",
@@ -354,40 +380,32 @@
     ];
 
     function rotateContent() {
+      // Rotate quote
       const quoteEl = document.getElementById('quote');
-      const noteTextEl = document.getElementById('featured-note-text');
-      const noteAuthorEl = document.getElementById('featured-note-author');
-      const noteFullEl = document.getElementById('featured-note-full');
-      const noteFullAuthorEl = document.getElementById('featured-note-full-author');
-
-      const quoteIndex = Math.floor(Math.random() * quotes.length);
-      const noteIndex = Math.floor(Math.random() * studentNotes.length);
-
-      const selectedQuote = quotes[quoteIndex];
-      const selectedNote = studentNotes[noteIndex];
-
+      const selectedQuote = quotes[Math.floor(Math.random() * quotes.length)];
       quoteEl.textContent = `"${selectedQuote}"`;
-      noteTextEl.textContent = `"${selectedNote.text}"`;
-      noteAuthorEl.textContent = `— ${selectedNote.author}`;
-      noteFullEl.textContent = selectedNote.text;
-      noteFullAuthorEl.textContent = `— ${selectedNote.author}`;
 
-      // Set a random hero image background from her Instagram photos
-      const heroImages = [
-        'linear-gradient(135deg, #d4a574 0%, #e8dcc8 100%)',
-        'linear-gradient(135deg, #f5e6d3 0%, #e0c9a8 100%)',
-        'linear-gradient(135deg, #e6d5c3 0%, #d4a574 100%)',
-      ];
+      // Rotate featured note
+      const note = studentNotes[Math.floor(Math.random() * studentNotes.length)];
+      document.getElementById('featured-note-text').textContent = `"${note.text}"`;
+      document.getElementById('featured-note-author').textContent = `— ${note.author}`;
 
-      const selectedBg = heroImages[Math.floor(Math.random() * heroImages.length)];
-      document.getElementById('hero').style.setProperty('--bg-image', selectedBg);
+      // Set hero image
+      const heroImg = heroImages[Math.floor(Math.random() * heroImages.length)];
+      document.getElementById('hero-bg').style.backgroundImage = `url('${heroImg}')`;
+
+      // Populate grid
+      const grid = document.getElementById('image-grid');
+      grid.innerHTML = '';
+      gridImages.forEach(src => {
+        const div = document.createElement('div');
+        div.className = 'grid-image';
+        div.innerHTML = `<img src="${src}" alt="Adrianne teaching yoga" loading="lazy">`;
+        grid.appendChild(div);
+      });
     }
 
-    // Initial rotation on page load
     rotateContent();
-
-    // Optional: rotate again every 5 minutes (for return visits)
-    // setInterval(rotateContent, 300000);
   </script>
 </body>
 </html>

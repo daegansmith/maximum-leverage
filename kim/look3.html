@@ -110,6 +110,8 @@
       background: #a57e52;
     }
 
+    .hero-photo{width:100%;max-width:900px;aspect-ratio:3/2;object-fit:cover;margin-top:3rem}
+    .still{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;margin:2rem 0}
     /* Main */
     main {
       max-width: 900px;
@@ -240,6 +242,7 @@
     <div class="hero-action">
       <a href="#share" class="btn">Share Your Practice</a>
     </div>
+    <img class="hero-photo" id="hero-photo" src="class/img/hero-headstand.jpg" alt="Adrianne practicing">
   </div>
 
   <main>
@@ -284,6 +287,7 @@
       </div>
     </section>
 
+    <img class="still" src="class/img/holi.jpg" alt="Holi at Sattva Yoga Academy, Rishikesh">
     <div class="quote-block">
       <div class="quote-text" id="student-note">Loading...</div>
       <div class="quote-author" id="student-author">— A Student</div>
@@ -321,6 +325,8 @@
     ];
 
     function rotate() {
+      const photos=["class/img/hero-headstand.jpg","img/warrior.jpg","class/img/sunrise-class.jpg","class/img/yards-park.jpg"];
+      document.getElementById('hero-photo').src=photos[Math.floor(Math.random()*photos.length)];
       const quote = quotes[Math.floor(Math.random() * quotes.length)];
       const note = notes[Math.floor(Math.random() * notes.length)];
 

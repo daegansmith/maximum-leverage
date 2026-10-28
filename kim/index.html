@@ -1,422 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adrianne Kim — Yoga Teacher & Trainer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --text-dark: #1a1a1a;
-      --text-light: #666;
-      --bg-white: #fafafa;
-      --accent-warm: #d4a574;
-      --accent-soft: #e8dcc8;
-      --border: #e0e0e0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text-dark);
-      line-height: 1.6;
-      background: var(--bg-white);
-    }
-
-    h1, h2, h3 {
-      font-family: 'Crimson Text', serif;
-      font-weight: 400;
-      line-height: 1.2;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 4rem);
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-size: clamp(2rem, 6vw, 3rem);
-      margin-bottom: 2rem;
-      margin-top: 3rem;
-    }
-
-    p {
-      font-size: 1rem;
-      max-width: 65ch;
-      margin-bottom: 1.5rem;
-      color: var(--text-light);
-    }
-
-    a {
-      color: var(--accent-warm);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-warm);
-      transition: opacity 0.2s;
-    }
-
-    a:hover {
-      opacity: 0.7;
-    }
-
-    /* Hero with Image */
-    .hero {
-      position: relative;
-      min-height: 85vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      overflow: hidden;
-    }
-
-    .hero-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.35;
-      z-index: 0;
-      transition: opacity 0.8s ease;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      max-width: 600px;
-    }
-
-    .hero-content h1 {
-      margin-bottom: 1rem;
-    }
-
-    .quote {
-      font-family: 'Crimson Text', serif;
-      font-size: clamp(1.5rem, 4vw, 2.2rem);
-      font-style: italic;
-      color: var(--text-dark);
-      margin-bottom: 2rem;
-      line-height: 1.4;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background: var(--accent-warm);
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      transition: background 0.3s;
-      border: none;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-
-    .cta-button:hover {
-      background: #c9954a;
-      border-bottom: none;
-    }
-
-    /* Featured Note */
-    .featured-note {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 2.5rem;
-      margin: 3rem auto;
-      max-width: 700px;
-      font-style: italic;
-      font-size: 1.1rem;
-      color: var(--text-dark);
-      position: relative;
-    }
-
-    .featured-note::before {
-      content: '"';
-      font-family: 'Crimson Text', serif;
-      font-size: 4rem;
-      position: absolute;
-      top: -1rem;
-      left: 1rem;
-      color: var(--accent-warm);
-      opacity: 0.3;
-    }
-
-    .note-author {
-      margin-top: 1.5rem;
-      font-style: normal;
-      font-size: 0.9rem;
-      color: var(--text-light);
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-    }
-
-    /* Main Content */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-    }
-
-    .section {
-      margin-bottom: 4rem;
-    }
-
-    .story {
-      font-family: 'Crimson Text', serif;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      max-width: 70ch;
-    }
-
-    /* Image Grid */
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin: 3rem 0;
-    }
-
-    .grid-image {
-      overflow: hidden;
-      aspect-ratio: 4/5;
-      background: var(--accent-soft);
-    }
-
-    .grid-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .credentials {
-      list-style: none;
-      margin: 2rem 0;
-      padding-left: 0;
-    }
-
-    .credentials li {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--accent-soft);
-      font-size: 1rem;
-    }
-
-    .credentials li:last-child {
-      border-bottom: none;
-    }
-
-    /* Wall CTA */
-    .wall-cta {
-      background: var(--accent-soft);
-      padding: 3rem 2rem;
-      text-align: center;
-      margin: 4rem 0;
-    }
-
-    .wall-cta h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .wall-cta p {
-      margin: 0 auto 2rem;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--text-dark);
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    footer a {
-      color: var(--accent-warm);
-      border-bottom: 1px solid var(--accent-warm);
-    }
-
-    footer p {
-      color: inherit;
-      margin-bottom: 0.5rem;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .container {
-        padding: 2rem 1rem;
-      }
-
-      .featured-note {
-        padding: 2rem 1.5rem;
-      }
-
-      .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation: none !important;
-        transition: none !important;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Adrianne — Four Looks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter+Tight:wght@400;500;600&display=swap">
+<style>
+/* Layout: a phone-first chooser. One card per look: a phone preview, a name, one line on what it says, Open + Pick. Her pick is saved. Calm paper palette matching the Breath look. */
+:root{--paper:#F7F5F0;--paper-2:#EFEBE3;--ink:#1B2A2A;--ink-2:#55645F;--sage:#7A9C8E;--sage-2:#C9D9CF;--dawn:#E7A977;--dawn-2:#F5DCC5;
+--display:"Fraunces",Georgia,serif;--body:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px));padding-block:40px 120px}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(2.4rem,7vw,4rem);line-height:1.02;margin:0 0 16px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:1.7rem;margin:0}
+p{margin:0}
+.mute{color:var(--ink-2)}
+.lead{font-size:1.15rem;max-width:40ch}
+.from{font-size:.92rem;color:var(--sage);font-weight:600;margin-bottom:10px}
+.looks{display:grid;gap:22px;margin-top:40px}
+.look{background:#fff;border-radius:28px;padding:22px;display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;box-shadow:0 30px 60px -36px rgba(27,42,42,.35);border:2px solid transparent;transition:border-color .3s}
+.look.picked{border-color:var(--sage)}
+.phone{width:150px;aspect-ratio:234/600;border-radius:22px;overflow:hidden;border:4px solid var(--ink);background:#000;max-width:100%}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.num{font-size:.85rem;font-weight:600;color:var(--sage);margin-bottom:6px}
+.says{margin-top:10px;font-family:var(--display);font-style:italic;color:var(--ink-2)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;font-family:var(--body);background:transparent;color:var(--ink)}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn:focus-visible{outline:3px solid var(--dawn);outline-offset:3px}
+.btn[disabled]{opacity:.5;cursor:default}
+@media (max-width:600px){.look{grid-template-columns:1fr}.phone{width:140px}}
+.after{margin-top:40px;background:var(--paper-2);border-radius:24px;padding:26px}
+.after textarea{width:100%;font:inherit;font-size:1rem;padding:13px 15px;border-radius:14px;border:1.5px solid var(--sage-2);background:#fff;min-height:110px;margin-top:12px;color:var(--ink)}
+.status{margin-top:12px;font-weight:600;color:var(--sage);min-height:1.4em}
+</style>
+<style>img{max-width:100%}body{margin:0}</style>
 </head>
 <body>
-  <div class="hero">
-    <div class="hero-image" id="hero-bg"></div>
-    <div class="hero-content">
-      <h1>Adrianne Kim</h1>
-      <div class="quote" id="quote">Loading wisdom...</div>
-      <a href="#wall" class="cta-button">Share Your Practice</a>
+
+<div class="wrap">
+  <p class="from">From Daegan</p>
+  <h1>Four front doors. Pick the one that feels like you.</h1>
+  <p class="lead mute">Same words on all four. Different feel. Open each one on your phone and scroll. Then tap the one that's you.</p>
+
+  <div class="looks" id="looks">
+    <div class="look" data-key="class">
+      <div class="phone"><img id="p-class" alt="Preview of The Class look" src="img/preview-class.jpg"></div>
+      <div>
+        <p class="num">Look 1 · New</p>
+        <h2>The Class</h2>
+        <p class="mute">The whole page is a practice. Arrive, breathe, flow through your story, meet Sammy, Salem and the crew, then rest. The sky dims to dusk at savasana.</p>
+        <p class="says">This one says: this is my life, and you're invited.</p>
+        <div class="actions"><a class="btn" href="class/">Open look 1</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+      </div>
+    </div>
+    <div class="look" data-key="breath">
+      <div class="phone"><img id="p-breath" alt="Preview of the Breath look" src=""></div>
+      <div>
+        <p class="num">Look 2</p>
+        <h2>Breath</h2>
+        <p class="mute">A sun that breathes behind you, four seconds in, four out. The page unfolds like a practice: the boardwalk, the class, the stadium, Rishikesh, home.</p>
+        <p class="says">This one says: calm on the surface, everything handled underneath.</p>
+        <div class="actions"><a class="btn" href="breath.html">Open look 2</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+      </div>
+    </div>
+    <div class="look" data-key="daylight">
+      <div class="phone"><img id="p-daylight" alt="Preview of the Daylight look" src=""></div>
+      <div>
+        <p class="num">Look 3</p>
+        <h2>Daylight</h2>
+        <p class="mute">A morning studio. Sage and saffron, lots of air, and a cat peeking over the note card.</p>
+        <p class="says">This one says: come as you are, the room is ready.</p>
+        <div class="actions"><a class="btn" href="daylight.html">Open look 3</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+      </div>
+    </div>
+    <div class="look" data-key="roster">
+      <div class="phone"><img id="p-roster" alt="Preview of The Roster look" src=""></div>
+      <div>
+        <p class="num">Look 4</p>
+        <h2>The Roster</h2>
+        <p class="mute">Bold, like the class board at the front desk. The note card and your nine rooms sit right at the top.</p>
+        <p class="says">This one says: here's where I am this week. Come find me.</p>
+        <div class="actions"><a class="btn" href="roster.html">Open look 4</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+      </div>
     </div>
   </div>
 
-  <div class="featured-note">
-    <div id="featured-note-text">Loading student note...</div>
-    <div class="note-author" id="featured-note-author">— Student</div>
+  
+  <a href="jimmy/" style="display:block;margin-top:28px;background:#1B2A2A;color:#F7F5F0;border-radius:28px;padding:26px;text-decoration:none">
+    <p style="font-size:.9rem;font-weight:600;color:#E7A977;margin:0 0 8px">Three more looks</p>
+    <h2 style="color:#F7F5F0">After Class, This Week, and One Breath</h2>
+    <p style="color:#C9D6D0;margin-top:8px">Built by Jimmy's team. Open them all here.</p>
+  </a>
+
+  <div class="after" id="after" hidden>
+    <h2 id="after-h">You picked it.</h2>
+    <p class="mute" style="margin-top:6px">One more thing: what would you change? Anything. A word, a color, a photo.</p>
+    <textarea id="feedback" placeholder="I'd change…"></textarea>
+    <div class="actions"><button class="btn btn-primary" type="button" id="send">Text it to Daegan</button></div>
+    <p class="status" id="status" aria-live="polite"></p>
   </div>
+</div>
 
-  <div class="container">
-    <section class="section">
-      <h2>Her Journey</h2>
-      <div class="story">
-        <p>Adrianne has dedicated her life to the practice and teaching of yoga. Beginning in Hawaii, she discovered yoga as a way to explore curiosity and connect deeply with herself and others. Her journey led her through intensive trainings, including time at Sattva Yoga Academy in Rishikesh, India, where she deepened her understanding of yoga philosophy and practice.</p>
+<script id="previews" type="application/json">{"breath":"img/preview-breath.jpg","daylight":"img/preview-daylight.jpg","roster":"img/preview-roster.jpg"}</script>
+<script>
+(function(){
+  try{var P=JSON.parse(document.getElementById('previews').textContent);Object.keys(P).forEach(function(k){var el=document.getElementById('p-'+k);if(el)el.src=P[k];});}catch(e){}
+  var names={class:'The Class',breath:'Breath',daylight:'Daylight',roster:'The Roster'};
+  var picked=null,db=null;
+  (async function(){try{if(window.claude&&claude.use)db=await claude.use('db');}catch(e){db=null}})();
+  document.querySelectorAll('.pick').forEach(function(b){b.addEventListener('click',function(){
+    var card=b.closest('.look');picked=card.dataset.key;
+    document.querySelectorAll('.look').forEach(function(l){l.classList.toggle('picked',l===card);});
+    document.querySelectorAll('.pick').forEach(function(x){x.textContent='Pick this one';});b.textContent='Picked';
+    var a=document.getElementById('after');a.hidden=false;document.getElementById('after-h').textContent='You picked '+names[picked]+'.';a.scrollIntoView({behavior:'smooth',block:'start'});
+  });});
+  document.getElementById('send').addEventListener('click',function(){
+    var fb=document.getElementById('feedback').value.trim(),st=document.getElementById('status');
+    if(!picked){st.textContent='Tap "Pick this one" on a look first.';return;}
+    var msg='I pick '+names[picked]+'.'+(fb?' What I\'d change: '+fb:'');
+    var a=document.createElement('a');a.href='sms:+12022790378&body='+encodeURIComponent(msg);a.click();
+    st.textContent='Opening a text to Daegan. If it didn\'t open, send him: "'+msg+'"';
+  });
+  })();
+</script>
 
-        <p>As a CorePower Yoga Master Trainer, she taught hundreds of classes and trained teachers across multiple studios. Today, she teaches at some of DC's finest yoga studios and leads private sessions, corporate wellness programs, and retreats. Her students come back not just for her skill, but for the way she holds space—present, curious, and completely dedicated to their practice.</p>
-      </div>
-
-      <div class="image-grid" id="image-grid">
-        <!-- Images will be inserted here -->
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Where She Teaches</h2>
-      <ul class="credentials">
-        <li><strong>District Flow Yoga</strong> — Teacher</li>
-        <li><strong>Maret School</strong> — Yoga Instructor</li>
-        <li><strong>Life Time Clarendon</strong> — Power Yoga & Alignment Classes</li>
-        <li><strong>OneLife Fitness</strong> — Classes & Private Sessions</li>
-        <li><strong>Vida Fitness, Navy Yard</strong> — Community Classes</li>
-        <li><strong>Corporate Wellness</strong> — On-site classes and training</li>
-      </ul>
-    </section>
-
-    <div class="wall-cta">
-      <h3>Share Your Practice</h3>
-      <p>Have you taken a class with Adrianne? We'd love to hear about your experience.</p>
-      <a href="/kim/wall/" class="cta-button">See All Notes & Share Yours</a>
-    </div>
-  </div>
-
-  <footer>
-    <p><strong>Adrianne Kim</strong></p>
-    <p>Yoga Teacher | Master Trainer | Studio Director</p>
-    <p><a href="https://www.instagram.com/adriannekim">@adriannekim on Instagram</a></p>
-    <p style="margin-top: 2rem; font-size: 0.85rem; color: #999;">© 2026 Adrianne Kim</p>
-  </footer>
-
-  <script>
-    const heroImages = [
-      "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/769144189_18635263663062769_4609122051940579989_n.jpg",
-      "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/652803829_18109638097778623_3073602116583352219_n.jpg",
-      "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/655000948_18099593386764300_6728108193561559154_n.jpg"
-    ];
-
-    const gridImages = [
-      "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/777003857_18086115584444281_4811757961074560846_n.jpg",
-      "https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/706971786_1780263430015033_8885630544465029947_n.jpg",
-      "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/639464058_18379628167080276_419944696789087838_n.jpg",
-      "https://scontent-iad3-2.cdninstagram.com/v/t51.82787-15/655277113_18076590332390373_4112772613544484952_n.jpg",
-      "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/654542771_18103524386496627_352986668516087010_n.jpg",
-      "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/658842267_18099660481789904_4922724296727317834_n.jpg"
-    ];
-
-    const quotes = [
-      "The practice is not about touching your toes. It is what you learn on the way down.",
-      "Yoga is the journey of the self, through the self, to the self.",
-      "Where the mind is, prana follows. Where prana goes, the mind follows.",
-      "The body is your temple. Keep it pure and clean for the soul to reside in.",
-      "Inhale the future. Exhale the past.",
-      "Yoga does not change the way we see things. It transforms the person who sees.",
-      "The art of living is the art of knowing. Know yourself.",
-      "In the midst of movement and chaos, keep stillness inside of you."
-    ];
-
-    const studentNotes = [
-      {
-        text: "Adrianne has this incredible ability to make you feel completely welcome in her class, whether you're a beginner or advanced. She remembers details about your practice and adjusts accordingly.",
-        author: "Sarah M."
-      },
-      {
-        text: "Taking her Power Yoga class changed how I move through the world. She teaches you not just poses, but how to listen to your body.",
-        author: "James P."
-      },
-      {
-        text: "The way she weaves yoga philosophy into every class makes you feel like you're learning something bigger than just poses.",
-        author: "Michelle K."
-      },
-      {
-        text: "She's one of the best teachers I've ever studied with. Her passion for yoga is infectious.",
-        author: "David R."
-      },
-      {
-        text: "Adrianne brings such a joyful, grounded energy to teaching. You leave her class feeling both energized and peaceful.",
-        author: "Nina T."
-      }
-    ];
-
-    function rotateContent() {
-      // Rotate quote
-      const quoteEl = document.getElementById('quote');
-      const selectedQuote = quotes[Math.floor(Math.random() * quotes.length)];
-      quoteEl.textContent = `"${selectedQuote}"`;
-
-      // Rotate featured note
-      const note = studentNotes[Math.floor(Math.random() * studentNotes.length)];
-      document.getElementById('featured-note-text').textContent = `"${note.text}"`;
-      document.getElementById('featured-note-author').textContent = `— ${note.author}`;
-
-      // Set hero image
-      const heroImg = heroImages[Math.floor(Math.random() * heroImages.length)];
-      document.getElementById('hero-bg').style.backgroundImage = `url('${heroImg}')`;
-
-      // Populate grid
-      const grid = document.getElementById('image-grid');
-      grid.innerHTML = '';
-      gridImages.forEach(src => {
-        const div = document.createElement('div');
-        div.className = 'grid-image';
-        div.innerHTML = `<img src="${src}" alt="Adrianne teaching yoga" loading="lazy">`;
-        grid.appendChild(div);
-      });
-    }
-
-    rotateContent();
-  </script>
 </body>
 </html>
