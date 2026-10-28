@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adrianne Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2a33; --soft:#56636d; --river:#2f6274; --pink:#c4507f;
+  --sky:#e9eff3; --line:rgba(31,42,51,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Figtree,system-ui,sans-serif;font-size:18px;line-height:1.65;color:var(--ink);background:var(--sky);transition:background-color .2s linear}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* hero: her photo, the whole screen */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;color:#fff}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:settle 2.4s ease-out forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,30,40,.35) 0%,rgba(20,30,40,0) 30%,rgba(20,30,40,0) 45%,rgba(20,30,40,.7) 100%)}
+.mark{position:absolute;top:24px;left:24px;z-index:2;font-family:Newsreader,serif;font-size:22px;letter-spacing:.01em}
+.hero blockquote{position:absolute;z-index:2;left:24px;right:24px;bottom:48px;max-width:760px}
+.hero blockquote p{font-family:Newsreader,serif;font-weight:300;font-size:clamp(28px,5vw,52px);line-height:1.15}
+.hero cite{display:block;margin-top:16px;font-style:normal;font-size:15px;opacity:.85}
+
+main{max-width:1080px;margin:0 auto;padding:0 24px}
+
+.intro{padding:120px 0 80px;max-width:720px}
+.intro h1{font-family:Newsreader,serif;font-weight:300;font-size:clamp(40px,7vw,76px);line-height:1.05;margin-bottom:32px}
+.intro p{color:var(--soft);max-width:60ch;margin-bottom:18px}
+
+/* one student note, different each visit */
+.note{margin:40px 0 120px;padding:56px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px 1fr;gap:32px;align-items:start}
+.note img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+.note p{font-family:Newsreader,serif;font-size:clamp(22px,3vw,30px);line-height:1.35}
+.note small{display:block;margin-top:16px;font-size:15px;color:var(--soft)}
+.note .tag{display:inline-block;margin-left:10px;font-size:12px;padding:2px 8px;border:1px dashed var(--soft);border-radius:20px}
+
+/* her path, in order */
+.path h2,.teach h2{font-family:Newsreader,serif;font-weight:300;font-size:clamp(32px,5vw,52px);margin-bottom:56px}
+.step{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:120px}
+.step:nth-child(odd) figure{order:2}
+.step figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.step .when{font-size:15px;color:var(--river);font-weight:500;margin-bottom:8px}
+.step h3{font-family:Newsreader,serif;font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.15;margin-bottom:16px}
+.step p{color:var(--soft);max-width:44ch}
+
+.teach{padding:40px 0 120px}
+.teach ul{list-style:none;columns:2;column-gap:56px}
+.teach li{break-inside:avoid;padding:18px 0;border-top:1px solid var(--line);font-family:Newsreader,serif;font-size:24px}
+.teach li span{display:block;font-family:Figtree,sans-serif;font-size:15px;color:var(--soft)}
+
+/* the close: dusk */
+.close{background:linear-gradient(180deg,rgba(42,37,64,0) 0,#2a2540 220px);padding:220px 24px 80px;text-align:center;color:#f4f1f6}
+.close img{width:160px;height:160px;border-radius:50%;object-fit:cover;margin:0 auto 32px}
+.close h2{font-family:Newsreader,serif;font-weight:300;font-size:clamp(32px,5vw,56px);line-height:1.1;margin-bottom:16px}
+.close p{max-width:44ch;margin:0 auto 32px;opacity:.8}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:999px;background:#f4f1f6;color:#2a2540;text-decoration:none;font-weight:500}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+footer{background:#2a2540;padding:48px 24px 64px;text-align:center;font-size:15px;color:rgba(244,241,246,.7)}
+footer a{color:#f4f1f6}
+
+@media (max-width:760px){
+  .note{grid-template-columns:1fr;gap:20px}
+  .note img{width:80px;height:80px}
+  .step{grid-template-columns:1fr;gap:24px;margin-bottom:80px}
+  .step:nth-child(odd) figure{order:0}
+  .teach ul{columns:1}
+  .intro{padding:80px 0 48px}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero img{animation:none;transform:none}
+  body{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img id="heroImg" src="class/img/hero-headstand.jpg" alt="Adrianne in a headstand on the dock by the Douglass Bridge">
+  <div class="mark">Adrianne Kim</div>
+  <blockquote><p id="q">Practice, and all is coming.</p><cite id="qa">Sri K. Pattabhi Jois</cite></blockquote>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>I inspire curiosity to explore.</h1>
+    <p>I've been on the mat every day for over a decade. First as a student in Hawaii, then as a teacher, then training the teachers.</p>
+    <p>These days I teach all over Washington, DC: in studios, at a school, on a soccer field and on the dock at sunrise.</p>
+  </section>
+
+  <section class="note" aria-live="polite">
+    <img src="class/img/sammy-shoulder.jpg" alt="Sammy the cat on Adrianne's shoulder">
+    <div><p id="n">“She remembers what's going on with your body and adjusts for you, every single class.”</p>
+    <small><span id="na">A student</span><span class="tag">sample note</span></small></div>
+  </section>
+
+  <section class="path">
+    <h2>The path so far</h2>
+    <div class="steps">
+      <article class="step"><figure><img src="class/img/graduation-2015.jpg" alt="Adrianne in a handstand under the I did it teacher-training banner"></figure>
+        <div><div class="when">2015</div><h3>I did it.</h3><p>Teacher training at CorePower Yoga. Anatomy, chakras, alignment, a lot of hugs, and one handstand under the banner.</p></div></article>
+      <article class="step"><figure><img src="class/img/sunrise-class.jpg" alt="A sunrise class on the dock"></figure>
+        <div><div class="when">CorePower Yoga</div><h3>Master Trainer.</h3><p>From teaching classes to teaching the people who teach them. A lot of the yoga teachers in this city came through my trainings.</p></div></article>
+      <article class="step"><figure><img src="class/img/holi.jpg" alt="Adrianne covered in Holi colors in Rishikesh"></figure>
+        <div><div class="when">March 2026</div><h3>Rishikesh.</h3><p>Back to where yoga started, at Sattva Yoga Academy. My first time in India, and my first Holi. Unforgettable.</p></div></article>
+      <article class="step"><figure><img src="class/img/audi-field.jpg" alt="Power yoga on the field at Audi Field"></figure>
+        <div><div class="when">Summer 2026</div><h3>Audi Field.</h3><p>Power yoga on the pitch before a DC Power FC match. Same practice, bigger mat.</p></div></article>
+      <article class="step"><figure><img src="class/img/yards-park.jpg" alt="Adrianne under the bridge arches at the Yards"></figure>
+        <div><div class="when">Today</div><h3>Washington, DC.</h3><p>Studios, schools, companies, the waterfront. Wherever there's room to roll out a mat.</p></div></article>
+    </div>
+  </section>
+
+  <section class="teach">
+    <h2>Where I teach</h2>
+    <ul>
+      <li>District Flow Yoga<span>Studio classes</span></li>
+      <li>Maret School<span>Yoga for students</span></li>
+      <li>Life Time Clarendon<span>Power and flow</span></li>
+      <li>Vida Fitness<span>Outdoor yoga at the Yards</span></li>
+      <li>OneLife Fitness<span>Classes</span></li>
+    </ul>
+  </section>
+</main>
+
+<section class="close">
+  <img src="class/img/kim-sammy.jpg" alt="Adrianne holding Sammy">
+  <h2>See you on the mat.</h2>
+  <p>Took a class with me? Tell me how it went. Sammy and Salem hear every note.</p>
+  <a class="btn" href="class/#tell">Tell me how class went</a>
+</section>
+<footer><a href="https://www.instagram.com/adriannekim/">@adriannekim</a></footer>
+
+<script>
+const photos=[
+ ["class/img/hero-headstand.jpg","Adrianne in a headstand on the dock by the Douglass Bridge"],
+ ["class/img/yards-park.jpg","Adrianne under the bridge arches at the Yards"],
+ ["class/img/sunrise-class.jpg","A sunrise class on the dock"],
+ ["class/img/graduation-2015.jpg","Adrianne in a handstand at teacher training"]];
+const quotes=[
+ ["Practice, and all is coming.","Sri K. Pattabhi Jois"],
+ ["Yoga is the journey of the self, through the self, to the self.","The Bhagavad Gita"],
+ ["Yoga is the stilling of the changing states of the mind.","Patañjali, Yoga Sutra 1.2"],
+ ["Yoga teaches us to cure what need not be endured and endure what cannot be cured.","B.K.S. Iyengar"],
+ ["The success of yoga lies in how it positively changes the way we live our life and our relationships.","T.K.V. Desikachar"],
+ ["The body benefits from movement, and the mind benefits from stillness.","Sakyong Mipham"]];
+const notes=[
+ ["“She remembers what's going on with your body and adjusts for you, every single class.”","A student"],
+ ["“I came for a workout and left calmer than I've felt in months.”","A student"],
+ ["“Her sunrise class on the dock is the best part of my week.”","A student"],
+ ["“She trained me as a teacher. I still hear her cues in my head.”","A teacher she trained"]];
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const p=pick(photos),q=pick(quotes),n=pick(notes);
+heroImg.src=p[0];heroImg.alt=p[1];
+document.getElementById('q').textContent=q[0];qa.textContent=q[1];
+document.getElementById('n').textContent=n[0];na.textContent=n[1];
+
+/* the one moving moment: the page goes from morning to dusk as you scroll */
+const stops=[[233,239,243],[243,238,234],[236,226,232],[214,204,224]];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function sky(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  let t=reduce?0:Math.min(1,Math.max(0,scrollY/max));
+  const f=t*(stops.length-1),i=Math.min(stops.length-2,Math.floor(f)),k=f-i;
+  const c=stops[i].map((v,j)=>Math.round(v+(stops[i+1][j]-v)*k));
+  document.body.style.backgroundColor=`rgb(${c})`;
+}
+if(!reduce){addEventListener('scroll',()=>requestAnimationFrame(sky),{passive:true});}
+sky();
+</script>
+</body>
+</html>

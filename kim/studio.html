@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adrianne Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d1d1f;--soft:#6e6e73;--mist:#f5f5f7;--plum:#7a3f8f;--line:#d2d2d7}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter Tight",system-ui,sans-serif;color:var(--ink);background:#fff;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:6px}
+
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;height:52px;padding:0 24px;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);font-size:15px}
+nav b{font-weight:600}
+nav div a{margin-left:24px;text-decoration:none;color:var(--soft)}
+nav div a:hover{color:var(--ink)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.hero{text-align:center;padding:96px 0 56px}
+.hero h1{font-size:clamp(44px,8vw,96px);font-weight:600;letter-spacing:-.035em;line-height:1}
+.hero p{margin:20px auto 0;max-width:34ch;font-size:clamp(19px,2.2vw,24px);color:var(--soft)}
+.shot{margin:0 auto;max-width:1120px;padding:0 24px}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:28px;opacity:0;transform:translateY(24px) scale(.98);transition:opacity 1.2s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.shot img.in{opacity:1;transform:none}
+
+.quote{background:var(--mist);margin-top:120px;padding:120px 24px;text-align:center}
+.quote p{max-width:22ch;margin:0 auto;font-size:clamp(30px,4.6vw,54px);font-weight:500;letter-spacing:-.02em;line-height:1.12}
+.quote cite{display:block;margin-top:24px;font-style:normal;color:var(--soft);font-size:17px}
+
+section.story{padding:120px 0 40px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px}
+h2{font-size:clamp(34px,5vw,56px);font-weight:600;letter-spacing:-.03em;line-height:1.05}
+.arrows button{width:44px;height:44px;border-radius:50%;border:0;background:var(--mist);font-size:20px;cursor:pointer;margin-left:8px;color:var(--ink)}
+.arrows button:hover{background:#e8e8ed}
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(24px,calc((100vw - 1120px)/2 + 24px)) 24px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(78vw,380px);scroll-snap-align:start;position:relative;border-radius:24px;overflow:hidden;aspect-ratio:3/4;color:#fff;background:#222}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0,rgba(0,0,0,0) 38%)}
+.card div{position:relative;z-index:1;padding:28px}
+.card small{font-size:15px;font-weight:500;opacity:.9}
+.card h3{font-size:30px;font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-top:4px}
+.card p{font-size:16px;line-height:1.4;margin-top:8px;max-width:28ch;opacity:.95}
+
+.note{padding:120px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:center}
+.note img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px}
+.note p{font-size:clamp(26px,3.4vw,40px);font-weight:500;letter-spacing:-.02em;line-height:1.2}
+.note small{display:block;margin-top:20px;color:var(--soft);font-size:16px}
+.tag{margin-left:10px;font-size:12px;padding:2px 8px;border:1px dashed var(--soft);border-radius:20px}
+.note a{display:inline-flex;align-items:center;min-height:48px;margin-top:32px;padding:0 24px;border-radius:999px;background:var(--plum);color:#fff;text-decoration:none;font-weight:500;font-size:17px}
+
+.teach{border-top:1px solid var(--line);padding:96px 0 120px}
+.teach ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 32px;margin-top:40px}
+.teach li{padding:20px 0;border-bottom:1px solid var(--line);font-weight:500;font-size:20px}
+.teach li span{display:block;color:var(--soft);font-weight:400;font-size:16px}
+
+footer{background:var(--mist);padding:40px 24px;font-size:14px;color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:760px){
+  nav div a{margin-left:16px}
+  .hero{padding:64px 0 40px}
+  .shot img{border-radius:20px;aspect-ratio:4/5}
+  .quote{margin-top:72px;padding:80px 24px}
+  .arrows{display:none}
+  .note{grid-template-columns:1fr;gap:32px;padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){.shot img{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Main"><b>Adrianne Kim</b><div><a href="#story">Story</a><a href="#teach">Teach</a><a href="#notes">Notes</a></div></nav>
+
+<header class="hero wrap">
+  <h1>Adrianne Kim</h1>
+  <p>Yoga teacher. Teacher of teachers. Here to inspire curiosity to explore.</p>
+</header>
+<div class="shot"><img id="heroImg" src="class/img/yards-park.jpg" alt="Adrianne under the bridge arches at the Yards"></div>
+
+<section class="quote" aria-live="polite"><p id="q">Practice, and all is coming.</p><cite id="qa">Sri K. Pattabhi Jois</cite></section>
+
+<section class="story" id="story">
+  <div class="wrap head"><h2>The story so far.</h2><div class="arrows"><button aria-label="Back" onclick="slide(-1)">‹</button><button aria-label="Next" onclick="slide(1)">›</button></div></div>
+  <div class="rail" id="rail">
+    <article class="card"><img src="class/img/hero-headstand.jpg" alt="Adrianne in a headstand on the dock"><div><small>Where it began</small><h3>Hawaii.</h3><p>A student first. Curious, on the mat, every day.</p></div></article>
+    <article class="card"><img src="class/img/graduation-2015.jpg" alt="Handstand under the I did it banner"><div><small>2015</small><h3>I did it.</h3><p>Teacher training at CorePower Yoga.</p></div></article>
+    <article class="card"><img src="class/img/sunrise-class.jpg" alt="Sunrise class on the dock"><div><small>CorePower Yoga</small><h3>Master Trainer.</h3><p>Training the people who teach the classes.</p></div></article>
+    <article class="card"><img src="class/img/holi.jpg" alt="Holi in Rishikesh"><div><small>March 2026</small><h3>Rishikesh.</h3><p>Sattva Yoga Academy. My first time in India. Unforgettable.</p></div></article>
+    <article class="card"><img src="class/img/audi-field.jpg" alt="Yoga on the field at Audi Field"><div><small>Summer 2026</small><h3>Audi Field.</h3><p>Power yoga on the pitch before DC Power FC.</p></div></article>
+    <article class="card"><img src="class/img/kim-salem.jpg" alt="Adrianne holding Salem"><div><small>At home</small><h3>Sammy and Salem.</h3><p>They hear every student note, read out loud.</p></div></article>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="note" id="notes" aria-live="polite">
+    <img src="class/img/sammy-shoulder.jpg" alt="Sammy the cat on Adrianne's shoulder">
+    <div><p id="n">“She remembers what's going on with your body and adjusts for you, every single class.”</p>
+    <small><span id="na">A student</span><span class="tag">sample note</span></small>
+    <a href="class/#tell">Tell me how class went</a></div>
+  </section>
+
+  <section class="teach" id="teach">
+    <h2>Where I teach.</h2>
+    <ul>
+      <li>District Flow Yoga<span>Studio classes</span></li>
+      <li>Maret School<span>Yoga for students</span></li>
+      <li>Life Time Clarendon<span>Power and flow</span></li>
+      <li>Vida Fitness<span>Outdoor yoga at the Yards</span></li>
+      <li>OneLife Fitness<span>Classes</span></li>
+    </ul>
+  </section>
+</div>
+
+<footer><span>Adrianne Kim, Washington, DC</span><a href="https://www.instagram.com/adriannekim/">@adriannekim</a></footer>
+
+<script>
+const photos=[["class/img/yards-park.jpg","Adrianne under the bridge arches at the Yards"],["class/img/hero-headstand.jpg","Adrianne in a headstand on the dock"],["class/img/sunrise-class.jpg","A sunrise class on the dock"],["class/img/graduation-2015.jpg","Adrianne in a handstand at teacher training"]];
+const quotes=[["Practice, and all is coming.","Sri K. Pattabhi Jois"],["Yoga is the journey of the self, through the self, to the self.","The Bhagavad Gita"],["Yoga is the stilling of the changing states of the mind.","Patañjali, Yoga Sutra 1.2"],["Yoga teaches us to cure what need not be endured and endure what cannot be cured.","B.K.S. Iyengar"],["The body benefits from movement, and the mind benefits from stillness.","Sakyong Mipham"]];
+const notes=[["“She remembers what's going on with your body and adjusts for you, every single class.”","A student"],["“I came for a workout and left calmer than I've felt in months.”","A student"],["“Her sunrise class on the dock is the best part of my week.”","A student"],["“She trained me as a teacher. I still hear her cues in my head.”","A teacher she trained"]];
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const p=pick(photos),q=pick(quotes),n=pick(notes);
+heroImg.src=p[0];heroImg.alt=p[1];
+document.getElementById('q').textContent=q[0];qa.textContent=q[1];
+document.getElementById('n').textContent=n[0];na.textContent=n[1];
+/* the one moving moment: her photo rises into place */
+const show=()=>heroImg.classList.add('in');
+heroImg.complete?requestAnimationFrame(show):heroImg.addEventListener('load',show);
+setTimeout(show,1500);
+function slide(d){rail.scrollBy({left:d*rail.querySelector('.card').offsetWidth+d*20,behavior:'smooth'})}
+</script>
+</body>
+</html>
