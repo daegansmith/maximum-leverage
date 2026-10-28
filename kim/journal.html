@@ -48,7 +48,7 @@ header .print img{aspect-ratio:4/5}
 .sticky{max-width:520px;margin:0 auto 120px;background:#fff6c9;padding:36px 36px 28px;transform:rotate(-1.5deg);box-shadow:0 12px 24px -10px rgba(60,50,0,.35)}
 .sticky p{font-family:Caveat,cursive;font-size:clamp(30px,4vw,38px);line-height:1.15}
 .sticky small{display:block;margin-top:14px;font-size:16px;color:var(--soft)}
-.tag{margin-left:8px;font-size:12px;padding:1px 8px;border:1px dashed var(--soft);border-radius:20px}
+.tag{display:inline-block;margin-top:8px;text-decoration:none;color:inherit;margin-left:8px;font-size:12px;padding:1px 8px;border:1px solid var(--soft);border-radius:20px}
 
 .cats{padding:40px 0 96px}
 .cats .row{display:grid;grid-template-columns:repeat(5,1fr);gap:24px}
@@ -104,7 +104,7 @@ header .print img{aspect-ratio:4/5}
       <div><div class="date">Summer 2026</div><h3>Audi Field.</h3><p>Power yoga on the pitch before a DC Power FC match.</p></div></article>
   </section>
 
-  <aside class="sticky" aria-live="polite"><p id="n">“She remembers what's going on with your body and adjusts for you, every single class.”</p><small><span id="na">A student</span><span class="tag">sample note</span></small></aside>
+  <aside class="sticky" aria-live="polite"><p id="n">“Thank you for the lessons that apply on and off of our mats! Honored to learn from one of CPY’s best! ✨”</p><small><span id="na">@alwaysneverhome</span><a class="tag" href="notes.html">Read all the notes</a></small></aside>
 
   <section class="cats">
     <h2>The supervisors</h2>
@@ -135,15 +135,16 @@ header .print img{aspect-ratio:4/5}
   </section>
 </div>
 
+<script src="notes-data.js"></script>
 <script>
 const photos=[["class/img/hero-headstand.jpg","Adrianne in a headstand on the dock by the bridge","Upside down on purpose."],["class/img/yards-park.jpg","Adrianne under the bridge arches at the Yards","Reaching for the sky at the Yards"],["class/img/kim-sammy.jpg","Adrianne holding Sammy","Me and my cuddle buddy"]];
-const quotes=[["Practice, and all is coming.","Sri K. Pattabhi Jois"],["Yoga is the journey of the self, through the self, to the self.","The Bhagavad Gita"],["Yoga is the stilling of the changing states of the mind.","Patañjali, Yoga Sutra 1.2"],["Yoga teaches us to cure what need not be endured and endure what cannot be cured.","B.K.S. Iyengar"],["The body benefits from movement, and the mind benefits from stillness.","Sakyong Mipham"]];
-const notes=[["“She remembers what's going on with your body and adjusts for you, every single class.”","A student"],["“I came for a workout and left calmer than I've felt in months.”","A student"],["“Her sunrise class on the dock is the best part of my week.”","A student"],["“She trained me as a teacher. I still hear her cues in my head.”","A teacher she trained"]];
+const quotes=window.KIM_QUOTES;
+const notes=window.KIM_NOTES.filter(x=>x.f).map(x=>["“"+x.q+"”","@"+x.who+", "+x.ctx+", "+x.when.split(", ")[1],x.url]);
 const pick=a=>a[Math.floor(Math.random()*a.length)];
 const p=pick(photos),q=pick(quotes),n=pick(notes);
 heroImg.src=p[0];heroImg.alt=p[1];heroCap.textContent=p[2];
 document.getElementById('q').textContent=q[0];qa.textContent=q[1];
-document.getElementById('n').textContent=n[0];na.textContent=n[1];
+document.getElementById('n').textContent=n[0];na.textContent='';{const l=document.createElement('a');l.href=n[2];l.target='_blank';l.rel='noopener';l.textContent=n[1];l.style.color='inherit';na.append(l);}
 </script>
 </body>
 </html>

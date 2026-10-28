@@ -53,7 +53,7 @@ h2{font-size:clamp(34px,5vw,56px);font-weight:600;letter-spacing:-.03em;line-hei
 .note img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px}
 .note p{font-size:clamp(26px,3.4vw,40px);font-weight:500;letter-spacing:-.02em;line-height:1.2}
 .note small{display:block;margin-top:20px;color:var(--soft);font-size:16px}
-.tag{margin-left:10px;font-size:12px;padding:2px 8px;border:1px dashed var(--soft);border-radius:20px}
+.tag{display:inline-block;margin-top:8px;text-decoration:none;color:inherit;margin-left:10px;font-size:12px;padding:2px 8px;border:1px solid var(--soft);border-radius:20px}
 .note a{display:inline-flex;align-items:center;min-height:48px;margin-top:32px;padding:0 24px;border-radius:999px;background:var(--plum);color:#fff;text-decoration:none;font-weight:500;font-size:17px}
 
 .teach{border-top:1px solid var(--line);padding:96px 0 120px}
@@ -100,8 +100,8 @@ footer{background:var(--mist);padding:40px 24px;font-size:14px;color:var(--soft)
 <div class="wrap">
   <section class="note" id="notes" aria-live="polite">
     <img src="class/img/sammy-shoulder.jpg" alt="Sammy the cat on Adrianne's shoulder">
-    <div><p id="n">“She remembers what's going on with your body and adjusts for you, every single class.”</p>
-    <small><span id="na">A student</span><span class="tag">sample note</span></small>
+    <div><p id="n">“Thank you for the lessons that apply on and off of our mats! Honored to learn from one of CPY’s best! ✨”</p>
+    <small><span id="na">@alwaysneverhome</span><a class="tag" href="notes.html">Read all the notes</a></small>
     <a href="class/#tell">Tell me how class went</a></div>
   </section>
 
@@ -119,15 +119,16 @@ footer{background:var(--mist);padding:40px 24px;font-size:14px;color:var(--soft)
 
 <footer><span>Adrianne Kim, Washington, DC</span><a href="https://www.instagram.com/adriannekim/">@adriannekim</a></footer>
 
+<script src="notes-data.js"></script>
 <script>
 const photos=[["class/img/yards-park.jpg","Adrianne under the bridge arches at the Yards"],["class/img/hero-headstand.jpg","Adrianne in a headstand on the dock"],["class/img/sunrise-class.jpg","A sunrise class on the dock"],["class/img/graduation-2015.jpg","Adrianne in a handstand at teacher training"]];
-const quotes=[["Practice, and all is coming.","Sri K. Pattabhi Jois"],["Yoga is the journey of the self, through the self, to the self.","The Bhagavad Gita"],["Yoga is the stilling of the changing states of the mind.","Patañjali, Yoga Sutra 1.2"],["Yoga teaches us to cure what need not be endured and endure what cannot be cured.","B.K.S. Iyengar"],["The body benefits from movement, and the mind benefits from stillness.","Sakyong Mipham"]];
-const notes=[["“She remembers what's going on with your body and adjusts for you, every single class.”","A student"],["“I came for a workout and left calmer than I've felt in months.”","A student"],["“Her sunrise class on the dock is the best part of my week.”","A student"],["“She trained me as a teacher. I still hear her cues in my head.”","A teacher she trained"]];
+const quotes=window.KIM_QUOTES;
+const notes=window.KIM_NOTES.filter(x=>x.f).map(x=>["“"+x.q+"”","@"+x.who+", "+x.ctx+", "+x.when.split(", ")[1],x.url]);
 const pick=a=>a[Math.floor(Math.random()*a.length)];
 const p=pick(photos),q=pick(quotes),n=pick(notes);
 heroImg.src=p[0];heroImg.alt=p[1];
 document.getElementById('q').textContent=q[0];qa.textContent=q[1];
-document.getElementById('n').textContent=n[0];na.textContent=n[1];
+document.getElementById('n').textContent=n[0];na.textContent='';{const l=document.createElement('a');l.href=n[2];l.target='_blank';l.rel='noopener';l.textContent=n[1];l.style.color='inherit';na.append(l);}
 /* the one moving moment: her photo rises into place */
 const show=()=>heroImg.classList.add('in');
 heroImg.complete?requestAnimationFrame(show):heroImg.addEventListener('load',show);

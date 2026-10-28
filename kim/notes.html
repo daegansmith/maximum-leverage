@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes from the mat · Adrianne Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f2a33;--soft:#5b6670;--river:#2f6274;--pink:#c4507f;--bg:#eef2f4;--card:#fff;--line:rgba(31,42,51,.1)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.55;color:var(--ink);background:var(--bg)}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:4px}
+.top{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:22px 24px;font-size:15px}
+.top a{text-decoration:none}
+.top .mark{font-family:Newsreader,serif;font-size:21px}
+header{max-width:1200px;margin:0 auto;padding:56px 24px 48px}
+h1{font-family:Newsreader,serif;font-weight:300;font-size:clamp(44px,8vw,88px);line-height:1}
+header p{margin-top:20px;max-width:52ch;color:var(--soft);font-size:19px}
+.grid{max-width:1200px;margin:0 auto;padding:0 24px 80px;columns:3 320px;column-gap:20px}
+.note{display:block;break-inside:avoid;margin-bottom:20px;background:var(--card);border-radius:18px;padding:26px 26px 20px;text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.04);transition:transform .2s,box-shadow .2s}
+.note:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(31,42,51,.25)}
+.note q{display:block;font-family:Newsreader,serif;font-size:21px;line-height:1.35;quotes:"“" "”"}
+.note.f q{font-size:26px}
+.note .meta{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;color:var(--soft);display:flex;justify-content:space-between;gap:12px}
+.note .who{color:var(--river);font-weight:500}
+.end{text-align:center;padding:40px 24px 96px}
+.end h2{font-family:Newsreader,serif;font-weight:300;font-size:clamp(32px,5vw,48px)}
+.end p{color:var(--soft);margin:12px auto 28px;max-width:44ch}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:500}
+@media (prefers-reduced-motion:reduce){.note{transition:none}.note:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Main"><a class="mark" href="./">Adrianne Kim</a><a href="https://www.instagram.com/adriannekim/">@adriannekim</a></nav>
+<header>
+  <h1>Notes from the mat.</h1>
+  <p id="lede">What students, teachers I've trained and friends of the practice have written to me since 2015. Tap any note to see where it was left.</p>
+</header>
+<main class="grid" id="grid"></main>
+<section class="end">
+  <h2>Took a class with me?</h2>
+  <p>Tell me how it went. Every note gets read out loud to Sammy and Salem.</p>
+  <a class="btn" href="class/#tell">Write me a note</a>
+</section>
+<script src="notes-data.js"></script>
+<script>
+const g=document.getElementById('grid');
+const notes=window.KIM_NOTES.slice();
+document.getElementById('lede').textContent=notes.length+' notes from students, teachers I\'ve trained and friends of the practice, left on my Instagram since 2015. Tap any one to see where it was left.';
+for(const n of notes){
+  const a=document.createElement('a');a.className='note'+(n.f?' f':'');a.href=n.url;a.target='_blank';a.rel='noopener';
+  const q=document.createElement('q');q.textContent=n.q;
+  const m=document.createElement('div');m.className='meta';
+  const w=document.createElement('span');w.className='who';w.textContent='@'+n.who;
+  const c=document.createElement('span');c.textContent=(n.ctx?n.ctx+', ':'')+n.when.split(', ')[1];
+  m.append(w,c);a.append(q,m);g.append(a);
+}
+</script>
+</body>
+</html>
