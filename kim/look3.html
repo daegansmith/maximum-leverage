@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrianne Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Georgia:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --text: #1a1a1a;
+      --light: #999;
+      --accent: #b89968;
+      --space: 1.5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: var(--text);
+      line-height: calc(1.6 * var(--space));
+      background: white;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      margin-bottom: 0.5em;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size: clamp(1.8rem, 6vw, 2.8rem);
+      margin: 3em 0 1.5em;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      max-width: 75ch;
+      margin-bottom: 1.5em;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: opacity 0.25s;
+    }
+
+    a:hover {
+      opacity: 0.65;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: white;
+    }
+
+    .hero h1 {
+      margin-bottom: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--light);
+      max-width: 60ch;
+    }
+
+    .hero-action {
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background 0.25s;
+      text-decoration: none;
+      border-bottom: none;
+      letter-spacing: 0.5px;
+    }
+
+    .btn:hover {
+      background: #a57e52;
+    }
+
+    /* Main */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    section p {
+      line-height: 1.8;
+    }
+
+    .quote-block {
+      padding: 3rem 0;
+      text-align: center;
+      margin: 3rem 0;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .quote-text {
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .quote-author {
+      font-size: 0.9rem;
+      color: var(--light);
+      font-style: normal;
+    }
+
+    .studios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .studio {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .studio-name {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .studio-desc {
+      font-size: 0.9rem;
+      color: var(--light);
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-section p {
+      margin: 0 auto 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        font-size: 15px;
+      }
+
+      .hero {
+        min-height: 50vh;
+        padding: 2rem 1.5rem;
+      }
+
+      section {
+        padding: 2rem 0;
+      }
+
+      main {
+        padding: 0 1.5rem;
+      }
+
+      .studios {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Adrianne Kim</h1>
+    <p>Yoga teacher and guide to practice</p>
+    <div class="hero-action">
+      <a href="#share" class="btn">Share Your Practice</a>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h2>Practice</h2>
+      <p>Yoga is the journey of the self, through the self, to the self. Adrianne teaches this journey—not as a series of poses, but as a living practice of presence and discovery.</p>
+      <p>Her classes are rooted in tradition, informed by intensive study including time at Sattva Yoga Academy in Rishikesh, India, and brought to life through genuine presence with each student. She has trained teachers, led corporate retreats, and guided practitioners from all backgrounds.</p>
+    </section>
+
+    <div class="quote-block">
+      <div class="quote-text" id="rotating-quote">Loading wisdom...</div>
+      <div class="quote-author">—  Yoga Teaching</div>
+    </div>
+
+    <section>
+      <h2>Where She Teaches</h2>
+      <div class="studios">
+        <div class="studio">
+          <div class="studio-name">District Flow Yoga</div>
+          <div class="studio-desc">Classes</div>
+        </div>
+        <div class="studio">
+          <div class="studio-name">Maret School</div>
+          <div class="studio-desc">Yoga Instruction</div>
+        </div>
+        <div class="studio">
+          <div class="studio-name">Life Time Clarendon</div>
+          <div class="studio-desc">Power Yoga</div>
+        </div>
+        <div class="studio">
+          <div class="studio-name">OneLife Fitness</div>
+          <div class="studio-desc">Private Sessions</div>
+        </div>
+        <div class="studio">
+          <div class="studio-name">Corporate Programs</div>
+          <div class="studio-desc">Wellness & Retreats</div>
+        </div>
+        <div class="studio">
+          <div class="studio-name">Yoga Retreats</div>
+          <div class="studio-desc">India & Beyond</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="quote-block">
+      <div class="quote-text" id="student-note">Loading...</div>
+      <div class="quote-author" id="student-author">— A Student</div>
+    </div>
+
+    <section class="cta-section">
+      <h2>Share Your Experience</h2>
+      <p>Have you practiced with Adrianne? Your words matter.</p>
+      <a href="/kim/wall/" class="btn">See All Notes & Add Yours</a>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Adrianne Kim</strong></p>
+    <p>Yoga Teacher · Master Trainer</p>
+    <p><a href="https://www.instagram.com/adriannekim">@adriannekim</a></p>
+    <p style="margin-top: 2rem; font-size: 0.85rem; opacity: 0.6;">© 2026</p>
+  </footer>
+
+  <script>
+    const quotes = [
+      "The pose begins when you want to leave it.",
+      "Yoga is the uniting of consciousness and matter through the breath.",
+      "The body is your first home. Treat it with the reverence it deserves.",
+      "In the present moment, all your power lives.",
+      "Stillness is not the absence of movement. It is perfect balance.",
+      "Your breath is your anchor to the present moment."
+    ];
+
+    const notes = [
+      { text: "Adrianne has this incredible ability to make you feel completely welcome in her class, whether you're a beginner or advanced.", author: "Sarah M." },
+      { text: "Taking her Power Yoga class changed how I move through the world. She teaches you how to listen to your body.", author: "James P." },
+      { text: "One of the best teachers I've ever studied with. Her passion for yoga is absolutely infectious.", author: "David R." },
+      { text: "She brings such a joyful, grounded energy to teaching. You leave feeling both energized and peaceful.", author: "Nina T." }
+    ];
+
+    function rotate() {
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      const note = notes[Math.floor(Math.random() * notes.length)];
+
+      document.getElementById('rotating-quote').textContent = `"${quote}"`;
+      document.getElementById('student-note').textContent = `"${note.text}"`;
+      document.getElementById('student-author').textContent = `— ${note.author}`;
+    }
+
+    rotate();
+  </script>
+</body>
+</html>

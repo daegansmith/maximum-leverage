@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrianne Kim — Yoga Teacher & Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --text: #2c2c2c;
+      --text-light: #666;
+      --bg: #fafaf8;
+      --accent: #c49a7e;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--bg);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 10vw, 5rem);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.05rem;
+      max-width: 70ch;
+      margin-bottom: 2rem;
+      color: var(--text-light);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 2px solid var(--accent);
+      transition: opacity 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 4rem 2rem 6rem;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(44,44,44,0) 0%, rgba(44,44,44,0.5) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+      color: rgba(255,255,255,0.95);
+      max-width: 50ch;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      transition: background 0.3s;
+      margin-top: 2rem;
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    .btn:hover {
+      background: #b88965;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    /* Featured Note */
+    .featured-section {
+      margin: 5rem 0;
+      padding: 4rem 2rem;
+      background: white;
+      border-top: 2px solid var(--accent);
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .featured-section h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .note {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .note-text {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .note-author {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      color: inherit;
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        height: 70vh;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Adrianne Kim</h1>
+      <p>Yoga teacher, trainer, and guide to practice</p>
+      <a href="#wall" class="btn">Share Your Experience</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>The Practice</h2>
+      <p>Adrianne teaches yoga as exploration and discovery. Her classes are rooted in traditional practice, informed by years of training and study, and brought to life through her genuine presence with each student.</p>
+
+      <p>She has studied extensively, including time at Sattva Yoga Academy in Rishikesh, India. As a former CorePower Master Trainer, she brought yoga to hundreds of practitioners. Now based in DC, she teaches at the city's finest studios and leads private sessions, corporate retreats, and transformative yoga journeys.</p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h3>District Flow</h3>
+        <p>Classes and community</p>
+      </div>
+      <div class="card">
+        <h3>Private Sessions</h3>
+        <p>One-on-one practice</p>
+      </div>
+      <div class="card">
+        <h3>Corporate Wellness</h3>
+        <p>Team retreats and training</p>
+      </div>
+      <div class="card">
+        <h3>Retreats</h3>
+        <p>India, local, and adventures</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured-section">
+    <h2>What Students Say</h2>
+    <div class="note">
+      <div class="note-text" id="featured-note">Loading...</div>
+      <div class="note-author" id="featured-author">— Student</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section style="text-align: center;">
+      <h2>Join Her Practice</h2>
+      <p>Whether you're new to yoga or deepening an existing practice, there's a place for you.</p>
+      <a href="/kim/wall/" class="btn">See All Notes & Share Yours</a>
+    </section>
+  </div>
+
+  <footer>
+    <h3>Adrianne Kim</h3>
+    <p>Yoga Teacher · Master Trainer</p>
+    <p><a href="https://www.instagram.com/adriannekim">@adriannekim</a></p>
+    <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">© 2026</p>
+  </footer>
+
+  <script>
+    const notes = [
+      { text: "Adrianne has this incredible ability to make you feel completely welcome in her class. She remembers details about your practice.", author: "Sarah M." },
+      { text: "Taking her Power Yoga class changed how I move through the world. She teaches you how to listen to your body.", author: "James P." },
+      { text: "One of the best teachers I've ever studied with. Her passion for yoga is absolutely infectious.", author: "David R." },
+      { text: "She brings such a joyful, grounded energy to teaching. You leave feeling both energized and peaceful.", author: "Nina T." }
+    ];
+
+    const bgImages = [
+      'linear-gradient(rgba(44,44,44,0.3), rgba(44,44,44,0.4)), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IGZpbGw9IiNjNDljN2UiIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIi8+PHBhdHRlcm4gaWQ9InAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwuMDUpIi8+PC9wYXR0ZXJuPjxyZWN0IGZpbGw9InVybCgjcCkiIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIi8+PC9zdmc+)',
+      'linear-gradient(rgba(44,44,44,0.3), rgba(44,44,44,0.4)), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IGZpbGw9IiNhODdiNjYiIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIi8+PGxpbmUgeDE9IjAiIHkxPSIwIiB4Mj0iNDAwIiB5Mj0iNDAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA4KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PGxpbmUgeDE9IjAiIHkxPSI0MDAiIHgyPSI0MDAiIHkyPSIwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjA4KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9zdmc+)'
+    ];
+
+    function rotateContent() {
+      const note = notes[Math.floor(Math.random() * notes.length)];
+      document.getElementById('featured-note').textContent = `"${note.text}"`;
+      document.getElementById('featured-author').textContent = `— ${note.author}`;
+
+      const bg = bgImages[Math.floor(Math.random() * bgImages.length)];
+      document.getElementById('hero').style.backgroundImage = bg;
+    }
+
+    rotateContent();
+  </script>
+</body>
+</html>
