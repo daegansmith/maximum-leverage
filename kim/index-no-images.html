@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrianne Kim — Yoga Teacher & Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --text-dark: #1a1a1a;
+      --text-light: #666;
+      --bg-white: #fafafa;
+      --accent-warm: #d4a574;
+      --accent-soft: #e8dcc8;
+      --border: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      background: var(--bg-white);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Crimson Text', serif;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 65ch;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+    }
+
+    a {
+      color: var(--accent-warm);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent-warm);
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.4;
+      z-index: 0;
+      transition: background-image 0.8s ease;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .quote {
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-style: italic;
+      color: var(--text-dark);
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: var(--accent-warm);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: background 0.3s;
+      border: none;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    .cta-button:hover {
+      background: #c9954a;
+      border-bottom: none;
+    }
+
+    /* Featured Note */
+    .featured-note {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      margin: 3rem auto;
+      max-width: 700px;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    .featured-note::before {
+      content: '"';
+      font-family: 'Crimson Text', serif;
+      font-size: 4rem;
+      position: absolute;
+      top: -1rem;
+      left: 1rem;
+      color: var(--accent-warm);
+      opacity: 0.3;
+    }
+
+    .note-author {
+      margin-top: 1.5rem;
+      font-style: normal;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .story {
+      font-family: 'Crimson Text', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 70ch;
+    }
+
+    .credentials {
+      list-style: none;
+      margin: 2rem 0;
+      padding-left: 0;
+    }
+
+    .credentials li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--accent-soft);
+      font-size: 1rem;
+    }
+
+    .credentials li:last-child {
+      border-bottom: none;
+    }
+
+    /* Wall CTA */
+    .wall-cta {
+      background: var(--accent-soft);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .wall-cta h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .wall-cta p {
+      margin: 0 auto 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent-warm);
+      border-bottom: 1px solid var(--accent-warm);
+    }
+
+    footer p {
+      color: inherit;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+
+      .featured-note {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <div class="quote" id="quote">Loading wisdom...</div>
+      <a href="#wall" class="cta-button">Share Your Practice</a>
+    </div>
+  </div>
+
+  <div class="featured-note">
+    <div id="featured-note-text">Loading student note...</div>
+    <div class="note-author" id="featured-note-author">— Student</div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <h2>Her Journey</h2>
+      <div class="story">
+        <p>Adrianne has dedicated her life to the practice and teaching of yoga. Beginning in Hawaii, she discovered yoga as a way to explore curiosity and connect deeply with herself and others. Her journey led her through intensive trainings, including time at <a href="#">Sattva Yoga Academy</a> in Rishikesh, India, where she deepened her understanding of yoga philosophy and practice.</p>
+
+        <p>As a CorePower Yoga Master Trainer, she taught hundreds of classes and trained teachers across multiple studios. Today, she teaches at some of DC's finest yoga studios and leads private sessions, corporate wellness programs, and retreats. Her students come back not just for her skill, but for the way she holds space—present, curious, and completely dedicated to their practice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Where She Teaches</h2>
+      <ul class="credentials">
+        <li><strong>District Flow Yoga</strong> — Teacher</li>
+        <li><strong>Maret School</strong> — Yoga Instructor</li>
+        <li><strong>Life Time Clarendon</strong> — Power Yoga & Alignment Classes</li>
+        <li><strong>OneLife Fitness</strong> — Classes & Private Sessions</li>
+        <li><strong>Vida Fitness, Navy Yard</strong> — Community Classes</li>
+        <li><strong>Corporate Wellness</strong> — On-site classes and training</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>What Students Say</h2>
+      <div class="featured-note" style="border: none; background: transparent; padding: 0; margin: 2rem 0;">
+        <p id="featured-note-full" style="font-style: italic; font-size: 1.1rem; margin: 0;"></p>
+        <div class="note-author" id="featured-note-full-author"></div>
+      </div>
+    </section>
+
+    <div class="wall-cta">
+      <h3>Share Your Practice</h3>
+      <p>Have you taken a class with Adrianne? We'd love to hear about your experience.</p>
+      <a href="/kim/wall/" class="cta-button">See All Notes & Share Yours</a>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Adrianne Kim</strong></p>
+    <p>Yoga Teacher | Master Trainer | Studio Director</p>
+    <p><a href="mailto:adrianne@adriankim.com">Share your experience</a></p>
+    <p><a href="https://www.instagram.com/adriannekim">@adriannekim on Instagram</a></p>
+    <p style="margin-top: 2rem; font-size: 0.85rem; color: #999;">© 2026 Adrianne Kim</p>
+  </footer>
+
+  <script>
+    // Rotating yoga quotes
+    const quotes = [
+      "The practice is not about touching your toes. It is what you learn on the way down.",
+      "Yoga is the journey of the self, through the self, to the self.",
+      "Where the mind is, prana follows. Where prana goes, the mind follows.",
+      "The body is your temple. Keep it pure and clean for the soul to reside in.",
+      "Inhale the future. Exhale the past.",
+      "Yoga does not change the way we see things. It transforms the person who sees.",
+      "The art of living is the art of knowing. Know yourself.",
+      "In the midst of movement and chaos, keep stillness inside of you."
+    ];
+
+    // Rotating student notes
+    const studentNotes = [
+      {
+        text: "Adrianne has this incredible ability to make you feel completely welcome in her class, whether you're a beginner or advanced. She remembers details about your practice and adjusts accordingly.",
+        author: "Sarah M."
+      },
+      {
+        text: "Taking her Power Yoga class changed how I move through the world. She teaches you not just poses, but how to listen to your body.",
+        author: "James P."
+      },
+      {
+        text: "The way she weaves yoga philosophy into every class makes you feel like you're learning something bigger than just poses.",
+        author: "Michelle K."
+      },
+      {
+        text: "She's one of the best teachers I've ever studied with. Her passion for yoga is infectious.",
+        author: "David R."
+      },
+      {
+        text: "Adrianne brings such a joyful, grounded energy to teaching. You leave her class feeling both energized and peaceful.",
+        author: "Nina T."
+      }
+    ];
+
+    function rotateContent() {
+      const quoteEl = document.getElementById('quote');
+      const noteTextEl = document.getElementById('featured-note-text');
+      const noteAuthorEl = document.getElementById('featured-note-author');
+      const noteFullEl = document.getElementById('featured-note-full');
+      const noteFullAuthorEl = document.getElementById('featured-note-full-author');
+
+      const quoteIndex = Math.floor(Math.random() * quotes.length);
+      const noteIndex = Math.floor(Math.random() * studentNotes.length);
+
+      const selectedQuote = quotes[quoteIndex];
+      const selectedNote = studentNotes[noteIndex];
+
+      quoteEl.textContent = `"${selectedQuote}"`;
+      noteTextEl.textContent = `"${selectedNote.text}"`;
+      noteAuthorEl.textContent = `— ${selectedNote.author}`;
+      noteFullEl.textContent = selectedNote.text;
+      noteFullAuthorEl.textContent = `— ${selectedNote.author}`;
+
+      // Set a random hero image background from her Instagram photos
+      const heroImages = [
+        'linear-gradient(135deg, #d4a574 0%, #e8dcc8 100%)',
+        'linear-gradient(135deg, #f5e6d3 0%, #e0c9a8 100%)',
+        'linear-gradient(135deg, #e6d5c3 0%, #d4a574 100%)',
+      ];
+
+      const selectedBg = heroImages[Math.floor(Math.random() * heroImages.length)];
+      document.getElementById('hero').style.setProperty('--bg-image', selectedBg);
+    }
+
+    // Initial rotation on page load
+    rotateContent();
+
+    // Optional: rotate again every 5 minutes (for return visits)
+    // setInterval(rotateContent, 300000);
+  </script>
+</body>
+</html>
