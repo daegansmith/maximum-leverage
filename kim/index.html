@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>For Adrianne — Four Looks</title>
+<title>For Adrianne</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter+Tight:wght@400;500;600&display=swap">
@@ -43,58 +43,40 @@ p{margin:0}
 
 <div class="wrap">
   <p class="from">From Daegan</p>
-  <h1>Four front doors. Pick the one that feels like you.</h1>
-  <p class="lead mute">Same words on all four. Different feel. Open each one on your phone and scroll. Then tap the one that's you.</p>
+  <h1>Three front doors. Which one feels like you?</h1>
+  <p class="lead mute">Open each one on your phone and scroll all the way down. Every time you open one, you get a different photo, quote and note.</p>
 
   <div class="looks" id="looks">
-    <div class="look" data-key="class">
-      <div class="phone"><img id="p-class" alt="Preview of The Class look" src="img/preview-class.jpg"></div>
+    <div class="look" data-key="sky">
+      <div class="phone"><img alt="Preview of the Sky look" src="img/preview-sky.jpg"></div>
       <div>
-        <p class="num">Look 1 · New</p>
-        <h2>The Class</h2>
-        <p class="mute">The whole page is a practice. Arrive, breathe, flow through your story, meet Sammy, Salem and the crew, then rest. The sky dims to dusk at savasana.</p>
-        <p class="says">This one says: this is my life, and you're invited.</p>
-        <div class="actions"><a class="btn" href="class/">Open look 1</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+        <p class="num">Look 1</p>
+        <h2>Sky</h2>
+        <p class="mute">Your photo fills the screen. As you scroll, the page moves from morning light to dusk, like a class from start to end.</p>
+        <div class="actions"><a class="btn" href="sky.html">Open Sky</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
       </div>
     </div>
-    <div class="look" data-key="breath">
-      <div class="phone"><img id="p-breath" alt="Preview of the Breath look" src=""></div>
+    <div class="look" data-key="studio">
+      <div class="phone"><img alt="Preview of the Studio look" src="img/preview-studio.jpg"></div>
       <div>
         <p class="num">Look 2</p>
-        <h2>Breath</h2>
-        <p class="mute">A sun that breathes behind you, four seconds in, four out. The page unfolds like a practice: the boardwalk, the class, the stadium, Rishikesh, home.</p>
-        <p class="says">This one says: calm on the surface, everything handled underneath.</p>
-        <div class="actions"><a class="btn" href="breath.html">Open look 2</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+        <h2>Studio</h2>
+        <p class="mute">Clean and quiet, lots of white. Your story as cards you swipe through, from Hawaii to Rishikesh.</p>
+        <div class="actions"><a class="btn" href="studio.html">Open Studio</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
       </div>
     </div>
-    <div class="look" data-key="daylight">
-      <div class="phone"><img id="p-daylight" alt="Preview of the Daylight look" src=""></div>
+    <div class="look" data-key="journal">
+      <div class="phone"><img alt="Preview of the Journal look" src="img/preview-journal.jpg"></div>
       <div>
         <p class="num">Look 3</p>
-        <h2>Daylight</h2>
-        <p class="mute">A morning studio. Sage and saffron, lots of air, and a cat peeking over the note card.</p>
-        <p class="says">This one says: come as you are, the room is ready.</p>
-        <div class="actions"><a class="btn" href="daylight.html">Open look 3</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
-      </div>
-    </div>
-    <div class="look" data-key="roster">
-      <div class="phone"><img id="p-roster" alt="Preview of The Roster look" src=""></div>
-      <div>
-        <p class="num">Look 4</p>
-        <h2>The Roster</h2>
-        <p class="mute">Bold, like the class board at the front desk. The note card and your nine rooms sit right at the top.</p>
-        <p class="says">This one says: here's where I am this week. Come find me.</p>
-        <div class="actions"><a class="btn" href="roster.html">Open look 4</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
+        <h2>Journal</h2>
+        <p class="mute">Your photos taped into a notebook, with handwritten captions. The cats get their own page.</p>
+        <div class="actions"><a class="btn" href="journal.html">Open Journal</a><button class="btn btn-primary pick" type="button">Pick this one</button></div>
       </div>
     </div>
   </div>
 
-  
-  <a href="jimmy/" style="display:block;margin-top:28px;background:#1B2A2A;color:#F7F5F0;border-radius:28px;padding:26px;text-decoration:none">
-    <p style="font-size:.9rem;font-weight:600;color:#E7A977;margin:0 0 8px">Three more looks</p>
-    <h2 style="color:#F7F5F0">After Class, This Week, and One Breath</h2>
-    <p style="color:#C9D6D0;margin-top:8px">Built by Jimmy's team. Open them all here.</p>
-  </a>
+  <p class="mute" style="margin-top:32px;font-size:.95rem">Earlier versions: <a href="class/">The Class</a>, <a href="breath.html">Breath</a>, <a href="daylight.html">Daylight</a>, <a href="roster.html">The Roster</a>, and <a href="jimmy/">Jimmy's three</a>.</p>
 
   <div class="after" id="after" hidden>
     <h2 id="after-h">You picked it.</h2>
@@ -105,11 +87,11 @@ p{margin:0}
   </div>
 </div>
 
-<script id="previews" type="application/json">{"breath":"img/preview-breath.jpg","daylight":"img/preview-daylight.jpg","roster":"img/preview-roster.jpg"}</script>
+
 <script>
 (function(){
-  try{var P=JSON.parse(document.getElementById('previews').textContent);Object.keys(P).forEach(function(k){var el=document.getElementById('p-'+k);if(el)el.src=P[k];});}catch(e){}
-  var names={class:'The Class',breath:'Breath',daylight:'Daylight',roster:'The Roster'};
+  
+  var names={sky:'Sky',studio:'Studio',journal:'Journal'};
   var picked=null,db=null;
   (async function(){try{if(window.claude&&claude.use)db=await claude.use('db');}catch(e){db=null}})();
   document.querySelectorAll('.pick').forEach(function(b){b.addEventListener('click',function(){
