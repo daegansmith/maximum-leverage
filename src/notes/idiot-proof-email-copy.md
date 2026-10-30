@@ -1,0 +1,48 @@
+# Idiot Proof Email Copy
+@ My notes
+- Rule #1: Beginner Daegan-Style Email Money Making
+  - Send at least one email per day.
+    - Better to send two (9am or before, and at 3:30pm).
+    - The early email: think of it like an episode of your favorite personality-based show.
+    - The late-day email is a classified-ad-style commercial.
+  - Write like you speak.
+- Where Do You Start With Email Copy?
+  - What valuable thing can I send to my mailing list tomorrow that will help at least one person?
+- Types Of Emails
+  - Q&A: trust building
+  - How To: authority
+  - Story: real-life happening, then the lesson
+  - Success Stories: share a student story + your reaction, which builds buying desire
+- Who's On Your List Anyway?
+  - Different Strokes For Different Folks
+    - Analytic types: numbers
+    - Fun community types: joking, sharing what you do in real life, etc.
+    - Helpers: share examples of you helping others
+    - Leaders: they like big numbers and big challenges
+  - Different Learning Modalities
+    - Kinesthetic: need to do to learn
+    - Audio: need to hear to learn
+    - Visual: need to see to learn
+    - Text: read and think about it to learn
+- How To Recruit With Emails
+  - The Myron story: the 24-hour voicemail line
+- Who You Need To Be
+  - Attractive: the best you possible (slightly exaggerated)
+  - Don't be scared to share the dirty truth: what they're scared to share
+  - Create an us-vs-them feeling
+  - It's fine to be self-deprecating
+  - Don't ever be boring
+  - Entertain above all else
+  - Your own unique and highly rigid success philosophy
+- How To Keep Their Attention
+  - Creating almost god-like authority: enter their mind and predict the outcome of any decision.
+  - The Build-Up: tell a story to a critical point, then pull back... (loops)
+  - The Comic Book Opening: last time we did X, this time we're doing XYZ, but first let's start... (future pacing)
+- Advanced Stuff: Email-Only Product Launches
+  - Launch: we need parameters. Create an early-bird list opt-in page.
+  - Introduction Email
+    - Have you imagined > Who wants to know > Why X > Why X now > What you're going to learn > Who I am > Lead to the story...
+  - Story: episodes, then lessons
+  - Content: Lesson #1... > Lesson #2... > etc.
+  - Webinar Sales: kill it live, close them down, record the event and get them to the replay.
+  - Sales Video: follow the close component of the Sales Presentations module via individual emails.

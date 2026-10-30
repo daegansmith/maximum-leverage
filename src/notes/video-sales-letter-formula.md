@@ -1,0 +1,21 @@
+# Video Sales Letter Formula
+@ My notes, plus Michael Cage
+- USP Q&A
+  - 20 words or less.
+  - Good phrases to use: "little known," "without resistance."
+  - Use tactile and visual words.
+  - Alliteration, like "garbage to gold."
+  - People love to be surveyed.
+- Michael Cage: How To Create A Teleseminar Or Webinar That Sells
+  - Content Type
+    - What NOT to do.
+    - Then the danger of what NOT doing what you prescribe will lead to.
+    - Why all the experts are wrong.
+    - Insider secrets: "what the best are doing, but not telling how..."
+  - Put ideas on index cards that can sell, or can handle objections.
+  - Cover the story of why you're doing what you're doing.
+    - Use it to tap into a REAL gutter emotion (others getting rich and I'm not getting anything).
+    - If you tap into a negative emotion, you've got to offer them hope.
+  - Closing Bonuses
+    - Before we close tonight, you get A.
+    - If you're one of the first X number, you get B.

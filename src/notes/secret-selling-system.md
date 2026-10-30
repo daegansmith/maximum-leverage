@@ -1,0 +1,154 @@
+# Secret Selling System
+@ My notes from Perry Belcher
+- What Causes Sales To Drop?
+  - Bought Something Similar
+    - They either already have it, or what they tried didn't work, so why would yours?
+  - No Ambition
+    - People have no ambition, but we ALL have desire. Desire as a marketplace is about 50 times larger than ambition, so that's where to sell.
+    - Why don't people have ambition? They fear failure.
+  - No Faith
+    - People don't believe it's attainable by them. They don't take action because they fear the loss of the dream more than they have faith it can happen.
+  - They Feel You Don't Understand Them
+    - And for the most part we don't. If that happens, it repels them.
+  - Belief
+    - They don't believe in themselves, so they don't think they can do it, AND they don't believe you. It's a double negative.
+    - We all tend to believe the first positive external reinforcement for a positive result. "Because I created a product, that's why I succeeded." But is it really? Probably not...
+    - How many things do your prospects have to believe in order to buy what you sell?
+      - The less they have to believe, the more you will sell. More than 3 things to create a belief around and the offer will most likely fail. Keep each offer to one belief.
+- Don't Sell To Pain
+  - Once you cure the ailment, they stop coming back.
+  - The money is in the "come back." How do you build a business where they MUST keep coming back to win? Make it like selling crack.
+- Don't Sell Strategy
+  - The masses can't deal with strategy. It's like calling them dumb. Sell opportunity, OR something you can do for them.
+- Where We Find MOST Buyers
+  - At a critical point.
+  - "Bolt-on business." No pain of disconnect.
+- BIG Ideas
+  - Always create the FUNNEL and the OFFER before the product.
+  - Most people are going to say no, so your job is to get them to say it as quickly as possible.
+  - If they're already successful or have the desired end, the purchase is driven by the search for "greener pastures."
+  - What we SHOULD be doing: replace the things that aren't working. STOP thinking about making the things that aren't working better.
+- What To Sell: New Opportunity Is Exciting!
+  - They just want the opportunity. They don't care how it works, they just want to win. Don't waste time.
+  - Sell away from the cure, away from pain, away from improvement. These are bad businesses.
+  - Exclusive, new, and limited.
+  - No risk in status: they don't lose status if they mess up.
+  - The best opportunities don't require a breakup. They can keep doing what they're doing and just add it.
+  - Write copy away from fear. Whoever they hate, rub it in to their enemies.
+  - Having a passion or purpose element is ideal.
+  - Don't look for new ideas, look for new opportunities.
+- Be Their Hero
+  - People are bored and need a hero.
+  - If you're not more exciting than them, they're not going to buy from you. They'll buy from the person who is.
+  - To be a hero...
+    - You've got to have an interesting evolution story, parables, principles, flaws, a special language. Be a little weird, be exceptional, have a dogma, be approachable. Be like "House" or "Dexter."
+    - Create a LIST of this stuff and use it all the time.
+  - People are ONLY moved by status.
+    - Make sure they don't feel stupid if they make a purchase from me.
+    - Make sure they don't look stupid if they make a purchase from me.
+    - Make sure they know they will not feel personal failure after purchase, so they don't feel like they might try and fail.
+- People Need A Buddha
+  - Why do people like Buddhas? It feels good to surrender.
+  - The more you tell them about how something works, the less you will make. Just show results like a mother fucker.
+  - Show results, talk about the benefits and the rise in their status, and you will sell a SHIT ton.
+- Casting A Wide Net vs. Not
+  - Casting a wide net lets you win long term. Get the MOST buyers in and you'll end up with the most of the best, "ambitious" customers to really work with on the BEST offer.
+  - Strategy: Free + Shipping > Invisible Funnel > OTO (get the MOST customers in)
+    - Bribe > Tripwire > Main Offer > Profit Maximizer
+  - "Cheese" and whiskers: a mouse will eat through any wall to get cheese, but will run at the slightest flicker of a cat's whisker. Lead with cheese.
+  - "Do you do X? How many could you do this year? Could you do more than Y per week?"
+  - Automation is more important than marketing. That's what they really want.
+    - Make your lead magnet all about "tricks" or cool stuff. That's what they REALLY want up front.
+    - No 14-day mini courses. Just one cool badass thing, and on the second page ask for all kinds of info.
+- The Funnel
+  - Start with an opt-in (micro commitment), then a Free + Shipping or $7 offer, then the Invisible Funnel or main offer ($97), then a 3x OTO "speed & automate" (with upsells and downsells), then the new continuity offer (bucket offer: join X and get all this...).
+  - If they only buy $7, sell them more $7 stuff to bring them through the funnel.
+  - Group those who go through your funnel by actions and speak to them accordingly:
+    - Did the credit card decline? If it declines, have someone pick up the phone and call them immediately.
+    - Hit the order form or not...
+    - Only bought X, etc.
+  - After purchase, let your buyers self-select where they want to go next. Don't force them anywhere. Keep them happy and around.
+  - The person who has the most money to acquire a customer wins.
+- The Value Of Buyers Test: The Tripwire
+  - 350,000 people on their list with 120,000 buyers. They CRUSH it. Don't sell the tripwire, simply offer it.
+  - Perry sent a $7 offer twice a week to a 110k list, and at the end of month #1 had created 10k customers.
+    - The next month they launched a $40 product and made $200k, half the sales from previous buyers and half from non-buyers.
+    - Result: Buyers are worth 10x to 20x what your best subscriber is worth.
+    - Insight: I need to start doing Invisible Funnels at least weekly again.
+  - If you send 1,000 people through a funnel, maybe 1% will buy at $47. But with a tripwire, 12% buy the $7 or free + shipping offer, and then 4% (a third of those buyers) will buy a $47/$97 offer.
+    - The key: the upsell opportunities are magnified dramatically with the tripwire offer.
+  - With the $7 offer they get a free class. They take a test to see if they did decently, then jump on the webinar to interpret the results. If they all bought within 24 hours (the $7 report), the close rate on the offer goes WAY up.
+  - Make the $7 a "trick," a "loophole," or a "tactic," never the whole product.
+  - 20% of front-end buyers will buy something desired at 3x the price. 20% of them will buy something at 10x, and 20% of them will buy something much, much higher in price.
+    - Example: $9.95 videos, $97 course, $497 university.
+      - Improvement: better would be stepping up to $37, then $297, then selling a day with... for $10k. They'd get $25 a buyer on the $7.
+      - Big Idea: most competitors sell at regular price on the front end. They'll miss out on a ton of great customers, and you'll be able to spend WAY more than they can to get a new customer.
+  - The best tripwire offers are ridiculous offers: 100 leads for $1.
+  - Congruency Tip: make the headline on the lead capture page exactly the same as the headline on the tripwire offer.
+  - Speaking Tip: have attendees buy a rough draft of something you're creating, cheap ($10), and give the money to charity. Tell them you need help correcting it before putting it out in the market, and the person who finds the MOST errors wins $1k. Make it congruent with the main offer you'll make the next day and you'll crush it.
+- The Offer
+  - TEST: a 3-2-1 countdown before the offer in a sales video gives a slight bump.
+  - Make claims believable, but super intriguing...
+    - Make it irresistible, and then go even further.
+    - "How to make $3 a day from a site you build in 5 minutes in one click of a button."
+    - Then in the second half of the headline, "even if..." (so you get rid of the objections immediately).
+    - "How To" control headline, then test others against it.
+      - "How to get her to wake up at 3:13am to wake you up for sex..."
+  - A pre-head grabber adds to the headline's believability.
+  - The subhead answers how without giving it all away.
+  - Use some form of third-party credibility after the headline (example: after the opt-in, 60 Minutes confirming his predictions).
+  - If you're going to go negative, back the ambulance up to the door. In other words, you've got to go ALL the way negative.
+  - TIP: Write the letter the way it will sell, then edit to reality.
+  - Make each paragraph short so they keep reading.
+  - Three Questions: "Do you ever...?" The answer must be yes to keep them reading.
+  - The Blackie Story: you telling the story about someone else telling the story about someone else.
+    - Why are they so much more powerful than regular stories? They're immune to judgment.
+  - Admit initial failures and shameful admissions, and make them way larger than theirs were (it makes you real). Then when you create real success, it's because of a breakthrough.
+    - The breakthrough is X steps or a system that you now follow, and it always works. But don't tell them what the thing is. Skip the "secret" and go right past it to what happens next...
+  - When you offer the product, make the "thing" the last thing you give them.
+  - Share the moment you stepped out on your own.
+- The Enemies
+  - Show them the enemy, use an analogy, and rub salt in the wound. What do they think is being kept from them, who do they think is to blame for that, and what have they lost because of it?
+  - Who is the enemy? The person, people, system, group, or society they believe is against them.
+  - There's a lot they're up against: "There's a lot you don't know..."
+  - The more you defy authority, the more you'll be seen as a rebel, and the more people will be attracted to you.
+  - If you can start a movement, everything changes...
+- Best Sales Letter Ever...
+  - The Scientology pitch: "You have two choices... You could get up and leave. That would be stupid, but you can do it."
+  - Matt Bacak: why Matt closes like a banshee. The middle of the message doesn't matter.
+    - How people read sales letters: headline, bottom, offer, price, then they read from the bottom up. They're looking for a reason NOT to buy.
+    - Matt Bacak never gives people a reason NOT to buy, as long as you don't make any outrageous claims or anything incongruent with the letter.
+      - He just talks about a bunch of bullshit in the middle, then asks, "Do you want to know how I do X?" Then he goes into what the offer is NOT...
+- More
+  - What They're Buying First: in information marketing, the first thing they're buying from you is your philosophy. After that, they're buying the tactics, tools, etc.
+  - Email Sequence: write the email sequence in one sitting so it's incredibly congruent with the offer, and all loops are concise and included.
+  - Tripwire reports are WHAT to do, not HOW. Then they get invited to a "free" webinar showing them how to do it.
+  - Didn't know: you can ALWAYS do PPC for software, so create a software front end.
+  - Have them sign up for the webinar and then immediately make the offer you would make on the webinar. You'll close 20% of the buyers before the webinar even starts.
+  - Simple beats easy most of the time when tested.
+- How To Write Bullets
+  - Loop: Feature > Blind > Desire... Feature > Blind > Desire (Gain > Logic > Fear > Curiosity)
+  - Discount staircases do work. "The first 500, I'm going to... Then the next 500, I'm going to..."
+  - "The fear of loss is always greater than the desire to succeed."
+    - At the beginning of the sale there's always the desire to succeed, but at the end there's the fear of missing out, and that's MUCH stronger.
+  - The BEST offers: they have to feel like an idiot NOT to buy. That's a damn good offer.
+  - Guaranteed no loss of status, no risk at all. But more, they HAVE to FEEL that you believe in what you're doing.
+  - Add a phone number, email and address at the bottom of the sales letter and you'll always close more.
+    - Extreme: a UStream of the customer support guy on the order form. Kind of badass.
+- Call To Action
+  - Tell them what to do sternly, like you would a good friend. Treat them like you would a sick child. Be as specific as possible and tell them exactly what to do: "Click the big red button that says Buy Now," etc. Then tell them what's going to happen next.
+- The P.S.'s: What To Say In Each
+  - P.S.: What would you naturally say to them if they pussied out?
+    - The first one needs to be a warning. Tell them how bad their life is going to be if they don't take action. What would their enemies say about them? "You're doing just what Obama would want you to do..."
+  - P.P.S.: Assume they've said no. It's a second appeal.
+    - It's all about pain and procrastination. "You need to do this. You know you're not going to come back, and you're procrastinating because you don't think you're worth it or you're too scared. If you can't do it for yourself, then do it for your family..."
+    - Use "the definition of insanity," then remind them they deserve better than their current situation. "I want you to have the life..."
+    - Then do a second call to action, sternly. "Go here and make this happen now. Don't cheat yourself..."
+  - P.P.P.S.: The reminder.
+    - Recap the entire offer in one or two paragraphs. Recap the promise. Recap the features. Recap the proof. Recap the value. Recap the guarantee. Recap the scarcity. Draw the line.
+  - Don't fear offending them. They're leaving and they're never coming back. Go hard, son.
+- Now Review
+  - The I/You Test: more you's than I's is better.
+  - The Subhead Test (not easy): every subhead should work as a freestanding classified ad, a full thought in and of itself. Imagine running each one as a standalone classified ad.
+  - Readability Test: Flesch-Kincaid. You want a 4th to 6th grade reading level.
+  - The "Why" Test: look at every statement you made (there shouldn't be many). If there's a statement, there MUST be a reason why.

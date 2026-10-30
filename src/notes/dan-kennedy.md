@@ -1,0 +1,91 @@
+# Dan Kennedy
+@ My notes from Dan Kennedy
+- Story, Offer, Reverse Selling
+  - This business is cart before horse.
+  - "I can only tell you my way. There are more ways to be right."
+  - Establish authority. Get control over the next 2 days.
+  - "If you buy now, you lock in your partner price at 10%."
+- Coaching
+  - Dollars for time: coaching for an hourly fee. That's not a business. That's a job.
+    - No leverage. No multiplier.
+  - Show people ladders. You always want to be able to show people ladders to climb.
+  - Success in the coaching business has more to do with what's in your head than anything else.
+    - Your attitudes about yourself... your cojones.
+  - What people really want to buy is certainty.
+    - When selling coaching, people want certainty. Your income in coaching is in direct proportion to how much certainty you have.
+  - 80/15/5: In coaching or courses, everybody will divide themselves:
+    - 80% won't do anything.
+    - 15% will make an attempt.
+    - 5% will get results.
+- "No movement is ever started without a devil." - Dan Kennedy
+  - 100% of children were scared of the boogeyman under the bed. It's in their DNA.
+  - Us vs. them.
+    - You need to find out who "them" is for your market.
+- The Power Of The Decoy
+  - The $200 bread machine.
+    - Bread machines were new and sold for $200 in magazines. NOBODY was buying them.
+    - There isn't a need for bread machines. Bread is super cheap at the store.
+    - One day a guy recommended putting a $400 bread machine RIGHT NEXT to the $200 one that wasn't selling at all.
+    - The results? Sales of the $200 bread machine SKYROCKETED.
+  - The thought process
+    - Before, with only the $200 bread machine advertised: "What in the world do I need a bread maker for?"
+    - After, with the $400 decoy: "I don't need a $400 bread machine... I can make do just fine with this $200 one."
+- The Power Of New
+  - Getting a new car. For a while all you want is a new Jaguar. You think about it for months.
+  - Then when you get it, you start noticing things you didn't know before...
+    - The cup holder is on the wrong side.
+    - It makes a humming sound.
+    - It doesn't ride as smooth as your Chevy.
+  - No matter who you are, you get used to what you have and are always looking for the "new thing."
+    - Also known as the "hedonic treadmill."
+- Mind Hijack 37: Comparative/Positional Status
+  - "Nobody is into self-improvement. They are into self-improvement in comparison to other people." - Dan Kennedy
+  - Tips: when restaurants went to a no-tip policy, revenue plummeted.
+    - All of the good wait staff left.
+    - There was no chart in the back office showing the leaderboard. Sales rooms need a leaderboard.
+  - What converts better?
+    - "Lose 10-20 pounds... summer is almost here."
+    - "Lose more weight than your friends... summer is almost here." Converted 3.1x better.
+  - When Weight Watchers stopped doing weigh-ins, people fell away in droves. Everybody wanted to outdo everybody else during the weigh-ins.
+- Sunk Cost
+  - 1 horse vs. 23 horses.
+    - If somebody offered a $50,000 machine that helps work out the horses, when Dan had 1 horse he'd say no thank you.
+    - 23 horses later, he wouldn't even ask the cost. He'd say, "Get it off the truck."
+  - You want to leverage sunk cost when you can.
+- Optimistic Bias
+  - When people think success COULD be around the corner, they stick around.
+  - MLMs: when they put people in the downline, they wouldn't quit the subscription in case something happened.
+  - Leverage sunk cost and optimistic bias with their preexisting investment.
+- 43: Urgency And Loss
+  - People are always more reluctant to suffer a loss than they are motivated by a gain.
+  - The parent who keeps threatening and doesn't do anything.
+- Encouraged Assumption
+  - The red umbrella: in a study, somebody started walking down the street with a red umbrella.
+    - "He must know something I don't know."
+    - People went back to their cars to get umbrellas. They started checking the weather or asking about the weather.
+  - P.T. Barnum hired somebody just to walk around putting down bricks that led to his show. His shows always sold out from then on.
+  - Glasses art: a group of art students put glasses on the floor of an art gallery to see what would happen. It became the most viewed exhibit.
+  - They haven't gotten smarter.
+    - Instant assumption. People make assumptions all the time.
+- Authority
+  - The Penn & Teller water episode.
+    - A fake waiter (a "water specialist") kept bringing different waters with different names. ALL TAP WATER.
+    - People kept preferring different ones because they were fancy.
+    - Because it was a fancy waiter making recommendations, they believed it to be high-caliber water.
+  - Chiropractors: when they put them in doctor outfits, their closing rate on prepays went up.
+- Mind Hack: Fake The First Sale
+  - Encyclopedia salesmen: fake the first sale, and the odds of a second sale went up 20 times.
+    - When encyclopedia companies were training door-to-door salesmen, turnover was super high.
+    - They hired a young couple to pretend to buy encyclopedias. All new salesmen went there first, not knowing they were actors hired by the company.
+    - The couple always bought the encyclopedias, and the company always paid them.
+    - They found that if a salesman made 1 sale, the odds of a second sale went up 20 times.
+    - So the company faked the sale and ate the costs just so the salesmen would feel like they were on the right track and push on.
+  - The vacuum "audition" to family, then on the phone with the supervisor.
+    - When employees were being trained, they had to "practice" with friends and family members. 4 meetings.
+    - The employees asked friends and family to sit in for a practice session, then call the supervisor to say how their friend did.
+    - The supervisor used that time to actually pitch and close them on buying vacuums.
+- 2 Types Of People
+  - 1. People ready to buy now.
+  - 2. People who are almost ready.
+  - You can't make a fortune in any market with only the people who are ready to buy now. There aren't enough of them. The sooner you realize this, the better.
+  - You can make a living on the buy-nows. You can make a fortune on the buy-laters.

@@ -1,0 +1,168 @@
+# Hidden Obstacles
+@ My notes from Rich Schefren
+## Outcome
+- Define a clear path of thinking through and digesting new information that I am studying and to create a procedure and campaign based on that methodology.
+## Accurate Thinking
+- What are you pretending NOT to notice?
+  - That's exactly what's killing you.
+- Clean Thinking: Getting Rid Of Damaging False Beliefs
+  - Beliefs are either helping or hindering us.
+  - All it takes is one toxic belief to destroy your future.
+  - Once a belief is accepted, often they are never questioned and then they simply stick around.
+  - Over time we tend to believe our beliefs as facts.
+  - Therefore, it's vital to your success that you both be aware of and in control of your beliefs.
+- False Belief One: Your Current Life Isn't Your Real Life
+  - What is now is your life. There is only now. Believing that your current circumstances do not represent the truth is completely wrong.
+- False Belief Two: Fixating On Outcomes
+  - Focusing on the outcome only removes the process and leaves you victim to perfectionism, procrastination, paralysis, and pessimism.
+  - Our business life is about what we do on the way to our goals.
+  - TRUTH: Success is much simpler when you enjoy the process.
+- False Belief Three: More… More… More…
+  - Trying to do or learn everything will destroy you online in a world of infinite options.
+  - More is NOT better.
+  - TRUTH: Less is more because of focus, output, and effectiveness.
+- False Belief Four: No Limits
+  - Believing that you're at your best when there are no limits will destroy you.
+  - Where this affects you…
+    - Time: Reduce hours.
+    - Ideas: Don't act on them. Simply list them and then go back to them and only pull the best of them over time.
+    - Vulnerability: If you feel a psychological payoff for simply sharing your ideas it robs you of the power to take action on them.
+      - NEVER share your ideas. Use them.
+  - More time does not mean more productivity.
+  - Being limitless is being weak.
+  - TRUTH: Placing limits on your time and resources creates the proper self-imposed pressure for optimal productivity.
+  - Question: Where do you need limits now?
+  - Example: A client who worked too many hours. Rich cut his hours and it immediately increased his productivity and bottom line.
+  - TRUTH: By embracing limits, you'll get more focused, more powerful, and get much greater results.
+- Getting Rid Of Toxic Beliefs
+  - Identifying your toxic beliefs
+    - They are the ideas that are decreasing your chance of doing what's right.
+      - Excuses
+      - Self-destructive behaviors
+      - Negative habits
+    - The next time you don't take an action that you know you should have, you have just identified a toxic belief to destroy.
+  - How to unearth toxic beliefs
+    - Ask "Why?" (Why do I take this action?)
+    - Then ask "Why?" again to that answer.
+    - Finally ask "What would I have to believe for this (excuse, behavior, habit) to make sense?"
+  - How to dispute a toxic belief: use several questions from each category below.
+    - Functional dispute: does this belief help or hinder you?
+      - Does this belief help me or make things worse?
+      - If this belief were true, what other beliefs would be rational? Would any of those help me achieve my goals any faster or easier?
+      - If I displayed all of the behaviors consistent with this belief, would I get closer or further away from my goal?
+      - Do the successful people I know firsthand behave in a way that is aligned with this belief?
+    - Empirical dispute: question whether the facts are accurate.
+      - What evidence am I aware of that contradicts this belief?
+      - Is this belief always true? When isn't it true?
+      - Would everyone I know agree with this belief?
+      - What evidence do I have that this belief is true?
+    - Logical dispute: question the logic of your thinking.
+      - In what ways does this belief not ring true with common sense?
+      - In what ways does this belief not logically follow the proof I have?
+      - What counterexamples do I have that this belief is NOT true?
+  - How to develop new, empowering beliefs
+    - State the behavior you want your new belief to support.
+    - List all the reasons you think this new behavior would support you.
+    - Formulate your new belief based on your best reasons.
+    - Turn it into a mantra or a slogan.
+    - Out-think your old belief.
+      - Use pre-decisions in the format "If… then…" or "When… I'll…" for the situations where the old toxic belief will surface, and describe how you will react differently.
+    - Sell yourself on your new belief.
+      - Imagine how much better your life will be with your new belief.
+      - Make that future as real as humanly possible.
+  - Where to stand guard against new toxic false beliefs
+    - Entertain with extreme skepticism any…
+      - Misleading information from others
+      - Wishful thinking
+      - Jumping to conclusions
+- Focused Thinking: This is the ROOT CAUSE of where we go wrong
+  - To go from fuzzy to focused thinking you NEED TO KNOW…
+    - Exactly what you want from your business.
+    - The minimum necessary to have it.
+    - The fastest and easiest way to get it.
+  - You need complete outcome clarity.
+    - What exactly do you want? You MUST KNOW what your success looks like, or you will confuse activity with accomplishment.
+    - What's the minimum necessary to have it?
+    - What's the fastest and easiest way to get it?
+- Correct Thinking: Adjust Your Success Map
+  - Realize that success is all the little easy things that are also easy to choose to do or not to do. What makes successful marketers successful is they do those easy things that are easy not to do. You MUST do them.
+  - Success is invisible in the moment. It's the progressive realization of a worthy goal. You won't see it on a daily basis, but it will emerge over time.
+  - You can't stop too soon or you will fall short.
+## Optimal Thinking
+- The Art of Journaling
+  - If there is one habit that will improve your thinking more than any other, it is this.
+  - Journaling improves…
+    - Overall thinking: you will simply think more.
+    - Critical thinking: how to solve problems.
+      - Define a problem
+      - Determine the cause
+      - Brainstorm solutions
+      - Choose the best option
+      - Create an action plan
+      - Work from the position of highest leverage, to solve the problem, whatever it is, forever.
+    - Reflective thinking: naturally slip into reflecting on life.
+    - Creative thinking: explore things you'd never explore anywhere else.
+      - SCAMPER (substitute, combine, adapt, modify, put to other use, eliminate, rearrange): apply it to ideas or issues to find novel breakthroughs.
+    - Spotting patterns
+      - We all act habitually, and the habits of your thought are easy to see when you review your journal.
+      - Keep a record of excuses.
+    - Accountability
+      - Record your goals and hold yourself accountable to them, throughout the day, to stay on objective.
+      - Grade yourself on your overall productivity for the day.
+      - Track weekly goals.
+      - Track long-term goals.
+    - Getting in touch with feelings
+      - They will simply surface, and this emotional awareness can translate directly into more business success (what is most personal is most universal).
+- Record & Explore Ideas
+  - When new ideas come up, simply jot them down in your journal, and then when there's nothing else to do, explore them.
+- Sentence Stems
+  - Use partially completed sentences that contain the outcome desired and leave blank the method for achievement.
+  - Examples
+    - "I'd be more productive today if I…"
+    - "I could conquer procrastination if I…"
+    - "Eating healthier would be easier if I…"
+  - Process
+    - Start with a sentence stem for a problem you want to solve or a goal you want to achieve.
+    - Every day for a week (or two, for maximum effect) write six to ten different endings.
+    - At the end of the week, review your answers and select the best and get rid of the rest. For the answers that are immediately actionable, prioritize and go; for the answers that need more developing, use them as the next series of sentence stems.
+  - Rules
+    - Write your endings as quickly as possible. Write the first thing that comes to mind.
+    - Strive to make each answer unique.
+    - Do not look at previous answers.
+    - Do this exercise first thing in the morning.
+  - Benefit: This will help you tap into your subconscious mind and bring important priorities to your conscious mind.
+- Record Excuses
+  - The words that let you stay inside your comfort zone.
+  - These are the exact words keeping you from the goals you truly desire.
+  - You will notice their pattern over time.
+- Micro Goals & Accountability (this creates a productivity spike)
+  - One-paragraph journal entries recording what you got done in the last hour and what you plan to do in the next hour.
+- Collect Questions (priceless)
+  - Start asking yourself better questions and you'll immediately improve your quality of thinking, so keep a list of all your best questions and ask them often in your journal.
+- Grade Performance
+  - Issue yourself a performance grade for each area of your life daily to keep yourself on track.
+- Express Gratitude
+  - Simply start a habit of expressing gratitude for three things each day and watch what happens in your life.
+- Keep Goals Top Priority
+  - Write your top 10 goals from memory at the beginning of each session to keep your mind focused on them.
+- Track Weekly Goals: The Weekly 20 Questions
+  - What did I learn last week?
+  - What was my greatest accomplishment over the past week?
+  - Which moment from the last week was the most memorable, and why?
+  - What's the one thing I need to accomplish this week?
+  - What can I do right now to make this week less stressful?
+  - What have I struggled with in the past that might also affect this week?
+  - What was last week's biggest time sink?
+  - Am I carrying any baggage into this week that can be dropped?
+  - What have I been avoiding that I need to get done?
+  - What opportunities are still on the table?
+  - Is there anyone I've been meaning to talk to?
+  - Is there anyone who deserves a big thank you?
+  - How can I help someone else this coming week?
+  - What are my top 3 goals for the next 3 years?
+  - Have any of my recent actions moved me closer to my goals?
+  - What's the next step for each goal?
+  - What am I looking forward to in the upcoming week?
+  - What are my fears?
+  - What am I most grateful for?
+  - If I knew I only had one week to live, who would I spend time with?

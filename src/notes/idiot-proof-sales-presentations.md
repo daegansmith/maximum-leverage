@@ -1,0 +1,59 @@
+# Idiot Proof Sales Presentations
+@ My notes
+- Ground Rules
+  - 80% of the presentation is your story.
+  - Get the audience to interact (choice).
+  - You've got to have an irresistible offer.
+  - Everything should be couched in stories.
+  - Tip: Interview some of your audience prior to the event.
+- The Flow
+  - Create Credibility: Use A Video
+  - Get People Into An Imaginative State
+    - "Have you ever imagined...?" (3 dream scenarios)
+  - Get Them To Say Yes
+    - "Who here wants to learn...?" (x3)
+  - Why X?
+    - List the reasons why... (7)
+  - Why X NOW?
+    - List the reasons why X NOW. (7)
+  - Here's What You're About To Discover
+    - List all the big points you're going to cover...
+    - List what they're going to discover. (7)
+  - Your Credibility
+    - List all your awards and credentials, and why people should listen.
+- Your Story
+  - Think in terms of episodes.
+  - Remember, it's who, not what.
+  - Multidimensional emotions.
+  - Pole to pole.
+  - Each episode ends with a lesson.
+- Content
+  - Formats
+    - 3 Steps To X...
+    - 4 Biggest Mistakes Y Make...
+  - Example: 4 Steps To Massive Traffic
+    - 1. Create the product
+      - A. Find a big problem
+      - B. Solve the big problem
+      - C. Create an irresistible offer
+      - D. Create the product
+    - 2. Test it
+    - 3. Build a high-profit funnel
+    - 4. Roll out big
+  - End each step with two things if you can
+    - 1. Tell a story about how this part of the process was huge for you.
+    - 2. A third-party case study.
+  - Other People Are Struggling With...
+    - List the devastating problems others face. (7)
+- The Offer
+  - Main Components (the more the better)
+    - Explain, build the value, then get agreement.
+  - Total offer value is 8 to 11x the price we want to set.
+  - Total core value build, then:
+    - "If all this did was..., would it be worth (big number value)?" (x3)
+  - Price drop + reason why
+  - "And if you decide to commit to your future today..."
+    - You also get: fast action bonus (X number)
+  - Final total value
+    - "If all this did was..., would it be worth (big number value)?" (x3)
+  - "What if I could make this free?"

@@ -1,0 +1,202 @@
+# Forbidden Keys To Persuasion
+@ My notes from Blair Warren
+- Foundation: The Painful Truth
+  - To achieve our ulterior motive, take them from helpless to hopeful in support of a worthy cause that also benefits others and promises them ultimate salvation.
+    - "The degree to which you will awaken will be in direct proportion to how much of the truth you can accept about yourself." - Dr. Robert Anthony
+  - Truth: We all have ulterior motives, we hide them constantly, and we manipulate others to get what we want. Because few accept this, they are ineffective communicators.
+  - Truth: Our biggest impediment to understanding and influencing human behavior is our sense of morality. It unconsciously filters our perception of others and alters the way we interact with them.
+- Lesson One: The Truth About Honesty, Resistance, And Getting Attention
+  - When we don't judge people, and we entertain the idea that people's actions make sense given their own interpretation of reality and sense of morality, we go a long way towards understanding them.
+    - We have to show that all their crazy actions are not crazy and are not their fault, given the world they were put in and their high moral objective. We understand them and can now lighten their load substantially.
+  - We despise those who are dishonest and then bow to their hidden desires. Ultimately we don't want honesty (even though we think we do); we want something else entirely.
+  - Most of us resist things that are in our best interest when asked directly, yet cult leaders get highly intelligent people to give up everything. People resist unwelcome attempts to persuade them, but why?
+    - They know how to overcome resistance.
+      - Tendency #1: People resist unwelcome attempts to persuade them.
+        - Tendency #2: People can't resist what they can't detect. Remove the resistance.
+          - NOTE: Ask if I or others can feel resistance at any point in my report or sales video, and disarm it.
+  - People sometimes believe what they are told, but never doubt what they conclude.
+    - If I can have them arrive at the conclusion themselves without my telling them, they will enthusiastically adopt the ideas as their own. I need my content to "do" this: have them conclude what I want them to believe.
+      - NOTE: Logical chain of beliefs. Let them conclude each belief for themselves.
+      - Example: Ted Turner picking up a can off the road.
+        - We'll conclude he must be socially conscious without ever being told.
+  - We aren't rational, we are rationalizing.
+    - We make ourselves think we're making decisions when really we're just rationalizing conditioned responses.
+      - This truth is too painful for us to accept, so we don't.
+        - This, plus our denial of our vulnerability and our insistence on honesty, is a recipe for disaster.
+  - It's not necessary to hide ulterior motives. Just de-emphasize them and we're fine.
+  - People have a desperate need for mental engagement.
+    - To have their attention captured, focused, and intensified. Every minute of every day we want to be engaged in something. We can't endure boredom.
+  - We never know what grabs our attention until it is released.
+    - This is why fully engaging the other person's mind is so valuable.
+      - Key Leverage: They can't detect it, and we are physically attracted to it.
+  - Step #1 Of Persuasion: Get Their Attention And Turn Up The Volume
+    - "What holds attention determines action." - William James
+      - The Power Of The Counterintuitive
+        - We are extremely susceptible to suggestion once we've identified an incongruity and seek to resolve it.
+          - IMPORTANT: We will likely accept the first answer that seems to resolve it, even if it's given by the person who created the incongruity.
+          - Counterintuitive Content: Incongruence ALWAYS creates attention.
+            - Incongruence always creates attention.
+            - Resolving incongruity makes us feel alive and good, so we are drawn to it.
+          - Example
+            - How do some people convince others to do things against their self-interest, while others struggle to get people to do what would clearly be in their own best interest?
+      - The Strategy Of Continual Contrasts Within Stories
+        - "What Is" vs. "What Could Be"
+          - Create contrast between what is and what could be, then use questions to expose the gap and the incongruence.
+          - Keep them thinking down my path, ultimately let them conclude the new insights, then let that insight lead into the next situation of contrast. Rinse and repeat.
+- Lesson Two: Hidden Addictions
+  - We all have hidden addictions that, given the chance to be met, derail us no matter how high our morals or discipline, and move us in the direction of fulfillment.
+    - "Our real appetites are our appetites, fears, and above all our vanity." - Eric Hoffer
+      - "People will do anything for someone who has more certainty, less fear, more energy, and can see a bigger future for them than they can see for themselves." - Me
+      - FLOW: It's Fucking Bad Ass...
+        - What's going to be covered...
+          - A question about the concept of hidden addictions and persuasion.
+          - Set the frame through false assumptions and common-ground family experiences.
+            - How those who know us best can persuade us.
+              - Displaying the effects of our hidden addictions in the place where we know it: family.
+                - Sharing reality to reveal incongruity.
+          - A question to expose the incongruity.
+            - The idea that some people can do this without having special relationships with us over long periods of time.
+              - Why does this happen?
+          - The power of hidden addictions.
+          - Loop to what is going to be covered (what they are).
+          - Proceeds to discuss desires (the underlying cause of these addictions) and how we can identify them.
+          - Question: what's the best way to find them out?
+          - A series of potential answers.
+          - None of them is the right answer, so you have to keep reading to discover how to find them.
+            - Stories are woven throughout.
+          - Finally the conclusion is made and simplified.
+          - What are the hidden addictions?
+            - Listed but not revealed.
+          - Stories to demonstrate them.
+          - Then a simplified explanation and summary of what they are.
+          - Loops are woven throughout the content to other parts of the chapter and to other chapters.
+          - How do we use them?
+          - Wrap-up. Homework.
+  - What do people want?
+    - Just look at TV. They want betrayal, tragedy, sexual exposés, and disasters.
+      - None of us has any real idea what we want below our conscious awareness.
+  - Addiction #1: People need to feel needed.
+    - Make them feel needed because they are special, not because we're desperate.
+      - Explain the whole situation. What's at stake? What's the dilemma?
+        - Emphasize the specific role the person plays in the situation.
+          - Emphasize the importance of the role. It MUST seem highly significant (it's like being needed and has the same effect). This is what Ryan Angelo does without knowing it.
+          - Point out how the person is uniquely qualified for the role. Illustrate that the person is memorable (sharing the story and how the path they've followed is like mine).
+          - Openly acknowledge that the request will require a sacrifice on their part.
+          - Ask if you can count on them for help.
+  - Addiction #2: In desperate times, people will do anything for a sense of hope.
+    - HOW: Turn up the pain as high as possible, then show them a new way out they've never seen before. Now they see it, and it's easier and better than anything they had previously attempted.
+  - Addiction #3: People need a scapegoat.
+    - They need you to help them find an external cause for their problems.
+      - HOW: Set their attention on the cause of their problem and make it external. Then make it completely not their fault.
+  - Addiction #4: They need to feel noticed and understood.
+    - Echoing their thoughts back to them creates the feeling that others think like they do, so they feel validated.
+      - A natural attraction develops.
+        - HOW: Offer acceptance ("it's not your fault") and understanding ("and you've been through so much"). No one knows what it's like to stay up all night going through X. It's not your fault it didn't work, and you should be commended. The Crystallization Process.
+  - Addiction #5: Tell them compelling, juicy secrets.
+    - People need to know things that others don't, or that others are not supposed to know.
+      - Secrets are compelling if you can share why they don't know them and there is a source to blame.
+      - HOW: Create incongruities, then resolve them with counterintuitive revelations through stories and logical arguments, crystallized into simple statements that make so much sense once you get to them that they seem genius. The epiphany and counterintuitive content.
+  - Addiction #6: People need to be right.
+    - We hate chaos and uncertainty, and being right creates certainty.
+      - If we can confirm their suspicions about why things are not going right, they will be drawn to us.
+      - HOW: Let go of our own desire to be right.
+        - Tell them they're right in all their feelings, that things should be working out differently, that people are telling half-truths, etc.
+          - Method #1, if you must tell them they're wrong: set aside the issue at hand without appearing to do so. "Your point is well taken. I understand your position."
+            - Method #2, if you must tell them they're wrong: create an external scapegoat.
+  - Addiction #7: People need to feel a sense of power.
+    - How do we do this without giving them power? By giving and emphasizing their power over a restricted set of options, and a sense of personal choice.
+      - Emphasize their ultimate power to choose, which no one can take away from them at the crossroads. Then remind them of it, over and over, after they've made that choice.
+        - Example
+          - For those who do choose to go forward, their level of commitment goes up dramatically because they made the choice.
+          - Bringing them to the crossroads, using language like the image I took a shot of.
+  - Appealing to hidden addictions creates a powerful sense of reciprocity once they're satisfied.
+- Lesson Three: The Mechanics Of Cult Mind Control
+  - Isolation
+    - Draw rigid lines between us (good) and them (bad). Once they learn what I know, they can never go back.
+      - Physical Isolation: The more often we can isolate them and get them involved in our cause, the more loyal they will become.
+      - Psychological Isolation: Fostering and maintaining secrets, predicting the future, cultivating shared experience.
+        - Secrets: They can't share them.
+  - Predicting the future
+    - During the process of choosing.
+      - Tell them what will happen tomorrow that's negative, then invite them to go and try ("Go and try any opportunity, and here's what will happen," etc.).
+        - Predict what is going to happen, then frame it to my advantage, and it will change their perception of the situation.
+          - Example
+            - "What's going to happen after you read this report is..."
+      - How others will react once the decision is made.
+        - Once they're involved, tell them how others will react to them, and frame that as proof that others don't understand or care for them as much as we do.
+  - Shared experience
+    - Teaching is secondary to bonding over shared experiences.
+  - Gaslighting
+    - Inducing change subtly without appearing to do so.
+      - The attempt to influence the mental function of an individual so they later doubt their judgments and reality, and more readily submit to the influencer.
+      - Change is difficult. Most people don't want to change, and when change is the main issue, it becomes the least likely thing to occur.
+        - If persuasion is about change, and changing people is almost impossible, how do we overcome this? (A perfect incongruity?)
+      - Make others come to doubt their own thoughts and they will rely on yours.
+        - Repetitive Questions
+          - They make them doubt themselves.
+            - The more certain we are going in, the faster we grow uncertain with this method.
+            - This works because the positions we hold are mostly based on flimsy evidence.
+              - That's OK most of the time, because we're hardly ever questioned.
+            - For this to work most effectively, we want the questions to be non-threatening.
+          - Look for opportunities to pose such questions to people on things they take as rote fact. "Why do you need a sales letter?"...
+  - Point Out The Invisible
+    - When people show us things we don't see, we start to wonder how much else we're missing. Our sense of certainty goes away.
+      - The more invisible truths you can point out, the more their certainty vanishes and the more they rely on you for certainty. Refer to these "problems" as just the tip of the iceberg; the problem goes much deeper. Root cause.
+        - What actions do they take that are incongruent that they don't realize?
+          - They can be good or bad. Point them out.
+  - Allude to the mysterious
+    - What they can't see or don't know yet.
+      - If you're getting into a biz opp, are you prepared for X? Info biz, Y? You'll create authority and trust by doing this.
+        - Example: "Gurus having access to a world others can't see or touch."
+  - Reveal the secret thoughts of others
+    - Others who share our opinion but are too scared to admit it. I'm the only one who cares enough to tell them the truth.
+      - This can be done in a positive manner as well: reveal positive aspects and tell them that others view them this way too.
+  - Gang Up On Them
+    - Use overwhelming social proof.
+      - Establish credibility early.
+        - "Frame for the report."
+- Lesson Four: Psychological Ventriloquism
+  - Controlling The FRAME At ALL Times
+    - "Control the manner in which a person interprets their world and you've gone a long way towards controlling their behavior." - Stanley Milgram
+      - Throwing thoughts into others and making them think the thoughts are their own.
+  - Absolute certainty and mistaken assumptions only coexist after you realize your mistakes.
+    - Before that, there was only absolute certainty.
+      - Once we know something, our thinking and evaluation stop, and our newfound fact begins to alter our attitudes, awareness, reality, emotions, and behaviors.
+      - Invisible false assumptions enter our minds almost instantly and subconsciously.
+        - When we shatter them, it has a powerful effect.
+      - If we set, but don't reveal, the frame for each piece of information in the report, they will make assumptions and take them as fact.
+        - Remember, questioning their assumptions can shatter their certainty, because their beliefs are held on threads, and we can create these threads. This will powerfully affect their behavior.
+      - Leading people to draw conclusions without outright stating them can be very hard to do, so we have to be careful with our words.
+      - We take psychological shortcuts, and with our belief in our own rationality, this creates a society that is not only easy to fool, but believes it can't be.
+  - To Master This Skill, You Need High Awareness Of 3 Things
+    - Self-Restraint: Do not be blunt. Remember to use restraint.
+      - Demonstrating vs. Telling
+        - Proactively ask what the information we're sharing is DOING, not just saying. If it's not doing the right thing, don't say it.
+          - Example
+            - Joe Sugarman using technical information in his letters demonstrates authority.
+          - The Quality Of Information & Resistance To It
+            - You can communicate facts directly.
+            - Communicate opinions indirectly.
+          - Information is more likely to be taken as fact if it works within the belief system and towards the goals of our audience, and it will be taken as opinion if it's against those goals and that mindset.
+      - Trigger for assumption creation
+        - Watch TV and notice the assumptions you make. Why am I responding emotionally?
+- Lesson Five: The God Complex
+  - The Mindset Of Absolute Certainty: The Emotional Context Is Everything
+    - Conviction
+      - "If you believe you have the force of truth on your side, you have the power of ten." - David Seabury, The Art Of Selfishness
+        - To have this power on our side, our message MUST convey a greater meaning and mission.
+          - How does our product or service serve a higher and nobler need than first appears?
+            - Believe with absolute certainty what you say.
+    - Showing Concern
+      - Speak to their hidden addictions and stated concerns, but leave ours completely out of the conversation.
+        - Focus your total attention on them.
+    - Focus
+      - The ability to remain undeterred in the pursuit of your goals.
+        - IMPORTANT: We get trapped in the never-ending quest to gain the goodwill of others.
+    - Playing Games You Can't Lose
+      - "As soon as you give it all up, you can have it all." - Ram Dass
+        - We often define our success so narrowly that we literally guarantee our failure.
+          - Create a situation where, whether you win or lose, you ultimately always win. Remember, everything is JUST a test.
+            - Example: MLM as a game of insiders, outsiders, and undecided.
+- Lesson Six: Context & Persuasion
+  - Coming...

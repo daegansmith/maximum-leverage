@@ -1,0 +1,182 @@
+# High Fee Coaching
+@ My notes
+- You
+  - Reputation
+    - Myth
+      - Must Precede You
+        - Ensure they tell your story often
+          - Tell stories often, tell them to tell stories often, teach them to tell your story
+      - Power
+        - Retain as much power with it as possible
+          - They expect little and are delighted with anything above
+          - They feel extreme obligation
+        - Least chance that it can or will ever be lost
+          - They cannot become your friend
+          - They cannot ever feel like I owe them anything
+    - Persona
+      - Midas Touch
+        - Turns anyone into a multimillionaire in a short period of time
+      - Does NOT Follow Rules
+        - Changes them
+      - Experts Seek Me Out
+        - Rich Schefren
+        - Perry Belcher
+        - Russell Brunson
+        - TJ Rohleder
+      - Genius
+        - Sees what others don't
+      - Innovates
+        - Sees past what is to what is better
+      - Student
+        - Values education
+          - The right education is NOT cheap
+      - Teach To Teach
+        - So they tell your story
+        - So you can tell them that they are NOT your friend
+      - Wise
+        - Teaches through experience
+        - Transparently
+      - Time Insensitive
+        - Might not be there on time
+        - Will not conform to others' expectations of how long something should take
+      - No Fear
+        - Showing you your ignorance
+          - Through the right question
+      - Immune To Criticism
+        - Does not care what you think
+  - Superiority
+    - Immune to criticism
+    - Hold them in disdain
+    - Create an expectation of superiority
+      - Through your myth
+      - Your character
+      - The stories they tell about you
+  - Control Them
+    - EVERYTHING Costs
+      - Ideas
+        - Everything free still must have a cost
+          - If you give them content on the blog, they must become free members, and you should ensure they agree to both share and comment on all content.
+            - Test a 7-day trial, then $4.97 per month for membership as well
+    - Ladders
+      - Create ladders that they must climb for access
+        - They pay for the next level
+        - You create ladders, but do not climb them
+- Them
+  - Certainty
+    - They buy certainty
+      - Do you go to the brain surgeon who "thinks" it'll be OK, or the one who's certain?
+        - That's what they want from you.
+  - Their Value
+    - Delight
+      - Getting praised
+      - Showing off
+    - Your Value
+      - It means nothing
+- Money
+  - Flow
+    - Celebrity
+      - A reputation for value or results creates money. The value itself does not.
+    - Decision
+      - Clarity MUST be extreme
+      - Friction must be zero
+        - Use self-hypnosis
+        - Psycho-Cybernetics
+    - Asking
+      - You get what you ask for
+        - It's not even necessary to rationalize
+    - Maximizing
+      - The Game
+        - Winning
+          - You
+            - How do you win?
+              - What gets you the most money?
+              - What gets you the MOST control?
+              - What retains the MOST control for you?
+          - Them
+            - Scoring
+              - What gets them points?
+            - Their Rules
+              - How do they learn the rules?
+                - Tell them
+                - Have them tell you
+                - What do they get for winning?
+            - Creating Dependence
+              - How do you make them the MOST dependent on you?
+                - Preach independence but deliver dependence
+        - Rules
+          - How To Play
+            - Creating Expectations
+              - What are they?
+            - Their Rules
+              - How do they learn the rules?
+                - Tell them
+                - Have them tell you
+                - What do they get for winning?
+        - Persona
+          - Midas Touch
+            - Turns anyone into a multimillionaire in a short period of time
+          - Does NOT Follow Rules
+            - Changes them
+          - Experts Seek Me Out
+            - Rich Schefren
+            - Perry Belcher
+            - Russell Brunson
+            - TJ Rohleder
+          - Genius
+            - Sees what others don't
+          - Innovates
+            - Sees past what is to what is better
+          - Student
+            - Values education
+              - The right education is NOT cheap
+          - Wise
+            - Teaches through experience
+            - Transparently
+          - Time Insensitive
+            - Might not be there on time
+            - Will not conform to others' expectations of how long something should take
+          - No Fear
+            - Showing you your ignorance
+              - Through the right question
+          - Immune To Criticism
+            - Does not care what you think
+        - Costume
+          - You get what you see
+        - Experience
+          - Setting Expectations
+            - They will know what will happen
+            - They will know the cost and how to evaluate your value
+              - Teach them how to evaluate what you give
+            - Empower them to decide
+              - There is a cost, but ultimately they choose after delivery
+          - Feel Smarter
+            - What to do
+            - How to do it
+            - What happens when they do
+          - Superiority
+            - They ALSO leave knowing how to teach this badass stuff to others
+              - Through using your tools, stories, examples, and metaphors
+          - Seeing Is Believing
+            - Show them what works
+            - Make it simple and doable
+            - They "almost" feel like they can do it without you
+          - Surprise
+            - They get more than they thought
+            - What they get is immediately useful
+            - They will get this regardless of whether they pay
+          - Curiosity
+            - They will come curious
+            - They will leave more curious about the part you didn't share
+          - Excitement
+            - It's fun to hang out
+            - They leave excited to immediately make more money
+              - Because you give them everything they need
+                - And everything they didn't know they would need
+          - Hungry For More
+            - It was fun and they can't wait for what comes next
+  - Stop
+    - Value
+    - Morality
+    - Highest ethic
+    - Work
+    - Necessity

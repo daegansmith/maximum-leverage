@@ -1,0 +1,238 @@
+# Wake Up Productive
+@ My notes from Eben Pagan
+## Introduction
+- We have way too many options these days. Choosing less gives you more power to do more.
+- We have way too many distractions these days. Find and remove them when working.
+- We multitask way too much. Stop trying to do two things at once all the time. Note when you do, and find a way to stop it.
+- Optimal productivity: what we need to do is focus on one thing, then disconnect, then do it again.
+- Our culture is FAR MORE about entertainment than it is about anything else, especially results.
+- We're a culture of people who believe in "magic pills."
+- Change the system, NOT the symptom.
+- When do I feel most creative and productive? Schedule your days and your time around these periods.
+- It's MUCH harder to manage ourselves and our energy than we trick ourselves into believing.
+- Manage energy, NOT time.
+- Our habits ARE our destiny.
+- Internal chaos creates external chaos.
+- GOAL: Use our talents on developing our unique strengths and focus those like a laser on our biggest opportunities.
+- Our future can either be an extension of our past or what we create.
+- There MUST be a balance between structure and flow for ALL of us. All of this flex time stuff has got to go.
+- To wake up productive we've got to become a different person, the next evolution of who we are now. We MUST slay many dragons to get there.
+## Fast Start
+- Session #1: Clearing The Mental Desk
+  - Just write everything on your mind for 15 minutes.
+  - Put a check mark next to everything that is out of your control.
+  - Put a star next to everything within your control.
+  - Take the MOST important (10 or less) things from this list and put them in order of their importance to you.
+  - Consciously let go of everything else.
+- Session #2: Getting Rid Of Open Loops Robbing Energy
+  - Make a list of all of the incomplete things in your life (mostly the things you want to avoid the most).
+  - Organize them in order of the things that feel as if they are robbing you of the most energy.
+  - Either complete them or consciously let them go.
+- Session #3: Getting Out Of The Grey Zone
+  - These are the things we are in conflict about (example: when working, you feel like you shouldn't be). Things you don't feel like you can give your full energy to.
+  - List all of these as they relate to the physical, emotional, and mental.
+  - Look over this list and find the things you need to devote long periods of completely focused time to.
+- Session #4: Find Energy Parasites
+  - Write out what robs you of physical, emotional, and mental energy.
+  - Find the top 20% of these things that are robbing you of the most energy and get rid of them. Do whatever it takes.
+- Session #5: Habit Gravity And Escape Velocity
+  - We want to be in full awareness when working. Most of the time we are not.
+  - Progress in life is like a staircase where the next step that must be taken is illuminated. We can see it, but we can't necessarily see the steps past it.
+  - The problem is we tend to want to jump past the next step, but we can't.
+  - The rarest and most valuable of energies is willpower. Most people waste willpower on holding back emotions. We don't want to do this; we want to use what little willpower and awareness we have to create new habits.
+  - Habits: it takes about 30 days to create a new habit, but starting out we're moving against gravity, so it's incredibly hard to get past this phase.
+    - Stage 1: Defying gravity (days 1 to 10). Full resistance phase.
+    - Stage 2: Resistance (days 11 to 20). You still have active resistance, but not complete defiance.
+    - Stage 3: Acclimation (days 21 to 30). Resistance begins to fade and the new habit becomes the natural new way of doing things.
+  - When we have awareness, we want to ask ourselves what new habit (ritual) we need to progress in life.
+  - The creation of your daily routine (ritual).
+## Inner Game (Weeks 1 to 4)
+- Week #1: Personal Success Ritual
+  - Intentional repetition: the most powerful action you can use your willpower and awareness to create.
+  - Make it sacred (Mark Joyner). Your first ritual of the day is the highest-level ritual you can create. What is it?
+    - The first 90 minutes to two hours of the day should be our daily ritual.
+    - Exercise early in the day. This increases our energy.
+    - Eat a good first meal.
+    - Drink a half liter of water first thing in the morning and 30 minutes before you eat.
+  - Before any new ritual or routine, create a 15-minute "on-ramp" to give yourself time to get into it.
+  - After the ritual, give yourself 15 minutes to get out of it and into the next thing.
+  - Two keys to starting a new habit: start now, and don't deviate.
+  - What is the objective of my daily ritual?
+    - To maximize your energy, focus, productivity and joy while building your future.
+  - Exercise: Define & Create Your Daily Sacred Ritual
+    - What do you do now? What's good about it, and what needs to be improved? Who is involved?
+    - What areas need to be worked on?
+    - Objective: a successful and profitable day.
+    - What's working? What's not working?
+- Week #2: Inner Butterfly Effect
+  - What triggers inner chaotic thoughts?
+    - Multitasking, dealing with negative situations, having a long laborious task (I want to find something I can do quickly instead), being in charge of too many projects at once.
+  - What are the visual triggers right before it happens?
+  - Visualize yourself seeing the trigger, then stopping, taking a deep breath and saying "I'm not going to go there right now." Practice this visualization 5 times in a row for each of these chaos creators.
+  - Solutions: start to get more sleep. How much sleep do you need? Turn off the alarm and see how much longer you end up sleeping.
+  - How to change these mental habits
+    - Use positive motivators: if I don't, I'll get a positive reward.
+    - Use negative motivators: if I do fall victim, I'll have to pay for it with a negative circumstance.
+- Week #3: Streamlining Your Inner Game
+  - Fire the head of the success prevention department in your head: the part of us that wants to keep us safe. Send that guy on vacation.
+  - Friction drains us. It burns more of our energy than anything else. It comes primarily from internal conflicts, which destroy our willpower.
+  - How to eliminate internal friction and conflict
+    - Look at it through the 4 brains: physical, emotional, and logical, and resolve. "What do I feel? What emotions do I feel? Logically, why am I doing X?"
+    - Parts-of-us exercise: when we have too much success we start to slide and let parts of us lead that shouldn't. We've got to become aware of and in tune with each of these parts and integrate them.
+    - Exercise: get the part of you that wants results and the part of you that wants to stay in the same place to have a conversation that resolves the friction.
+  - Path of least resistance
+    - We mostly want to follow this path. Instead of meandering down "cow paths" (Boston), we need to build superhighways.
+    - Everything we do is a process.
+    - What if you thought about all the processes you use, intentionally made them ALL the most effective, and then made them rituals?
+    - Exercise: write down the areas where you have the biggest inefficiencies and the largest internal conflicts.
+      - Put a star next to the biggest 3. Then ask: what is the payoff I get from doing these?
+      - Create 3 new processes to replace those points of friction. Maximum 3 steps.
+  - Adding to the personal success ritual
+    - Visualize the positive outcomes you want to have for the day.
+    - Do 5 minutes of meditation.
+- Week #4: Building Your Focus Muscle
+  - Quantity: how long? Quality: how intense?
+  - Become outcome-focused, not work-focused.
+  - Momentum and long-term results come from focusing on one thing for long periods of time.
+  - Question: what are your biggest leverage opportunities?
+    - Inner: hypnosis, journaling, learning.
+    - Outer: dialogue (text, audio, video), presenting, testing.
+  - Positive focus: focus ONLY on the thing you want and nothing else.
+    - Create a goal collage and put it in front of you all the time.
+    - What are the outcomes you want out of life?
+      - To be the BEST marketer ever. Create the greatest force for change.
+      - I want to feel like if I stopped right now, I'd never have to work again a day in my life.
+  - Exercise: get a timer, set it for 50 minutes, and work in 50-minute sections with a 10-minute break.
+  - Morning ritual addition: 15 to 30 minutes of learning. Do this while exercising.
+## Outer Game (Weeks 5 to 8)
+- Week #5: The 60/60/30 Approach, "The Zone"
+  - The Zone
+    - Physical: full engagement.
+    - Emotional: fully energized and positive emotion.
+    - Spiritual: purpose aligned with something bigger.
+  - The optimal biology of the Zone
+    - We can feel energized 90 to 120 minutes at a time. Then we feel less energetic and need a break.
+    - Focus in 60-minute chunks: two 60-minute chunks, then one 30-minute break.
+    - Within each 60 minutes: 50 minutes working and a 10-minute break.
+    - Take a short 20-minute nap sometime in the middle of the day.
+  - Exercise: work in 60/60/30 chunks. Make this the next ritual you habitualize.
+- Week #6: Making Completion A Habit
+  - Stop starting and NOT finishing tasks. This creates too many open loops.
+  - Make a commitment that if you're going to start something, you're going to finish it.
+  - Key to creating a successful ritual: plan it in explicit detail FIRST, and see it as a perfect day in your mind. See how all the pieces fit together.
+  - It's the little things that stop us.
+  - Figure out the transitions from one step to the next and remove opportunities to get off track.
+  - Give yourself 15 minutes to get into and out of routines.
+  - Exercise: what does it take to make a successful 50-minute routine? What MUST be in place?
+  - Key: we only do things we see ourselves doing in our mind first.
+    - Walk through and rehearse all the steps of your routine mentally several times a day.
+- Week #7: Getting Out Of The "Grey Zone"
+  - When in the grey zone, we're not maximizing our leverage or our ability to focus.
+  - Schedule your interruptions. Most interruptions are not important at all; they're reactive people trying to bring you into their place.
+  - Consciously never respond to emails in real time.
+  - Enlightened multitasking: plan the times when you are going to multitask, and do those activities in the least reactive way.
+  - Managing your focus
+    - Clean focus: the ability to focus on one thing at a time. When you feel yourself drift, gently bring yourself back to the task at hand.
+    - Clean cuts: when you stop a task, let it go mentally, completely.
+    - Changing channels: do something completely different in your 10-minute breaks. Do something physical or emotional if you were doing something mentally taxing.
+- Week #8: Making High Leverage A Habit
+  - The productivity pyramid
+    - One: high lifetime value.
+    - Two: high dollar value per time.
+    - Three: low dollar value per time.
+    - Four: no value, or time wasting.
+  - What are your top two levels of activities?
+    - Creating offers, writing emails, doing coaching calls, conducting sales webinars, doing live events, creating new innovations, testing new marketing ideas, learning and expanding my understanding of marketing, creating and optimizing systems.
+  - Cleaning the grill: get rid of all the clutter. When you complete a task, clean your desktop completely. Work in one area, then clean up before moving on.
+  - Exercise: Prioritizing On Outcome
+    - Where would you like to be 10 years from now? 5 years? 1 year? 90 days?
+    - What activities would give you the highest likelihood of reaching these goals?
+  - Building momentum takes a while, but it compounds over time.
+  - NEVER focus on what you don't want. Keep yourself focused completely on what you DO want.
+## Higher Game Of Productivity (Weeks 9 to 12)
+- Week #9: Inevitability Thinking, Ideal Day, Ideal Environment
+  - What is goal setting?
+    - Speaking affirmations of what we want as if we already have it.
+    - Focusing on the positive outcomes we want to create, not the negative circumstances we want to avoid.
+  - Bob Beal: "Stop Setting Goals & Start Solving Problems." For many people, expressing goals as problems to solve is a more powerful and effective perspective.
+  - Inevitability thinking
+    - The next evolution of goal setting.
+    - Setting things up so that achieving your outcome is absolutely inevitable.
+    - How can you make it impossible not to achieve your goals? Set up situations so your goals MUST happen.
+    - Example: Eben's product creation process is to set up a live event. He's got to produce in that situation.
+  - Seeing your ideal day
+    - We're always becoming a new person.
+    - What would create the MOST results in a day to bring your vision into reality? What would that day look like? Who would be part of it?
+    - What does the "puzzle" look like once it's completed?
+  - Ideal environment
+    - Where and when do you feel most productive and creative?
+    - I feel most productive late at night when no one is around.
+    - I feel the most creative when I'm learning a LOT of new ideas, testing them consistently, and meeting with other smart marketers to discuss them.
+  - Exercise: Making Success Inevitable
+    - Where do you want to be in 50 years? In 1 year?
+    - What do you want to accomplish in the next 90 days?
+    - What is ONE thing you can start doing right now that would make achieving these goals inevitable?
+    - What conditions must you set up to make your outcomes inevitable? How can you put them in place as soon as possible?
+    - What does your ideal day look like, physically, emotionally and logically? (Revisit this question every 90 days.)
+  - Exercise: Setting Up Your Ideal Environment
+    - What's the best chair? Is it no chair?
+    - How do you distraction-proof your environment?
+    - Write out the answers as explicitly as humanly possible and put the pieces in place as soon as humanly possible.
+- Week #10: Alignment
+  - Exercise: divide a piece of paper down the middle.
+    - On one side write the 5 most important things to you. On the other, the top 5 things you do in a day.
+    - Look at how out of alignment the two lists are, and bring them into alignment.
+  - Exercise: list the open loops in your life that are making you incongruent (top 3 to 5).
+    - Really dig for the most uncomfortable ones.
+    - What can we do to close these loops? Do whatever it takes, no matter how uncomfortable, to close them.
+  - Parts integration: we have many different parts.
+    - The two most prevalent are the "take risk" and "play it safe" parts. When they get out of alignment, we become completely whacked out.
+    - Exercise: close your eyes and imagine these two parts, one in each hand. What do they look like? What color is each? What do they feel like?
+      - Bring your hands together slowly until they overlap.
+      - Bring your overlapped hands to your heart, pull the two parts into your heart, and feel them integrate through your entire body.
+      - You'll realize they both have positive intentions and can work together as a team as long as you honor their intentions. Do this exercise often.
+- Week #11: Renewal
+  - Visualize your ideal day on a daily basis.
+  - Give yourself the opportunity to renew properly and you will create sustainable focus. Productivity will go through the roof.
+  - Our bodies and minds have their own renewal processes; they only need the right building blocks. We MUST give them those.
+    - Take one week off per quarter, two days off each week, and 10 minutes off each hour.
+    - Digestive: eat small meals (300 calories) every 2.5 hours, without drinking water.
+    - Water: drink water constantly so our cells can renew. Drink half a liter 30 minutes before a meal.
+    - Respiratory: breathe deeply to oxygenate your blood. Take 5 to 10 deep breaths in every hourly 10-minute break.
+    - Muscular: exercise 30 to 60 minutes daily so blood moves through your body more efficiently.
+    - Lymph: exercise to move lymph through your body so you never get sick.
+    - Emotional: allow yourself to feel your emotions and let them flow through you.
+  - Exercise: where do you need to take stress out of your system?
+    - Physical: sleep more, exercise, eat better.
+    - Emotional: get rid of toxic relationships.
+    - Mind: remove open loops.
+- Week #12: Your Personal Transformation
+  - The next version of you: we can imagine a better version of ourselves, and then create that person. That is extremely powerful.
+  - The past does NOT determine the future; ONLY what you want to create does. Let go of the past when looking into the future.
+  - What we resist, we give energy to. Become aware of what you resist, then consciously let it go.
+  - Letting go: make it a daily ritual.
+    - Let go of the past when looking to create our future.
+    - Let go of the things we resist.
+  - To use the power of these concepts, we MUST make them part of our daily ritual.
+  - The Psychology of Winning (Denis Waitley): we CAN manufacture optimism.
+    - Example: Viktor Frankl, Man's Search for Meaning.
+    - How do we make ourselves feel bad? Compare ourselves to those who have more; focus on how bad our life has been and how bad it is right now.
+    - How do we make ourselves feel good? Do the opposite. Focus on how good we have it; revisit past accomplishments and how far we've come.
+  - Mentorship: the shortcut to the new you
+    - Someone who has already walked the road you'd like to travel.
+    - It harnesses the "mastermind" principle, and you begin to surround yourself with success.
+    - A mentor can see you at the next level and show you how to get there. This is powerfully energizing and inspiring.
+    - ALWAYS have a mentor in each area of your life.
+  - Exercise: where are you living your past into your future?
+    - List the places in your life where you're doing it.
+    - List everything in your life you are resisting.
+  - Exercise: Manufacturing Optimism
+    - List the areas of your life where you create unrealistic expectations and make unfair comparisons.
+    - List all the progress you've made.
+  - Exercise: Mentorship. Where do you need a mentor most? Get one.
+  - Exercise: divide a piece of paper into 6 sections.
+    - In the top three, write three people you hate. What do you hate about them?
+    - In the bottom three, write three people you LOVE. What do you love about them?
+    - The qualities you hate are qualities in yourself you hate and don't acknowledge.
+    - The qualities you admire are qualities you have but don't give yourself space to develop.
+    - How can you get rid of the bad and create the good?
