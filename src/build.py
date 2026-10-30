@@ -174,7 +174,6 @@ def build_quotes():
 
     body = (
         '<p class="kicker">The master list</p><h1>Quotes</h1>'
-        f"<p>{len(quotes)} quotes from my master list.</p>"
         + "".join(items)
     )
     extra_css = (
