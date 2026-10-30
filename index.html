@@ -42,17 +42,37 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 </header>
 
 <figure class="qotd" id="qotd" hidden>
-<p class="kicker">Quote of the day</p>
+<p class="kicker">A quote</p>
 <blockquote id="qotd-text"></blockquote>
 <figcaption id="qotd-by"></figcaption>
 <a href="quotes/">All the quotes &rarr;</a>
 </figure>
 <script>
-// One quote a day from the master list, the same for everyone on a given day.
+// Each visitor keeps a quote for a random 1 to 5 visits, then gets a new one.
+// A visit is a new browser session, so reloading the same tab keeps the same quote.
 fetch("quotes/daily.json").then(function(r){return r.json();}).then(function(list){
   if(!list.length)return;
-  var d=new Date(),day=Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);
-  var q=list[day%list.length];
+  function rnd(n){return Math.floor(Math.random()*n);}
+  var idx=-1,left=0,seen=false;
+  try{
+    idx=parseInt(localStorage.getItem("q_idx"),10);
+    left=parseInt(localStorage.getItem("q_left"),10);
+    seen=sessionStorage.getItem("q_seen")==="1";
+  }catch(e){}
+  if(isNaN(idx)||idx<0||idx>=list.length){idx=rnd(list.length);left=1+rnd(5);}
+  else if(!seen){
+    left=(isNaN(left)?1:left)-1;
+    if(left<=0){
+      var next=rnd(list.length);
+      if(list.length>1){while(next===idx)next=rnd(list.length);}
+      idx=next;left=1+rnd(5);
+    }
+  }
+  try{
+    localStorage.setItem("q_idx",idx);localStorage.setItem("q_left",left);
+    sessionStorage.setItem("q_seen","1");
+  }catch(e){}
+  var q=list[idx];
   document.getElementById("qotd-text").textContent=q.text;
   document.getElementById("qotd-by").textContent="— "+q.by;
   document.getElementById("qotd").hidden=false;
