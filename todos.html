@@ -21,67 +21,114 @@
   li.done span.t { color:var(--muted); text-decoration:line-through; }
   .due { color:var(--accent); }
   .stamp { font:12px ui-monospace, Menlo, monospace; color:var(--muted); margin:0; }
-  #gate { max-width:320px; margin:18vh auto 0; text-align:center; }
-  #gate input { width:100%; padding:12px 14px; font:18px ui-monospace, Menlo, monospace; letter-spacing:.3em; text-align:center; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:6px; }
-  #gate button { margin-top:10px; width:100%; padding:11px; font:600 14px ui-monospace, Menlo, monospace; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--bg); border:0; border-radius:6px; cursor:pointer; }
+
+
   #err { color:var(--accent); font-size:14px; min-height:20px; margin-top:10px; }
-  #app { display:none; }
   .donelist li { color:var(--muted); }
   .donelist li b { font-weight:600; }
 </style>
 </head>
 <body>
 <main>
-  <form id="gate" autocomplete="off">
-    <h1>Private</h1>
-    <input id="pw" type="password" inputmode="numeric" placeholder="••••••" aria-label="Password" autofocus>
-    <button type="submit">Open</button>
-    <div id="err"></div>
-  </form>
-  <div id="app"><h1>To-dos</h1><div id="list"></div></div>
+  <div id="app"><h1>To-dos</h1><div id="list">
+<p class="stamp">Updated Sat Oct 31, 2026</p>
+
+<section>
+  <h2>Now</h2>
+  <ul>
+    <li data-id="slides"><b>Presentation slides</b> — back on these now.</li>
+    <li data-id="site-up"><b>Get my site up.</b> Home base live.</li>
+    <li data-id="kim-site"><b>Finish Kim's site.</b></li>
+    <li data-id="daily-offers"><b>Put offers in front of people daily.</b> Personal sales. Don't wait on anyone else's timeline. Money in, then pay the good people around me.</li>
+    <li data-id="drive-backup"><b>Back up the living docs to Drive.</b> ThinkingBetter, the Master Prompt, the Voice Reference and Cross-Project Learnings were last backed up October 3; Marketing on October 26. You export each to Google Docs, Claude files them in Archive and checks them. Condensation pass after. <i>Oct 30</i></li>
+    <li data-id="fishers-bar">Decide the running bar on Fishers deck nuggets 20 to 24: true to scale, no bar, or segmented bands.</li>
+    <li data-id="fishers-27">Fishers deck slide 27, "The dashboard, grown": four values clip their tiles. Needs a layout decision, not a word dropped.</li>
+    <li data-id="fishers-source">Save the Fishers deck HTML source to Drive as text. Couldn't be done from the session: the file is 519KB and the only route is pasting its full text through a tool call.</li>
+    <li data-id="jimmy-cta"><b>For Jimmy: the Fishers call to action.</b> Jimmy decides where people go to get started at the end of the presentation: the back of the room, the stage, or something else. The last slide holds [CALL TO ACTION] until he does.</li>
+    <li data-id="files-day-one"><b>File consolidation, day one.</b> Pull out the hard drives, pick the master drive, and copy everything in Dropbox onto it, untouched. Then a third backup (Drive or similar), then cancel Dropbox. Rules are in "Daegan's File System — Governing Rules." <i>Oct 30</i></li>
+    <li data-id="corey-ganim"><b>Watch Jimmy's two Corey Ganim videos.</b> Watch in order: <a href="https://www.youtube.com/watch?v=N8hGjPEXQyI">How I Deliver a $999 AI Assessment with Claude</a>, then <a href="https://www.youtube.com/watch?v=j8TE1zl_ZI8">How I Fulfill $999 AI Assessments</a>. Then decide which of his moves go into my assessment skills: the one-yes close ("Want me to build the first one?"), payment before the call, the 30-day hours-returned check. <i>Oct 30</i></li>
+    <li data-id="cloudflare-scope"><b>Reconnect Cloudflare with domain permissions.</b> Settings → Connectors → Cloudflare → disconnect, connect again. Check Zone Read, DNS Edit, and Redirect Rules (or Page Rules) Edit, with All zones. If there are no checkboxes, screenshot the permission screen and send it. Needed before the domain forwarding. <i>Oct 30</i></li>
+    <li data-id="notes-publish"><b>Notes section: finish publishing.</b> Format approved Oct 30 (Dynalist-style); Wake Up Productive and Hidden Obstacles are live. My own bullet-outline notes only, grammar and spelling cleaned, Dynalist-style (each bullet opens to its section). Wake Up Productive, Hidden Obstacles, Forbidden Keys, the two Kennedy notes, Idiot Proof Sales Presentations, Idiot Proof Email Copy, VSL Formula, High Fee Coaching. Not Halbert (his letters, not my notes). Forbidden Keys: keep or cut the Ryan Angelo line and "It's Fucking Bad Ass." <i>Oct 30</i></li>
+    <li data-id="notes-newsletter"><b>Notes → newsletter.</b> When someone starts digging into the notes (opens a few sections, or comes back), offer the rest free for getting on the newsletter. A soft rule, not a wall. Ties into the FloDesk opt-in. <i>Oct 30</i></li>
+    <li data-id="green-binder"><b>The avocado-green binder.</b> My notebook of my most important notes. Photograph the pages and send them in; they become a resource bank for me, and maybe notes on the site. <i>Oct 30</i></li>
+    <li data-id="trump-card"><b>Trump Card: transcribe, then condense into notes.</b> Only the video is on Drive (The-Trump-Card.mov, 765MB). Export the audio as .m4a and attach it to a chat, or run it through Rev or Descript. Then it goes into the same outline format as the other notes. People love that one. <i>Oct 30</i></li>
+    <li data-id="forward-domains"><b>Forward hyperresponsivelist.com and maximum-leverage.com to daegansmith.me.</b> At Namecheap. Keep the email records on maximum-leverage.com untouched so the catch-all keeps working.</li>
+    <li data-id="newsletter-optin"><b>Newsletter opt-in on the homepage, into FloDesk.</b> The frame: sell the newsletter itself, not "updates." It's the best newsletter there is, people's lives have changed on it, and now it's their turn. When the newsletter is the thing they signed up for, they open it. Shape still open: inline box, Settle-style gate, exit popup on the course page, or a mix (mockups shown Oct 30). Needs a FloDesk form. Ideate before building.</li>
+    <li data-id="course-links"><b>Find where the course videos live and check the Dynalist links.</b> The Invisible Funnel course (and the Maximum Leverage Live Seminar) is delivered through about 1,000 links in Dynalist; the videos are probably on S3, which needs access back. Confirm the links play, and fix any that are just a permission setting, before the first new buyer gets access.</li>
+    <li data-id="run-through"><b>Run-through with Jimmy: transcript against the deck.</b> Get the transcript and recording from Notion; ask Jimmy if needed. Mark every spot where I stumbled, got ahead of the slide, or wasn't sure what a slide meant. Also bring every slide to the current look and feel. <i>Oct 29</i></li>
+    <li data-id="gbb-teach"><b>Teach the principle before the result: good, better, best.</b> Around belief 6 or 7, the right-lens section. Lead with the Maximum Leverage story: the one-time offer to upgrade to the annual subscription in tiers, which brought revenue forward on the spot and separated the serious buyers from the wait-and-see ones. Then the lesson, then the research, then Jimmy. Check the whole deck against the Advanced Teaching and Learning notes for other places the concept should come before the example.</li>
+    <li data-id="thinking-project"><b>Get back to the Thinking &amp; Learning project optimization.</b></li>
+    <li data-id="birthdays-1030"><b>Corin's and Joyce's birthdays.</b> Today, October 30.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Skills &amp; swipes</h2>
+  <ul>
+    <li data-id="jason-skills"><b>Upload all of Jason's skills</b> to the workspace so they run here. Check which are still missing.</li>
+    <li data-id="yt-swipe"><b>YouTube title swipe</b> — most-viewed titles as a bank for headlines, subject lines, bonus titles, product ideas.</li>
+    <li data-id="lenses-hormozi-alanis"><b>Alex Hormozi and John Alanis lenses</b> — no deep research on either yet. Run the research, then build them like the other 17 copy lenses.</li>
+    <li data-id="instructions-sweep"><b>The one sweeping instructions update.</b> Everything pending goes in together, then one paste into the project instructions field: the simulation trigger, the three lost rules, the procedures that become triggered skills, the graduation mark in the decisions log, and anything the RAM has proven.</li>
+    <li data-id="instructions-skills"><b>Marketing instructions: move functions into skills.</b> Turn procedures into skills that trigger, instead of text carried in the document. Do the three rooms first (Council, Mastermind, Deep Room). Hold the Screen Gate until the RAM has proven it fires.</li>
+    <li data-id="lost-rules"><b>Three agreed rules never reached the instructions.</b> Substance, not accounting; the revising-to-rewriting guardrail; check every place a story appears. Write all three in, and fix whatever lets a logged rule go un-graduated.</li>
+    <li data-id="session-sweep"><b>End-of-session sweep.</b> A sweep that runs in every chat: Claude goes back through the session and lays out actual candidates (to-dos, things to remember, reminders, its own loose ends) for approval. Fires when I'm stepping away or a deliverable is finished. Drafted Oct 29, not yet saved anywhere.</li>
+    <li data-id="vera-todo-skills"><b>Ask Vera to find to-do skills.</b> Search X, GitHub, Anthropic's skills and Claude for skills that collect to-dos during a session and keep them organized. Compare against the sweep above before building anything.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Ideas to build</h2>
+  <ul>
+    <li data-id="delusional-optimism"><b>"Delusional optimism"</b> — the note is in Bee Inbox. See what it becomes: a post, or the opening of an email that leads to something sold.</li>
+    <li data-id="flying-mastery"><b>Flying is mastery.</b> From the Hitchhiker's Guide entry on how to fly, in Life, the Universe and Everything: you jump and forget you're going to fall. The moment you think you'll fall, or someone asks how you're not falling and you agree with them, you fall. A parable for outlier success and genius: it works once, you don't know why, and if you think about it too hard it stops; the ones who keep going learn the feeling and play with it. Its own parable and its own piece. It connects to "Delusional optimism" (whoever wants to fly has to be delusionally optimistic to jump, then stay that way), but it isn't part of it. Shape and channel open. <i>Oct 31</i></li>
+    <li data-id="bistromathics"><b>Bistromathics: working with AI.</b> Also from Life, the Universe and Everything: in a restaurant the numbers never hold still (the bill, who pays what, who shows up when). Working with Claude is like that: ideas move so fast that nothing is quite anything yet. The site is the opposite: things stay put until I change them. A content angle, and maybe the best short description of what working with AI feels like. <i>Oct 31</i></li>
+    <li data-id="scifi-series"><b>A sci-fi connections series.</b> Draw lines from great science fiction (Douglas Adams, Isaac Asimov, others) to success, persuasion and AI. The thesis: a metaphor can't put an idea into exact units, but it carries the feeling, and the listener goes "oh, I got it." That's what great communicators do. Idea only. <i>Oct 31</i></li>
+    <li data-id="outline-site"><b>To examine: the whole site as a Dynalist/WorkFlowy outline.</b> Everything opens bullet by bullet, and some branches only open for people with access (newsletter, buyers, password). The marketing idea under it: lead people into the notes instead of an opt-in, and when they're deep enough and not on the list, "jump on the list, you'll get this and everything else, it's free, and it's a great newsletter." Maybe this is how marketing works now. Idea only; don't build yet. <i>Oct 30</i></li>
+    <li data-id="dynalist-workflowy"><b>Pull everything out of Dynalist and WorkFlowy and organize it for use.</b> Do it on the MacBook. Start with the Forbidden Keys to Persuasion notes and the Advanced Teaching and Learning notes, since those feed the presentation rework. Same place as the file consolidation: gathered in one spot first, then sorted.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Home</h2>
+  <ul>
+    <li data-id="couch-out"><b>Couch out for DC bulk pickup</b> — Wed Oct 28.</li>
+  </ul>
+</section>
+
+<section class="donelist">
+  <h2>Done</h2>
+  <ul>
+    <li data-id="done-stripe"><b>Stripe is taking payments.</b> My own account was already active; website changed to daegansmith.me (Stripe re-reviewing, 2 to 3 days). The course page's buy button goes to the $997 checkout. <i>Oct 30</i></li>
+    <li data-id="done-lenses"><b>Copy lenses built:</b> 17 copywriter lens skills and the Copy Lens Picker, saved as skills and backed up to My Drive and the team's shared drive. <i>Oct 25</i></li>
+    <li data-id="vsauce"><b>Vsauce / Veritasium method</b> built: Incongruent Question Hooks skill and swipe. <i>Oct 24</i></li>
+    <li data-id="done-bee-loop"><b>Bee → Drive loop working.</b> Bee notes share into Bee Inbox; say "check the Bee folder" in any chat. <i>Oct 22</i></li>
+    <li data-id="done-couch-booked"><b>Booked DC bulk pickup for the couch.</b> Pickup Wed Oct 28. <i>Oct 22</i></li>
+    <li data-id="done-todo-page"><b>Private to-do page live</b> on daegansmith.me. <i>Oct 22</i></li>
+    <li data-id="done-jdb"><b>Jimmy D. Brown skill built:</b> JDB Curiosity Copy. <i>Oct 22</i></li>
+    <li data-id="done-plank"><b>Robert Plank skill built:</b> Plank Speed Copy. <i>Oct 22</i></li>
+    <li data-id="done-jimmy-sales"><b>Jimmy's consultative sales process:</b> <a href="dr-mccray/">Dr. McCray: The Game Plan</a>. <i>Oct 22</i></li>
+  </ul>
+</section>
+
+</div></div>
 </main>
 <script>
-// Contents are AES-GCM encrypted; the password is never stored in this file.
-const P = {"salt": "bBS5KUAoFeZlMTsjvg9VdQ==", "iv": "3DmJv+W1ivvySR+3", "iter": 600000, "ct": "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"};
-const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-async function unlock(pw) {
-  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
-  const key = await crypto.subtle.deriveKey({ name:"PBKDF2", salt:b64(P.salt), iterations:P.iter, hash:"SHA-256" },
-    base, { name:"AES-GCM", length:256 }, false, ["decrypt"]);
-  const pt = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64(P.iv) }, key, b64(P.ct));
-  return new TextDecoder().decode(pt);
-}
 const store = {
   get(k){ try { return JSON.parse(localStorage.getItem(k) || "{}"); } catch(e){ return {}; } },
   set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
 };
-function render(html) {
-  const list = document.getElementById("list");
-  list.innerHTML = html;
-  const done = store.get("todos-done");
-  list.querySelectorAll("li[data-id]").forEach(li => {
-    const id = li.dataset.id;
-    const box = document.createElement("input"); box.type = "checkbox"; box.checked = !!done[id] || !!li.closest(".donelist");
-    const t = document.createElement("span"); t.className = "t";
-    while (li.firstChild) t.appendChild(li.firstChild);
-    li.append(box, t);
-    li.classList.toggle("done", box.checked);
-    li.addEventListener("click", e => { if (e.target !== box) box.checked = !box.checked;
-      done[id] = box.checked; li.classList.toggle("done", box.checked); store.set("todos-done", done); });
-  });
-  document.getElementById("gate").style.display = "none";
-  document.getElementById("app").style.display = "block";
-}
-document.getElementById("gate").addEventListener("submit", async e => {
-  e.preventDefault();
-  const err = document.getElementById("err"); err.textContent = "";
-  try {
-    const pw = document.getElementById("pw").value;
-    render(await unlock(pw));
-    try { sessionStorage.setItem("todos-pw", pw); } catch(e){}
-  } catch(x) { err.textContent = "Not that one."; }
+const list = document.getElementById("list");
+const done = store.get("todos-done");
+list.querySelectorAll("li[data-id]").forEach(li => {
+  const id = li.dataset.id;
+  const box = document.createElement("input"); box.type = "checkbox"; box.checked = !!done[id] || !!li.closest(".donelist");
+  const t = document.createElement("span"); t.className = "t";
+  while (li.firstChild) t.appendChild(li.firstChild);
+  li.append(box, t);
+  li.classList.toggle("done", box.checked);
+  li.addEventListener("click", e => { if (e.target !== box) box.checked = !box.checked;
+    done[id] = box.checked; li.classList.toggle("done", box.checked); store.set("todos-done", done); });
 });
-(async () => { try { const pw = sessionStorage.getItem("todos-pw"); if (pw) render(await unlock(pw)); } catch(e){} })();
 </script>
 </body>
 </html>
