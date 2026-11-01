@@ -1,5 +1,5 @@
 import html,re,sys,os
-REPO="/home/claude/maximum-leverage"
+REPO="/home/claude/site"
 STYLE=open(REPO+"/index.html").read().split("<style>")[1].split("</style>")[0]
 EXTRA="""
 .foot a{color:inherit;margin-right:14px}

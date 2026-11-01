@@ -1,0 +1,475 @@
+# Advanced Teaching & Learning
+@ My notes
+## Key Insights
+- Foundation
+  - See the detail AND the context, then associate.
+  - Find the patterns in how you learn. Be aware of your own learning process.
+  - Relaxation is a critical part of learning, and it's a conscious process.
+- Memory
+  - Use movement and rhymes, create vivid pictures and mind maps, SEE the associations, and tell yourself stories.
+- Where are you wasting your time?
+  - Find it and repurpose it so you actually change.
+- Primary sources of information
+  - Information does NOT come only through the senses. It comes through intuition too.
+- My primary learning style
+  - I'm an accommodator. I take what works, apply it to the world, and ask, "What if?"
+  - Accommodators execute the solution and choose a model or goal.
+  - The "what if" people are the entrepreneurs of the world.
+- How this affects teaching
+  - To teach others well, I have to deliver information the way EACH of them best takes it in.
+- When learning "how to" stuff
+  - Focus on the PROCESS first. Once you know it, you can change the details of the specific procedures.
+- Teaching is the art of explanation.
+  - Explanation is reducing something to general laws.
+  - Further reading: The Art Of Explanation; The Sketchnote Handbook.
+- How to read fast
+  - Skip 80% of the book. Spend 15 minutes looking through it for the major concepts FIRST.
+  - Then write down the questions that are still unclear, and focus only on those and the material that makes them make sense.
+  - KEY: Make this a habit.
+    - Write out what you learn as a story.
+    - Visualize it.
+    - Sketch the associations between the ideas.
+    - Use what you learn.
+- How to teach
+  - Teach for the acquisition of knowledge and wisdom.
+  - As the teacher, you're responsible for eliminating mistakes. THEY simply participate.
+    - That means making THEM draw the conclusions, make the connections and go through experiences during the process.
+  - Teach for understanding, not memorization.
+    - Find the pattern.
+    - Find and teach the generalization FIRST. The students will make the generalizations themselves.
+  - Teach in chunks, then sequence.
+  - Teach in layers.
+  - How do you teach more in less time?
+    - At any moment you're pre-teaching something. Then you go back, teach it formally, and review it periodically.
+  - Constantly ask questions as a feedback loop.
+  - Only use positive reinforcement.
+  - Expect them to forget it all, and they'll remember everything.
+- The most powerful thing you can say to a master
+  - "I need to get your advice on something."
+## Teaching To Learn
+- If you can read a book in 15 minutes but it takes 12 hours to write one, teaching takes more time than learning.
+- That makes teaching THE most effective way to deepen your own knowledge and wisdom.
+- My knowledge assimilation procedure
+  - Include a step for spotting what isn't new (what confirms what I know) and what IS completely new, and explore that.
+  - Include teaching as a step. Teaching something well takes more energy, focus and creativity than learning it.
+  - Don't forget questions as feedback loops.
+  - Use visuals.
+  - See it from THEIR perspective.
+  - Teach it to myself first "as if" I were the student, then teach it to others.
+  - Go from abstract and concrete to specific and concrete.
+  - Answer: How will my behavior change now?
+## Memory Secrets
+- Note taking reinforces what you learn and forces you to pay attention. Label key points and make mind maps that show relationships, instead of linear notes.
+- Visual memory
+  - We have a 99.99% ability to recognize a picture we've already seen. Once something is in a picture, you can remember it easily. The secret to memory is the ability to construct pictures.
+- Auditory memory
+  - Put something to a chant or rhyme and you can memorize it easily. Visual processing is faster, but auditory is a great way to memorize too.
+- Kinesthetic memory
+  - The sensations in our body help us remember too. We can turn whatever we want to memorize into movement or a dance.
+- Digital learning
+  - Listen for the meaning of something and translate it into your own experience.
+- We remember the first things, the last things, and the odd or colorful things.
+- Our minds seek closure. If an idea is incomplete, the mind stays open for the rest.
+- Using association to improve memory
+  - Association is the mind's glue.
+  - Remember a new fact by tying it to something you already know. Strong associations create strong memories.
+  - The key to memory is the ability to build a picture or a movie in your head.
+  - With active involvement, you can organize material into an interesting story that's easier to recall.
+## Enemies Of Change
+- Change doesn't happen for one of four reasons:
+  - The system doesn't allow it.
+  - There's no motivation to change.
+  - We don't know what to do or how to do it.
+  - We aren't able to do it.
+- One approach: learn how an expert does something, then duplicate it through the system. This is called modeling.
+- To evolve to the next level, find where you're wasting time and repurpose it.
+## Learning Styles
+- The ONLY comparison that matters is between where you are now and where you started.
+- We take in information two ways: through the senses and through intuition. Then we evaluate it by thinking or by feeling.
+- There are two axes.
+  - Vertical: concrete experience (feeling) to abstract conceptualization (thinking).
+  - Horizontal: reflective observation (intuition) to active experimentation (sensing).
+- Divergers (1st quadrant)
+  - They start with concrete experience and reflect on it.
+  - They ask, "Why is it important?"
+  - They need a reason to get emotionally involved.
+- Assimilators (2nd quadrant)
+  - They combine reflective observation with abstract conceptualization.
+  - They ask, "What?" They're information junkies looking for the ideas.
+  - They enjoy theory and want to know why things work.
+- Convergers (3rd quadrant)
+  - They take theories and apply them. The engineers and technicians.
+  - They're all about the "how to." They want the step-by-step procedure.
+  - They enjoy labs, experiments, cooking and fixing stuff. They want hands-on experience.
+- Accommodators (4th quadrant; me, more than the rest)
+  - They take what's been tested and works, and go use it in the world.
+  - They ask, "What if?"
+  - They don't care why it works or how to do it. They care about application and learning by experience.
+- How each approaches problem solving
+  - The diverger compares the thing to reality and identifies the differences.
+  - The assimilator selects the problem and considers alternative solutions.
+  - The converger evaluates the consequences of the solutions and selects one.
+  - The accommodator executes that solution and chooses a model or goal.
+- Roles in society
+  - The first quadrant people become the sellers.
+  - The "what" people become the scholars.
+  - The "how to" people become the technicians.
+  - The "what if" people (me) become the entrepreneurs.
+## Reading
+- How to read a book in 15 minutes
+  - Decide on your outcome before you pick the book up. What do you want out of it?
+  - Look for two things:
+    - What you already know.
+    - What's new, different and counterintuitive.
+  - Focus on the concepts to understand the main idea.
+- Reading manuals: find the process, then you can manipulate the procedures
+  - Manuals teach procedures, the "how to." But understand the process first. Once you understand the process, you can manipulate the procedure.
+  - To teach is to explain. To explain is to reduce something to a general law.
+- Optimal reading speed
+  - The best speed reading technique is to skip 80% of the books you were going to read.
+  - Most learning is bottom up. Instead, spend ten to fifteen minutes on the important parts of the book. That gives you its framework and tells you whether to read it at all.
+- To actually learn material, put it into practice FAST.
+## Write A Book For Yourself In 12 Hours
+- Write a book, a guide, for yourself about where you want to be in three years.
+- What are the 6 basic ideas?
+- What are the subcomponents of each?
+- Write 6 questions for each subcomponent.
+  - Start them with combinations of: what, where, who, why, which, when, how, if, could, should, would. Example: "Who could help me?"
+  - Three positive, three negative.
+- Answer each question with:
+  - Knowledge
+  - Research (expert help)
+- Make the connections
+  - Look across all 108 answers and you'll find new connections between ideas and new areas to explore.
+  - Where you find connections, you'll find your future books and ideas.
+  - Go back and add the context of those connections to the content.
+## Becoming A Master Trainer
+- The three rules of charisma (the secret of being a motivational speaker)
+  - You have to grossly oversimplify.
+    - Give people a formula with no more than three parts. It gets them to take action.
+  - You have to be able to lie congruently.
+    - You need a voice of confidence and certainty, so you can grab people and transform them.
+    - You've got to lie to yourself first.
+  - You have to convince yourself the world is really simple.
+    - You have to be a "sameness" person, and your listeners need "external frames."
+- Master these six things (* = most important)
+  - Yourself
+    - Control who you are.
+  - Content*
+    - So you can focus on your audience instead of figuring out what to say. The words should simply come out of your mouth.
+  - Design*
+    - Chunking, linear sequencing and an entertaining presentation.
+  - Delivery*
+    - You communicate effectively by calibrating to your audience.
+  - Space
+    - Training happens in an environment, and you have to set it up correctly.
+  - Audience*
+    - Be in rapport with your audience's hearts, and talk about things that relate to their experience.
+- Time
+  - As a trainer, be aware of time and keep to a schedule.
+- Emotional intelligence means:
+  - Controlling your own emotions.
+  - Calibrating them to your audience.
+  - Influencing your audience's emotions.
+  - You only need to remember to be happy NOW.
+## Framing
+- Give people a framework to put the information in. Framing is one of the keys to training.
+- The framing process
+  - Open a loop: start with a mind opener or hook.
+  - Give the roadmap: what it is, what it's for and what you'd use it for, all in one sentence.
+  - Format: tell people how much time to reserve for the training.
+  - Map: how the new information connects to what they already know.
+- Types of framing
+  - Past, present, future.
+  - Physical, emotional, logical.
+  - Inner game, outer game.
+- Cognitive framing: know the concepts and how to explain them.
+  - The concept: a one-sentence statement of the basic, fundamental idea.
+  - Regularities: the relationships between concepts.
+  - Reference structures: the criteria that tell you how something works and whether you're doing it right.
+## Teach To The Four Learning Styles
+- 1st quadrant: "Why"
+  - You're a salesperson. Tell stories and get people motivated.
+  - Use affective, emotional framing.
+- 2nd quadrant: "What"
+  - You're a teacher, organizing, chunking and sequencing the content.
+  - Build it so people can understand procedures, create them and modify them if needed.
+  - Use cognitive framing so the mind understands.
+- 3rd quadrant: "How"
+  - You're a coach. Watch what the student practices and give high-quality feedback.
+  - The framing is focused on doing.
+- 4th quadrant: "What if"
+  - You're a mentor. When students go do it in the real world, you advise them on applying what they learned.
+- Why quadrant procedure
+  - You have to be a salesperson.
+  - Organize yourself so you're passionate about what you present.
+  - Get into a state and motivate yourself.
+  - Present a mini "what" they're going to learn.
+  - Set the context so it's relevant to the audience.
+  - Give the audience a role to step into.
+  - Connect to their toward and away-from values of power, affiliation and achievement.
+  - Remove disabling beliefs or install enabling ones.
+- What quadrant procedure
+  - This is where the trainer is most active and the students least active.
+  - Give them the context and the problem.
+  - Explain with CPPP:
+    - Concepts: speak the same language. Define the important terms.
+    - Principles: why it works, scientifically.
+    - Process: how the structures change over time. Draw a process diagram or flowchart of how the system works over time.
+    - Procedures: techniques have an explicit procedure. Start with "you will." Anyone should be able to get a specific result from your procedure.
+- Teaching "how to" is NOT enough. They must understand:
+  - The process.
+  - The procedure.
+  - The reference structure for whether it's working.
+## Designing And Presenting Training
+- Designing training
+  - Brainstorm topics on sticky notes.
+  - Cluster the notes.
+  - Sequence them in the order you'll present.
+  - Look at the context to decide what to add or remove.
+- How to present: RRROEE
+  - Resourceful: put yourself in a resourceful state.
+  - Resourceful: make sure your audience is in a resourceful state.
+  - Relationship: have a positive relationship with your audience.
+  - Outcome: have an outcome you want to achieve.
+  - Ecological and ethical: make sure what you teach is both.
+  - Enthusiasm: be passionate about what you teach.
+- If you don't believe in them, they won't believe in themselves.
+- Know your audience's outcomes and interests.
+- Get buy-in.
+- If you can describe someone's problem better than they can, they'll assume you know the answer.
+- Unstoppable motivation: the warrior mind
+  - Get rid of all baggage (Arnold in Pumping Iron).
+  - Get into a state of PURE, crystal clear purpose.
+  - The outcome MUST be vivid and exciting.
+  - Relax and fear nothing.
+  - Distract your mind?
+  - Compress time?
+## Problems, Focus & Epiphanies
+- If you're focused on your problems, you can't have insights.
+- Insights are sparked when you go "meta."
+  - Let go.
+  - Step out of yourself.
+  - Look back at yourself.
+  - Examine your processes.
+- Use frames
+  - Past, present, future.
+  - Inner, outer.
+  - Physical, emotional, logical.
+- Training them to insight
+  - You MUST get them to do this in your training, for all four learning styles.
+## Why We Do Things
+- Looks right.
+- Sounds right.
+- Feels right.
+- Tastes right.
+- Makes sense.
+## Rewire Your Brain
+- Your attention is the most valuable thing in your life, because alert attention is the key to neuroplasticity.
+- Limiting the compensating function
+  - Find a way to "bind" your old beliefs so they stop operating. Then use intense, alert attention to replace them with new beliefs and behaviors.
+- The higher level is learning about yourself.
+  - What will you do about your behavior so you change in a way that keeps generating more change?
+  - Then go up a level and ask, "What did I learn about how I learn?" so you can build the context, situations, accountability and environments that keep changing your ability to learn, and you're constantly growing as a person.
+## Solve Problems Instead Of Setting Goals
+- 80% of people would rather solve problems than achieve goals (including you).
+- Reframe goals as problems to solve, and get on the right side of the 80/20 rule.
+- Goals ALSO have a specific outcome, which sharpens your ability to achieve on its own.
+## Flow
+- Individual: when skill and challenge are matched, you're in the flow channel.
+- Teams: blend organizers and creative people to increase flow and efficiency.
+## Complex Systems & Outcomes
+- The outcome is very sensitive to initial conditions, the way things were set up at the beginning.
+- Inevitability thinking is setting up the conditions so the outcome you want happens automatically.
+- Ask yourself, "How could I make the outcome I want in life inevitable?"
+## Coaching The How Quadrant
+- How 3rd quadrant people learn
+  - What's the skill you want to learn?
+  - What are the steps to develop it?
+  - What critical abilities does it take?
+  - What reference structures do they need, and how will they know they're on the right track?
+- They need exercises to learn.
+  - Figure out where they're starting and where you want them to go (current skill to outcome).
+- Success ladder
+  - Chunk the exercise so they succeed level after level.
+  - Afterward, say, "Good job. Come see me if you have questions."
+- Coach on performance
+  - Evaluate where they are now and where they need to be.
+  - Know the steps they need to take to get there.
+  - Tell them what to do, NOT what not to do.
+- Training the subconscious
+  - It needs an immediate source of feedback.
+## Levels Of Learning
+- Zero: things keep repeating because nothing changes.
+- One: changed behavior.
+- Two: learning how you learn.
+- Three: learning how you learn differently in different situations.
+## Positions & Framing
+- Second position
+  - What do you look like from their model and perspective of the world?
+  - IMPORTANT for change: to change someone and help them see the next level, see from their perspective and think actively about how to help them see above it.
+- Controlled observer
+  - Why is this important, and what information does it give us?
+  - From an unbiased position, what do your interactions with others look like?
+## How We Sort Information
+- Sameness
+  - They view what they learn as confirming what they know.
+  - They don't like change.
+  - Analogies work well for teaching them the relationships between things.
+- Sameness with difference
+  - They look for sameness but notice obvious differences.
+  - They accept gradual change. Conservatives.
+- Difference with exception
+  - They see difference immediately, but also see what's the same.
+  - They like a lot of change. Liberals.
+- Difference people
+  - They learn by seeing differences and making further distinctions.
+  - They're radical and like constant change.
+  - They constantly optimize their lives.
+  - Types of difference people
+    - Polarity responders: do the opposite of what you ask.
+    - Mismatchers: the "yeah, but..." people. They look for where things don't work.
+- Global learners start with the big picture, then zoom in.
+- Detail learners start with the details, then zoom out.
+- Training implication: you need to move from big picture to details and back again.
+- How do we know we've done a good job?
+  - Internal frame of reference: they rely on their own opinion.
+  - External frame of reference: they rely on role models to tell them.
+## How To Be A Highly Effective Coach
+- You have to teach four different ways:
+  - Why: divergers, salesperson.
+  - What: assimilators, teacher.
+  - How: convergers, coach.
+  - What if: accommodators, mentor.
+- Raise the level of difficulty.
+- Add more stages to the "how" exercises.
+- The coach IS the feedback mechanism.
+  - Immediate feedback reaches the subconscious.
+  - Delayed feedback reaches the conscious mind.
+- To be an expert performance coach, you MUST:
+  - Know what expert performance is.
+  - Evaluate their performance against the expert.
+  - Know the sequence to reach ideal performance.
+  - Give exercises, monitor performance and give feedback.
+  - Time distort: see performance in smaller chunks.
+- When you see them struggle in an exercise, ask:
+  - What's your outcome?
+  - What are you trying to do?
+  - Do you think you're achieving your outcome?
+  - What could you do differently to achieve it?
+  - Give 3 suggestions.
+  - Ask which one they think is best.
+  - "Stop now. See yourself using the feedback, see yourself getting results, then go do it."
+- Feedback
+  - Some people need to hear it.
+  - Others need to see it.
+  - Others need to feel it.
+- We learn through contrast
+  - Exaggerate both ends of the spectrum based on what they did.
+    - If they went too far left...
+    - If they went too far right...
+  - Then show them what to do in the middle.
+## How To Lock In Learned Behavior
+- Use an ecological perspective
+  - Ecology traces the effects of change through systems.
+  - Pay attention to the short- and long-term consequences of our actions.
+- Identity upgrade
+  - If people are trapped in their old model, no training will stick.
+  - Use the swish technique: you had X (negative) before, and you'll have Y (positive) after.
+- Reframe their beliefs (from Mind Control)
+  - Believing is experienced as a process.
+  - Suffering comes from attachment and identification.
+  - Beliefs live in clusters, with core beliefs protected in the middle.
+  - Beliefs don't break, but they do bend.
+  - The source reframe: How did you create this belief?
+  - The categorical reframe: Is this belief true for all people?
+  - The lifetime reframe: What will happen if you keep this belief for the rest of your life?
+  - The magic: when they get the answer, they'll notice it, and the belief begins to loosen.
+## Debriefing To Effect Change
+- See all training in terms of learning, meaning changed behavior.
+- Questions to ask
+  - What have you learned?
+  - Where are you going to use it? (context)
+  - Where else can you use it? (generalizing)
+  - Where are you not going to use it?
+  - How will your behavior be different in the future?
+  - What have you learned about the learning process?
+  - What have you learned about yourself?
+  - What have you learned about the way you learn?
+- Future pacing
+  - Imagine a time in the future when you'll use this new skill.
+  - Rehearse, then fully associate (sight, smell, taste, sound, feel, thought, emotion).
+  - Anchor it to something in the future where you'll use the new skill.
+## Is Your Training Transformational?
+- Ask them, "What will change now?"
+- Listen for HOW they answer.
+  - Level 0 (bad): "I learned that." No change has happened. You've just given them more content.
+  - Level 1 (behavior): they talk about how they'll act differently. That's a behavioral shift.
+  - Level 2 (transformation): they've realized something about HOW they learn or how they see themselves in the future. That's a transformation.
+- The three levels of mastery
+  - When you really learn something, you can talk about your transformation to teach others.
+  - Teaching = student behavior change.
+  - Level 1, insight: they get it. Look for evidence of a new perspective.
+  - Level 2, action: behavior changes in the real world. Look and listen for actions and specific commitments.
+  - Level 3, transformation: the behavior change is so integrated that THEY change.
+## Pressure & Accelerated Transformation
+- One of the fastest ways to transform is pressure. It forces a system to break down and reorganize into one that can handle the pressure.
+- As teachers, our job is to put students under pressure, so the way they see the world breaks down and they have to transform.
+- If you want a powerful present, visualize a compelling future.
+## Your Personal Productivity Formula
+- Ritualize learning.
+  - Make it a habit, something you do every day without thinking.
+- Add one new ritual per month.
+  - It takes about 30 to 90 days to build a new habit.
+- Plan the new ritual in explicit detail.
+- Put conditions in place that make the ritual inevitable.
+## Talent Development Formula
+- Burning desire for recognition
+  - We want money and lifestyle, but what we desire MOST is recognition.
+- Talent = mathematics + art
+  - Talent is mathematical and artistic thinking integrated.
+  - It takes recognized patterns and combines them in new ways to create something new.
+- The game of talent development
+  - Restructure and explore through play.
+    - Explore through games and recognize the underlying systems.
+    - See the same patterns and systems show up in multiple places.
+  - Change the game constantly.
+    - Change the context of the game constantly, so you quickly see how the patterns apply across all of them.
+- The talent development process
+  - Pattern recognition: finding patterns by accident.
+  - Pattern design: acting to recreate past patterns.
+  - Composition: once you've recognized and designed patterns yourself, combine them to create something new.
+## Daily Practice To Achieve New Skills
+- Define the minimum you want to achieve.
+- Define what the new skill will do for you, in every context:
+  - Physically.
+  - Emotionally.
+  - Mentally.
+- Define it with this sentence: "If I'm able to do X, it will enable me to do Y."
+- Within 60 seconds of waking up, do the sentence completion for the day.
+  - The magic: it connects the conscious to the subconscious and helps the mind believe.
+- Then do the thing.
+- Analyze it emotionally, physically and mentally.
+  - How did you perform?
+- Think of the next step in developing the skill.
+- Repeat daily.
+## How To Create Stories That Change People Forever
+- What they ALL have in common
+  - The hero's journey.
+  - A simple metaphor.
+  - Identification through analogy.
+- Elements of deep metaphors
+  - Simple beginnings: "A long time ago, in a galaxy far, far away."
+  - Scenes and characters that are alien, yet the same as us.
+- In your story, know your outcome.
+- Hide the lesson inside the story.
+- Know where your audience is now and where you want them to go.
+  - Critical: your audience's current state should show up in the story too.
+- What resources does your hero need in the story?
+- What challenges did your hero face, where they used those resources?
+- The myth of the calling
+  - It comes at some point in your life, when you realize you could be something greater than you are.
+  - You either heed the call or ignore it. Your call.
+  - The chance may never come again.
+- Stories in trainings
+  - A story that links your entire training together will be its most impactful part.
