@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-62 -347 464 464" role="img" aria-label="2 Guys and a Genie"><defs><filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#f0cc85" flood-opacity=".35"/></filter></defs><style>.l,.a,.ko,.sp{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:7}.l,.ko{stroke:#dfe4ec}.a{stroke:#f0cc85}.f{fill:#0b0d13}.hair,.eyes{fill:#dfe4ec;stroke:none}.sp{fill:#f0cc85;stroke:#f0cc85;stroke-width:3.5}.lp .l,.lp .ko{stroke-width:27}</style><rect x="-62" y="-347" width="464" height="464" rx="102" fill="#07080c"/><g filter="url(#gl)"><g transform="translate(62 0) scale(1)">
+<path class="l" d="M-12 -58 L-16 0 M12 -58 L16 0"/>
+<path class="l" d="M24 -106 L40 -70 M-24 -106 L-34 -62"/>
+<path class="l f" d="M-26 -112 L26 -112 L24 -58 L-24 -58 Z"/>
+<circle class="l f" cx="0" cy="-138" r="22"/>
+<path class="hair" d="M-23 -139 Q-23 -165 0 -164 Q23 -165 23 -139 Q12 -149 0 -148 Q-12 -149 -23 -139 Z"/>
+<circle class="eyes" cx="-8" cy="-135" r="2.8"/><circle class="eyes" cx="8" cy="-135" r="2.8"/>
+</g><g transform="translate(278 0) scale(1)">
+<path class="l" d="M-12 -58 L-16 0 M12 -58 L16 0"/>
+<path class="l" d="M24 -106 L34 -62 M-24 -106 L-30 -62"/>
+<path class="l f" d="M-26 -112 L26 -112 L24 -58 L-24 -58 Z"/>
+<circle class="l f" cx="0" cy="-138" r="22"/>
+<path class="hair" d="M-23 -139 Q-23 -165 0 -164 Q23 -165 23 -139 Q12 -149 0 -148 Q-12 -149 -23 -139 Z"/>
+<circle class="eyes" cx="-8" cy="-135" r="2.8"/><circle class="eyes" cx="8" cy="-135" r="2.8"/>
+</g><g class="lp" transform="translate(74.8 -98.1) scale(.26)"><path class="l f" d="M462 280 Q520 272 560 238 Q582 218 604 204 L614 216 Q592 234 574 256 Q538 302 466 316 Z"/>
+<path class="l" d="M178 290 C116 250 88 306 118 332 C138 350 166 338 178 326"/>
+<path class="l" d="M300 352 L290 370 M340 352 L350 370"/>
+<path class="l f" d="M258 394 Q320 408 382 394 L368 368 Q320 376 272 368 Z"/>
+<path class="l f" d="M170 300 Q172 356 320 358 Q470 356 472 298 Q470 258 320 256 Q172 258 170 300 Z"/>
+<path class="ko" d="M196 318 Q320 344 446 318"/>
+<path class="l f" d="M232 262 Q236 212 320 204 Q404 212 408 262 Z"/>
+<path class="l" d="M320 204 L320 186"/>
+<path class="l f" d="M320 186 Q300 170 320 146 Q340 170 320 186 Z"/></g><path class="a smoke" d="M234 -46 C226 -68 186 -76 184 -100 C182 -124 206 -144 172 -190"/><path class="sp" d="M170 -234 Q170 -216 188 -216 Q170 -216 170 -198 Q170 -216 152 -216 Q170 -216 170 -234 Z"/></g></svg>
