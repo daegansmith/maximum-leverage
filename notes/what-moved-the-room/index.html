@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>What Moved The Room | Daegan Smith</title>
-<meta name="description" content="Findings from testing the Fishers AI workshop: which changes moved how many people bought, which didn't, and why.">
+<meta name="description" content="Two weeks of testing the Fishers AI workshop and its offer in simulated rooms: which changes moved how many people bought, which didn't, and what the tests taught us about testing.">
 <style>
 :root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD;--up:#0F6E56;--down:#A32D2D;--tint:#F4F3EF}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330;--up:#5DCAA5;--down:#F09595;--tint:#1E1E1C}}
@@ -36,105 +36,186 @@ section{padding:36px 0 0;margin-top:36px;border-top:1px solid var(--rule)}
 .foot{margin-top:60px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--soft)}
 .foot a{color:inherit;margin-right:14px}
 @media (max-width:600px){h1{font-size:34px}.tbl{font-size:14px}}
-</style></head><body><div class="wrap">
+</style>
+</head><body><div class="wrap">
 <p><a class="back" href="../">&larr; Notes</a></p>
-<p class="kicker">Findings · Fishers AI workshop · October 27 to November 3, 2026</p>
+<p class="kicker">Findings · Fishers AI workshop · October 22 to November 3, 2026</p>
 <h1>What Moved The Room</h1>
-<p class="lead">We rebuilt one presentation, slide by slide, for a week. Every version went in front of the same simulated room of local business owners. Here's what actually changed how many of them bought, what didn't, and why.</p>
+<p class="lead">For two weeks we rebuilt one presentation and its offer, and tested almost every change in simulated rooms of local business owners before keeping it. Here's what actually changed how many of them bought, what didn't, and what the tests taught us about testing.</p>
 
 <div class="box">
-<p><b>The presentation.</b> A free evening AI workshop for local business owners in Fishers, Indiana. Jimmy presents. It teaches through eight beliefs and ends in a three-tier offer: Best $4,997, Better $2,997, Good $997 (the meeting). Buying happens at the back of the room that night.</p>
-<p><b>The test.</b> 50 simulated owners (roofers, salons, pizza shops, dentists, accountants, food trucks), each with a business, a temperament and a money situation. Each version was read twice by fresh readers who never saw another version. They bought or didn't, and said why.</p>
-<p><b>The catch.</b> The same deck, read twice, swings by 3 to 5 buyers. So a change counts here only when it moved more than that, or when the reasons people gave changed with it. These are predictions, not results. The live room on November 9 is the judge.</p>
+<p><b>The presentation.</b> A free evening AI workshop for local business owners in Fishers, Indiana. Jimmy presents. It teaches through eight beliefs and ends in a three-tier offer. Buying happens at the back of the room that night.</p>
+<p><b>The tests.</b> Rooms of simulated owners (roofers, salons, pizza shops, dentists, accountants, food trucks, a few skeptics, a few burned by agencies), each with a business, a temperament and a money situation. Rooms of 24, 50, 72, 100 and 120. Each owner read the whole night, bought or didn't, and said why. Along the way: price tests, skeptic studies, burned-owner studies and cold readers grading the offer.</p>
+<p><b>The catch.</b> The rooms buy more readily than real ones, so read the gap between versions, never the level. And the same version, read twice, swings by about 10%: 2 to 5 buyers out of 50, or $10,000 out of $90,000. These are predictions. The live room on November 9 is the judge.</p>
 </div>
 
 <section>
-<h2>The Scoreboard</h2>
-<p class="small">Same 50 owners. Average of two reads.</p>
+<h2>The Short Version</h2>
+<ul>
+<li><b>Biggest lift: transparency for people who've been burned.</b> One slide on how it works and a promise of the whole bill added about 17 buyers per 100 across two rounds.</li>
+<li><b>The door price sets how many walk through.</b> $997 / $2,997 / $4,997 brought in 43 buyers per 100. The earlier $1,997 / $3,997 / $7,497 brought in 24.</li>
+<li><b>His words beat the cleaner rewrite, once you test the whole night.</b> Read alone, the rewrite won every grade. Run as the whole night, his words sold 19% more.</li>
+<li><b>A number they believe beats a bigger number.</b> Owners doubting Jim's $673,000 went from 17 to 5 when it became a P.S.</li>
+<li><b>Anything that makes the cheapest tier feel complete pulls buyers down to it.</b> It happened four separate times.</li>
+<li><b>Some walls never move.</b> "I have to ask my wife" held at 16 to 21 per 100 through every price and every version.</li>
+</ul>
+</section>
+
+<section>
+<h2>How The Presentation Evolved</h2>
+
+<h3>1. The Price · October 22</h3>
+<p class="small">One room of 100. Same offer, three price sets.</p>
+<table class="tbl">
+<tr><th>Good / Better / Best</th><th class="r">Bought</th><th class="r">Builds wanted</th><th class="r">Sales</th></tr>
+<tr class="hi"><td>$997 / $2,997 / $4,997</td><td class="n up">43</td><td class="n">24</td><td class="n">$112,871</td></tr>
+<tr><td>$1,997 / $2,997 / $4,997</td><td class="n">32</td><td class="n">20</td><td class="n">$103,904</td></tr>
+<tr><td>$1,997 / $3,997 / $7,497 (the deck then)</td><td class="n down">24</td><td class="n">12</td><td class="n">$92,928</td></tr>
+</table>
+<p>The Good price decides how many come through the door ("two grand is my rent"). The build prices decide how many builds you'd owe against a cap of 11. "I have to ask my wife" topped the reasons for waiting at every price. <b>Changed:</b> prices set at $997, $2,997 and $4,997.</p>
+
+<h3>2. Whose Words · October 24 and 25</h3>
+<p>Two offers. A cleaner rewrite (B), and the October 9 offer in his own words. Read alone by three cold readers, B won every grade, and every reader bought one tier higher. He called it unfair: B carried every structural fix and his version didn't. So we built A2: his words on B's skeleton, with the same fixes. Then we tested the whole night, presentation into offer, in a room of 100.</p>
+<table class="tbl">
+<tr><th></th><th class="r">Bought</th><th class="r">Good / Better / Best</th><th class="r">Sales</th></tr>
+<tr><td>B, the rewrite</td><td class="n">32</td><td class="n">16 / 9 / 7</td><td class="n">$77,904</td></tr>
+<tr class="hi"><td>A2, his words</td><td class="n up">41</td><td class="n">20 / 16 / 5</td><td class="n up">$92,877</td></tr>
+</table>
+<p>Nine owners went from nothing to the $997 meeting on one line of his: "Our consultations are $1,997 each." The rewrite's "$20,000 meeting" read as hype. <b>Changed:</b> A2 became the base, B's best concrete bullets went into it, and two rules came out of it: judge the presentation and the offer as one night, and only compare versions that carry the same fixes.</p>
+
+<h3>3. The Burned And The Skeptical · October 25</h3>
+<p>We pulled the 28 hardest owners (10 skeptics, 18 burned by an agency) and asked what stopped them. The walls: "Show me it gets built before you show me a price" (12). "One client isn't proof" (8). "Another monthly bill" (7). And one the presentation itself created: Jimmy's story said he once "promised more websites than he could build," and then the offer sold websites.</p>
+<table class="tbl">
+<tr><th>Room of 100</th><th class="r">Bought</th><th class="r">Sales</th></tr>
+<tr><td>A2</td><td class="n">44</td><td class="n">$81,868</td></tr>
+<tr class="hi"><td>A5: adds "How This Works" (everything we agree on gets built, in a signed agreement, yours if you leave)</td><td class="n up">53</td><td class="n up">$116,841</td></tr>
+<tr><td>A5, run again as the new base</td><td class="n">46</td><td class="n">$107,862</td></tr>
+<tr class="hi"><td>A6: adds the whole bill ("The price is the price. Nothing gets added without your yes."), the four people doing the work named, a track record, and the "promised more websites" line cut from Jimmy's story</td><td class="n up">54</td><td class="n up">$123,838</td></tr>
+</table>
+<p>"How This Works" moved 13 owners and nobody away. Among the burned owners, buyers went from 8 to 12. One owner dropped from Best to Better because a promise became "could": "Could means nobody's sent it yet." One caution: the A6 test was run by a simulator that had already seen the burned-owner study, so part of that gain is confirmation, not a fresh read.</p>
+<p>Two tests that day were dropped. A "see it in your business first" picture added Good buyers (28 to 36) but cost Better ones, and he cut it because it "made Better buyers cautious" and pulled in weaker customers. A6.3, which made the meeting sound more finished, sold the same as A6 (57 against 56) and moved two Better buyers down to Good. He kept A6: "we're really splitting hairs."</p>
+
+<h3>4. The Numbers · October 27</h3>
+<p>A new room of 24 read the old night and the newly locked one side by side. The new one sold 13 against 10. The biggest loss in both: values that read as made up. Jim's bread company, losing $4.58 a box, was shown making $673,000 a year. That was the main target.</p>
+<p>So Belief 5 was rebuilt from the bottom: the math per box, $140 a box as a marketing budget against the other guy's $7, then "say it's only 30%, still six times the other guy." The $673,000 dropped to a P.S. The offer's values came into range at the same time ($35,640 total, the story at $1,997 against a video company's $5,000).</p>
+<table class="tbl">
+<tr><th>Owners doubting each number</th><th class="r">Before</th><th class="r">After</th></tr>
+<tr><td>Jim's $673,000</td><td class="n up">17</td><td class="n up">5</td></tr>
+<tr><td>The website's value</td><td class="n">8</td><td class="n">3</td></tr>
+<tr><td>"Priceless"</td><td class="n">7</td><td class="n">0</td></tr>
+<tr><td>The meeting at $10,000+</td><td class="n">3</td><td class="n down">11</td></tr>
+<tr><td>$140 a box</td><td class="n">1</td><td class="n down">13</td></tr>
+<tr><td>Found money at $9,997</td><td class="n">0</td><td class="n down">11</td></tr>
+</table>
+<p>The doubt moved, and buyers still went from 38 to 42 across three rooms of 24. The new doubts were about numbers people grumbled at and bought past anyway. <b>Changed:</b> nothing about those numbers, and a rule: read a simulation by what owners did, not what they felt. Fix only what the no-buyers stopped at.</p>
+<p>The same morning, two more tests went nowhere. A slide for "not my kind of business" owners ("Not A Bread Business? Neither Were These," eight real clients) moved none of the four owners it was built for: three had already checked out during Jim's bread numbers, before the slide arrived. And repeating "this offer lives here, in this room" cost two owners who won't spend without their spouse. <b>Changed:</b> that line came out of the written offer, to be said live. Across five rooms (120 owners) the two finalist nights tied: 65 buyers each.</p>
+<p>Adding the money dashboard to the cheapest tier also tested even (66 against 65). It gave Good buyers another reason, not new buyers, and Good can't actually deliver it. Not adopted.</p>
+
+<h3>5. The Night As Lessons · November 2 and 3</h3>
+<p class="small">A new room of 50, each version read twice.</p>
 <table class="tbl">
 <tr><th>Version</th><th>What changed</th><th class="r">Buyers</th><th class="r">Sales</th></tr>
 <tr><td>15</td><td>The starting point for this room.</td><td class="n">17</td><td class="n">$43,949</td></tr>
 <tr><td>16</td><td>Every section rebuilt as a lesson (tell, show, try, hand off). Offer reshaped into three steps.</td><td class="n down">14.5</td><td class="n down">$39,457</td></tr>
-<tr><td>16.1</td><td>Belief 6: one live moment (a call to the pizza shop's AI), screenshots instead of live builds, a short practice at the end.</td><td class="n up">17.5</td><td class="n">$42,448</td></tr>
-<tr class="hi"><td>16.2</td><td>Belief 7: "through the eyes of a marketer." Two outside studies first, then what we did to one handyman's estimate. No room exercise.</td><td class="n up">19.5</td><td class="n up">$48,442</td></tr>
-<tr><td>16.3</td><td>The phone agent took "about a day" to get right, not "five minutes." Belief 4 rebuilt around finding what your customers love.</td><td class="n">20.5</td><td class="n">$48,439</td></tr>
-<tr><td>16.3 + "for you"</td><td>Five new slides translating each of Jim's money ideas to every kind of business, plus a full flow sweep.</td><td class="n down">17.5</td><td class="n down">$43,448</td></tr>
-<tr class="hi"><td>Final</td><td>The flow sweep kept. The five "for you" slides taken out.</td><td class="n">19.5</td><td class="n">$47,442</td></tr>
+<tr><td>16.1</td><td>Belief 6: one live moment (a call to the pizza shop's AI), screenshots instead of live builds.</td><td class="n up">17.5</td><td class="n">$42,448</td></tr>
+<tr class="hi"><td>16.2</td><td>Belief 7: "through the eyes of a marketer." Two outside studies first, then what we did to one handyman's estimate.</td><td class="n up">19.5</td><td class="n up">$48,442</td></tr>
+<tr><td>16.3</td><td>"About a day," not "five minutes." Belief 4 rebuilt around what your customers love.</td><td class="n">20.5</td><td class="n">$48,439</td></tr>
+<tr><td>+ "for you"</td><td>Five slides translating Jim's money ideas to every business, plus a full flow sweep.</td><td class="n down">17.5</td><td class="n down">$43,448</td></tr>
+<tr class="hi"><td>Final</td><td>The sweep kept. The five "for you" slides out.</td><td class="n">19.5</td><td class="n">$47,442</td></tr>
 </table>
-<p class="small">Earlier, October 27, in three different rooms of 24: version 13 sold 38, version 14 sold 42 (the Belief 5 rebuild in finding 2, with the offer values brought into range), version 15 sold 38.</p>
+<p>The marketer's-eye section was the clearest win here: 14 of 100 readers named it as what moved them, and 12 of those bought. The "for you" slides were the clearest loss: owners who named Belief 5 as what held them back went from 6 to 14, all with the same complaint, that Jim's numbers are estimates. More minutes on projections meant more minutes to doubt them. The flow sweep cut the number of owners who got lost (32 to 27) and didn't move sales at all.</p>
 </section>
 
 <section>
 <h2>What Made The Difference</h2>
 
 <div class="find">
+<span class="tag up">Moved it up · the most</span>
+<h3>1. Answer The Burned Owner Before They Ask</h3>
+<p>The two biggest gains of the whole build came from the same place: the owners who'd paid for promises before. "How This Works" (+9 buyers, about +$35,000 per 100), then the whole bill and the named people (+8 buyers, about +$16,000). Neither one added a deliverable. They took the fear out of saying yes.</p>
+<p class="lesson">Before the stack, show how it works, what it costs in total, and who does it. Transparency sells to the people who've been burned, and it costs nothing with everyone else.</p>
+</div>
+
+<div class="find">
 <span class="tag up">Moved it up</span>
-<h3>1. Prove The Marketer's Eye, Then Show It At Work</h3>
-<p>The biggest single gain came from one section. Version 16.2 stopped asking the room to try good, better, best themselves. Instead: here's what a marketer sees. Study one: one option, 10 of 100 buy; a choice, 66 of 100. Study two: add a third option and people spend 43% more. Then: "So now you can see what I saw that Jamon didn't." Then his estimate, before and after.</p>
-<p>Sales went from about $42,400 to about $48,400. 14 of the 100 readers named that section as what moved them, and 12 of those 14 bought. Buyers rated "I need someone with a marketer's eyes, not just the tool" 4.3 out of 5. Non-buyers, 2.9.</p>
+<h3>2. The Door Price Sets The Room</h3>
+<p>Dropping the entry tier from $1,997 to $997 and the top from $7,497 to $4,997 nearly doubled buyers (24 to 43 per 100). The top tiers set how much building you sign up for. The bottom tier sets how many people start at all.</p>
+<p class="lesson">Price the first step for the owner whose rent it would be. Make money on the climb, not the door.</p>
+</div>
+
+<div class="find">
+<span class="tag up">Moved it up</span>
+<h3>3. Test The Night, Not The Page</h3>
+<p>Read alone, the polished rewrite beat his words with every reader. Run inside the whole night, his words sold 41 against 32. A grader judges an offer's logic. A buyer reacts to what the night has already made them believe, and to lines like "our consultations are $1,997 each."</p>
+<p class="lesson">Never pick an offer by reading it alone. Run it at the end of the presentation it lives in.</p>
+</div>
+
+<div class="find">
+<span class="tag up">Moved it up</span>
+<h3>4. A Number They Believe Beats A Bigger Number</h3>
+<p>The $673,000 went from the most doubted number in the room to a P.S. most owners bought past. The per-box math they could check in their heads did the selling.</p>
+<p class="lesson">Lead with the number they can check. Let the big one ride underneath.</p>
+</div>
+
+<div class="find">
+<span class="tag up">Moved it up</span>
+<h3>5. Prove The Marketer's Eye, Then Show It At Work</h3>
+<p>Two outside studies first (one option, 10 of 100 buy; a choice, 66 of 100; a third option, 43% more spent), then "So now you can see what I saw that Jamon didn't." Buyers rated "I need someone with a marketer's eyes, not just the tool" 4.3 out of 5. Non-buyers, 2.9.</p>
 <p class="lesson">The sale lives in the gap between the tool and the eye. Borrow outside proof that the eye is real, then show yours at work on a real client.</p>
 </div>
 
 <div class="find">
-<span class="tag up">Moved it up</span>
-<h3>2. A Number They Believe Beats A Bigger Number</h3>
-<p>Jim's bread company loses $4.58 on every box. Early versions led with the big finish: about $673,000 a year. It was the most doubted number in the room, named by 17 of 24 owners. Version 14 rebuilt it from the bottom: the math per box, $140 a box as a marketing budget against the other guy's $7, then "cut it by 70% and he's still six times the other guy." The $673,000 dropped to a small P.S.</p>
-<p>Same three rooms: 38 buyers became 42. The offer's values were brought into a believable range in the same version, so the two share the credit, but the reasons people gave moved the most on this one: most owners bought right past the P.S.</p>
-<p class="lesson">Lead with the number they can check in their head. Let the big one ride underneath.</p>
+<span class="tag down">Moved it down · four times</span>
+<h3>6. Make The Cheapest Tier Feel Complete, And Buyers Step Down To It</h3>
+<p>A meeting stripped of everything it previewed. A "see it in your business first" picture. A meeting described as "ready," with the new site "already picked." The dashboard put into Good. Each time, Better buyers stepped down or Good buyers just got another reason. "My new site's already picked and ready." "I'll build it myself."</p>
+<p class="lesson">Good should be valuable and clearly the start. When it sounds like the finish, it eats the tier above it.</p>
 </div>
 
 <div class="find">
 <span class="tag down">Moved it down</span>
-<h3>3. Translating The Example Made It Worse</h3>
-<p>The trades owners said Jim's bread felt far from them. So we added a "for you" slide after each of Jim's five money ideas: a maintenance plan for a roofer, a membership for a salon, the shampoo in the chair. It was the right instinct, and it cost about 3 buyers and $5,000.</p>
-<p>Why: it made the stretch full of projected numbers longer. More time with "say a quarter of his boxes subscribe" and "$7 an insert" meant more time to doubt them. The owners who named Belief 5 as what held them back went from 6 to 14. With the five slides out, it was 10, and sales came back.</p>
-<p>What stayed: one line on the total slide, "For you, that's every order. Every job." It does the translating without the extra minutes.</p>
-<p class="lesson">Never add length to the part of the night built on projections. Translate in a line, not a slide.</p>
+<h3>7. Repeated Scarcity Costs The People Who Need Their Spouse</h3>
+<p>"This offer lives here, in this room," said twice, stopped two owners who never decide without their partner: "I didn't love being told it disappears tonight." A free 24-hour hold would have won them back on paper (about 20 buyers instead of 16), but only if someone calls every hold the next morning. He kept "tonight," said once, live, and no hold: a pile of holds in the real world becomes phone chasing.</p>
+<p class="lesson">Say the deadline once and mean it. Repeating it doesn't add buyers. It only costs the careful ones.</p>
+</div>
+
+<div class="find">
+<span class="tag down">Didn't reach them</span>
+<h3>8. Fix Doubt Where It Starts, Not After</h3>
+<p>Twice we tried to bring back owners who felt "that's bread, not my kind of business." A slide of eight real client businesses afterward moved none of them; they'd checked out during Jim's numbers. Five "for you" translation slides inside Jim's numbers cost 3 buyers. The one thing that worked was a single line on the total: "For you, that's every order. Every job."</p>
+<p class="lesson">A fix placed after the moment of doubt never reaches the person. One line in the right spot beats five slides.</p>
 </div>
 
 <div class="find">
 <span class="tag">Didn't move sales</span>
-<h3>4. Easier To Follow Isn't The Same As More Sales</h3>
-<p>Version 16 made every section a clean lesson. It read easier every time, and it sold a little less. Later, a full sweep fixed every hand-off that didn't land, every callback that pointed at nothing, every promise the opening made and never paid off. People who got lost dropped from 32 of 50 to 27. Flow went up. Sales didn't move.</p>
-<p class="lesson">Clarity is the floor, not the lever. Fix it because a confused room can't buy, but don't expect it to sell for you.</p>
-</div>
-
-<div class="find">
-<span class="tag">Didn't move sales</span>
-<h3>5. Telling The Truth About Time Cost Nothing</h3>
-<p>The pizza shop's AI phone agent was pitched as built "in five minutes." Later the night admitted it "takes time and effort to get right." We changed the early claim to "about a day." Sales held: 19.5 before, 20.5 after.</p>
-<p class="lesson">When the honest version is just as strong, there's no reason to keep the exaggeration around for someone to catch.</p>
-</div>
-
-<div class="find">
-<span class="tag up">Moved it up, a little</span>
-<h3>6. Late In The Night, Show The Work Instead Of Doing It Live</h3>
-<p>Live AI demos in the second half made the room wait on the machine. Version 16.1 kept one live moment (Jimmy calls the pizza shop and the AI answers) and walked the other builds through screenshots of what was actually done. Sales recovered from 14.5 to 17.5 buyers.</p>
-<p class="lesson">Save live for the one moment that has to be live. Everything else, show the receipts.</p>
+<h3>9. Clarity Is The Floor, Not The Lever</h3>
+<p>Rebuilding every section as a clean lesson read easier and sold the same or less. A full sweep of every broken hand-off cut the number of lost owners and didn't move sales. Telling the truth ("about a day" instead of "five minutes") cost nothing either.</p>
+<p class="lesson">Fix clarity and honesty because a confused or misled room can't buy. Don't expect them to sell for you.</p>
 </div>
 </section>
 
 <section>
-<h2>What Never Changed</h2>
-<p>Across every version, the same things held people back:</p>
+<h2>What Never Moved</h2>
 <ul>
-<li><b>The price against a tight quarter.</b> Most no's happen at the offer, and most of those are about cash, not doubt.</li>
-<li><b>Deciding tonight without a spouse or partner.</b></li>
-<li><b>Jim's numbers reading as estimates.</b> "Only one real result shown." The fix is a real number, not more slides.</li>
-<li><b>"$14 a day"</b> for what is a lump sum. The analytical owners flag it every time.</li>
+<li><b>"I have to ask my wife."</b> 16 to 21 per 100 in every room, at every price, in every version. It's a follow-up problem, not a wording problem.</li>
+<li><b>Cash-tight owners at the price.</b> Most no's happen at the offer, and most of those are about cash, not doubt.</li>
+<li><b>Three or four committed skeptics per 100.</b> Never buyers, whatever we said.</li>
+<li><b>"Jim's numbers are estimates."</b> The only fix is a real result, not more slides.</li>
+<li><b>"$14 a day."</b> Helps a couple of buyers, puts off an analytical one. A wash every time.</li>
 </ul>
-<p>We tested two ways around the "not tonight" crowd on version 16. A free 24-hour hold: 11 bought that night plus 22 holds, about 20 buyers and $49,940 after a day, but only if every hold gets a call the next morning. And no push to decide tonight: 7 that night, 15 by week's end, the same money, later. We kept "tonight." A pile of holds in the real world becomes phone chasing that won't close the way a simulation says it will.</p>
 </section>
 
 <section>
-<h2>How To Use This</h2>
+<h2>What The Tests Taught Us About Testing</h2>
 <ul>
-<li><b>Test the change, not the comment.</b> Half of what we tried came from what a simulated person said. Some of it helped, some of it hurt. A change stays only if the sales hold it up.</li>
-<li><b>Know your noise.</b> Read the same version twice before you believe any difference. Here that's 3 to 5 buyers out of 50.</li>
-<li><b>Know when to stop.</b> Once changes stop moving the number beyond the noise, the next lesson comes from a live room, not another pass on the deck.</li>
+<li><b>Read what they did, not what they felt.</b> Owners grumbled about the $10,000 meeting and the $140 a box, and bought anyway. Fix only what stopped the no-buyers.</li>
+<li><b>A test can reward the wrong thing.</b> In the first overhaul, a reviewer stripped the meeting of everything it previewed, and the cold readers graded it higher, because an empty first tier pushes people to the next one. It took Daegan reading the copy to see the meeting had been gutted: "a meeting that doesn't hold any value." Since then, the simulation reads the slides exactly as spoken and asks first whether a person would buy at all.</li>
+<li><b>Compare like with like.</b> A version with every structural fix will beat one without them. That tells you about the fixes, not the words.</li>
+<li><b>Know your noise, and know when to stop.</b> The same version swings about 10% between reads. Once changes stop moving the number beyond that, the next lesson comes from a live room, not another pass on the deck.</li>
+<li><b>Test the change, not the comment.</b> Half of what we tried came from something a simulated owner said. Some of it helped, some of it hurt. A change stays only if the sales hold it up.</li>
 </ul>
-<p class="small">Next: the live night, November 9. What to watch: who stops at Jim's numbers, whether the marketer's-eye section moves the room the way it moved the simulation, and how many say "I need to talk to my spouse."</p>
+<p class="small">Next: the live night, November 9. What to watch: how many stop at Jim's numbers, whether "How This Works" and the marketer's-eye section move a real room the way they moved the simulated ones, and how many say "I need to talk to my spouse."</p>
 </section>
 
 <p class="foot"><a href="/invisible-funnel/">Course</a><a href="/terms/">Terms</a><a href="/refunds/">Refunds</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a><br>&copy; Daegan Smith</p>
-</div></body></html>
+</div>
+</body></html>
