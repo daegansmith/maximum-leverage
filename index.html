@@ -36,6 +36,7 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .nl{padding:20px 0 24px;border-top:2px solid var(--ink)}
 .nl h2{margin:0 0 6px}
 .nl .s{font-size:16px;color:var(--soft);margin:0 0 4px;line-height:1.5}
+.nl .ff-6aecd0b7cc612c11759b0cc4__success{display:none!important}
 .nl .go{font-size:16px;font-weight:bold;margin:0 0 10px}
 .nl .ff-6aecd0b7cc612c11759b0cc4__title,.nl .ff-6aecd0b7cc612c11759b0cc4__subtitle{display:none!important}
 .nl .ff-6aecd0b7cc612c11759b0cc4__container{max-width:none!important;padding:0!important;margin:0!important}
@@ -78,7 +79,7 @@ html body .nl .hide-last{display:none!important}
 <script>
 window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6aecd0b7cc612c11759b0cc4' });
 // Hide the form's Last name box (until it's removed in Flodesk itself).
-(function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))f.classList.add('hide-last');});}new MutationObserver(hide).observe(c,{childList:true,subtree:true});})();
+(function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))f.classList.add('hide-last');});}function done(){var st=c.querySelector('[data-ff-stage]');var ok=c.querySelector('.ff-6aecd0b7cc612c11759b0cc4__success');if((st&&st.getAttribute('data-ff-stage')==='success')||(ok&&ok.offsetHeight>0)){var nl=c.closest('.nl');nl.innerHTML='<h2>You\u2019re Subscribed.</h2><p class="s" style="margin:0">Check your email.</p>';return true;}return false;}var mo=new MutationObserver(function(){hide();if(done())mo.disconnect();});mo.observe(c,{childList:true,subtree:true,attributes:true});})();
 </script>
 
 <figure class="qotd" id="qotd" hidden>
