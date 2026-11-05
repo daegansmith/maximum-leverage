@@ -32,7 +32,35 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
 .qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
 .qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+/* Newsletter (Flodesk inline form, restyled to one row) */
+.nl{padding:20px 0 24px;border-top:2px solid var(--ink)}
+.nl h2{margin:0 0 6px}
+.nl .s{font-size:16px;color:var(--soft);margin:0 0 4px;line-height:1.5}
+.nl .go{font-size:16px;font-weight:bold;margin:0 0 10px}
+.nl .ff-6aecd0b7cc612c11759b0cc4__title,.nl .ff-6aecd0b7cc612c11759b0cc4__subtitle{display:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__container{max-width:none!important;padding:0!important;margin:0!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__form{padding:0!important;margin:0!important;max-width:none!important;background:transparent!important}
+html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{display:flex!important;gap:8px!important;align-items:stretch!important;margin:0!important;padding:0!important;flex-wrap:nowrap!important}
+html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 0!important;display:flex!important;gap:8px!important;margin:0!important;flex-wrap:nowrap!important;min-width:0!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__field{flex:1 1 0!important;margin:0!important;min-width:0!important}
+html body .nl .hide-last{display:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__control{height:44px!important;font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-size:15px!important;border:2px solid var(--ink)!important;border-radius:0!important;background:var(--bg)!important;color:var(--ink)!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__label{font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-size:15px!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__footer{margin:0!important;flex:0 0 auto!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__button{height:44px!important;padding:0 18px!important;margin:0!important;border-radius:0!important;font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-weight:bold!important;font-size:15px!important;width:auto!important;min-width:0!important}
+@media (max-width:480px){html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{flex-wrap:wrap!important}html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__footer{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__button{width:100%!important}}
 </style>
+<script>
+(function(w, d, t, h, s, n) {
+  w.FlodeskObject = n;
+  var fn = function() { (w[n].q = w[n].q || []).push(arguments); };
+  w[n] = w[n] || fn;
+  var f = d.getElementsByTagName(t)[0];
+  var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+  var sm = d.createElement(t); sm.async = true; sm.type = 'module'; sm.src = h + s + '.mjs' + v; f.parentNode.insertBefore(sm, f);
+  var sn = d.createElement(t); sn.async = true; sn.noModule = true; sn.src = h + s + '.js' + v; f.parentNode.insertBefore(sn, f);
+})(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
 </head><body><div class="wrap">
 
 <header>
@@ -40,6 +68,18 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 <h1>Daegan Smith</h1>
 <p>Direct response marketer.</p>
 </header>
+
+<div class="nl">
+<h2>The Best Newsletter In Direct Response</h2>
+<p class="s">If I do say so myself. Lives have changed reading it. Yours could be next.</p>
+<p class="go">Subscribe below.</p>
+<div id="fd-form-6aecd0b7cc612c11759b0cc4"></div>
+</div>
+<script>
+window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6aecd0b7cc612c11759b0cc4' });
+// Hide the form's Last name box (until it's removed in Flodesk itself).
+(function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))f.classList.add('hide-last');});}new MutationObserver(hide).observe(c,{childList:true,subtree:true});})();
+</script>
 
 <figure class="qotd" id="qotd" hidden>
 <p class="kicker">Quote of the day</p>
