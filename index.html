@@ -128,16 +128,41 @@ fetch("quotes/daily.json").then(function(r){return r.json();}).then(function(lis
 </section>
 
 <section>
+<h2>Membership</h2>
+<div class="cards">
+<a class="card" href="maximum-leverage/"><span class="ct">Maximum Leverage</span><span class="cd">Look over my shoulder while I build with AI. Every breakthrough, shared as it happens. Live sessions every other week. $97 a month.</span></a>
+</div>
+</section>
+
+<section>
 <h2>Course</h2>
 <div class="cards">
 <a class="card" href="invisible-funnel/"><span class="ct">The Invisible Funnel Masterclass</span><span class="cd">The recorded course on selling by teaching, with two private consultations. $997, one-time.</span></a>
 </div>
 </section>
 
+<section style="border-top:none;padding-top:0">
+<figure class="qotd" id="tst" hidden>
+<p class="kicker">What people say</p>
+<blockquote id="tst-text"></blockquote>
+<figcaption id="tst-by"></figcaption>
+<a href="testimonials/">All the results &rarr;</a>
+</figure>
+<script>
+fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(function(list){
+  if(!list.length)return;var t=list[Math.floor(Math.random()*list.length)];
+  document.getElementById("tst-text").textContent=t.text;
+  document.getElementById("tst-by").textContent="\u2014 "+t.name+(t.who?", "+t.who:"");
+  document.getElementById("tst").hidden=false;
+}).catch(function(){});
+</script>
+
+</section>
+
 <section>
 <h2>Work With Me</h2>
-<p>If you want help with your marketing, email me and tell me about your business.</p>
-<p><a class="btn" href="mailto:reply@maximum-leverage.com">Email Daegan</a></p>
+<p>I'm back at it. One hour, just you and me, on whatever is stuck in your marketing.</p>
+<p><a class="btn" href="work-with-me/">See How It Works</a></p>
 </section>
 
 <p class="foot"><a href="terms/" style="color:inherit">Terms</a> &middot; <a href="refunds/" style="color:inherit">Refunds</a> &middot; <a href="privacy/" style="color:inherit">Privacy</a> &middot; <a href="contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="todos.html" style="color:inherit;opacity:.5;text-decoration:none">Daegan's to-dos</a></p>
