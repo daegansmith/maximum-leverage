@@ -32,6 +32,8 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
 .qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
 .qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+/* Rotating testimonial: Courier, regular, 16px, so it reads as its own voice */
+#tst blockquote{font-family:"Courier New",Courier,monospace;font-style:normal;font-size:16px;line-height:1.6}
 /* Newsletter (Flodesk inline form, restyled to one row) */
 .nl{padding:20px 0 24px;border-top:2px solid var(--ink)}
 .nl h2{margin:0 0 6px}
@@ -81,7 +83,53 @@ window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6
 (function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))if(!f.classList.contains('hide-last'))f.classList.add('hide-last');});}function done(){var st=c.querySelector('[data-ff-stage]');var ok=c.querySelector('.ff-6aecd0b7cc612c11759b0cc4__success');if((st&&st.getAttribute('data-ff-stage')==='success')||(ok&&ok.offsetHeight>0)){var nl=c.closest('.nl');nl.innerHTML='<h2>You\u2019re Subscribed.</h2><p class="s" style="margin:0">Check your email.</p>';return true;}return false;}var mo=new MutationObserver(function(){hide();if(done())mo.disconnect();});mo.observe(c,{childList:true,subtree:true,attributes:true});})();
 </script>
 
-<figure class="qotd" id="qotd" hidden>
+<figure class="qotd" id="tst" hidden>
+<p class="kicker">What people say</p>
+<blockquote id="tst-text"></blockquote>
+<figcaption id="tst-by"></figcaption>
+<a href="testimonials/">All the results &rarr;</a>
+</figure>
+<script>
+fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(function(list){
+  if(!list.length)return;var t=list[Math.floor(Math.random()*list.length)];
+  document.getElementById("tst-text").textContent="\u201C"+t.text+"\u201D";
+  document.getElementById("tst-by").textContent="\u2014 "+t.name+(t.who?", "+t.who:"");
+  document.getElementById("tst").hidden=false;
+}).catch(function(){});
+</script>
+
+
+
+<section style="border-top:none;margin-top:16px;padding-top:0">
+<div class="cards">
+<a class="card" href="quotes/"><span class="ct">Quotes</span><span class="cd">The master list. The lines I keep coming back to.</span></a>
+<a class="card" href="notes/"><span class="ct">Notes</span><span class="cd">Ideas I'm thinking through, and the library of core tools.</span></a>
+<a class="card" href="projects.html"><span class="ct">Projects</span><span class="cd">Things I'm working on right now.</span></a>
+</div>
+</section>
+
+<section>
+<h2>Membership</h2>
+<div class="cards">
+<a class="card" href="maximum-leverage/"><span class="ct">Maximum Leverage</span><span class="cd">Look over my shoulder while I build with AI. Every breakthrough, shared as it happens. Live sessions every other week. $97 a month.</span></a>
+</div>
+</section>
+
+<section>
+<h2>Course</h2>
+<div class="cards">
+<a class="card" href="invisible-funnel/"><span class="ct">The Invisible Funnel Masterclass</span><span class="cd">The recorded course on selling by teaching, with two private consultations. $997, one-time.</span></a>
+</div>
+</section>
+
+
+<section>
+<h2>Work With Me</h2>
+<p>I'm back at it. One hour, just you and me, on whatever is stuck in your marketing.</p>
+<p><a class="btn" href="work-with-me/">See How It Works</a></p>
+</section>
+
+<figure class="qotd" id="qotd" style="margin-top:40px" hidden>
 <p class="kicker">Quote of the day</p>
 <blockquote id="qotd-text"></blockquote>
 <figcaption id="qotd-by"></figcaption>
@@ -118,52 +166,6 @@ fetch("quotes/daily.json").then(function(r){return r.json();}).then(function(lis
   document.getElementById("qotd").hidden=false;
 }).catch(function(){});
 </script>
-
-<section style="border-top:none;margin-top:16px;padding-top:0">
-<div class="cards">
-<a class="card" href="quotes/"><span class="ct">Quotes</span><span class="cd">The master list. The lines I keep coming back to.</span></a>
-<a class="card" href="notes/"><span class="ct">Notes</span><span class="cd">Ideas I'm thinking through, and the library of core tools.</span></a>
-<a class="card" href="projects.html"><span class="ct">Projects</span><span class="cd">Things I'm working on right now.</span></a>
-</div>
-</section>
-
-<section>
-<h2>Membership</h2>
-<div class="cards">
-<a class="card" href="maximum-leverage/"><span class="ct">Maximum Leverage</span><span class="cd">Look over my shoulder while I build with AI. Every breakthrough, shared as it happens. Live sessions every other week. $97 a month.</span></a>
-</div>
-</section>
-
-<section>
-<h2>Course</h2>
-<div class="cards">
-<a class="card" href="invisible-funnel/"><span class="ct">The Invisible Funnel Masterclass</span><span class="cd">The recorded course on selling by teaching, with two private consultations. $997, one-time.</span></a>
-</div>
-</section>
-
-<section style="border-top:none;padding-top:0">
-<figure class="qotd" id="tst" hidden>
-<p class="kicker">What people say</p>
-<blockquote id="tst-text"></blockquote>
-<figcaption id="tst-by"></figcaption>
-<a href="testimonials/">All the results &rarr;</a>
-</figure>
-<script>
-fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(function(list){
-  if(!list.length)return;var t=list[Math.floor(Math.random()*list.length)];
-  document.getElementById("tst-text").textContent=t.text;
-  document.getElementById("tst-by").textContent="\u2014 "+t.name+(t.who?", "+t.who:"");
-  document.getElementById("tst").hidden=false;
-}).catch(function(){});
-</script>
-
-</section>
-
-<section>
-<h2>Work With Me</h2>
-<p>I'm back at it. One hour, just you and me, on whatever is stuck in your marketing.</p>
-<p><a class="btn" href="work-with-me/">See How It Works</a></p>
-</section>
 
 <p class="foot"><a href="terms/" style="color:inherit">Terms</a> &middot; <a href="refunds/" style="color:inherit">Refunds</a> &middot; <a href="privacy/" style="color:inherit">Privacy</a> &middot; <a href="contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="todos.html" style="color:inherit;opacity:.5;text-decoration:none">Daegan's to-dos</a></p>
 </div></body></html>
