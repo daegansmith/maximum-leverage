@@ -79,8 +79,8 @@ html body .nl .hide-last{display:none!important}
 </div>
 <script>
 window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6aecd0b7cc612c11759b0cc4' });
-// Hide the form's Last name box (until it's removed in Flodesk itself).
-(function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))if(!f.classList.contains('hide-last'))f.classList.add('hide-last');});}function done(){var st=c.querySelector('[data-ff-stage]');var ok=c.querySelector('.ff-6aecd0b7cc612c11759b0cc4__success');if((st&&st.getAttribute('data-ff-stage')==='success')||(ok&&ok.offsetHeight>0)){var nl=c.closest('.nl');nl.innerHTML='<h2>You\u2019re Subscribed.</h2><p class="s" style="margin:0">Check your email.</p>';return true;}return false;}var mo=new MutationObserver(function(){hide();if(done())mo.disconnect();});mo.observe(c,{childList:true,subtree:true,attributes:true});})();
+// Hide the Last name box; on success show the thank-you once, and hide the whole block for returning subscribers.
+(function(){var c=document.getElementById('fd-form-6aecd0b7cc612c11759b0cc4');var sent=false;try{if(localStorage.getItem('nl_sub')==='1'){c.closest('.nl').style.display='none';}}catch(e){}c.addEventListener('submit',function(){sent=true;},true);c.addEventListener('click',function(e){if(e.target.closest('button'))sent=true;},true);function hide(){c.querySelectorAll('.ff-6aecd0b7cc612c11759b0cc4__field').forEach(function(f){var l=f.querySelector('label');if(l&&/L.?a.?s.?t/.test(l.textContent))if(!f.classList.contains('hide-last'))f.classList.add('hide-last');});}function done(){var st=c.querySelector('[data-ff-stage]');var ok=c.querySelector('.ff-6aecd0b7cc612c11759b0cc4__success');if((st&&st.getAttribute('data-ff-stage')==='success')||(ok&&ok.offsetHeight>0)){var nl=c.closest('.nl');try{localStorage.setItem('nl_sub','1');}catch(e){}if(sent){nl.innerHTML='<h2>You\u2019re Subscribed.</h2><p class="s" style="margin:0">Check your email.</p>';}else{nl.style.display='none';}return true;}return false;}var mo=new MutationObserver(function(){hide();if(done())mo.disconnect();});mo.observe(c,{childList:true,subtree:true,attributes:true});})();
 </script>
 
 <figure class="qotd" id="tst" hidden>
@@ -105,7 +105,6 @@ fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(funct
 <a class="card" href="quotes/"><span class="ct">Quotes</span><span class="cd">The master list. The lines I keep coming back to.</span></a>
 <a class="card" href="stories/"><span class="ct">Emails And Stories</span><span class="cd">My story in seven chapters, and my favorite emails I've ever sent.</span></a>
 <a class="card" href="notes/"><span class="ct">Notes</span><span class="cd">Ideas I'm thinking through, and the library of core tools.</span></a>
-<a class="card" href="projects.html"><span class="ct">Projects</span><span class="cd">Things I'm working on right now.</span></a>
 </div>
 </section>
 
@@ -123,11 +122,13 @@ fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(funct
 </div>
 </section>
 
-
 <section>
 <h2>Work With Me</h2>
 <p>I'm back at it. One hour, just you and me, on whatever is stuck in your marketing.</p>
 <p><a class="btn" href="work-with-me/">See How It Works</a></p>
+<div class="cards">
+<a class="card" href="projects.html"><span class="ct">Projects</span><span class="cd">Things I'm working on right now.</span></a>
+</div>
 </section>
 
 <figure class="qotd" id="qotd" style="margin-top:40px" hidden>
