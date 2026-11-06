@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2 Guys Site Mockup, Fuller</title>
+<style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD;--copper:#B5532A;--tint:#F4F2EE}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+a{color:var(--ink)}a:hover{color:var(--soft)}
+img{max-width:100%;display:block}
+.mock{position:sticky;top:0;z-index:20;background:#1d1d1d;color:#fff;font-size:13px;padding:8px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.mock span{opacity:.7;margin-right:4px}
+.mock button{font:inherit;font-size:13px;padding:6px 12px;border:1px solid #777;background:transparent;color:#fff;cursor:pointer;border-radius:3px}
+.mock button[aria-pressed="true"]{background:#fff;color:#111;border-color:#fff}
+header.site{border-bottom:1px solid var(--rule)}
+.hwrap{max-width:620px;margin:0 auto;padding:16px 20px;display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between;align-items:center}
+.brand{font-weight:bold;font-size:17px;text-decoration:none}
+nav.top{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px}
+nav.top a{text-decoration:none;color:var(--soft)}nav.top a:hover{color:var(--ink)}
+nav.top a.seat{color:var(--ink);font-weight:bold;text-decoration:underline}
+main{max-width:620px;margin:0 auto;padding:52px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:42px;font-weight:900;letter-spacing:-.5px;line-height:1.1;margin:0 0 22px}
+h2{font-size:26px;font-weight:bold;line-height:1.25;margin:0 0 16px}
+h3{font-size:20px;font-weight:bold;line-height:1.3;margin:0 0 6px}
+p{margin:0 0 16px}
+section.s{padding-top:40px;margin-top:48px;border-top:1px solid var(--rule)}
+.btn{display:inline-block;padding:14px 20px;border:2px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:#fff;color:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink)}
+.small{font-size:15px;color:var(--soft)}
+.vid{border:4px solid var(--ink);aspect-ratio:16/9;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;text-align:center;padding:20px}
+.vid span{font-size:15px}
+.quote{border-left:4px solid var(--ink);padding:4px 0 4px 18px;margin:0 0 22px}
+.quote p{margin:0 0 10px}
+.quote .who{font-size:15px;font-weight:bold;margin:0}
+.quote .who small{display:block;font-weight:normal;color:var(--soft);font-size:14px}
+.wishes{display:grid;gap:12px}
+.wish{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:16px 18px;border:2px solid var(--ink);text-decoration:none;color:var(--ink)}
+.wish:hover{background:var(--ink);color:#fff}.wish:hover .wd,.wish:hover .wc{color:#fff}
+.wt{font-size:20px;font-weight:bold;line-height:1.3}
+.wc{font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--copper);align-self:center;text-align:right}
+.wd{grid-column:1/-1;font-size:16px;line-height:1.5;color:var(--soft)}
+.wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tile{display:flex;flex-direction:column;border:2px solid var(--ink);text-decoration:none;color:var(--ink)}
+.tile img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.tile span{padding:10px 12px;font-size:15px;line-height:1.35}
+.tile.dark{background:var(--ink);color:#fff;justify-content:space-between}
+.tile.dark b.big{padding:18px 14px;font-size:18px;line-height:1.4}
+.doodle{border:2px solid var(--ink);margin:0 0 10px}
+.cap{font-size:15px;color:var(--soft);margin:0 0 22px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.three div{border:2px solid var(--ink);padding:14px}
+.three b{display:block;font-size:22px;letter-spacing:.5px}
+.three span{font-size:15px;line-height:1.45;display:block;margin-top:4px}
+.band{background:var(--tint);padding:24px 20px;margin:0 0 6px}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover{background:var(--ink);color:#fff}.card:hover .cd{color:#fff}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.roads{display:grid;gap:12px;margin:0 0 22px}
+.road{border:2px solid var(--rule);padding:14px 16px}
+.road.pick{border-color:var(--ink);background:var(--ink);color:#fff}
+.road .rk{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;opacity:.75}
+details{border-bottom:1px solid var(--rule);padding:12px 0}
+summary{cursor:pointer;font-weight:bold;font-size:18px}
+details p{margin:10px 0 0;font-size:17px}
+ol.steps{padding-left:24px;margin:0 0 20px}ol.steps li{margin:0 0 10px}
+.num{display:inline-block;min-width:34px;height:34px;line-height:30px;text-align:center;border:2px solid var(--ink);font-weight:bold;margin-right:10px}
+.try{border:2px solid var(--ink);padding:20px;margin:0 0 18px}
+.try h3{display:flex;align-items:center}
+.bring{font-size:16px;font-weight:bold;color:var(--copper);margin:12px 0 0}
+.result{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.result div{border:2px solid var(--ink);padding:14px}
+.result b{display:block;font-size:24px;line-height:1.2}
+.result span{font-size:15px;color:var(--soft)}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);font-size:14px;color:var(--soft)}
+footer p{margin:0 0 6px}
+.page[hidden]{display:none}
+.note{font-size:13px;background:#FFF6D6;border:1px dashed #C9A300;color:#5a4a00;padding:8px 10px;margin:0 0 18px}
+@media (max-width:560px){h1{font-size:34px}.three{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="mock" role="navigation" aria-label="Mockup pages"><a href="../projects.html#site2g" style="color:#fff;margin-right:6px">&larr; Projects</a><span>Fuller site · pick a page:</span>
+<button type="button" data-go="home" aria-pressed="true">Home, fuller</button>
+<button type="button" data-go="jack" aria-pressed="false">A client story page</button>
+<button type="button" data-go="try" aria-pressed="false">Try This Tonight</button><a href="original.html" style="color:#fff;margin-left:6px">Original home</a><a href="meetup.html" style="color:#fff">Registration page</a>
+</div>
+
+<header class="site"><div class="hwrap">
+<a class="brand" href="#" data-go="home">2 Guys and a Genie</a>
+<nav class="top" aria-label="Site">
+<a href="#" data-go="home" data-anchor="stories">Stories</a>
+<a href="#" data-go="try">Try This Tonight</a>
+<a href="#" data-go="home" data-anchor="work">Work With Us</a>
+<a href="#" class="seat" data-go="home" data-anchor="night">Save My Seat</a>
+</nav></div></header>
+
+<!-- ======================= HOME ======================= -->
+<main class="page" id="p-home">
+
+<section>
+<p class="kicker">Fishers, Indiana · For local business owners</p>
+<h1>Your Business, Found First And Chosen Every Time.</h1>
+<p>Two neighbors from Fishers.</p>
+<p>One has spent twenty years making people want to buy.<br>The other built a business and sold it.</p>
+<p style="margin-bottom:26px">And a genie that works nights.</p>
+<a class="btn" href="#night" data-go="home" data-anchor="night">Save My Seat At The Next Free Night</a>
+<p class="small" style="margin-top:12px">Free. About two hours. Bring your business.</p>
+</section>
+
+<section class="s" id="stories">
+<p class="kicker">Pick one</p>
+<h2>What Do You Wish Your Business Did On Its Own?</h2>
+<p>Each one already happened, in a real business. Tap yours to see whose.</p>
+<div class="wishes">
+<a class="wish" href="#" data-go="jack"><span class="wt">Never lose another lead</span><span class="wc">Gotta Call Jack ›</span><span class="wd">Missed calls get a text back. Thank-yous, reviews and referral asks go out on their own. "It's all automated. We don't have to initiate that."</span></a>
+<a class="wish" href="#"><span class="wt">Answer every call</span><span class="wc">Maestro's Pizza ›</span><span class="wd">A one-man shop that sent 4 of every 10 calls to voicemail. Now the phone picks up, even with dough on his hands.</span></a>
+<a class="wish" href="#"><span class="wt">Get more 5-star reviews</span><span class="wc">Excell Chiropractic ›</span><span class="wd">His review requests had quietly sent nothing for months, inside software he was already paying for.</span></a>
+<a class="wish" href="#"><span class="wt">Find money I'm missing</span><span class="wc">Jim's Amazing Bread ›</span><span class="wd">Losing money on every box. Then we found what he was really selling.</span></a>
+</div>
+</section>
+
+<section class="s">
+<p class="kicker">What happened to Jamon</p>
+<h2>From Chasing Work To Booked Six Months Out.</h2>
+<div class="vid"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z"></path></svg><span>[Jamon's Story · 2:25, in his own voice]</span></div>
+<p class="small" style="margin:10px 0 22px">Click play to hear Jamon tell it himself.</p>
+<div class="quote">
+<p>"Now, I'm a retired cop. I don't trust you. And nobody wants to hear their baby's ugly.</p>
+<p>But Jimmy said, if you just trust me, I can take your business places you never thought it could go.</p>
+<p>He can give you your life back. I'm glad I trusted him."</p>
+<p class="who">Jamon, with his son Chase, GottaCallJack.com</p>
+</div>
+<a href="#" data-go="jack" style="font-weight:bold">Read Jamon's whole story →</a>
+</section>
+
+<section class="s">
+<p class="kicker">Not a handyman? Neither were these.</p>
+<h2>Different Businesses. Same Digging.</h2>
+<p>Tap any one to see the before and after.</p>
+<div class="wall">
+<a class="tile" href="#"><img src="../before-after/law-after.jpg" alt="Jim Ammeen's new site"><span><b>Lawyer</b><br>Jim Ammeen</span></a>
+<a class="tile" href="#"><img src="../before-after/excell-after.jpg" alt="Excell Sports Chiropractic's new site"><span><b>Chiropractor</b><br>Excell Sports Chiropractic</span></a>
+<a class="tile" href="#"><img src="../before-after/bruce-after.jpg" alt="Bruce Barker's new site"><span><b>Piano teacher</b><br>Bruce Barker</span></a>
+<a class="tile dark" href="#"><b class="big">4 of every 10 calls went to voicemail.<br>Now every one gets answered.</b><span style="border-top:1px solid #555"><b>Pizza shop</b><br>Maestro's · hear it pick up ›</span></a>
+<a class="tile" href="#"><img src="../before-after/vapor-after.jpg" alt="Just Vapor's new site"><span><b>Vape shop</b><br>Just Vapor</span></a>
+<a class="tile" href="#"><img src="../before-after/mdfa-after.jpg" alt="MD Financial Advisors' new site"><span><b>Financial advisor</b><br>MD Financial Advisors</span></a>
+<a class="tile" href="#"><img src="../before-after/ian-after.jpg" alt="Ian Borgerhoff's new site"><span><b>Photographer</b><br>Ian Borgerhoff</span></a>
+<a class="tile" href="#"><img src="../before-after/dss-after.jpg" alt="Digital Sound Services' new site"><span><b>Wedding DJ</b><br>Digital Sound Services</span></a>
+</div>
+</section>
+
+<section class="s">
+<p class="kicker">Your hands are safe</p>
+<h2>It's Not Coming For Your Wrench. It's Coming For Your Clipboard.</h2>
+<img class="doodle" src="doodles/the-work-and-the-paperwork.webp" alt="A plumber under a sink beside a little robot carrying a stack of invoices at night">
+<p class="cap">The work you're proud of stays yours.</p>
+<p>The quotes. The schedule. The invoices. "Did anybody call Mrs. Jones back?"</p>
+<p>That's the stuff eating your nights. And it's exactly what the genie is best at.</p>
+</section>
+
+<section class="s">
+<p class="kicker">Why now</p>
+<h2>It Got Good. It Got Cheap. It Got Hands.</h2>
+<div class="three">
+<div><b>Good</b><span>If you tried it a year ago and it was meh, it really was. That wasn't you.</span></div>
+<div><b>Cheap</b><span>The same quality got more than 280 times cheaper in two years.*</span></div>
+<div><b>Hands</b><span>It doesn't just talk anymore. It answers the phone and does the work.</span></div>
+</div>
+<img class="doodle" src="doodles/it-got-hands.webp" alt="The chat box talks. The new one does the work.">
+<p class="cap">The chat box talks. The new stuff does.</p>
+<p class="small">*Stanford AI Index 2025, late 2022 to late 2024.</p>
+</section>
+
+<section class="s">
+<p class="kicker">What owners say</p>
+<h2>In Their Own Words.</h2>
+<div class="quote"><p>"HOLY COW!!! I'm blown away Jimmy! ... what you put together TODAY is UNREAL!!"</p><p class="who">Bruce Barker, piano teacher</p></div>
+<div class="quote"><p>"This was not talking about AI. This was actually helping people use AI."</p><p class="who">Roger, at the last free night</p></div>
+<div class="quote"><p>"Unbelievable... this is definitely gonna make my life a whole lot easier."</p><p class="who">Dr. Marcus McCray, Excell Sports Chiropractic<small>Team Chiropractor, Indianapolis Colts</small></p></div>
+</section>
+
+<section class="s">
+<div class="band">
+<p class="kicker">Free · Five minutes</p>
+<h2>Try This Tonight.</h2>
+<p>Pull out your phone and ask ChatGPT: "Who's the best [what you do] in Fishers?"</p>
+<p>Are you on the list? Your next customer is already asking it.</p>
+<a href="#" data-go="try" style="font-weight:bold">Three more five-minute tests →</a>
+</div>
+</section>
+
+<section class="s" id="night">
+<p class="kicker">The free night · [Next date] · Launch Fishers</p>
+<h2>Watch It Work On A Business Like Yours.</h2>
+<div class="quote"><p>"90% of them all are about AI. And they always get me excited, but they never give me any tools to actually do this."</p><p class="who">Kim, a local owner, on every other AI event</p></div>
+<p>This one's different. Bring one problem. Leave with one thing working, on your own phone.</p>
+<ul style="padding-left:22px;margin:0 0 22px">
+<li style="margin-bottom:8px">A real local business made over live. The next one might be yours.</li>
+<li style="margin-bottom:8px">A pizza shop's phone picking up, on speaker.</li>
+<li>What a bread maker was losing on every box, and why it was the most valuable thing he owns.</li>
+</ul>
+<a class="btn" href="#">Save My Seat, It's Free</a>
+</section>
+
+<section class="s" id="work">
+<p class="kicker">Work with us</p>
+<h2>Three Roads. Pick Yours.</h2>
+<div class="roads">
+<div class="road"><span class="rk">Road one</span><h3>Do it yourself</h3><span class="small">Come to the free night and we'll show you how. It's fun, and it takes time.</span></div>
+<div class="road"><span class="rk">Road two</span><h3>Have someone do it all</h3><span class="small">Smart, and the most expensive. You're cut out of the process.</span></div>
+<div class="road pick"><span class="rk">Road three</span><h3 style="color:#fff">Do it together</h3><span style="font-size:15px;color:#ddd">We build it with you. You own it. That's what we do.</span></div>
+</div>
+<div class="quote"><p>"I don't have time to learn how to drive it... Jimmy, just let me drive."</p><p class="who">Jamon, Gotta Call Jack</p></div>
+<p>It starts with one meeting. That's how it started for every business on this page.</p>
+<a class="btn ghost" href="#">Grab 30 Minutes With Jimmy</a>
+</section>
+
+<section class="s">
+<p class="kicker">Questions</p>
+<h2>What Owners Ask Us.</h2>
+<details open><summary>I tried ChatGPT. It was meh.</summary><p>It was. It wasn't you. The tools got really good recently, and it had never been to your shop. Give it the tour and it stops sounding like everybody else.</p></details>
+<details><summary>My customers will hate a robot.</summary><p>They hate voicemail more. The real choice at 7 p.m., while you're on a ladder, is a friendly answer or nobody picking up.</p></details>
+<details><summary>Will it send things without me?</summary><p>No. The genie grants, you decide. It drafts, you send. Nothing goes out with your name on it until you say yes.</p></details>
+<details><summary>Is the free night a pitch?</summary><p>It's two hours of teaching and doing. At the end, one minute on how to work with us, said out loud, up front. No pressure.</p></details>
+<details><summary>I'm not techy.</summary><p>If you can send a text, you can do this. If you can explain a job to a new hire, you already speak its language.</p></details>
+<details><summary>Who are you?</summary><p>Jimmy Davis and Paul Lorkowski, neighbors in Fishers. Jimmy brings 20+ years of direct response marketing. Paul owned a business and sold it. The genie is AI.</p></details>
+</section>
+
+<section class="s">
+<p class="kicker">Meet the guys</p>
+<h2>It Started At A Garage Sale.</h2>
+<div class="cards">
+<div class="card"><span class="ct">Jimmy Davis</span><span class="cd">20+ years in direct response. The barefoot guy in Jamon's story.</span></div>
+<div class="card"><span class="ct">Paul Lorkowski</span><span class="cd">Owned a business. Sold it. Watched one meeting with Jamon and said, "We could do this for other business owners."</span></div>
+<div class="card"><span class="ct">The Genie</span><span class="cd">Works nights. Never calls in sick. Jamon thinks it's Jimmy.</span></div>
+</div>
+</section>
+
+<footer><p>Stories · Try This Tonight · For Group Leaders · Work With Us · Terms · Privacy · Contact</p><p>© 2 Guys and a Genie · Fishers, Indiana</p></footer>
+</main>
+
+<!-- ======================= CLIENT STORY ======================= -->
+<main class="page" id="p-jack" hidden>
+<p class="note">Sample client page. Every client on the wall gets one of these, built from their own words in the Client Proof Library.</p>
+<p class="kicker">Story · Handyman and landscaping · Indianapolis</p>
+<h1>From Chasing Work To Booked Six Months Out.</h1>
+<p>Jamon is a retired Indianapolis cop. He and his son Chase built a handyman business together.</p>
+<p>The day he met Jimmy, he didn't trust him. Here's what happened next.</p>
+<div class="vid" style="margin-top:22px"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4z"></path></svg><span>[Jamon's Story · in his own voice]</span></div>
+
+<section class="s">
+<p class="kicker">The result</p>
+<div class="result">
+<div><b>Booked six months out</b><span>In a couple of months, from job to job.</span></div>
+<div><b>Ads switched off</b><span>Too busy to take more.</span></div>
+</div>
+<div class="quote"><p>"My son's business is so busy right now. We have to literally grow."</p><p class="who">Jamon</p></div>
+</section>
+
+<section class="s">
+<p class="kicker">What we did, three things</p>
+<h2>A Name, A Site, And Follow-Up That Runs Itself.</h2>
+<h3><span class="num">1</span>The name</h3>
+<p>TJOAT.net became GottaCallJack.com. The action you want, his name, and the business, in one phrase.</p>
+<div class="quote"><p>"I don't even have to give people my number anymore."</p><p class="who">Jamon</p></div>
+<img src="../before-after/jack-before-after.jpg" alt="Jack of All Trades' old site beside GottaCallJack.com" style="border:2px solid #111;margin:0 0 26px">
+<h3><span class="num">2</span>The new site</h3>
+<p>Same business, same work. Now it looks like the business his customers already knew it was.</p>
+<h3 style="margin-top:22px"><span class="num">3</span>The follow-up</h3>
+<p>He had nothing going for follow-up. Now a missed call gets a text back. Every job gets a thank-you. A few days later, a friendly ask for a review and a referral.</p>
+<div class="quote"><p>"It's all automated. We don't have to initiate that."</p><p class="who">Jamon</p></div>
+</section>
+
+<section class="s">
+<p class="kicker">Then they took it from there</p>
+<p>TV spots. Radio spots. A jingle. All on their own.</p>
+<div class="quote"><p>"He can give you your life back. Jimmy was the genie that came out of the freaking lantern that day."</p><p class="who">Jamon</p></div>
+</section>
+
+<section class="s">
+<h2>Your Business Could Be The Next One On The Screen.</h2>
+<p>See it happen live at the next free night. Bring your business.</p>
+<a class="btn" href="#" data-go="home" data-anchor="night">Save My Seat, It's Free</a>
+<p style="margin-top:22px"><a href="#" data-go="home" data-anchor="stories">← More stories</a></p>
+</section>
+<footer><p>© 2 Guys and a Genie · Fishers, Indiana</p></footer>
+</main>
+
+<!-- ======================= TRY THIS TONIGHT ======================= -->
+<main class="page" id="p-try" hidden>
+<p class="note">Sample free page. Gives value first, and it's the page a group leader can share without it reading like an ad.</p>
+<p class="kicker">Free · Five minutes each</p>
+<h1>Four Things To Try Tonight.</h1>
+<p>No course. No sign-up. Just your phone.</p>
+<p>Do even one, and bring what you found to the next free night.</p>
+
+<div class="try" style="margin-top:28px">
+<h3><span class="num">1</span>Ask who's the best in town</h3>
+<p>Open ChatGPT and ask: "Who's the best [what you do] in Fishers?"</p>
+<p>Are you on the list? Your customers are already asking it that.</p>
+<p class="bring">Bring your answer Monday. If you're not on it, that's fixable.</p>
+</div>
+
+<div class="try">
+<h3><span class="num">2</span>Be your own customer</h3>
+<p>Three quick tests:</p>
+<ul style="padding-left:22px;margin:0 0 12px"><li>Call your own business at 9 p.m.</li><li>Fill out your own website form.</li><li>Read your last ten reviews.</li></ul>
+<p>What happened? How long until someone got back to you?</p>
+<img class="doodle" src="doodles/on-the-ladder.webp" alt="Same call, different ending">
+<p class="bring">Bring what you found. That's where we start.</p>
+</div>
+
+<div class="try">
+<h3><span class="num">3</span>Five brave minutes</h3>
+<p>Tell it about your shop like you would a new hire. Then say two words: "Interview me."</p>
+<img class="doodle" src="doodles/never-been-to-your-shop.webp" alt="It has read more than anybody alive, and never walked into your shop">
+<p>It has read more than anyone alive. It has never once been to your shop. Give it the tour, and it stops sounding like everybody else.</p>
+</div>
+
+<div class="try">
+<h3><span class="num">4</span>The five rules for a good wish</h3>
+<ol class="steps">
+<li><b>Tell it who it is.</b> "You're a marketer with twenty years of experience."</li>
+<li><b>Give it context.</b> Who you are, your business, your customers, your goal.</li>
+<li><b>Say exactly what you want back.</b> "Give me ten, ranked, a sentence on each."</li>
+<li><b>Don't take the first answer.</b> The second and third are almost always better.</li>
+<li><b>Use the right model.</b> Bigger ones think harder.</li>
+</ol>
+<img class="doodle" src="doodles/the-genie-grants-you-decide.webp" alt="The genie grants, you decide">
+<p>One rule over all of them: the genie grants, you decide. It drafts. You send.</p>
+</div>
+
+<section class="s">
+<h2>That's The Easy Part.</h2>
+<p>Knowing what to ask for, in your business, is where we come in. Come see it work on a business like yours.</p>
+<a class="btn" href="#" data-go="home" data-anchor="night">Save My Seat, It's Free</a>
+</section>
+<footer><p>© 2 Guys and a Genie · Fishers, Indiana</p></footer>
+</main>
+
+<script>
+(function(){
+  var pages={home:'p-home',jack:'p-jack',try:'p-try'};
+  function go(name,anchor){
+    Object.keys(pages).forEach(function(k){document.getElementById(pages[k]).hidden=(k!==name);});
+    document.querySelectorAll('.mock button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-go')===name?'true':'false');});
+    var t=anchor?document.getElementById(anchor):null;
+    if(t){t.scrollIntoView({behavior:'smooth'});}else{window.scrollTo(0,0);}
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-go]');
+    if(el){e.preventDefault();go(el.getAttribute('data-go'),el.getAttribute('data-anchor'));return;}
+    var a=e.target.closest('a[href="#"]'); if(a){e.preventDefault();}
+  });
+})();
+</script>
+</body>
+</html>
