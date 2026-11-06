@@ -16,9 +16,9 @@
   h1 { font:700 13px/1 ui-monospace, Menlo, monospace; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 28px; }
   h2 { font:700 12px/1 ui-monospace, Menlo, monospace; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:32px 0 10px; padding-bottom:8px; border-bottom:1px solid var(--line); }
   ul { list-style:none; padding:0; margin:0; }
-  li { display:flex; gap:12px; align-items:flex-start; padding:12px 0; border-bottom:1px solid var(--line); cursor:pointer; }
-  li input { margin-top:5px; width:18px; height:18px; accent-color:var(--accent); flex:none; cursor:pointer; }
-  li.done span.t { color:var(--muted); text-decoration:line-through; }
+  li { padding:12px 0; border-bottom:1px solid var(--line); }
+  li.done { color:var(--muted); text-decoration:line-through; }
+  .tick { font-size:14px; color:var(--muted); margin:0 0 6px; } .tick a { color:var(--accent); }
   .due { color:var(--accent); }
   .stamp { font:12px ui-monospace, Menlo, monospace; color:var(--muted); margin:0; }
   #gate { max-width:320px; margin:18vh auto 0; text-align:center; }
@@ -38,7 +38,7 @@
     <button type="submit">Open</button>
     <div id="err"></div>
   </form>
-  <div id="app"><h1>To-dos</h1><div id="list"></div></div>
+  <div id="app"><h1>To-dos</h1><p class="tick">Read-only copy. Tick things off in <a href="https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93">the to-do doc</a>; this page catches up each morning.</p><div id="list"></div></div>
 </main>
 <script>
 // Contents are AES-GCM encrypted; the password is never stored in this file.
@@ -51,24 +51,12 @@ async function unlock(pw) {
   const pt = await crypto.subtle.decrypt({ name:"AES-GCM", iv:b64(P.iv) }, key, b64(P.ct));
   return new TextDecoder().decode(pt);
 }
-const store = {
-  get(k){ try { return JSON.parse(localStorage.getItem(k) || "{}"); } catch(e){ return {}; } },
-  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
-};
 function render(html) {
   const list = document.getElementById("list");
   list.innerHTML = html;
-  const done = store.get("todos-done");
-  list.querySelectorAll("li[data-id]").forEach(li => {
-    const id = li.dataset.id;
-    const box = document.createElement("input"); box.type = "checkbox"; box.checked = !!done[id] || !!li.closest(".donelist");
-    const t = document.createElement("span"); t.className = "t";
-    while (li.firstChild) t.appendChild(li.firstChild);
-    li.append(box, t);
-    li.classList.toggle("done", box.checked);
-    li.addEventListener("click", e => { if (e.target !== box) box.checked = !box.checked;
-      done[id] = box.checked; li.classList.toggle("done", box.checked); store.set("todos-done", done); });
-  });
+  // Ticks made here before Nov 6 stay visible (struck through) so they can be copied into the doc.
+  let old = {}; try { old = JSON.parse(localStorage.getItem("todos-done") || "{}"); } catch(e){}
+  list.querySelectorAll("li[data-id]").forEach(li => { if (old[li.dataset.id] && !li.closest(".donelist")) li.classList.add("done"); });
   document.getElementById("gate").style.display = "none";
   document.getElementById("app").style.display = "block";
 }
