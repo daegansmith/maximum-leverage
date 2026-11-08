@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The 2 Guys Scoreboard</title>
+<style>
+:root{box-sizing:border-box;--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:50px 24px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:42px;font-weight:900;letter-spacing:-0.5px;line-height:1.15;margin:0 0 24px}
+h2{font-size:26px;font-weight:bold;line-height:1.25;margin:0 0 18px}
+h3{font-size:20px;font-weight:bold;margin:30px 0 10px}
+p{margin:0 0 18px}
+section{padding:44px 0;border-top:1px solid var(--rule)}
+ul{margin:0 0 20px;padding-left:22px} li{margin-bottom:12px}
+a{color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+.links li{margin:0}
+.links a{display:inline-block;padding:10px 16px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-size:16px;font-weight:bold}
+.links a:hover{background:var(--ink);color:var(--bg)}
+.note{margin-top:22px;font-size:16px;color:var(--soft);border-left:3px solid var(--ink);padding-left:12px}
+.spot{border:1px solid var(--rule);padding:14px 16px;margin:0 0 14px}
+.spot b{display:block;margin-bottom:6px}
+.spot ul{margin:0;font-size:16px}.spot li{margin-bottom:6px}
+code{font-size:15px;background:var(--rule);padding:1px 5px}
+.back{font-size:15px;color:var(--soft)}
+</style></head>
+<body><div class="wrap">
+<a class="back" href="/projects.html#site2g">&larr; The 2 Guys And A Genie Site</a>
+<p class="kicker" style="margin-top:26px">2 Guys And A Genie &middot; Live November 8, 2026</p>
+<h1>The Scoreboard</h1>
+<p>Every rotating spot on 2guysandagenie.com shows each visitor one version, and keeps showing them that same one. The scoreboard counts how many people saw each version and how many of them signed up for the night. That tells us which headline, picture and quote actually brings people in.</p>
+<ul class="links">
+<li><a href="https://2guysandagenie.com/scoreboard/">Open the scoreboard</a></li>
+<li><a href="https://2guysandagenie.com/scoreboard/?all=1">With test visits</a></li>
+</ul>
+<p class="note"><b>The password.</b> The scoreboard asks for it once per browser, then remembers it. It's kept in two places, not on this page: the Marketing project handoff doc "2 Guys Site / Handoff — Scoreboard Counter (Nov 8)," and in Cloudflare under Workers, <code>2g-stats</code>, Settings, Variables, <code>KEY</code>.</p>
+
+<section>
+<h2>What's Being Tested, And Where</h2>
+<h3 style="margin-top:0">The Home Page</h3>
+<ul class="links" style="margin:0 0 18px"><li><a href="https://2guysandagenie.com/">2guysandagenie.com</a></li></ul>
+<div class="spot"><b>Headline (3)</b><ul><li>Walk In With A Problem. Walk Out Without It. By 9 O'Clock.</li><li>What Would You Pay Never To Do Again? Bring It Monday Night. It's Free.</li><li>Bring The One Job You Hate Most. Leave Monday Night Never Having To Do It Again.</li></ul></div>
+<div class="spot"><b>Picture under the headline (5)</b><ul><li>7 PM / 9 PM doodle</li><li>Text thread (on a ladder)</li><li>Lock screen at 9:00</li><li>Launch Fishers door</li><li>Work order, stamped HANDLED</li></ul></div>
+<div class="spot"><b>Picture: on the ladder (4)</b><ul><li>Ladder doodle</li><li>Call log</li><li>What your customer sees</li><li>The 4-second clock</li></ul></div>
+<div class="spot"><b>Picture: the work vs. the paperwork (3)</b><ul><li>Plumber and robot doodle</li><li>Tonight's list</li><li>The 10 PM desk</li></ul></div>
+<div class="spot"><b>Picture: never been to your shop (2)</b><ul><li>Robot reading doodle</li><li>HELLO my name is ChatGPT</li></ul></div>
+<div class="spot"><b>Jamon quote, first box (3)</b><ul><li>"Jimmy, just let me drive."</li><li>"$15,000 to $20,000 a month, and now..."</li><li>"With AI by itself... it would have failed"</li></ul></div>
+<div class="spot"><b>Jamon quote, second box (2)</b><ul><li>"He can give you your life back"</li><li>"No business worth building destroys the family"</li></ul></div>
+
+<h3>The Registration Page</h3>
+<ul class="links" style="margin:0 0 18px"><li><a href="https://2guysandagenie.com/meetup/">2guysandagenie.com/meetup</a></li></ul>
+<div class="spot"><b>Headline (3, plus one for Jamon ad visitors)</b><ul><li>The same three headlines as the home page.</li><li>Visitors from the Jamon video ad always see "Jamon Brought One Problem..." (counted on its own line, not rotated).</li></ul></div>
+<div class="spot"><b>Opening block (2)</b><ul><li>Picture Tuesday morning</li><li>Here's Monday night</li></ul></div>
+<div class="spot"><b>Picture in the opening (5)</b><ul><li>The opening's own doodle (7 AM, or 7 PM / 9 PM)</li><li>Text thread (on a ladder)</li><li>Lock screen, matched to the opening: Tuesday 7:00 AM or Monday 9:00 PM</li><li>Launch Fishers door</li><li>Work order, stamped HANDLED</li></ul></div>
+<p class="note">Daegan's call, 3:50 PM Nov 8: the doodle always matches its text; the other pictures rotate in either version.</p>
+</section>
+
+<section>
+<h2>How To Read It</h2>
+<ul>
+<li><b>Saw it:</b> people who saw that version. Each person counts once per version.</li>
+<li><b>Signed up:</b> of those, how many registered. A sign-up is credited to what they saw on the page they signed up from.</li>
+<li><b>Too early to call:</b> fewer than about 10 sign-ups in that spot.</li>
+<li><b>Leaning:</b> one version is ahead, not proven.</li>
+<li><b>Real:</b> about 95% sure the leader isn't luck.</li>
+<li>Rates jump around until each version has a few hundred visitors.</li>
+</ul>
+</section>
+
+<section>
+<h2>Testing It Yourself</h2>
+<p>Open any page with <code>?test=1</code> on the end, like <a href="https://2guysandagenie.com/?test=1">2guysandagenie.com/?test=1</a>. That browser is marked as a tester from then on: its visits show only under "With test visits," never in the real numbers.</p>
+</section>
+
+<section>
+<h2>How It's Built</h2>
+<ul>
+<li><b>The pages:</b> <code>assets/rot.js</code> in the 2guysandagenie repo picks each visitor's versions, remembers them, and sends the counts.</li>
+<li><b>The counter:</b> a Cloudflare Worker named <code>2g-stats</code> at <code>2g-stats.daegansmith.workers.dev</code>, on the daegansmith@me.com Cloudflare account. Its code is <code>stats/worker.js</code> in the same repo.</li>
+<li><b>The numbers:</b> a Cloudflare D1 database named <code>2g-stats</code>.</li>
+<li><b>The scoreboard page:</b> <code>scoreboard/index.html</code> in the 2guysandagenie repo, showing what the Worker serves at <code>/board</code>.</li>
+</ul>
+<h3>Adding A New Rotating Spot</h3>
+<p>Give it a short name in the page, and add that name and its versions' plain-English labels to <code>NAMES</code> in <code>stats/worker.js</code>, then redeploy the Worker. Without the label it still counts, under its short code.</p>
+<h3>Changing The Password</h3>
+<p>Cloudflare, Workers, <code>2g-stats</code>, Settings, Variables, <code>KEY</code>. Change it, save, then use "Forget password" on the scoreboard and enter the new one.</p>
+<h3>Timeline, November 8</h3>
+<ul>
+<li>3:39 PM: home page hero rotates five ways; every rotation fixed per visitor.</li>
+<li>3:47 PM: ladder, work vs. paperwork, and shop pictures rotate.</li>
+<li>3:55 PM: the picture in /meetup's opening rotates.</li>
+<li>About 4:00 PM: counter live. Database and Worker created, address put into <code>rot.js</code>, a test visit confirmed on the board.</li>
+<li>Scoreboard page added at 2guysandagenie.com/scoreboard.</li>
+</ul>
+</section>
+</div></body></html>
