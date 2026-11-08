@@ -36,7 +36,39 @@ code{font-size:15px;background:var(--rule);padding:1px 5px}
 <li><a href="https://2guysandagenie.com/scoreboard/">Open the scoreboard</a></li>
 <li><a href="https://2guysandagenie.com/scoreboard/?all=1">With test visits</a></li>
 </ul>
-<p class="note"><b>The password.</b> The scoreboard asks for it once per browser, then remembers it. It's kept in two places, not on this page: the Marketing project handoff doc "2 Guys Site / Handoff — Scoreboard Counter (Nov 8)," and in Cloudflare under Workers, <code>2g-stats</code>, Settings, Variables, <code>KEY</code>.</p>
+<div class="note" id="pwbox"><b>The scoreboard password.</b> The scoreboard asks for it once per browser, then remembers it.
+<form id="gate" autocomplete="off" style="margin:12px 0 0;display:flex;gap:8px;flex-wrap:wrap">
+<input id="pw" type="password" inputmode="numeric" placeholder="Your daegansmith.me password" aria-label="Your daegansmith.me password" style="flex:1;min-width:200px;font:16px Tahoma,Geneva,Verdana,sans-serif;padding:9px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);border-radius:0">
+<button type="submit" style="font:bold 15px Tahoma,Geneva,Verdana,sans-serif;padding:9px 14px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer;border-radius:0">Show it</button>
+</form>
+<div id="err" style="font-size:15px;margin-top:6px"></div>
+<div id="shown" hidden style="margin-top:12px">
+<p style="margin:0 0 8px">Copy this, then paste it into the scoreboard:</p>
+<p style="margin:0 0 10px"><code id="sbkey" style="font-size:16px;word-break:break-all;user-select:all"></code></p>
+<ul class="links" style="margin:0"><li><a href="#" id="copy">Copy password</a></li><li><a href="https://2guysandagenie.com/scoreboard/">Open the scoreboard</a></li></ul>
+</div>
+<p style="margin:12px 0 0">Also kept in the Marketing project handoff doc "2 Guys Site / Handoff — Scoreboard Counter (Nov 8)," and in Cloudflare under Workers, <code>2g-stats</code>, Settings, Variables, <code>KEY</code>.</p>
+</div>
+<script>
+// The scoreboard password is AES-GCM encrypted with the daegansmith.me password; neither is stored in this file.
+const P = {"salt": "zQtDozjq6pyqWKxzBE95pQ==", "iv": "EeRY7LokarUsQ0ig", "iter": 600000, "ct": "VFMSdXSYwENFArg/CqM/Pk3npiAwYNkG2FEzZKZgZC1FBZ3EwuUx851DxI8V7yQ6"};
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function unlock(pw){
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({name:"PBKDF2",salt:b64(P.salt),iterations:P.iter,hash:"SHA-256"}, base, {name:"AES-GCM",length:256}, false, ["decrypt"]);
+  return new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(P.iv)}, key, b64(P.ct)));
+}
+document.getElementById("gate").addEventListener("submit", async e => {
+  e.preventDefault(); const err=document.getElementById("err"); err.textContent="";
+  try { document.getElementById("sbkey").textContent = await unlock(document.getElementById("pw").value);
+        document.getElementById("gate").style.display="none"; document.getElementById("shown").hidden=false; }
+  catch(x){ err.textContent="Not that one."; }
+});
+document.getElementById("copy").addEventListener("click", async e => {
+  e.preventDefault(); const t=document.getElementById("sbkey").textContent;
+  try { await navigator.clipboard.writeText(t); e.target.textContent="Copied"; } catch(x){ e.target.textContent="Select it above and copy"; }
+});
+</script>
 
 <section>
 <h2>What's Being Tested, And Where</h2>
