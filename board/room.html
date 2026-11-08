@@ -6,21 +6,23 @@
 <meta name="robots" content="noindex, nofollow">
 <title>2 Guys and a Genie</title>
 <style>
-html,body{margin:0;height:100%;background:#fff;color:#111;font-family:Tahoma,Geneva,Verdana,sans-serif}
+:root{--bg:#f7f6f2;--text:#1f1e1c;--muted:#5f5e5a;--line:rgba(0,0,0,.15);--accent:#185fa5;--accent-bg:#e6f1fb;--ok:#27500a;--ok-bg:#eaf3de;--warn:#633806;--warn-bg:#faeeda;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#1e1e1c;--text:#ecebe6;--muted:#b4b2a9;--line:rgba(255,255,255,.18);--accent:#b5d4f4;--accent-bg:#0c447c;--ok:#c0dd97;--ok-bg:#27500a;--warn:#fac775;--warn-bg:#633806;--card:#2a2a28}}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
 #stage{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6vh 8vw;box-sizing:border-box}
-.kind{display:inline-block;font-size:2.2vh;letter-spacing:.08em;text-transform:uppercase;padding:.6vh 1.4vw;border:2px solid #111;margin-bottom:3vh;align-self:flex-start}
-.kind.watch{background:#111;color:#fff}
-.kind.turn{background:#fde68a;border-color:#111}
-.kind.bonus{border-style:dashed}
-h1{font-size:8vh;line-height:1.12;margin:0 0 3vh;font-weight:700}
-.sub{font-size:4.2vh;line-height:1.35;margin:0;color:#333}
-.list{font-size:4.2vh;line-height:1.6;margin:0;padding:0;list-style:none}
-.photo{max-height:62vh;max-width:100%;object-fit:contain;margin-bottom:3vh;align-self:flex-start;border:2px solid #111}
-.prompt{font-size:3.4vh;line-height:1.5;border:2px solid #111;padding:2.5vh 2.5vw;margin-top:2vh;background:#fafafa}
+.kind{display:inline-block;font-size:2.2vh;padding:.7vh 1.4vw;border-radius:1vh;margin-bottom:3vh;align-self:flex-start;background:var(--card);color:var(--muted);border:1px solid var(--line)}
+.kind.watch{background:var(--accent-bg);color:var(--accent);border-color:transparent}
+.kind.turn{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.kind.bonus{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+h1{font-size:8vh;line-height:1.15;margin:0 0 3vh;font-weight:500;letter-spacing:-.01em}
+.sub{font-size:4.2vh;line-height:1.4;margin:0;color:var(--muted)}
+.list{font-size:4.2vh;line-height:1.7;margin:0;padding:0;list-style:none}
+.photo{max-height:62vh;max-width:100%;object-fit:contain;margin-bottom:3vh;align-self:flex-start;border-radius:2vh}
+.prompt{font-size:3.4vh;line-height:1.55;background:var(--card);border:1px solid var(--line);border-radius:2vh;padding:2.5vh 2.5vw;margin-top:2vh}
 .home{align-items:center;text-align:center}
 .home img{width:18vh;margin-bottom:3vh}
-.missing{color:#999;font-size:3vh}
-#hint{position:fixed;right:1.5vw;bottom:1.2vh;font-size:1.6vh;color:#bbb}
+.missing{color:var(--muted);font-size:3vh}
+#hint{position:fixed;right:1.5vw;bottom:1.2vh;font-size:1.6vh;color:var(--muted);opacity:.6}
 </style>
 </head>
 <body>
@@ -29,7 +31,7 @@ h1{font-size:8vh;line-height:1.12;margin:0 0 3vh;font-weight:700}
 <script src="board-data.js"></script>
 <script>
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-var KIND={teach:'',watch:'Watch me',turn:'Your turn',bonus:'Bonus',title:'',photo:''};
+var KIND={teach:'Teach',watch:'Watch me',turn:'Your turn',bonus:'Bonus',title:'',photo:''};
 function body(text){
   if(!text) return '';
   if(text.indexOf('|')>-1){return '<ul class="list">'+text.split('|').map(function(l){return '<li>'+esc(l)+'</li>';}).join('')+'</ul>';}
