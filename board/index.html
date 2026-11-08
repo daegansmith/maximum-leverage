@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Demo Board</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Geneva,Verdana,sans-serif;color:#111;background:#fff}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 20px;border-bottom:2px solid #111;position:sticky;top:0;background:#fff;z-index:2}
+header h1{font-size:20px;margin:0 auto 0 0}
+button{font-family:inherit;font-size:14px;padding:8px 14px;border:2px solid #111;background:#fff;cursor:pointer;border-radius:0}
+button:hover{background:#f2f2f2}
+button.primary{background:#111;color:#fff}
+#status{font-size:13px;color:#666}
+main{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:20px;padding:16px 20px}
+@media(max-width:1000px){main{grid-template-columns:1fr}}
+h2{font-size:15px;margin:18px 0 8px;text-transform:uppercase;letter-spacing:.06em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.card{text-align:left;border:1.5px solid #111;padding:10px 12px;background:#fff;display:block;width:100%}
+.card.on{outline:4px solid #2563eb;outline-offset:-1px}
+.card .t{font-weight:700;font-size:15px;margin:0}
+.card .p{font-size:13px;color:#444;margin:4px 0 0;line-height:1.35}
+.tag{display:inline-block;font-size:11px;padding:2px 6px;margin:8px 4px 0 0;border:1px solid #111}
+.tag.live{background:#111;color:#fff}
+.tag.need{background:#fde68a;border-color:#b45309}
+.tag.lesson{background:#e0e7ff;border-color:#3730a3}
+aside{position:sticky;top:76px;align-self:start}
+.screen{border:2px solid #111;aspect-ratio:16/9;width:100%;overflow:hidden;position:relative;background:#fff}
+.screen iframe{width:1280px;height:720px;border:0;transform-origin:0 0;position:absolute;top:0;left:0;pointer-events:none}
+.screen .ext{position:absolute;inset:0;display:none;align-items:center;justify-content:center;flex-direction:column;padding:16px;text-align:center;font-size:14px}
+.nav{display:flex;gap:8px;margin:10px 0;flex-wrap:wrap}
+.panel{border:1.5px solid #111;padding:12px;margin-top:10px;font-size:14px;line-height:1.45}
+.panel .q{background:#fafafa;border:1px solid #ccc;padding:10px;font-size:13px;white-space:pre-wrap;margin:8px 0}
+.panel .need{background:#fde68a;padding:6px 8px;margin:8px 0;font-size:13px}
+.keys{font-size:12px;color:#666;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Demo Board</h1>
+  <span id="status">Room screen not open</span>
+  <button class="primary" id="openRoom">Open room screen</button>
+  <button id="home">Room: home</button>
+</header>
+<main>
+  <section>
+    <h2>The lessons</h2>
+    <div class="grid" id="lessons"></div>
+    <div id="groups"></div>
+    <h2>The close</h2>
+    <div class="grid"><button class="card" id="offer"><p class="t">The offer</p><p class="p">Offer v11 slides, coming next.</p><span class="tag need">needed</span></button></div>
+  </section>
+  <aside>
+    <div style="font-size:13px;margin-bottom:6px">What the room sees</div>
+    <div class="screen" id="screen"><iframe id="preview" src="room.html#home" title="Room preview"></iframe><div class="ext" id="ext"></div></div>
+    <div class="nav">
+      <button id="prev">&larr; Back</button>
+      <button id="next" class="primary">Next &rarr;</button>
+      <button id="board">Back to board</button>
+    </div>
+    <div id="detail"></div>
+    <div class="keys">Keys: &rarr; or space = next, &larr; = back, Esc = room home.</div>
+  </aside>
+</main>
+<script src="board-data.js"></script>
+<script>
+var roomWin=null, cur=null, idx=0;
+var base=location.href.replace(/[#?].*$/,'').replace(/index\.html$/,'');
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function roomOpen(){return roomWin && !roomWin.closed;}
+function status(){ $('status').textContent = roomOpen() ? 'Room screen open' : 'Room screen not open'; }
+function sendHash(h){
+  $('ext').style.display='none'; $('preview').style.display='block';
+  $('preview').src='room.html#'+h;
+  if(roomOpen()) roomWin.location.href=base+'room.html#'+h;
+  status();
+}
+function sendUrl(u,label){
+  $('preview').style.display='none';
+  $('ext').style.display='flex';
+  $('ext').innerHTML='<strong>'+esc(label)+'</strong><span style="margin-top:6px;word-break:break-all">'+esc(u)+'</span>';
+  if(roomOpen()) roomWin.location.href=u;
+  status();
+}
+function fit(){var w=$('screen').clientWidth; $('preview').style.transform='scale('+(w/1280)+')';}
+window.addEventListener('resize',fit);
+$('openRoom').onclick=function(){
+  roomWin=window.open(base+'room.html#home','g2room','popup,width=1280,height=720');
+  status();
+};
+$('home').onclick=function(){cur=null;idx=0;sendHash('home');draw();};
+$('board').onclick=$('home').onclick;
+function lesson(id){return LESSONS.filter(function(l){return l.id===id;})[0];}
+function demo(id){return DEMOS.filter(function(d){return d.id===id;})[0];}
+function go(n){
+  var L=lesson(cur); if(!L) return;
+  idx=Math.max(0,Math.min(L.slides.length-1,idx+n));
+  sendHash('l/'+cur+'/'+idx); draw();
+}
+$('next').onclick=function(){go(1);};
+$('prev').onclick=function(){go(-1);};
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='TEXTAREA'||e.target.tagName==='INPUT') return;
+  if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}
+  else if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}
+  else if(e.key==='Escape'){$('home').onclick();}
+});
+function tags(d){return '<span class="tag '+(d.ty==='live'?'live':'')+'">'+(d.ty==='live'?'live in AI':'show it')+'</span>'+(d.need?'<span class="tag need">needed</span>':'');}
+function draw(){
+  $('lessons').innerHTML=LESSONS.map(function(l){
+    return '<button class="card'+(cur===l.id?' on':'')+'" data-l="'+l.id+'"><p class="t">'+esc(l.name)+'</p><p class="p">'+esc(l.sub)+'</p><span class="tag lesson">'+l.slides.length+' clicks</span></button>';
+  }).join('');
+  $('groups').innerHTML=GROUPS.map(function(g){
+    var it=DEMOS.filter(function(d){return d.g===g[0];});
+    return '<h2>'+esc(g[1])+'</h2><div class="grid">'+it.map(function(d){
+      return '<button class="card'+(cur===d.id?' on':'')+'" data-d="'+d.id+'"><p class="t">'+esc(d.t)+'</p><p class="p">'+esc(d.p)+'</p>'+tags(d)+'</button>';
+    }).join('')+'</div>';
+  }).join('');
+  [].forEach.call(document.querySelectorAll('[data-l]'),function(b){b.onclick=function(){cur=b.getAttribute('data-l');idx=0;sendHash('l/'+cur+'/0');draw();};});
+  [].forEach.call(document.querySelectorAll('[data-d]'),function(b){b.onclick=function(){pick(b.getAttribute('data-d'));};});
+  var L=lesson(cur), d=demo(cur), h='';
+  if(L){h='<div class="panel"><strong>'+esc(L.name)+'</strong><br>Slide '+(idx+1)+' of '+L.slides.length+': '+esc(L.slides[idx][1])+'</div>';}
+  else if(d){
+    h='<div class="panel"><strong>'+esc(d.t)+'</strong>';
+    if(d.need) h+='<div class="need">Still needed: '+esc(d.need)+'</div>';
+    if(d.prompt){
+      h+='<div class="q" id="q">'+esc(d.prompt)+'</div><button id="copy">Copy prompt</button> <button id="showq">Show prompt on screen</button>';
+      h+='<div style="margin-top:8px;font-size:13px">Then switch the projector to Claude. Come back with "Back to board."</div>';
+    }
+    if(d.url) h+='<div style="margin-top:8px"><button id="open" class="primary">Show it on the room screen</button></div>';
+    h+='</div>';
+  }
+  $('detail').innerHTML=h;
+  if(d&&d.prompt){
+    $('copy').onclick=function(){
+      var t=d.prompt;
+      if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){$('copy').textContent='Copied';});}
+    };
+    $('showq').onclick=function(){sendHash('demo/'+d.id+'/prompt');};
+  }
+  if(d&&d.url) $('open').onclick=function(){sendUrl(d.url,d.t);};
+}
+function pick(id){
+  cur=id; idx=0; var d=demo(id);
+  if(d.ty==='show' && d.url) sendUrl(d.url,d.t); else sendHash('demo/'+id);
+  draw();
+}
+$('offer').onclick=function(){cur=null;sendHash('home');draw();};
+setInterval(status,2000);
+draw(); fit();
+</script>
+</body>
+</html>

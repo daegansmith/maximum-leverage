@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2 Guys and a Genie</title>
+<style>
+html,body{margin:0;height:100%;background:#fff;color:#111;font-family:Tahoma,Geneva,Verdana,sans-serif}
+#stage{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6vh 8vw;box-sizing:border-box}
+.kind{display:inline-block;font-size:2.2vh;letter-spacing:.08em;text-transform:uppercase;padding:.6vh 1.4vw;border:2px solid #111;margin-bottom:3vh;align-self:flex-start}
+.kind.watch{background:#111;color:#fff}
+.kind.turn{background:#fde68a;border-color:#111}
+.kind.bonus{border-style:dashed}
+h1{font-size:8vh;line-height:1.12;margin:0 0 3vh;font-weight:700}
+.sub{font-size:4.2vh;line-height:1.35;margin:0;color:#333}
+.list{font-size:4.2vh;line-height:1.6;margin:0;padding:0;list-style:none}
+.photo{max-height:62vh;max-width:100%;object-fit:contain;margin-bottom:3vh;align-self:flex-start;border:2px solid #111}
+.prompt{font-size:3.4vh;line-height:1.5;border:2px solid #111;padding:2.5vh 2.5vw;margin-top:2vh;background:#fafafa}
+.home{align-items:center;text-align:center}
+.home img{width:18vh;margin-bottom:3vh}
+.missing{color:#999;font-size:3vh}
+#hint{position:fixed;right:1.5vw;bottom:1.2vh;font-size:1.6vh;color:#bbb}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="hint"></div>
+<script src="board-data.js"></script>
+<script>
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+var KIND={teach:'',watch:'Watch me',turn:'Your turn',bonus:'Bonus',title:'',photo:''};
+function body(text){
+  if(!text) return '';
+  if(text.indexOf('|')>-1){return '<ul class="list">'+text.split('|').map(function(l){return '<li>'+esc(l)+'</li>';}).join('')+'</ul>';}
+  return '<p class="sub">'+esc(text)+'</p>';
+}
+function render(){
+  var h=decodeURIComponent(location.hash.slice(1)||'home').split('/');
+  var st=document.getElementById('stage'); st.className=''; var out='';
+  if(h[0]==='l'){
+    var L=LESSONS.filter(function(x){return x.id===h[1];})[0], i=+h[2]||0;
+    if(L){var s=L.slides[Math.min(i,L.slides.length-1)];
+      if(KIND[s[0]]) out+='<span class="kind '+s[0]+'">'+KIND[s[0]]+'</span>';
+      if(s[0]==='photo'&&s[3]) out+='<img class="photo" src="'+esc(s[3])+'" alt="">';
+      out+='<h1>'+esc(s[1])+'</h1>';
+      out+= (s[0]==='photo'&&!s[3]) ? '<p class="missing">'+esc(s[2])+'</p>' : body(s[2]);
+      document.getElementById('hint').textContent=(i+1)+' / '+L.slides.length;
+    }
+  } else if(h[0]==='demo'){
+    var d=DEMOS.filter(function(x){return x.id===h[1];})[0];
+    if(d){
+      out+='<span class="kind watch">Watch me</span><h1>'+esc(d.t)+'</h1>'+body(d.p);
+      if(d.prompt && h[2]==='prompt') out+='<div class="prompt">'+esc(d.prompt)+'</div>';
+    }
+    document.getElementById('hint').textContent='';
+  } else {
+    st.className='home';
+    out='<img src="'+SITE+'/assets/2g-mark.svg" alt=""><h1>2 Guys and a Genie</h1><p class="sub">Free AI For Business Night</p>';
+    document.getElementById('hint').textContent='';
+  }
+  st.innerHTML=out;
+}
+window.addEventListener('hashchange',render);
+render();
+</script>
+</body>
+</html>
