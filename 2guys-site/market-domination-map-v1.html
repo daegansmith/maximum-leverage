@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Market Domination Map</title>
+<style>
+  :root{
+    --fg:#111; --bg:#fff; --muted:#555; --line:#111; --soft:#f4f1ec;
+    --copper:#b0602a; --wait:#b0602a; --build:#2a5db0; --done:#2a7a3a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --fg:#eee; --bg:#141414; --muted:#aaa; --line:#ddd; --soft:#222;
+      --copper:#e08a4e; --wait:#e08a4e; --build:#7aa6ff; --done:#6cc47c; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:Tahoma,Verdana,sans-serif;line-height:1.45}
+  main{max-width:620px;margin:0 auto;padding:22px 16px 60px}
+  .kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+  h1{font-size:26px;margin:0 0 6px;line-height:1.15}
+  .sub{margin:0 0 14px;color:var(--muted);font-size:15px}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;font-size:12px}
+  .chip{display:inline-block;font-size:11px;font-weight:bold;letter-spacing:.04em;text-transform:uppercase;
+        border:1.5px solid currentColor;border-radius:3px;padding:1px 6px;white-space:nowrap}
+  .wait{color:var(--wait)} .build{color:var(--build)} .done{color:var(--done)} .watch{color:var(--muted)}
+  .stage{border:2px solid var(--line);padding:14px 14px 12px;margin:0;background:var(--bg)}
+  .stage h2{font-size:18px;margin:0 0 2px}
+  .stage .why{font-size:13px;color:var(--muted);margin:0 0 10px}
+  .num{display:inline-block;width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;
+       background:var(--fg);color:var(--bg);font-size:13px;font-weight:bold;margin-right:6px}
+  .card{border:1px solid var(--line);padding:9px 10px;margin:8px 0;background:var(--soft)}
+  .card b{display:block;font-size:15px;margin-bottom:2px}
+  .card p{margin:4px 0 0;font-size:13.5px}
+  .card .chip{float:right;margin-left:8px}
+  details{margin-top:6px;font-size:13px}
+  summary{cursor:pointer;color:var(--copper);font-weight:bold}
+  details ul{margin:6px 0 0;padding-left:18px}
+  details li{margin:3px 0}
+  .arrow{display:flex;flex-direction:column;align-items:center;margin:2px 0;color:var(--fg)}
+  .arrow svg{display:block}
+  .arrow span{font-size:12px;color:var(--muted);margin-top:-2px;text-align:center;max-width:300px}
+  .feeders{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .feeders .card{margin:0}
+  @media (max-width:420px){ .feeders{grid-template-columns:1fr} }
+  .pool{border:3px solid var(--copper)}
+  .pool h2{color:var(--copper)}
+  .nets{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;text-align:center}
+  .net{border:1px solid var(--line);padding:6px 2px;font-size:12px;background:var(--soft)}
+  .net strong{display:block;font-size:17px}
+  .loop{border:2px dashed var(--line)}
+  .note{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+  .rule{border:0;border-top:1px solid var(--line);margin:26px 0 14px}
+  ol.now{padding-left:20px;margin:6px 0} ol.now li{margin:5px 0;font-size:14.5px}
+  footer{font-size:12px;color:var(--muted);margin-top:24px}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">2 Guys And A Genie · The Plan On One Page · Nov 8, 2026</p>
+  <h1>Market Domination Map</h1>
+  <p class="sub">How every piece we talked about tonight feeds the next, from finding a business to being everywhere it looks.</p>
+  <div class="legend">
+    <span class="chip wait">Waiting on you</span>
+    <span class="chip build">To build</span>
+    <span class="chip done">Done</span>
+    <span class="chip watch">Watch</span>
+  </div>
+
+  <!-- STAGE 0 -->
+  <section class="stage" aria-label="Stage 0: lay the tracks">
+    <h2><span class="num">0</span>Lay The Tracks First</h2>
+    <p class="why">Every click before the tags are on is a person we can never follow again. This comes before any traffic.</p>
+    <div class="card"><span class="chip wait">Your go</span><b>Meta pixel on every page</b>
+      <p>Already on /meetup. Copy it to home, the Jamon story, Try This Tonight and /proof, plus one privacy line in the footer.</p></div>
+    <div class="card"><span class="chip wait">You + Jimmy</span><b>Sign up: Google Ads, LinkedIn, TikTok</b>
+      <p>Free. Decide first whose login owns them: one shared 2 Guys set, both of you as admins.</p>
+      <details><summary>Links and where the IDs live</summary><ul>
+        <li><b>Google Ads</b> ads.google.com · skip the campaign builder · Tools → Data Manager → Google tag (starts AW-)</li>
+        <li><b>LinkedIn</b> linkedin.com/campaignmanager · Data → Signals Manager → Insight Tag Partner ID</li>
+        <li><b>TikTok</b> ads.tiktok.com · Tools → Events → Web Events → create pixel</li>
+      </ul></details></div>
+    <div class="card"><span class="chip build">Claude</span><b>All four tags on every page we own</b>
+      <p>2guysandagenie.com, Jimmy's gift pages, daegansmith.me. Each one checked firing.</p></div>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>now every visitor is counted</span></div>
+
+  <!-- STAGE 1 -->
+  <section class="stage" aria-label="Stage 1: find them and find the leak">
+    <h2><span class="num">1</span>Find Them, Find The Leak</h2>
+    <p class="why">Walk in knowing something specific about their business that's costing them money.</p>
+    <div class="card"><span class="chip done">Pilot done</span><b>The database</b>
+      <p>8 business types × 8 towns around Fishers. Pilot: 50 home-service businesses, 41 good targets.</p></div>
+    <div class="card"><span class="chip build">To build</span><b>Read every business from the outside</b>
+      <p>Google reviews (problems + owner's first name), then the website (dead links, wrong phone, no booking). Facebook and Yelp checked by hand.</p>
+      <details><summary>Rank the finding by money</summary><ul>
+        <li><b>Today's money:</b> dead contact link, phone mismatch, calls not returned</li>
+        <li><b>This month's:</b> no booking, empty testimonials, site from 2019</li>
+        <li><b>Background:</b> old copyright, typos (proof we looked)</li>
+      </ul></details></div>
+    <div class="card"><span class="chip build">To build</span><b>Turn the research into a skill</b>
+      <p>So every business's report runs on its own, not on anyone's evening.</p></div>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>the finding becomes the gift</span></div>
+
+  <!-- STAGE 2 -->
+  <section class="stage" aria-label="Stage 2: the gift">
+    <h2><span class="num">2</span>The Gift: Money Leak Report</h2>
+    <p class="why">"Here are the 3 things on your site and reviews costing you calls this week." The gift is done as the work is done.</p>
+    <div class="card"><span class="chip build">To build</span><b>One report, three jobs</b>
+      <p>The walk-in hook. The proof we're good. A free sample of the paid assessment.</p></div>
+    <div class="card"><span class="chip build">To build</span><b>Opened by Jamon's "ugly baby" story</b>
+      <p>Nobody likes hearing their baby's ugly. Jamon almost decked the guy who said it, then his business went from about $15K to over $50K a month. Then: here's yours, and here's it fixed.</p></div>
+    <div class="card"><span class="chip build">To build</span><b>One tagged landing page</b>
+      <p>Every channel gets its own tagged link to it, so we see which one gets owners to click.</p></div>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>every touch carries the link</span></div>
+
+  <!-- STAGE 3 -->
+  <section class="stage" aria-label="Stage 3: feed the pool">
+    <h2><span class="num">3</span>Feed The Pool</h2>
+    <p class="why">Everything below ends at a tagged page, so every yes, scan and view adds to the same audiences.</p>
+    <div class="feeders">
+      <div class="card"><span class="chip build">Fastest</span><b>Upload the registrant list</b>
+        <p>They gave us their details. Meta + Google, plus a lookalike.</p></div>
+      <div class="card"><span class="chip build">To launch</span><b>Buy the pool</b>
+        <p>Jamon video-views ad to owners within 50 to 100 miles. Pennies a view.</p></div>
+      <div class="card"><span class="chip build">To plan</span><b>Walk-ins</b>
+        <p>Paul with the report and a QR code. Doesn't have to feel like marketing.</p></div>
+      <div class="card"><span class="chip build">To plan</span><b>Postcards, texts, email</b>
+        <p>The finding plus the link.</p></div>
+      <div class="card"><span class="chip build">To plan</span><b>DMs, by hand</b>
+        <p>Facebook, Instagram, LinkedIn, TikTok. One person at a time, his business named.</p></div>
+      <div class="card"><span class="chip build">To plan</span><b>Gatekeepers</b>
+        <p>Chamber directors, BNI leaders, HOA presidents. One yes, hundreds of owners.</p></div>
+      <div class="card"><span class="chip build">To plan</span><b>Money Leak Of The Week</b>
+        <p>Names stripped. Owners start checking their own sites.</p></div>
+      <div class="card"><span class="chip build">Ongoing</span><b>Clients as billboards</b>
+        <p>"Built by 2 Guys" footer + every before-and-after.</p></div>
+    </div>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>they land in</span></div>
+
+  <!-- STAGE 4 -->
+  <section class="stage pool" aria-label="Stage 4: the pool and omnipresence">
+    <h2><span class="num">4</span>The Pool → Omnipresence</h2>
+    <p class="why">Each network switches on when its pool crosses its minimum. From then on he sees us everywhere he looks.</p>
+    <div class="nets">
+      <div class="net">Meta<strong>100</strong>FB · IG</div>
+      <div class="net">Google<strong>100</strong>YouTube · Gmail · Search</div>
+      <div class="net">LinkedIn<strong>300</strong>owners at work</div>
+      <div class="net">TikTok<strong>1,000</strong>tag now, ads later</div>
+    </div>
+    <p class="note">Ads to the pool feel personal without naming anyone: Jamon, "your site's leaking money," the next free night. Third-party networks (AdRoll, StackAdapt) only once the pool justifies $500+ a month. Platform tags first because iPhones block the cookie-based ones.</p>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>sooner or later</span></div>
+
+  <!-- STAGE 5 -->
+  <section class="stage" aria-label="Stage 5: the hand goes up">
+    <h2><span class="num">5</span>The Hand Goes Up</h2>
+    <p class="why">The free night, the paid assessment, a client. The report already showed him what we'd fix.</p>
+    <div class="card"><b>Free night → assessment → client</b>
+      <p>Daegan and Jimmy build. Each finished client becomes a before-and-after and a "Built by 2 Guys" link.</p></div>
+  </section>
+
+  <div class="arrow" aria-hidden="true"><svg width="22" height="30" viewBox="0 0 22 30"><line x1="11" y1="0" x2="11" y2="22" stroke="currentColor" stroke-width="2"/><polygon points="4,20 18,20 11,29" fill="currentColor"/></svg><span>and it loops</span></div>
+
+  <section class="stage loop" aria-label="The loop">
+    <h2>↺ The Loop</h2>
+    <p class="why" style="margin:0">Every client is new proof → better reports, better ads, more content → a bigger pool → more hands up. Every channel's tagged link tells us which prong to feed next.</p>
+  </section>
+
+  <div class="card" style="margin-top:14px"><span class="chip watch">Watch</span><b>Capacity</b>
+    <p>If demand outruns the two of you, the lever moves to price and choosing who gets in, not more reach.</p></div>
+
+  <hr class="rule">
+  <p class="kicker">Do These First</p>
+  <ol class="now">
+    <li>Say "go" on the Meta pixel for every page.</li>
+    <li>Pick whose login owns the ad accounts, then sign up for Google, LinkedIn, TikTok and send the IDs.</li>
+    <li>Upload the registrant list to Meta and Google.</li>
+    <li>Launch the Jamon video-views ad to owners within 50 to 100 miles.</li>
+    <li>Build the Money Leak Report and the research skill.</li>
+  </ol>
+
+  <footer>Full detail lives in the project doc "Local Business Database / Pilot 1 Findings (Nov 8)." Audience minimums researched Nov 8, 2026.</footer>
+</main>
+</body>
+</html>
