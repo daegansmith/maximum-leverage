@@ -12,10 +12,8 @@ It is safe to run repeatedly. It skips redirect pages, `admin/` (its builder add
 
 ## Admin page (/admin/)
 
-Private, password-gated (Daegan has the password; never commit it). Holds his personal to-dos and a map of every page on the site. The working copy of the to-dos is the "Daegan's To-Dos" Claude Doc; mirror changes here in the same pass.
+Private, password-gated (Daegan has the password; never commit it). A map of every page on the site, plus a link to the "Daegan's To-Dos" Claude Doc. The to-dos live only in that doc; never copy them onto the site.
 
-    ADMIN_PASSWORD=... python3 src/admin/build.py                  # rescan the site map, keep the to-dos
-    ADMIN_PASSWORD=... python3 src/admin/build.py --todos todos.md  # replace the to-dos
-    ADMIN_PASSWORD=... python3 src/admin/build.py --dump-todos      # print the current to-dos markdown
+    ADMIN_PASSWORD=... python3 src/admin/build.py
 
-Rebuild it whenever pages are added so the site map stays complete. New pages land under "Everything else" until a group in `src/admin/build.py` claims them.
+Rerun it whenever pages are added so the site map stays complete. New pages land under "Everything else" until a group in `src/admin/build.py` claims them.

@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
-"""Build admin/index.html: Daegan's private to-dos plus a map of every page on daegansmith.me.
+"""Build admin/index.html: a map of every page on daegansmith.me, plus a link to the
+"Daegan's To-Dos" Claude Doc (the to-dos themselves live only in that doc).
 
-The page is encrypted (AES-GCM, key from the password via PBKDF2-SHA256), so neither the
-to-dos nor the map can be read in the page source without the password.
+The page is encrypted (AES-GCM, key from the password via PBKDF2-SHA256).
 
-Usage (from the repo root):
-  ADMIN_PASSWORD=...... python3 src/admin/build.py                 # rescan the site, keep the current to-dos
-  ADMIN_PASSWORD=...... python3 src/admin/build.py --todos FILE.md # rescan and replace the to-dos
-  ADMIN_PASSWORD=...... python3 src/admin/build.py --dump-todos    # print the current to-dos markdown
-
-To-dos markdown: "## Section", then "- [ ] **Title** rest", "- [x] ..." for done,
-"- ..." for a plain bullet, two spaces of indent per nesting level, [text](url) links.
-The working copy of the to-dos is the "Daegan's To-Dos" Claude Doc; this page mirrors it.
+Usage (from the repo root):  ADMIN_PASSWORD=...... python3 src/admin/build.py
+Rerun whenever pages are added; it rescans the whole site.
 """
+
 import argparse, base64, datetime, html, json, os, re, sys
 from pathlib import Path
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
@@ -108,65 +103,14 @@ def site_map():
     return out, len(pages)
 
 
-# ---------------------------------------------------------------- to-dos markdown -> html
-def inline(s):
-    s = html.escape(s, quote=False)
-    s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
-    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', s)
-    return s
-
-
-def todos_html(md):
-    out, stack = [], []  # stack of open <ul> depths
-    def close_to(depth):
-        while len(stack) > depth:
-            out.append("</li></ul>")
-            stack.pop()
-    section_open = False
-    for line in md.splitlines():
-        if not line.strip():
-            continue
-        if line.startswith("## "):
-            close_to(0)
-            if section_open:
-                out.append("</details>" if done_section else "")
-            name = line[3:].strip()
-            done_section = name.lower() in ("done", "let go")
-            if done_section:
-                out.append(f'<details class="fold"><summary>{inline(name)}</summary>')
-            else:
-                out.append(f"<h3>{inline(name)}</h3>")
-            section_open = True
-            continue
-        m = re.match(r"^( *)- (\[( |x)\] )?(.*)$", line)
-        if not m:
-            continue
-        depth = len(m.group(1)) // 2 + 1
-        state = m.group(3)
-        cls = "done" if state == "x" else ("task" if state == " " else "plain")
-        if len(stack) < depth:
-            out.append('<ul class="todo">')
-            stack.append(depth)
-        else:
-            close_to(depth)
-            out.append("</li>")
-        out.append(f'<li class="{cls}">{inline(m.group(4))}')
-    close_to(0)
-    if section_open and done_section:
-        out.append("</details>")
-    return "\n".join(x for x in out if x)
-
-
 # ---------------------------------------------------------------- page
-def body_html(todos_md, groups, n):
+def body_html(groups, n):
     today = datetime.date.today().strftime("%b %-d, %Y")
     parts = [f'<p class="kicker">Private &middot; updated {today}</p><h1>Admin</h1>',
-             f'<p>Your to-dos, then every page on daegansmith.me ({n} of them), hidden ones included.</p>',
-             '<nav class="jump"><a href="#todos">To-dos</a> &middot; <a href="#map">Site map</a></nav>',
-             '<section id="todos"><h2>To-Dos</h2>',
-             f'<p class="note">The working copy is the <a href="{TODO_DOC}">Daegan\'s To-Dos</a> doc. This page mirrors it.</p>',
-             todos_html(todos_md), "</section>",
-             '<section id="map"><h2>Site Map</h2>']
+             f'<p>Every page on daegansmith.me ({n} of them), hidden ones included.</p>',
+             '<details class="grp" open><summary>Private tools</summary><ul class="map">'
+             f'<li><a href="{TODO_DOC}">Daegan\'s To-Dos</a> <span class="path">The running list, in Claude</span></li>'
+             '</ul></details>']
     for title, note, is_open, items in groups:
         lis = "".join(
             f'<li><a href="{url_of(p)}">{html.escape(page_title(ROOT / p))}</a> <span class="path">/{html.escape(p.replace("index.html", ""))}</span></li>'
@@ -174,7 +118,6 @@ def body_html(todos_md, groups, n):
         note_html = f'<p class="note">{html.escape(note)}</p>' if note else ""
         op = " open" if is_open else ""
         parts.append(f'<details class="grp"{op}><summary>{html.escape(title)} <span class="n">{len(items)}</span></summary>{note_html}<ul class="map">{lis}</ul></details>')
-    parts.append("</section>")
     return "\n".join(parts)
 
 
@@ -192,13 +135,6 @@ def decrypt(password, blob):
     kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=d(blob["salt"]), iterations=blob["iter"])
     key = kdf.derive(password.encode())
     return json.loads(AESGCM(key).decrypt(d(blob["iv"]), d(blob["ct"]), None))
-
-
-def current_payload(password):
-    if not OUT.exists():
-        return None
-    m = re.search(r'<script id="vault" type="application/json">(.*?)</script>', OUT.read_text(), re.S)
-    return decrypt(password, json.loads(m.group(1))) if m else None
 
 
 SHELL = """<!doctype html>
@@ -221,13 +157,6 @@ p{margin:0 0 14px}
 section{padding:34px 0 10px;border-top:1px solid var(--rule);margin-top:24px}
 .jump{font-size:15px;color:var(--soft)}
 .note{font-size:15px;color:var(--soft)}
-ul.todo{list-style:none;padding:0;margin:0 0 10px}
-ul.todo ul.todo{margin:8px 0 0 22px}
-ul.todo li{position:relative;padding-left:28px;margin-bottom:12px;font-size:16px}
-ul.todo li::before{content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border:2px solid var(--ink)}
-ul.todo li.plain::before{border:0;width:6px;height:6px;top:10px;left:4px;background:var(--soft)}
-ul.todo li.done{color:var(--soft)}
-ul.todo li.done::before{background:var(--soft);border-color:var(--soft)}
 details{margin:0 0 12px}
 summary{cursor:pointer;font-weight:bold;padding:8px 0}
 details.fold>summary{font-size:19px}
@@ -277,25 +206,11 @@ if(saved){open(saved).catch(function(){try{localStorage.removeItem(K);}catch(e){
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--todos", help="markdown file with the to-dos (replaces the current ones)")
-    ap.add_argument("--dump-todos", action="store_true")
-    a = ap.parse_args()
     pw = os.environ.get("ADMIN_PASSWORD")
     if not pw:
         sys.exit("Set ADMIN_PASSWORD.")
-    cur = current_payload(pw)
-    if a.dump_todos:
-        print(cur["todos_md"] if cur else "")
-        return
-    if a.todos:
-        todos_md = Path(a.todos).read_text()
-    elif cur:
-        todos_md = cur["todos_md"]
-    else:
-        sys.exit("No current admin page; pass --todos FILE.md.")
     groups, n = site_map()
-    payload = {"todos_md": todos_md, "html": body_html(todos_md, groups, n)}
+    payload = {"html": body_html(groups, n)}
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__VAULT__", json.dumps(encrypt(pw, payload))))
     print(f"Wrote {OUT.relative_to(ROOT)}: {n} pages mapped.")
