@@ -18,6 +18,8 @@ from pathlib import Path
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from footer import footer as site_footer
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "admin" / "index.html"
@@ -244,8 +246,9 @@ ul.map li{margin-bottom:8px;font-size:16px}
 <form id="f"><input id="pw" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Password"><button>Open</button></form>
 <p id="err" hidden>That's not it.</p></div>
 <div id="out" hidden></div>
-<p class="foot" id="lock" hidden><a href="#" id="lockl">Lock this page on this device</a> &middot; <a href="../">Home</a></p>
+<p class="foot" id="lock" hidden><a href="#" id="lockl">Lock this page on this device</a></p>
 </div>
+__FOOT__
 <script id="vault" type="application/json">__VAULT__</script>
 <script>
 (function(){
@@ -294,7 +297,7 @@ def main():
     groups, n = site_map()
     payload = {"todos_md": todos_md, "html": body_html(todos_md, groups, n)}
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(SHELL.replace("__VAULT__", json.dumps(encrypt(pw, payload))))
+    OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__VAULT__", json.dumps(encrypt(pw, payload))))
     print(f"Wrote {OUT.relative_to(ROOT)}: {n} pages mapped.")
 
 
