@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "admin" / "index.html"
 ITER = 250000
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
+EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
 
 # ---------------------------------------------------------------- site map groups
 # Each group: (title, note, open?, [patterns]). A page goes in the first group whose pattern matches.
@@ -110,6 +111,7 @@ def body_html(groups, n):
              f'<p>Every page on daegansmith.me ({n} of them), hidden ones included.</p>',
              '<details class="grp" open><summary>Private tools</summary><ul class="map">'
              f'<li><a href="{TODO_DOC}">Daegan\'s To-Dos</a> <span class="path">The running list, in Claude</span></li>'
+             f'<li><a href="{EXPLAINERS}">Explainer Library</a> <span class="path">Every narrated explainer Claude has made you, in Claude</span></li>'
              '</ul></details>']
     for title, note, is_open, items in groups:
         lis = "".join(
