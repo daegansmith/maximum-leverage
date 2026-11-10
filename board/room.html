@@ -108,7 +108,7 @@ function render(){
   } else if(h[0]==='demo'){
     var d=DEMOS.filter(function(x){return x.id===h[1];})[0];
     if(d){
-      out+='<span class="kind watch">Watch me</span><h1>'+esc(d.t)+'</h1>'+body(d.p);
+      out+='<span class="kind watch">'+esc(d.k||(d.g==='yours'?'Your business':'Watch me'))+'</span><h1>'+esc(d.t)+'</h1>'+body(d.p);
       if(d.prompt && h[2]==='prompt') out+='<div class="prompt">'+esc(d.prompt)+'</div>';
     }
     document.getElementById('hint').textContent='';
