@@ -28,10 +28,10 @@ EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
 GROUPS = [
     ("The site, as visitors see it", "Linked from the homepage.", True, [
         "index.html", "projects.html", "notes/index.html", "notes/*", "ai/index.html", "ai/*", "quotes/*", "stories/index.html", "stories/my-story/*", "stories/*",
-        "testimonials/*", "invisible-funnel/*", "maximum-leverage/*", "work-with-me/*",
+        "testimonials/*", "invisible-funnel/index.html", "maximum-leverage/*", "work-with-me/*",
         "contact/*", "terms/*", "refunds/*", "privacy/*"]),
-    ("Only for Daegan", "Ideas and Library. Off the public pages; they open by link only.", True, [
-        "ideas/index.html", "ideas/*", "library/index.html", "library/*"]),
+    ("Only for Daegan", "Ideas and Library open by link only. The Masterclass lessons open with this page's password.", True, [
+        "invisible-funnel/masterclass/*", "ideas/index.html", "ideas/*", "library/index.html", "library/*"]),
     ("Local AI, now", "The Nov 9 night and what's running for it.", True, [
         "2guys-site/market-domination-map-v1.html", "fishers-nov9/index.html", "fishers-nov9/*",
         "leader-outreach/*", "workshop-v16.4-offer-v12.html", "client-pages.html", "before-after.html",

@@ -3,11 +3,14 @@
 Invisible Funnel Masterclass. Everything a member sees is encrypted inside the page
 (AES-GCM, key from the password via PBKDF2-SHA256), the same way the admin page is.
 
+His call, Nov 11, 2026: the admin password is the gate, and the admin page links here.
+Unlock the admin page on a device and this page opens on it too.
+
 This repo is public, so the lesson text is never stored here. It is read at build time
 from the private claude-library repo and only the encrypted page is written.
 
 Usage (from the repo root):
-  MASTERCLASS_PASSWORD=... MASTERCLASS_SRC=/path/to/claude-library/marketing/own-work/invisible-funnel python3 src/masterclass/build.py
+  ADMIN_PASSWORD=... MASTERCLASS_SRC=/path/to/claude-library/marketing/own-work/invisible-funnel python3 src/masterclass/build.py
 """
 import base64, html, json, os, re, sys
 from pathlib import Path
@@ -136,8 +139,8 @@ details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
 #err{color:#b0302a;font-size:15px;margin-top:10px}
 .foot{margin-top:30px;font-size:13px;color:var(--soft)}
 </style></head><body><div class="wrap">
-<div id="gate"><p class="kicker">Members only</p><h1>Invisible Funnel Masterclass</h1><p>Enter your access phrase.</p>
-<form id="f"><input id="pw" type="password" autocomplete="current-password" aria-label="Access phrase"><button>Open</button></form>
+<div id="gate"><p class="kicker">Members only</p><h1>Invisible Funnel Masterclass</h1><p>Password, please.</p>
+<form id="f"><input id="pw" type="password" autocomplete="current-password" inputmode="numeric" aria-label="Password"><button>Open</button></form>
 <p id="err" hidden>That's not it.</p></div>
 <div id="out" hidden></div>
 <p class="foot" id="lock" hidden><a href="#" id="lockl">Lock this page on this device</a></p>
@@ -146,7 +149,7 @@ __FOOT__
 <script id="vault" type="application/json">__VAULT__</script>
 <script>
 (function(){
-var V=JSON.parse(document.getElementById("vault").textContent),K="if_masterclass_pw",out=document.getElementById("out");
+var V=JSON.parse(document.getElementById("vault").textContent),K="ml_admin_pw",out=document.getElementById("out");
 function b(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)});}
 function show(id){var L=out.querySelectorAll(".lesson"),hit=false;
   L.forEach(function(d){var on=d.id===id;d.hidden=!on;if(on)hit=true;});
@@ -179,11 +182,9 @@ if(saved)open(saved).catch(function(){try{localStorage.removeItem(K);}catch(x){}
 
 
 def main():
-    pw, src = os.environ.get("MASTERCLASS_PASSWORD"), os.environ.get("MASTERCLASS_SRC")
+    pw, src = os.environ.get("ADMIN_PASSWORD"), os.environ.get("MASTERCLASS_SRC")
     if not pw or not src:
-        sys.exit("Set MASTERCLASS_PASSWORD and MASTERCLASS_SRC.")
-    if len(pw) < 16:
-        sys.exit("Use an access phrase of at least 16 characters. This repo is public, so a short one can be guessed.")
+        sys.exit("Set ADMIN_PASSWORD and MASTERCLASS_SRC.")
     inner = body_html(Path(src))
     if os.environ.get("MASTERCLASS_PREVIEW"):
         Path(os.environ["MASTERCLASS_PREVIEW"]).write_text(inner)
