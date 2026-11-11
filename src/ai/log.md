@@ -177,6 +177,51 @@ Every miss became a new rule in one document, and every new version had to be sa
 
 The Pull Method itself has not been revisited since July. Whether its test-and-refine steps would catch today what they missed then is untested.
 
+## Stage 2: One Long Seed Prompt
+
+July 27 to early October, 2026. Source: the Marketing seed prompt's own version notes (v1 to v1.52), Cross-Project Learnings entry 4, and the Master Prompt and Marketing changelogs.
+
+### The Wall
+
+Every correction became a new rule in one document, every change made a new numbered file, and every file was pasted into the project by hand. Nothing checked that the copies and the pointers still matched.
+
+### How It Was Hit
+
+- **July 27 to August 1.** Six versions in six days, v1 to v1.6, each saved as its own file in Drive.
+- **September 9 to 15.** Nine versions in one week, v1.7 to v1.15, after long offer and copy sessions: competitive research, value stacking, persuasion moments, no em dashes, the belief chain, the to-do list, the standing document set.
+- **September 15.** The Master Prompt was found pointing at Voice Reference v2 while v6 was live, and at the Marketing seed prompt's v1.2 while v1.13 was live. In the record's words: "Seven weeks of drift, nothing errored, nobody noticed."
+
+### What Broke It
+
+The finding itself. The cause was version numbers and file IDs typed into prompts that pointed at documents which had since moved on.
+
+### What Changed
+
+- **Find by rule, not by pointer (v1.14, September 15).** Never hardcode a version number or file ID for a living document. List the folder, find the highest-numbered version, read that one. Logged as: "A hardcoded pointer is a maintenance obligation. A rule is not."
+- **Cross-Project Learnings (September 15).** One shared document that every project reads at session start, so a lesson found in one project reaches the others.
+- **A living document (September 24 to October 1, v1.29 to v1.43).** The instructions moved to a Claude Doc edited in place. Drive keeps v1 to v1.28 and a weekly backup.
+- **The closing version line (September 24 to 25).** The last line of the instructions states its version, so each session can compare the pasted copy with the living doc.
+- **The first condensation pass (October 3).** Repetition cut without dropping a rule.
+
+### After
+
+On September 17 the rule worked as designed: a research prompt named a document as v3, and the rule found v6 with no correction needed.
+
+### Evolution Notes
+
+- **What got selected.** Find by rule, the living doc, the closing version line and Cross-Project Learnings are all still in use.
+- **What drifted through.** Many of the September rules are still in the instructions or the doctrine today, carried forward version to version without being retested.
+- **What hurt and still passed.** One document for everything. It kept growing, to about 14,400 words by October 26.
+- **What is left over.** The numbered Drive files v1 to v1.28, kept as history.
+
+### The New Wall It Exposed
+
+Two of them. The document got long enough that rules agreed early in a session stopped holding later in the same session (Stage 6). And a copy pasted by hand still drifts: on November 10 the living doc and the instructions field had each been edited without the other (Stage 9).
+
+### Still Open
+
+The record does not show what the seven weeks of drift cost in the work itself.
+
 ## Stage 3: The Assumptions Gate and the Deep Room
 
 October 10 to 11, 2026. Source: the session "Client intake flow for local businesses." Instructions v1.54 and v1.55.
