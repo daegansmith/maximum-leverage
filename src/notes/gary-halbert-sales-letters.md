@@ -4,7 +4,8 @@
 - The Opening Letter:
 - Dear Mom,
 - I am very busy and I don’t have time to call and that is why I am writing you this letter.
-- Make first paragraph just one sentence. Not a rule but usually a good idea to do it. Put a space between paragraphs.
+- Make first paragraph just one sentence. Not a rule but usually a good idea to do it.
+- Put a space between paragraphs.
 - You know, Mom not only are you responsible for my very existence you are also the nourishment that has made my life sparkle. I am under a lot of stress right now, and for some reason, I started thinking about you and it has occurred to me maybe I haven’t let you know recently how much I appreciate you and how much I love you. I especially like remembering you in that pink flowered dress you wore at my fifteenth birthday.
 - Anyway I am going to make it a point to see you just as soon as I can.
 - All my love,
@@ -13,7 +14,8 @@
 - Dear “Mom”
 - If I weren’t such a long way from home, I probably wouldn’t have the guts to tell you this. But, the following has been true ever since I was born. You have made my life a living hell. Every person I know has a mother that is superior to you in every positive way imaginable.
 - You are nothing more than a wrinkled up old bitch and, as far as I’m concerned,
-- the biggest waste of skin God ever created. Speaking of God, as the Lord knows, you are certainly not too mentally swift either. So, just in case your low IQ keeps you from understanding what I am trying to say, let me make it perfectly clear... First subhead, each word capped and bold and centred
+- the biggest waste of skin God ever created. Speaking of God, as the Lord knows, you are certainly not too mentally swift either. So, just in case your low IQ keeps you from understanding what I am trying to say, let me make it perfectly clear...
+- First subhead, each word capped and bold and centered
 - Eat Shit And Die!
 - Please don’t call or write me. I have no inclination whatsoever to communicate with you ever again.
 - Reluctantly your Son,
@@ -21,7 +23,8 @@
 - PS: Dad sucks too.
 ## CD 01B
 - Start of Seminar
-- The letters above were the same in cost of postage and in work to write and prepare. The only difference was the words on the paper. Words are the most powerful thing ion the world. You use words to hurt, encourage, make money, lose a fortune, etc but the power is in what you write.
+- The letters above were the same in cost of postage and in work to write and prepare.
+- The only difference was the words on the paper. Words are the most powerful thing ion the world. You use words to hurt, encourage, make money, lose a fortune, etc but the power is in what you write.
 - Here is what contributes to people remembering things:
   - Recently
   - Frequency
@@ -32,30 +35,31 @@
 - GH has been advised to tone down his newsletter but he has a massive amount of renewals and lifers. You shouldn’t deliberately try to offend people, but you should try to write with great emotional impact.
 - An example in the Difference between getting it right and getting it wrong
   - The targeted audience is the weight loss market
-    - People who want to lose weight and have bought previous weightloss
+    - People who want to lose weight and have bought previous weight loss
 - products through mail
   - There is probably a list of 3 million hard core buyers in the US
   - Be an associative thinker rather than a linear thinker
-    - Associative thinkers can to apply principles from one situation to another
+    - Associative thinkers can apply principles from one situation to another
   - Info product - Write a 60 page report that has weight loss information and info that’s important to you.
     - Convert the report into different media such a 6 cassettes
     - Also do a video tape before/after story
     - Put it all into a nice package
-    - The 60 page report costs a dollar, the audio tape would cost $3 and the video tape cost $2 and the case to put it in around $2. Fulfilment package cost = $8. It costs $3 to ship it so total is $11.
+    - The 60 page report costs a dollar, the audio tape would cost $3 and the video tape cost $2 and the case to put it in around $2. Fulfilment package cost = $8.
+- It costs $3 to ship it so total is $11.
   - The package has a high perceived value
   - If you could sell a fat person the magic pill that would keep them thin for the rest of their lives, they would pay everything for it
   - The only thing about the package above that they would care about is does it work
   - GH then charges $69.95 plus $4 shipping & handling say $74.
   - 74-8 = $63: CTO (Contribution To Overhead). This is not profit. It’s just the money over and above what it cost you to make it.
 - Cost of sending letters
-- The letter you sent cost $0.63Cents includes envelopes, printing, postage etc.
-  - The cost per name from a list is $0.10Cents.
-  - Always post first class mail or at very least should look like first class mail and that can be achieved with a postage meter. This brings it down to $0.48Cents
-  - The reality is that you can send sales letters at an average of 50 Cents.
+- The letter you sent cost $0.63 cents includes envelopes, printing, postage etc.
+  - The cost per name from a list is $0.10 cents.
+  - Always post first class mail or at very least should look like first class mail and that can be achieved with a postage meter. This brings it down to $0.48 cents
+  - The reality is that you can send sales letters at an average of 50 cents.
 ## CD 02A
 - In direct mail people take how much does it cost per thousand.
-- The letter for the fat-loss letter above costs 50cents a piece then it cost $500 to post 1000. A 2% response would yield 20 people.
-- The COT is $63.
+- The letter for the fat-loss letter above costs 50 cents a piece then it cost $500 to post 1000. A 2% response would yield 20 people.
+- The CTO is $63.
 - 20 x 63 = $1260.
 - $1269 - $500 = $769
 - So the profit per letter is $0.768
@@ -66,7 +70,8 @@
 - You have to know the numbers. Go with a 2% response out of a 1000.
 - The best way to learn is through apprenticeship.
 - Give Yourself The Best Shot Possible
-- Which will sell better a pill that makes people fat or a pill that makes people thin?? GH considers B2B much easier than B2C.
+- Which will sell better a pill that makes people fat or a pill that makes people thin??
+- GH considers B2B much easier than B2C.
 ## CD 02B
 - The Greatest Sales Ever Written
 - 3687 Ira Road
@@ -90,14 +95,15 @@
 - Nancy L Halbert
 - P.S.
 - (the first is indented and the rest come to the indentation) If you are ordering only one report, send two dollars ($2.00). Clarity is important especially with price hence the 2 versions. Additional reports ordered at the same time and sent to the same address are one dollar each. If you order more than one you get a better deal and there is a reason you get the better deal. Please make checks payable to me, Nancy L Halbert.
-- Always write it out in your own handwriting. To practise write out letters 10 times to get a neuro imprint in your mind of what a brilliant sales letter is like. If you practise this then it will become second nature to you.
+- Always write it out in your own handwriting. To practice write out letters 10 times to get a neuro imprint in your mind of what a brilliant sales letter is like. If you practice this then it will become second nature to you.
 ## CD 03B
 - Always read it out including the address and commas and you catch mistakes and parts where you stumble. If you lose them for a moment you have lost them forever. Your writing should be like someone on a sliding board and sliding off smoothly with no bumps. If there are bumps in your writing they will stop.
 - The best writing is in the National Enquirer.
 - The Only 2 Principles You Have To Get Write:
 - 1) Have something to say
 - 2) Say it clearly
-- Having a personalised salutation triples response and multiplies the profits by 10. It cost $100 to put 1000 letters in the mail. He got an average of a 7% response i.e. 70 people. The average order was for 2 reports i.e. $3. Cost to fill the order was $0.50cents, i.e. $35.
+- Having a personalized salutation triples response and multiplies the profits by 10.
+- It cost $100 to put 1000 letters in the mail. He got an average of a 7% response i.e. 70 people. The average order was for 2 reports i.e. $3. Cost to fill the order was $0.50 cents, i.e. $35.
 - Total cost is $135 and total revenue is $210. Making $75 profit on 1000 letters. The backend would provide 20-40% at a much higher number.
 - 30,000,000 million letters yielded over $2,250,000.
 - The more uncommon the name the higher the response.
@@ -111,23 +117,26 @@
 - If you get this right the most satisfying thing you can do is change people lives in a positive way.
 ## CD 04A
 - When writing something and it is noticeably clever then it’s probably bad. Go simpler if necessary.
-- Headline: Who Else Want To Slash Stroke Off Their Gold Game Almost Immediately? Swiped to: Who Else Wants To Cut Strokes From Their Golf Game So Fast That It Will Make Them Laugh Out Loud?
-- When doing headlines ,make sure each words first letter is capitalised and the fonts are all bold.
+- Headline: Who Else Want To Slash Stroke Off Their Gold Game Almost Immediately?
+- Swiped to: Who Else Wants To Cut Strokes From Their Golf Game So Fast That It Will Make Them Laugh Out Loud?
+- When doing headlines ,make sure each words first letter is capitalized and the fonts are all bold.
 - Headline: Amazing Secret Discovered By 72 Year Old Illinois Farmer Can Slash Up To Eleven Strokes From Your Golf Score The Very First Time You Use It
 - It’s a good idea to put either advanced years of young years in copy such as 7 year old girl.
 - Always be reading out loud what you writing to get it right.
 - Don’t put exclamation marks after t’s because they look too similar.
 - The headline is good because it is tied to a person i.e. the 72 year old farmer. People are more likely to buy if they feel they can reach out and grab you
-- Subhead: Imagine...Each of Your Strokes Will Be Ask Accurate As Clockwork Blind ads always outpull the specific ads in the opportunity market because they will always be disappointed when they find out they have to so work. They want to believe its a magic pill. Don’t get specific until they invest in it.
+- Subhead: Imagine...Each of Your Strokes Will Be As Accurate As Clockwork
+- Blind ads always outpull the specific ads in the opportunity market because they will always be disappointed when they find out they have to so work. They want to believe its a magic pill. Don’t get specific until they invest in it.
 ## CD 04B
 - Amazing Secret Discovered By
 - 72 Year Old Illinois Farmer Can
 - Slash Up To Eleven Strokes
 - From Your Golf Score
 - The Very First Time You Use It
-- Imagine...Each of Your Strokes Will Be Ask Accurate As Clockwork
+- Imagine...Each of Your Strokes Will Be As Accurate As Clockwork
 - Main headline is 24 point Times New Roman and bold. The main subhead is in italics, 12 to 14 point
-- GH is leading with a benefit here before reminding them of their problem. He will usually lead with the problem first bit golfers are maniacs so he doesn’t need to do it. Major point:
+- GH is leading with a benefit here before reminding them of their problem. He will usually lead with the problem first bit golfers are maniacs so he doesn’t need to do it.
+- Major point:
 - 1) Don’t attempt to write the perfect ever. Just get it done.
   - Don’t let touching it up as an a excuse not to take action
 - Salutation: Dear Friend Don’t use Dear Fellow Golfer because it will make them think, how does he know I’m a golfer if they don’t know you.
@@ -139,7 +148,8 @@
 - until...one day...I hit the jackpot! The exclamation mark is after the ‘t’, he might remove it later
 - I swear, I’ve never seen anything like this. It’s so simple I can’t believe nobody ever thought of this before. To tell the truth, I wouldn’t have discovered this myself except for one day when I had a very curious “accident”.
 ## CD 05A
-- I was sitting in my workshop (my wife makes me keep it in the basement). Humour in selling never works but it does improve the learning process.
+- I was sitting in my workshop (my wife makes me keep it in the basement).
+- Humor in selling never works but it does improve the learning process.
 ## CD 05B
 - You need to look at your marketing as a package with numerous parts.
 - You need to look for elements that credentialize or dramatize your copy. I was sitting in my workshop (my wife makes me keep it in the basement) when all of a sudden a question popped into my mind.
@@ -151,15 +161,18 @@
   - Approach shots account for another 12%
 ## CD 06A
 - But, guess what? The strokes you use up while putting count for a whopping 67% of your total score. He just made this up but you shouldn’t allow a pause in writing just to find the right number. It will disrupt the flow of writing and we can get it at the end.
-- Why is this? Well, until now there has been a “fatal flaw” built right into the design of every putter ever manufactured. Because of this flaw no one (not even the top pros) has been able to rely 100% on their putting accuracy. In fact, until now much of a golfer’s putting score has been the result of nothing except sheer luck. Remember the Masters’ tournament in 1993 when Ferdy Ditmar had a seven
-- stroke lead going into the final round and them blew it by three-putting four holes in a row? Same thing happened again at Pebble Beach just last year when Edward Buckley missed an eight inch uphill put that cost him $350,000.00 dollars. Golfers, even the best of them have had trouble with their putters, ever since the game was invented. Now At Last The Problem Is Solved
+- Why is this? Well, until now there has been a “fatal flaw” built right into the design of every putter ever manufactured. Because of this flaw no one (not even the top pros) has been able to rely 100% on their putting accuracy. In fact, until now much of a golfer’s putting score has been the result of nothing except sheer luck.
+- Remember the Masters’ tournament in 1993 when Ferdy Ditmar had a seven
+- stroke lead going into the final round and them blew it by three-putting four holes in a row? Same thing happened again at Pebble Beach just last year when Edward Buckley missed an eight inch uphill put that cost him $350,000.00 dollars. Golfers, even the best of them have had trouble with their putters, ever since the game was invented.
+- Now At Last The Problem Is Solved
 - I have invented ‘by accident’ a brand new type of putter that is so reliable I worry about the PGA making it illegal. When you look at this it looks almost exactly like any other top of the line putter. You see the difference is not on the outside....it’s on the inside!
 - Every putter in the world except this one is designed and ‘weighted’ so that no matter how skilled you are it will often ‘misfire’ almost as though it had a brain of it’s own.
 - The Fatal Flaw
 - Blah blah blah, squiggly squiggly squiggly etc etc etc 3 paragraphs go in here
 - The Amazing Solution
 - Here’s how my new putter is different.. Blah blah blah, squiggly squiggly squiggly etc etc
-- More Blah blah blah, squiggly squiggly squiggly etc etc. The bits that Jeff Paul say go in here.
+- More Blah blah blah, squiggly squiggly squiggly etc etc. The bits that Jeff
+- Paul say go in here.
 - What does all this mean?
   - You will instantly reduce the number of greens that you ‘three-put
 - (or more) by at least 57%!
@@ -168,7 +181,8 @@
   - 
 - You will line up and hit your puts so much faster and more
 - accurately you’ll make your golfing partners crazy with curiosity
-- It took me four and a half years of research, $150,000.00 and a near fatal accident to come up with the design of what this putter is so unique the US Government gave me a patent on it. I got that patent on September 12th 1995 and the patent number is 3509WJ-463311.
+- It took me four and a half years of research, $150,000.00 and a near fatal accident to come up with the design of what this putter is so unique the US
+- Government gave me a patent on it. I got that patent on September 12th 1995 and the patent number is 3509WJ-463311.
 - Right now very few people know about this new putter but, about three
 - weeks ago I gave half a dozen of them to some of my closest friends. After using this new putter for three weeks here’s what they have to say:
 - Quote:”blah blah blah” Put in space for 7 quotes
@@ -183,7 +197,8 @@
 - For each one that is manufactured I have to use the foetus of 13 unborn albino raccoons to make just one of these clubs. Not only that, the machine I use to make them had to be designed from the ground up in order to accommodate the unique combination of resin albino raccoon foetus and baboon navel lint that must be used in the creation of each of these putters. This is price validation and just fill in the blanks.
 - Therefore there’s no way I can sell one of these for less than $397. I know that’s a lot of money and I don’t blame you if it’s more than you’re willing to pay. In truth probably the only people who will be willing to buy my new ‘magic putter’ are those 15% of golfers who are so serious about the game they will be willing to shell out this kind of money.
 - That’s the bad news. However the good news is
-- My Putter Comes With The Strongest Guarantee Offered In The History Of Golf Here’s the way it works: Go ahead and call 1800-000-0000 and use one of your credit cards to order the putter. It will be shipped to you immediately by overnight priority laser express first class mail. You’ll have it within 24 hours of the time that you make that phone call. But guess what? Even though you’ll already have the putter I won’t process your credit card order for 60 days.
+- My Putter Comes With The Strongest Guarantee Offered In The History Of Golf
+- Here’s the way it works: Go ahead and call 1800-000-0000 and use one of your credit cards to order the putter. It will be shipped to you immediately by overnight priority laser express first class mail. You’ll have it within 24 hours of the time that you make that phone call. But guess what? Even though you’ll already have the putter I won’t process your credit card order for 60 days.
 - That means you can use the club, test it, show off in front of your friends and actually play 20 to 30 rounds of golf with it with no financial risk whatsoever. If during that 60 day period you decide you don’t want to keep this unbelievable new putter just send it back to me and your credit card order will never be processed.
 - If you prefer you can order by mail. All you have to do is write your name and address and the words ‘Airborne Overspin Putter’ on a piece of paper and send it with your check or money order for $397 to:
 - Mother Teresa Golf Company
@@ -193,7 +208,8 @@
 - Checks and money orders should be made out to ‘NTGC’ and it is not a good idea to send cash.
 - Sincerely,
 - Verns Stephenson
-- PS If you decide to order by check don’t forget to post date it for 60 days ahead. Points:
+- PS If you decide to order by check don’t forget to post date it for 60 days ahead.
+- Points:
 - 1) Arithmetic
   - There are 1.5 million mail order buyers of golfing equipment
   - The cost of mailing 1000 letter is $500
@@ -212,12 +228,12 @@
 - 500/357 = 1.4
 - We need 1.4% response to make it work
 - Just say we get .2% response instead
-- So thats 2 orders per 1000 = 357 x 2 – 500 = $214 profit
+- So that's 2 orders per 1000 = 357 x 2 – 500 = $214 profit
 - There are 1,500,000 golfers to mail to so that is a profit of £321,000
 - GH would test with 5,000 letters first
 - He reckons the promotion will pull around 5 orders per thousand which is a 0.5% response
 - This would pull in a profit of $1,970,000
-- By stating that you won’t process their credit card for 31 days will typically triple response. The refund rate will go up but look at the maths below:
+- By stating that you won’t process their credit card for 31 days will typically triple response. The refund rate will go up but look at the math below:
 - So we then sell 15 clubs but a third come back which gives us 10 sales that stick. This equates to: 357 x 10 – 500 = 3070
 - This comes to 3070 x 1,500 = $4,605,00
 - Lesser Mortal Shit
@@ -302,22 +318,26 @@
   - Don’t use teaser envelope copy for your first mailing
     - Don’t give them a reason NOT to open it
 - 3) Headline
-  - Capitalised, bold & on top of the letter
+  - Capitalized, bold & on top of the letter
   - 24 point size & Times New Roman
   - You can make the headline take up the top third of the letter
   - The Amazing Stock Markets Secrets Of A Financial Genius, Who Has
 - Made A Profit Every Single Year For Seventeen Years In A Row
 ## CD 09A
-- Joe Polish headline: The Nerd From Arizona Who Discovered A Secret Way To Make Money Whilst Working At His Kitchen Table...And He’s Been Doing It For The Last 17 Years In A Row
+- Joe Polish headline: The Nerd From Arizona Who Discovered A Secret Way To Make
+- Money Whilst Working At His Kitchen Table...And He’s Been Doing It For The Last 17
+- Years In A Row
 - GH didn’t mentioned carpet cleaning because he is selling money making
 - opportunities
 - The Amazing ‘Inside Secret’ Anyone Can Use (Who Knows How) To Make 100%
-- Certain The Most Valuable Piece Of Paper You Will Ever Own Doesn’t Get Destroyed. Write out the headlines of the letters he gives. You can also type them too to get a mental imprint. Then write every first sentence in those sales letters.
-- GH favourite first sentence ever:
+- Certain The Most Valuable Piece Of Paper You Will Ever Own Doesn’t Get Destroyed.
+- Write out the headlines of the letters he gives. You can also type them too to get a mental imprint. Then write every first sentence in those sales letters.
+- GH favorite first sentence ever:
 - Dear Friend,
 - If you would like to lose up to 63 pounds then here is how I did it in Japan and why I think you can d o it in America."
 - Dear Friend,
-- Would you like a spare t me money-making business you could run from your home. If so, then let me tell you about the 87 different home-operated businesses owned by people here in Japan that are fantastically profitable and why I believe any one of them would make even more money in America.
+- Would you like a spare t me money-making business you could run from your home.
+- If so, then let me tell you about the 87 different home-operated businesses owned by people here in Japan that are fantastically profitable and why I believe any one of them would make even more money in America.
 - Then go to the end of the letters and go to the call to action and write out every different call to action.
 - Write out:
 - 1) Headlines
@@ -334,7 +354,8 @@
   - Get the highlights and put one each in index cards.
   - Go through another transcript and highlight every statement of fact. Examples: we test for 602 food allergies; has been used and tested by 3980 people
   - Put one fact statement on a separate index card
-  - Go through transcription and highlight proof or credential statements. Example: used by 17 hospitals worldwide, discovered by award winning doctors, over 1239 testimonial letters, member of chamber of commerce, backed up with guarantee, etc
+  - Go through transcription and highlight proof or credential statements.
+- Example: used by 17 hospitals worldwide, discovered by award winning doctors, over 1239 testimonial letters, member of chamber of commerce, backed up with guarantee, etc
   - Put each proof statement on an index card
 ## CD 10A
 - Creative writing exercise:
@@ -366,7 +387,8 @@
   - How to avoid the energy sapping power of ordinary foods you are unknowingly allergic to and still eating.
 ## CD 10B
 - You need to know in rank order the points that your target market is concerned about the most. That sets out the order of your bullets.
-- Statistics are available on what people will buy to prevent problems in their lives. This is how this will help you:
+- Statistics are available on what people will buy to prevent problems in their lives.
+- This is how this will help you:
 - Here is how this can help you against....
 - Next step is go through the master piece sales letters that are most likely to be a good template for your service. Find 3 or 4 of them. Write them or type them put
 - word for word. During this process thoughts will come to you in flashes about your own product so have another pad to write them down.
@@ -444,7 +466,7 @@
     - It should be barely part of your consciousness but drain out traffic noise, etc
 - Compiled lists
   - A compiled list is like a list of dentists in new York. It’s just a section of society
-    - Use customised headlines to increase response. For example use the
+    - Use customized headlines to increase response. For example use the
 - word dentists for the dentist list
 - End prices with a 7
 ## CD 12A
@@ -470,11 +492,12 @@
 - Tearsheet
   - Looks like a newspaper ad or post it note on front sheet of letter
     - Hi J – Great Info, R
-    - Make the initial the same intital as the letter writier
+    - Make the initial the same initial as the letter writer
 - Delay payments
 - Endorsed mailing
-  - You are not selling to strangers so the response is dramatically increased Guarantee
-    - He who has the strongest guarantee wins
+  - You are not selling to strangers so the response is dramatically increased
+- Guarantee
+  - He who has the strongest guarantee wins
 ## CD 12B
 - Multi level marketing sucks.
 - Gary Halbert Newsletter Sales Funnel
@@ -485,8 +508,9 @@
 - 6) They then get the life time subscription letter
 ## CD 13A
 - Day 3
-- Always segment your lists. Try race, age groups, blood types, cars they own, etc. Ways To Make Your Ads Better
-- 1) Do something that involves drama, theatre and showmanship
+- Always segment your lists. Try race, age groups, blood types, cars they own, etc.
+- Ways To Make Your Ads Better
+- 1) Do something that involves drama, theater and showmanship
   - A letter from accountant or lawyer saying that the sale is due to tax returns
     - Letter from interior designer
     - Get them to bring identification to get them involved
@@ -510,8 +534,8 @@
 - interested in what you are selling will read it.
 - Offer bribes to get them in the door especially for high ticket items.
 - Segways
-- A segway is a transition piece from something that catches your attention to another area of attention. It needs to be logical and make sense.
-- Example: The dollar grabber and the copy that goes with it is a segway.
+- A segue is a transition piece from something that catches your attention to another area of attention. It needs to be logical and make sense.
+- Example: The dollar grabber and the copy that goes with it is a segue.
 - Grabbers are the best way to do it.
 ## CD 14A
 - Connect a story with the grabber and transition into your piece into what you are selling.
@@ -565,9 +589,12 @@
 - Show that you identify with them – empathy & resonance
 - Sworn statement
 - You write an article and run it in a paper – here’s what people read about me in the New York Times
-- Give names, addresses, telephone numbers, etc for testimonials. Set up a prerecorded message for them If you have any questions you can call me at - you want to give them the idea that they can reach out and get in touch with you
-- Give them a free sample such as a free report, past issues of newsletters, etc Free trial – I won’t cash your cheque for 31 days (this is huge)
-- Payment plans – break it up into monthly instalments for later sequences Patent it and show it.
+- Give names, addresses, telephone numbers, etc for testimonials. Set up a prerecorded message for them
+- If you have any questions you can call me at - you want to give them the idea that they can reach out and get in touch with you
+- Give them a free sample such as a free report, past issues of newsletters, etc
+- Free trial – I won’t cash your check for 31 days (this is huge)
+- Payment plans – break it up into monthly instalments for later sequences
+- Patent it and show it.
 ## CD 14B
 - 
   - 
@@ -588,7 +615,7 @@
 - Trial run with no payment
 - Photo of yourself – a free standing photo is more compelling
 - If you are going for radio just use stations that have talk shows or country music on it because they are the only things people actually listen too.
-- Humour is good for creating an educational experience but not when trying to make a sale. Just avoid using it.
+- Humor is good for creating an educational experience but not when trying to make a sale. Just avoid using it.
 - When you want to get a customer back you should treat it as a new sale. Long copy, very appreciative message reminding them of the benefits they had previously and have good premiums.
 - Sales letters are better than magalogs. They are usually only used when you are mailing your list a lot and need a format change to freshen it up.
 ## CD 15A
@@ -615,7 +642,7 @@
 - Fishbein
 - Legal Problems and Mail Fraud
   - You cannot be totally legitimate with your business
-  - Innocence is no defence
+  - Innocence is no defense
   - Always tell the truth
     - You can exaggerate it but always tell the truth
   - 
@@ -681,15 +708,20 @@
 - (if it isn’t in response to the ad then it says today you rang my office to order a trial subscription)
 - Thank you.
 - I really mean it. You know, it seems to me not enough business owners
-- appreciate their customers. I'm different. I do appreciate my customers. Very very much. Therefore, I want to say thank you for giving me the chance to prove myself to you and I especially want to thank you for having enough of an open mind to be willing to learn something totally new.
+- appreciate their customers. I'm different. I do appreciate my customers. Very very much.
+- Therefore, I want to say thank you for giving me the chance to prove myself to you and I especially want to thank you for having enough of an open mind to be willing to learn something totally new.
 - You may not know it yet, but your decision to start getting my newsletter is, from a financial point of view, going to turn out to be one of the smartest moves you've ever
 - made. Why? Simply because my newsletter delivers more hard-core, real-world money making info than any other publication on earth.
-- In fact I have received more than 3,000 letters from people all over the world who say my newsletters have changed their lives. And every single day I get more letters. Some of them are from little people who are just getting started and many are from VIPs who own or manage some of the largest multi-national corporations in the world. Some of these people have made thousands and many have made millions by
+- In fact I have received more than 3,000 letters from people all over the world who say my newsletters have changed their lives. And every single day I get more letters.
+- Some of them are from little people who are just getting started and many are from VIPs who own or manage some of the largest multi-national corporations in the world.
+- Some of these people have made thousands and many have made millions by
 - using the techniques, strategies and inside secrets that you are about to learn by reading my newsletters.
-- Listen: In the ad that got you to sign up for my newsletter (and that would be changed to in the letter you received in a direct mail campaign) promised to send you two free video tapes and 12 free reports which will teach you some brilliant new ways to make extra money in 1996. Well, those free video tapes and free special reports have already been sent to you. They were sent today. Watch for that package It’s coming in a large blue Postal Service Priority Mail envelope. It should arrive any day now. You might get it before you get this letter and the material it contains can change your life. In the meantime, I have decided to go the extra mile and I am sending you some valuable material which, you did not even know you were going to get.
+- Listen: In the ad that got you to sign up for my newsletter (and that would be changed to in the letter you received in a direct mail campaign) promised to send you two free video tapes and 12 free reports which will teach you some brilliant new ways to make extra money in 1996. Well, those free video tapes and free special reports have already been sent to you. They were sent today. Watch for that package It’s coming in a large blue Postal Service Priority Mail envelope. It should arrive any day now. You might get it before you get this letter and the material it contains can change your life.
+- In the meantime, I have decided to go the extra mile and I am sending you some valuable material which, you did not even know you were going to get.
 - You'll find this material inside the brown sealed envelope enclosed with this letter. What that envelope contains is seven back issues of my newsletter. One of them has a floppy disc with it which I am sending you as a free gift, and, you should read those back issues immediately.
 - Why? Simply because they will help you get-up-to-speed and each of those back issues contain proven, money-making ideas and strategies that, anyone of which, can help you achieve total financial freedom for the rest of your life.
-- Why am I sending you all these back issues and why am I sending them free? The answer is simple: You see I believe...
+- Why am I sending you all these back issues and why am I sending them free?
+- The answer is simple: You see I believe...
 - You Should Treat All Your
 - Customers Like Gold!
 - Anyway, also enclosed with this letter is a sealed, white envelope that contains info that may or may not be of interest to you. What happened was, I gave an incredible seminar at the Century Plaza Hotel in Los Angeles and, people all over the world are
@@ -698,12 +730,13 @@
 - However, I have figured a way a few people who are interested can get the tapes of that seminar as a free gift. Actually, I'm never going to straight out sell those tapes because, even though it might sound conceited...
 - I Consider Them Priceless!
 - Would you like to have the tapes of that enormously valuable seminar? Look, if you're just a dreamer or a lazy "wanna-be", those tapes will do you no good whatsoever.
-- On the otherhand, if you are serious about making serious money, well then, those tapes can be your own personal passport to riches.
+- On the other hand, if you are serious about making serious money, well then, those tapes can be your own personal passport to riches.
 - In any case, you've got a lot of very interesting reading in front of you and it’s time I stopped babbling so you can get started.
 - Thank you for your attention.
 - Sincerely
 - Gary C Halbert
-- PS: By the way, as far as the dollar bill is concerned it’s yours to keep and you can whatever you wish with it, you can yourself a beer or give it to charity or whatever but you know what I hope you do with it? I hope you frame it. Why? Simply because someday somebody may see it hanging on the wall and then maybe you'll be able to say, 'Well that's the first dollar bill I ever received because of my association with Gary Halbert and since then I've made over a million more. Don’t laugh, it could happen just like it already has for many other people.
+- PS: By the way, as far as the dollar bill is concerned it’s yours to keep and you can whatever you wish with it, you can yourself a beer or give it to charity or whatever but you know what I hope you do with it? I hope you frame it. Why? Simply because someday somebody may see it hanging on the wall and then maybe you'll be able to say, 'Well that's the first dollar bill I ever received because of my association with Gary
+- Halbert and since then I've made over a million more. Don’t laugh, it could happen just like it already has for many other people.
 - P.P.S I don't completely trust the US postal service therefore I will have my secretary call you in a few days to make sure you receive everything I've sent to you. Peace.
 - Rules of Writing a Newsletter
   - Be an expert
@@ -737,11 +770,14 @@
 - 8) If you get good results out an ad in Investors Business Daily
 - 9) Send interested parties the dollar bill letter explaining how you did the whole thing and offer a share of the profits
 ## CD 17B
-- Don’t skip on copywriters, pay them well. Make them feel enthusiastic about being part of your life. In fact treat everyone you want involved in your projects like royalty. It will come back in dividends for you.
+- Don’t skip on copywriters, pay them well. Make them feel enthusiastic about being part of your life. In fact treat everyone you want involved in your projects like royalty.
+- It will come back in dividends for you.
 - Never use a PO Box because it looks like you are hiding behind it.
-- Besides testimonials get an attractive celebrity woman to use her name and likeness and make the letter come from her. All it needs to be is an attractive woman with a good segway. Use a stand alone photo.
+- Besides testimonials get an attractive celebrity woman to use her name and likeness and make the letter come from her. All it needs to be is an attractive woman with a good segue. Use a stand alone photo.
 ## CD 18A
-- Make people visualise the reward and take all the risk out of giving it to them. Make your motives transparent when you are trying to sell someone something. To get testimonials ask for them, ask them to describe a benefit and bribe them for it.
+- Make people visualize the reward and take all the risk out of giving it to them.
+- Make your motives transparent when you are trying to sell someone something.
+- To get testimonials ask for them, ask them to describe a benefit and bribe them for it.
 ## CD 18B
 - People treat you the way you teach them to teach you.
 - You will get nothing but road blocks in your path to success and you have to navigate through them.

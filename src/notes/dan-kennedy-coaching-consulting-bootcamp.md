@@ -1,0 +1,1235 @@
+# Advanced Coaching & Consulting Bootcamp
+@ Notes from Dan Kennedy
+## DVD 1
+- This program is about the handling of the client.
+- This is:
+  - Getting clients
+  - Controlling them
+  - Extracting maximum money from them
+  - Keeping them as clients
+  - Multiplying number of clients
+- Read all DK’s material such as the newsletter for multi-educational purposes. You should notice:
+  - Entertainment
+  - Marketing ideas & examples
+  - How is it structured and why is it done a certain way to keep a member
+- DK’s’ first coaching program for dental & chiropractors in 1979 at $30k a year:
+  - 8 mastermind meetings
+  - 2 staff training seminars
+  - System orientated training - operations
+  - Non system training – mindset stuff
+  - Audio & video material
+  - Monthly accountability
+  - Staff newsletter
+  - Newsletter
+  - Continuing telephone coaching
+  - Fast start day
+- The most expensive part is getting clients.
+- DK has retained clients for years even though he has increased his fees far greater than inflation and being very dictatorial about it.
+- Everything in this program can be implemented immediately even by newbies.
+- DK gets a few guys up to talk about their coaching businesses to establish the specific authority of coaching for himself because it’s been months since the audience has read
+- the sales letter so he has re-established the right the talk about the topic and gain control of the audience.
+- He does this every single time with a client regardless of the length of the relationship.
+- He constantly reminds them what the relationship is (teacher – student), why they pay him money and to get control over them again.
+- Ignore traditional norms about coaching & consulting. The norms are rooted in:
+  - hours for dollars culture
+    - no leverage as no matter how much value you give your earnings are
+- capped
+  - The client ultimately will view it as overpaying as they will compare hours for dollars
+    - Eventually everyone is unhappy
+    - Instead sell them the money
+  - Academic orientation
+    - Hung up on certifications and letters after the name
+    - Nobody cares about it other than the people signing the letters
+  - Ladder thinking
+    - Always be sticking a ladder in front of your clients because people will always climb them but NEVER stand in front of one yourself
+    - Ladders are for controlling people e.g. boy scouts of America has a ladder purely for controlling kids & parents
+  - All mired in poverty thinking
+    - You should be only able to make so much an hour
+    - Our clients make X then we should earn Y
+    - Your monetary compensation is based on the actual value provided as
+- defined by the recipient (not you) and what you can get
+- Coaching has to do with your attitudes to yourself & money, how big your balls are and your ability can keep a straight face when you ask for the cash. All self image related.
+- Every business runs itself in relation to price i.e. a multiple of cost. This doesn’t exist in coaching and the info business.
+- You must BE not do.
+- Necessary Attitudes
+- Roles
+  - Is not be at service to clients.
+    - This implies you are a servant
+    - Our role is to control clients and attempt to get compliance from clients
+    - You are their superior
+    - Example: DK was having back problems and he went to a chiropractor.
+- The chiropractor gave their presentation on how he would need to give a
+- weeks notice for his appointments and needed ongoing treatment and DK
+- stated that it was impossible due to his flight schedules and he wanted to give a couple of hours notice and they would squeeze him in. He ended
+- up not going back. In another few months his back got worse and he went
+- to another chiropractor. They gave their presentation and he gave his and the chiropractor then basically told him to get stuffed and go to another practice (superior frame no.1). DK then rescheduled to suit them and got 3 exercises he had to do in the meantime. He went back for his next
+- appointment and of course not doing the exercises and was told to go
+- home and not come back until he did the exercises(superior frame no.2).
+  - THE ROLE: THE CHIROPRACTOR IS THE SUPERIOR TO GET
+- COMPLAINCE WITH THE PATIENT
+- Superiority
+  - Have contempt for every client and look down on how dysfunctional they really are
+    - Disdain is a source of power
+    - You have to realize whilst your clients are good at something which is usually the technical aspects in their job, when it comes to
+- common/business sense which is what coaching is, you are vastly the
+- superior being.
+  - Bets way to develop superiority is to acknowledge the ignorance and
+- stupidity of other people
+  - Example: DK meets the CEO of the largest ad agency in Cleveland who
+- was mowing the grass in front of the office building. The lawnmowers
+- wheels start to go wrong. He didn’t have the sense to leave the
+- lawnmower there go get a wrench to fix it, instead he dragged the
+- lawnmower to go get the wrench!!
+- Confidence
+  - Donny Deutch sold an ad agency for $300 million which is essentially selling nothing.
+    - His book is called Often wrong Never In Doubt
+    - People don’t to buy maybe’s, they want to buy certainties. They don’t
+- mind paying for it even if we’re wrong but we must sell them certainty.
+- Money
+  - When they show up bill them
+  - Give NOTHING for free
+  - If they don’t give you money for everything all of the way, you will lose control, compliance and their respect.
+  - Even if they are paying you a $1,000,000 a year don’t comp them
+- Value
+  - This is about the clients value not our beliefs about value.
+  - It’s not about the core value of the business – it’s the results and the clients perception of results
+  - It’s all up to them and you must make them happy
+- Exercise power and control over people and be comfortable doing so
+  - This includes psychological manipulation
+  - The big speaker mistake is I’m gonna teach them so much stuff that I don’t have to hard sell at the end of the day. This doesn’t work. Even if you are a great coach and they get results you will still have to maintain control of them. It doesn’t take care of itself.
+- Success Asset 1
+- What you get paid for, especially over time..more than for your know how, more than for your service or work, more than for your results, more than anything is your REPUTATION.
+- Reputation:
+- Example is the CEO of Weight Watchers buying a expensive ad campaign from a massive ad company. Even thought the ad had no value whatsoever he still thought it was great because of the ad agencies reputation.
+- What they believe ("know") about you
+  - The best people at anything are generally the poorest. It’s about being known or perceived as being the best.
+- 1. What they surmise or assume about you
+  - Anyone who publishes a book gets instant credit for being smart and are given expert status.
+- 2. What they are told by others about you
+  - If you can engineer stories being told about you, that creates reputation
+  - 4% of people check references for jobs applications. The assumption is that if they have put a person on their application as a reference then they’ll say good things about you. Wrong
+- 3. What they read / hear about you
+  - Get an article written about you
+  - People believe what they read regardless of true or false media
+  - Example: Pharmaceutical companies using false reviews of product. It looks real so doctors prescribe them.
+- 4. What "legends" they hear repeated about you
+  - It’s important to create and tell repeatedly tell defining stories about your life because they are likely to be repeated to other people.
+- 5. Who you are associated with, who they associate you with in their minds
+  - This is important for newbies trying to create reputation
+  - An aura borrowed is as good as an aura earned.
+  - Example: the comedian who’s career was based on opening for Frank Sinatra
+  - Who you reference in your stories and language, who you interview, who you co-author, who you tell stories about, who you shared a seminar with
+## DVD 2
+- Decide who you want it to be
+- Pick what will be effective for you. It has to be real. Your known for competencies and a type of person.
+- Example: Be known as being difficult to work with and can multiply a business over night.
+- Whatever you choose, you must repeatedly reinforcement and ALWAYS maintain it.
+- Even a change in appearance can be disastrous. CONGRUENCE.
+- Better to write your own reputation than let someone else do it for you.
+- Write a shortlist of the characteristics you want to be known for.
+- DK’s characteristics:
+  - Professor of harsh reality
+    - A simple hand written note acknowledging someone’s kid being born or
+- dog dying has much more impact than if he portrayed himself as warm
+- and fuzzy.
+  - Honest
+  - Reliable
+  - Strategist (not just a copywriter)
+  - Sought after and unavailable and very hard to get
+- The characteristics you want to be known for also dictates what will not be discussed with you. You must also be strategic about how you use your personality portrayal as it gives you impact and currency.
+- Another example is that he would never buy food for meetings but he always did before he had to ask for money!!
+- The same act by two different people can be viewed very differently. Personal growth coaches suffer with this when it comes to bad behavior. They do it and they get burned at the stake.
+- Your product content must match your characteristics. So must be your behavior.
+- Take care to build a Reputation that ....
+  - You can live with and in for the distance
+  - That has some room to evolve
+  - That does not set up impossible standards
+    - He’s the guy that calls someone back within 30 minutes. It might work
+- early on but not when you become successful.
+  - That facilitates exercising influence, control and power over others
+    - Someone who is tolerant, relaxed and casual will not be good at running coaching groups because you will have trouble keeping the children from
+- killing each other. Someone who can occasionally fly off the handle is
+- more useful because people don’t want to set him off.
+  - That will be magnetic to your constituency of choice
+    - Gene Simmons and his market
+  - That has 'evergreen' appeal
+  - That is easy for people to grasp and remember
+    - Should have a short explanation
+  - That is difficult to undermine or attack
+- This should a reference point for all your other decisions even down to the books you tell people you are reading.
+- Begin By Being Known For Something
+  - One great story
+  - One great competency
+  - One great characteristic
+- You will always be going from narrow niches to broad markets. Be known for one thing and fuzzy the edges.
+- Example: Donald Trump was known for his negotiation skills in Real Estate and has now branched out into broader Success & Lifestyle.
+- Your reputation precedes you and if it inspires respect, a lot of your work is done for you before you arrive on the scene or utter a single word.
+- The heavy lifting should be done before you arrive on the scene.
+  - Have them fill out application forms for coaching
+  - Do a course before they can do coaching
+  - The cd’s they much listen to before they talk to you
+  - You must construct a process that enables this reputation
+- When someone looks for coaching the worst thing to do is to talk to them. You must set a process for them to jump through hoops to talk to you.
+- DK Process
+- 1) Someone rings his office and his PA tells them to write out on at least one page (not more than 2) why they want to talk to him and what it is they need and what it is they want to do and fax it in. She then tells them that if he decides he’ll talk to them then the PA will be back to them to arrange a phone meeting.
+- 2) Prior to the phone appointment they get a box of stuff including newsletters, cd’s and testimonials with instructions on what to read before they get the phone appointment. He lets his reputation make them want to hire him.
+- 3) They then must come back and request the appointment again.
+- 4) By the time they get the appointment they are determined to getting him. 5) Paid day of consulting at his leisure. Inconveniencing them is the best thing to do. The worst thing is to go to their offices.
+- It’s all about telling them what to do.
+- If you have 500 testimonials send them the 500 not just 50. Give them it all.
+- You want them to feel likes it’s an accomplishment to get to you. Takeaway sell. Have them fight every step of the way to buy from you.
+- The frame is you choosing whether or not to take a project not the other way around. If you get the sale by selling controlling them after the sale is very difficult. Getting the sale by them selling themselves to you makes control a lot easier.
+- Section 2 - What we sell
+  - 
+  - 
+  - 
+  - 
+- Not credentials
+  - They never get second opinions or check up on you
+- Not expertise
+- Not services
+- Not results
+- What we do sell is:
+  - Your Confidence
+  - Your Certainty
+  - The Control you exercise over them from the beginning
+- When you sell this way, when you prescribe what will happen and what the fee is, there are no questions.
+- Success Asset 2 - Unbridled Self Confidence
+- Self Sabotage
+  - Concerns over credentials & education
+  - Concerns over your experience rather than your lack thereof
+    - All you need is common sense
+  - Concerns over your financial status vs the client
+  - Concerns over losing clients
+  - Personal hang ups about money, power, persuasion
+  - Visible signs of weakness
+- In most professional services you are not selling your expertise because it is assumed and the prospect cannot intelligently evaluate your expertise anyway.
+- Coaching is much bigger than who has the bigger wallet. Value provided includes:
+  - Fresh eyes
+  - Dumb questions
+    - This has enormous value and gets them to think about the basics
+  - Forced thought
+    - Slow them down and get them out of their business and really think. They won’t do it on their own.
+  - Make defend ideas
+    - The more successful someone gets the less people challenge them
+  - Challenge predetermined limiting beliefs
+  - Unearth ignored opportunities
+    - Clients will actually tell you this and they aren’t paying attention to it
+  - Influence clients associates and employees
+    - Like baby sitting someone else’s kids, they will listen to you but not the client
+  - Be used for arbitration, political cover, decision making
+    - People are getting things done because they say ‘this is what Dan said to do’. They couldn’t get it done otherwise.
+  - Validate their own premises and ideas
+    - It’s nice to be told you are right
+  - Motivation
+  - 
+  - 
+  - 
+  - 
+  - 
+- Accountability
+  - Did you do what you were meant to do last month??
+- Recognition
+  - Coaching Group gives this
+    - One on one call Platinum 20 minute call are mostly recognition calls
+- Resources
+- Connections
+- Specialized knowledge
+- Section 3 - Sales & client control strategies, tactics, and tricks of the trade
+- Success Asset 3 – A willingness to play the game
+- If you are absolutely determined to let people make buying and retention decisions on their own based on logic and the core values you deliver you will not make a lot of money, you will not retain clients and not have much fun.
+- If you view it as a performance then the performance must delight the audience based on their values not yours.
+- If you are coaching a group and it doesn’t appear that someone has not progressed don’t impose your values that they should have gone somewhere. It isn’t up to you to judge them. The only important thing is that they are delighted. People are delighted by different things.
+- The performance is to delight the audience and enrich you.
+- Are you willing to manipulate people and find out what delights them and give it to them.
+- In our culture the art of deception is viewed upon as evil. Other cultures just assume it is par for the course. People don’t want to admit they are doing it.
+- All advertising and sales has some element of deception in it. Psychological control and manipulation are essential elements.
+- Evil doesn’t exist in deception itself but rather through the user and the uses
+- Managing Expectations
+- Example is Ryanair – budget airline but they leave on time and get you there on time.
+- They don’t pretend to be anything else.
+- The importance of the introduction – the results from a speaking engagement will depend on who introduces them and what they say. If you are there for money better to have someone introduce the introducer and one should be giving testimony.
+- You have an introduction into everything you do. It has a bearing on how controllable they are and how happy they are based on what they are told.
+## DVD 3
+- Appearance
+- If Batman dressed as Bruce Wayne to fly around Gotham it doesn’t work. The packing is everything. If packaging for products is important then it’s a equally important for people.
+- DK setup
+  - Multi day Seminar
+    - Dress up first day then gradually dresses down
+  - On stage to sell
+    - Suit
+  - Corp meetings
+    - Contrarian
+- Rules:
+- 1) Be congruent
+- 2) Be strategic
+- 3) Consider your set up
+- 4) When in doubt, overdress – but try not to be in doubt
+- People make assumptions based on how you dress.
+- Michael Korda book Power
+- Consider the symbols you use based on:
+  - Geography
+  - Industry
+  - Age of clients
+  - Background of clients
+  - Corporate culture
+  - Environment
+  - Message you wish to communicate
+    - About age/experience
+    - About position, examples: creative renegade, trustworthy traditionalist
+    - About status
+- Accessories
+- Top level people don’t have computers at their desks. They have someone who does that for them.
+- DK didn’t carry a brief case as the most powerful person doesn’t carry one. Instead he would just ask for a pad. Now he just gets them to come to him and all he ever starts with is a pad. No business cards either.
+- Give thought to your car of people are going to see it.
+- Place
+- By just going to the other persons place puts you in a lower position. If meeting on the road he makes them come to his hotel not at their office.
+- By making the prospect come to him (preferably at some inconvenience) he accomplishes:
+  - Better personal productivity
+  - Suit personal preference
+  - Have them giving up power
+  - Have them more invested before being faced with a buying decision
+  - Control the environment
+- Time:
+- The importance and power of the person is represented by ease or difficulty of getting to him on the phone. Dogs leap when called. Important people don’t.
+- Easy access is a statement of servitude. Its also an expectation that can not be met when you get busy.
+- Other access – dropping by – no good unless you own a coffee shop. Bad idea as again it is creating an expectation you can’t meet. As soon as one person finds out they all want to do it.
+- What important person do you know can drop everything at the drop of a hat and go to dinner??
+- How you handle all this communicates importance to people.
+- From a sales instinct is also important. Never be prompt with a quote. When you have only one client this is hard to resist but resist it you must.
+- The higher the caliber the client or cost of the item the less important the guarantee.
+- At seminars the equivalent is food & stationary. The higher the priced the less it’s important.
+- Get clients to give you testimonials, talk on tele-seminar or talk at a chapter meeting.
+- Never meet in restaurants. Have them come to your office and always keep them waiting.
+- Staging & Choreography
+- At a dentists office the clients satisfaction is greatly determined by how they are brought into meet the dentist.
+- Powerful people have the ability to dramatize themselves and their actions so that even the most unimportant events acquire meaning."
+  - 
+  - 
+  - 
+- Where You Sit
+- Who You Sit / Are Seated With
+- Before/After Your Delivery (Of Speech, Coaching Session, Consulting)
+  - 
+  - 
+- Where You Stand
+- Never Being Seen Ignored
+- Examples:
+- DK taught the DC's never to have their presentation props in their closing room for 'Report Of Findings'. Better to get up and go and get something "just for that patient."
+- In his home office, he never gathers up everything he thinks he might want to show a client during his day. One, he hates preparation -but two, it's better stagecraft to go and go to the trouble of finding it, digging it out just for them.
+- Why DK Never Wants To Be Picked Up At Airports
+- 1. Not at his best
+- 2. Can't control his Entrance or First Impression
+- 3. Will be engaged in Premature Conversation
+- 4. Accepting the courtesy diminishes power ....
+- 5. Invites obligation
+- "Sinatra Doesn't Move Pianos"
+- Take caution about what you are SEEN doing.
+  - carrying your own product samples to front of room vs. having them already there
+  - getting on stage to shake Famous Guy's hand vs. up after he exits
+  - doing what THEY do (egs. Making calls on breaks)
+  - what you eat, what you drink
+  - 
+- st
+- flew 1 because DK couldn't afford to be SEEN in coach
+- In running Coaching Groups -power choreography -consider
+- Where You Sit:
+  - Head of table
+  - Center of table
+  - On stool – If selling better be on platform
+- When You Enter Room(s)
+  - Before everybody?
+  - After everybody?
+- What You Do/Don't Do
+  - Passing out materials (Sinatra Principle)
+  - At my house, upstairs to use my private bathroom - Never wait in line
+- Control
+- You cannot exercise control occasionally, it must be done constantly.
+- People are more likely to fill out an order form if some of it is already filled out for them especially if done by hand.
+- DK Coaching Groups
+  - Platinum meetings up to 12 people are done like a boardroom type meeting
+  - More than 12, DK sits at the head of the table on a stool and has another one for a hot seat
+  - He sends reminder of rules before every platinum meeting
+    - come on time,
+    - don’t leave early,
+    - no cell phones
+  - Order
+    - keep time on people and topics
+    - bring people who are quiet involved in the meeting
+    - play traffic cop
+    - stop bitching
+    - watch the clock
+    - Everyone gets the same amount of time
+    - Punishment for people who breaks rules such as those who leave early or making calls. Leave early you don’t go next time at all.
+- DK Client Relationship
+  - Come to him
+  - Controlled access
+  - Rules
+    - Send stuff only by federal express
+  - Contracts
+    - Never do things verbally
+    - Should include rules
+  - Delays in response
+- Learn to make people dependant on you
+  - Never teach them enough so they can do without you
+  - Preach independence and we teach dependence
+- Perceptions
+  - You are the only person who can do what you do
+    - People want to believe this and will usually convince themselves
+    - Example is the horse hoof fixer
+  - There is something mystical about what you do
+    - Have them wonder what’s in the secret cave
+  - There is always a ‘next’
+    - Each years coaching should be different
+- Dependency Strategies
+  - Frequency, so you are an addiction
+  - Multiple Roles:
+    - Advisor
+    - Confidante
+    - Therapist
+  - Fulfill emotional needs
+    - recognition,
+    - validation–
+  - Ego/esteem damage ....
+    - person will be thought less of by exit
+  - Cannot just be about you.....
+    - You as conduit, as access to ....
+    - You as convenience, efficiency, shortcuts ...
+  - Must be pain of exit or disconnect, not just value of connection
+    - Fraternity, society ....cut off from, in exile
+    - Exclusive services
+- You need interdependencies and relationships to unravel.
+- Relationships
+- Big Mistakes
+  - Being too familiar
+    - Be careful what you let them see
+    - Never reveal all yourself to other people so you remain mysterious
+  - Being friends
+    - You lose power through friendship
+    - Friends think they should get stuff for free
+- Tips:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Restrict and carefully control social interaction.
+- Politely decline most social invitations.
+- Socialize with them as a group or groups, not individually.
+- Avoid obligation at all costs.
+  - DK constantly reminds people what he has done for them
+- Accept gifts and courtesies rarely, reluctantly, with caveats stated.
+- Always pick up tabs (and tip generously).
+  - Says massive things about you
+- Never take unfair advantage.
+  - It’s ok to have them work for free but not 5 nights of the week
+- Limit or avoid alcohol consumption in their presence.
+- Never, ever, ever date or sleep with clients or clients' family members or employees.
+- Be aware of potential liabilities. Example: today's harmless flirting is tomorrow's sexual harassment litigation.
+  - Coaching is fraught with risk as you are giving advice and they are
+- interpreting it
+  - As soon as they want their lawyer to look at the contract drop them ASAP as there is someone of influence in their life whose job to justify their existence is to instruct lawsuits
+- Do not use your clients as your coaches/consultants or therapists.
+  - Never confide in them because you need them to want to be like you
+- Do not complain in ways that undermine their desire to be like you.
+- You may cross the line at particular times, under extraordinary circumstances such as loss of a loved one, severe illness, other tragedy -without staying on the other side of the line.
+## DVD 4
+- Mistake:
+- Believing that continued interest & patronage can be earned through:
+  - core value delivered or
+  - kept as gratitude for contributions past or
+    - Business is Business!!
+    - Never forget the saying: what have you done for me lately
+  - based on loyalty of friendship.
+- Member Retention
+  - Clients continue based (more) on their FEELINGS than on realities, such as accomplishment and results.
+    - It’s all about how they feel about us, themselves, the experience
+  - Clients will divorce themselves based on their feelings even in spite of accomplishment and results.
+    - Made him a million but he didn’t get his moment to shine in the meeting and he’s gone
+  - It is the careful assessment, control and manipulation of their feelings that is essential to retention and/or ascension.
+- Additional Mistakes
+  - Delivering too much content
+    - Won’t help retention
+    - Too much stuff makes them feel inadequate which will push them away
+  - Delivering overly sophisticated or complex content
+    - Creates feelings of embarrassment, guilt and inadequacy and ultimately resentment
+    - Can also be done if you insert stuff too early in a program
+  - Teaching too much, period
+  - Being boring
+  - One way vs cafeteria
+    - Give them multiple ways to do stuff, they are happier with it
+    - Never give them an absolute model
+  - Imposing your values on others
+- Things that make them happy
+  - Getting lots of stuff
+  - Taking home stuff
+  - Getting stuff in packages
+    - Big mistake to deliver things electronically
+  - Surprises
+    - An extra book they didn’t expect
+    - Handwritten note on newsletter
+  - New and interesting things to do
+    - Keep giving them new stuff
+  - New toys
+    - Quizes
+    - Questionnaires
+  - Being sent on goose chases and treasure hunts
+    - Send them to look at websites
+  - Activity that feels like accomplishment
+    - Come up with a USP
+  - Good food, especially desserts
+    - Cookies
+    - Brownies
+  - Positive feelings
+- Positive Feelings
+  - GOLD STARS: Ego Stroking
+    - Recognition - Put them in the newsletter
+    - Opportunities to show off and teach - if they send something put it in the newsletter
+    - Teacher's Pet status
+  - ACCEPTANCE: Leader & Peer Support
+    - Recognition
+    - Encouragement
+    - A creative environment
+  - FRATERNITY: Being An Insider (And Superior To Others)
+    - Being Your Client Needs To Be A Status-Symbol Somewhere
+    - Getting preferential treatment
+    - Being confided in, knowing secrets, knowing things first
+  - WOMB: Security I Optimism
+    - Protection against unknown dangers
+    - Part of a group that triumphs no matter what
+  - 
+    - Attachment to a person who will be there for them and cares about them
+- FUTURISM: Anticipation
+  - Something(s) to look forward to
+    - Unpredictability -"what'll he/we/they come up with next? "
+    - Left wanting more
+    - Goals -ascension
+- NB - Key list of facts you reinforce at every opportunity
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- DK:
+- In high demand
+- Waiting list
+- Difficult to do business with
+- Eccentric
+- Time fetish
+- Intolerant to having time wasted
+- Terminates clients
+- Expensive
+- Highest priced copywriter in America
+- People are making enormous sums of money with his help
+- People are going from zero to millions at blinding speed
+- People come to him in one business and leave in another
+- This needs to be reinforced at every:
+  - Everything you Write
+  - Meeting
+  - Phone conversation
+  - Coaching
+  - Consulting day
+  - Meet with client
+  - CD
+- When DK does his coaching calls he puts the guys who don’t usually answer go before breaks and his best students last as he is tired and has less to do. He puts weak students in between good ones so he doesn’t get too irritable.
+- Private client groups get goodies. He gives a drawer to each client which gets filled up and sent at the end of each month.
+- Do renewals early.
+- He states what he is going to do with clients unless they speak up and he hears from them.
+- He gives the meeting rules of conduct on page 168 and sends it every month.
+- Section 7 – Resources
+- Books:
+- POWER/Michael Korda
+- SELLING THE INVISIBLE/Beckwith
+- THICK FACE, BLACK HEART/Chin-Ning Chu
+- MENTAL JUDO/Lager
+- WINNING THROUGH INTIMIDATION/Ringer
+- NEW PSYCHO-CYBERNETICS/Maltz & Kennedy
+- 48 LAWS OF POWER/Greene
+- 7 STEPS TO FINANCIAL FREEDOM/Ben Suarez
+- NO B.S. SALES SUCCESS/Kennedy
+- NO B.S. WEALTH ATIRACTION/Kennedy
+## DVD 5
+- Getting clients:
+  - A strategy is getting or being associated with a prestigious client that is magnetic to the desired constituency.
+  - Do speaking as you get instant kudos for doing so and you get expert status
+    - DK says that this is essential and you need to get good at it
+    - Have one stump speech, one key speech about your best thing
+    - He lived off Magnetic Marketing for 14 years
+    - It should be perfected, practiced to a fine art.
+    - You gain a lot of power by being up there
+  - You have to be a prolific writer a lot and include your personality in it
+    - Able to write persuasively
+    - Reinforce your reputation with your fact list and stuff you want them to know
+    - The time taken is in the planning, what it’s about, what is the strategy
+    - Tell lots of stories
+- Objectives of Public Speaking:
+  - Getting people to seek you out and beg to be your clients
+  - Every word, story or example should be used to forward the audience to do business with you.
+  - Anything else no matter how relevant that doesn’t advance the sale should be dropped.
+- Non-objectives of Public Speaking:
+  - Can’t be to get a standing ovation
+  - Can’t be to have a big crowd around you to speak to you – small crowd who want to give you money better
+  - Can’t be total satisfaction of the host
+- Doctors don’t do proposals they give prescriptions. Proposals are a bad sales presentation. Deliver the action plan at the very least. You want to get from consultation to contract without anything in between.
+- Writing Books:
+  - DK uses books as long form sales letters cleverly disguised
+  - He works from a short list of who he would like to raise out of the muck and get excited about reading this – targeted prospects
+  - 4 or 5 key message points that will resonate with them too
+  - Be willing to repel & offend those you don’t care for
+  - It’s not deadly to reveal a lot especially if it is complicated to implement
+  - Show it in a way that demonstrates expertise
+  - Have a sales letter structure
+  - They should be story books more than anything else
+    - Case histories
+    - Client successes
+    - Famous peoples stories (e.g. Starbucks, Trump, etc), you will get
+- connected with them in the readers brains
+  - Put in what you want to attract
+    - Don’t make a big thing about it – 12 newsletters is a book
+    - Good for small numbers of really good leads
+    - Most books that are bought are never read
+    - Try to build a promotion around it
+    - Great as a credibility and authoritative tool
+    - Great as a brochure (as well as testimonial letters)
+- -
+  - 
+- Decide what do you want happen with the book – The little red book of
+- selling – Gitomer
+  - There are lots of opportunity to attach yourself with celebrities for free by using stories of them that has relevance to your subject (e.g. Sport person talking about chiropractors)
+    - Reveal personal things strategically. Allow people to identify with you in different ways. Have things that are gonna be commonalities. DK uses
+- bankruptcy, stuttering,, etc
+  - This also has the virtue of having a few things hidden
+    - On another level is that it strengthens the human part of the bond but don’t do it so it invites anything other than the relationship that you want
+    - DK counter balances a lot of this by portraying himself as grumpy and
+- unfriendly
+- Hiring celebrities always more than pay for what you will spend on them as well an intangible benefits too
+## DVD 6
+- Money
+- The getting of money from people depends on how you think and feel about money.
+- Limiting False Beliefs about money:
+  - There is a finite amount of it
+    - Our clients would never spend that on this
+    - Example is the trailer trash that has a satellite dish – people always have money for what they want to spend it on
+    - Coaching increases their capacity to spend more
+    - If price was the only determining factor then there would only be Walmart or Tescos. There would be no requirement for anyone else.
+  - If someone spends $30K then they are out of pocket $30K.
+    - 5% of the population buy everything, 15% buy a lot and the rest pay
+- nothing
+- Why money moves from one person to another in society:
+  - Money is like fire, an element as little troubled by moralizing as earth, wind or water
+    - this means people who believe in being good people will get money
+    - People also believe in the value of what is being sold
+  - 
+  - 
+    - Celebrity moves money too and not necessarily the most talented
+- Men can employ it as a tool or they can dance around it as if it were the incarnation of a God. Money votes socialist or monarchist, finds a profit in pornography or in translations from the bible, commissions Rembrandt and under writes the technology of Auschwitz.
+- Money goes where it will increase the fastest not where it is needed
+- Forces that move money over which you have control:
+  - What You Decide
+    - Who you want to be – where you grew up has no bearing on who you
+- decide to be today. There are examples of people being brought up in
+- ghettos being very poor & being very successful
+  - Who you want to be perceived
+    - Who you want to be associated with
+    - What do you want to be known for
+    - How you want to conduct business
+    - How you want to live
+    - Money flows to people who want to take it
+    - How fast you want to get it
+    - Clarity attracts money
+  - Plant desires & interests into subconscious
+    - Let it do the work for you
+    - Let it attract what you need
+  - Ask
+    - Ask everybody – put it out there
+    - Place demands on everybody – referrals, work for free, spread the word about you.
+    - Money does not come to those who wait
+    - Yes you are the center of the universe and it does revolve around you
+    - Develop a system for asking, obligating and recognizing/rewarding
+    - People won’ take you seriously if your fee is too low. It conveys the
+- right message
+  - 
+- Act
+- -
+- Act big to inspire yourself & others
+- Act decisively
+- Act with supreme and wholly unreasonable confidence – start things that
+- you have no idea on how to finish them. If you wait to get organized then
+- -
+- you are not in the money making business. Never be in the ‘going to do.’
+- The wealthy don’t do anything sequentially, they do it all at the same time
+- Trump always describes things as the best and biggest!! Larger than
+- life, that’s what people want
+- Pricing
+- Barriers to pricing:
+  - You set your own price not the competition, past experiences or the market. The price is what you want it to be and then you take it to the market.
+    - You will generally find that there is a market for any price.
+    - Resist all attempts by others to regulate your price.
+    - Transaction size matters a lot. Then more money you make the better
+- experience you can create for the client.
+  - The Willie Loman syndrome and it’s polar opposite.
+    - Money does not move to you whether you are liked or disliked.
+  - Reasons you won’t be liked (by people who wouldn’t give you money anyway so they don’t matter anyway):
+    - New kid on the block (after we have been laboring for years)
+    - Who does he think he is anyway??
+    - Getting to where they want faster – not paying their dues
+    - Charge for what others give away
+    - Charge big for what others sell cheap
+    - Spit on cherished icons & traditions
+    - Expose cherished delusions
+    - Challenge beliefs
+    - Finding funny, foolish or valueless what they take seriously
+    - Say provocative, offensive & critical things
+    - Say things in a provocative, offensive & critical manner that they wish they had the balls to say but don’t, so they criticize you for it
+- Best attractor for money – immunity from criticism – High achievers live independent of the good opinion of others.
+- We are in the Gold Stars business for people who need them but essential that we don’t need them. We are in the business of showing people ladders but it is essential we don’t climb them ourselves.
+- If none of your decision have anything to do with this, then all your decisions are profit related.
+- Bill Glazer
+- He sells BGS coaching on a 2 hour minimum. He first sends them a questionnaire which he reviews for the first hour and talks with them about it for the next hour. He charges $1000 per hour.
+- Page 93 has his sales letter selling a 6 month tele-coaching program.
+- Guarantee depends on the relationship you have with the clients.
+## DVD 7
+- Page 214 is a sales letter for a tele-coaching program ($240 per month)
+  - Group call each month
+  - CD of the call afterwards
+  - Meeting once a year
+  - Members want to network with each other (membership sites)
+  - Gold Plus inserts
+  - Largest discounts on events
+- Page 202 is a sales letter for Info-mastermind& Gold VIP coaching.
+  - Everybody gets a turn in the room for 30 to 35 mins
+    - What’s happened in their business since last time
+    - What working in their business
+    - Challenges and where they need help (most time spent time on this)
+- Page 206 is a sales letter for Gold Plus Peak Performer
+  - Lee Milteer deals with performance & time management
+  - Bill deals with marketing
+- 10 Big Lessons
+- 1) The vast majority of clients will screw things up
+  - Don’t let this affect you and take it personally
+- 2) You must get over the attitude that you are responsible for their results 3) The value of the client comes from 3 main sources
+  - The knowledge they receive
+  - The ability to show off (entrepreneurship is a lonely job)
+  - A place to belong
+- 4) You can’t forget to constantly cover the basics
+- 5) A lot of the value is from you asking questions and challenging premises
+  - Sometimes people answer their own questions
+  - 
+- You have to help people get past industry norms and the way they have
+- always done things
+- 6) The best way to get clients is through speaking
+- 7) The more you charge, the more they value your advice and implement.
+  - Never give free advice
+- 8) It can lead to as much work as you want it too
+  - Speaking
+  - One on One coaching
+  - Copywriting
+- 9) You need to manage the length of the relationship
+  - Have an exit strategy set up from the start
+- 10) Authority is critical
+- Only give people 2 decisions to make regarding which programs to do.
+- Option B should be better than Option A and you need to have a way to get people from A into B. Make sure all parts are connected to you in some way
+- 460 people in Gold Plus
+- 75 in Peak Performers
+- 20 in VIP
+- 20 Info mastermind
+- 20 Group 1 Platinum
+- 20 Group 2 Platinum
+- Have an Ascension Model.
+- Organizational, marketing & time management questions are the most common.
+- Dan Kennedy
+- If you are speaking never miss the person speaking in front of you in case you contradict them or repeat the same points. Be there for all of it before you. You also want to build on what they have said previously.
+- Deception by omission or exaggeration
+  - 
+  - 
+  - 
+- DK used to make public his schedule to prospects and clients (for reasons of stimulating business and scarcity). He had 2 versions: one was real and the other was embellished. On days he wasn’t booked he would put office
+- work/copywriting for clients/hold not yet scheduled.
+- Clients only want your time when there is none of it available
+- Having prerecorded tele-seminars instead of live even though the
+- perception is that it is a live calls
+- How To Promote Yourself and Get Clients
+- You need to be talked about constantly by your clientele & others.
+  - Attack and criticize status quo
+    - Very applicable to niches
+    - Who is this man and why is he saying these terrible things about Real
+- Estate?? (Jay Abraham headline)
+  - Trade Associations as you will attract the people who are frustrated with it and who are business minded (do a mailing 4 to 6 weeks with provocative
+- statements before the trade conference). Be careful of this if you are a member because they will ban you.
+  - Attack and criticize popular enemies
+  - Be a crusader
+    - Example: Al Gore
+  - Be attacked
+    - Especially if you are highlighted to the people you want
+  - Be a rebel
+  - Have a scandal to talk about
+    - Example: The success of Passion of Christ after Mel Gibson’s arrest &
+- racial remarks
+  - Example: Paris Hilton & Britney Spears
+- This needs to be continuous because if they ain’t talking about you then they are talking about someone else.
+- Keeping has a lot to do with their interest and fascination with you.
+- Examples of Strategies:
+  - Do out of ordinary things
+    - Make it interesting such as DK’s interest in horse racing rather than golf because most people don’t like horse racing. It’s unique. Go to places
+- people don’t normally go to.
+  - Example: Yanik Silver is paying for being one of the first people in a commercial space shuttle with Richard Branson
+    - Make a big deal of unique things you do
+    - Example: DK on the bull
+  - Make known your unexpected eccentricities
+    - Example: Sam Walton was that he always ate with the workers, drove his old pick-up truck despite all the money he made. It’s also only partly true but still what people thought of him.
+    - Example: Warren Buffet is best known for not investing in tech stocks.
+  - Be associated with famous and fascinating people
+  - Pick a public fight
+  - Perform amazing feats
+    - Have a claim to fame
+    - Book: Carter beats the Devil
+  - Comment on news and timely topics
+    - There is something every day that you can make fun of, make a lesson
+- from and just be commenting on it. Be witty.
+## DVD 8
+- Thomas Edison wasn’t a great inventor. He was good however at getting money from people. He made flashy presentations with ridiculous applications just to make a reputation for himself.
+- Dale Carnegie was good at pitching people. What you see as their business is rarely their business.
+- Example: John & Dave: Use warts and all to sell yourself. The faults make you more believable.
+- What DK prefers a prospects is told and know about him in advance ...
+  - Dan is hard to get to
+  - Dan is extremely busy and has more business than he can handle
+  - Dan is difficult to work with
+  - 
+  - 
+  - 
+  - 
+- Dan is inaccessible even to clients
+- Dan is arbitrary Dan is blunt, rude, obnoxious
+- Dan is irritable
+- Dan is outrageously expensive
+- What you can know about him if you read his books ....
+  - Been both personally and corporate bankrupt
+  - Had cars repossessed
+  - Had a drinking problem
+  - Twice seriously contemplated suicide
+  - Twice divorced
+  - Has diabetes
+  - Stuttered as a kids
+- The bad stuff humanizes him. There are also commonalities with other entrepreneurs such as bankruptcy in the same way as if you are marketing child development stuff to parents it is very useful if you have a child that has a disability as they connect with you on a much higher level.
+- Use everything you got because your life experiences are valuable, meaningful and important to people.
+- Superman cannot work as a character without kryptonite.
+- Strategy of Attachment
+- Mike Vance’s entire business was based on the fact he worked for Disney for 3 years.
+- Robert Kiosayki has connected himself to Trump. His success is also largely down to having a good story.
+- There is a lot of power in attachment.
+- Strategy of Opposition
+- Jack Henry – He worked with supermarkets with a program for preventing theft from employees & vendors. His story is he is an ex-delivery man thief. Average store loses $500 per day. He was charging $500 for a day long seminar so DK raised it to $5000.
+- He only lost one client. They created his day seminar into 2 separate parts: basic to advanced and then charged $10000.
+- The enemy was the thieves and how much they were stealing. His story was he was in the owner of a stores house and the bigger house across the road was the pepsi delivery man.
+- Craig Forte vs Craig Proctor: Ones sales message I’m still doing it whilst the others was I’ve never done it and you don’t want someone who has.
+- When interviewing people, you must think about what they will do to your list in terms of your reputation. What happens to your client when they become their client. Have front end restrictions. For example if they do coaching then have it so they can’t say the word book on the call but can promote books and website.
+- Have criteria they have to meet.
+- When interviewing people who are comparable to what you do, there must be benefit to you too in terms of reciprocity. Have an equal trade off. Joint venture.
+- Once you have created a category of interest for clients you can’t fence them in just with you. You open the market to them. It doesn’t matter how much they spend with you, they will spend money with someone else anyway. As long as the person meets your criteria, you might as well profit from it too.
+- Be Someone Advanced Strategies
+  - The Industry Survey Strategy
+    - Everyone will want to know the results of the survey they participated in.
+    - Good to get to people
+  - The Interview Strategy
+    - Legitimate book deal on publishing companies letter head sent to top 100
+- Ceo’s asking for an interview based on the first 25 people to reply. He got 77.
+  - Could be a Trade Journal or magazine
+    - Joe Polish interviewed the editors of the Cleaning Trade Journals. They can handle a short interview about industry trends. Now you have a
+- relationship with them. You can do the same with CEO’s and business
+- owners because you have the media.
+  - The Place Yourself In The Center – Spider Web Strategy
+  - The Rent A Person Of Influence Strategy
+    - You are who you are with
+    - Rent someone who deeply resonates with your herd/prospects
+- -
+- Good if you want to leapfrog in a constituency.
+- Don’t disclose any details of the relationship. Be deceptive by omission.
+- Getting Clients Cold If You Must
+- It is infinitely easier to get clients if you are tightly niched but still very expensive. The cost per sale is around $9k.
+- 1) Create a hit list & farm them
+  - Write out your list and pursue them until you get them.
+    - This list needs to be very specific. Narrow the field so a reasonable pot of resources can be used.
+    - Mail them, advertise, at all the events, speak at local chapters
+- 2) Be relentless until you get in
+  - Face to face with a short list
+- 3) Be diagnostic
+  - It is important not to sell and do takeaway too early.
+    - Be really diagnostic by asking a lot of questions and get people to tell you their story & problems. The higher up the ladder the more they want to tell it because the more likely they have no one to tell it to.
+    - Example: How did you get in the business anyway??
+    - How do you feel about your advertising & marketing??
+    - What drives you nuts??
+- 4) Wow them
+  - You can’t send them a brochure, send them a lot of stuff and wow them.
+## DVD 9
+- Instead of brochures DK sends:
+  - His books (with pages post-it referenced if relevant to the prospect)
+  - Cd’s
+  - Testimonial letters all in a big box.
+  - He has previously sent wall clocks & bottle heads to cold prospects.
+- Everyone else sends press kits or brochures. It doesn’t all need to be pretty. The best thing to send is a book. It just screams expert status.
+- John Francis Taigh – Making Money with Mail
+- Bill Brooks & DK – Time Managements
+- Wow them - Send a big box of stuff.
+- When going for clients cold you can’t do any takeaway selling. There is great resistance in being presented to. Example is 2 guys talking at a conference and one guy is talking about how his store is being robbed blind by his staff. Next to him hearing this is a third guy who prevents store theft and he taps the guy on the shoulder and says ‘I couldn’t help over hear you and I can solve your problem’. Straight away the store owner starts to get defensive about being sold to. Compare the same 2 guys talking and one tells the store owner that he knows a guy that solves store theft and he is at the conference. The store owner then seeks him out and the dynamic is very different. The third guy can now do takeaway selling ‘Oh I can occasionally take on new clients’.
+- You need to get as far from cold approaching as quickly as possible.
+- How DK gets Testimonials
+  - Show them samples of good testimonials
+  - Show them a checklist of things you want sent.
+  - Interview them and get it transcribed and get them to approve it
+  - Testimonial should highlight the emotional aspects of the transaction and BEFORE/AFTER stories
+  - Don’t write them yourself if possible because they will sound canned and you do want their voice in them. Writing in other peoples voices is difficult. Having the audio of them is helpful. If you don’t them write one testimonial at a time.
+  - Endorsed mailings are similar to testimonials. There has to be some entry and exit in the endorsed mailing.
+- Associations
+  - Most important component is the people believe it is real.
+  - It’s a long road that requires patience
+  - Levels with prerequisites
+  - There are legal issues
+  - Creating the position of ‘this is what you do’- Example: if you are a small business owner then you need to join the Small Business Association
+  - It needs to deliver something useful to them in the market place so you can create credibility device for them
+- DK’s No. 1 Strategy:
+  - The number one tool is a newsletter
+  - Busy people subscribe to a lot of them and don’t remember what they have subscribed to, so you can send them a newsletter and say here is a copy of your paid subscription newsletter, they will assume they have signed up for it.
+  - You can create a subscriber base who never subscribed in the first place but pay as much attention to the newsletter as if they did. Good teaser copy as well as having Do Not Bend on the envelope.
+  - Rent the list
+  - DK had used both paid and non-paid newsletters
+  - Before the No BS letters were the Business Secrets Letters. They are the foundation for everything he has done.
+- Lead Generation Ad page 90 strategy out as overt but will later revert back to takeaway.
+- Typical Info Business Pipeline:
+  - Level 1
+    - Product with forced continuity
+    - Higher level continuity
+    - Coaching
+    - Higher level coaching
+  - Level 2
+    - One on One coaching
+    - Do it for them
+  - Level 3
+    - $100k for fixing someone’s business or setting them up from scratch
+- Level 1 is where all the work is. Ads in 20 different magazines & 6 step sequences.
+- Giant bribe offer – subscribe for the newsletter and get 20 free reports and 15 cd’s. 1, 2 or 3 years subscription and get bigger piles of stuff or here’s 50 reports pick your favorite 8.
+- DK Marketing Tools
+  - 
+- The Big Box / Shock-Awe Strategy
+  - A box with 2 cd’s, a dvd and a sales letter for a seminar, coaching or business opportunities
+    - Make it look fancy as nobody else does it but this depends on the target market
+  - 
+  - 
+  - 
+  - 
+- Brochures
+  - Annual Report look
+    - Menu Of Services
+    - Robert Ringer's Brochure (Nido Qubein)
+- Publish!! - "Be Somewhere All the time!"
+  - Books
+    - Co-Authored Books
+    - Articles
+    - Newsletters
+    - Placement in others peoples books, Products & Newsletters (very
+- important because these clients are already trained to buy and are
+- excellent clients). If someone wants a blurb for their book, offer to do the foreword & a chapter too.
+  - White Papers
+    - Special Reports
+- Testimonials
+- Speeches & Seminars
+- You are unlikely to find a load of clients from one place with the exception of speaking.
+- It is all in the power of small numbers. You want to be everywhere!!
+- Example of testimonial sheets page 94 & 95. The book testimonials are requested. Try and get pictures of the testimonial people with celebrities.
+- Integrity
+  - Don't accept a client you shouldn't
+    - Lack the expertise or know-how to help
+    - Could refer to a true specialist who could be of much greater help
+    - Will be unable to satisfy (Examples: Ken Roberts, Bill Phillips)
+    - Is in a business you object to or are uncomfortable with
+    - Represents too great a risk
+    - Will clash with others in your group (if coaching)
+    - Is in direct competitive conflict with another client
+  - Don't over-promise and under-deliver
+    - Dollars made through desperate or dishonest selling disappear ....the
+- reputation damage caused by a legitimately disappointed client last
+- forever
+  - Don’t tell them what they want to hear
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Don't prescribe based on ability to pay
+  - You will get caught eventually
+    - You should actually have a pricing formula(s) that is "standard"
+    - It is OK and smart to add "Degree Of Difficult/Pain In Ass" surcharges which is disclosed and paid back if not transpired
+    - It is dangerous to charge wildly different fees to different clients for no reason other than the thickness of their wallets
+- Conversely, don't "cut deals"
+  - Nobody ever keeps a secret
+    - Anyone requiring "a deal" to be your client will ultimately prove to be a client you'll wish you didn't have
+    - You don't just lose money, you lose power
+- Guard your reputation / be wary of recommending others
+  - If you refer your neighbor to a breeder who sells him a supposedly gentle and trustworthy dog but the dog eats his children during the night, your relationship with your neighbor will be as irretrievably broken as if you barbequed and ate the kids yourself.
+- Don't steal from your clients
+  - If you are going to use 'work product', be clear in advance
+    - Never sign a non-disclosure agreement
+    - Play fair about legitimately proprietary information
+    - In group settings, have clear rules regarding appropriate SWD (copying each others material)
+- Strive to avoid misunderstandings
+  - Disclose other work, relationships, etc. that may be of concern
+    - NEVER work without detailed written agreements. There will be
+- details forgotten and stories between 2 parties will differ.
+  - "Paper trail" phone and in-person conversations. There is no casual
+- conversation. Always memo.
+- Don't steal clients from others
+  - Never accept someone else’s clients until you confirm it first with the person. Paper trail it too.
+- The big ethical issue in coaching is how they feel about the people who they take money from who get no results. You have to get that it is not your responsibility to make them successful in any shape or form. The majority won’t. Think of the 5, 15 & 80% rule.
+## DVD 10
+- Kit into Coaching
+- Paid tele-seminars and switching to coaching is not the best strategy.
+- The kit is sold over 3 monthly instalments with 3 months free tele-coaching thrown in and after the kit is paid off, the tele-coaching continues and is then delivered at the same price as the instalments until the person cancels it.
+- You can also just sell them into coaching from the start.
+- Controversy
+- When crossing the line and attacking the status quo to get attention you should not do it on people or an association that has a lot of media because they have more ink than you do.
+- The Commonalities Of Winners:
+  - They invest in their education – poor people have big TV’s, successful people have big libraries
+  - Successful people don’t need to be constantly checking their emails
+  - The desire to have their compensation not based on someone else’s
+- performance
+- What do you do if clients steal some of your copy??
+  - For the most part all it takes is a quiet word to end it
+  - No single answer to it
+  - DK ignores it for the most part except when it gets to the point of copying book titles, etc
+  - The more successful you are the more this will happen
+- How To Get Paid For Coaching
+  - Per Hour
+    - Never do this
+  - Per Term Program / To An Outcome
+    - Perry Marshall does this until the first PPC campaign
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Per Project
+  - You have to control the access, don’t do unrestricted access
+    - Be careful of including email me for answers/help
+- Per Month / Year (Retainer)
+- Automatically Renewing Terms
+- In Perpetuity / Til Forbid I Continuity
+- From Individuals for One on One Delivery
+  - The right to talk/email/fax personally
+    - DK has always had some of this
+    - BIG value builder for the program
+    - You can really help people
+    - Individual variance (no preparation and just casual talk) really shows its head here. Get them to send in the list of what they talk about ahead of time. Some also just want therapy on the phone. Some want recognition
+- or accountability.
+  - Have the client call the coach not the other way around. If they don’t ring then tough
+    - Be entertained when you are doing it and choose the order carefully
+- From Multiple Individuals for Group Delivery
+  - Most time efficient
+- For Delivery by You
+- For Delivery by Others
+- How To Get Paid MORE For Coaching
+  - Charge More
+  - Selection Of Clientele who will give you more
+  - Pent-Up or Continually "Pipelined" Demand
+    - Shrink groups
+    - Always have more trying to move up than is places. Have open enrolment days or a waiting list
+  - Supply v. Demand
+    - Having fewer chairs than people who want it pushes up price
+    - Visibly or through copy manipulate the numbers to do this
+  - Bundled Goods and Services
+  - Levels
+    - 20% of the herd will buy a premium version just because it is the premium
+    - Have Platinum Plus which includes an extra phone call
+  - Ascension Ladder
+    - Always show them a ladder as they will always climb it
+  - 
+  - 
+  - 
+- Easy Payment Arrangements
+  - The real thing to be careful about is making the payments so easy that you have clients you shouldn’t have in there in the first place. Don’t be a savior. They will drag you into the mire with them. $25K paid over 24
+- months is too much.
+- Exclusivity / Area Exclusivity / Industry Exclusivity
+  - The fewest number of chairs you can put in front of people is one.
+    - 1 per business
+    - 1 for a given geographic area
+    - 1 for industry
+    - 1 for size of business
+    - This has enormous leverage
+    - The Larry King story with the Mafia
+    - Give the prospects the list of who is on it
+    - You can also divide it into sub groups
+    - Craig Proctor does area exclusive Platinum groups that includes a project developed for them, tested and then given to them to use only in their
+- area. Includes a look over your shoulder experience. The shock in awe
+- box.
+- Coaching to Consulting/Other Services
+- How To Get Paid MORE As A Consultant
+  - Never accept pre-determined assignments
+    - Never get hired to do X, you want to diagnose and tell them what to do
+  - EXPAND assignments
+    - Clients vision of what they need or want is small so just keep adding to it
+  - Provide strategy
+    - Be in the strategy business.
+  - Deliver work product
+    - Don’t just deliver advice, give them stuff
+  - Bundle services, deliverables (so evaluation by item or hour impossible)
+  - Find a way(s) for your services to be "free"
+    - Sell them the money
+    - You need to know their average transaction size, average gross margin
+- (preferably gross transaction size), 1 year, 3 year, 5 year & lifetime value of client (lifetime is best because it is the biggest)
+  - You only need 1 client to pay for this!!
+  - Create a series of "what's next"
+- How To Escape 'Billable Hours'
+  - Sell Projects, not time
+  - Fees + other compensation
+  - Work Product dollars
+    - Give them stuff
+  - Materials In Quantity dollars
+  - Mark Twain/Huck Finn Money
+  - Sub-Contracting / Outsourcing
+  - Staff
+  - Re-Cycling
+    - Useful for same type of clients
+    - Good for niches
+  - Retained Ownership, Multiple Use
+    - Very important for someone creating work product such as hiring better people products
+  - Money From Referred Vendors
+    - You will need to connect clients to services you don’t provide and you should get paid.
+  - Re-sale of goods/services
+- Other Forms Of Compensation
+  - Performance dollars
+    - % above base – easy to sell but very difficult to retain long term clients
+    - Can also be used to reduce costs such as reduced theft rate
+    - Usually creates an adversarial relationship because they are paying you more and more for less and less because it is so front end loaded. Have a buy out at a certain trigger point.
+    - Get them to prepay by leveraging the percentage above base figure
+    - Royalties – top copywriters get this
+    - Should be used in conjunction with fee, not without. Cover yourself with the fees.
+  - Use Fees
+    - Licensing fees
+    - Renewables
+    - Per something that can be measured by use. Always have a way to count
+- the cookies
+  - Equity
+    - Don’t accept it unless they have a proven business.
+    - Owning equity is useless until the business is sold. There must be a
+- trigger point of when someone offers X amount of dollars then the
+- business must be sold or if they don’t they must give you your share.
+- There must be controls of they can’t get money out unless you get money
+- out.
+  - 
+- Perks
+  - You ought to look for these
+## DVD 11
+- Fee Presentation Mistakes
+  - 
+  - 
+  - 
+- Talking About It Too Soon
+  - Be asked 3 times before you answer
+    - They need to have a deep emotional impact to buying before you bring up price
+- Switching To Selling Mode
+  - Don’t justify fee and resist down-selling (we can take out this) – quote the fee and SHUT UP!!
+- Fear
+  - Don’t be afraid to tell them but the steps up to this point should have prepared them for it
+    - Your office/surroundings need to be congruent with the high fee
+- When You Can, Deal With Smart And Successful People -And Be Careful Not To Under-Price
+- “If you are a true gem, do not waste your energy trying to undersell yourself to the common village peddlers. You will only annoy them and waste your time. It is much easier to sell valuable things to people who recognize the value than those who do not." (Thick Face, Black Heart)
+  - 
+  - 
+  - 
+  - 
+- NEVER deal with underlings
+  - Don’t get downgraded to this either during a consulting job
+    - Deal ONLY with check-writers and decision-makers.
+- Sell TOP DOWN, not bottom or middle up.
+- If a committee is involved, refuse to participate. Move on.
+- As soon as you detect the decision-maker is unreasonably cheap, move on.
+  - Call them out on it
+- Takeaway Selling
+- Power Phrases
+  - I do not ordinary accept...
+  - It will be very difficult to...
+  - I’m frankly not eager to...
+  - My partner, spouse will kill me, but...
+  - If it weren’t for...
+  - I am willing to make an exception for you because...
+  - I will need to delay another clients work, so this will have to be tentative, until I contact him
+  - And that’s why I get the big bucks
+- Page 115 is a Lift Letter for main sales letter on page 116.
+- 2 choices of commanding people attention who you sell to regularly:
+- Every offer should be a history making event i.e. first time ever or last time ever.
+- Anything less is not exciting. It should be:
+  - New
+  - Improved
+  - never available before/last time available
+  - Never done it this way before/never will be done this way again
+  - First time we have had this addition/last addition
+  - first time offered/last time offered
+  - first time at this pricing/last time at this pricing
+  - Never to this number before/last time
+- Page 143 last paragraph is about obligation (survey) – we built it for you so now buy it.
+- Page 159 is an order form which makes them aware of how inadequate they are.
+- The 2 marketing questions on page is 160 are gold because most peoples
+- answers is zero. Question makes them unhappy on page 161. Page 162 is
+- inadequacy copy.
+- Last paragraph on page 163 reinforces the limited seats.
+- Missing page 146:
+- Question: If an outside expert was thoroughly evaluating your business in the following areas what grade would he give you A,B,C,D,E, or F. No fudging with + or –.
+  - Managing Finances within your business
+  - Managing personal & family finances
+  - Asset protection
+  - Wealth Accumulation
+  - Intelligent use of your time
+  - Personal productivity
+  - Developing value within your business
+  - Creating co-operation & support from those around you
+  - Clarity of goals & objectives
+  - Measurement of progress towards goals & objectives
+  - Strength of self image, self worth & self esteem
+  - Focus
+  - Procrastination vs completion
+  - Stature, positioning, personal branding, using yourself as a wealth
+- attracting tool
+  - Decisiveness
+  - Decisions made from confidence and abundance thinking vs made from
+- worry & fear
+  - Managing your health & well being
+- If a hard-nosed banker was thoroughly investigating and analyzing your business and you personally, in deciding whether or not to loan you $1,000,000 into your business unsecured, what 3 facts would he find most encouraging and what 3 facts would he find most discouraging?
+- Page 172 copy is scarcity.
+- Page 174 has a legal disclaimer on the bottom.
+- Page 187 is a renewal letter sent 6 months before the next term of coaching.
+- Page 221 is the BGS coaching sales letter. The letter acknowledges that a lot of people have bought the kit and are doing nothing with it. A lot of people hide for this fact and the letter makes it ok for them to buy.
+- Craig Proctor sales letter page 200, items 1,2 & 5 are the same thing!! Streches the same thing for more value.
+- Page 232 uses diagrammatic form to explain to prospects.
+- Use the questionnaire to tell them what the program will do for them, i.e. help & cure the deficiencies they have put on the form. There is great emotional commitment to filling out these forms.
+- DK components of weekly faxes:
+  - Continuingly challenging them on have they used the stuff they gave them
+  - Calling them to task
+  - Pep talks
+  - Recognition of members
+  - Plugs
+  - Some humor
+  - Topical material
+- Page 400 is complaining about accommodating someone for a consulting day.
+- Page 402 first is qualifying, second paragraph is takeaway selling and third is straight to the money.
+- Page 413 is a DK confirmation letter for a days consultation.
+- Pages 417 to 419 are contracts.
+- Never be visible undermining your own message.
+- Forced compliance is the quickest way to drive people off. Giving assignments that most likely will not be done. Just keep delivering stuff.
+- Another way of doing it is if they pay X and they meet certain benchmarks they get some of X back. Incentivized rebates.
