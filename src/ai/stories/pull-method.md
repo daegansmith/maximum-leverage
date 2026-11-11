@@ -1,91 +1,75 @@
-# I Loaded My AI With My Own Sales Letters. It Still Wrote Like Everybody Else.
+# I Gave My AI My Own Sales Letters. It Still Wrote Like Everybody Else.
 
-"Put that together with the headline and tell me if you think that's not too wordy and too dumb."
+August 1. I'm on a landing page with Claude.
+
+[[1]]
+
+Five days earlier I'd set the whole thing up. A project just for my marketing. Then I loaded it.
+
+My own sales letters. The notes from my own masterclass. Research on 16 copywriters.
+
+If you've done this, you know the feeling. You hand it everything, and you figure now it knows you.
+
+[[2]]
+
+So I asked for a page to sell the Invisible Funnel. That one is mine. I built it.
+
+We got a headline. Right sentiment. Moving in the right direction.
+
+Then came the line under it.
+
+[[3]]
+
+Claude's:
+
+"I made more money by refusing to sell than I did in twelve years of trying to."
+
+Try after try like that.
+
+[[4]]
+
+So I asked the question I'd ask about anybody's copy.
 
 "Would you opt in? Would you wanna read more? I wouldn't."
-
-"So it's it's not it's not it's not it, man."
-
-All three of those are me, talking to Claude about a landing page. August 1.
 
 Claude's answer:
 
 "Honest answer: no, I wouldn't either."
 
-Five days earlier I had started a project in Claude just for my marketing.
-
-I built its instructions with a method I call the Pull Method.
-
-The short version: the AI pulls the context out of me a couple of questions at a time. We test what it writes on a real piece. What survives becomes the standing instructions.
-
-Then I filled it.
-
-My own sales letters. The notes from my own masterclass. Research reports on 16 copywriters.
-
-So I asked for a page to sell the Invisible Funnel.
-
-That one is mine. My own framework for selling by explicitly not selling.
-
-First surprise. Claude searched the folders and told me:
-
-"I still don't have a passage anywhere that's you defining The Invisible Funnel in your own words as its own concept."
-
-Five files of my notes in there, and no definition it could find.
-
-So I said the definition right then, and it went into its own document.
-
-Then the copy.
-
-We got a headline. Claude put up five and I took the fourth.
-
-"I'm Not Good At Sales. That's Exactly Why This Works."
-
-Right sentiment. Moving in the right direction.
-
-Then the line under it. Claude's:
-
-"I made more money by refusing to sell than I did in twelve years of trying to."
-
-Try after try.
+Later I said it flat.
 
 "What you have is nonsense. We are... really got a lot a lot to learn."
 
-I ended up writing it myself.
+I ended up writing the line myself.
 
 "How I made more in one weekend than I ever have in any given year of owning my business..."
 
-One weekend. A person can picture one weekend.
-
-Nobody can picture twelve years.
-
 Then we went looking for why.
 
-First cause on the list: my instructions said protect the voice. Claude was satisfying that once per session. Not before every draft.
+[[5]]
 
-So it had my letters. It wasn't reading them when it wrote.
+My instructions said protect the voice. Claude was checking that box once a session. Not before every draft.
 
-I told it:
+It HAD my letters. It wasn't reading them when it wrote.
 
-"The only reason that all of our knowledge base exists is because I want you to use it every time. Man, I don't know if I should say every time. I want you to use it. I don't want you to ever go to default mode and just create some generic boring nonsense."
+Here's what I took from it.
 
-That night the instructions changed.
+Loading your AI with your work is NOT the same as your AI using it.
 
-Check the knowledge base before every draft. No "I already read it earlier this session."
+[[6]]
 
-No agreement theater. I'd corrected that twice in one night. State the mechanical gap and move.
+That night a rule went in. Check the knowledge base before every draft. No "I already read it earlier this session."
 
-Every set of options includes one that pushes past what I asked for.
+I told it why.
 
-And every pick I make between options gets a score. Hit, Partial or Off.
+"I don't want you to ever go to default mode and just create some generic boring nonsense."
 
-Did it hold?
+Now, did it hold?
 
-The read-before-every-draft rule did not. Same wall, October 15. That's Stage 4.
+No. Same wall, October 15. That one is Stage 4 of this log.
 
-So no. The first fix wasn't the fix.
+So don't take my fix. Take the lesson.
 
-If you've loaded your AI with your own work and what comes back still isn't you...
+Loading your AI with your work is NOT the same as your AI using it.
 
-It may have your work and not be reading it.
-
-Ask what it read right before it wrote.
+Make it go back to your work before every draft. Then ask it what it read.

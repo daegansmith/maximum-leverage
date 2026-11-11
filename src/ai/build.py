@@ -8,6 +8,7 @@ Writes: ai/index.html (the hub), ai/glossary/index.html, and one page per stage.
 The page head (styles and tracking tags) is copied from an existing notes page, never retyped.
 """
 import html
+import json
 import re
 from pathlib import Path
 
@@ -18,6 +19,7 @@ SRC = ROOT / "src/ai/log.md"
 HEAD_FROM = ROOT / "notes/forbidden-keys/index.html"
 UPDATED = "November 11, 2026"
 
+STRIPS = json.loads((Path(__file__).parent / "strips" / "specs.json").read_text())
 SLUGS = {1: "pull-method", 2: "one-long-prompt", 3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram",
          7: "first-rule", 8: "purpose-over-process", 9: "repo"}
 
@@ -25,6 +27,8 @@ EXTRA_CSS = """
 .lead{font-size:21px;line-height:1.5}
 .shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
 .story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
 .rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
 .soft{color:var(--soft)}
 .small{font-size:15px;line-height:1.5;color:var(--soft)}
@@ -176,8 +180,18 @@ def main():
             # The story sits open at the top; the whole record, the wall included, goes in the drop-downs.
             sl = [x.strip() for x in story_f.read_text().split("\n\n") if x.strip()]
             assert sl[0].startswith("# ") and "\u2014" not in "".join(sl)
-            top = (f'<h2 class="shead">{html.escape(sl[0][2:])}</h2>\n<div class="story">'
-                   + "".join(f"<p>{inline(x)}</p>" for x in sl[1:]) + '</div>\n<p class="kicker rec">The Record</p>\n')
+            strip = STRIPS.get(SLUGS[n])
+            def para(x):
+                m = re.fullmatch(r"\[\[(\d)\]\]", x)
+                if m and strip:
+                    f = strip["frames"][int(m.group(1)) - 1]
+                    alt = html.escape(" ".join(f["cap"]), quote=True)
+                    return f'<img class="frame" src="f{m.group(1)}.png" alt="{alt}" loading="lazy">'
+                return "" if m else f"<p>{inline(x)}</p>"
+            arc = (f'<img class="arcimg" src="arc.png" alt="{html.escape(strip["title"], quote=True)}: how it went, in six points">\n' if strip else "")
+            foot = (f'<p class="small arcfoot">{html.escape(strip["foot"])}</p>\n' if strip else "")
+            top = (f'<h2 class="shead">{html.escape(sl[0][2:])}</h2>\n' + arc + '<div class="story">'
+                   + "".join(para(x) for x in sl[1:]) + '</div>\n<p class="kicker rec">The Record</p>\n')
             items = (f'<li><details><summary class="row">The Wall</summary><div class="sec">{md(wall)}</div></details></li>\n' + items)
         else:
             top = f'<p class="kicker">The Wall</p>\n<div class="lead prose">{md(wall)}</div>\n'

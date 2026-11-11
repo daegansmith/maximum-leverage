@@ -1,0 +1,1 @@
+{ "name": "ai-strips", "private": true, "description": "Draws the arc strips for the AI Evolution pages. Run: npm i && node draw.js", "dependencies": { "roughjs": "^4.6.6", "@fontsource/patrick-hand": "^5.0.0" } }

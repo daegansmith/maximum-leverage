@@ -1,69 +1,69 @@
-# For Seven Weeks My AI Was Working From An Old Version Of Me. And Nothing Told Me.
+# For Seven Weeks One Of My AI Projects Was Pointed At An Old Version Of Me. Nothing Told Me.
 
-On September 15 I found out one of my projects had been working off the July version of me.
+If your AI reads a file of yours, here's a question. Do you know which copy it's reading?
 
-I keep a document called the Voice Reference.
+I didn't.
 
-It's how I write. Claude reads it so the copy sounds like me.
+[[1]]
 
-By September it was on version 6.
+I keep a document called the Voice Reference. It's how I write. Claude reads it so the copy sounds like me.
 
-That project was still pointed at version 2.
+Back then every change to a document like that made a new file with a new number.
 
-Four versions behind.
+Version 2. Version 3. By September, version 6.
 
-Version 2 was from July.
+[[2]]
 
-Every correction I'd made since then to how Claude writes me was in the later ones.
+And one of my projects had the number typed right into its instructions.
 
-None of it was in version 2.
+Version 2.
 
-Same thing with my marketing instructions. That project had them at version 1.2. The real one was eleven versions past that.
+It had my marketing instructions typed in the same way. Version 1.2.
 
-Seven weeks of drift.
+[[3]]
 
-No error. Nobody noticed. Me included.
+And it sat like that. For seven weeks, it turned out.
 
-So how does that happen?
+No error. Nothing looked broken. I kept working.
 
-Back then every change to my instructions meant a new file with a new number.
+What did it cost me? I can't point to a line. That's the problem with it.
 
-Nine new versions in one week in September.
+[[4]]
 
-And the old numbers were typed right into that project's instructions.
+On September 15 we found it.
 
-So the old ones are what it was pointed at.
+Four versions behind on my voice. Eleven versions behind on my marketing instructions.
 
-The fix is dumb simple.
+Version 5 alone added a whole section on how my copy is built.
 
-Stop telling it the number.
+Version 2 had none of it.
 
-Tell it where the folder is, and to open the newest one.
+And nothing had told me.
 
-Two days later the new rule caught one.
+That's the lesson.
 
-A prompt asked for version 3 of a document. The newest was version 6. Claude went and got 6.
+No error does NOT mean your AI is reading the right thing.
+
+That left me two options.
+
+1. Remember to update every number, in every project, every time. Forever.
+
+2. Stop giving it the number at all.
+
+[[5]]
+
+So now it gets the folder, and one instruction. Open the newest one.
+
+[[6]]
+
+Two days later it caught one. A prompt asked for version 3 of a document. The newest was version 6. Claude went and got 6.
 
 No correction needed.
 
-After that we quit making a new numbered file for every change.
+Now, it didn't fix everything.
 
-One document. We edit it where it sits.
+Anything pasted by hand still goes stale. On November 10 I had two copies of my instructions, and they didn't match. That one is Stage 9 of this log.
 
-Did it hold?
+So check yours. A file name. A link. A price list from last year.
 
-That one, yes.
-
-But two new problems showed up.
-
-The one document kept getting longer. About 14,400 words by late October. Long enough that Claude would follow a rule at the start of a session and lose it by the end. That's Stage 6.
-
-And anything pasted by hand goes stale. On November 10 I had two copies of my instructions, and they didn't match. That's Stage 9.
-
-So here's what I'd check if I were you.
-
-If you told your AI to read a file, ask it which one it's reading.
-
-It won't tell you on its own.
-
-And don't tell it which version to read. Tell it how to find the newest.
+It won't tell you on its own. Ask your AI which one it's reading.

@@ -1,0 +1,753 @@
+{
+ "pull-method": {
+  "title": "the arc of august 1",
+  "arc": [
+   0.9,
+   0.8,
+   0.3,
+   0.1,
+   0.4,
+   0.7
+  ],
+  "foot": "it didn't hold. same wall, october 15.",
+  "frames": [
+   {
+    "cap": [
+     "i load it with my own work"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "docs:my work",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "i ask for a page"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "box:claude",
+     "->",
+     "doc:page"
+    ]
+   },
+   {
+    "cap": [
+     "it reads like",
+     "everybody else"
+    ],
+    "t": [
+     "me:(",
+     "doc:page",
+     "txt:generic"
+    ]
+   },
+   {
+    "cap": [
+     "\"would you opt in?\"",
+     "\"no.\""
+    ],
+    "t": [
+     "me:(",
+     "->",
+     "box:claude",
+     "txt:no"
+    ]
+   },
+   {
+    "cap": [
+     "why: it read my work once.",
+     "then stopped."
+    ],
+    "t": [
+     "docs:my work",
+     "-x-",
+     "box:claude",
+     "->",
+     "doc:draft"
+    ]
+   },
+   {
+    "cap": [
+     "now: read it before",
+     "every draft"
+    ],
+    "red": true,
+    "t": [
+     "docs:my work",
+     "eye->",
+     "box:claude",
+     "->",
+     "doc:draft"
+    ]
+   }
+  ]
+ },
+ "one-long-prompt": {
+  "title": "the arc of seven weeks",
+  "arc": [
+   0.7,
+   0.55,
+   0.55,
+   0.1,
+   0.5,
+   0.85
+  ],
+  "foot": "anything pasted by hand still goes stale. november 10.",
+  "frames": [
+   {
+    "cap": [
+     "every change is a new",
+     "numbered file"
+    ],
+    "t": [
+     "doc:v2",
+     "doc:v3",
+     "txt:...",
+     "doc:v6"
+    ]
+   },
+   {
+    "cap": [
+     "one project still points",
+     "at version 2"
+    ],
+    "t": [
+     "box:project",
+     "->",
+     "doc:v2",
+     "doc?:v6"
+    ]
+   },
+   {
+    "cap": [
+     "seven weeks.",
+     "no error."
+    ],
+    "t": [
+     "me:)",
+     "txt:7 weeks"
+    ]
+   },
+   {
+    "cap": [
+     "september 15:",
+     "we find it"
+    ],
+    "t": [
+     "me:(",
+     "doc:v2",
+     "neq",
+     "doc:v6"
+    ]
+   },
+   {
+    "cap": [
+     "stop telling it",
+     "the number"
+    ],
+    "t": [
+     "txt:\"read v2\"",
+     "x"
+    ]
+   },
+   {
+    "cap": [
+     "tell it: open",
+     "the newest"
+    ],
+    "red": true,
+    "t": [
+     "box:project",
+     "->",
+     "docs:folder",
+     "->",
+     "doc:v6",
+     "check"
+    ]
+   }
+  ]
+ },
+ "assumptions-gate": {
+  "title": "the arc of october 10",
+  "arc": [
+   0.8,
+   0.7,
+   0.3,
+   0.1,
+   0.3,
+   0.85
+  ],
+  "foot": "one limit: the gate is for the shape of a job, never the creative details.",
+  "frames": [
+   {
+    "cap": [
+     "i ask for an",
+     "intake process"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "box:the room"
+    ]
+   },
+   {
+    "cap": [
+     "i said walk-in.",
+     "the room plans walking."
+    ],
+    "t": [
+     "box:the room",
+     "->",
+     "doc:plan"
+    ]
+   },
+   {
+    "cap": [
+     "they're on two blocks.",
+     "i'm on any city."
+    ],
+    "t": [
+     "txt:2 blocks",
+     "neq",
+     "txt:any city"
+    ]
+   },
+   {
+    "cap": [
+     "sixteen assumptions.",
+     "several wrong."
+    ],
+    "t": [
+     "txt:16 assumed",
+     "->",
+     "txt:several wrong"
+    ]
+   },
+   {
+    "cap": [
+     "nobody had asked",
+     "what the job was"
+    ],
+    "t": [
+     "me:(",
+     "box:the room"
+    ]
+   },
+   {
+    "cap": [
+     "now: assumptions first.",
+     "then the work."
+    ],
+    "red": true,
+    "t": [
+     "box:the room",
+     "->",
+     "doc:assumed",
+     "eye->",
+     "me:)",
+     "check"
+    ]
+   }
+  ]
+ },
+ "all-out-pass": {
+  "title": "the arc of october 15",
+  "arc": [
+   0.8,
+   0.25,
+   0.1,
+   0.3,
+   0.7,
+   0.9
+  ],
+  "foot": "flat copy came back october 25 and november 7 and 8. telling it to read wasn't enough.",
+  "frames": [
+   {
+    "cap": [
+     "new rules:",
+     "read my work first"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "doc:rules"
+    ]
+   },
+   {
+    "cap": [
+     "the next page",
+     "comes back thin"
+    ],
+    "t": [
+     "box:claude",
+     "->",
+     "doc:page",
+     "me:("
+    ]
+   },
+   {
+    "cap": [
+     "my emails and letters:",
+     "unread"
+    ],
+    "t": [
+     "docs:my work",
+     "-x-",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "\"go all out.",
+     "do it as i would.\""
+    ],
+    "t": [
+     "me:(",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "it reads first.",
+     "\"like a real copywriter\""
+    ],
+    "t": [
+     "docs:my work",
+     "->",
+     "box:claude",
+     "->",
+     "doc:page",
+     "check"
+    ]
+   },
+   {
+    "cap": [
+     "now, every first draft:",
+     "read my work first"
+    ],
+    "red": true,
+    "t": [
+     "docs:my work",
+     "eye->",
+     "box:claude",
+     "->",
+     "doc:draft"
+    ]
+   }
+  ]
+ },
+ "silent-rewrite": {
+  "title": "the arc of october 22 to 25",
+  "arc": [
+   0.7,
+   0.65,
+   0.55,
+   0.1,
+   0.2,
+   0.8
+  ],
+  "foot": "three rules i approved to stop this got lost for four days.",
+  "frames": [
+   {
+    "cap": [
+     "my offer. revised",
+     "about fifteen times."
+    ],
+    "t": [
+     "me:)",
+     "doc:my offer"
+    ]
+   },
+   {
+    "cap": [
+     "i ask for an overhaul.",
+     "i mean: move things."
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "three days of new",
+     "words on top"
+    ],
+    "t": [
+     "doc:mine",
+     "->",
+     "doc:new",
+     "->",
+     "doc:newer"
+    ]
+   },
+   {
+    "cap": [
+     "we count: how much",
+     "is still mine?"
+    ],
+    "t": [
+     "bar:6:offer: 2 to 9%",
+     "bar:62:slides: 62%"
+    ]
+   },
+   {
+    "cap": [
+     "that is not",
+     "a revision"
+    ],
+    "t": [
+     "me:(",
+     "txt:2 to 9%",
+     "neq",
+     "txt:revised"
+    ]
+   },
+   {
+    "cap": [
+     "now it says so first.",
+     "and waits."
+    ],
+    "red": true,
+    "t": [
+     "box:claude",
+     "txt:\"new copy\"",
+     "->",
+     "me:)",
+     "check"
+    ]
+   }
+  ]
+ },
+ "ram": {
+  "title": "the arc of october 26",
+  "arc": [
+   0.85,
+   0.3,
+   0.75,
+   0.1,
+   0.45,
+   0.9
+  ],
+  "foot": "still slips when the work gets called a \"test.\" that became its own rule on november 8.",
+  "frames": [
+   {
+    "cap": [
+     "we agree on a rule"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "doc:rule",
+     "->",
+     "box:claude",
+     "check"
+    ]
+   },
+   {
+    "cap": [
+     "a few sections later",
+     "it's gone"
+    ],
+    "t": [
+     "me:(",
+     "doc?:rule",
+     "txt:?",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "the idea: a short list,",
+     "read every time"
+    ],
+    "t": [
+     "me:)",
+     "bulb",
+     "doc:ram",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "first use.",
+     "not read."
+    ],
+    "t": [
+     "me:(",
+     "doc:ram",
+     "-x-",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "why: writing it down",
+     "felt like doing it"
+    ],
+    "t": [
+     "pencil",
+     "neq",
+     "eyeb"
+    ]
+   },
+   {
+    "cap": [
+     "now i watch it read"
+    ],
+    "red": true,
+    "t": [
+     "me:)",
+     "doc:ram",
+     "eye->",
+     "box:claude",
+     "check"
+    ]
+   }
+  ]
+ },
+ "first-rule": {
+  "title": "the arc of october 31",
+  "arc": [
+   0.8,
+   0.4,
+   0.15,
+   0.35,
+   0.2,
+   0.85
+  ],
+  "foot": "not all the way. november 8, a line got dropped without a word.",
+  "frames": [
+   {
+    "cap": [
+     "my line"
+    ],
+    "t": [
+     "me:)",
+     "txt:\"punch him in the face\""
+    ]
+   },
+   {
+    "cap": [
+     "what came back"
+    ],
+    "t": [
+     "box:claude",
+     "txt:\"punch him\""
+    ]
+   },
+   {
+    "cap": [
+     "we check the script:",
+     "nine more"
+    ],
+    "t": [
+     "doc:script",
+     "txt:+9"
+    ]
+   },
+   {
+    "cap": [
+     "why: it reacts to",
+     "how words look"
+    ],
+    "t": [
+     "txt:how it looks",
+     "neq",
+     "txt:who gets hurt"
+    ]
+   },
+   {
+    "cap": [
+     "and it never said so"
+    ],
+    "t": [
+     "box:claude",
+     "txt:. . .",
+     "me:("
+    ]
+   },
+   {
+    "cap": [
+     "my words are the floor.",
+     "it asks first."
+    ],
+    "red": true,
+    "t": [
+     "box:claude",
+     "txt:\"softer?\"",
+     "->",
+     "me:)"
+    ]
+   }
+  ]
+ },
+ "purpose-over-process": {
+  "title": "the arc of november 7 to 8",
+  "arc": [
+   0.6,
+   0.75,
+   0.15,
+   0.05,
+   0.4,
+   0.9
+  ],
+  "foot": "three pieces in three days. short record.",
+  "frames": [
+   {
+    "cap": [
+     "overnight: 12 readers,",
+     "39 checks"
+    ],
+    "t": [
+     "box:claude",
+     "->",
+     "doc:page",
+     "txt:39 checks"
+    ]
+   },
+   {
+    "cap": [
+     "the score gets better"
+    ],
+    "t": [
+     "bar:75:15 broken",
+     "bar:25:5 broken"
+    ]
+   },
+   {
+    "cap": [
+     "then i read it myself"
+    ],
+    "t": [
+     "me:(",
+     "doc:page",
+     "txt:what?"
+    ]
+   },
+   {
+    "cap": [
+     "\"why are you playing",
+     "that game with me?\""
+    ],
+    "t": [
+     "me:(",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "\"i treated the process",
+     "as the job\""
+    ],
+    "t": [
+     "txt:checks",
+     "neq",
+     "txt:the job"
+    ]
+   },
+   {
+    "cap": [
+     "now, first line:",
+     "\"would i sign this?\""
+    ],
+    "red": true,
+    "t": [
+     "box:claude",
+     "txt:yes / not yet",
+     "->",
+     "me:)"
+    ]
+   }
+  ]
+ },
+ "repo": {
+  "title": "the arc of november 10 to 11",
+  "arc": [
+   0.5,
+   0.35,
+   0.1,
+   0.3,
+   0.75,
+   0.85
+  ],
+  "foot": "it's a third copy. i still paste by hand.",
+  "frames": [
+   {
+    "cap": [
+     "three copies",
+     "of everything"
+    ],
+    "t": [
+     "doc:live",
+     "doc:paste",
+     "doc:backup"
+    ]
+   },
+   {
+    "cap": [
+     "kept in step by hand"
+    ],
+    "t": [
+     "me:(",
+     "txt:copy. paste. save."
+    ]
+   },
+   {
+    "cap": [
+     "november 10:",
+     "two don't match"
+    ],
+    "t": [
+     "doc:live",
+     "neq",
+     "doc:paste"
+    ]
+   },
+   {
+    "cap": [
+     "i'd had github",
+     "for a month"
+    ],
+    "t": [
+     "box:github",
+     "->",
+     "doc:my site"
+    ]
+   },
+   {
+    "cap": [
+     "that's what",
+     "it's for"
+    ],
+    "t": [
+     "me:)",
+     "bulb",
+     "box:github"
+    ]
+   },
+   {
+    "cap": [
+     "every version,",
+     "in one place"
+    ],
+    "red": true,
+    "t": [
+     "docs:all of it",
+     "->",
+     "box:github",
+     "check"
+    ]
+   }
+  ]
+ }
+}
