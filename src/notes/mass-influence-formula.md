@@ -1,0 +1,193 @@
+# Mass Influence Formula
+@ My notes from David Wood
+## Beliefs About People
+- What's true for the mind is true for the body.
+  - You can see what a person is thinking just by looking at them.
+- What's possible in the world is possible for me or anyone.
+  - Anyone can do or have anything they want.
+- No one is better than me and I'm not better than anyone, so whatever moves me emotionally also moves them emotionally.
+  - What inspires you inspires them.
+  - What hurts you hurts them.
+  - What makes you laugh makes them laugh.
+  - What makes you cry makes them cry.
+- Everyone has everything they need already inside of them.
+  - We can all change at any time.
+  - So, it's just about getting them to tap into that.
+  - They will do the rest from there.
+- Every person is perfect and no one is broken.
+  - If things aren't going right maybe it's just because someone didn't believe (love) them yet.
+- Everyone is doing the best they can with what they have.
+- There is no failure, only practice, feedback, change, and evolution.
+  - It's fun as hell! (read five more times)
+- The map is not the territory.
+  - What we believe is not what is. It's just a representation.
+    - We're all always only responding to our representation.
+  - Since you're never right you can always just change how you respond to how they see the world.
+    - Why even try to be right at all? Why not just believe things that are useful, like people can do anything?
+- The purpose of communication is the response produced, not the words.
+  - To create new neural patterns that open up possibility.
+- Whoever is the most flexible in their communication wins.
+  - If you know you're never right and the purpose of communication is its response, then just try something different.
+    - Speak as they do. Model them.
+- The Real Key Is...
+  - If we're never right because our representation of reality is never accurate, then why even try to be right?
+  - If we all project our beliefs onto others every time we communicate, then why not project what empowers them instead of wasting energy trying to be right?
+  - Why not just believe things that are useful, like people are powerful and they can do anything, and it's true for everyone?
+  - Make it a habit to remind yourself of this constantly.
+  - Anytime you ever speak to a group, connect with and feel the depth of meaning of these beliefs first and truly LOVE them all.
+## Framework Of Language Suggestions
+- How all this stuff fits together. How we frame things is THE most important aspect of all this.
+- Steps To Effectively Utilize
+  - Determine objective. What is the goal? What are you selling?
+  - Decide which unconscious phenomena to use. What works best within context to move the audience towards what they desire and away from what they don't?
+  - Frame and then aim at objective. Choose a frame and get at it.
+- What Our Minds Do With Information
+  - Delete: Whatever we're not focused on, and a lot of other stuff, to us, at any given time simply does not exist.
+  - Distort: What we respond to is the image, the upside down image that our brain flips, including deletions, distortions, etc...
+  - Generalize: Once something is known, small differences are still representatives of the same thing or group of things.
+- Choose Neurological Level To Attack
+  - I am: What we identify ourselves as. "I am rich/poor."
+    - Strategy: Expand what they believe themselves to be. They are more than they know.
+  - Beliefs and Values: What we believe to be true and the value we place upon those beliefs.
+    - Strategy: Change beliefs and or rearrange values.
+  - Capabilities: What we believe we have the ability to do or what we don't believe we can do.
+    - Strategy: Expand their perception of what they are capable of.
+      - IMPORTANT: This is where we are most vulnerable. If we place limits at this level or cannot imagine a bigger and better future, then spending energy on teaching how to do something or below is a moot point. We don't do what we don't believe we are capable of.
+  - Behavior: Actions. This is the level of what we would consider training a person new skills.
+    - Strategy: Teach basic skills, but focus 90% of effort above the level of training.
+  - Environment: The people, culture, and physical locations.
+    - Strategy: Change environment and you affect a lot about what a person can evolve into over time.
+      - Example: If you put a person in a better environment or around better people, over time this will affect their behaviors, beliefs, etc...
+- Choose The Best Model For Shifting Beliefs
+  - Positive Intention: Acknowledge intent and reframe behavior.
+  - Redefinition: Taking something that means something and changing it.
+  - Consequences: What will happen if you don't.
+  - Chunking Down: What is an example of this? (Concept to Specific)
+  - Chunking Up: What is this an example of? (Specific to Concept)
+  - Metaphors: A story with a specific meaning.
+  - Changing Frame Size: Inner/Outer, Worldview/Micro, Atom/Universe.
+  - Changing Outcomes: Set goals in opposition to source of problem.
+  - Shift World Model: Change how they see the world.
+  - Reality Strategies: Challenge why the person's belief exists.
+  - Counter Example: Social proof opposite to belief.
+  - Meta-Frame: Questioning origin of belief.
+  - Hierarchy Of Ideas: Process of chunking up to gain agreement.
+  - Apply To Self: Use belief to invalidate itself.
+## Presuppositions
+- What They Are
+  - These are unconscious assumptions that are accepted without notice or resistance when processing language to create meaning.
+    - Genius: Creates the same mental imagery (what's the purpose of communication?) as if we were to make direct commands to a person and they did not reject them, without the possibility of being rejected.
+- Possibility: Presupposes that something might happen in future.
+  - "As X you (may/might/could) Y..."
+- Cause & Effect: Using "because" triggers unconscious causal linking.
+  - How To Use: Tie something going on to what you want them to do.
+    - "Because X now you will..."
+      - Causal relationships do not have to have any bearing on reality.
+  - Levels: 1 = weakest, 3 = strongest
+    - 1. And: Using "and" creates a basic weak causal link.
+    - 2. Time: Using during, while, soon, as, when...
+    - 3. Direct: Using because, causes, requires, forces, makes...
+  - Implied Causative: Causal link using [If/Then], [As You/Then You].
+- Complex Equivalent: Using "means" triggers unconscious X=Y linkage.
+  - "The fact that X means Y..."
+- Awareness: Presupposes you become aware of something (unconscious).
+  - "As you X you may start to notice your breathing..."
+- Time (Powerful): Ties the fact that time is passing to something.
+  - Words: Begin, end, stop, start, continue, proceed, already, yet, still, anymore.
+- Adverb/Adjective Modifiers: Distracts away from what is modified.
+  - Wordlist: effortlessly, easily, enjoying, quickly, etc...
+- Simple Binds: Presenting the illusion of choice. All that is offered is several ways to do the same thing.
+  - Exclusive OR: Using "or" allows unconscious illusion of choice.
+    - "Would you like to fill out the order form or would you like me to take care of it?"
+- Double Binds: Binding an unconscious process in one direction and another behavior in another direction.
+  - Time Double Bind: Links time to autonomic unconscious response or ideomotor phenomenon (unconscious physiologic change triggered by thought).
+    - "I'm curious at what point in the video you'll have a complete and total breakthrough."
+  - Conscious-Unconscious Double Bind: Describing function of unconscious mind while separating it from conscious activity.
+    - "As your conscious mind focuses on training today, your unconscious mind is learning new things that begin to give you breakthroughs automatically."
+  - Double Dissociation Double Bind: Dissociation on two levels. It makes conscious communication possible while in meditative state.
+    - "You can open your eyes and focus completely as your unconscious mind allows you to remain in a state of deep relaxation."
+- Ordinal: Allows for unconscious illusion of a certain order.
+  - "The second time you see the video you will be even more excited than the first time..."
+- Existence: Extremely difficult to question, bypassing all filters.
+  - "I'm going to my favorite restaurant by my office later."
+    - Creates unquestioned assumption that an office exists.
+- Ambiguity: Language that can be interpreted multiple ways.
+  - Trans-Derivational Search: Unconscious internal search for meaning from within the way we see the world in presence of ambiguity.
+    - Common trigger: Metaphors
+- Mind Reading: Presupposes intimate knowledge of a person's thoughts.
+  - "I know you're thinking..." "Is it REALLY this easy?"
+- Lost Performative: Value judgment with ambiguous source.
+  - "It's a good thing..." "It's the right thing to do..."
+    - If you ask "according to whom?" and there's no answer, BINGO!
+  - Lack Of Referential Index: Non specific to source and reference.
+    - "It's a good thing to learn new strategies, because the things that you'll learn will..."
+      - Not specific for strategies and thing to be learned.
+  - Comparative Deletion: What's being compared to is left out.
+    - "It's definitely a faster way to..." (faster than what?)
+- Universal Quantifier: Linguistic absolutes to generalize experience.
+  - Words: All, always, never, nobody, every, each, any
+- Nominalization: The noun version of process words = pure concepts.
+  - Words: relationship, knowledge, learning, resources, quality, discovery, insight...
+    - Highly ambiguous and universally generalizable words.
+- Modal Operator: Imply necessity and/or possibility.
+  - For sales: Point out what's possible to notice, NOT what must be noticed.
+    - "The part of the video you may really want to pay attention to is the part where..."
+- Unspecified Verb: Highlight non-specific internal shift, change, growth, etc. causing internal confirmation and search for meaning.
+  - Verbs: learn, know, understand, change, wonder, think, feel, discover...
+    - "As you learn new things today, you can understand exactly what changes you need to make in..."
+- Tag Questions: Create agreement. Ask often. Demand response.
+- Pacing: Recognizing 3-4 current things undeniably happening and then tying it to a powerful meaning of possibility.
+  - "As you're sitting or standing in this room, breathing the way you're breathing, staring at me as you listen to my voice, as you relax more deeply realizing how powerful you're now becoming as a result of this training."
+- Conversational Postulate: Phrasing of question that results in automatic compliant behavioral response.
+  - Organically, this is the way we ask each other for help.
+    - "Do you mind holding this for me?"
+- Direct & Extended Quotations: Separates information from communicator, bypassing resistance. We generally do not resist quotes and therefore they can be leveraged powerfully to give direct commands.
+  - "I'm not surprised you don't understand this fully yet, because one of my six figure earners told me just the other day 'You know, I didn't even really get it. I just got to work, and started producing. Because ignorance on fire is better than knowledge on ice. I'm glad I listened to you when you told me "If you're serious about your future, you'll just take action immediately, before you understand it."'"
+  - Extended Quotations: Quotes or stories within stories.
+    - Example: Imagine a preacher like T.D. Jakes quoting a bible story where within that story a story with metaphorical meaning is shared.
+- Selectional Restriction Violation: Purposely bestowing characteristics to something that it should not have.
+  - "And the chair you're sitting in can give you a certain kind of knowledge as you pay attention to today's training."
+- Utilization: Taking whatever happens around you and synchronistically making it mean whatever you want in that moment.
+  - Examples
+    - Dave's dog barking during sales video recording. Instead of starting over, just acknowledging it and giving it a meaning.
+    - While having a conversation you hear a baby crying in the background and you say "See, can you hear that crying. It means everything is screaming for a change."
+- Embedded Commands: Within a sentence, changing your tonality where there is a direct command.
+  - "We've been speaking for a while and 'buy now' you can feel a change. Making a new decision to..."
+- Negative Commands: Stating things you want someone to think about negatively. Using "don't" so they automatically do think about what you tell them not to do.
+  - The unconscious mind does not recognize or understand negative. It must move to attention once it's been alerted to it.
+    - "Maybe you shouldn't think about your feet right now because..."
+    - "I'm not saying that you'll make a decision as you watch the video..."
+- Footnote: "I'll try..." is a presupposition of future failure.
+## Unconscious Phenomena
+- How Unconscious Phenomena Affect Decisions
+  - The subconscious mind uses the processes below, and does this spontaneously. It's through these processes that our subconscious does this.
+  - Brain scans show that decisions are made up to 1 second before we are aware of them. Once we become aware, our conscious mind rationalizes and chooses (after we've already decided), giving us the "perception" that our conscious mind is in control.
+    - Example: Robocop and the illusion of free will scene.
+      - In combat situations the computer does everything, then sends messages to his brain making him think he's in control.
+  - This IS What Influence Actually Is
+    - Directly influencing people's unconscious process is what influence ACTUALLY is, because all decisions happen unconsciously.
+  - Method: How To Direct The Subconscious Minds Of Others
+    - Through story, metaphors, suggestions, and language patterns, directing people's subconscious mind towards what they want and away from what they do not want.
+- Age Progression: Occurs when our minds spontaneously go to the future and envision a possible version. Could be good or bad.
+  - Use: Aim people's minds at the future they want and away from anything they don't want.
+- Age Regression: Occurs when our mind thinks about something that's happened in the past. When we do this we recreate that event. This could be with or without dissociation, +/- hallucination, time/sensory distortions, etc.
+  - Use: Through telling our own or another person's stories, or by using suggestions, taking people back to the past to pull up positive resources to use right now.
+- Dissociation: Remembering without context, feelings, or emotions, as if you're watching yourself from outside yourself.
+  - Use: Help people see things they perceive as negative from outside of themselves and without the negative sensory experience, where we can then create a new meaning. Removing fear by seeing it from the outside. (i.e. Think about experiencing fear or rejection. It's a funny thing from the outside, right?)
+  - Phrases: Make a new decision, make a new choice, do something different. (If about decisions.)
+- Amnesia: This is where we completely forget things. We all do this all the time.
+  - Use: Point out things that people may have completely forgotten in the past. Some people completely forget all the good stuff and focus on all the bad stuff, so having them find positive distinctions can create a new way of being over time.
+    - When People Have A Problem And Then Get Stuck: When we get stuck we're forgetting, deleting the good, and enhancing what is NOT so good, as it relates to that block. Normalize for people.
+- Positive Hallucination: This is when our mind sees something that isn't there. A snake that's really a stick in the grass.
+  - Use: Since we tend to remember more negative things to avoid than things that are great, we can assume they're creating hallucinations that do not exist. Useful to help break bad frames and subjective unconscious assumptions when presenting.
+    - Note: Hallucination does not ONLY mean visual. It's every sense and emotion.
+- Negative Hallucination: Where our mind does not see something that is there.
+  - Use: If we don't see the good in a situation we can then bring attention to it so they start to really notice it. Useful to help break bad frames and subjective unconscious assumptions when presenting.
+    - Note: Hallucination does not ONLY mean visual. It's every sense and emotion.
+- Time Distortion: When our mind slows or accelerates our perception of time. How the good times fly and being a lifeguard for a day feels like a lifetime.
+  - Use: To distort time away from perceptions of time that we associate with negative situations and towards positive. When we're really connected and in flow, time flies. Put them in this state.
+- Sensory Distortion: When our mind changes our sensory perception in real time. How our mind can turn down background music or heighten sight, sound, touch, etc. during a certain experience.
+  - Use: To distort senses towards experiences that are perceived as total engagement and flow. Totally locked in tunnel vision where the background completely fades away is how you experience this yourself.
+- Post Behavioral Suggestion: If we have a strong connection and a good rapport with people we can suggest behaviors and suggest a response to future input that will create future automatic behavior. We cannot suggest something they don't want to do. But if they believe you they will distort reality and they'll look for situations to confirm belief. They can also completely reject the suggestion.
+  - Use: To suggest certain behavior that produces a positive outcome people want to happen in their lives anyway. (Example: Facebook, desire for $1M ring, so refocus and close Facebook to get ring.)
+    - Can be extremely powerful and long lasting. Science has reported some of these suggestions lasting as long as 20 years.

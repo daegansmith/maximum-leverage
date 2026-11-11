@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mass Influence Formula: The Master Framework | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+/* Rotating testimonial: Courier, regular, 16px, so it reads as its own voice */
+#tst blockquote{font-family:"Courier New",Courier,monospace;font-style:normal;font-size:16px;line-height:1.6}
+/* Newsletter (Flodesk inline form, restyled to one row) */
+.nl{padding:20px 0 24px;border-top:2px solid var(--ink)}
+.nl h2{margin:0 0 6px}
+.nl .s{font-size:16px;color:var(--soft);margin:0 0 4px;line-height:1.5}
+.nl .go{font-size:16px;font-weight:bold;margin:0 0 10px}
+.nl .ff-6aecd0b7cc612c11759b0cc4__title,.nl .ff-6aecd0b7cc612c11759b0cc4__subtitle{display:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__container{max-width:none!important;padding:0!important;margin:0!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__form{padding:0!important;margin:0!important;max-width:none!important;background:transparent!important}
+html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{display:flex!important;gap:8px!important;align-items:stretch!important;margin:0!important;padding:0!important;flex-wrap:nowrap!important}
+html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 0!important;display:flex!important;gap:8px!important;margin:0!important;flex-wrap:nowrap!important;min-width:0!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__field{flex:1 1 0!important;margin:0!important;min-width:0!important}
+html body .nl .hide-last{display:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__control{height:44px!important;font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-size:15px!important;border:2px solid var(--ink)!important;border-radius:0!important;background:var(--bg)!important;color:var(--ink)!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__label{font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-size:15px!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__footer{margin:0!important;flex:0 0 auto!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__button{height:44px!important;padding:0 18px!important;margin:0!important;border-radius:0!important;font-family:Tahoma,Geneva,Verdana,sans-serif!important;font-weight:bold!important;font-size:15px!important;width:auto!important;min-width:0!important}
+/* Form colors follow the site's light/dark tokens (Flodesk paints its own white otherwise) */
+.nl .ff-6aecd0b7cc612c11759b0cc4,.nl .ff-6aecd0b7cc612c11759b0cc4__form,.nl .ff-6aecd0b7cc612c11759b0cc4__container,.nl .ff-6aecd0b7cc612c11759b0cc4__content,.nl .ff-6aecd0b7cc612c11759b0cc4__fields,.nl .ff-6aecd0b7cc612c11759b0cc4__field,.nl .ff-6aecd0b7cc612c11759b0cc4__footer{background:transparent!important;box-shadow:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__control{background:var(--bg)!important;color:var(--ink)!important;box-shadow:none!important;outline:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__control::placeholder{color:var(--soft)!important;opacity:1!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__label{color:var(--soft)!important;background:transparent!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__button{background:var(--ink)!important;color:var(--bg)!important;border:2px solid var(--ink)!important;box-shadow:none!important}
+.nl .ff-6aecd0b7cc612c11759b0cc4__button *{color:var(--bg)!important}
+@media (max-width:480px){html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{flex-wrap:wrap!important}html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__footer{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__button{width:100%!important}}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+</style></head><body><div class="wrap">
+<p><a class="back" href="../">&larr; Notes</a></p>
+<p class="kicker">A one-page summary of my David Wood notes, made with AI</p>
+<h1>Mass Influence Formula: The Master Framework</h1>
+<div class="tools"><button onclick="tg(true)">Open all</button><button onclick="tg(false)">Close all</button></div>
+<ul class="ol"><li><details><summary class="row">The Core Philosophy: Beliefs And Foundations</summary><ul><li><span class="row">Effective influence begins with the communicator&#x27;s mindset. To move an audience, you must adopt empowering beliefs about their potential.</span></li><li><span class="row">The Empowerment Axiom: Assume that everyone has the resources they need inside them; your job is simply to help them tap into those resources.</span></li><li><span class="row">The Communication Goal: The purpose of communication is the response you produce, not just the words you use. If the current approach isn&#x27;t working, be flexible and try something different.</span></li><li><span class="row">No Failure, Only Feedback: View every marketing outcome as data for practice, feedback, and evolution.</span></li><li><span class="row">The Map Is Not The Territory: Recognize that your audience responds to their representation of reality, not reality itself. Successful marketing shifts that internal representation.</span></li></ul></details></li><li><details><summary class="row">Strategic Implementation Framework</summary><ul><li><details><summary class="row">Before writing a single word, establish the psychological &quot;playing field.&quot;</summary><ul><li><span class="row">1. Determine the Objective: Clearly define the goal and the product/service being offered.</span></li><li><span class="row">2. Select Unconscious Phenomena: Identify which psychological triggers (e.g., age progression, dissociation) will best move the audience toward their desires.</span></li><li><span class="row">3. Frame and Aim: Choose a primary frame (e.g., redefinition, consequences) and direct all messaging toward the objective.</span></li></ul></details></li><li><details><summary class="row">Choosing the &quot;Level of Attack&quot;: Target the audience at the most impactful neurological level.</summary><ul><li><span class="row">Identity (I Am): Expand their self-perception (e.g., &quot;I am a successful entrepreneur&quot;).</span></li><li><span class="row">Beliefs &amp; Values: Align your offer with what they believe to be true or rearrange their values.</span></li><li><span class="row">Capabilities: Expand their perception of what they can do. This is a critical vulnerability; if they don&#x27;t believe they are capable, they won&#x27;t act.</span></li><li><span class="row">Behavior &amp; Environment: Focus 90% of your effort on the levels above, as changing beliefs naturally evolves behaviors and environments.</span></li></ul></details></li></ul></details></li><li><details><summary class="row">Linguistic Patterns For Unconscious Influence</summary><ul><li><span class="row">Presuppositions are unconscious assumptions that bypass resistance because they must be accepted as true for the sentence to make sense.</span></li><li><details><summary class="row">Cause &amp; Effect: Triggers causal linking using &quot;because,&quot; &quot;makes,&quot; or &quot;causes&quot;.</summary><ul><li><span class="row">Example: &quot;Because you&#x27;ve read this far, you&#x27;re ready to...&quot;</span></li></ul></details></li><li><details><summary class="row">Complex Equivalent: Links two concepts as identical using &quot;means&quot;.</summary><ul><li><span class="row">Example: &quot;The fact that you&#x27;re seeking this means you&#x27;re a leader.&quot;</span></li></ul></details></li><li><details><summary class="row">Awareness: Presupposes the audience is noticing a shift.</summary><ul><li><span class="row">Example: &quot;You may start to notice a sense of excitement...&quot;</span></li></ul></details></li><li><details><summary class="row">Simple Binds: Offers an illusion of choice between two desired actions.</summary><ul><li><span class="row">Example: &quot;Would you like to start today or over the weekend?&quot;</span></li></ul></details></li><li><details><summary class="row">Negative Commands: Uses &quot;don&#x27;t&quot; to force the mind to think of the concept.</summary><ul><li><span class="row">Example: &quot;Don&#x27;t think about how much time you&#x27;ll save yet.&quot;</span></li></ul></details></li><li><details><summary class="row">Embedded Commands: Direct commands hidden within a sentence, often marked by tonality shifts.</summary><ul><li><span class="row">Example: &quot;As we talk, you can decide now to move forward.&quot;</span></li></ul></details></li><li><details><summary class="row">Adverb Modifiers: Uses words like &quot;easily&quot; or &quot;quickly&quot; to distract from the core command.</summary><ul><li><span class="row">Example: &quot;You can effortlessly implement these strategies.&quot;</span></li></ul></details></li></ul></details></li><li><details><summary class="row">Shifting Beliefs And Moving The Audience</summary><ul><li><span class="row">When a prospect is &quot;stuck&quot; or has a limiting belief, use these models to reframe their reality.</span></li><li><details><summary class="row">Chunking Up vs. Down</summary><ul><li><span class="row">Up moves toward the big picture (&quot;What is this an example of?&quot;) to find agreement on intentions like &quot;Existence&quot; or &quot;Protection&quot;.</span></li><li><span class="row">Down moves toward specific details (&quot;What specifically?&quot;) to break a problem into manageable parts.</span></li></ul></details></li><li><span class="row">Metaphors: Use stories to bypass the conscious mind and deliver a specific meaning or solution indirectly.</span></li><li><span class="row">Time Distortion: Accelerate the perception of time for positive outcomes (flow state) and slow it down to move away from negative experiences.</span></li><li><span class="row">Age Progression: Direct the audience&#x27;s mind to a future version of themselves where they have achieved their goals.</span></li><li><span class="row">Social Proof (Counter Example): Provide examples that directly contradict their limiting belief.</span></li></ul></details></li><li><details><summary class="row">Human Needs Alignment (Maslow&#x27;s Hierarchy)</summary><ul><li><span class="row">Ensure your marketing speaks to the fundamental human drivers. High-level marketing often aims for the top of the pyramid while satisfying the base.</span></li><li><span class="row">Self-Actualization: Realizing full potential and &quot;becoming everything one is capable of&quot;.</span></li><li><span class="row">Esteem: Respect, competence, and achievement.</span></li><li><span class="row">Belongingness: Being part of a group, receiving love, and acceptance.</span></li><li><span class="row">Safety &amp; Physiological: The base needs of security, health, food, and rest.</span></li></ul></details></li></ul>
+</div><script>function tg(o){document.querySelectorAll('.ol details').forEach(function(d){d.open=o;});}</script><!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
