@@ -1,0 +1,238 @@
+#!/usr/bin/env python3
+"""Build the AI evolution pages under /ai/ from src/ai/log.md.
+
+log.md is the markdown export of the Claude Doc "AI Evolution - Breakthrough Log".
+Run from the repo root:  python3 src/ai/build.py && python3 src/footer.py
+
+Writes: ai/index.html (the hub), ai/glossary/index.html, and one page per stage.
+The page head (styles and tracking tags) is copied from an existing notes page, never retyped.
+"""
+import html
+import re
+from pathlib import Path
+
+import markdown
+
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src/ai/log.md"
+HEAD_FROM = ROOT / "notes/forbidden-keys/index.html"
+UPDATED = "November 11, 2026"
+
+SLUGS = {3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram",
+         7: "first-rule", 8: "purpose-over-process", 9: "repo"}
+
+EXTRA_CSS = """
+.lead{font-size:21px;line-height:1.5}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+"""
+
+
+def title_case(s):
+    return re.sub(r"(^|[\s(])([a-z])", lambda m: m.group(1) + m.group(2).upper(), s)
+
+
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+def md(text):
+    return markdown.markdown(text.strip(), extensions=["tables"])
+
+
+def inline(text):
+    out = md(text)
+    return re.sub(r"^<p>|</p>$", "", out)
+
+
+def head(title, desc):
+    s = HEAD_FROM.read_text()
+    h = s[: s.index("</head>")]
+    h = re.sub(r"<title>.*?</title>", f"<title>{html.escape(title)} | Daegan Smith</title>", h, count=1, flags=re.S)
+    h = h.replace("</style>", EXTRA_CSS + "</style>", 1)
+    h += f'<meta name="description" content="{html.escape(desc, quote=True)}">'
+    return h + "</head>\n"
+
+
+def page(title, desc, body, script=""):
+    return head(title, desc) + '<body><div class="wrap">\n' + body + "\n</div>" + script + "\n</body></html>\n"
+
+
+def split_h2(text):
+    parts = re.split(r"^## (.+)$", text, flags=re.M)
+    return {parts[i].strip(): parts[i + 1] for i in range(1, len(parts), 2)}
+
+
+def split_h3(text):
+    parts = re.split(r"^### (.+)$", text, flags=re.M)
+    return parts[0], [(parts[i].strip(), parts[i + 1]) for i in range(1, len(parts), 2)]
+
+
+def table_rows(text):
+    rows = []
+    for line in text.splitlines():
+        if line.startswith("|") and not re.match(r"^\|\s*-", line):
+            rows.append([c.strip() for c in line.strip().strip("|").split("|")])
+    return rows[1:]
+
+
+def main():
+    text = SRC.read_text()
+    assert "—" not in text.split("\n", 1)[1], "em dash in the log body"
+    h2 = split_h2(text)
+
+    # ---- glossary
+    gkey = next(k for k in h2 if k.startswith("Glossary"))
+    terms = table_rows(h2[gkey])
+    gl = {name: slug(name) for name, _, _ in terms}
+
+    def find_term(label):
+        l = label.lower().strip()
+        l = re.sub(r"^(a|an|the) ", "", l)
+        for name, s in gl.items():
+            n = re.sub(r"^(a|an|the) ", "", name.lower())
+            if n == l or n.startswith(l) or l in n:
+                return s
+        return None
+
+    rows = "".join(
+        f'<div class="term" id="{gl[n]}"><b>{inline(n)}</b><span class="when">{html.escape(w)}</span><p>{inline(d)}</p></div>\n'
+        for n, d, w in terms)
+    body = (
+        '<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+        f'<p class="kicker">AI &middot; Updated {UPDATED}</p>\n<h1>Glossary</h1>\n'
+        f'<p class="lead">Every named thing in the system, in plain words, with when it first appeared. '
+        f'Sorted by date, so reading down the list is reading the system being built.</p>\n'
+        '<input class="find" id="q" type="search" placeholder="Find a term" aria-label="Find a term">\n'
+        f'<div id="terms">\n{rows}</div>')
+    script = ("<script>document.getElementById('q').addEventListener('input',function(){var v=this.value.toLowerCase();"
+              "document.querySelectorAll('.term').forEach(function(t){t.style.display=t.textContent.toLowerCase().indexOf(v)>-1?'':'none';});});</script>")
+    (ROOT / "ai/glossary").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/glossary/index.html").write_text(
+        page("AI Glossary", "Every named part of how Daegan Smith works with Claude, in plain words.", body, script))
+
+    # ---- stages
+    stages = []
+    for k, v in h2.items():
+        m = re.match(r"Stage (\d+): (.+)", k)
+        if m:
+            stages.append((int(m.group(1)), title_case(m.group(2)), v))
+    stages.sort()
+    tl = {int(r[0].split(".")[0]): r for r in table_rows(h2["The Timeline"])}
+
+    for idx, (n, name, v) in enumerate(stages):
+        pre, secs = split_h3(v)
+        paras = [p.strip() for p in pre.strip().split("\n\n") if p.strip()]
+        dateline = paras[0]
+        date, _, source = dateline.partition(". Source: ")
+        source = source.rstrip()
+        terms_line = next((p for p in paras[1:] if p.startswith("Terms used here")), "")
+        wall = next((b for t, b in secs if t == "The Wall"), "")
+        rest = [(t, b) for t, b in secs if t != "The Wall"]
+        tl_html = ""
+        if terms_line:
+            labels = terms_line.split("Glossary:", 1)[1].strip().rstrip(".").split(",")
+            links = []
+            for lab in labels:
+                lab = lab.strip()
+                s = find_term(lab)
+                links.append(f'<a href="../glossary/#{s}">{html.escape(lab)}</a>' if s else html.escape(lab))
+            tl_html = '<p class="terms">Terms used here, defined in the <a href="../glossary/">Glossary</a>: ' + ", ".join(links) + ".</p>\n"
+        items = "".join(
+            f'<li><details><summary class="row">{html.escape(title_case(t))}</summary><div class="sec">{md(b)}</div></details></li>\n'
+            for t, b in rest)
+        prev_l = (f'<a href="../{SLUGS[stages[idx-1][0]]}/">&larr; {html.escape(stages[idx-1][1])}</a>' if idx else "<span></span>")
+        next_l = (f'<a href="../{SLUGS[stages[idx+1][0]]}/">{html.escape(stages[idx+1][1])} &rarr;</a>' if idx + 1 < len(stages) else "<span></span>")
+        body = (
+            '<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+            f'<p class="kicker">Stage {n} &middot; {html.escape(date.rstrip("."))}</p>\n<h1>{html.escape(name)}</h1>\n'
+            f'<p class="kicker">The Wall</p>\n<div class="lead prose">{md(wall)}</div>\n'
+            + tl_html +
+            '<div class="tools"><button onclick="tg(true)">Open all</button><button onclick="tg(false)">Close all</button></div>\n'
+            f'<ul class="ol">\n{items}</ul>\n'
+            + (f'<p class="small" style="margin-top:28px">From the record: {inline(source)}</p>\n' if source else "")
+            + f'<div class="nav">{prev_l}{next_l}</div>')
+        script = "<script>function tg(o){document.querySelectorAll('.ol details').forEach(function(d){d.open=o;});}</script>"
+        d = ROOT / "ai" / SLUGS[n]
+        d.mkdir(parents=True, exist_ok=True)
+        desc = re.sub(r"\s+", " ", re.sub(r"[*\"]", "", wall)).strip()[:155]
+        (d / "index.html").write_text(page(f"{name}: Stage {n}", desc, body, script))
+
+    # ---- hub
+    what, subs = split_h3(h2["What This Is"])
+    wparas = [p.strip() for p in what.strip().split("\n\n") if p.strip()]
+    shape = next(p for p in wparas if p.startswith("- "))
+    lens = dict(subs)["The Lens: Evolution"]
+    have = {n: name for n, name, _ in stages}
+    cards = []
+    for n in sorted(tl):
+        num_name, when, wall, changed = tl[n]
+        name = have.get(n) or title_case(num_name.split(".", 1)[1].strip())
+        inner = (f'<span class="cn">Stage {n} &middot; {html.escape(when)}</span>'
+                 f'<span class="ct">{html.escape(name)}</span>'
+                 f'<span class="cd"><b>The wall:</b> {inline(wall)}.</span>'
+                 f'<span class="cd"><b>What changed:</b> {inline(changed)}.</span>')
+        if n in have:
+            cards.append(f'<a class="card" href="{SLUGS[n]}/">{inner}</a>')
+        else:
+            cards.append(f'<div class="card plain">{inner}</div>')
+    after_table = h2["The Timeline"].split("\n\n")
+    tail = [p for p in after_table if p.startswith("**In progress") or p.startswith("**Walls in sight")]
+    body = (
+        '<p class="kicker"><a href="/">Daegan Smith</a> &middot; AI</p>\n<h1>The Evolution</h1>\n'
+        '<p class="lead">How my way of working with Claude changed, told wall by wall: what kept going wrong, '
+        'what broke it, what changed, and whether it held.</p>\n'
+        f'<p class="small">Kept by Claude from the session record, which is why it says "he." Updated {UPDATED}.</p>\n'
+        '<section><h2>The Stages</h2>\n'
+        '<p>Nine so far, in date order. Each one started with a wall. Tap a stage to open it.</p>\n'
+        f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
+        + "".join(f'<p style="margin-top:18px">{inline(t)}</p>\n' for t in tail) +
+        '</section>\n'
+        '<section><h2>How To Read It</h2>\n<div class="prose">'
+        '<p>Every stage has the same shape, so they can be compared:</p>\n' + md(shape) + "\n"
+        '<p>Entries come from the session record, not from memory. Where the record and memory disagree, the entry says so.</p>'
+        '</div></section>\n'
+        f'<section><h2>The Lens: Evolution</h2>\n<div class="prose">{md(lens)}</div></section>\n'
+        '<section><h2>Glossary</h2>\n<div class="cards">'
+        f'<a class="card" href="glossary/"><span class="ct">What Each Named Thing Is</span>'
+        f'<span class="cd">{len(terms)} terms the stages use, in plain words, sorted by when each first appeared.</span></a>'
+        '</div></section>\n'
+        '<section><h2>Earlier Pictures Of The System</h2>\n<div class="cards">'
+        '<a class="card" href="system.html"><span class="cn">October 3, 2026</span><span class="ct">How The Whole System Works</span>'
+        '<span class="cd">The structure as it stood in early October: one rulebook, four projects, two shared documents.</span></a>'
+        '<a class="card" href="inside.html"><span class="cn">October 10, 2026</span><span class="ct">Inside Each Prompt</span>'
+        '<span class="cd">How each prompt moves on its own, drawn as a flow.</span></a>'
+        '</div></section>')
+    (ROOT / "ai/index.html").write_text(
+        page("The Evolution: How I Work With AI",
+             "How Daegan Smith's way of working with Claude changed, wall by wall.", body))
+    print(f"ai: hub, glossary ({len(terms)} terms), {len(stages)} stage pages")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,212 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI Glossary | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.lead{font-size:21px;line-height:1.5}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Every named part of how Daegan Smith works with Claude, in plain words."></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<p class="kicker">AI &middot; Updated November 11, 2026</p>
+<h1>Glossary</h1>
+<p class="lead">Every named thing in the system, in plain words, with when it first appeared. Sorted by date, so reading down the list is reading the system being built.</p>
+<input class="find" id="q" type="search" placeholder="Find a term" aria-label="Find a term">
+<div id="terms">
+<div class="term" id="the-master-prompt"><b>The Master Prompt</b><span class="when">Before July 27</span><p>His first system: a method for building a good prompt for any job, kept as its own document.</p></div>
+<div class="term" id="the-pull-method"><b>The Pull Method</b><span class="when">Before July 27</span><p>The steps he used to build a prompt: define the role, gather context in batches, state the task, set the format, test, refine, then move it into a Project.</p></div>
+<div class="term" id="a-project"><b>A Project</b><span class="when">Before July 27</span><p>A workspace in Claude with its own standing instructions and files. Marketing is one. Thinking Better is another.</p></div>
+<div class="term" id="the-instructions-the-seed-prompt"><b>The instructions (the seed prompt)</b><span class="when">July 27</span><p>The standing document Claude reads at the start of every chat in the Marketing project. It says how the work is done. Called the seed prompt until v1.66.</p></div>
+<div class="term" id="the-instructions-field-and-the-paste"><b>The instructions field and the paste</b><span class="when">July 27</span><p>The box in the Project where the instructions live. Claude can't write to it, so every new version was copied in by hand.</p></div>
+<div class="term" id="version-numbers"><b>Version numbers</b><span class="when">July 27</span><p>Each change to the instructions gets a number, v1 through v1.78 so far. The first 28 are separate files in Drive. After that it is one document edited in place.</p></div>
+<div class="term" id="voice-reference"><b>Voice Reference</b><span class="when">By late July</span><p>A document of how he talks and writes, with every line he picked or rejected logged in it, so Claude writes from his voice and not a generic one.</p></div>
+<div class="term" id="own-work"><b>Own Work</b><span class="when">By late July</span><p>The Drive folder of his own letters, emails and course notes. It is the authority on his voice. Other people's material informs structure only.</p></div>
+<div class="term" id="process-visuals"><b>Process Visuals</b><span class="when">July 30</span><p>A Drive folder made to hold a picture of how the process works at each version. The first attempt at this log.</p></div>
+<div class="term" id="no-agreement-theater"><b>No agreement theater</b><span class="when">By August 1</span><p>After a correction, Claude states what went wrong mechanically and moves on. No "you're right," no apology.</p></div>
+<div class="term" id="the-belief-chain"><b>The belief chain</b><span class="when">By September</span><p>The numbered list of things a stranger has to believe, in order, to get from where they are to yes. Copy is built on it.</p></div>
+<div class="term" id="the-em-dash-rule"><b>The em dash rule</b><span class="when">By September 10</span><p>No em dashes in any copy, ever. Checked as its own step.</p></div>
+<div class="term" id="a-living-doc"><b>A living doc</b><span class="when">By late September</span><p>A document edited in place with its history kept, in place of a new numbered file for each version.</p></div>
+<div class="term" id="the-council"><b>The council</b><span class="when">Before October</span><p>A fixed group of named direct-response marketers (Kennedy, Halbert, Brunson and others). Claude writes as each one in turn, so he gets several different takes on one line. A seat is one of them.</p></div>
+<div class="term" id="the-mastermind-room"><b>The Mastermind Room</b><span class="when">October 1 to 3</span><p>The same people talking to each other about an idea, as a conversation, where the council only writes lines.</p></div>
+<div class="term" id="live-copy-wins"><b>Live copy wins</b><span class="when">October 1 to 3</span><p>When a saved copy and the live page differ, the live one is the truth.</p></div>
+<div class="term" id="lock"><b>Lock</b><span class="when">By October 2</span><p>His word that a piece is finished. A locked line is never reworded, only placed.</p></div>
+<div class="term" id="a-build"><b>A build</b><span class="when">October 9</span><p>One thing being made from start to finish: a page, an offer, a deck. Each has its own log.</p></div>
+<div class="term" id="the-decisions-log"><b>The decisions log</b><span class="when">October 9</span><p>One file per build. Every decision goes in the moment he makes it, so a later chat can read what was settled.</p></div>
+<div class="term" id="the-screen-gate"><b>The Screen Gate</b><span class="when">October 9</span><p>A short line of checks run under every slide before he sees it: numbers traced, nothing overlapping, nothing changed that wasn't asked for.</p></div>
+<div class="term" id="closed-numbers"><b>Closed numbers</b><span class="when">October 9</span><p>A number he gives is used as given. Claude does not audit it or ask him to prove it.</p></div>
+<div class="term" id="on-trial"><b>On Trial</b><span class="when">October 10</span><p>A holding area for new rules. Each has a date, a reason, what to watch for and when to decide.</p></div>
+<div class="term" id="metaphor-analogy-parable"><b>Metaphor, Analogy, Parable</b><span class="when">October 10</span><p>A trial rule: suggest a picture or a comparison wherever an idea stays abstract. Still on trial.</p></div>
+<div class="term" id="an-objective"><b>An objective</b><span class="when">October 10</span><p>A new thing we set out to do. The gate runs once per objective, not once per message.</p></div>
+<div class="term" id="the-assumptions-gate"><b>The Assumptions Gate</b><span class="when">October 10</span><p>Before any new job starts, Claude lists what it is assuming (who it's for, what it sells, when, where, how much) and he marks each right or wrong.</p></div>
+<div class="term" id="dream-100"><b>Dream 100</b><span class="when">October 10</span><p>Chet Holmes's idea: pick the hundred best-fit buyers and go after them again and again, in place of approaching everyone.</p></div>
+<div class="term" id="an-agent"><b>An agent</b><span class="when">October 11</span><p>A separate copy of Claude started to do one job on its own and report back. Seats, fresh readers and simulated readers all run this way.</p></div>
+<div class="term" id="the-deep-room"><b>The Deep Room</b><span class="when">October 11</span><p>The first brainstorm on a new job. Every seat runs as its own agent and thinks alone first, then the room talks.</p></div>
+<div class="term" id="the-bias-pass"><b>The Bias Pass</b><span class="when">October 11</span><p>Reading a piece for the mental shortcuts it uses on the reader, and the ones it could. Still on trial.</p></div>
+<div class="term" id="the-readout"><b>The readout</b><span class="when">October 11 to 15</span><p>The intake flow that came out of the first Deep Room: an AI-made report that shows a business owner how strangers see them, with some findings held back.</p></div>
+<div class="term" id="the-schwartz-dials"><b>The Schwartz Dials</b><span class="when">October 14</span><p>Two settings chosen before writing: how aware the reader is of the problem and the product, and how many times they have heard this kind of claim. From Eugene Schwartz.</p></div>
+<div class="term" id="the-five-moments"><b>The five Moments</b><span class="when">October 15</span><p>The instructions reorganized by when a rule applies: when a job opens, before a line is written, before anything is shown, after a correction, at the end of the session.</p></div>
+<div class="term" id="the-standard-how-daegan-judges-a-line"><b>The standard (How Daegan Judges A Line)</b><span class="when">Made the center October 15</span><p>The document that says how he decides whether a line of copy is good.</p></div>
+<div class="term" id="the-framework"><b>The framework</b><span class="when">October 15</span><p>The known format a piece lives in: sales letter, video sales letter, Invisible Funnel, story email. Named first, because it sets the order.</p></div>
+<div class="term" id="the-provenance-line"><b>The provenance line</b><span class="when">October 15</span><p>One line under every piece of copy that names what was read to write it and which settled decisions it touches.</p></div>
+<div class="term" id="the-all-out-pass"><b>The All-Out Pass</b><span class="when">October 15</span><p>The five things done before he sees any first draft: 1 read his own work in the same format, 2 read the original source of every story and pull its real details, 3 make every section finish its thought, 4 have two fresh readers go through it, 5 name what was read.</p></div>
+<div class="term" id="the-dictation-rule"><b>The dictation rule</b><span class="when">October 15</span><p>When he talks through copy, he is giving the idea, not the words. Claude writes it fresh. His words stand only when he says word for word, exactly, or lock it.</p></div>
+<div class="term" id="a-fresh-reader-the-cold-read"><b>A fresh reader (the cold read)</b><span class="when">October 15</span><p>An agent that did not watch the piece being written, reading it as the stranger it is for.</p></div>
+<div class="term" id="every-example-finishes-the-thought"><b>Every example finishes the thought</b><span class="when">October 15</span><p>A story doesn't stop at the fact. It goes on to the owner's new life, hands the same picture to the reader, then asks.</p></div>
+<div class="term" id="the-handoff"><b>The handoff</b><span class="when">October 15</span><p>A short document written at the end of a session so the next chat can pick up the work.</p></div>
+<div class="term" id="ray-edwards-s-copy-rulebook"><b>Ray Edwards's Copy Rulebook</b><span class="when">October 17</span><p>Ray's rules, pulled from his two books into one working document and read on every copy job.</p></div>
+<div class="term" id="own-emails"><b>Own Emails</b><span class="when">October 19</span><p>His own list emails from 2008 to 2015, word for word, mined for stories, subject lines and patterns.</p></div>
+<div class="term" id="the-simulation-the-room"><b>The simulation (the room)</b><span class="when">By October 22</span><p>A made-up crowd of realistic people, 12 or 100 of them, who each read the copy cold and decide. It predicts; it does not prove.</p></div>
+<div class="term" id="substance-not-accounting"><b>Substance, not accounting</b><span class="when">October 22</span><p>Fix what changes the audience's experience. Leave alone the arithmetic nobody in the room is doing.</p></div>
+<div class="term" id="revising-is-not-rewriting"><b>Revising is not rewriting</b><span class="when">October 25</span><p>Before a big rework, Claude says out loud that it is about to write new copy, shows his version beside the new one, and waits.</p></div>
+<div class="term" id="no-parenting"><b>No parenting</b><span class="when">October 25</span><p>Don't remind him to check with, or get sign-off from, the people in his stories. He handles that. In project memory; not found in the current instructions.</p></div>
+<div class="term" id="drift"><b>Drift</b><span class="when">Named October 26</span><p>Rules being followed early in a long chat quietly stop being followed later in the same chat.</p></div>
+<div class="term" id="a-tool-call"><b>A tool call</b><span class="when">Used as proof from October 26</span><p>A visible action Claude takes, like opening a document. It shows on screen, so it either happened or it didn't.</p></div>
+<div class="term" id="the-ram"><b>The RAM</b><span class="when">October 26</span><p>A one-screen document, per job, of the rules in force right now. Claude reads it as a tool call before every batch of work.</p></div>
+<div class="term" id="the-governing-docs"><b>The governing docs</b><span class="when">October 26</span><p>The instructions split into three: the instructions, the Doctrine and the Changelog.</p></div>
+<div class="term" id="the-doctrine"><b>The Doctrine</b><span class="when">Split out October 26</span><p>The craft rules by format: emails, lead capture pages, offers, closes, slides. Read only when writing that kind of piece.</p></div>
+<div class="term" id="the-changelog"><b>The Changelog</b><span class="when">Split out October 26</span><p>The history of every version and why each rule exists. It governs nothing.</p></div>
+<div class="term" id="the-copy-load"><b>The copy load</b><span class="when">By October 26</span><p>The reading done the moment a copy job is confirmed: the standard, Ray's rulebook, and the Doctrine sections for that format.</p></div>
+<div class="term" id="the-graduate-tag"><b>The GRADUATE tag</b><span class="when">October 26</span><p>A mark put on a decision in the log when it should become a standing rule, so it gets carried into the instructions at the end of the session.</p></div>
+<div class="term" id="a-skill"><b>A skill</b><span class="when">In use by October 26</span><p>A packaged set of instructions Claude loads only when a job needs it, so it isn't carried in the main instructions.</p></div>
+<div class="term" id="the-four-simulation-skills"><b>The four simulation skills</b><span class="when">October 26</span><p>conversion-sim (would they act), price-sim (which price), skeptic-study (why the ones who said no said no), copywriter-contest (other writers take a run at a working version).</p></div>
+<div class="term" id="the-first-rule"><b>The First Rule</b><span class="when">October 31</span><p>Make him stronger. His words are the floor: never softened without asking.</p></div>
+<div class="term" id="the-intensity-check"><b>The intensity check</b><span class="when">October 31</span><p>A list under the copy of his strongest phrases, each marked kept, sharpened or cut.</p></div>
+<div class="term" id="the-say-back"><b>The say-back</b><span class="when">November 7 to 8</span><p>A reader restates a line in their own words. If it comes back blank, wrong or vague, the line failed.</p></div>
+<div class="term" id="ideal-conditions"><b>Ideal conditions</b><span class="when">November 8</span><p>In a simulation, everything outside the copy is set to perfect (the date works, the drive is short), so the result measures the words.</p></div>
+<div class="term" id="the-second-rule"><b>The Second Rule</b><span class="when">November 8</span><p>The rules always run, on every job, whether he names them or not.</p></div>
+<div class="term" id="the-rules-checklist"><b>The rules checklist</b><span class="when">November 8</span><p>All the rules that apply to a piece, turned into one list a fresh reader scores it against. 39 points on the home page.</p></div>
+<div class="term" id="the-third-rule-the-verdict"><b>The Third Rule (the verdict)</b><span class="when">November 8</span><p>Purpose over process. Every delivery opens with "Would I sign this?"</p></div>
+<div class="term" id="the-line-test"><b>The line test</b><span class="when">November 8</span><p>Three questions asked of every line: what does it mean to the reader, why do they care, does it follow the line before?</p></div>
+<div class="term" id="the-clean-copy-workflow"><b>The clean-copy workflow</b><span class="when">November 8</span><p>The order a page gets made in: purpose first, write to it, the line test, the verdict, his pass, Ray on top, emphasis last, simulation only to compare versions.</p></div>
+<div class="term" id="ray-on-top"><b>Ray on top</b><span class="when">November 8</span><p>After his pass, the copy goes through Ray's rulebook for words and moves, without touching his emphasis or adding facts.</p></div>
+<div class="term" id="emphasis-last"><b>Emphasis last</b><span class="when">November 8</span><p>Bold and highlights go on at the very end, only on results and payoffs, a handful per page.</p></div>
+<div class="term" id="the-repo"><b>The repo</b><span class="when">November 10</span><p>A private GitHub repository that holds every version of the instructions, skills and core documents in one place.</p></div>
+<div class="term" id="lens-skills"><b>Lens skills</b><span class="when">By November 10</span><p>One skill per copywriter (Halbert, Kennedy, Brunson and others) holding that person's method, loaded when their seat writes.</p></div>
+<div class="term" id="the-talk-through"><b>The talk-through</b><span class="when">Date not yet traced</span><p>His long spoken runs about slides or copy, saved word for word to a file before anything else is done with them.</p></div>
+<div class="term" id="cross-project-learnings"><b>Cross-Project Learnings</b><span class="when">Date not yet traced</span><p>A shared document where a lesson from one project is logged so the other projects can use it. Seen once it is an observation. Seen in a second project it is a pattern.</p></div>
+</div>
+</div><script>document.getElementById('q').addEventListener('input',function(){var v=this.value.toLowerCase();document.querySelectorAll('.term').forEach(function(t){t.style.display=t.textContent.toLowerCase().indexOf(v)>-1?'':'none';});});</script>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
