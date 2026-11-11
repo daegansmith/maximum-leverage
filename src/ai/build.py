@@ -230,6 +230,10 @@ def main():
         '<p>Entries come from the session record, not from memory. Where the record and memory disagree, the entry says so.</p>'
         '</div></section>\n'
         f'<section><h2>The Lens: Evolution</h2>\n<div class="prose">{md(lens)}</div></section>\n'
+        '<section><h2>How To Coach It</h2>\n<div class="cards">'
+        '<a class="card" href="coaching/"><span class="ct">What To Say First</span>'
+        '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
+        '</div></section>\n'
         '<section><h2>Glossary</h2>\n<div class="cards">'
         f'<a class="card" href="glossary/"><span class="ct">What Each Named Thing Is</span>'
         f'<span class="cd">{len(terms)} terms the stages use, in plain words, sorted by when each first appeared.</span></a>'
@@ -240,6 +244,18 @@ def main():
         '<a class="card" href="inside.html"><span class="cn">October 10, 2026</span><span class="ct">Inside Each Prompt</span>'
         '<span class="cd">How each prompt moves on its own, drawn as a flow.</span></a>'
         '</div></section>')
+    # ---- coaching page
+    ctext = (ROOT / "src/ai/coaching.md").read_text().strip()
+    assert "\u2014" not in ctext
+    chead, _, crest = ctext.partition("\n\n")
+    clead, _, cbody = crest.partition("\n\n")
+    cbody = re.sub(r"^(#+) (.+)$", lambda m: m.group(1) + " " + title_case(m.group(2)), cbody, flags=re.M)
+    cpage = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+             f'<h1>{html.escape(chead[2:])}</h1>\n<p class="lead">{inline(clead)}</p>\n'
+             f'<div class="prose">{md(cbody)}</div>')
+    (ROOT / "ai/coaching").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/coaching/index.html").write_text(
+        page("How To Coach An AI", "The order to give feedback in, and where a correction has to be written to last.", cpage))
     (ROOT / "ai/index.html").write_text(
         page("The Evolution: How I Work With AI",
              "How Daegan Smith's way of working with Claude changed, wall by wall.", body))
