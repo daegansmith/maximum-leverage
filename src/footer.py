@@ -23,7 +23,7 @@ def footer(is_home):
     return (f'<!--site-foot--><footer class="site-foot" style="{STYLE}">{home}'
             f'<a href="/terms/" {A}>Terms</a> &middot; <a href="/refunds/" {A}>Refunds</a> &middot; '
             f'<a href="/privacy/" {A}>Privacy</a> &middot; <a href="/contact/" {A}>Contact</a><br>'
-            f'&copy; Daegan Smith &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a>'
+            f'&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a>'
             f'</footer><!--/site-foot-->')
 
 
