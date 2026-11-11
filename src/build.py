@@ -81,6 +81,7 @@ def page(title, body, crumbs):
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>{html.escape(title)} | Daegan Smith</title>
 <style>{CSS}</style>
 </head><body><div class="wrap">
@@ -182,7 +183,9 @@ def build_quotes():
         ".q .by::before{content:'\\2014\\00a0'}</style>"
     )
     (out_dir / "index.html").write_text(
-        page("Quotes", body, [("Home", "/")]).replace("</head>", extra_css + "</head>")
+        page("Quotes", body, [("Home", "/")])
+        .replace('<meta name="robots" content="noindex,nofollow">\n', "")
+        .replace("</head>", extra_css + "</head>")
     )
 
     # The home page shows one a day: short, attributed, and fit for a front page.
