@@ -23,6 +23,9 @@ SLUGS = {3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram"
 
 EXTRA_CSS = """
 .lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
 .soft{color:var(--soft)}
 .small{font-size:15px;line-height:1.5;color:var(--soft)}
 .card.plain{border-color:var(--rule);cursor:default}
@@ -168,11 +171,20 @@ def main():
             for t, b in rest)
         prev_l = (f'<a href="../{SLUGS[stages[idx-1][0]]}/">&larr; {html.escape(stages[idx-1][1])}</a>' if idx else "<span></span>")
         next_l = (f'<a href="../{SLUGS[stages[idx+1][0]]}/">{html.escape(stages[idx+1][1])} &rarr;</a>' if idx + 1 < len(stages) else "<span></span>")
+        story_f = ROOT / "src" / "ai" / "stories" / f"{SLUGS[n]}.md"
+        if story_f.exists():
+            # The story sits open at the top; the whole record, the wall included, goes in the drop-downs.
+            sl = [x.strip() for x in story_f.read_text().split("\n\n") if x.strip()]
+            assert sl[0].startswith("# ") and "\u2014" not in "".join(sl)
+            top = (f'<h2 class="shead">{html.escape(sl[0][2:])}</h2>\n<div class="story">'
+                   + "".join(f"<p>{inline(x)}</p>" for x in sl[1:]) + '</div>\n<p class="kicker rec">The Record</p>\n')
+            items = (f'<li><details><summary class="row">The Wall</summary><div class="sec">{md(wall)}</div></details></li>\n' + items)
+        else:
+            top = f'<p class="kicker">The Wall</p>\n<div class="lead prose">{md(wall)}</div>\n'
         body = (
             '<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
             f'<p class="kicker">Stage {n} &middot; {html.escape(date.rstrip("."))}</p>\n<h1>{html.escape(name)}</h1>\n'
-            f'<p class="kicker">The Wall</p>\n<div class="lead prose">{md(wall)}</div>\n'
-            + tl_html +
+            + top + tl_html +
             '<div class="tools"><button onclick="tg(true)">Open all</button><button onclick="tg(false)">Close all</button></div>\n'
             f'<ul class="ol">\n{items}</ul>\n'
             + (f'<p class="small" style="margin-top:28px">From the record: {inline(source)}</p>\n' if source else "")
