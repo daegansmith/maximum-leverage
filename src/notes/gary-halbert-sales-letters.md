@@ -1,0 +1,747 @@
+# How To Write Sales Letters That Will Make You Rich
+@ Notes from Gary Halbert
+## CD 01A
+- The Opening Letter:
+- Dear Mom,
+- I am very busy and I don’t have time to call and that is why I am writing you this letter.
+- Make first paragraph just one sentence. Not a rule but usually a good idea to do it. Put a space between paragraphs.
+- You know, Mom not only are you responsible for my very existence you are also the nourishment that has made my life sparkle. I am under a lot of stress right now, and for some reason, I started thinking about you and it has occurred to me maybe I haven’t let you know recently how much I appreciate you and how much I love you. I especially like remembering you in that pink flowered dress you wore at my fifteenth birthday.
+- Anyway I am going to make it a point to see you just as soon as I can.
+- All my love,
+- D
+- Next Letter:
+- Dear “Mom”
+- If I weren’t such a long way from home, I probably wouldn’t have the guts to tell you this. But, the following has been true ever since I was born. You have made my life a living hell. Every person I know has a mother that is superior to you in every positive way imaginable.
+- You are nothing more than a wrinkled up old bitch and, as far as I’m concerned,
+- the biggest waste of skin God ever created. Speaking of God, as the Lord knows, you are certainly not too mentally swift either. So, just in case your low IQ keeps you from understanding what I am trying to say, let me make it perfectly clear... First subhead, each word capped and bold and centred
+- Eat Shit And Die!
+- Please don’t call or write me. I have no inclination whatsoever to communicate with you ever again.
+- Reluctantly your Son,
+- D
+- PS: Dad sucks too.
+## CD 01B
+- Start of Seminar
+- The letters above were the same in cost of postage and in work to write and prepare. The only difference was the words on the paper. Words are the most powerful thing ion the world. You use words to hurt, encourage, make money, lose a fortune, etc but the power is in what you write.
+- Here is what contributes to people remembering things:
+  - Recently
+  - Frequency
+  - Vividness
+    - How impactful it was
+    - The above example as he made them post it to home
+- We get hundreds of sales messages a day. When someone is selling something such as washing machines, how could you make your letter have the above characteristics that would make it stand out against the competition and make prospects stop and read it??
+- GH has been advised to tone down his newsletter but he has a massive amount of renewals and lifers. You shouldn’t deliberately try to offend people, but you should try to write with great emotional impact.
+- An example in the Difference between getting it right and getting it wrong
+  - The targeted audience is the weight loss market
+    - People who want to lose weight and have bought previous weightloss
+- products through mail
+  - There is probably a list of 3 million hard core buyers in the US
+  - Be an associative thinker rather than a linear thinker
+    - Associative thinkers can to apply principles from one situation to another
+  - Info product - Write a 60 page report that has weight loss information and info that’s important to you.
+    - Convert the report into different media such a 6 cassettes
+    - Also do a video tape before/after story
+    - Put it all into a nice package
+    - The 60 page report costs a dollar, the audio tape would cost $3 and the video tape cost $2 and the case to put it in around $2. Fulfilment package cost = $8. It costs $3 to ship it so total is $11.
+  - The package has a high perceived value
+  - If you could sell a fat person the magic pill that would keep them thin for the rest of their lives, they would pay everything for it
+  - The only thing about the package above that they would care about is does it work
+  - GH then charges $69.95 plus $4 shipping & handling say $74.
+  - 74-8 = $63: CTO (Contribution To Overhead). This is not profit. It’s just the money over and above what it cost you to make it.
+- Cost of sending letters
+- The letter you sent cost $0.63Cents includes envelopes, printing, postage etc.
+  - The cost per name from a list is $0.10Cents.
+  - Always post first class mail or at very least should look like first class mail and that can be achieved with a postage meter. This brings it down to $0.48Cents
+  - The reality is that you can send sales letters at an average of 50 Cents.
+## CD 02A
+- In direct mail people take how much does it cost per thousand.
+- The letter for the fat-loss letter above costs 50cents a piece then it cost $500 to post 1000. A 2% response would yield 20 people.
+- The COT is $63.
+- 20 x 63 = $1260.
+- $1269 - $500 = $769
+- So the profit per letter is $0.768
+- If there are 3 million people = $2,307,000 Profit!!! And that doesn’t even consider the backend
+- The Coat of Arms letter has 361 words and is still posted 30 million a year.
+- You Are In The Arithmetic Business
+- If you don’t get this right, everything else will fall apart.
+- You have to know the numbers. Go with a 2% response out of a 1000.
+- The best way to learn is through apprenticeship.
+- Give Yourself The Best Shot Possible
+- Which will sell better a pill that makes people fat or a pill that makes people thin?? GH considers B2B much easier than B2C.
+## CD 02B
+- The Greatest Sales Ever Written
+- 3687 Ira Road
+- Bath
+- Ohio
+- 44210
+- (good to spell out everything because it gives it more credential)
+- 1-216-666-9356
+- Without writing anything else the reader knows who you are, where you are and how to contact you. It’s comfort.
+- Dear Mr MacDonald,
+- Did you know your family name was recorded with a coat-of-arms (the
+- hyphenated word adds interest to the sentence) in ancient heraldic archives more than seven (if the number is a single digit spell it out, if it is more than one digit use the number) centuries ago. This is also a personal sentence because it includes the prospects name.
+- My husband and I discovered this while doing some research for some friends of ours who have the same last name as you do. This sentence makes it feel like the letter is sent from a real person rather than a company. Too many people try to make their business bigger than it is but people are more comfortable if they feel they are talking to one person. We’ve had an artist recreate the cost-of-arms exactly as described in the ancient records. This drawing, along with other information about the name, has been printed up into an attractive one-page report. Printed up
+## CD 03A
+- The bottom half of the report tells the story of the very old and distinguished family name of MacDonald. It tells what the name means, it’s origin, the original family motto, it’s place in history and about famous people who share it. GH determines where commas go by reading it aloud. Where there is a natural pause he puts his comma regardless of grammatical correctness. The top half has a large, beautiful reproduction of an artists’s drawing of the earliest known coat-of-arms for the name of
+- MacDonald. This entire report is documented, authentic and printed on parchment-like paper suitable for framing. Parchment-like needs the hyphen to work.
+- The report so delighted our friends that we have had a few extra copies made in order to share this information with other people of the same name.
+- Framed, these reports make distinctive wall decorations and they are great gifts for relatives. First this sentence tell them what they can do with it, they are buying wall hanging recognition. The second is a suggestion on why they should buy more and it is sometimes easier for someone to buy under the guise of someone else when you want it yourself. If you can’t get the psychology right then you can’t get the words right. It should be remembered that we have not traced anyone’s individual family tree but have researched back through several centuries to find out about the earliest people named MacDonald.
+- All we are asking for them is enough to cover the added expense of having the extra copies printed and mailed. (see below) If you are interested, please let us know right away as our supply is pretty slim. Just verify that we have your correct name and address (GH would eliminate the word that. You can remove the word that in most sentences and they will flow better) and send the correct amount in cash or check for the number of reports you want. We’ll (friendlier that we will) send them promptly by return mail.
+- Sincerely,
+- Nancy L Halbert
+- P.S.
+- (the first is indented and the rest come to the indentation) If you are ordering only one report, send two dollars ($2.00). Clarity is important especially with price hence the 2 versions. Additional reports ordered at the same time and sent to the same address are one dollar each. If you order more than one you get a better deal and there is a reason you get the better deal. Please make checks payable to me, Nancy L Halbert.
+- Always write it out in your own handwriting. To practise write out letters 10 times to get a neuro imprint in your mind of what a brilliant sales letter is like. If you practise this then it will become second nature to you.
+## CD 03B
+- Always read it out including the address and commas and you catch mistakes and parts where you stumble. If you lose them for a moment you have lost them forever. Your writing should be like someone on a sliding board and sliding off smoothly with no bumps. If there are bumps in your writing they will stop.
+- The best writing is in the National Enquirer.
+- The Only 2 Principles You Have To Get Write:
+- 1) Have something to say
+- 2) Say it clearly
+- Having a personalised salutation triples response and multiplies the profits by 10. It cost $100 to put 1000 letters in the mail. He got an average of a 7% response i.e. 70 people. The average order was for 2 reports i.e. $3. Cost to fill the order was $0.50cents, i.e. $35.
+- Total cost is $135 and total revenue is $210. Making $75 profit on 1000 letters. The backend would provide 20-40% at a much higher number.
+- 30,000,000 million letters yielded over $2,250,000.
+- The more uncommon the name the higher the response.
+- GH Tips
+  - The big secret is to use swipe files.
+  - To make selling easy, sell things people want.
+  - Using questions in an opening paragraph is risky because the answer
+- could be no, or who cares.
+  - It doesn’t matter how long a piece is as long as the prospect finds it interesting and makes him buy.
+  - Forget about people who are not interested in what you are selling
+- If you get this right the most satisfying thing you can do is change people lives in a positive way.
+## CD 04A
+- When writing something and it is noticeably clever then it’s probably bad. Go simpler if necessary.
+- Headline: Who Else Want To Slash Stroke Off Their Gold Game Almost Immediately? Swiped to: Who Else Wants To Cut Strokes From Their Golf Game So Fast That It Will Make Them Laugh Out Loud?
+- When doing headlines ,make sure each words first letter is capitalised and the fonts are all bold.
+- Headline: Amazing Secret Discovered By 72 Year Old Illinois Farmer Can Slash Up To Eleven Strokes From Your Golf Score The Very First Time You Use It
+- It’s a good idea to put either advanced years of young years in copy such as 7 year old girl.
+- Always be reading out loud what you writing to get it right.
+- Don’t put exclamation marks after t’s because they look too similar.
+- The headline is good because it is tied to a person i.e. the 72 year old farmer. People are more likely to buy if they feel they can reach out and grab you
+- Subhead: Imagine...Each of Your Strokes Will Be Ask Accurate As Clockwork Blind ads always outpull the specific ads in the opportunity market because they will always be disappointed when they find out they have to so work. They want to believe its a magic pill. Don’t get specific until they invest in it.
+## CD 04B
+- Amazing Secret Discovered By
+- 72 Year Old Illinois Farmer Can
+- Slash Up To Eleven Strokes
+- From Your Golf Score
+- The Very First Time You Use It
+- Imagine...Each of Your Strokes Will Be Ask Accurate As Clockwork
+- Main headline is 24 point Times New Roman and bold. The main subhead is in italics, 12 to 14 point
+- GH is leading with a benefit here before reminding them of their problem. He will usually lead with the problem first bit golfers are maniacs so he doesn’t need to do it. Major point:
+- 1) Don’t attempt to write the perfect ever. Just get it done.
+  - Don’t let touching it up as an a excuse not to take action
+- Salutation: Dear Friend Don’t use Dear Fellow Golfer because it will make them think, how does he know I’m a golfer if they don’t know you.
+- If they know you Dear Friend and Subscriber/Member is ok.
+- Anything that can be translated incorrectly, will be.
+- Dear Friend,
+- If you are dead serious about lowering your golf score this will be the most important letter you will ever read. The reason GH has used it is because it’s a proven opening sentence.
+- Here’s what it’s all about: My name is Vern Stephenson and I was a full time dairy farmer and a part time golfer. One of my hobbies was tinkering around with golf clubs trying to figure out ways to make them work better. I tried out all sorts of ideas
+- until...one day...I hit the jackpot! The exclamation mark is after the ‘t’, he might remove it later
+- I swear, I’ve never seen anything like this. It’s so simple I can’t believe nobody ever thought of this before. To tell the truth, I wouldn’t have discovered this myself except for one day when I had a very curious “accident”.
+## CD 05A
+- I was sitting in my workshop (my wife makes me keep it in the basement). Humour in selling never works but it does improve the learning process.
+## CD 05B
+- You need to look at your marketing as a package with numerous parts.
+- You need to look for elements that credentialize or dramatize your copy. I was sitting in my workshop (my wife makes me keep it in the basement) when all of a sudden a question popped into my mind.
+- Subhead: “What CIub Uses Up More Strokes Than Anything EIse?” (putting
+- subheads in quotes increases response)
+- So, I did some research and here’s what I found out:
+  - On the average tee shots amount to 17% of all strokes you will ever use
+  - Fairways shots account for another 7%
+  - Approach shots account for another 12%
+## CD 06A
+- But, guess what? The strokes you use up while putting count for a whopping 67% of your total score. He just made this up but you shouldn’t allow a pause in writing just to find the right number. It will disrupt the flow of writing and we can get it at the end.
+- Why is this? Well, until now there has been a “fatal flaw” built right into the design of every putter ever manufactured. Because of this flaw no one (not even the top pros) has been able to rely 100% on their putting accuracy. In fact, until now much of a golfer’s putting score has been the result of nothing except sheer luck. Remember the Masters’ tournament in 1993 when Ferdy Ditmar had a seven
+- stroke lead going into the final round and them blew it by three-putting four holes in a row? Same thing happened again at Pebble Beach just last year when Edward Buckley missed an eight inch uphill put that cost him $350,000.00 dollars. Golfers, even the best of them have had trouble with their putters, ever since the game was invented. Now At Last The Problem Is Solved
+- I have invented ‘by accident’ a brand new type of putter that is so reliable I worry about the PGA making it illegal. When you look at this it looks almost exactly like any other top of the line putter. You see the difference is not on the outside....it’s on the inside!
+- Every putter in the world except this one is designed and ‘weighted’ so that no matter how skilled you are it will often ‘misfire’ almost as though it had a brain of it’s own.
+- The Fatal Flaw
+- Blah blah blah, squiggly squiggly squiggly etc etc etc 3 paragraphs go in here
+- The Amazing Solution
+- Here’s how my new putter is different.. Blah blah blah, squiggly squiggly squiggly etc etc
+- More Blah blah blah, squiggly squiggly squiggly etc etc. The bits that Jeff Paul say go in here.
+- What does all this mean?
+  - You will instantly reduce the number of greens that you ‘three-put
+- (or more) by at least 57%!
+  - You will laugh with delight every time you curving downhill put that
+- would scare the daylights out of any other golfer
+  - 
+- You will line up and hit your puts so much faster and more
+- accurately you’ll make your golfing partners crazy with curiosity
+- It took me four and a half years of research, $150,000.00 and a near fatal accident to come up with the design of what this putter is so unique the US Government gave me a patent on it. I got that patent on September 12th 1995 and the patent number is 3509WJ-463311.
+- Right now very few people know about this new putter but, about three
+- weeks ago I gave half a dozen of them to some of my closest friends. After using this new putter for three weeks here’s what they have to say:
+- Quote:”blah blah blah” Put in space for 7 quotes
+- Are my friends better golfers than you?
+## CD 06B
+- Are my friends better golfers than you? Probably not. Most of them, until they used my new putter, had never broken 100 in their golfing career. And here’s what’s funny even though they all putt now better than top pros they still look like hackers when they use their other clubs. The job here is to get it done. You need to concentrate the thrust of this and fine tune later. Just get it done. Don’t be critical in the process right now. Knit pick later.
+- Listen: I make no claims about changing the entire game of golf. I still haven’t figured out a way to improve drivers, irons, wedges and so forth. All I have come up with is an incredible new putter that I can guarantee will take a dramatic number of strokes of that part of your game.
+- But let me tell you, taking 50% of the strokes you use to putt out a green off your score card will make a bigger improvement in your golf score (and make that improvement faster) than anything else you can do.
+- My friends have tried to stop me from ‘going public’ with my new putter. But I don’t care. This is the best damned thing I’ve ever come up with and I want the world to know about it while I am still around to enjoy the compliments.
+- Here’s How You Can Get One
+- But hey, before I go on let me explain something to you in advance so you don’t have a heart attack when you find out how much you have to pay to get one of these babies. The material this putter is made out of is blah, blah, blah
+- For each one that is manufactured I have to use the foetus of 13 unborn albino raccoons to make just one of these clubs. Not only that, the machine I use to make them had to be designed from the ground up in order to accommodate the unique combination of resin albino raccoon foetus and baboon navel lint that must be used in the creation of each of these putters. This is price validation and just fill in the blanks.
+- Therefore there’s no way I can sell one of these for less than $397. I know that’s a lot of money and I don’t blame you if it’s more than you’re willing to pay. In truth probably the only people who will be willing to buy my new ‘magic putter’ are those 15% of golfers who are so serious about the game they will be willing to shell out this kind of money.
+- That’s the bad news. However the good news is
+- My Putter Comes With The Strongest Guarantee Offered In The History Of Golf Here’s the way it works: Go ahead and call 1800-000-0000 and use one of your credit cards to order the putter. It will be shipped to you immediately by overnight priority laser express first class mail. You’ll have it within 24 hours of the time that you make that phone call. But guess what? Even though you’ll already have the putter I won’t process your credit card order for 60 days.
+- That means you can use the club, test it, show off in front of your friends and actually play 20 to 30 rounds of golf with it with no financial risk whatsoever. If during that 60 day period you decide you don’t want to keep this unbelievable new putter just send it back to me and your credit card order will never be processed.
+- If you prefer you can order by mail. All you have to do is write your name and address and the words ‘Airborne Overspin Putter’ on a piece of paper and send it with your check or money order for $397 to:
+- Mother Teresa Golf Company
+- Vatican Drive
+- Ohio
+- 446
+- Checks and money orders should be made out to ‘NTGC’ and it is not a good idea to send cash.
+- Sincerely,
+- Verns Stephenson
+- PS If you decide to order by check don’t forget to post date it for 60 days ahead. Points:
+- 1) Arithmetic
+  - There are 1.5 million mail order buyers of golfing equipment
+  - The cost of mailing 1000 letter is $500
+  - The clubs cost $397
+  - The cost to fill an order is $40
+  - Therefore the money CTO is $357
+## CD 07A
+- 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- 500/357 = 1.4
+- We need 1.4% response to make it work
+- Just say we get .2% response instead
+- So thats 2 orders per 1000 = 357 x 2 – 500 = $214 profit
+- There are 1,500,000 golfers to mail to so that is a profit of £321,000
+- GH would test with 5,000 letters first
+- He reckons the promotion will pull around 5 orders per thousand which is a 0.5% response
+- This would pull in a profit of $1,970,000
+- By stating that you won’t process their credit card for 31 days will typically triple response. The refund rate will go up but look at the maths below:
+- So we then sell 15 clubs but a third come back which gives us 10 sales that stick. This equates to: 357 x 10 – 500 = 3070
+- This comes to 3070 x 1,500 = $4,605,00
+- Lesser Mortal Shit
+  - You shouldn’t worry about getting financed to fulfil orders
+    - Get vendors to sit and wait
+  - You should worry about making the sale
+    - It’s the most important part
+- If your refund rate is low then you are not selling hard enough.
+- End of Day 1 Notes
+  - Shoot fish in a barrel
+    - You don’t need anymore challenges go for easy stuff
+  - Concentrate on making the sale and nothing else
+  - ARITHMETIC RULES
+## CD 07B
+- DAY 2
+- One of the problems about being a novice is worrying about the wrong things. An example is scuba diving, most people worry about getting eaten by a shark which is quite difficult because of the effort required to attract a shark and get it to bite, you will actually die due to drowning or ascending too fast.
+- The very first steps you should take:
+- 1) Rid yourself of all previous bad investments
+  - Going to work to a shit job
+  - Bad wife
+  - Shit business colleagues
+  - Bad mindset
+  - Remove the mental investment in your products or services
+  - Remove preconceived notions of what to do
+- 2) Buy a subscription to the SRDS
+  - Go through the lists and do the arithmetic
+  - You want the lists that includes people who already buy from mail
+  - The list is the most important ingredient and the most likely reason you will fail because you do not have an audience that write a check by mail
+  - Don’t pioneer something that you think they should want, sell what they want.
+  - 
+  - 
+- Factors in a mailing list
+  - Buyer by direct response
+    - Unit of sale – the higher the better. You don’t want to try and sell
+- something for $300 to people who only buy $10 products.
+  - Frequency – it’s better to sell to someone who has bought 15 books
+- rather than 1
+  - Recently – the more recent the purchases the better
+- This will help you monitor and gauge markets
+## CD 08A
+- 3) Choose a market to work
+  - If you are looking for something to sell – sell information
+    - CD, DVD, Seminar, etc
+    - Everyone is how to hungry and looking for expertise
+    - What you learn in school is not that useful in the real world
+    - It has a high mark up due to the info and expertise
+  - Go to a book or DVD store and buy a related product that your list wants 4) Write a sales letter about that book that you bought
+- 5) Order 5000 names of the chosen mailing lists
+  - Get them on peel and stick labels
+- 6) Get 1000 envelopes and put labels on them and mail your 1000 letters
+  - The results dictate if it’s a runner or not
+    - Zero or a couple of results indicate you should drop it and start
+- again.
+  - Really excellent results (say 7% response = 70 x 44 = CTO $3080.
+- Send the money back. This is just a test but we have learned that
+- this is a winner and these people respond to a certain product. Now
+- put together your own product and sell it.
+  - The middle results should yield a break even or over then you
+- make a judgement call.
+- 7) The big losers won’t mail the 1000 names until they get it perfect – just do it
+  - Do this as quickly as possible and don’t worry about perfecting it
+  - Doing this quickly makes it real
+  - You don’t have to get it right – you need to get it moving
+## CD 08B
+- You can either be afraid and frozen or scared and moving.
+- A control is the best package you have and compete against.
+- Steps in Writing A Sales Letter
+- 1) Find one or more winner template letters that relate to what you sell
+  - Letter copy works in ad copy
+  - Ask the SRDS for the letter that created the list
+  - Create your own swipe file
+  - Pay list brokers on net names after undeliverables (nixies).
+    - 7% is normal.
+    - Get a usage report from list brokers and continuations. It is
+- interesting to know if someone rented the list but never came back
+- 2) Mail your first sales letter in a number 10 envelope
+  - Use a white envelope
+  - Put your name and address on your corner card
+  - Don’t use a window envelope on your first mailing
+  - Use white peel & stick labels for your first 1000 test mailing
+  - Use a first class stamp
+  - Don’t use teaser envelope copy for your first mailing
+    - Don’t give them a reason NOT to open it
+- 3) Headline
+  - Capitalised, bold & on top of the letter
+  - 24 point size & Times New Roman
+  - You can make the headline take up the top third of the letter
+  - The Amazing Stock Markets Secrets Of A Financial Genius, Who Has
+- Made A Profit Every Single Year For Seventeen Years In A Row
+## CD 09A
+- Joe Polish headline: The Nerd From Arizona Who Discovered A Secret Way To Make Money Whilst Working At His Kitchen Table...And He’s Been Doing It For The Last 17 Years In A Row
+- GH didn’t mentioned carpet cleaning because he is selling money making
+- opportunities
+- The Amazing ‘Inside Secret’ Anyone Can Use (Who Knows How) To Make 100%
+- Certain The Most Valuable Piece Of Paper You Will Ever Own Doesn’t Get Destroyed. Write out the headlines of the letters he gives. You can also type them too to get a mental imprint. Then write every first sentence in those sales letters.
+- GH favourite first sentence ever:
+- Dear Friend,
+- If you would like to lose up to 63 pounds then here is how I did it in Japan and why I think you can d o it in America."
+- Dear Friend,
+- Would you like a spare t me money-making business you could run from your home. If so, then let me tell you about the 87 different home-operated businesses owned by people here in Japan that are fantastically profitable and why I believe any one of them would make even more money in America.
+- Then go to the end of the letters and go to the call to action and write out every different call to action.
+- Write out:
+- 1) Headlines
+- 2) First sentence
+- 3) Calls to action
+- Your mind, voice and hands need to talk in unison.
+## CD 09B
+- Exercise:
+  - Get people to ask you questions about your product,
+  - Get them to endorse you to their friends,
+  - Ring the friends and record the calls and after 5 or 6 times you will get a perfect pitch on tape and transcribe it.
+  - Make copies of it
+  - Go through the transcription and highlight every benefit.
+  - Get the highlights and put one each in index cards.
+  - Go through another transcript and highlight every statement of fact. Examples: we test for 602 food allergies; has been used and tested by 3980 people
+  - Put one fact statement on a separate index card
+  - Go through transcription and highlight proof or credential statements. Example: used by 17 hospitals worldwide, discovered by award winning doctors, over 1239 testimonial letters, member of chamber of commerce, backed up with guarantee, etc
+  - Put each proof statement on an index card
+## CD 10A
+- Creative writing exercise:
+- Jack in the Beanstalk. Write the words fee fi fo, then write them again fee fi fo. Then mix them up fo, fee, fi. Then repeat and mix up some more:
+- Fee fi fo
+- Fee fi fo
+- Fo fee fi
+- Fee fi fo
+- Fi fo fee
+- Fo fee fi
+- To be a good copywriter you need to push yourself to be expressive such as write every day. Start with this exercise before you write to loosen you up.
+- Exercises So Far
+- 1) Written out all the headlines in the letters
+- 2) Written out all the first sentences
+- 3) Written out all the call to action
+- 4) Written all the benefits on index cards
+- 5) Written all the facts on index cards
+- 6) Written all the proof on index cards
+- Body Copy
+  - We start by writing the bullets first.
+  - Take the index cards and read them aloud
+  - Read John Carltons bullets aloud
+  - Copy Carltons style for your bullets and expressive as he has
+  - Example: more energy
+  - John Carlton version: Plus you'll feel a constant and endless surge of animal-like energy giving you such a raw look of power and intensity that conversation will stop when you enter a room.
+  - Another John Carlton one: How a secret five inch change in your hip
+- Placement translates into massive power for your stroke. Not one pro in a thousand even suspects the potency of this simple adjustment.
+  - That is changed to: How to eliminate a certain and undesirable food group from your diet (without ever craving it again) that will increase your natural metabolic energy by 57%
+  - How to avoid the energy sapping power of ordinary foods you are unknowingly allergic to and still eating.
+## CD 10B
+- You need to know in rank order the points that your target market is concerned about the most. That sets out the order of your bullets.
+- Statistics are available on what people will buy to prevent problems in their lives. This is how this will help you:
+- Here is how this can help you against....
+- Next step is go through the master piece sales letters that are most likely to be a good template for your service. Find 3 or 4 of them. Write them or type them put
+- word for word. During this process thoughts will come to you in flashes about your own product so have another pad to write them down.
+- At this moment in time you should back away from the job and not write anything down. What you should is keep them in your head and allow the tension of not being able to express them to build until you are ready to burst.
+- You will know when the time is right and you sit down and write it all as fast as you can forgetting about mistakes. You get a blinding burning piece of raw copy and don’t hold back anything. Fast is the key.
+- Now you chill again. Then think of the letter that makes the best template letter and sit down with the one you just wrote and all the transcripts and index cards. Now you impose the order.
+- Step 1 – write a headline. Something in all that stuff should leap out and be the headline.
+- Don’t ever think is a powerful combo of words.
+## CD 11A
+- Go through a series of headlines after writing down your main benefits and the headline should pop out at you.
+## CD 11B
+- Don’t give reveal too much with your headlines. There should be enough curiosity in there to get them to read the whole piece.
+- Tricks
+  - Your backend letter should go out immediately before the fulfilment package.
+    - It should be a welcome letter that says thank you
+    - It should give them post purchase reassurance
+    - Give them an opportunity to buy more
+    - Could be a better version or something related
+  - Send the letter with a grabber
+    - The dollar bill is best
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Follow up the letter a few days later with a telephone call
+- Make sure your copy talks the talk of the prospect
+  - Do your research
+- Get a subscription to DM news and Reporter of Dm
+  - Get vendors from these sources
+    - Get quotes from vendors
+- How to get bumps in response
+  - Include more than one order coupon in the package
+    - Upsell on order coupons
+- The correct way to state guarantees
+  - Give them a conditional double your money back guarantee providing they use what you sell
+    - Must be a high ticket item
+    - Make it easy for them to respond by writing a letter with their letter head asking for the refund
+- Refunds
+  - People decide they want a refund as soon as they buy
+    - The longer the refund periods the fewer refunds you will get
+- Double day
+  - You generally get half of what your gonna get on day 12 after you send your mailing. Count every day including weekends.
+    - If you don’t get good results in 21 days then you are not going the get good results at all.
+    - You will get around 90% what you’re going to get on day 21
+- Porcupine Theory
+  - The female porcupine comes into heat for 15 minutes per year
+    - People go with their buying decisions in cycles.
+    - People who are interested in making more money have a 3 month period
+- where they really want it.
+  - Sam Fishbein furniture shop advertising.
+    - Recency is everything for success, someone who bought last week is a
+- much better prospect than someone who b ought 18 months ago
+- Bumping response
+  - Use multiple stamps instead of single stamps to increase response
+    - Use large commemorative stamps to increase response
+    - Print your letters single sided instead of front-back to increase response
+    - Include multiple order coupons
+    - Use a sturdier the envelope and better quality envelope
+    - Highlight significant things with a yellow marker
+    - Sign with a blue signature
+  - 
+  - 
+  - 
+  - 
+- The optimum temperature for writing is 67 degrees
+- The kind of music you want to listen to is baroque
+  - Mozart
+    - Bach harpsichord
+    - The volume should be just above the ambient noise that would otherwise creep into the room
+    - It should be barely part of your consciousness but drain out traffic noise, etc
+- Compiled lists
+  - A compiled list is like a list of dentists in new York. It’s just a section of society
+    - Use customised headlines to increase response. For example use the
+- word dentists for the dentist list
+- End prices with a 7
+## CD 12A
+- Screaming Differences
+  - It’s all about using the right mailing list
+    - Use the wrong list and it just won’t work
+  - The headline or first sentence of the letter or ad
+    - Get this wrong and it’s screwed
+  - Showmanship & grabbers
+    - Money
+    - Dollar bill
+    - Penny
+    - Losing horse betting ticket
+    - 2 dollar bill
+    - Foreign money
+    - Photograph of letter writer (I’m not sure that we have never met but we do share a common interest plus I think it’s sorta nice if people have an idea what the person looks like when they do business with them. Anyway
+- here’s why I’m writing....)
+  - Photograph of a beautiful woman. Both genders like to look at them. Don’t use a photograph of a man. Be careful with this. Use photographs that are exciting and are focussed on her face. Use blond and blue eyed women.
+  - 
+  - 
+  - 
+  - 
+- Tearsheet
+  - Looks like a newspaper ad or post it note on front sheet of letter
+    - Hi J – Great Info, R
+    - Make the initial the same intital as the letter writier
+- Delay payments
+- Endorsed mailing
+  - You are not selling to strangers so the response is dramatically increased Guarantee
+    - He who has the strongest guarantee wins
+## CD 12B
+- Multi level marketing sucks.
+- Gary Halbert Newsletter Sales Funnel
+- 1) Rents a list
+- 2) Sends them a sales letter that offers 2 videos & 12 free reports with the trial subscription. They don’t get charged for 31 days.
+- 3) They ring a 800 number
+- 4) They then immediately get a welcome letter with a dollar bill and gives post purchase reassurance. He asks them to frame the dollar bill for posterity. 5) They then get an envelope with seven past issues
+- 6) They then get the life time subscription letter
+## CD 13A
+- Day 3
+- Always segment your lists. Try race, age groups, blood types, cars they own, etc. Ways To Make Your Ads Better
+- 1) Do something that involves drama, theatre and showmanship
+  - A letter from accountant or lawyer saying that the sale is due to tax returns
+    - Letter from interior designer
+    - Get them to bring identification to get them involved
+    - Public apology for people who couldn’t get to the sale so have the sale again
+- -
+- Send a pending mail letter. See example page 219 with the
+- mentioned offensive photograph
+- 2) Has to be a reason why for the sale
+  - Example is fire damage sale
+    - manufacturers closing down and you got it dirt cheap.
+## CD 13B
+- GH uses plain envelopes but sometimes does priority mail.
+- The offensive photo doesn’t exist in the follow up letter.
+- The biggest reason why people are not successful is because they don’t do anything at all.
+- If you are to choose just one medium then use direct mail.
+- The best lists come from the crappiest direct marketing campaigns because only the hungriest fish snap at the crappiest bait.
+- Waste Circulation
+- Every demographic reads the daily newspaper. The newspaper companies
+- cannot segment for you. For example, you only want to advertise to all the old people who read the paper. They will charge you for advertising to everyone even though old people only make up about 3% of their readers. This is called waste circulation. You can avoid this with mailing lists and direct mail. Test with 1000 first to see if it’s a runner.
+- You can use your promotions forever because only people who are
+- interested in what you are selling will read it.
+- Offer bribes to get them in the door especially for high ticket items.
+- Segways
+- A segway is a transition piece from something that catches your attention to another area of attention. It needs to be logical and make sense.
+- Example: The dollar grabber and the copy that goes with it is a segway.
+- Grabbers are the best way to do it.
+## CD 14A
+- Connect a story with the grabber and transition into your piece into what you are selling.
+- Band aid: example page 225
+- Tweezer: example page 226
+- Don’t try to convince people to buy what you have, instead sell them what they want.
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Believablity & Credibility
+- Testimonials
+- Statement from an accountant
+- Endorsement (this is the biggest one of all)
+- Specific information that is checkable
+- Checkable details of personal and business history
+- Magazine article
+- A photograph of you
+- Copy of a business license
+- Personal story
+- A phone number and your real address
+- Specific test results
+- Copies of bank statements and tax returns
+- Guarantee
+- Use if a celebrity (love boat celebrities are best)
+- Reflected glory – I used to work for such and such
+- Photographs of customers
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Celebrity look a like
+- Show that you identify with them – empathy & resonance
+- Sworn statement
+- You write an article and run it in a paper – here’s what people read about me in the New York Times
+- Give names, addresses, telephone numbers, etc for testimonials. Set up a prerecorded message for them If you have any questions you can call me at - you want to give them the idea that they can reach out and get in touch with you
+- Give them a free sample such as a free report, past issues of newsletters, etc Free trial – I won’t cash your cheque for 31 days (this is huge)
+- Payment plans – break it up into monthly instalments for later sequences Patent it and show it.
+## CD 14B
+- 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+- Have an unconditional guarantee and a conditional double your money back guarantee
+- Put down credentials and letters after your name
+- Admission of flaws – makes you more human and non threatening
+- Never use a spell check in your writing
+- Hit them with multiple media and tell them to look for this ad
+- Plain talk
+- Years you have been in business
+- Trial run with no payment
+- Photo of yourself – a free standing photo is more compelling
+- If you are going for radio just use stations that have talk shows or country music on it because they are the only things people actually listen too.
+- Humour is good for creating an educational experience but not when trying to make a sale. Just avoid using it.
+- When you want to get a customer back you should treat it as a new sale. Long copy, very appreciative message reminding them of the benefits they had previously and have good premiums.
+- Sales letters are better than magalogs. They are usually only used when you are mailing your list a lot and need a format change to freshen it up.
+## CD 15A
+- Best day to mail first class is Saturday because it arrives on Tuesday. Days you want it to arrive are Tuesday, Wednesday or Thursday. Monday and Friday are a no go because they are transition days.
+- How To Get Niched Prospects Who Don’t Read Trade Magazines
+  - Rent the mailing list
+  - Write a blind mystery letter to a carpet cleaner asking them to ring a number
+  - The letter includes the picture of an attractive woman
+  - The phone number has a real woman who gets their details and then you
+- send your pitch. Page 238
+- or
+  - Send the dollar letter
+  - Then send the penny letter
+- or
+  - Cut their ads out of the yellow pages and send them to it.
+- or
+  - Dramatize your benefits
+  - Have more stories
+  - Don’t use a lead gen funnel because the carpet cleaners are already at the second part of the funnel
+  - Just keep hitting them with different format mailings
+- Postcards
+  - Don’t use postcards
+  - Rather send a letter telling them to expect the next letter like Sam
+- Fishbein
+- Legal Problems and Mail Fraud
+  - You cannot be totally legitimate with your business
+  - Innocence is no defence
+  - Always tell the truth
+    - You can exaggerate it but always tell the truth
+  - 
+  - 
+  - 
+  - 
+  - 
+- Always fill your orders as quickly as you can
+- Answer questions as quickly as you can
+- Give refunds as quickly as you can
+- Hire a lawyer and never talk to government people yourself
+- Your request for an interview is denied.
+- Only talk to them if they subpoena you and give you immunity
+- Don’t use tax havens to hide all your money. Pay your taxes but put your money offshore so they cannot get it. Use the Cayman Islands or
+- Switzerland
+- Flow of a Sales Letter & Sequence
+  - AIDA
+    - Attention
+    - Interest
+    - Desire
+    - Action
+  - GH uses a closed face envelope. The letter is seen first with the top third being the headline. Behind that is the reply envelope and then the order coupon. He puts lift notes/letters on the back of the order coupon. This is yellow so it stands out.
+  - The stock market example letter on page 246 is quality
+  - If you are ever stuck use ‘picture this’
+- CD15B missing so this is from the transcription
+- The reasons people will buy from you are in the bullets. The rest is there to keep their attention, get their interest and prove it and validate it.
+- Make your sales letter look like GH newsletter.
+- The Amazing Stock Market Secret Of A Financial Genius Who Has Made A
+- Profit Every Single Year For 17 Years ln A Row
+- There should always be a PS and if you cannot think of anything else to say simply restate the main benefit and say if you act now you too can.....
+- If going for enquiries, getting them to respond by phone is by far the best option.
+- If sending the teaser letter that sets up the next one, have a short gap of three days between mailings.
+- You should be mailing your clients at least once a month minimum.
+- Two Paged Newspaper Ads
+  - You need long copy ads to sell higher ticketed items
+  - The best way is to have one on the left and the other one on the right placed in the middle of the paper but it is very difficult to get it that way as that space is usually editorial
+  - Another way is to start on an odd numbered page and get them to turn
+- the page
+  - Use a pull out ad in that the headline covers 2 joined pages for
+- example page 18 & 52 so the headline stretches across the two pages
+- and gets the person to rip it out to read it. Plus you get 2 better
+- chances at grabbing them. There needs to be a little blurb in the gutter beside the headline that lets them know to move across to the other
+- page.
+- There is part of his subscription ad on page 253.
+## CD 16A
+- When someone rings in for the trial subscription of the Gary Halbert
+- newsletter page 261 has the post purchase reassurance letter before
+- the main package.
+- He offers a bribe for the lifetime subscription.
+- Here is the letter:
+- April 16, 1996
+- John Q Everett,
+- 123 Main Street
+- Massillon
+- OH 44646
+- Dear Mr. Everett.
+- As you can see I have attached a nice fresh $1.00 to the top of this letter. Why have I done this? Actually there are two reasons.
+- One. First I have something very important I want to say to you and I needed someway to make sure this letter would catch your attention.
+- Two. Secondly since what I 'm writing to you about concerns money, I thought a single dollar bill as an eye-catcher was a good idea.
+- Here's what it's all about.
+- Today you read my ad in the "Rocky Mountain News"("Free Video Tapes Reveal 11 New Ways To Make Extra Money In 1996") and you called my office to order a trial subscription to my newsletter called "The Gary Halbert Letter." So before I do anything else, I want to say...
+- Thank You!
+- (if it isn’t in response to the ad then it says today you rang my office to order a trial subscription)
+- Thank you.
+- I really mean it. You know, it seems to me not enough business owners
+- appreciate their customers. I'm different. I do appreciate my customers. Very very much. Therefore, I want to say thank you for giving me the chance to prove myself to you and I especially want to thank you for having enough of an open mind to be willing to learn something totally new.
+- You may not know it yet, but your decision to start getting my newsletter is, from a financial point of view, going to turn out to be one of the smartest moves you've ever
+- made. Why? Simply because my newsletter delivers more hard-core, real-world money making info than any other publication on earth.
+- In fact I have received more than 3,000 letters from people all over the world who say my newsletters have changed their lives. And every single day I get more letters. Some of them are from little people who are just getting started and many are from VIPs who own or manage some of the largest multi-national corporations in the world. Some of these people have made thousands and many have made millions by
+- using the techniques, strategies and inside secrets that you are about to learn by reading my newsletters.
+- Listen: In the ad that got you to sign up for my newsletter (and that would be changed to in the letter you received in a direct mail campaign) promised to send you two free video tapes and 12 free reports which will teach you some brilliant new ways to make extra money in 1996. Well, those free video tapes and free special reports have already been sent to you. They were sent today. Watch for that package It’s coming in a large blue Postal Service Priority Mail envelope. It should arrive any day now. You might get it before you get this letter and the material it contains can change your life. In the meantime, I have decided to go the extra mile and I am sending you some valuable material which, you did not even know you were going to get.
+- You'll find this material inside the brown sealed envelope enclosed with this letter. What that envelope contains is seven back issues of my newsletter. One of them has a floppy disc with it which I am sending you as a free gift, and, you should read those back issues immediately.
+- Why? Simply because they will help you get-up-to-speed and each of those back issues contain proven, money-making ideas and strategies that, anyone of which, can help you achieve total financial freedom for the rest of your life.
+- Why am I sending you all these back issues and why am I sending them free? The answer is simple: You see I believe...
+- You Should Treat All Your
+- Customers Like Gold!
+- Anyway, also enclosed with this letter is a sealed, white envelope that contains info that may or may not be of interest to you. What happened was, I gave an incredible seminar at the Century Plaza Hotel in Los Angeles and, people all over the world are
+- raving about it. Many people are begging me to do another seminar like that. But I won't. I 'll never give another seminar like that one because it just took too much out of me. It was draining. Yes, I did make a lot of money from that seminar. I charged each person $6,2500.00 and it was sold out.
+- But I don't care. There's no amount of money that could make me risk my health by working that hard again.
+- However, I have figured a way a few people who are interested can get the tapes of that seminar as a free gift. Actually, I'm never going to straight out sell those tapes because, even though it might sound conceited...
+- I Consider Them Priceless!
+- Would you like to have the tapes of that enormously valuable seminar? Look, if you're just a dreamer or a lazy "wanna-be", those tapes will do you no good whatsoever.
+- On the otherhand, if you are serious about making serious money, well then, those tapes can be your own personal passport to riches.
+- In any case, you've got a lot of very interesting reading in front of you and it’s time I stopped babbling so you can get started.
+- Thank you for your attention.
+- Sincerely
+- Gary C Halbert
+- PS: By the way, as far as the dollar bill is concerned it’s yours to keep and you can whatever you wish with it, you can yourself a beer or give it to charity or whatever but you know what I hope you do with it? I hope you frame it. Why? Simply because someday somebody may see it hanging on the wall and then maybe you'll be able to say, 'Well that's the first dollar bill I ever received because of my association with Gary Halbert and since then I've made over a million more. Don’t laugh, it could happen just like it already has for many other people.
+- P.P.S I don't completely trust the US postal service therefore I will have my secretary call you in a few days to make sure you receive everything I've sent to you. Peace.
+- Rules of Writing a Newsletter
+  - Be an expert
+  - Always have your name in the title of it
+  - Have it contain nothing but words
+  - Make it look like a personal letter
+  - Mail it first class
+  - Never contain paid advertising
+  - Never start believing your own PR
+  - Never lie to your clients
+  - Always be true to yourself
+- A lifetime subscription costs $2855.
+- He also has an upsell letter with the main package of the videos and reports.
+## CD 16B
+- Big Marketing Secret
+- Give more value to the people you are selling to. It pays off both personally and financially. Don’t pursue things just for the money. Peruse things that ignite your passions. When things get tough it is worse when you are not passionate about what you sell. If you follow your heart then your enthusiasm will come across in your selling.
+- Improve your image but more importantly improve your substance.
+- Blind ads get a better response than an ad that tells them what they will get.
+## CD 17A
+- When testing the 1000 prospects for selling diet products make the price as low as possible, make the guarantee as strong as possible and have them send no money for 31 days. Hire the hottest list possible and if it doesn’t work then it’s the letter or the product.
+- To find out whether it’s the letter or product, an easy way is to call them and ask after you send them a dollar bill letter so you can say I am such-and-such and I sent you a letter with the bill, did you receive it, you can’t be too careful about sending
+- cash in the mail and did you read it. 3 yes answers before you ask why they didn’t respond to the offer.
+- How To Get Big Money Clients
+- Write a full page ad describing your prospects ideal situation when they avail of your services, get it expertly wrapped and framed in a silver frame glass picture. Courier it over to them.
+- How To Make A Quick Million
+- 1) Read the SRDS manual to get a hot list with at least 15,000,000 names in it 2) Find all the pieces and ads that sell to that list
+- 3) Using those ads find all the hot buttons
+- 4) Get as much info as you can on the subject
+- 5) Get a list of things from those products that match the hot buttons from the ads 6) Write a killer sales letter using the process mentioned earlier
+- 7) Test the 1000
+- 8) If you get good results out an ad in Investors Business Daily
+- 9) Send interested parties the dollar bill letter explaining how you did the whole thing and offer a share of the profits
+## CD 17B
+- Don’t skip on copywriters, pay them well. Make them feel enthusiastic about being part of your life. In fact treat everyone you want involved in your projects like royalty. It will come back in dividends for you.
+- Never use a PO Box because it looks like you are hiding behind it.
+- Besides testimonials get an attractive celebrity woman to use her name and likeness and make the letter come from her. All it needs to be is an attractive woman with a good segway. Use a stand alone photo.
+## CD 18A
+- Make people visualise the reward and take all the risk out of giving it to them. Make your motives transparent when you are trying to sell someone something. To get testimonials ask for them, ask them to describe a benefit and bribe them for it.
+## CD 18B
+- People treat you the way you teach them to teach you.
+- You will get nothing but road blocks in your path to success and you have to navigate through them.
