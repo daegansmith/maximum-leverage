@@ -34,7 +34,7 @@ Nine stages so far, each one started by a wall. This is a first pass: dates come
 
 | Stage | When (2026) | The wall | What changed |
 | --- | --- | --- | --- |
-| 1. The Master Prompt | Before late July | Generic answers | The Pull Method and the Voice Reference: document the voice, don't describe it |
+| 1. The Master Prompt | July 27 to August 1 | Generic answers | The Pull Method and the Voice Reference: document the voice, don't describe it |
 | 2. One long seed prompt | July 27 on | Every correction became a new rule in one growing document | Versioned seed prompt, v1 onward, pasted into the project by hand |
 | 3. The council and the gate | October 10 to 11 | Work started from wrong assumptions; expert voices were names with no reading behind them | The Assumptions Gate, the Deep Room, seats fed from real source material |
 | 4. The All-Out Pass | October 15 | Copy read flat and AI-written | Read his own work first, pull real scene details, fresh readers before he sees it |
@@ -125,6 +125,57 @@ Every name the entries use, in plain words, with when it first appeared. Sorted 
 | Lens skills | One skill per copywriter (Halbert, Kennedy, Brunson and others) holding that person's method, loaded when their seat writes. | By November 10 |
 | The talk-through | His long spoken runs about slides or copy, saved word for word to a file before anything else is done with them. | Date not yet traced |
 | Cross-Project Learnings | A shared document where a lesson from one project is logged so the other projects can use it. Seen once it is an observation. Seen in a second project it is a pattern. | Date not yet traced |
+
+## Stage 1: The Master Prompt and the Pull Method
+
+July 27 to August 1, 2026. Source: the Master Prompt, the Marketing seed prompt's own version notes (v1 to v1.6), and the August 1 session "Invisible funnel marketing strategy."
+
+### The Wall
+
+Generic copy. The project held his own sales letters, his masterclass notes and research on 16 copywriters, and the drafts still read like anybody's. Claude also filled in his own frameworks with the public version of them.
+
+### How It Was Hit
+
+Over the first five days, then all at once on August 1.
+
+- **July 27.** The Marketing project is built with the Pull Method, the seven-step process in the Master Prompt: define the role, gather context in batches, state the task in extreme detail, specify the format, test on a real output, refine, then promote the result to a project's standing instructions.
+- **July 28 to 29.** The Drive folders are built and filled: his own work, course notes, swipe, and 16 copywriter research reports under the rule "structure and tactics only, never voice." Four small versions follow in two days (v1.2 to v1.5), each after a miss: actually check the knowledge base, find the newest Voice Reference by rule, stop re-raising settled decisions, and suggest tactical language from his course notes.
+- **August 1.** A landing page to sell the Invisible Funnel. Claude searched the folders and could not find his own definition of it, and had been mixing it with a related framework and a published outside version. He gave the definition in the session. Then the copy: he picked the fourth of five headlines, rejected the subheads and openings that followed, and wrote the subhead himself.
+
+### The Questions That Broke It
+
+"Would you opt in? Would you wanna read more? I wouldn't." Claude's answer was that it wouldn't either. That turned the session from drafting to diagnosis, and five causes were named:
+
+1. "Protect the voice" was being satisfied once per session, not before every draft.
+2. The Voice Reference held tone and phrasing but no copy mechanics.
+3. The log of his picks had a format and no entries.
+4. Nothing told Claude to push past what he asked for.
+5. No standing rule against agreement theater, which he had corrected twice that night.
+
+### What Changed
+
+- **Seed prompt v1.6.** Check the knowledge base before every generation, with no credit for having read it earlier in the session. No agreement theater: state the mechanical gap and move. Every set of variants includes one pushed past the brief. Fidelity scoring on every pick: Hit, Partial or Off.
+- **The Invisible Funnel, Canonical Definition.** His definition in his own words, saved to Own Work and read before the five source note files.
+- **Voice Reference v5.** A new section on copy mechanics, and the first real entries in the pick log.
+
+### After
+
+The page had a locked headline and a subhead in his words. There were then no working sessions in the Marketing project until September 9.
+
+### Evolution Notes
+
+- **What got selected.** No agreement theater is still in the instructions, close to word for word. The Canonical Definition is still read first. Never voice from outside reference is still a rule.
+- **What drifted through.** Fidelity scoring is still in the instructions; how often it is actually logged has not been checked. An "Evolution Archive" kept inside the Master Prompt, last entry July 25, was never given its own file and was retired September 24.
+- **What hurt and still passed.** The read-before-every-draft rule was written as a rule with nothing that showed whether it had run. The same wall came back on October 15 (Stage 4).
+- **What is left over.** The Document Tag Index, stale from July 28, retired September 24.
+
+### The New Wall It Exposed
+
+Every miss became a new rule in one document, and every new version had to be saved as a new file and pasted in by hand. That is Stage 2.
+
+### Still Open
+
+The Pull Method itself has not been revisited since July. Whether its test-and-refine steps would catch today what they missed then is untested.
 
 ## Stage 3: The Assumptions Gate and the Deep Room
 

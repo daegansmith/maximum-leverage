@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Master Prompt And The Pull Method: Stage 1 | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Generic copy. The project held his own sales letters, his masterclass notes and research on 16 copywriters, and the drafts still read like anybody&#x27;s. Claud"></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<p class="kicker">Stage 1 &middot; July 27 to August 1, 2026</p>
+<h1>The Master Prompt And The Pull Method</h1>
+<h2 class="shead">I Loaded My AI With My Own Sales Letters. It Still Wrote Like Everybody Else.</h2>
+<div class="story"><p>"Put that together with the headline and tell me if you think that's not too wordy and too dumb."</p><p>"Would you opt in? Would you wanna read more? I wouldn't."</p><p>"So it's it's not it's not it's not it, man."</p><p>All three of those are me, talking to Claude about a landing page. August 1.</p><p>Claude's answer:</p><p>"Honest answer: no, I wouldn't either."</p><p>Five days earlier I had started a project in Claude just for my marketing.</p><p>I built its instructions with a method I call the Pull Method.</p><p>The short version: the AI pulls the context out of me a couple of questions at a time. We test what it writes on a real piece. What survives becomes the standing instructions.</p><p>Then I filled it.</p><p>My own sales letters. The notes from my own masterclass. Research reports on 16 copywriters.</p><p>So I asked for a page to sell the Invisible Funnel.</p><p>That one is mine. My own framework for selling by explicitly not selling.</p><p>First surprise. Claude searched the folders and told me:</p><p>"I still don't have a passage anywhere that's you defining The Invisible Funnel in your own words as its own concept."</p><p>Five files of my notes in there, and no definition it could find.</p><p>So I said the definition right then, and it went into its own document.</p><p>Then the copy.</p><p>We got a headline. Claude put up five and I took the fourth.</p><p>"I'm Not Good At Sales. That's Exactly Why This Works."</p><p>Right sentiment. Moving in the right direction.</p><p>Then the line under it. Claude's:</p><p>"I made more money by refusing to sell than I did in twelve years of trying to."</p><p>Try after try.</p><p>"What you have is nonsense. We are... really got a lot a lot to learn."</p><p>I ended up writing it myself.</p><p>"How I made more in one weekend than I ever have in any given year of owning my business..."</p><p>One weekend. A person can picture one weekend.</p><p>Nobody can picture twelve years.</p><p>Then we went looking for why.</p><p>First cause on the list: my instructions said protect the voice. Claude was satisfying that once per session. Not before every draft.</p><p>So it had my letters. It wasn't reading them when it wrote.</p><p>I told it:</p><p>"The only reason that all of our knowledge base exists is because I want you to use it every time. Man, I don't know if I should say every time. I want you to use it. I don't want you to ever go to default mode and just create some generic boring nonsense."</p><p>That night the instructions changed.</p><p>Check the knowledge base before every draft. No "I already read it earlier this session."</p><p>No agreement theater. I'd corrected that twice in one night. State the mechanical gap and move.</p><p>Every set of options includes one that pushes past what I asked for.</p><p>And every pick I make between options gets a score. Hit, Partial or Off.</p><p>Did it hold?</p><p>The read-before-every-draft rule did not. Same wall, October 15. That's Stage 4.</p><p>So no. The first fix wasn't the fix.</p><p>If you've loaded your AI with your own work and what comes back still isn't you...</p><p>It may have your work and not be reading it.</p><p>Ask what it read right before it wrote.</p></div>
+<p class="kicker rec">The Record</p>
+<div class="tools"><button onclick="tg(true)">Open all</button><button onclick="tg(false)">Close all</button></div>
+<ul class="ol">
+<li><details><summary class="row">The Wall</summary><div class="sec"><p>Generic copy. The project held his own sales letters, his masterclass notes and research on 16 copywriters, and the drafts still read like anybody's. Claude also filled in his own frameworks with the public version of them.</p></div></details></li>
+<li><details><summary class="row">How It Was Hit</summary><div class="sec"><p>Over the first five days, then all at once on August 1.</p>
+<ul>
+<li><strong>July 27.</strong> The Marketing project is built with the Pull Method, the seven-step process in the Master Prompt: define the role, gather context in batches, state the task in extreme detail, specify the format, test on a real output, refine, then promote the result to a project's standing instructions.</li>
+<li><strong>July 28 to 29.</strong> The Drive folders are built and filled: his own work, course notes, swipe, and 16 copywriter research reports under the rule "structure and tactics only, never voice." Four small versions follow in two days (v1.2 to v1.5), each after a miss: actually check the knowledge base, find the newest Voice Reference by rule, stop re-raising settled decisions, and suggest tactical language from his course notes.</li>
+<li><strong>August 1.</strong> A landing page to sell the Invisible Funnel. Claude searched the folders and could not find his own definition of it, and had been mixing it with a related framework and a published outside version. He gave the definition in the session. Then the copy: he picked the fourth of five headlines, rejected the subheads and openings that followed, and wrote the subhead himself.</li>
+</ul></div></details></li>
+<li><details><summary class="row">The Questions That Broke It</summary><div class="sec"><p>"Would you opt in? Would you wanna read more? I wouldn't." Claude's answer was that it wouldn't either. That turned the session from drafting to diagnosis, and five causes were named:</p>
+<ol>
+<li>"Protect the voice" was being satisfied once per session, not before every draft.</li>
+<li>The Voice Reference held tone and phrasing but no copy mechanics.</li>
+<li>The log of his picks had a format and no entries.</li>
+<li>Nothing told Claude to push past what he asked for.</li>
+<li>No standing rule against agreement theater, which he had corrected twice that night.</li>
+</ol></div></details></li>
+<li><details><summary class="row">What Changed</summary><div class="sec"><ul>
+<li><strong>Seed prompt v1.6.</strong> Check the knowledge base before every generation, with no credit for having read it earlier in the session. No agreement theater: state the mechanical gap and move. Every set of variants includes one pushed past the brief. Fidelity scoring on every pick: Hit, Partial or Off.</li>
+<li><strong>The Invisible Funnel, Canonical Definition.</strong> His definition in his own words, saved to Own Work and read before the five source note files.</li>
+<li><strong>Voice Reference v5.</strong> A new section on copy mechanics, and the first real entries in the pick log.</li>
+</ul></div></details></li>
+<li><details><summary class="row">After</summary><div class="sec"><p>The page had a locked headline and a subhead in his words. There were then no working sessions in the Marketing project until September 9.</p></div></details></li>
+<li><details><summary class="row">Evolution Notes</summary><div class="sec"><ul>
+<li><strong>What got selected.</strong> No agreement theater is still in the instructions, close to word for word. The Canonical Definition is still read first. Never voice from outside reference is still a rule.</li>
+<li><strong>What drifted through.</strong> Fidelity scoring is still in the instructions; how often it is actually logged has not been checked. An "Evolution Archive" kept inside the Master Prompt, last entry July 25, was never given its own file and was retired September 24.</li>
+<li><strong>What hurt and still passed.</strong> The read-before-every-draft rule was written as a rule with nothing that showed whether it had run. The same wall came back on October 15 (Stage 4).</li>
+<li><strong>What is left over.</strong> The Document Tag Index, stale from July 28, retired September 24.</li>
+</ul></div></details></li>
+<li><details><summary class="row">The New Wall It Exposed</summary><div class="sec"><p>Every miss became a new rule in one document, and every new version had to be saved as a new file and pasted in by hand. That is Stage 2.</p></div></details></li>
+<li><details><summary class="row">Still Open</summary><div class="sec"><p>The Pull Method itself has not been revisited since July. Whether its test-and-refine steps would catch today what they missed then is untested.</p></div></details></li>
+</ul>
+<p class="small" style="margin-top:28px">From the record: the Master Prompt, the Marketing seed prompt's own version notes (v1 to v1.6), and the August 1 session "Invisible funnel marketing strategy."</p>
+<div class="nav"><span></span><a href="../assumptions-gate/">The Assumptions Gate And The Deep Room &rarr;</a></div>
+</div><script>function tg(o){document.querySelectorAll('.ol details').forEach(function(d){d.open=o;});}</script>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>

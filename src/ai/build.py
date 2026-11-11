@@ -18,7 +18,7 @@ SRC = ROOT / "src/ai/log.md"
 HEAD_FROM = ROOT / "notes/forbidden-keys/index.html"
 UPDATED = "November 11, 2026"
 
-SLUGS = {3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram",
+SLUGS = {1: "pull-method", 3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram",
          7: "first-rule", 8: "purpose-over-process", 9: "repo"}
 
 EXTRA_CSS = """
