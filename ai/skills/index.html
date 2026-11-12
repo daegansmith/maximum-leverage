@@ -1,0 +1,681 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>My Claude Skills | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:34px}
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Every skill in Daegan Smith&#x27;s Claude account, grouped by the job it does."></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<h1>My Claude Skills</h1>
+<p class="lead">Every skill in my Claude account, grouped by the job it does: what it's for, and what I say to call it. I never have to name a skill; saying the words in the last column is enough.</p>
+<p class="small">Updated November 12, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.</p>
+<div class="prose skl"><h2>Running The Work</h2>
+<p>These keep sessions findable, carry work from one chat to the next, and force decisions.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>session-board</td>
+<td>One line per session on my Session Board: what it's doing, its status, its link</td>
+<td>"check in", "park this", "what's open", "where was I working on X"</td>
+</tr>
+<tr>
+<td>ml-handoff</td>
+<td>Writes down everything a new chat needs to continue the work, plus a prompt to paste into it</td>
+<td>"handoff", "pause here", "I'm going to start a new chat"</td>
+</tr>
+<tr>
+<td>ml-sweep</td>
+<td>Tests a code project (a site, a page, a tool), fixes what's broken, then writes the handoff</td>
+<td>"sweep it", "run QA", "final pass"</td>
+</tr>
+<tr>
+<td>ml-intake</td>
+<td>The front door: turns a goal into a written brief and picks which skills run, in what order</td>
+<td>State a goal without naming a skill</td>
+</tr>
+<tr>
+<td>ml-marketing-chain</td>
+<td>Runs the whole sequence from research to finished piece when a job spans several skills</td>
+<td>"run the chain", "where do I start", "why isn't this working"</td>
+</tr>
+<tr>
+<td>ml-workflow-engine</td>
+<td>Builds several competing versions, critiques and ranks them, with my approval before each costly step</td>
+<td>"give me competing drafts and pick a winner"</td>
+</tr>
+<tr>
+<td>ml-grill-me</td>
+<td>Interviews me about a plan one question at a time, ending in a locked decision and one next action</td>
+<td>"grill me", "poke holes in this"</td>
+</tr>
+<tr>
+<td>ml-ship-gate</td>
+<td>Stops the stall: when drafts and options pile up, forces one piece to be finished and sent</td>
+<td>"narrow down", "start over"</td>
+</tr>
+<tr>
+<td>ml-decision-rules</td>
+<td>Settles who decides what when several AIs or advisors disagree, and logs the decision</td>
+<td>"the AIs disagree", "log this decision"</td>
+</tr>
+<tr>
+<td>ml-three-outcomes</td>
+<td>Scores a tool or idea on money in, hours back and customers kept: do now, later, or toy</td>
+<td>"score this", "is this tool worth it"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Research And The Offer</h2>
+<p>What happens before any copy is written, in roughly this order.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-reality-corpus</td>
+<td>Mines raw material (calls, surveys, voice memos, testimonials) into the customer's own words</td>
+<td>"pull out the gold", "mine this for messaging"</td>
+</tr>
+<tr>
+<td>ml-market-intelligence</td>
+<td>Researches the market, the buyer and the competition, then positions the offer against them</td>
+<td>"who is this for", "what makes me different"</td>
+</tr>
+<tr>
+<td>ml-belief-chain</td>
+<td>Maps what a stranger must believe, and in what order, to buy</td>
+<td>"what do they need to believe to buy"</td>
+</tr>
+<tr>
+<td>ml-offer-architect</td>
+<td>Designs the offer: contents, price, tiers, bonuses, guarantee</td>
+<td>"lock the offer", "what should we charge", "package this"</td>
+</tr>
+<tr>
+<td>ml-funnel-hack</td>
+<td>Tears down the top sites in a niche and delivers a swipe file of what to steal</td>
+<td>"funnel hack", "who's winning in this niche"</td>
+</tr>
+<tr>
+<td>prospect-read</td>
+<td>Reads one real person from a name: who they are, how they see me, how to win them</td>
+<td>"read this prospect" plus the name</td>
+</tr>
+<tr>
+<td>ml-local-dossier</td>
+<td>One-page pre-call brief on a local business from public information</td>
+<td>"dossier on" plus the business</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Writing Copy</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-hook-engine</td>
+<td>Headlines, hooks and opening lines, as options to pick from</td>
+<td>"give me hooks", "headline options"</td>
+</tr>
+<tr>
+<td>ml-copy-engine</td>
+<td>Sales pages, VSLs, landing pages, ads, upsells, written section by section</td>
+<td>"write the sales page", "write the VSL"</td>
+</tr>
+<tr>
+<td>ml-letter-assembler</td>
+<td>Builds a long-form sales letter piece by piece once research, beliefs and offer are locked</td>
+<td>"let's write the letter", "draft section X"</td>
+</tr>
+<tr>
+<td>ml-email-engine</td>
+<td>Email sequences and broadcasts in my story-selling style, plus subject lines</td>
+<td>"email sequence", "launch emails", "subject line"</td>
+</tr>
+<tr>
+<td>ml-newsletter</td>
+<td>A newsletter issue or section in my voice</td>
+<td>"write the issue", "this week's issue"</td>
+</tr>
+<tr>
+<td>ml-linkedin</td>
+<td>A LinkedIn post in my voice</td>
+<td>"write a LinkedIn post"</td>
+</tr>
+<tr>
+<td>ml-origin-story</td>
+<td>My origin story in six lengths, from full version to bio</td>
+<td>"origin story", "write the about page", "bio"</td>
+</tr>
+<tr>
+<td>ml-epiphany-bridge</td>
+<td>Russell Brunson's Epiphany Bridge story: the aha moment that sells</td>
+<td>"epiphany bridge", "how I discovered..."</td>
+</tr>
+<tr>
+<td>story-lesson</td>
+<td>A story, lesson or parable in my voice where the lesson lands</td>
+<td>"document this moment", "write this as a story"</td>
+</tr>
+<tr>
+<td>ml-language-installation</td>
+<td>Sentence-level persuasion: wording that installs belief before the ask</td>
+<td>"this copy is clean but not moving anyone"</td>
+</tr>
+<tr>
+<td>jdb-curiosity-copy</td>
+<td>Blind, curiosity-driven bullets and opt-in copy in Jimmy D. Brown's style</td>
+<td>"curiosity bullets"</td>
+</tr>
+<tr>
+<td>plank-speed-copy</td>
+<td>Robert Plank-style copy that sells speed and done-for-you</td>
+<td>"Plank style"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Copywriter Lenses</h2>
+<p>Each lens writes or audits copy the way one copywriter would. I say "write this like" plus the name. When I'm not sure which, copy-lens-picker chooses: "who's best at this?"</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Lens</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lens-belcher</td>
+<td>Low-ticket front ends, tripwires, funnel and offer architecture</td>
+</tr>
+<tr>
+<td>lens-belgray</td>
+<td>Funny, personal list emails and subject lines</td>
+</tr>
+<tr>
+<td>lens-bencivenga</td>
+<td>Proof-heavy long-form letters for skeptical markets</td>
+</tr>
+<tr>
+<td>lens-benson</td>
+<td>Text-on-screen VSL scripts</td>
+</tr>
+<tr>
+<td>lens-brunson</td>
+<td>Webinar and stage pitches, Hook-Story-Offer, the Stack close</td>
+</tr>
+<tr>
+<td>lens-clemens</td>
+<td>Founder-story letters and VSLs for health and beauty products</td>
+</tr>
+<tr>
+<td>lens-ford</td>
+<td>One big idea; info-publishing and subscription promos</td>
+</tr>
+<tr>
+<td>lens-halbert</td>
+<td>Personal-feeling sales letters and mail that gets opened</td>
+</tr>
+<tr>
+<td>lens-kennedy</td>
+<td>Long-form letters for high-ticket offers; deadlines, proof, guarantees</td>
+</tr>
+<tr>
+<td>lens-makepeace</td>
+<td>Emotion-led health and financial promos</td>
+</tr>
+<tr>
+<td>lens-ogilvy</td>
+<td>Premium, considered purchases; researched, fact-rich ads</td>
+</tr>
+<tr>
+<td>lens-schwartz</td>
+<td>Matching the pitch to how aware and how jaded the market is</td>
+</tr>
+<tr>
+<td>lens-settle</td>
+<td>Daily plain-text infotainment emails from a strong persona</td>
+</tr>
+<tr>
+<td>lens-sultanic</td>
+<td>Closes, upsells, price framing, reviving dead offers</td>
+</tr>
+<tr>
+<td>lens-throssell</td>
+<td>Serialized story emails and welcome sequences</td>
+</tr>
+<tr>
+<td>lens-todd-brown</td>
+<td>Big Idea plus Unique Mechanism for saturated markets</td>
+</tr>
+<tr>
+<td>lens-wiebe</td>
+<td>Landing pages and CTAs built from customers' own words; editing drafts</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Testing And Grading Copy</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-content-grade</td>
+<td>Scores a draft for my voice and for conversion, and says what to fix</td>
+<td>"grade this", "is this ready", "why isn't this converting"</td>
+</tr>
+<tr>
+<td>ml-ogilvy-audit</td>
+<td>Audits business writing for plain-writing craft against Ogilvy's rules</td>
+<td>"audit this memo", "is this well written"</td>
+</tr>
+<tr>
+<td>conversion-sim</td>
+<td>Runs copy past a simulated room of buyers to see how it converts</td>
+<td>"run a test", "simulate this"</td>
+</tr>
+<tr>
+<td>price-sim</td>
+<td>Runs the same room past the offer at each candidate price</td>
+<td>"test these prices", "what should we charge"</td>
+</tr>
+<tr>
+<td>skeptic-study</td>
+<td>Finds out why the simulated no-buyers said no, and what would change it</td>
+<td>"why didn't they buy"</td>
+</tr>
+<tr>
+<td>copywriter-contest</td>
+<td>Three or four copywriter lenses each rewrite the piece, then every rewrite is simulated</td>
+<td>"run the contest"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Funnels, Ads, Sales And Clients</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-funnel-cro</td>
+<td>Finds where a funnel, page or checkout leaks and the single best fix</td>
+<td>"where is the money leaking", "audit this funnel"</td>
+</tr>
+<tr>
+<td>ml-paid-media</td>
+<td>Meta ads (and Google basics): diagnose, build, audit an account</td>
+<td>"my ads stopped working", "set up the campaign"</td>
+</tr>
+<tr>
+<td>local-meta-ads</td>
+<td>My own playbook for Facebook and Instagram ads that fill a local event</td>
+<td>"ads for the next local night"</td>
+</tr>
+<tr>
+<td>ml-backend-economics</td>
+<td>Everything after the first sale: upsell path, retention, refunds, launches</td>
+<td>"how do I make more from existing buyers"</td>
+</tr>
+<tr>
+<td>ml-sales-conversation</td>
+<td>High-ticket discovery and close calls, the application, objections</td>
+<td>"prep me for this call", "how do I close this"</td>
+</tr>
+<tr>
+<td>ml-client-engine</td>
+<td>Getting and keeping clients for a services practice: scope, structure, hard clients</td>
+<td>"how should I structure this engagement"</td>
+</tr>
+<tr>
+<td>ml-book-publishing</td>
+<td>Partnering with an expert and building the business around them for a share</td>
+<td>"find me publishing partners", "how should we split this"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Local Business And AI Assessment Work</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-mini-assessment</td>
+<td>The 15-minute call: name one bottleneck, prescribe one fix, book the full assessment</td>
+<td>"prep the mini for" plus the name</td>
+</tr>
+<tr>
+<td>ml-ai-assessment</td>
+<td>The paid AI Assessment end to end: discovery, scored report, close</td>
+<td>"run the assessment for" plus the client</td>
+</tr>
+<tr>
+<td>ml-concierge-call</td>
+<td>The twice-monthly AI Concierge call that installs one workflow</td>
+<td>"prep the concierge call"</td>
+</tr>
+<tr>
+<td>ml-automation-recipes</td>
+<td>A plain-English automation fix for a client's bottleneck</td>
+<td>"what's the fix for missed calls"</td>
+</tr>
+<tr>
+<td>ml-knowledge-base</td>
+<td>Builds a client's company brain from its documents</td>
+<td>"build their knowledge base"</td>
+</tr>
+<tr>
+<td>ml-gift-tour</td>
+<td>A phone tour for a business: research, then one link with 3 to 7 tap-through pages</td>
+<td>"gift tour", "blow them away"</td>
+</tr>
+<tr>
+<td>ml-live-website</td>
+<td>Redo a business's website fast with the owner in the room</td>
+<td>"redo their website", "hot seat"</td>
+</tr>
+<tr>
+<td>ml-capture-social-proof</td>
+<td>Files a piece of social proof the moment it turns up</td>
+<td>"save this as social proof"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Design, Brand And Websites</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-studio</td>
+<td>One visual deliverable (homepage, landing page, deck) built and shown as options until I approve</td>
+<td>"build the homepage", "show me options"</td>
+</tr>
+<tr>
+<td>ml-page-review</td>
+<td>Opens a page in a review window where I edit text and leave comments in one batch</td>
+<td>"let me review it"</td>
+</tr>
+<tr>
+<td>ml-brand</td>
+<td>Makes or checks any Maximum Leverage asset against the ML brand</td>
+<td>"make this on brand for ML"</td>
+</tr>
+<tr>
+<td>ml-brand-kit</td>
+<td>Brand kit for a local business before its site is built: logo, colors, type</td>
+<td>"brand kit for" plus the client</td>
+</tr>
+<tr>
+<td>ml-brand-identity</td>
+<td>Logo system and identity for an app or product, with app icon and brand sheet</td>
+<td>"identity for this app"</td>
+</tr>
+<tr>
+<td>ml-logo-design</td>
+<td>A logo from brief to final files, with concepts and a presentation board</td>
+<td>"design a logo"</td>
+</tr>
+<tr>
+<td>ml-transitions-dev</td>
+<td>Adds animations to a web page: menus, pop-ups, loading states, hover effects</td>
+<td>"make it animate"</td>
+</tr>
+<tr>
+<td>ml-transitions-polish</td>
+<td>Tunes animations that already exist</td>
+<td>"the timing feels off"</td>
+</tr>
+<tr>
+<td>canvas-design</td>
+<td>A poster or static piece of visual art as an image or PDF</td>
+<td>"make a poster"</td>
+</tr>
+<tr>
+<td>webapp-testing</td>
+<td>Tests a web app running locally and takes screenshots</td>
+<td>"test the page in a browser"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Video, Explainers And Drawings</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>explainer-video</td>
+<td>My narrated explainers: fit one screen, 1.5x speed, filed in my Explainer Library</td>
+<td>"explainer", "walk me through X"</td>
+</tr>
+<tr>
+<td>ml-explainer</td>
+<td>A 60 to 90 second narrated, captioned video with Maximum Leverage branding</td>
+<td>"ML explainer video"</td>
+</tr>
+<tr>
+<td>ml-explainer-business</td>
+<td>Marker-doodle drawings that make one business idea land for an owner</td>
+<td>"owner doodle"</td>
+</tr>
+<tr>
+<td>napkin-sketch</td>
+<td>A back-of-the-napkin drawing for one idea</td>
+<td>"napkin", "doodle this"</td>
+</tr>
+<tr>
+<td>ml-wrapped-video</td>
+<td>Year-in-review style videos made from a table of data, one per person</td>
+<td>"make a wrapped video"</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Building Skills</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it's for</th>
+<th>Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ml-skill-forge</td>
+<td>Builds, tests, tunes and audits the skills themselves</td>
+<td>"build me a skill", "audit the skills"</td>
+</tr>
+<tr>
+<td>ml-library-miner</td>
+<td>Turns a pile of transcripts or documents into an indexed digest, then into skills</td>
+<td>"turn these transcripts into a skill"</td>
+</tr>
+<tr>
+<td>coauthor-doc</td>
+<td>A three-stage workflow for writing a spec, proposal or decision doc together</td>
+<td>"let's write this doc together"</td>
+</tr>
+</tbody>
+</table></div>
+<p>Claude also has built-in skills for Word, Excel, PowerPoint and PDF files, research, charts and data. They run on their own when the work calls for them.</p>
+<h2>Who Wrote What</h2>
+<p>Most skills starting with ml- came from Jason Gazaway's library. The rest were built for me in my own sessions, or ship with Claude.</p></div>
+</div>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>

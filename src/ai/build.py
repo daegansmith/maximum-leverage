@@ -24,6 +24,11 @@ SLUGS = {1: "pull-method", 2: "one-long-prompt", 3: "assumptions-gate", 4: "all-
          7: "first-rule", 8: "purpose-over-process", 9: "repo"}
 
 EXTRA_CSS = """
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:34px}
 .lead{font-size:21px;line-height:1.5}
 .shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
 .story p{font-size:19px;line-height:1.55;margin:0 0 18px}
@@ -108,7 +113,27 @@ def table_rows(text):
     return rows[1:]
 
 
+def skills_page():
+    """Build ai/skills/ from src/ai/skills.md (Daegan's Skills Guide, first person). Returns the skill count."""
+    text = (ROOT / "src/ai/skills.md").read_text().strip()
+    assert "\u2014" not in text, "em dash in skills.md"
+    title, _, rest = text.partition("\n\n")
+    lead, _, rest = rest.partition("\n\n")
+    note, _, body = rest.partition("\n\n")
+    count = sum(1 for line in body.splitlines()
+                if line.startswith("| ") and not line.startswith(("| Skill", "| Lens", "| ---")))
+    inner = re.sub(r"(<table>.*?</table>)", r'<div class="tw">\1</div>', md(body), flags=re.S)
+    out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+           f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{inline(lead)}</p>\n'
+           f'<p class="small">{inline(note)}</p>\n<div class="prose skl">{inner}</div>')
+    (ROOT / "ai/skills").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/skills/index.html").write_text(
+        page("My Claude Skills", "Every skill in Daegan Smith's Claude account, grouped by the job it does.", out))
+    return count
+
+
 def main():
+    n_skills = skills_page()
     text = SRC.read_text()
     assert "—" not in text.split("\n", 1)[1], "em dash in the log body"
     h2 = split_h2(text)
@@ -247,6 +272,10 @@ def main():
         '<section><h2>How To Coach It</h2>\n<div class="cards">'
         '<a class="card" href="coaching/"><span class="ct">What To Say First</span>'
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
+        '</div></section>\n'
+        '<section><h2>My Skills</h2>\n<div class="cards">'
+        f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
+        f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
         '</div></section>\n'
         '<section><h2>Glossary</h2>\n<div class="cards">'
         f'<a class="card" href="glossary/"><span class="ct">What Each Named Thing Is</span>'
