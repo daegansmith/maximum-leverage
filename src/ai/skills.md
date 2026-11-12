@@ -20,6 +20,11 @@ These keep sessions findable, carry work from one chat to the next, and force de
 | ml-ship-gate | Stops the stall: when drafts and options pile up, forces one piece to be finished and sent | "narrow down", "start over" |
 | ml-decision-rules | Settles who decides what when several AIs or advisors disagree, and logs the decision | "the AIs disagree", "log this decision" |
 | ml-three-outcomes | Scores a tool or idea on money in, hours back and customers kept: do now, later, or toy | "score this", "is this tool worth it" |
+| branch-session | Starts a linked session under the current one, with a title and a short brief, so related work stays together | "branch a session", "spin off a session" |
+| inbox-check | Sweeps my Gmail for junk, recaps what needs me, and picks 10 junk candidates | "check my inbox" |
+| daily-todo-review | My daily to-do review: tidies the list, checks my notes, and sends me the review | "to-do review" |
+| discernment-nudge | After a big answer or draft, adds two or three questions that help me check the facts and the reasoning | Runs on its own after substantial answers |
+| academy-guide | When I am learning how to use Claude, points me to a matching Claude Academy course | "how do I", "teach me" |
 
 ## Research And The Offer
 
@@ -143,7 +148,10 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | --- | --- | --- |
 | ml-skill-forge | Builds, tests, tunes and audits the skills themselves | "build me a skill", "audit the skills" |
 | ml-library-miner | Turns a pile of transcripts or documents into an indexed digest, then into skills | "turn these transcripts into a skill" |
-| coauthor-doc | A three-stage workflow for writing a spec, proposal or decision doc together | "let's write this doc together" |
+| skill-model-picker | Sorts a new skill by the kind of work it does and sets which Claude model it uses | "which model for this skill", "sort this skill" |
+| skill-upgrade-review | The monthly review: the strongest model reads every skill and proposes upgrades, one at a time | "monthly skill review", "upgrade my skills" |
+| ship-skill | Keeps my skills repo and my installed skills matched, and packages a skill for upload | "ship this skill", "check skill drift" |
+| skills-sweep | Nightly copy of my installed skills into my private repo so it stays the master copy | "sweep my skills", "back up my skills" |
 
 Claude also has built-in skills for Word, Excel, PowerPoint and PDF files, research, charts and data. They run on their own when the work calls for them.
 
