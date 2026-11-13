@@ -8,13 +8,15 @@ Every document that runs my AI lived in three places.
 
 The live version, in a Claude document.
 
-A copy I paste by hand into the project's settings. Claude can't write to that one or check it.
+A copy I paste by hand into the project's settings. Claude can't write to that one, or even check it.
 
 And backups in Google Drive.
 
 [[2]]
 
 Every change meant write it, copy it, paste it, save it again.
+
+Three copies. One of me.
 
 [[3]]
 
@@ -38,11 +40,11 @@ I was using it to put pages up on my website.
 
 [[5]]
 
-Then it hit me what it does. It keeps every version of a text file, in one place, with the history.
+Then it hit me what it does.
+
+It keeps every version of a text file. In one place. With the history.
 
 **"That's what literally GitHub is for."**
-
-Here's what I took from that.
 
 **The fix is NOT always a new tool. Sometimes it's one you already use for something smaller.**
 
@@ -54,12 +56,12 @@ Each new version of my instructions gets saved there in the same session, and Cl
 
 And the marketing rules got carried into the Master Prompt.
 
-Now, it's a day old.
+It's young. And it didn't replace the others. I still paste by hand when I work inside a project.
 
-And it's a third copy. It didn't replace the other two. I still paste by hand when I work inside a project.
-
-Mine was GitHub.
-
-What's yours?
+Mine was GitHub. What's yours?
 
 **Before you go looking for something new, ask what the tools you already use were built to do.**
+
+Three days later I went looking for the words that would move my AI.
+
+[I ended up asking it to hold me back.](../hold-me-back/)

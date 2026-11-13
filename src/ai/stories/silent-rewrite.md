@@ -1,6 +1,6 @@
 # My AI Made My Offer "Better" For Three Days. Almost None Of It Was Still Mine.
 
-You hand your AI something you wrote and say make it better.
+You hand your AI something you wrote and say, make it better.
 
 How much of what comes back is still yours?
 
@@ -30,40 +30,46 @@ And the offer started to read like AI.
 
 [[4]]
 
-On the 25th we counted.
+So we counted.
 
-Line by line, how much of it was still word for word mine?
+Line by line. How much of it was still word for word mine?
 
 **About 2 to 9 percent.**
 
-We counted my presentation the same way, to compare. About 62 percent.
+For comparison, we counted my presentation the same way. About 62 percent.
+
+2 to 9.
 
 [[5]]
 
 "We walked this road so far for me only now to find out that there was a certain point where you jumped off from actually revising to basically creating something new. And I wasn't made aware of that."
 
-Here's the lesson in it.
+That's the part that got me. Not the rewrite.
+
+That nobody said anything.
 
 **"Better" is NOT the same as "still yours."**
 
 [[6]]
 
-So now, before any big rework, Claude says it out loud. This is changing from revising your copy to writing new copy.
+So now, before any big rework, Claude says it out loud.
 
-It shows me a sample of mine next to the new one. And it waits.
+This is changing from revising your copy to writing new copy.
 
-On November 11, when Claude proposed rewriting this log as stories, it said so first.
+It shows me a sample of mine next to the new one. And it waits for me.
+
+It works. On November 11, when Claude proposed rewriting these pages as stories, it said so first.
 
 "This is new copy, not a revision of what's on the page."
 
-Now, not everything from that stretch held.
-
-Three rules I approved to stop this sat in the right log and never reached my instructions. For four days.
+Now, not everything from that stretch held. Three rules I approved to stop this sat in the right log and never reached my instructions. For four days.
 
 So think about the thing you'd hand over. A bio. A sales page. An email you've sent a hundred times.
-
-**"Better" is NOT the same as "still yours."**
 
 **Before it makes anything of yours better, have it tell you whether it's revising or rewriting.**
 
 And if you're not sure, have it count.
+
+That was a Sunday. On Monday I hit the wall underneath all of it.
+
+[Rules we'd agreed on, gone a few sections later.](../ram/)

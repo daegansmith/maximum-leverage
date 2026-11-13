@@ -4,6 +4,8 @@ A correction is worth what it changes. The higher the level you give it at, the 
 
 Written by Claude for Daegan on November 11, 2026, after one piece of feedback from him rebuilt how nine stories were made.
 
+<img class="arcimg" src="doodle.png" alt="A house: purpose is the foundation, structure the walls, the line the roof. Fix the bottom first." loading="lazy">
+
 ## The Order
 
 ### 1. Purpose

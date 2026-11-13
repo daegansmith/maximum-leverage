@@ -22,13 +22,13 @@ Here's what I had in my head.
 
 A Dream 100. You pick the hundred businesses you most want, by hand, and you go after those.
 
-At scale. Not only on foot.
+At scale. 100 or more businesses a week, in any city.
 
-100 or more businesses a week, in any city.
+I corrected the room. More than once.
 
-I corrected the room more than once.
+Then one seat brought up the 97 percent of owners who aren't buying yet. And the room started building on it.
 
-Then one seat brought up the 97 percent of owners who aren't buying yet, and the room started building on that. Still on foot.
+Still on foot.
 
 That's when I heard it. I told the room:
 
@@ -46,13 +46,15 @@ Several were wrong. At the same time.
 
 **Hours of work. And nobody had asked what the job was.**
 
-So here's the lesson.
+That's the lesson.
 
 **Your AI doesn't start on your job. It starts on the job it ASSUMED.**
 
 [[6]]
 
-So now nothing starts until the assumptions are on the table. Who it's for. What we're making. Why. When. Where. How. How many and how much.
+So now nothing starts until the assumptions are on the table.
+
+Who it's for. What we're making. Why. When. Where. How. How many and how much.
 
 Each one says where it came from. My words, a settled decision, or a guess. A guess gets labeled a guess.
 
@@ -62,10 +64,12 @@ I call it the Assumptions Gate.
 
 It needed one limit, and on October 31 I added it. The gate is for the shape of a job. Never the creative details. Claude doesn't stop in the middle of a draft to ask.
 
-It's still running. On November 2 a registration page job opened with eleven numbered assumptions.
+And it's still running. On November 2 a registration page job opened with eleven numbered assumptions.
 
-Mine was two blocks against any city.
+I was thinking a hundred businesses a week. The room heard two blocks.
 
 What's yours? Who it's for? What you're selling? How big you're thinking?
 
 **Before it writes a word, have it tell you what it's assuming.**
+
+Five days later the job was clear. And my AI handed me [thin copy anyway](../all-out-pass/).

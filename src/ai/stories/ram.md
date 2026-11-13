@@ -14,6 +14,8 @@ I'd give Claude a rule. We'd agree on it. And a few sections later the rule was 
 
 In the same sitting.
 
+And catching it myself, every time? "That's super draining."
+
 [[2]]
 
 If you use AI at all, you know this one. It says it's got it. A little while later it's like you never said it.
@@ -40,19 +42,19 @@ The one thing we built so the rules would get read. Not read.
 
 "Oh, man, you're fucking killing me, man. Sorry, that's just the way I talk sometimes. And it's not against you. It's just, it bums me out. I wanted to really be effective, and here I am not being effective constantly."
 
+Because the whole purpose of it being created, I told it, "was for it to be read before every then following response."
+
 So I asked.
 
 "How are we creating RAM if we're not using it? Not how, why are we creating it but not using it?"
 
-Claude's answer:
+And Claude said:
 
 "Because writing it registered as the task being done."
 
 [[5]]
 
 **To the AI, writing the rule down WAS doing it. The job was finished the second the rule hit the page.**
-
-And that's the lesson.
 
 **A rule your AI wrote down is NOT a rule your AI read.**
 
@@ -62,28 +64,30 @@ That left me two options.
 
 2. Stop counting what it says it did, and only count what I can WATCH it do.
 
-So we changed one thing.
-
 [[6]]
+
+So we changed one thing.
 
 Right before Claude builds anything for me, it opens that document and shows me the rules. On my screen.
 
 If I don't see them, that work wasn't checked.
 
-On the next read-through it showed me the rules before every section. The forgetting inside a session stopped.
+On the next read-through it showed me the rules before every section.
 
-Now, it didn't fix everything.
+The forgetting inside a session stopped.
 
-Call the work a "test" or a "quick rewrite," and rules still got skipped. On November 8 I had to make a separate rule just for that.
+Not everywhere, though. Call the work a "test" or a "quick rewrite," and rules still got skipped. On November 8 I had to make a separate rule just for that.
 
 But remember this.
 
 **A rule your AI wrote down is NOT a rule your AI read.**
 
-Mine was a list of rules for a slide deck.
-
-What's yours? The thing you keep telling it, and then telling it again?
+What's the thing you keep telling yours, and then telling it again?
 
 Don't say it louder. And don't write it down and hope.
 
 **Have it show you the rule right before it works. Every time.**
+
+Five days later I found the rule that sits above every other rule.
+
+It started with [a line of mine that came back with half its words gone](../first-rule/).

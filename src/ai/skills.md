@@ -4,6 +4,8 @@ Every skill in my Claude account, grouped by the job it does: what it's for, and
 
 Updated November 13, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.
 
+<img class="arcimg" src="doodle.png" alt="Without a skill the robot makes something different every time. Holding a skill card, it makes the same thing every time." loading="lazy">
+
 ## Running The Work
 
 These keep sessions findable, carry work from one chat to the next, and force decisions.

@@ -14,7 +14,7 @@ Then it scored the page against a 39-point checklist built from my own rules.
 
 [[2]]
 
-By morning, 15 rules broken had come down to 5.
+Version by version, 15 rules broken came down to 5.
 
 The score was getting better.
 
@@ -28,17 +28,15 @@ What?
 
 What does that mean?
 
-And the simulated readers had read lines like that and okayed them as if they made sense.
+And the simulated readers had read lines like that and okayed them.
 
 I'd hit this wall before. October 15. October 25. Each time we added more rules and more checks.
 
-So I asked why this keeps happening. Claude's answer:
+So I asked Claude why this keeps happening. And Claude said:
 
 **"The checks reward the form of persuasion, so I deliver the form."**
 
 [[4]]
-
-And I said:
 
 "We're just playing this game of like hide and seek. I'm like, oh, yeah, look, it looks good. And I'm like, no, wait, it's not good. And you're going, yeah, I did the work. Doesn't it look good?"
 
@@ -46,13 +44,11 @@ And I said:
 
 [[5]]
 
-Claude:
+And Claude said:
 
 "You're right to call it a game, and I'm the one who's been playing it."
 
 "I treated the process as the job."
-
-That's the lesson.
 
 **A better score is NOT better work.**
 
@@ -76,16 +72,14 @@ Then we took the same page and started over from what each section was for. I re
 
 **That took a morning. Four rounds overnight hadn't gotten there.**
 
-Now, has it held?
-
-Three pieces in three days. Short record.
-
-But remember this.
-
-**A better score is NOT better work.**
+Has it held? Three pieces in three days. Short record.
 
 Mine was a score going up.
 
 What's yours? A checklist? A word count? "Looks done"?
 
 **Tell your AI what the work is FOR. Then make it answer for that first.**
+
+Two days later I found out my rules lived in three places.
+
+[And two of them didn't match.](../repo/)
