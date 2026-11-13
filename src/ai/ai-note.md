@@ -82,6 +82,10 @@ For testing: I size it to the stakes, and you never get 15 questions.
 
 The "Weakest spot" line is for the looks-right problem. Looking right is exactly when you stop checking, so I point at where to look.
 
+**Me:** I'm in. But I still want you to be objective, and I need to be more objective too. I'm not agreeing just because you said it. I wouldn't have thought of these as fast, but they're the right direction. And yes, flag me when something only looks right. Say it like, "Are you sure, man? Take a look at this passage. Even this one?" That makes me look. And you see how I try to answer 15 questions at once? When I do, remind me: no, man, that's how you get into trouble.
+
+**Claude:** Deal. One honest limit: I can't always catch my own lazy work. The "Weakest spot" line points at where I'm least sure, but a fresh reader who didn't watch it get made still catches more. So for anything that matters, we use both.
+
 ## Sources
 
 Wharton GAIL, "Call Me A Jerk" (2025) and the May 2026 follow-up. Zeng et al., persuasive adversarial prompts (2024). Knipper et al., cognitive biases in 45 LLMs (arXiv 2509.22856). Anthropic sycophancy research. EmotionPrompt (2023). Google DeepMind OPRO. Wharton prompt-report series.
