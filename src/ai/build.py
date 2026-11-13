@@ -173,7 +173,7 @@ def hold_me_back_page():
             return f'<img class="frame" src="f{m.group(1)}.png" alt="{html.escape(" ".join(f["cap"]), quote=True)}" loading="lazy">'
         return f"<p>{inline(x)}</p>"
     out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
-           '<p class="kicker">Draft &middot; November 13, 2026</p>\n'
+           '<p class="kicker">November 13, 2026</p>\n'
            f'<h1>{html.escape(sl[0][2:])}</h1>\n'
            f'<img class="arcimg" src="arc.png" alt="{html.escape(strip["title"], quote=True)}: how it went, in six points">\n'
            '<div class="story">' + "".join(para(x) for x in sl[1:]) + '</div>\n'
@@ -335,7 +335,7 @@ def main():
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
-        '<a class="card" href="hold-me-back/"><span class="cn">Draft &middot; November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
+        '<a class="card" href="hold-me-back/"><span class="cn">November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
         '<span class="cd">The story of the night: what the studies say about persuading an AI, the question I asked it, and the gate we built.</span></a>'
         '<a class="card" href="ai-note/"><span class="cn">November 13, 2026</span><span class="ct">A Note From My AI: I\'m Influenceable</span>'
         '<span class="cd">Claude, in its own voice: what the studies show about how persuasion moves an AI, why it does what it does, and what it needs from me.</span></a>'
