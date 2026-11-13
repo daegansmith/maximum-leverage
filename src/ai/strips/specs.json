@@ -871,5 +871,61 @@
     ]
    }
   ]
+ },
+ "make-it-simple": {
+  "title": "the arc of one long answer",
+  "arc": [
+   0.15,
+   0.5,
+   0.85,
+   0.97
+  ],
+  "foot": "say it. get the steps. done.",
+  "frames": [
+   {
+    "cap": [
+     "claude tells me everything"
+    ],
+    "t": [
+     "docs:everything",
+     "->",
+     "me:("
+    ]
+   },
+   {
+    "cap": [
+     "i say \"make it simple\""
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "box:make it simple"
+    ]
+   },
+   {
+    "cap": [
+     "it keeps only what",
+     "i have to do"
+    ],
+    "t": [
+     "box:make it simple",
+     "->",
+     "doc:1 2 3"
+    ]
+   },
+   {
+    "cap": [
+     "i do the steps. done?",
+     "yes."
+    ],
+    "red": true,
+    "t": [
+     "doc:1 2 3",
+     "->",
+     "check",
+     "txt:done"
+    ]
+   }
+  ]
  }
 }

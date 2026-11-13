@@ -34,6 +34,7 @@ EXTRA_CSS = """
 .story p{font-size:19px;line-height:1.55;margin:0 0 18px}
 .arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
 .frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+pre{white-space:pre-wrap;font-size:15px;line-height:1.5;border:1px solid var(--rule);padding:14px 16px;overflow-x:auto}
 .rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
 .soft{color:var(--soft)}
 .small{font-size:15px;line-height:1.5;color:var(--soft)}
@@ -132,8 +133,23 @@ def skills_page():
     return count
 
 
+def make_it_simple_page():
+    """Build ai/make-it-simple/ from src/ai/make-it-simple.md. The doodles come from strips/draw.js."""
+    text = (ROOT / "src/ai/make-it-simple.md").read_text().strip()
+    assert "\u2014" not in text, "em dash in make-it-simple.md"
+    title, _, rest = text.partition("\n\n")
+    lead, _, body = rest.partition("\n\n")
+    out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+           f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{inline(lead)}</p>\n'
+           f'<div class="prose">{markdown.markdown(body, extensions=["tables"])}</div>')
+    (ROOT / "ai/make-it-simple").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/make-it-simple/index.html").write_text(
+        page("Make It Simple", "A skill that cuts any Claude answer down to what you have to do and whether it is done.", out))
+
+
 def main():
     n_skills = skills_page()
+    make_it_simple_page()
     text = SRC.read_text()
     assert "—" not in text.split("\n", 1)[1], "em dash in the log body"
     h2 = split_h2(text)
@@ -276,6 +292,8 @@ def main():
         '<section><h2>My Skills</h2>\n<div class="cards">'
         f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
+        '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
+        '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
         '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
         '<span class="cd">A skill that changed after a test: where the idea came from, what the simulation showed, and how the skill runs now.</span></a>'
         '</div></section>\n'

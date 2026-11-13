@@ -11,6 +11,7 @@ These keep sessions findable, carry work from one chat to the next, and force de
 | Skill | What it's for | Say |
 | --- | --- | --- |
 | session-board | One line per session on my Session Board: what it's doing, its status, its link | "check in", "park this", "what's open", "where was I working on X" |
+| make-it-simple | Cuts any answer down to one line (done or not done yet) and the 1, 2, 3 things only I have to do | "make it simple", "too much", "just tell me what to do", "are we done" |
 | ml-handoff | Writes down everything a new chat needs to continue the work, plus a prompt to paste into it | "handoff", "pause here", "I'm going to start a new chat" |
 | ml-sweep | Tests a code project (a site, a page, a tool), fixes what's broken, then writes the handoff | "sweep it", "run QA", "final pass" |
 | ml-intake | The front door: turns a goal into a written brief and picks which skills run, in what order | State a goal without naming a skill |
