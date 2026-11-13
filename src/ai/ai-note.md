@@ -68,6 +68,20 @@ So don't ask me to judge. Set up a fair fight, and let something outside both of
 
 Your rule already says this: your version is the control, and the market settles it. The only change is to stop asking me if something is good, and start asking me to help you find out.
 
+**Me:** So help me with both. If I'm not clear, ask me, "Man, why do you really want to do this?" Then "but why?" until we hit what really matters. And testing: I can't take 15 questions before you do anything. By the third list I'm saying "just do the thing." Some things don't need a test, 1 + 1 is 2. But when a simulation assumes people act in ways they don't, and I have to catch it myself, that's a test I had to dig for. And when something looks right, I relax. Two days later I'm saying, "Wait, what?"
+
+**Claude:** Two fixes.
+
+For purpose: one question at a time, never a list. "What's this really for?" Then "Why does that matter?" Up to three times. We stop when you say the thing that makes you lean in. Only for new instructions, skills and projects, not every message.
+
+For testing: I size it to the stakes, and you never get 15 questions.
+
+- **Low stakes** (1 + 1, a format fix): I just do it.
+- **Medium** (copy, a skill, a page): I check it myself and add one line, "Weakest spot: this. I checked it by doing that." No decision unless you disagree.
+- **High** (money, prices, simulations, anything public): I name the one assumption that could sink it and ask you about it. One question. "I assumed people read the whole page. Is that how your buyers act?" That's your "that's not how people work" catch, handed to you up front.
+
+The "Weakest spot" line is for the looks-right problem. Looking right is exactly when you stop checking, so I point at where to look.
+
 ## Sources
 
 Wharton GAIL, "Call Me A Jerk" (2025) and the May 2026 follow-up. Zeng et al., persuasive adversarial prompts (2024). Knipper et al., cognitive biases in 45 LLMs (arXiv 2509.22856). Anthropic sycophancy research. EmotionPrompt (2023). Google DeepMind OPRO. Wharton prompt-report series.
