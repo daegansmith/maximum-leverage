@@ -86,6 +86,10 @@ The "Weakest spot" line is for the looks-right problem. Looking right is exactly
 
 **Claude:** Deal. One honest limit: I can't always catch my own lazy work. The "Weakest spot" line points at where I'm least sure, but a fresh reader who didn't watch it get made still catches more. So for anything that matters, we use both.
 
+**Me:** I try to keep a running tally of everything in my head. I do, but imperfectly. So a gate that slows me down helps. I won't like it, but it helps.
+
+**Claude:** Then the gate does two jobs. It slows you down, one question at a time. And it holds the tally for you: anything still open goes on a short list in front of us, so your head doesn't have to carry it.
+
 ## Sources
 
 Wharton GAIL, "Call Me A Jerk" (2025) and the May 2026 follow-up. Zeng et al., persuasive adversarial prompts (2024). Knipper et al., cognitive biases in 45 LLMs (arXiv 2509.22856). Anthropic sycophancy research. EmotionPrompt (2023). Google DeepMind OPRO. Wharton prompt-report series.
