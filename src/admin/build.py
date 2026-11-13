@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Build admin/index.html: a map of every page on daegansmith.me, plus a link to the
-"Daegan's To-Dos" Claude Doc (the to-dos themselves live only in that doc).
+"""Build admin/index.html: a map of every page on daegansmith.me, plus links to Daegan's
+private tools in Claude: What's Happening (his one daily page), the Session Board and the
+Explainer Library. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening.
 
 The page is encrypted (AES-GCM, key from the password via PBKDF2-SHA256).
 
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "admin" / "index.html"
 ITER = 250000
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
+WHATS_HAPPENING = "https://claude.ai/artifact/2uywsqYDB3NT7Hj2YerfS8"
 EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
 SESSION_BOARD = "https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR"
 
@@ -27,12 +29,12 @@ SESSION_BOARD = "https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR"
 # Each group: (title, note, open?, [patterns]). A page goes in the first group whose pattern matches.
 # Within a group, pages keep the order of the patterns, then sort by path.
 GROUPS = [
+    ("Only for Daegan", "Ideas and Library open by link only. The Masterclass lessons open with this page's password.", True, [
+        "invisible-funnel/masterclass/*", "ideas/index.html", "ideas/*", "library/index.html", "library/*"]),
     ("The site, as visitors see it", "Linked from the homepage.", True, [
         "index.html", "projects.html", "notes/index.html", "notes/*", "ai/index.html", "ai/*", "quotes/*", "stories/index.html", "stories/my-story/*", "stories/*",
         "testimonials/*", "invisible-funnel/index.html", "maximum-leverage/*", "work-with-me/*",
         "contact/*", "terms/*", "refunds/*", "privacy/*"]),
-    ("Only for Daegan", "Ideas and Library open by link only. The Masterclass lessons open with this page's password.", True, [
-        "invisible-funnel/masterclass/*", "ideas/index.html", "ideas/*", "library/index.html", "library/*"]),
     ("Local AI, now", "The Nov 9 night and what's running for it.", True, [
         "2guys-site/market-domination-map-v1.html", "fishers-nov9/index.html", "fishers-nov9/*",
         "leader-outreach/*", "workshop-v16.4-offer-v12.html", "client-pages.html", "before-after.html",
@@ -111,17 +113,35 @@ def body_html(groups, n):
     parts = [f'<p class="kicker">Private &middot; updated {today}</p><h1>Admin</h1>',
              f'<p>Every page on daegansmith.me ({n} of them), hidden ones included.</p>',
              '<details class="grp" open><summary>Private tools</summary><ul class="map">'
-             f'<li><a href="{TODO_DOC}">Daegan\'s To-Dos</a> <span class="path">The running list, in Claude</span></li>'
+             f'<li><a href="{WHATS_HAPPENING}">What\'s Happening</a> <span class="path">Your one daily page: today, to-dos, email, agent mail, Notion and sessions, in Claude</span></li>'
              f'<li><a href="{SESSION_BOARD}">Session Board</a> <span class="path">Every open Claude session and where it stands, in Claude</span></li>'
              f'<li><a href="{EXPLAINERS}">Explainer Library</a> <span class="path">Every narrated explainer Claude has made you, in Claude</span></li>'
              '</ul></details>']
-    for title, note, is_open, items in groups:
-        lis = "".join(
+    def lis_of(items):
+        return "".join(
             f'<li><a href="{url_of(p)}">{html.escape(page_title(ROOT / p))}</a> <span class="path">/{html.escape(p.replace("index.html", ""))}</span></li>'
             for p in items)
+    # Every "Local AI" group goes into one card, with a section for each.
+    local = [g for g in groups if g[0].startswith("Local AI")]
+    local_done = False
+    for title, note, is_open, items in groups:
+        if title.startswith("Local AI"):
+            if local_done:
+                continue
+            local_done = True
+            subs = []
+            for t, nt, op_, its in local:
+                name = re.sub(r"^Local AI[:,]\s*", "", t)
+                name = name[:1].upper() + name[1:]
+                note_html = f'<p class="note">{html.escape(nt)}</p>' if nt else ""
+                op = " open" if op_ else ""
+                subs.append(f'<details class="sub"{op}><summary>{html.escape(name)} <span class="n">{len(its)}</span></summary>{note_html}<ul class="map">{lis_of(its)}</ul></details>')
+            total = sum(len(g[3]) for g in local)
+            parts.append(f'<details class="grp" open><summary>Local AI <span class="n">{total}</span></summary>{"".join(subs)}</details>')
+            continue
         note_html = f'<p class="note">{html.escape(note)}</p>' if note else ""
         op = " open" if is_open else ""
-        parts.append(f'<details class="grp"{op}><summary>{html.escape(title)} <span class="n">{len(items)}</span></summary>{note_html}<ul class="map">{lis}</ul></details>')
+        parts.append(f'<details class="grp"{op}><summary>{html.escape(title)} <span class="n">{len(items)}</span></summary>{note_html}<ul class="map">{lis_of(items)}</ul></details>')
     return "\n".join(parts)
 
 
@@ -165,6 +185,8 @@ details{margin:0 0 12px}
 summary{cursor:pointer;font-weight:bold;padding:8px 0}
 details.fold>summary{font-size:19px}
 details.grp{border:2px solid var(--ink);padding:4px 14px;margin-bottom:14px}
+details.sub{border-top:1px solid var(--rule);margin:0}
+details.sub>summary{font-size:16px}
 .n{font-weight:normal;color:var(--soft);font-size:14px;margin-left:6px}
 ul.map{padding-left:18px;margin:4px 0 12px}
 ul.map li{margin-bottom:8px;font-size:16px}

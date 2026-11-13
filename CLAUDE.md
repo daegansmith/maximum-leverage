@@ -12,7 +12,7 @@ It is safe to run repeatedly. It skips redirect pages, `admin/` (its builder add
 
 ## Admin page (/admin/)
 
-Private, password-gated (Daegan has the password; never commit it). A map of every page on the site, plus a link to the "Daegan's To-Dos" Claude Doc. The to-dos live only in that doc; never copy them onto the site.
+Private, password-gated (Daegan has the password; never commit it). In this order: Private tools (What's Happening, his one daily page; the Session Board; the Explainer Library), Only for Daegan, the site as visitors see it (a site map), then one Local AI card with a section per group. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening; never copy them onto the site.
 
     ADMIN_PASSWORD=... python3 src/admin/build.py
 
