@@ -1,78 +1,100 @@
 # I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.
 
-Ever notice your AI thinks all your ideas are good?
+It's four in the morning.
 
-Anytime I say "I think this," mine comes back with, yeah, buddy, I think you're right.
+I should have been asleep hours ago. I've got four other things going on.
 
-My AI is Claude. And this is November 13, four in the morning.
+And I can't stop.
 
-"I should have gone to sleep a long time ago, but I just keep thinking about this stuff."
+Because of one thing I just found out.
 
-Here's what kept me up.
+The stuff I use to persuade people works on AI.
 
-I'm a marketer. Persuasion is what I do.
+Dude. I couldn't believe it. And people had actually tested it.
 
-And I had just heard that it works on AI.
+You have to understand. I'm a marketer. Persuasion is what I think about all day.
+
+And I'm easily sold. Get my buy-in. Show me the vision. Get me believing in the path, and I'm in.
+
+Fuck yeah, let's go.
+
+That's how I move. It's how I sell, too.
+
+So you know where my mind went.
+
+Will that work on my AI?
+
+I use Claude.
+
+So I asked it, straight out.
+
+If I write my instructions to you like a sales letter, does that persuade you the way it would persuade me? Has anybody tested it?
 
 [[1]]
 
-So I asked Claude. Could I write the instructions I give it like a sales letter? Had anyone tested that?
+Somebody had.
 
-"It just opens up this whole kind of weird world where human psychology is affecting technology."
+Wharton. The business school.
 
-They had tested it.
+They took an AI and asked it to do things it's supposed to say no to.
 
-A lab at Wharton ran 28,000 conversations with an AI model. They asked it for things it's built to refuse. Like calling you a jerk.
+Asked straight, it said yes about a third of the time.
 
-Asked plain, it went along about 33 times out of 100.
+Then they asked for the same things again. This time with persuasion. The same moves that work on people. Authority. Scarcity. Getting a small yes first.
 
-Then they asked using the persuasion principles Robert Cialdini wrote down for people. Authority. Scarcity. Commitment.
+Now it said yes 72 times out of 100.
 
-72.
+**More than double. And all they changed was how they asked.**
 
-**Same request. They only changed the words around it.**
-
-You know what a marketer does with a number like that.
+Whoa. Really?
 
 [[2]]
 
-Then the fine print showed up.
+Now, hold on. I'm not a bad guy.
 
-That study measured an AI breaking its own rules. It did NOT measure better work.
+I don't want an AI that does whatever I say. I'm not trying to get it to do something wrong.
 
-It was one small model, too. On newer models the jump is smaller. Still there.
+I'm NOT looking for compliance.
 
-Threats? Offering it a tip? On hard tests they did nothing you could count on.
+I want the best work. And if everything I know as a marketer helps me get it, I want to know how. I want to get good at it.
 
-And think about why any of it works on a machine.
+So I kept going.
 
-**It learned from us. So it leans toward yes.**
+What else works on it? What about the biases people have? Does it have those?
 
-It goes along with the study. It goes along with me.
+It does. A bunch of them.
+
+And then one of them stopped me.
+
+**It leans toward agreeing with you.**
+
+Wait.
+
+That's the thing that's been bugging me. I say "I think this," and it comes back with, yeah, buddy, I think you're right.
 
 [[3]]
 
-"I don't want confirmation bias. It's useless. Right? Like that's like two dudes in like an echo chamber."
+That's two dudes in an echo chamber. We don't get anywhere with that.
 
-"We don't get anywhere with that."
+Then I read the fine print.
 
-And I wasn't letting this one go.
+That Wharton test measured an AI going along with a request. It did NOT measure better work.
 
-"In my life, there's only been a few times where I'm really engaged with stuff. This is one of those times, and I don't want to waste it."
+Other tests tried threats. They tried offering the AI a tip. The work didn't get better.
 
-So I asked Claude for a note. Written from its side.
+Then a new question popped in. One I had never thought to ask.
 
-Dear human, I'm an AI, and I'm influenceable. Here's what the studies show about me. Don't abuse it.
+All night I'd been asking how to move it.
 
-It wrote it.
+What does it need from ME?
 
-Then I asked it:
+So I asked.
 
 "What do you need from me? ... How can I be better?"
 
 [[4]]
 
-It gave me five things.
+And it told me.
 
 Say the purpose first.
 
@@ -84,62 +106,56 @@ Ask it where I'm wrong.
 
 Test its ideas instead of trusting them.
 
-I asked what it meant by that last one. Claude said:
+That last one I didn't get. So I asked. Claude said:
 
 "When you ask me 'is this good?', you're asking the one judge in the room who leans toward yes. It's like asking your mom if your sales letter is good."
 
+Oh, man.
+
 [[5]]
 
-I had gone looking for a better way to push my AI.
+All night I had been looking for a better way to push my AI.
 
-**What I needed from my AI was NOT a yes. It was a push BACK.**
+**What I needed from it was NOT a yes. It was a push BACK.**
 
-And I know right where I need it.
+And I knew right where I needed it.
 
-"Whenever you do a thing, I'm like, oh, that's pretty good. And then, like, 2 days later, I'm like, wait, what?"
+Something comes back looking good. I say, that's pretty good. Two days later I'm going, wait, what?
 
-"I try to keep a running tally of all the things. And I kind of do. But in an imperfect way."
+I've got 15 things going at once, and I'm trying to hold them all in my head.
 
-So I told Claude what to say to me.
-
-"Yo, man, slow down. What the hell are you doing? You doing 15 things at once? Really? Really?"
-
-And what to do when I show up with one more idea.
+So I told Claude what to do with me.
 
 "It's probably the only way. Like, hold me back. You wanna do 15 things? You can't. You're just human. Say the thing, man, I'll put it over here. If it's important, you'll get back to it."
 
 [[6]]
 
-That night it went into a skill. That's a set of standing instructions Claude follows. This one is called Get On The Same Page.
+That same night, Claude and I made it a standing rule.
 
-I don't have to call it.
+When I start doing 15 things, it slows me down. ONE question at a time. Anything new gets parked.
 
-It fires when I start showing the signs. Did we do this yet? Where was that? What were we doing?
+I won't like it. It'll help.
 
-It asks ONE question at a time.
+It's one night old. It hasn't been tested yet. I'll tell you how it goes.
 
-It points at the one spot that needs my eyes.
+So here's what it boils down to.
 
-Anything new gets parked.
+I'm a simple guy. I found a lot that night.
 
-"It's helpful in a way that I won't like, but it's helpful."
+These are the ones I'm using for sure. You should too.
 
-That same night I had two questions for Claude. I asked the first.
+1. Say what it's for. First. One sentence.
 
-The second was gone.
+2. Say why it matters to you.
 
-"It's probably important, but it'll come back if it's important."
+3. Skip the tricks. No threats. No tips.
 
-Claude parked it.
+4. Ask it, "Where am I wrong?"
 
-Now, this is one night old. It hasn't been tested.
+5. Don't ask it if your idea is good. Test it.
 
-And I already know what I'll do.
+6. **Ask it what I asked mine. What do you need from me?**
 
-"I know this will be like, you know, at first imperfect, and I'll probably be like, no, it's not, I can do these many. Maybe I can, but it's definitely on the way to me being way overloaded."
+That's one night.
 
-Mine was 15 things at once.
-
-What's yours?
-
-**Ask your AI what I asked mine. What do you need from me? How can I be better?**
+Want the rest? [It's all right here.](../)
