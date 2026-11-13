@@ -147,9 +147,24 @@ def make_it_simple_page():
         page("Make It Simple", "A skill that cuts any Claude answer down to what you have to do and whether it is done.", out))
 
 
+def ai_note_page():
+    """Build ai/ai-note/ from src/ai/ai-note.md (the AI's own-voice note)."""
+    text = (ROOT / "src/ai/ai-note.md").read_text().strip()
+    assert "\u2014" not in text, "em dash in ai-note.md"
+    title, _, rest = text.partition("\n\n")
+    lead, _, body = rest.partition("\n\n")
+    out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+           f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{inline(lead)}</p>\n'
+           f'<div class="prose">{markdown.markdown(body, extensions=["tables"])}</div>')
+    (ROOT / "ai/ai-note").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/ai-note/index.html").write_text(
+        page("A Note From My AI", "What the studies show about how persuasion moves AI, written by Claude in its own voice.", out))
+
+
 def main():
     n_skills = skills_page()
     make_it_simple_page()
+    ai_note_page()
     text = SRC.read_text()
     assert "—" not in text.split("\n", 1)[1], "em dash in the log body"
     h2 = split_h2(text)
@@ -294,6 +309,8 @@ def main():
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
+        '<a class="card" href="ai-note/"><span class="cn">November 13, 2026</span><span class="ct">A Note From My AI: I\'m Influenceable</span>'
+        '<span class="cd">Claude, in its own voice: what the studies show about how persuasion moves an AI, why it does what it does, and what it needs from me.</span></a>'
         '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
         '<span class="cd">A skill that changed after a test: where the idea came from, what the simulation showed, and how the skill runs now.</span></a>'
         '</div></section>\n'
