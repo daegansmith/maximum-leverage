@@ -22,6 +22,7 @@ ITER = 250000
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
 EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
 SESSION_BOARD = "https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR"
+NOTION_HUB = "https://claude.ai/artifact/KNo2gCXtAbBpcAbQw32kJv"
 
 # ---------------------------------------------------------------- site map groups
 # Each group: (title, note, open?, [patterns]). A page goes in the first group whose pattern matches.
@@ -113,6 +114,7 @@ def body_html(groups, n):
              '<details class="grp" open><summary>Private tools</summary><ul class="map">'
              f'<li><a href="{TODO_DOC}">Daegan\'s To-Dos</a> <span class="path">The running list, in Claude</span></li>'
              f'<li><a href="{SESSION_BOARD}">Session Board</a> <span class="path">Every open Claude session and where it stands, in Claude</span></li>'
+             f'<li><a href="{NOTION_HUB}">Two Guys Notion Hub</a> <span class="path">The team meeting log, day log and main Notion links, in Claude</span></li>'
              f'<li><a href="{EXPLAINERS}">Explainer Library</a> <span class="path">Every narrated explainer Claude has made you, in Claude</span></li>'
              '</ul></details>']
     for title, note, is_open, items in groups:
