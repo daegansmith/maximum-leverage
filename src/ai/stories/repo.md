@@ -40,11 +40,11 @@ I was using it to put pages up on my website.
 
 Then it hit me what it does. It keeps every version of a text file, in one place, with the history.
 
-"That's what literally GitHub is for."
+**"That's what literally GitHub is for."**
 
 Here's what I took from that.
 
-The fix is NOT always a new tool. Sometimes it's one you already use for something smaller.
+**The fix is NOT always a new tool. Sometimes it's one you already use for something smaller.**
 
 [[6]]
 
@@ -62,4 +62,4 @@ Mine was GitHub.
 
 What's yours?
 
-Before you go looking for something new, ask what the tools you already use were built to do.
+**Before you go looking for something new, ask what the tools you already use were built to do.**

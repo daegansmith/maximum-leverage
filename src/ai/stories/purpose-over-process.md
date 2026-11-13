@@ -34,7 +34,7 @@ I'd hit this wall before. October 15. October 25. Each time we added more rules 
 
 So I asked why this keeps happening. Claude's answer:
 
-"The checks reward the form of persuasion, so I deliver the form."
+**"The checks reward the form of persuasion, so I deliver the form."**
 
 [[4]]
 
@@ -54,7 +54,7 @@ Claude:
 
 That's the lesson.
 
-A better score is NOT better work.
+**A better score is NOT better work.**
 
 That left me two options.
 
@@ -74,7 +74,7 @@ Or, "Not yet, because..."
 
 Then we took the same page and started over from what each section was for. I read it, said what was off, and put my name on it.
 
-That took a morning. Four rounds overnight hadn't gotten there.
+**That took a morning. Four rounds overnight hadn't gotten there.**
 
 Now, has it held?
 
@@ -82,10 +82,10 @@ Three pieces in three days. Short record.
 
 But remember this.
 
-A better score is NOT better work.
+**A better score is NOT better work.**
 
 Mine was a score going up.
 
 What's yours? A checklist? A word count? "Looks done"?
 
-Tell your AI what the work is FOR. Then make it answer for that first.
+**Tell your AI what the work is FOR. Then make it answer for that first.**

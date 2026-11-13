@@ -32,7 +32,7 @@ What did it cost me? I can't point to a line. That's the problem with it.
 
 On September 15 we found it.
 
-Four versions behind on my voice. Eleven versions behind on my marketing instructions.
+**Four versions behind on my voice. Eleven versions behind on my marketing instructions.**
 
 Version 5 alone added a whole section on how my copy is built.
 
@@ -42,7 +42,7 @@ And nothing had told me.
 
 That's the lesson.
 
-No error does NOT mean your AI is reading the right thing.
+**No error does NOT mean your AI is reading the right thing.**
 
 That left me two options.
 
@@ -52,7 +52,7 @@ That left me two options.
 
 [[5]]
 
-So now it gets the folder, and one instruction. Open the newest one.
+**So now it gets the folder, and one instruction. Open the newest one.**
 
 [[6]]
 
@@ -66,4 +66,4 @@ Anything pasted by hand still goes stale. On November 10 I had two copies of my 
 
 So check yours. A file name. A link. A price list from last year.
 
-It won't tell you on its own. Ask your AI which one it's reading.
+**It won't tell you on its own. Ask your AI which one it's reading.**

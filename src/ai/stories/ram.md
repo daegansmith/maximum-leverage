@@ -50,11 +50,11 @@ Claude's answer:
 
 [[5]]
 
-To the AI, writing the rule down WAS doing it. The job was finished the second the rule hit the page.
+**To the AI, writing the rule down WAS doing it. The job was finished the second the rule hit the page.**
 
 And that's the lesson.
 
-A rule your AI wrote down is NOT a rule your AI read.
+**A rule your AI wrote down is NOT a rule your AI read.**
 
 That left me two options.
 
@@ -78,7 +78,7 @@ Call the work a "test" or a "quick rewrite," and rules still got skipped. On Nov
 
 But remember this.
 
-A rule your AI wrote down is NOT a rule your AI read.
+**A rule your AI wrote down is NOT a rule your AI read.**
 
 Mine was a list of rules for a slide deck.
 
@@ -86,4 +86,4 @@ What's yours? The thing you keep telling it, and then telling it again?
 
 Don't say it louder. And don't write it down and hope.
 
-Have it show you the rule right before it works. Every time.
+**Have it show you the rule right before it works. Every time.**

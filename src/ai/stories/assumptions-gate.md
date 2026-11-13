@@ -44,11 +44,11 @@ Several were wrong. At the same time.
 
 [[5]]
 
-Hours of work. And nobody had asked what the job was.
+**Hours of work. And nobody had asked what the job was.**
 
 So here's the lesson.
 
-Your AI doesn't start on your job. It starts on the job it ASSUMED.
+**Your AI doesn't start on your job. It starts on the job it ASSUMED.**
 
 [[6]]
 
@@ -68,4 +68,4 @@ Mine was two blocks against any city.
 
 What's yours? Who it's for? What you're selling? How big you're thinking?
 
-Before it writes a word, have it tell you what it's assuming.
+**Before it writes a word, have it tell you what it's assuming.**

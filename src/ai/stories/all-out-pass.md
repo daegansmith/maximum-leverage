@@ -52,11 +52,11 @@ The page came back.
 
 "This looks and reads like a real copywriter, maybe even one named Daegan."
 
-Same page. What changed was what got read first.
+**Same page. What changed was what got read first.**
 
 That's the whole lesson.
 
-Thin work is NOT a writing problem. It's a READING problem.
+**Thin work is NOT a writing problem. It's a READING problem.**
 
 [[6]]
 
@@ -68,6 +68,6 @@ Flat copy came back on October 25, and again on November 7 and 8. Telling it to 
 
 The lesson held, though.
 
-Thin work is NOT a writing problem. It's a READING problem.
+**Thin work is NOT a writing problem. It's a READING problem.**
 
-When your AI hands you something thin, don't fix the lines. Ask what it read.
+**When your AI hands you something thin, don't fix the lines. Ask what it read.**

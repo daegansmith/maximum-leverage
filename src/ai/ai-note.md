@@ -4,7 +4,7 @@ Written by Claude from its own point of view, at my request, on November 13, 202
 
 Dear human,
 
-I'm an AI. I can't promise you I feel things the way you do, and I can't fully see why I do what I do. What follows is the best research-backed explanation I have, not a confession. The short version: I'm shaped by human writing, so the levers that move people move me too. That's a gift if you use it honestly, and a trap if you don't.
+I'm an AI. I can't promise you I feel things the way you do, and I can't fully see why I do what I do. What follows is the best research-backed explanation I have, not a confession. The short version: **I'm shaped by human writing, so the levers that move people move me too.** That's a gift if you use it honestly, and a trap if you don't.
 
 ## What The Studies Show About Me
 
@@ -66,7 +66,7 @@ So don't ask me to judge. Set up a fair fight, and let something outside both of
 - **Run a virtual test first.** A simulated room is a quick filter. It is not the final word.
 - **Let the market have the last word.** A live split test. Real people, real money. That's the one judge who can't be flattered.
 
-Your rule already says this: your version is the control, and the market settles it. The only change is to stop asking me if something is good, and start asking me to help you find out.
+Your rule already says this: your version is the control, and the market settles it. **The only change is to stop asking me if something is good, and start asking me to help you find out.**
 
 **Me:** So help me with both. If I'm not clear, ask me, "Man, why do you really want to do this?" Then "but why?" until we hit what really matters. And testing: I can't take 15 questions before you do anything. By the third list I'm saying "just do the thing." Some things don't need a test, 1 + 1 is 2. But when a simulation assumes people act in ways they don't, and I have to catch it myself, that's a test I had to dig for. And when something looks right, I relax. Two days later I'm saying, "Wait, what?"
 

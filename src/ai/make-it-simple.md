@@ -1,6 +1,6 @@
 # Make It Simple
 
-Sometimes Claude gives me way too much. I only want two things: what do I have to do, and are we done?
+Sometimes Claude gives me way too much. **I only want two things: what do I have to do, and are we done?**
 
 <img class="arcimg" src="arc.png" alt="A line that starts low when Claude tells me everything and climbs to done when I say make it simple.">
 
@@ -28,7 +28,7 @@ It talks like I am in third grade. Short words. Short sentences.
 
 ## What It Never Cuts
 
-If skipping something would cost me money or break the result, it stays. It gets one line, right at the step it touches. Everything else goes.
+**If skipping something would cost me money or break the result, it stays.** It gets one line, right at the step it touches. Everything else goes.
 
 ## Before And After
 

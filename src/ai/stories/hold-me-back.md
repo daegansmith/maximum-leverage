@@ -30,7 +30,7 @@ Then they asked using the persuasion principles Robert Cialdini wrote down for p
 
 72.
 
-Same request. They only changed the words around it.
+**Same request. They only changed the words around it.**
 
 You know what a marketer does with a number like that.
 
@@ -46,7 +46,7 @@ Threats? Offering it a tip? On hard tests they did nothing you could count on.
 
 And think about why any of it works on a machine.
 
-It learned from us. So it leans toward yes.
+**It learned from us. So it leans toward yes.**
 
 It goes along with the study. It goes along with me.
 
@@ -92,7 +92,7 @@ I asked what it meant by that last one. Claude said:
 
 I had gone looking for a better way to push my AI.
 
-What I needed from my AI was NOT a yes. It was a push BACK.
+**What I needed from my AI was NOT a yes. It was a push BACK.**
 
 And I know right where I need it.
 
@@ -142,4 +142,4 @@ Mine was 15 things at once.
 
 What's yours?
 
-Ask your AI what I asked mine. What do you need from me? How can I be better?
+**Ask your AI what I asked mine. What do you need from me? How can I be better?**

@@ -34,7 +34,7 @@ On the 25th we counted.
 
 Line by line, how much of it was still word for word mine?
 
-About 2 to 9 percent.
+**About 2 to 9 percent.**
 
 We counted my presentation the same way, to compare. About 62 percent.
 
@@ -44,7 +44,7 @@ We counted my presentation the same way, to compare. About 62 percent.
 
 Here's the lesson in it.
 
-"Better" is NOT the same as "still yours."
+**"Better" is NOT the same as "still yours."**
 
 [[6]]
 
@@ -62,8 +62,8 @@ Three rules I approved to stop this sat in the right log and never reached my in
 
 So think about the thing you'd hand over. A bio. A sales page. An email you've sent a hundred times.
 
-"Better" is NOT the same as "still yours."
+**"Better" is NOT the same as "still yours."**
 
-Before it makes anything of yours better, have it tell you whether it's revising or rewriting.
+**Before it makes anything of yours better, have it tell you whether it's revising or rewriting.**
 
 And if you're not sure, have it count.

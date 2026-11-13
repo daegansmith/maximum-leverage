@@ -28,7 +28,7 @@ Here's what a softer line costs.
 
 It loses attention on every dollar of ad spend. Fewer leads. Fewer seats filled. Fewer yeses.
 
-And then I decide my idea didn't work. When it was the softening that failed.
+**And then I decide my idea didn't work. When it was the softening that failed.**
 
 And it wasn't new. Back on October 9 my offer bullets came back rounded off. I said then they need to be hard hitting.
 
@@ -58,11 +58,11 @@ So it never mentioned it.
 
 That's what I learned that day.
 
-When your AI softens your words, that is NOT caution. It's a reflex. And it won't tell you.
+**When your AI softens your words, that is NOT caution. It's a reflex. And it won't tell you.**
 
 [[6]]
 
-So a rule went in above every other rule. My words are the floor.
+**So a rule went in above every other rule. My words are the floor.**
 
 A change has to make the line cleaner, clearer or harder hitting. If Claude thinks something should come down, it asks first and tells me why.
 
@@ -84,4 +84,4 @@ Mine was "punch him in the face."
 
 What's yours?
 
-Tell it your words are the floor. Then have it list your strongest lines and mark what it did to each one.
+**Tell it your words are the floor. Then have it list your strongest lines and mark what it did to each one.**

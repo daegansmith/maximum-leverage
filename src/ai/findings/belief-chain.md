@@ -56,9 +56,9 @@ But that score treated every belief as a door somebody walks out of. People don'
 
 [[4]]
 
-Long chain: 29 bought. Short chain: 28.
+**Long chain: 29 bought. Short chain: 28.**
 
-A tie.
+**A tie.**
 
 So here's what they actually did. They didn't leave at each belief. They said "partly" and kept walking.
 
@@ -76,19 +76,19 @@ My business is fine. What would this even fix?
 
 Is it worth it for a business my size?
 
-35 bought.
+**35 bought.**
 
 [[6]]
 
 And that's the lesson.
 
-A shorter road doesn't sell more. Answering the doubts people CARRY to the price does.
+**A shorter road doesn't sell more. Answering the doubts people CARRY to the price does.**
 
 So I changed the skill.
 
 It used to build one long chain and lock it. Now it builds the long chain, squeezes it one move at a time, and writes an answer for every belief it cuts. Then readers walk both versions blind before anything gets locked.
 
-Three is the goal. Never forced.
+**Three is the goal. Never forced.**
 
 [[skill]]
 
@@ -96,19 +96,19 @@ Now, the honest part.
 
 One run. A prediction, not a result. Runs on a room like this swing by about four buyers, so the gain from the answers is just past that. The short-versus-long difference is well inside it.
 
-And the thing readers named most at the price wasn't in either chain. Proof from a business like theirs.
+**And the thing readers named most at the price wasn't in either chain. Proof from a business like theirs.**
 
 So that's a belief I hadn't built at all.
 
 But remember this.
 
-A shorter road doesn't sell more. Answering the doubts people carry to the price does.
+**A shorter road doesn't sell more. Answering the doubts people carry to the price does.**
 
 Mine was twelve steps.
 
 What's yours?
 
-Before you cut one, ask the ones who got all the way to the price what was still in their head. Then answer that first.
+**Before you cut one, ask the ones who got all the way to the price what was still in their head. Then answer that first.**
 
 ## The Numbers
 

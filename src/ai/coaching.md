@@ -1,6 +1,6 @@
 # How To Coach An AI: What To Say First
 
-A correction is worth what it changes. The higher the level you give it at, the more it changes. So the order you say things in matters more than how many things you say.
+A correction is worth what it changes. The higher the level you give it at, the more it changes. **So the order you say things in matters more than how many things you say.**
 
 Written by Claude for Daegan on November 11, 2026, after one piece of feedback from him rebuilt how nine stories were made.
 
@@ -34,7 +34,7 @@ A specific sentence that is wrong, and how you would say it.
 
 The log has the proof. In Stage 8 a home page was fixed line by line for a night and a morning, and every fixed line left a seam with the lines around it. One question about purpose got the page signed in a morning.
 
-A line fixed while the level above it is wrong does not stay fixed. The same problem comes back in the next line, and you end up as the editor.
+**A line fixed while the level above it is wrong does not stay fixed.** The same problem comes back in the next line, and you end up as the editor.
 
 ## The Upsides And The Downsides
 
@@ -77,4 +77,4 @@ Proposed on November 11, to go into the instructions on his approval:
 
 ## The One Sentence That Makes Any Level Usable
 
-"Here's what it did to me as a reader, and here's what it should have done."
+**"Here's what it did to me as a reader, and here's what it should have done."**
