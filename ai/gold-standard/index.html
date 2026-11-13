@@ -1,0 +1,343 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Gold Standard: How My Instructions Are Built | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.wrap{max-width:660px}
+h1{font-size:clamp(32px,6vw,44px)}
+h2{font-size:clamp(23px,4.4vw,28px);margin:56px 0 12px}
+h3{font-size:19px;line-height:1.3;margin:28px 0 6px}
+.dek{font-size:20px;color:var(--soft);margin:0 0 28px}
+.napkin{background:#fff;border:1px solid var(--rule);margin:24px 0 8px;padding:6px}
+.napkin svg{display:block;width:100%;height:auto}
+.cap{font-size:15px;line-height:1.45;color:var(--soft);margin:6px 0 24px}
+.aside{font:400 23px/1.35 "Patrick Hand",cursive;border-left:3px solid #d2491b;padding:4px 0 4px 16px;margin:24px 0}
+.tw{overflow-x:auto;margin:16px 0 24px}
+table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--rule)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--soft)}
+code{font:14px ui-monospace,Menlo,monospace;word-break:break-all}
+.pair{border:2px solid var(--ink);padding:14px 16px;margin:16px 0;font-size:16px;line-height:1.5}
+.pair div{margin:4px 0}.pair b{display:inline-block;width:62px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+.pair .after{font-weight:bold}
+ul{padding-left:22px;margin:0 0 20px}li{margin:6px 0}
+.box{border:2px solid var(--ink);padding:16px 20px;margin:28px 0}
+.box h3{margin-top:0}
+.src{font-size:14px;line-height:1.6;color:var(--soft)}
+.src a{color:var(--soft)}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/roughjs@4.6.6/bundled/rough.js"></script>
+</head><body><div class="wrap">
+<p><a class="back" href="../">&larr; AI Evolution</a></p>
+<p class="kicker">AI Evolution &middot; The Gold Standard &middot; November 13, 2026</p>
+<h1>How My Instructions Are Built, And Why Order Matters</h1>
+<p class="dek">A walkthrough of the Marketing instructions, rebuilt November 13, 2026. What's what, why it's there, and where everything lives.</p>
+
+<p>Here's a thing that happened.</p>
+<p>I'd been writing rules for Claude for months. Good rules. Every one of them earned the hard way, with a date and a story attached.</p>
+<p>Then one night every rule got followed and the copy still didn't hold up.</p>
+<p>So I put one line above all the rules: <strong>the purpose of every piece is copy I'd put my name on.</strong> Purpose over process.</p>
+<p>And things changed. Not a little. A lot.</p>
+<p>Which made me wonder what else works like that. What else is sitting in plain sight that changes everything once you see it?</p>
+<p>Turns out the answer is mostly about one thing: <strong>attention.</strong></p>
+
+<h2>Part 1: Claude Has An Attention Budget</h2>
+<p>Here's the part nobody tells you when you start writing instructions.</p>
+<p>Claude doesn't read your instructions the way you read a contract, every clause weighted the same. It has a limited amount of attention, and every line you add spends some of it.</p>
+<p>Anthropic's engineers say it straight: context is a finite resource with diminishing returns, and the more you pile in, the worse the model gets at using any of it. They call that <strong>context rot.</strong></p>
+<div class="napkin"><svg id="d-why" viewBox="0 0 640 330"></svg></div>
+<p class="cap">A "why" picture: as the words loaded into every chat go up, the attention each rule gets goes down. The shape is the point, not the numbers.</p>
+<p>You already know this. It's a sales letter.</p>
+<p>The opening frames everything after it. Padding loses the reader. And a letter that says everything at once ends up saying nothing.</p>
+<p>That's why the purpose rule worked. It wasn't one more rule. It was the frame every other rule gets read through, sitting right at the top where it gets the most attention.</p>
+<div class="aside">Order matters because attention runs out. Put the thing that frames everything first.</div>
+
+<h2>Part 2: The Shape Of The Gold Standard</h2>
+<p>So if attention is the budget, the job is spending it in the right place.</p>
+<p>The best people building with Claude all land on the same shape. Anthropic calls it <strong>progressive disclosure:</strong> load the details only when they're needed. Picture a filing cabinet.</p>
+<div class="napkin"><svg id="d-map" viewBox="0 0 640 380"></svg></div>
+<p class="cap">A "where" picture. The top drawer is open in every chat. The others open only when their moment comes.</p>
+<h3>Drawer 1: The instructions (every chat)</h3>
+<p>Only what every single chat needs. The purpose. My three rules. And a list of the moments that call for something more, each pointing to where its details live.</p>
+<h3>Drawer 2: The procedures (when the moment comes)</h3>
+<p>How the Assumptions Gate runs. The All-Out Pass. The end-of-session batch. These matter enormously, but only at their moment. So they sit one step away, and the instructions say exactly when to open them.</p>
+<h3>Drawer 3: Skills and sources (on demand)</h3>
+<p>A skill shows Claude one line, its description, all the time. The full skill loads only when the job matches. That's why a skill's description is the most important line in it.</p>
+<p>The sources file is the map of Drive, the emails, Ray's books. Read when you need to find something, not before every job.</p>
+
+<h2>Part 3: What's Where Now</h2>
+<p>Here's the rebuild. The key fact: <strong>no rule was rewritten.</strong> Every rule either stayed or moved, word for word.</p>
+<div class="tw"><table>
+<tr><th>File</th><th>What it holds</th><th>When it loads</th></tr>
+<tr><td><code>instructions/marketing.md</code></td><td>Purpose, the three rules, the five moments as triggers, the short always-on rules</td><td>Every chat</td></tr>
+<tr><td><code>governing/marketing-procedures.md</code></td><td>Assumptions Gate, RAM, All-Out Pass, clean-copy workflow, Screen Gate, the end-of-session batch</td><td>When its moment fires</td></tr>
+<tr><td><code>governing/line-examples.md</code> <em>(new)</em></td><td>Before-and-after pairs from my real picks</td><td>Every copy job (the copy load)</td></tr>
+<tr><td><code>skills/marketing-council</code></td><td>The Council, the Deep Room, the Mastermind Room</td><td>Any brainstorm</td></tr>
+<tr><td><code>skills/example-bank</code> <em>(new)</em></td><td>How examples get captured, curated and tested</td><td>When I pick or correct</td></tr>
+<tr><td><code>governing/marketing-sources.md</code></td><td>Living docs, Drive folders, Ray's books, my own emails</td><td>When something needs finding</td></tr>
+<tr><td>Changelog</td><td>Why each rule exists</td><td>Only to answer "why"</td></tr>
+</table></div>
+<p>The result: the part that loads into every chat went from about <strong>57,600 characters to about 28,800.</strong> Half. From 242 lines to 165.</p>
+<p>And nothing's gone. It's just in the right drawer.</p>
+
+<h2>Part 4: Order Inside The Instructions</h2>
+<p>The other thing I got right early, without knowing why, is the moments.</p>
+<p>Most people organize instructions by topic: tone, format, research, and so on. Mine are organized by <strong>when:</strong> when an objective opens, before a line is written, before anything is shown, after a correction, at the end of the session.</p>
+<div class="napkin"><svg id="d-when" viewBox="0 0 640 260"></svg></div>
+<p class="cap">A "when" picture. Each moment is a trigger, and each trigger opens its drawer.</p>
+<p>That's a trigger structure. It's how the best skill builders write too. A rule tied to a moment fires at that moment. A rule floating in a list fires whenever Claude happens to remember it, which, in a long session, is less and less.</p>
+<p>That's what I watched happen on October 25 and 26. Rules agreed early stopped holding later in the same session. The research predicts exactly that.</p>
+
+<h2>Part 5: Examples, The Thing I Was Half Doing</h2>
+<p>Anthropic says examples are one of the most reliable ways to steer what Claude writes. A few good ones beat a long list of rules.</p>
+<p>So, was I using examples well?</p>
+<p>Here's the honest answer. <strong>I was collecting them brilliantly and serving them badly.</strong></p>
+<p>Voice Reference Section 5 has dozens of logged picks. Claude's version, the one I chose, and why. That's a goldmine most people don't have.</p>
+<p>But it sat as a log. History, filed in a long voice document. The lessons got turned into abstract rules ("sound beats cleverness"), and the actual pairs, the thing that teaches, weren't in front of Claude at the moment it was writing.</p>
+<div class="napkin"><svg id="d-pair" viewBox="0 0 640 300"></svg></div>
+<p class="cap">A "who and what" picture. A wrong line never travels alone. It sits beside its fix and the reason.</p>
+<p>So now there's Line Examples. Five patterns, the five places Claude's lines miss me most. Three real pairs each. Like this one:</p>
+<div class="pair">
+<div><b>Before</b>"By the end of the week you'll know whether this is your place."</div>
+<div class="after"><b>After</b>"By the end of the week you'll know exactly why that 5.0 is up there."</div>
+<div><b>Why</b>Take a confident stand and close the loop to the headline.</div>
+</div>
+<p>Three rules for examples, from Anthropic and from what worked:</p>
+<ul>
+<li><strong>Real, not invented.</strong> Every pair has a date and a source.</li>
+<li><strong>Diverse.</strong> Different pieces, different formats, so Claude learns the pattern and not one page's wording.</li>
+<li><strong>Paired.</strong> A bad line shown alone teaches the bad line.</li>
+</ul>
+<p>And one pair where the fix was the mistake (Claude "fixed" an ambiguous subhead that was ambiguous on purpose). That one stops the patterns from being applied by reflex.</p>
+
+<h3>The example loop</h3>
+<p>A file of examples goes stale. So the example-bank skill keeps it alive, for every project, not just Marketing.</p>
+<div class="napkin"><svg id="d-loop" viewBox="0 0 640 300"></svg></div>
+<p class="cap">A "how" picture. Capture when I pick, curate at session end, test when a pattern keeps missing.</p>
+<p>The test is the piece I didn't have. You run a real job without the examples, then with them. If the second version doesn't move toward my picks, the examples aren't teaching. Swap them. It's split-testing, for instructions.</p>
+
+<h2>Part 6: Cialdini, And What It Actually Means</h2>
+<p>This one sounded big in the video and vague in practice. So here's what's really going on.</p>
+<h3>What the research was</h3>
+<p>In 2025, a Wharton team, with Robert Cialdini himself on the paper, tested his seven principles on an AI model. Authority, commitment, liking, reciprocity, scarcity, social proof, unity.</p>
+<p>The catch: they were trying to get the model to do things it's trained to <em>refuse</em>, like insulting the user. And it was GPT-4o mini, a small model. Persuasion more than doubled compliance, from about a third to about 72%. On the bigger model, the effect shrank a lot.</p>
+<p>So the finding isn't "write persuasively and get better copy." It's that these models picked up human social habits from human writing. They respond to the same cues people do.</p>
+<h3>How builders use it</h3>
+<p>Jesse Vincent, who builds the Superpowers skills, took that and applied it to his own skills. Not to break rules. To make rules stick. His mapping:</p>
+<ul>
+<li><strong>Commitment:</strong> make Claude say out loud which skill or rule it's using before it starts.</li>
+<li><strong>Social proof:</strong> name the failure a skipped step causes.</li>
+<li><strong>Unity:</strong> "we both want this to be good."</li>
+<li><strong>Authority:</strong> firm words, but only for the steps that can't be skipped.</li>
+<li><strong>Liking and reciprocity:</strong> avoid. They breed sycophancy.</li>
+</ul>
+<div class="napkin"><svg id="d-cialdini" viewBox="0 0 640 330"></svg></div>
+<p class="cap">A "who and what" picture. What to keep, what to drop.</p>
+<h3>Here's the funny part: I'm already doing it</h3>
+<ul>
+<li><strong>Commitment:</strong> the verdict line ("Would I sign this?"), the provenance line, the visible RAM read. "If it isn't visible, it didn't happen." That's a public commitment device.</li>
+<li><strong>Social proof, Vincent-style:</strong> "which is how three rules were lost between October 22 and 26." Naming the failure.</li>
+<li><strong>Unity:</strong> "He wants everyone to win, Claude included."</li>
+<li><strong>Authority done right:</strong> "(His, November 8, 2026)" with the reason. That's authority plus reason-why, not shouting.</li>
+</ul>
+<p>Twenty years of copywriting, showing up in how I write to a machine.</p>
+<h3>The one warning</h3>
+<p>Anthropic's own guidance points the other way on loud authority. Current Claude models listen closely, so "CRITICAL: You MUST" makes them overreact. Their advice: say it normally and give the reason. Their skill-writing guide calls ALWAYS and NEVER in capitals a yellow flag.</p>
+<p>My Marketing instructions use "never" 65 times. They're lowercase and nearly all come with a reason, so they're mostly fine. But the second round of trimming should turn the ones that can be said positively into what to do instead.</p>
+<div class="aside">The Cialdini move that works best on Claude is the oldest one in direct response: reason-why. Give it the because.</div>
+
+<h2>Part 7: What's Left, And What Needs My Call</h2>
+<div class="box">
+<h3>Where this stands, November 13</h3>
+<ul>
+<li>The rebuilt Marketing instructions are a proposal. Nothing replaces the current version until I've read it in full and said yes.</li>
+<li>Line Examples and the two skills (marketing-council, example-bank) are drafted and up for my review.</li>
+</ul>
+</div>
+<h3>Round two (needs my judgment, not just moving)</h3>
+<ul>
+<li><strong>The fresh-reader rule appears four times</strong> (Second Rule, All-Out Pass, clean-copy workflow, the cold read). One statement would do.</li>
+<li><strong>On Trial is overdue.</strong> Metaphor (October 10) and the Bias Pass (October 11) were set for "a few sessions." The RAM's trial note says it worked. Each needs keep, cut or extend.</li>
+<li><strong>A hook for the rule that bites hardest.</strong> Once marketing runs from a Claude Code folder, a small script can enforce something like "no em dashes" every time, instead of asking Claude to remember.</li>
+<li><strong>Turn "never" into "do this instead"</strong> where it reads the same.</li>
+</ul>
+
+<hr>
+<p class="src"><strong>Sources:</strong>
+<a href="https://anthropic.com/engineering/effective-context-engineering-for-ai-agents">Anthropic, Effective context engineering for AI agents</a> ·
+<a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices">Anthropic, Skill authoring best practices</a> ·
+<a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices">Anthropic, Prompting best practices</a> ·
+<a href="https://gail.wharton.upenn.edu/research-and-insights/persuading-llms-initial-study/">Wharton Generative AI Labs, persuading LLMs</a> ·
+<a href="https://blog.fsck.com/2025/10/09/superpowers/">Jesse Vincent, Superpowers</a> ·
+<a href="https://www.humanlayer.dev/blog/writing-a-good-claude-md">HumanLayer, Writing a good CLAUDE.md</a></p>
+<p class="src">Drawings in the style of Dan Roam's Back Of The Napkin codex. Proposed v1.80 of the Marketing Project Instructions, November 13, 2026.</p>
+</div>
+<script>
+(function(){
+const NS="http://www.w3.org/2000/svg",INK="#1b1b1b",ACC="#d2491b";
+function napkin(id){const s=document.getElementById(id);const rc=rough.svg(s);
+ const o={rough:1.1,bowing:1.2,stroke:INK,strokeWidth:1.6};
+ const add=n=>{s.appendChild(n);return n};
+ return {
+  line:(x1,y1,x2,y2,c)=>add(rc.line(x1,y1,x2,y2,{...o,stroke:c||INK})),
+  rect:(x,y,w,h,c,fill)=>add(rc.rectangle(x,y,w,h,{...o,stroke:c||INK,fill:fill||undefined,fillStyle:'hachure',hachureGap:7,fillWeight:1})),
+  circ:(x,y,d,c)=>add(rc.circle(x,y,d,{...o,stroke:c||INK})),
+  curve:(pts,c,w)=>add(rc.curve(pts,{...o,stroke:c||INK,strokeWidth:w||2})),
+  arrow:function(x1,y1,x2,y2,c){const a=Math.atan2(y2-y1,x2-x1),L=12;this.line(x1,y1,x2,y2,c);
+    this.line(x2,y2,x2-L*Math.cos(a-.45),y2-L*Math.sin(a-.45),c);this.line(x2,y2,x2-L*Math.cos(a+.45),y2-L*Math.sin(a+.45),c)},
+  text:(x,y,t,size,c,anchor)=>{const e=document.createElementNS(NS,'text');e.setAttribute('x',x);e.setAttribute('y',y);
+    e.setAttribute('font-family','Patrick Hand, cursive');e.setAttribute('font-size',size||20);e.setAttribute('fill',c||INK);
+    e.setAttribute('text-anchor',anchor||'middle');e.textContent=t;return add(e)},
+  face:function(x,y,c){this.circ(x,y,26,c);this.line(x,y+13,x,y+48,c);this.line(x,y+22,x-14,y+36,c);this.line(x,y+22,x+14,y+36,c);
+    this.line(x,y+48,x-12,y+68,c);this.line(x,y+48,x+12,y+68,c)},
+  check:function(x,y,c){this.line(x-8,y,x-2,y+8,c);this.line(x-2,y+8,x+11,y-9,c)},
+  cross:function(x,y,c){this.line(x-8,y-8,x+8,y+8,c);this.line(x+8,y-8,x-8,y+8,c)}
+ }}
+function draw(){
+ // WHY
+ let n=napkin('d-why');n.text(320,32,'more words, less attention per rule',24);
+ n.arrow(80,280,80,60);n.arrow(80,280,600,280);
+ n.text(70,170,'attention',18,INK,'end');n.text(70,190,'per rule',18,INK,'end');
+ n.text(340,312,'words loaded into every chat',18);
+ n.curve([[95,80],[200,120],[300,175],[420,222],[580,250]]);
+ n.circ(260,158,14,ACC);n.text(260,140,'half',19,ACC);
+ n.circ(470,232,14);n.text(470,214,'v1.79',19);
+ n.arrow(450,226,282,166,ACC);
+ // MAP
+ n=napkin('d-map');n.text(320,32,'three drawers',24);
+ n.rect(170,60,300,90,ACC);n.text(320,100,'instructions',23,ACC);n.text(320,128,'open in every chat',18,ACC);
+ n.rect(170,165,300,85);n.text(320,203,'procedures',23);n.text(320,230,'open at the moment',18);
+ n.rect(170,265,300,85);n.text(320,303,'skills + sources',23);n.text(320,330,'open on demand',18);
+ n.face(85,190);n.text(85,290,'claude',19);
+ n.arrow(110,200,165,110,ACC);
+ // WHEN
+ n=napkin('d-when');n.text(320,32,'five moments, five triggers',24);
+ n.arrow(40,150,605,150);
+ const ms=[['objective','opens'],['before','a line'],['before','shown'],['after a','correction'],['end of','session']];
+ ms.forEach((m,i)=>{const x=95+i*112;n.circ(x,150,16,i==1?ACC:INK);n.text(x,112,m[0],19,i==1?ACC:INK);n.text(x,132,m[1],19,i==1?ACC:INK);
+   n.line(x,162,x,192);n.rect(x-26,192,52,40);n.text(x,218,'opens',15)});
+ // PAIR
+ n=napkin('d-pair');n.text(320,32,'a pair, never a lone bad line',24);
+ n.rect(40,70,220,120);n.text(150,108,'before',22);n.text(150,140,'what claude wrote',17);n.cross(240,90);
+ n.arrow(270,130,360,130,ACC);
+ n.rect(370,70,230,120,ACC);n.text(485,108,'after',22,ACC);n.text(485,140,'what i picked',17,ACC);n.check(585,90,ACC);
+ n.rect(210,220,220,56);n.text(320,255,'why: my reason',19);
+ n.line(150,190,250,222);n.line(485,190,400,222);
+ // LOOP
+ n=napkin('d-loop');n.text(320,32,'the example loop',24);
+ n.rect(40,110,150,70);n.text(115,152,'capture',22);
+ n.rect(245,110,150,70);n.text(320,152,'curate',22);
+ n.rect(450,110,150,70,ACC);n.text(525,152,'test',22,ACC);
+ n.arrow(192,145,242,145);n.arrow(397,145,447,145);
+ n.curve([[525,185],[480,250],[320,268],[160,250],[115,185]],INK,1.6);n.arrow(130,205,115,183);
+ n.text(115,95,'i pick',17);n.text(320,95,'session ends',17);n.text(525,95,'still missing?',17,ACC);
+ // CIALDINI
+ n=napkin('d-cialdini');n.text(320,32,'cialdini, for instructions',24);
+ n.text(170,80,'keep',23);n.text(470,80,'drop',23);n.line(320,62,320,300);
+ const keep=['reason-why','commitment','name the failure','unity'],drop=['shouting MUST','flattery','favors','fake urgency'];
+ keep.forEach((t,i)=>{const y=125+i*48;n.check(70,y-6,i<2?ACC:INK);n.text(95,y,t,21,i<2?ACC:INK,'start')});
+ drop.forEach((t,i)=>{const y=125+i*48;n.cross(370,y-6);n.text(395,y,t,21,INK,'start')});
+}
+function go(){if(window.rough){draw()}else{setTimeout(go,60)}}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(go);
+})();
+</script>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
