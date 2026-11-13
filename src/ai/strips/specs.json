@@ -927,5 +927,93 @@
     ]
    }
   ]
+ },
+ "hold-me-back": {
+  "title": "the arc of november 13",
+  "arc": [
+   0.55,
+   0.9,
+   0.3,
+   0.5,
+   0.75,
+   0.92
+  ],
+  "foot": "one night old. not tested yet.",
+  "frames": [
+   {
+    "cap": [
+     "can i write to my ai",
+     "like a sales letter?"
+    ],
+    "t": [
+     "me:)",
+     "->",
+     "doc:sales letter",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "persuasion works",
+     "on ai"
+    ],
+    "t": [
+     "box:claude",
+     "txt:33",
+     "->",
+     "txt:72"
+    ]
+   },
+   {
+    "cap": [
+     "but it already",
+     "says yes to me"
+    ],
+    "t": [
+     "me:(",
+     "box:claude",
+     "txt:\"yeah, buddy\""
+    ]
+   },
+   {
+    "cap": [
+     "so i ask:",
+     "how can i be better?"
+    ],
+    "t": [
+     "me:)",
+     "txt:?",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "it says: ask me",
+     "where you're wrong"
+    ],
+    "t": [
+     "me:)",
+     "txt:\"where am i wrong?\"",
+     "->",
+     "box:claude"
+    ]
+   },
+   {
+    "cap": [
+     "now it holds me back.",
+     "one thing at a time."
+    ],
+    "red": true,
+    "t": [
+     "txt:15 things",
+     "->",
+     "box:claude",
+     "->",
+     "doc:one"
+    ]
+   }
+  ]
  }
 }

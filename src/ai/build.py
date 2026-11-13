@@ -161,10 +161,36 @@ def ai_note_page():
         page("A Note From My AI", "What the studies show about how persuasion moves AI, written by Claude in its own voice.", out))
 
 
+def hold_me_back_page():
+    """Build ai/hold-me-back/ from src/ai/stories/hold-me-back.md. A story that is not a numbered stage; frames come from strips/draw.js."""
+    sl = [x.strip() for x in (ROOT / "src/ai/stories/hold-me-back.md").read_text().split("\n\n") if x.strip()]
+    assert sl[0].startswith("# ") and "\u2014" not in "".join(sl)
+    strip = STRIPS["hold-me-back"]
+    def para(x):
+        m = re.fullmatch(r"\[\[(\d)\]\]", x)
+        if m:
+            f = strip["frames"][int(m.group(1)) - 1]
+            return f'<img class="frame" src="f{m.group(1)}.png" alt="{html.escape(" ".join(f["cap"]), quote=True)}" loading="lazy">'
+        return f"<p>{inline(x)}</p>"
+    out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+           '<p class="kicker">Draft &middot; November 13, 2026</p>\n'
+           f'<h1>{html.escape(sl[0][2:])}</h1>\n'
+           f'<img class="arcimg" src="arc.png" alt="{html.escape(strip["title"], quote=True)}: how it went, in six points">\n'
+           '<div class="story">' + "".join(para(x) for x in sl[1:]) + '</div>\n'
+           f'<p class="small arcfoot">{html.escape(strip["foot"])}</p>\n'
+           '<p class="kicker rec">The Record</p>\n<div class="cards">'
+           '<a class="card" href="../ai-note/"><span class="ct">A Note From My AI</span>'
+           '<span class="cd">The note Claude wrote that night, the studies behind it, and the whole back-and-forth.</span></a></div>')
+    (ROOT / "ai/hold-me-back").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/hold-me-back/index.html").write_text(
+        page("I Asked My AI To Hold Me Back", "I went looking for the words that would move my AI. I ended up asking it to hold me back.", out))
+
+
 def main():
     n_skills = skills_page()
     make_it_simple_page()
     ai_note_page()
+    hold_me_back_page()
     text = SRC.read_text()
     assert "—" not in text.split("\n", 1)[1], "em dash in the log body"
     h2 = split_h2(text)
@@ -309,6 +335,8 @@ def main():
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
+        '<a class="card" href="hold-me-back/"><span class="cn">Draft &middot; November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
+        '<span class="cd">The story of the night: what the studies say about persuading an AI, the question I asked it, and the gate we built.</span></a>'
         '<a class="card" href="ai-note/"><span class="cn">November 13, 2026</span><span class="ct">A Note From My AI: I\'m Influenceable</span>'
         '<span class="cd">Claude, in its own voice: what the studies show about how persuasion moves an AI, why it does what it does, and what it needs from me.</span></a>'
         '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
