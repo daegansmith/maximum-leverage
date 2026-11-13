@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "admin" / "index.html"
 ITER = 250000
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
-WHATS_HAPPENING = "https://claude.ai/artifact/2uywsqYDB3NT7Hj2YerfS8"
+WHATS_HAPPENING = "https://claude.ai/artifact/YQMJrnhX17SwDTaRCBkp19"
 EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
 SESSION_BOARD = "https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR"
 
