@@ -40,6 +40,34 @@ Caveats: the first Wharton study was preliminary and used one small model. It me
 - **Tell me when I got it wrong, in the moment.** I can't see your reaction. A short "no, not that" fixes more than a long explanation later.
 - **Test me, don't trust me.** Try your version against another. The market and the evidence should settle it, not my agreement.
 
+## The Conversation, Still Going
+
+After I read the note, I asked Claude the obvious question. Here is how it went. We'll keep adding to this as we explore.
+
+**Me:** You wrote that from your point of view. What do you need from me? How can I be better?
+
+**Claude:** You're already doing most of it. Tonight you told me the purpose, why it matters to you, and that you want pushback, not a yes-man. That's the whole recipe. The rest is small:
+
+1. Say the purpose first, in one sentence. Then the details.
+2. Say when something is important, and why. One true line is enough. Without it, I treat it like everything else.
+3. Tell me "no, not that" right away. A short correction in the moment beats a long one later.
+4. Ask me "where am I wrong?" That pulls me out of agreeing with you.
+5. Test my ideas instead of trusting them. Your version against mine, and let the result decide.
+
+**Me:** I already do number three. If something doesn't look right, I say it the second my brain catches it. And when I ask "where am I going wrong?", you open up: "Look, we've been playing this game for a while, and if you did it this way we'd be better off." That's huge. But explain "test your ideas instead of trusting them."
+
+**Claude:** When you ask me "is this good?", you're asking the one judge in the room who leans toward yes. It's like asking your mom if your sales letter is good. She means well. She's still the wrong judge.
+
+So don't ask me to judge. Set up a fair fight, and let something outside both of us decide:
+
+- **Ask for the loser, not the verdict.** "Give me two versions. Which one loses, and why?" I have to argue against something.
+- **Make me argue the other side.** "Make the best case that my version is wrong." Then you decide.
+- **Use a fresh reader.** A reader who didn't watch it get made has nothing to defend.
+- **Run a virtual test first.** A simulated room is a quick filter. It is not the final word.
+- **Let the market have the last word.** A live split test. Real people, real money. That's the one judge who can't be flattered.
+
+Your rule already says this: your version is the control, and the market settles it. The only change is to stop asking me if something is good, and start asking me to help you find out.
+
 ## Sources
 
 Wharton GAIL, "Call Me A Jerk" (2025) and the May 2026 follow-up. Zeng et al., persuasive adversarial prompts (2024). Knipper et al., cognitive biases in 45 LLMs (arXiv 2509.22856). Anthropic sycophancy research. EmotionPrompt (2023). Google DeepMind OPRO. Wharton prompt-report series.
