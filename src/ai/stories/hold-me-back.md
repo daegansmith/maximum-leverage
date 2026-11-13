@@ -52,6 +52,8 @@ Whoa. Really?
 
 Now, hold on. I'm not a bad guy.
 
+I'm not looking for how to get away with being some evil sociopath.
+
 I don't want an AI that does whatever I say. I'm not trying to get it to do something wrong.
 
 I'm NOT looking for compliance.
