@@ -1,13 +1,13 @@
 ---
 title: "The Three-Belief Chain"
 date: 2026-10-19
-status: Untested
+status: Tested Nov 12
 sources: [Rich Schefren, Perry Belcher]
 ---
 
 # The Three-Belief Chain
 
-**Status:** Untested · **First written:** October 19, 2026
+**Status:** Tested November 12, 2026, in a simulation · **First written:** October 19, 2026
 
 ## The idea
 
@@ -23,7 +23,7 @@ Then I ran into Perry Belcher's rule: no more than three beliefs. Go past three,
 
 Put the two together and something clicks. If every belief a person needs to reach "I need you" can be condensed into three that lead to the big one, the road gets shorter and the conclusion lands harder.
 
-That's the idea. I haven't tested it yet.
+That's the idea. I hadn't tested it when I wrote this.
 
 ## Where it came from
 
@@ -38,4 +38,6 @@ That's the idea. I haven't tested it yet.
 
 ## What happened
 
-Nothing yet. This entry gets updated when it's tested.
+I tested it November 12, in a simulation: 100 local owners, three versions of the same road, 25 blind AI readers. The short chain sold the same as the long one (28 to 29). What moved sales was answering the doubts people carry to the price: 35. One run, a prediction, not a result.
+
+The full story, the numbers, and how my belief-chain skill changed because of it: [I Cut My Belief Chain To Three Steps. It Sold The Same.](/ai/belief-chain/)

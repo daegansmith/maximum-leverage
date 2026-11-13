@@ -2,7 +2,7 @@
 
 Every skill in my Claude account, grouped by the job it does: what it's for, and what I say to call it. I never have to name a skill; saying the words in the last column is enough.
 
-Updated November 12, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.
+Updated November 13, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.
 
 ## Running The Work
 
@@ -34,7 +34,7 @@ What happens before any copy is written, in roughly this order.
 | --- | --- | --- |
 | ml-reality-corpus | Mines raw material (calls, surveys, voice memos, testimonials) into the customer's own words | "pull out the gold", "mine this for messaging" |
 | ml-market-intelligence | Researches the market, the buyer and the competition, then positions the offer against them | "who is this for", "what makes me different" |
-| ml-belief-chain | Maps what a stranger must believe, and in what order, to buy | "what do they need to believe to buy" |
+| ml-belief-chain | Maps what a stranger must believe, and in what order, to buy, then squeezes it toward three beliefs and writes an answer for every belief it cuts ([why it changed](../belief-chain/)) | "what do they need to believe to buy" |
 | ml-offer-architect | Designs the offer: contents, price, tiers, bonuses, guarantee | "lock the offer", "what should we charge", "package this" |
 | ml-funnel-hack | Tears down the top sites in a niche and delivers a swipe file of what to steal | "funnel hack", "who's winning in this niche" |
 | prospect-read | Reads one real person from a name: who they are, how they see me, how to win them | "read this prospect" plus the name |

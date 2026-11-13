@@ -749,5 +749,127 @@
     ]
    }
   ]
+ },
+ "belief-chain": {
+  "title": "the arc of the three-belief test",
+  "arc": [
+   0.5,
+   0.7,
+   0.95,
+   0.4,
+   0.25,
+   0.75
+  ],
+  "foot": "one run, one simulated room. a prediction, not a result.",
+  "frames": [
+   {
+    "cap": [
+     "my chains run long"
+    ],
+    "t": [
+     "me:(",
+     "txt:1 2 3 4 5 6 7 8 9 10 11 12"
+    ]
+   },
+   {
+    "cap": [
+     "belcher: no more",
+     "than three"
+    ],
+    "t": [
+     "box:belcher",
+     "->",
+     "txt:1 2 3"
+    ]
+   },
+   {
+    "cap": [
+     "a quick score by rules:",
+     "short chain doubles it"
+    ],
+    "t": [
+     "bar:45:long 14",
+     "bar:100:short 31"
+    ]
+   },
+   {
+    "cap": [
+     "blind readers:",
+     "a tie"
+    ],
+    "t": [
+     "bar:94:long 29",
+     "bar:90:short 28"
+    ]
+   },
+   {
+    "cap": [
+     "why: the doubt rides",
+     "along to the price"
+    ],
+    "t": [
+     "me:(",
+     "->",
+     "txt:partly",
+     "->",
+     "box:price"
+    ]
+   },
+   {
+    "cap": [
+     "answer the doubts",
+     "before the ask"
+    ],
+    "red": true,
+    "t": [
+     "bar:83:long 29",
+     "bar:80:short 28",
+     "bar:100:+ answers 35"
+    ]
+   }
+  ]
+ },
+ "belief-chain-skill": {
+  "title": "the skill, before and now",
+  "frames": [
+   {
+    "cap": [
+     "before"
+    ],
+    "t": [
+     "box:12 steps",
+     "->",
+     "box:lock",
+     "->",
+     "box:copy"
+    ]
+   },
+   {
+    "cap": [
+     "now"
+    ],
+    "red": true,
+    "t": [
+     "box:12",
+     "->",
+     "box:3",
+     "->",
+     "box:doubts",
+     "->",
+     "box:ask"
+    ]
+   },
+   {
+    "cap": [
+     "then readers test",
+     "both, blind"
+    ],
+    "t": [
+     "box:long",
+     "eyeb",
+     "box:short"
+    ]
+   }
+  ]
  }
 }

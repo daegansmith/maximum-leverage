@@ -276,6 +276,8 @@ def main():
         '<section><h2>My Skills</h2>\n<div class="cards">'
         f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
+        '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
+        '<span class="cd">A skill that changed after a test: where the idea came from, what the simulation showed, and how the skill runs now.</span></a>'
         '</div></section>\n'
         '<section><h2>The Gold Standard</h2>\n<div class="cards">'
         '<a class="card" href="gold-standard/"><span class="cn">November 13, 2026</span><span class="ct">How My Instructions Are Built, And Why Order Matters</span>'

@@ -102,14 +102,17 @@ const wrap = (o, W, H) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
   const shot = async (svg, W, H, file, dsf = 2) => { const p = await b.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: dsf }); await p.setContent(`<body style="margin:0">${svg}</body>`); await p.evaluate(() => document.fonts.ready); await p.screenshot({ path: file }); await p.close(); };
   let seed = 3;
   for (const [slug, spec] of Object.entries(specs)) {
+    // ONLY=slug redraws one page; the seed still advances so the other pages' pictures never change
+    if (process.env.ONLY && slug !== process.env.ONLY) { seed += 1 + spec.frames.length + (process.env.SHEETS ? 1 : 0); continue; }
     const dir = path.join(ROOT, 'ai', slug); fs.mkdirSync(dir, { recursive: true });
     // the arc line
-    let k = pen(seed++); k.text(spec.title, 550, 60, 44); arcBody(k, spec, 1100, 100);
-    await shot(wrap(k.o, 1100, 300), 1100, 300, path.join(dir, 'arc.png'));
+    let k = pen(seed++);
+    if (spec.arc) { k.text(spec.title, 550, 60, 44); arcBody(k, spec, 1100, 100);
+      await shot(wrap(k.o, 1100, 300), 1100, 300, path.join(dir, 'arc.png')); }
     // each frame on its own
     for (let i = 0; i < spec.frames.length; i++) { k = pen(seed++); frameBody(k, spec.frames[i], i, 4, 4); await shot(wrap(k.o, FW + 8, FH + 8), FW + 8, FH + 8, path.join(dir, `f${i + 1}.png`)); }
     // the review sheet
-    if (process.env.SHEETS) {
+    if (process.env.SHEETS && spec.arc) {
       k = pen(seed++); k.text(spec.title, 550, 70, 46); arcBody(k, spec, 1100, 110);
       spec.frames.forEach((f, i) => frameBody(k, f, i, 50 + (i % 2) * 520, 330 + Math.floor(i / 2) * 410));
       k.text(spec.foot, 550, 1600, 24, GREY);
