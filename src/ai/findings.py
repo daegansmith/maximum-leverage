@@ -17,7 +17,7 @@ import build as B  # noqa: E402  (the stage-page helpers: head, page, md, inline
 ROOT = B.ROOT
 FINDINGS = {
     "belief-chain": {
-        "kicker": "My Skills &middot; November 12, 2026 &middot; A simulation, not a live test",
+        "kicker": "My Skills &middot; November 12, 2026 &middot; Checked and updated November 13 &middot; A simulation, not a live test",
         "skill_pair": "belief-chain-skill",
         "desc": "I cut my belief chain to three steps in a simulation. It sold the same. What moved sales, and how my belief-chain skill changed.",
     },
@@ -27,6 +27,8 @@ B.EXTRA_CSS += """
 .pair{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:4px 0 24px}
 .pair img{width:100%;height:auto;display:block}
 @media(max-width:560px){.pair{grid-template-columns:1fr}.pair img{max-width:440px}}
+.story p.upd{border-left:4px solid #c8372d;background:#faf6f0;padding:10px 14px;margin:0 0 10px;font-size:17px}
+.story p.upd+p:not(.upd){margin-top:26px}
 """
 
 
@@ -44,6 +46,8 @@ def build(slug, cfg):
     def para(x):
         m = re.fullmatch(r"\[\[(\d|skill)\]\]", x)
         if not m:
+            if x.startswith("!! "):  # a dated update, set apart from the story as it was first written
+                return f'<p class="upd">{B.inline(x[3:])}</p>'
             return f"<p>{B.inline(x)}</p>"
         if m.group(1) == "skill":
             imgs = "".join(

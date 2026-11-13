@@ -89,6 +89,7 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | ml-content-grade | Scores a draft for my voice and for conversion, and says what to fix | "grade this", "is this ready", "why isn't this converting" |
 | ml-ogilvy-audit | Audits business writing for plain-writing craft against Ogilvy's rules | "audit this memo", "is this well written" |
 | conversion-sim | Runs copy past a simulated room of buyers to see how it converts | "run a test", "simulate this" |
+| hidden-assumptions | Finds and tests the assumptions hiding under a test, a result or a rule, using Rich Schefren's Hidden Obstacles process ([the first run](../belief-chain/)) | "hidden obstacles", "challenge the assumptions" |
 | price-sim | Runs the same room past the offer at each candidate price | "test these prices", "what should we charge" |
 | skeptic-study | Finds out why the simulated no-buyers said no, and what would change it | "why didn't they buy" |
 | copywriter-contest | Three or four copywriter lenses each rewrite the piece, then every rewrite is simulated | "run the contest" |

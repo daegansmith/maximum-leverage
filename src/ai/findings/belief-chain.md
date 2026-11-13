@@ -1,5 +1,13 @@
 # I Cut My Belief Chain To Three Steps. It Sold The Same.
 
+!! **Update, November 13.** The next morning I ran this test through Rich Schefren's Hidden Obstacles process. The big line below did not survive it.
+
+!! The 7 extra buyers came from a test that had planted its own answers. Run again a cleaner way, on 100 simulated owners, answering the doubts before the ask did not beat saying nothing.
+
+!! What still stands: the short chain didn't lose buyers. What I don't know yet: what belongs right before the ask. A live night settles that.
+
+!! The story below is what I believed on November 12. I'm leaving it up. The record of the check is right under it.
+
 October 19. I write myself a note.
 
 I've built belief chains for years.
@@ -110,6 +118,48 @@ What's yours?
 
 **Before you cut one, ask the ones who got all the way to the price what was still in their head. Then answer that first.**
 
+## What The Check Found The Next Morning
+
+November 13. The test went through the Hidden Obstacles process: what are we pretending not to notice, what would we have to believe for this to make sense, then dispute each belief three ways.
+
+**What we were pretending not to notice.** The result agreed with what I hoped. It went into a skill and onto this page the same night. Nobody had checked what it stood on.
+
+| What the test assumed | What disputed it |
+| --- | --- |
+| Belcher's rule is three beliefs | My own notes on Belcher: more than three and the offer will most likely fail; keep each offer to one belief. Three is the ceiling. One is the target |
+| Readers "carry the doubt forward" | The readers were handed that answer. Their choices were accept, reject, or "partly: carries a doubt forward" |
+| The long chain creates more doubt, 325 against 116 | 325 over eight beliefs and 116 over three is about 40 a belief both times |
+| We found what holds people back | The simulated owners were built with "cash tight," "pays a website guy" and "burned by an agency." Three of the four things reported were those |
+| The answers caused the 7 extra buyers | That version added two answers, Jamon's proof story and more words, all at once |
+| The test checked why I want a short chain | I want one because people run out of attention. Simulated readers don't get tired |
+
+**The rerun.** Same short chain, four ways, 100 simulated owners, each one living all four versions. The only thing that changed was what got said right before the offer.
+
+| Said before the offer | Paid, of 100 | Changed to paid | Changed away |
+| --- | --- | --- | --- |
+| Nothing | 6 | | |
+| The two answers | 6 | 4 | 4 |
+| Jamon's story alone | 8 | 7 | 5 |
+| All three | 7 | 7 | 6 |
+
+A tie. It can't be lined up against the 28 and 35 from the night before: different room, different instructions to the readers.
+
+**Who paid was decided by how each owner was built.** All 8 owners tagged "impulsive" paid in at least one version. 1 of the 32 under $150K did. A past agency came up at the price 30 times, and 28 of those were owners built with "burned by an agency before."
+
+**Leads, not findings.** Money was the thing most named at the price in every version. And Jamon's story told alone drew "he's a handyman, I'm not" from 21 of 92 non-buyers. With no story, nobody said it.
+
+**The new way of looking.** A chain walk checks the logic of the chain and collects what people say at the price. It is not a sales test. What belongs right before the ask gets settled on a live night.
+
+## How The Skill Runs After The Check
+
+- **Three is the ceiling, one is the target.** Compress toward three, then ask which one the offer rests on.
+- **No answer handed to the reader.** They write what the person thought. It gets coded after.
+- **One change between versions.** Answers and a proof story are two versions, not one.
+- **Nothing planted.** Every objection is reported with how many of the people who named it were built with it.
+- **Rates, not piles.** Doubts are counted per belief.
+- **The check runs first.** No finding from a walk goes into the skill or onto a page until it has been through the hidden-assumptions skill.
+- **The trial changed.** "Three builds in a row" is gone. A simulated room can't settle whether the short chain sells better. A live night can.
+
 ## The Numbers
 
 Same 100 owners, same room, ideal conditions outside the copy. A prediction, not a result.
@@ -185,8 +235,8 @@ About 3.3 million tokens for the blind run: 25 agents at roughly 130,000 each, m
 
 ## Still Open
 
-- Whether short + answers keeps matching or beating long on the next two builds.
-- Whether the gain from the answers holds with real people instead of simulated ones.
+- What belongs right before the ask. Not known. The gain from the answers did not hold up on November 13.
+- What people really say at the back table when they don't buy. Nobody has written it down yet.
 - Whether the overloaded second belief in the registration chain should be split.
 - Proof from a business like theirs: not yet placed in either chain.
 

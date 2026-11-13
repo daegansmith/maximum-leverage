@@ -41,3 +41,5 @@ That's the idea. I hadn't tested it when I wrote this.
 I tested it November 12, in a simulation: 100 local owners, three versions of the same road, 25 blind AI readers. The short chain sold the same as the long one (28 to 29). What moved sales was answering the doubts people carry to the price: 35. One run, a prediction, not a result.
 
 The full story, the numbers, and how my belief-chain skill changed because of it: [I Cut My Belief Chain To Three Steps. It Sold The Same.](/ai/belief-chain/)
+
+**Update, November 13.** I checked that test the next morning. The gain from answering the doubts did not hold up when it was run again a cleaner way. What stands: the short chain didn't lose buyers. The page has the record.
