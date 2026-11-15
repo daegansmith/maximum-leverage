@@ -107,6 +107,28 @@ def site_map():
     return out, len(pages)
 
 
+
+# ---------------------------------------------------------------- tags
+# A page can carry several tags. The tag row at the top shows one thread across every group.
+TAGS = [
+    ("jimmy", "Jimmy", ["jimmy/", "jimmy-oct-27/", "dr-mccray/", "tools/jimmy/", "client-pages.html"]),
+    ("2guys", "2 Guys", ["2guys-site/", "fishers-nov9/", "leader-outreach/", "board/", "before-after", "client-pages.html", "workshop-v16.4"]),
+    ("fishers", "Fishers Funnel", ["fishers-", "event-vsl-"]),
+    ("offer", "Workshop And Offer", ["workshop", "offer", "front-end-options", "dream-version", "intake/", "assessment"]),
+    ("ai", "AI Log", ["ai/"]),
+    ("notes", "Notes And Ideas", ["notes/", "library/", "ideas/", "quotes/", "stories/"]),
+    ("mine", "My Business", ["index.html", "projects.html", "work-with-me/", "maximum-leverage/", "invisible-funnel/", "testimonials/"]),
+    ("adrianne", "Adrianne", ["kim/"]),
+]
+
+
+def tags_of(path):
+    out = []
+    for key, _label, pats in TAGS:
+        if any(path.startswith(pt) or (pt == "index.html" and path == pt) for pt in pats if pt != "index.html") or (path == "index.html" and "index.html" in pats):
+            out.append(key)
+    return out
+
 # ---------------------------------------------------------------- page
 def body_html(groups, n):
     today = datetime.date.today().strftime("%b %-d, %Y")
@@ -116,10 +138,13 @@ def body_html(groups, n):
              f'<li><a href="{WHATS_HAPPENING}">What\'s Happening</a> <span class="path">Your one daily page: today, to-dos, email, agent mail, Notion and sessions, in Claude</span></li>'
              f'<li><a href="{SESSION_BOARD}">Session Board</a> <span class="path">Every open Claude session and where it stands, in Claude</span></li>'
              f'<li><a href="{EXPLAINERS}">Explainer Library</a> <span class="path">Every narrated explainer Claude has made you, in Claude</span></li>'
-             '</ul></details>']
+             '<li><a href="https://2guysandagenie.com/library/">The Jimmy Library</a> <span class="path">Everything Jimmy sent, by week, tagged by thread, on 2guysandagenie.com</span></li>'
+             '</ul></details>',
+             '<div id="tagbar"><p class="note" style="margin:0 0 6px">Tap a tag to see one thread across every group. Tap it again to see everything.</p>'
+             + "".join(f'<button type="button" class="tg" data-t="{k}">{html.escape(lab)}</button>' for k, lab, _ in TAGS) + '</div>']
     def lis_of(items):
         return "".join(
-            f'<li><a href="{url_of(p)}">{html.escape(page_title(ROOT / p))}</a> <span class="path">/{html.escape(p.replace("index.html", ""))}</span></li>'
+            f'<li data-tags="{" ".join(tags_of(p))}"><a href="{url_of(p)}">{html.escape(page_title(ROOT / p))}</a> <span class="path">/{html.escape(p.replace("index.html", ""))}</span></li>'
             for p in items)
     # Every "Local AI" group goes into one card, with a section for each.
     local = [g for g in groups if g[0].startswith("Local AI")]
@@ -196,6 +221,7 @@ ul.map li{margin-bottom:8px;font-size:16px}
 #gate button{font:inherit;font-weight:bold;padding:10px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer}
 #err{color:#b0302a;font-size:15px;margin-top:10px}
 .foot{margin-top:30px;font-size:13px;color:var(--soft)}
+.tg{font:bold 12px Tahoma,Geneva,Verdana,sans-serif;letter-spacing:.3px;text-transform:uppercase;padding:4px 9px;margin:0 6px 6px 0;border:2px solid var(--ink);color:var(--ink);background:none;cursor:pointer}.tg.on{background:var(--ink);color:var(--bg)}#tagbar{margin:0 0 16px}.tghide{display:none!important}
 </style></head><body><div class="wrap">
 <div id="gate"><p class="kicker">Private</p><h1>Admin</h1><p>Password, please.</p>
 <form id="f"><input id="pw" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Password"><button>Open</button></form>
@@ -225,6 +251,10 @@ document.getElementById("f").addEventListener("submit",function(e){e.preventDefa
 document.getElementById("lockl").addEventListener("click",function(e){e.preventDefault();try{localStorage.removeItem(K);}catch(x){}location.reload();});
 var saved=null;try{saved=localStorage.getItem(K);}catch(e){}
 if(saved){open(saved).catch(function(){try{localStorage.removeItem(K);}catch(e){}});}
+var on=null;document.addEventListener("click",function(e){var bt=e.target.closest(".tg");if(!bt)return;on=on===bt.dataset.t?null:bt.dataset.t;
+  document.querySelectorAll(".tg").forEach(function(x){x.classList.toggle("on",x.dataset.t===on)});
+  document.querySelectorAll("#out li[data-tags]").forEach(function(li){li.classList.toggle("tghide",!!on&&li.dataset.tags.split(" ").indexOf(on)<0)});
+  document.querySelectorAll("#out details").forEach(function(d){if(!d.querySelector("li[data-tags]"))return;if(on){var any=d.querySelectorAll("li[data-tags]:not(.tghide)").length;d.classList.toggle("tghide",!any);if(any)d.open=true}else{d.classList.remove("tghide")}})});
 })();
 </script>
 </body></html>
