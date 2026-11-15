@@ -3,23 +3,24 @@
 private tools in Claude: What's Happening (his one daily page), the Session Board and the
 Explainer Library. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening.
 
-The page is encrypted (AES-GCM, key from the password via PBKDF2-SHA256).
+The gate works like the 2 Guys admin: the list is plain HTML behind a password screen (a light
+lock on a static site; the pages stay reachable by address). No password is in the repo. The
+gate checks the typed password by trying to open src/admin/gate.json, a sealed blob
+(AES-GCM, PBKDF2-SHA256) made with Daegan's password; if it opens, the password is right.
+The same password, saved on his device, also opens the Invisible Funnel Masterclass.
 
-Usage (from the repo root):  ADMIN_PASSWORD=...... python3 src/admin/build.py
-Rerun whenever pages are added; it rescans the whole site.
+Usage (from the repo root):  python3 src/admin/build.py
+Rerun whenever pages are added; it rescans the whole site. No password needed.
 """
 
-import argparse, base64, datetime, html, json, os, re, sys
+import datetime, html, json, re, sys
 from pathlib import Path
-from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import hashes
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from footer import footer as site_footer
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "admin" / "index.html"
-ITER = 250000
+GATE = Path(__file__).resolve().parent / "gate.json"
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
 WHATS_HAPPENING = "https://claude.ai/artifact/YQMJrnhX17SwDTaRCBkp19"
 EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
@@ -170,22 +171,6 @@ def body_html(groups, n):
     return "\n".join(parts)
 
 
-def encrypt(password, payload):
-    salt, iv = os.urandom(16), os.urandom(12)
-    kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=ITER)
-    key = kdf.derive(password.encode())
-    ct = AESGCM(key).encrypt(iv, json.dumps(payload).encode(), None)
-    b = lambda x: base64.b64encode(x).decode()
-    return {"salt": b(salt), "iv": b(iv), "ct": b(ct), "iter": ITER}
-
-
-def decrypt(password, blob):
-    d = lambda x: base64.b64decode(x)
-    kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=d(blob["salt"]), iterations=blob["iter"])
-    key = kdf.derive(password.encode())
-    return json.loads(AESGCM(key).decrypt(d(blob["iv"]), d(blob["ct"]), None))
-
-
 SHELL = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -226,7 +211,7 @@ ul.map li{margin-bottom:8px;font-size:16px}
 <div id="gate"><p class="kicker">Private</p><h1>Admin</h1><p>Password, please.</p>
 <form id="f"><input id="pw" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Password"><button>Open</button></form>
 <p id="err" hidden>That's not it.</p></div>
-<div id="out" hidden></div>
+<div id="out" hidden>__BODY__</div>
 <p class="foot" id="lock" hidden><a href="#" id="lockl">Lock this page on this device</a></p>
 </div>
 __FOOT__
@@ -238,9 +223,8 @@ function b(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)}
 async function open(pw){
   var base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
   var key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b(V.salt),iterations:V.iter,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
-  var pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(V.iv)},key,b(V.ct));
-  var data=JSON.parse(new TextDecoder().decode(pt));
-  var out=document.getElementById("out");out.innerHTML=data.html;out.hidden=false;
+  await crypto.subtle.decrypt({name:"AES-GCM",iv:b(V.iv)},key,b(V.ct));
+  document.getElementById("out").hidden=false;
   document.getElementById("gate").hidden=true;document.getElementById("lock").hidden=false;
   try{localStorage.setItem(K,pw);}catch(e){}
   if(location.hash){var t=document.querySelector(location.hash);if(t)t.scrollIntoView();}
@@ -262,13 +246,11 @@ var on=null;document.addEventListener("click",function(e){var bt=e.target.closes
 
 
 def main():
-    pw = os.environ.get("ADMIN_PASSWORD")
-    if not pw:
-        sys.exit("Set ADMIN_PASSWORD.")
     groups, n = site_map()
-    payload = {"html": body_html(groups, n)}
+    gate = json.loads(GATE.read_text())
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__VAULT__", json.dumps(encrypt(pw, payload))))
+    OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__VAULT__", json.dumps(gate))
+                   .replace("__BODY__", body_html(groups, n)))
     print(f"Wrote {OUT.relative_to(ROOT)}: {n} pages mapped.")
 
 
