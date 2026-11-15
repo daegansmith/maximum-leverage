@@ -12,10 +12,12 @@ It is safe to run repeatedly. It skips redirect pages, `admin/` (its builder add
 
 ## Admin page (/admin/)
 
-Private, password-gated (Daegan has the password; never commit it). In this order: Private tools (What's Happening, his one daily page; the Session Board; the Explainer Library), Only for Daegan, the site as visitors see it (a site map), then one Local AI card with a section per group. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening; never copy them onto the site.
+Private. It is NOT in this repo (the repo is public). Cloudflare serves it at daegansmith.me/admin/ through the Worker `daegansmith-admin`, reading KV namespace `daegansmith-admin`, key `index.html`. Cloudflare Access locks it: only daegansmith@me.com gets in, with a code emailed to him. Never commit the Admin page or its list to this repo.
+
+In this order: Private tools (What's Happening, his one daily page; the Session Board; the Explainer Library; the Jimmy Library), Only for Daegan, the site as visitors see it (a site map), then one Local AI card with a section per group. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening; never copy them onto the site.
 
     python3 src/admin/build.py
 
-No password needed to rebuild. Like the 2 Guys admin, the list is plain HTML behind a password screen; the gate checks the typed password against the sealed blob in `src/admin/gate.json` (never replace that file without Daegan's password). The same saved password opens the Invisible Funnel Masterclass.
+That writes `.admin-build/index.html` (git-ignored). Upload it to the KV key above with the CloudFlare connector (PUT /accounts/3f44a6ff3ef329448333af7623605a72/storage/kv/namespaces/3daea43cbbb142f8b93bcf23971b87b0/values/index.html). Rerun whenever pages are added so the site map stays complete. New pages land under "Everything else" until a group in `src/admin/build.py` claims them.
 
-Rerun it whenever pages are added so the site map stays complete. New pages land under "Everything else" until a group in `src/admin/build.py` claims them.
+Cloudflare is in front of the whole site (DNS proxied, SSL Full, Always HTTPS). GitHub Pages still serves every other page.

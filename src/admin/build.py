@@ -3,14 +3,13 @@
 private tools in Claude: What's Happening (his one daily page), the Session Board and the
 Explainer Library. The to-dos live only in the "Daegan's To-Dos" Claude Doc, reached from What's Happening.
 
-The gate works like the 2 Guys admin: the list is plain HTML behind a password screen (a light
-lock on a static site; the pages stay reachable by address). No password is in the repo. The
-gate checks the typed password by trying to open src/admin/gate.json, a sealed blob
-(AES-GCM, PBKDF2-SHA256) made with Daegan's password; if it opens, the password is right.
-The same password, saved on his device, also opens the Invisible Funnel Masterclass.
+The page is NOT in this public repo. Cloudflare serves it at daegansmith.me/admin/ from the
+Worker "daegansmith-admin" (KV namespace "daegansmith-admin", key index.html), behind Cloudflare
+Access: only daegansmith@me.com gets in, with a code emailed to him.
 
 Usage (from the repo root):  python3 src/admin/build.py
-Rerun whenever pages are added; it rescans the whole site. No password needed.
+It writes .admin-build/index.html (git-ignored). Then upload that file to the KV key above with
+the CloudFlare connector. Rerun whenever pages are added; it rescans the whole site.
 """
 
 import datetime, html, json, re, sys
@@ -19,8 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from footer import footer as site_footer
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "admin" / "index.html"
-GATE = Path(__file__).resolve().parent / "gate.json"
+OUT = ROOT / ".admin-build" / "index.html"  # never committed; uploaded to Cloudflare
 TODO_DOC = "https://claude.ai/artifact/J9ts9zs3NMpPzXfwC9jD93"
 WHATS_HAPPENING = "https://claude.ai/artifact/YQMJrnhX17SwDTaRCBkp19"
 EXPLAINERS = "https://claude.ai/artifact/RkbSiZys1GXmj5wu4NVPKd"
@@ -30,7 +28,7 @@ SESSION_BOARD = "https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR"
 # Each group: (title, note, open?, [patterns]). A page goes in the first group whose pattern matches.
 # Within a group, pages keep the order of the patterns, then sort by path.
 GROUPS = [
-    ("Only for Daegan", "Ideas and Library open by link only. The Masterclass lessons open with this page's password.", True, [
+    ("Only for Daegan", "Ideas and Library open by link only. The Masterclass lessons open with your Masterclass password.", True, [
         "invisible-funnel/masterclass/*", "ideas/index.html", "ideas/*", "library/index.html", "library/*"]),
     ("The site, as visitors see it", "Linked from the homepage.", True, [
         "index.html", "projects.html", "notes/index.html", "notes/*", "ai/index.html", "ai/*", "quotes/*", "stories/index.html", "stories/my-story/*", "stories/*",
@@ -55,7 +53,7 @@ GROUPS = [
     ("Adrianne's site", "Her looks, and the adrianne.yoga mockups.", False, ["kim/index.html", "kim/*"]),
     ("Redirects", "", False, ["todos.html"]),
 ]
-SKIP = {"admin/index.html"}
+SKIP = {"admin/index.html", ".admin-build/index.html"}
 
 
 def match(pat, path):
@@ -208,33 +206,11 @@ ul.map li{margin-bottom:8px;font-size:16px}
 .foot{margin-top:30px;font-size:13px;color:var(--soft)}
 .tg{font:bold 12px Tahoma,Geneva,Verdana,sans-serif;letter-spacing:.3px;text-transform:uppercase;padding:4px 9px;margin:0 6px 6px 0;border:2px solid var(--ink);color:var(--ink);background:none;cursor:pointer}.tg.on{background:var(--ink);color:var(--bg)}#tagbar{margin:0 0 16px}.tghide{display:none!important}
 </style></head><body><div class="wrap">
-<div id="gate"><p class="kicker">Private</p><h1>Admin</h1><p>Password, please.</p>
-<form id="f"><input id="pw" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Password"><button>Open</button></form>
-<p id="err" hidden>That's not it.</p></div>
-<div id="out" hidden>__BODY__</div>
-<p class="foot" id="lock" hidden><a href="#" id="lockl">Lock this page on this device</a></p>
+<div id="out">__BODY__</div>
 </div>
 __FOOT__
-<script id="vault" type="application/json">__VAULT__</script>
 <script>
 (function(){
-var V=JSON.parse(document.getElementById("vault").textContent),K="ml_admin_pw";
-function b(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)});}
-async function open(pw){
-  var base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
-  var key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b(V.salt),iterations:V.iter,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
-  await crypto.subtle.decrypt({name:"AES-GCM",iv:b(V.iv)},key,b(V.ct));
-  document.getElementById("out").hidden=false;
-  document.getElementById("gate").hidden=true;document.getElementById("lock").hidden=false;
-  try{localStorage.setItem(K,pw);}catch(e){}
-  if(location.hash){var t=document.querySelector(location.hash);if(t)t.scrollIntoView();}
-}
-document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();
-  document.getElementById("err").hidden=true;
-  open(document.getElementById("pw").value).catch(function(){document.getElementById("err").hidden=false;});});
-document.getElementById("lockl").addEventListener("click",function(e){e.preventDefault();try{localStorage.removeItem(K);}catch(x){}location.reload();});
-var saved=null;try{saved=localStorage.getItem(K);}catch(e){}
-if(saved){open(saved).catch(function(){try{localStorage.removeItem(K);}catch(e){}});}
 var on=null;document.addEventListener("click",function(e){var bt=e.target.closest(".tg");if(!bt)return;on=on===bt.dataset.t?null:bt.dataset.t;
   document.querySelectorAll(".tg").forEach(function(x){x.classList.toggle("on",x.dataset.t===on)});
   document.querySelectorAll("#out li[data-tags]").forEach(function(li){li.classList.toggle("tghide",!!on&&li.dataset.tags.split(" ").indexOf(on)<0)});
@@ -247,10 +223,8 @@ var on=null;document.addEventListener("click",function(e){var bt=e.target.closes
 
 def main():
     groups, n = site_map()
-    gate = json.loads(GATE.read_text())
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__VAULT__", json.dumps(gate))
-                   .replace("__BODY__", body_html(groups, n)))
+    OUT.write_text(SHELL.replace("__FOOT__", site_footer(False)).replace("__BODY__", body_html(groups, n)))
     print(f"Wrote {OUT.relative_to(ROOT)}: {n} pages mapped.")
 
 
