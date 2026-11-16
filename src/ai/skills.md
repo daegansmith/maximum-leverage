@@ -1,14 +1,16 @@
 # Every Skill I Work With
 
-Every skill in my Claude account, grouped by the job it does: what it's for, and what I say to call it. I never have to name a skill; saying the words in the last column is enough. [The 20 that do most of the work are here]({skills}).
+Every skill in my Claude account, on one page, grouped by what it does: what it's for, and what I say to call it. I never have to name a skill; saying the words in the last column is enough.
 
-Updated November 16, 2026. The ml- prefix is gone: on November 13 I renamed every skill to make them my own. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time. Earlier version: [November 13, 2026]({skills}2026-11-13/).
+Updated November 16, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time. On November 13 I dropped the ml- prefix from every skill to make them my own. Earlier versions: [November 13]({skills}2026-11-13/) and [the 80/20 cut]({skills}2026-11-16-top/).
 
 <img class="arcimg" src="{skills}doodle.png" alt="Without a skill the robot makes something different every time. Holding a skill card, it makes the same thing every time." loading="lazy">
 
-## My Day
+## Organization And My Day
 
-These run the day: what's on my mind, my to-dos, my mail, my notes. Most run on a schedule.
+What keeps me on track: my day, my to-dos, my mail, my notes, my open sessions, and the decisions I'd otherwise stall on.
+
+### My Day
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -17,12 +19,9 @@ These run the day: what's on my mind, my to-dos, my mail, my notes. Most run on 
 | inbox-check | Sweeps my Gmail for junk, recaps what needs me, and picks 10 junk candidates | "check my inbox" (runs every morning) |
 | check-my-bee | Reads my Bee wrist recorder, business only, and pulls out the ideas and to-dos | "check my Bee" (runs every night) |
 | drive-tidy | Names, tags and files my Google Drive | "tidy my drive" (runs every four hours) |
-| evolution-log | Writes down every change in how I work with Claude, in my own words, in the Breakthrough Log (the record behind these pages) | "log this change" (runs every night) |
 | jimmy-library | Translates mail from Jimmy and his assistants into plain answers and files it in the Jimmy Library | "check Jimmy's mail" |
 
-## Running The Work
-
-These keep sessions findable, carry work from one chat to the next, and force decisions.
+### Staying On Track
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -31,21 +30,22 @@ These keep sessions findable, carry work from one chat to the next, and force de
 | get-on-the-same-page | When I'm overloaded: says where we are, parks the new thing, and gets us back on one track | "did we do X yet?", "where was that?" (runs on its own) |
 | handoff | Writes down everything a new chat needs to continue the work, plus a prompt to paste into it | "handoff", "pause here", "I'm going to start a new chat" |
 | branch-session | Starts a linked session under the current one, with a title and a short brief, so related work stays together | "branch a session", "spin off a session" |
-| qa-sweep | Tests a code project (a site, a page, a tool), fixes what's broken, then writes the handoff | "run QA", "final pass" |
-| intake | The front door: turns a goal into a written brief and picks which skills run, in what order | State a goal without naming a skill |
-| marketing-chain | Runs the whole sequence from research to finished piece when a job spans several skills | "run the chain", "where do I start", "why isn't this working" |
-| workflow-engine | Builds several competing versions, critiques and ranks them, with my approval before each costly step | "give me competing drafts and pick a winner" |
+
+### Deciding
+
+| Skill | What it's for | Say |
+| --- | --- | --- |
 | grill-me | Interviews me about a plan one question at a time, ending in a locked decision and one next action | "grill me", "poke holes in this" |
 | ship-gate | Stops the stall: when drafts and options pile up, forces one piece to be finished and sent | "narrow down", "start over" (also runs on its own) |
 | decision-rules | Settles who decides what when several AIs or advisors disagree, and logs the decision | "the AIs disagree", "log this decision" |
 | three-outcomes | Scores a tool or idea on money in, hours back and customers kept: do now, later, or toy | "score this", "is this tool worth it" |
 | coauthor-doc | Writes a spec, proposal or agreement with me in three stages, then tests it on a fresh reader (on trial) | "let's write the agreement" |
-| discernment-nudge | After a big answer or draft, adds two or three questions that help me check the facts and the reasoning | Runs on its own after substantial answers |
-| academy-guide | When I am learning how to use Claude, points me to a matching Claude Academy course | "how do I", "teach me" |
 
-## Research And The Offer
+## Marketing
 
-What happens before any copy is written, in roughly this order.
+The work itself, roughly in the order it happens.
+
+### Research And The Offer
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -55,9 +55,8 @@ What happens before any copy is written, in roughly this order.
 | offer-architect | Designs the offer: contents, tiers, bonuses, guarantee, price logic | "lock the offer", "package this" |
 | funnel-hack | Tears down the top sites in a niche and delivers a swipe file of what to steal | "funnel hack", "who's winning in this niche" |
 | prospect-read | Reads one real person from a name: who they are, how they see me, how to win them | "read this prospect" plus the name |
-| local-dossier | One-page pre-call brief on a local business from public information | "dossier on" plus the business |
 
-## Writing Copy
+### Writing Copy
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -77,9 +76,8 @@ What happens before any copy is written, in roughly this order.
 | language-installation | Sentence-level persuasion: wording that installs belief before the ask | "this copy is clean but not moving anyone" |
 | jdb-curiosity-copy | Blind, curiosity-driven bullets and opt-in copy in Jimmy D. Brown's style | "curiosity bullets" |
 | plank-speed-copy | Robert Plank-style copy that sells speed and done-for-you | "Plank style" |
-| example-bank | Saves the before and after every time I pick one version over another, so Claude learns my taste | Runs on its own with every pick |
 
-## Copywriter Lenses
+### Copywriter Lenses
 
 Each lens writes or audits copy the way one copywriter would. I say "write this like" plus the name.
 
@@ -104,18 +102,17 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | lens-todd-brown | Big Idea plus Unique Mechanism for saturated markets |
 | lens-wiebe | Landing pages and CTAs built from customers' own words; editing drafts |
 
-## Testing And Grading Copy
+### Testing Copy
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
 | content-grade | Scores a draft for my voice and for conversion, and says what to fix | "grade this", "is this ready", "why isn't this converting" |
 | conversion-sim | Runs copy past a simulated room of buyers to see how it converts | "run a test", "simulate this" |
-| hidden-assumptions | Finds and tests the assumptions hiding under a test, a result or a rule, using Rich Schefren's Hidden Obstacles process ([the first run]({ai}belief-chain/)) | "hidden obstacles", "challenge the assumptions" (also runs on its own) |
 | price-sim | Runs the same room past the offer at each candidate price | "test these prices", "what should we charge" |
 | skeptic-study | Finds out why the simulated no-buyers said no, and what would change it | "why didn't they buy" |
 | copywriter-contest | Three or four copywriter lenses each rewrite the piece, then every rewrite is simulated | "run the contest" |
 
-## Funnels, Ads, Sales And Clients
+### Funnels, Ads And Sales
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -125,13 +122,25 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | backend-economics | Everything after the first sale: upsell path, retention, refunds, launches | "how do I make more from existing buyers" |
 | sales-conversation | High-ticket discovery and close calls, the application, objections | "prep me for this call", "how do I close this" |
 | clearing-before-you-present | Gets a presenter centered on the people in the room before they go on | "clear me", "get me ready to present" |
-| client-engine | Getting and keeping clients for a services practice: scope, structure, hard clients | "how should I structure this engagement" |
 | testimonial-interview | Gets a testimonial by interview, with my five questions in order | "get a testimonial", "interview them" |
 
-## Local Business And AI Assessment Work
+### The Maximum Leverage Brand
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
+| maximum-leverage-brand | Makes or checks any Maximum Leverage asset against the brand | "make this on brand for ML" |
+| maximum-leverage-explainer | A 60 to 90 second narrated, captioned video with Maximum Leverage branding | "ML explainer video" |
+
+## Client Work
+
+The local business and AI work: getting and keeping clients, the calls, the assessments, and what we build for owners.
+
+### Calls And Builds
+
+| Skill | What it's for | Say |
+| --- | --- | --- |
+| client-engine | Getting and keeping clients for a services practice: scope, structure, hard clients | "how should I structure this engagement" |
+| local-dossier | One-page pre-call brief on a local business from public information | "dossier on" plus the business |
 | mini-assessment | The 15-minute call: name one bottleneck, prescribe one fix, book the full assessment | "prep the mini for" plus the name |
 | ai-assessment | The paid AI Assessment end to end: discovery, scored report, close | "run the assessment for" plus the client |
 | concierge-call | The twice-monthly AI Concierge call that installs one workflow | "prep the concierge call" |
@@ -139,19 +148,20 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | knowledge-base | Builds a client's company brain from its documents | "build their knowledge base" |
 | gift-tour | A phone tour for a business: research, then one link with 3 to 7 tap-through pages | "gift tour", "blow them away" |
 | live-website | Redo a business's website fast with the owner in the room | "redo their website", "hot seat" |
-| capture-social-proof | Files a piece of social proof the moment it turns up | "save this as social proof" (also runs on its own) |
 
-## Design, Brand And Websites
+### Pages, Design And Testing
+
+Used on client pages and on my own.
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
 | studio | One visual deliverable (homepage, landing page, deck) built and shown as options until I approve | "build the homepage", "show me options" |
 | page-review | Opens a page in a review window where I edit text and leave comments in one batch | "let me review it" |
-| maximum-leverage-brand | Makes or checks any Maximum Leverage asset against the brand | "make this on brand for ML" |
 | brand-kit | Brand kit for a local business before its site is built: logo, colors, type | "brand kit for" plus the client |
+| qa-sweep | Tests a code project (a site, a page, a tool), fixes what's broken, then writes the handoff | "run QA", "final pass" |
 | webapp-testing | Tests a web app running locally and takes screenshots | "test the page in a browser" |
 
-## Explaining, Drawing And Learning
+## Thinking, Drawing And Learning
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -160,9 +170,32 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | explainer-video | My narrated explainers: fit one screen, 1.5x speed, filed in my Explainer Library | "explainer", "walk me through X" |
 | montessori-learning | Teaches me Montessori style: guess first, short explainer, try it, quiz | "Montessori", "quiz me" |
 | explainer-business | Marker-doodle drawings that make one business idea land for an owner | "owner doodle", "marker doodle" |
-| maximum-leverage-explainer | A 60 to 90 second narrated, captioned video with Maximum Leverage branding | "ML explainer video" |
 
-## Building Skills
+## Behind The Scenes
+
+These mostly run on their own or inside other skills. A few I call when I need them.
+
+### Inside Other Work
+
+| Skill | What it's for | Say |
+| --- | --- | --- |
+| example-bank | Saves the before and after every time I pick one version over another, so Claude learns my taste | Runs on its own with every pick |
+| hidden-assumptions | Finds and tests the assumptions hiding under a test, a result or a rule, using Rich Schefren's Hidden Obstacles process ([the first run]({ai}belief-chain/)) | "hidden obstacles", "challenge the assumptions" (also runs on its own) |
+| capture-social-proof | Files a piece of social proof the moment it turns up | "save this as social proof" (also runs on its own) |
+| discernment-nudge | After a big answer or draft, adds two or three questions that help me check the facts and the reasoning | Runs on its own after substantial answers |
+| academy-guide | When I am learning how to use Claude, points me to a matching Claude Academy course | "how do I", "teach me" |
+
+### Running The Others
+
+When a job spans several skills, these pick which ones run and in what order.
+
+| Skill | What it's for | Say |
+| --- | --- | --- |
+| intake | The front door: turns a goal into a written brief and picks which skills run, in what order | State a goal without naming a skill |
+| marketing-chain | Runs the whole sequence from research to finished piece when a job spans several skills | "run the chain", "where do I start", "why isn't this working" |
+| workflow-engine | Builds several competing versions, critiques and ranks them, with my approval before each costly step | "give me competing drafts and pick a winner" |
+
+### Keeping The Skills Sharp
 
 | Skill | What it's for | Say |
 | --- | --- | --- |
@@ -173,6 +206,7 @@ Each lens writes or audits copy the way one copywriter would. I say "write this 
 | skill-upgrade-review | The monthly review: the strongest model reads every skill and proposes upgrades, one at a time | "monthly skill review" (runs on the 12th) |
 | ship-skill | Keeps my skills repo and my installed skills matched, and packages a skill for upload | "ship this skill", "check skill drift" |
 | skills-sweep | Nightly copy of my installed skills into my private repo so it stays the master copy | "back up my skills" (runs every night) |
+| evolution-log | Writes down every change in how I work with Claude, in my own words, in the Breakthrough Log (the record behind these pages) | "log this change" (runs every night) |
 
 ## On The Shelf
 
@@ -182,4 +216,4 @@ Claude also has built-in skills for Word, Excel, PowerPoint and PDF files, resea
 
 ## Who Wrote What
 
-Most skills in Research, Writing Copy, Funnels, Local Business and Design came from Jason Gazaway's library; I renamed them on November 13 to make them my own, and his authorship notes stay inside each one. The rest were built for me in my own sessions, or ship with Claude.
+Most of the Marketing and Client Work skills came from Jason Gazaway's library; I renamed them on November 13 to make them my own, and his authorship notes stay inside each one. The rest were built for me in my own sessions, or ship with Claude.

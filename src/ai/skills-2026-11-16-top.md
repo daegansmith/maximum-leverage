@@ -1,8 +1,8 @@
 # The Skills That Do The Work
 
-I have over a hundred skills in my Claude account. These 20 do most of the work: they run every day on their own, catch me in the moment, carry the copy I write, or help me think and learn. [Every other skill is one click away]({skills}all/).
+I have over a hundred skills in my Claude account. These 20 do most of the work: they run every day on their own, catch me in the moment, carry the copy I write, or help me think and learn. [Every other skill is one click away]({skills}).
 
-Updated November 16, 2026. Picked by what actually runs: the daily schedule, what fires on its own, and what we've used and sharpened the most. Grouped, with the group I lean on most first. Claude doesn't keep a count of how often each skill is called, so this is the best read of the evidence, not a tally. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.
+An earlier version, kept for the record: the 80/20 cut from the morning of November 16, 2026, replaced the same morning by [every skill on one page, grouped by function]({skills}). Picked by what actually runs: the daily schedule, what fires on its own, and what we've used and sharpened the most. Grouped, with the group I lean on most first. Claude doesn't keep a count of how often each skill is called, so this is the best read of the evidence, not a tally. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time.
 
 <img class="arcimg" src="{skills}doodle.png" alt="Without a skill the robot makes something different every time. Holding a skill card, it makes the same thing every time." loading="lazy">
 
@@ -47,6 +47,6 @@ Claude catches the pattern and runs these. I never have to remember them.
 
 ## Everything Else
 
-<a class="deeper" href="{skills}all/"><span class="dk">The other 85</span><span class="dt">Every Skill I Work With</span><span class="dd">All 105, grouped by the job each one does, with what I say to call it.</span></a>
+<a class="deeper" href="{skills}"><span class="dk">The other 85</span><span class="dt">Every Skill I Work With</span><span class="dd">All 105, grouped by the job each one does, with what I say to call it.</span></a>
 
 Earlier version: [November 13, 2026]({skills}2026-11-13/).

@@ -33,7 +33,8 @@ EXTRA_CSS = """
 .prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
 .prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
 .prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
-.skl h2{margin-top:34px}
+.skl h2{margin-top:44px;padding-top:22px;border-top:2px solid var(--ink);font-size:26px}
+.skl h3{font-size:14px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:26px 0 10px}
 .lead{font-size:21px;line-height:1.5}
 .shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
 .story p{font-size:19px;line-height:1.55;margin:0 0 18px}
@@ -146,14 +147,20 @@ def skills_page(src="src/ai/skills.md", out_dir="ai/skills", back=("../", "The E
 
 
 def all_skills_pages():
-    """/ai/skills/ is the 20 that do the work; /ai/skills/all/ is every skill; dated folders keep earlier versions."""
-    top = skills_page("src/ai/skills-top.md", "ai/skills", ("../", "The Evolution"), "The Skills That Do The Work",
-                      "The 20 Claude skills that do most of Daegan Smith's work, and a link to all the rest.")
-    full = skills_page("src/ai/skills.md", "ai/skills/all", ("../", "The Skills That Do The Work"), "Every Skill I Work With",
-                       "Every skill in Daegan Smith's Claude account, grouped by the job it does.")
-    skills_page("src/ai/skills-2026-11-13.md", "ai/skills/2026-11-13", ("../", "The Skills That Do The Work"),
+    """/ai/skills/ is every skill on one page, grouped by function; dated folders keep earlier versions;
+    /ai/skills/all/ (the full list's address for one morning) now forwards to /ai/skills/."""
+    full = skills_page("src/ai/skills.md", "ai/skills", ("../", "The Evolution"), "Every Skill I Work With",
+                       "Every skill in Daegan Smith's Claude account, on one page, grouped by what it does.")
+    skills_page("src/ai/skills-2026-11-13.md", "ai/skills/2026-11-13", ("../", "Every Skill I Work With"),
                 "My Claude Skills (November 13, 2026)", "Daegan Smith's Claude skills as they stood on November 13, 2026.")
-    return top, full
+    skills_page("src/ai/skills-2026-11-16-top.md", "ai/skills/2026-11-16-top", ("../", "Every Skill I Work With"),
+                "The Skills That Do The Work (November 16, 2026)", "An earlier 80/20 cut of Daegan Smith's Claude skills.")
+    (ROOT / "ai/skills/all").mkdir(parents=True, exist_ok=True)
+    (ROOT / "ai/skills/all/index.html").write_text(
+        '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../">'
+        '<link rel="canonical" href="../"><title>Every Skill I Work With</title><a href="../">Every Skill I Work With</a>\n')
+    return full
+
 
 
 PIECES = [
@@ -241,7 +248,7 @@ def hold_me_back_page():
 
 
 def main():
-    n_top, n_skills = all_skills_pages()
+    n_skills = all_skills_pages()
     make_it_simple_page()
     piece_cards = piece_pages()
     ai_note_page()
@@ -387,8 +394,8 @@ def main():
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
         '</div></section>\n'
         '<section><h2>My Skills</h2>\n<div class="cards">'
-        f'<a class="card" href="skills/"><span class="ct">The Skills That Do The Work</span>'
-        f'<span class="cd">The {n_top} of my {n_skills} skills that carry most of the load, grouped by how they run, with a link to every other one.</span></a>'
+        f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
+        f'<span class="cd">All {n_skills} skills in my Claude account, grouped by what they do: organization, marketing, client work, learning, and what runs behind the scenes.</span></a>'
         + piece_cards["evolution-of-the-doodle"] +
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
