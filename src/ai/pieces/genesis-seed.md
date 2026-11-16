@@ -144,7 +144,7 @@ Then the record goes quiet for two hours. I took a nap. I thought I was out.
 
 At 7:47 I was back in, and the wave starts again, lower on the page. My doodles. Then a whole new skill. A book idea. Two new rules. It doesn't stop until eleven.
 
-Not one of those was on a list. Every one grew out of something before it, and you can trace each branch back to the red dot.
+Not one of those was on a list. Every one [grew](../the-reaction/) out of something before it, and you can trace each branch back to the red dot.
 
 I didn't do eleven things on Sunday.
 

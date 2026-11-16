@@ -136,6 +136,7 @@ def skills_page():
 PIECES = [
     ("genesis-seed", "November 15, 2026", "What one good idea does when it lands in me, drawn from a real Sunday: every save at its real time."),
     ("evolution-of-the-doodle", "November 15, 2026", "How my AI finally learned to doodle, and why the drawing comes last."),
+    ("the-reaction", "November 15, 2026", "Sunday drawn as an organic chemistry reaction: what each idea did to the next, and the questions that catalyzed it."),
 ]
 
 
