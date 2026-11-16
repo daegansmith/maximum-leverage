@@ -353,7 +353,7 @@ def main():
         '<p class="lead">How my way of working with Claude changed, told wall by wall: what kept going wrong, '
         'what broke it, what changed, and whether it held.</p>\n'
         f'<p class="small">Kept by Claude from the session record, which is why it says "he." Updated {UPDATED}.</p>\n'
-        '<section><h2>Start Here</h2>\n<div class="cards">' + piece_cards["genesis-seed"] + '</div></section>\n'
+        '<section><h2>Start Here</h2>\n<div class="cards">' + piece_cards["genesis-seed"] + piece_cards["then-and-now"] + '</div></section>\n'
         '<section><h2>The Stages</h2>\n'
         '<p>Nine so far, in date order. Each one started with a wall. Tap a stage to open it.</p>\n'
         f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
@@ -389,7 +389,7 @@ def main():
         f'<a class="card" href="glossary/"><span class="ct">What Each Named Thing Is</span>'
         f'<span class="cd">{len(terms)} terms the stages use, in plain words, sorted by when each first appeared.</span></a>'
         '</div></section>\n'
-        '<section><h2>Pictures Of The System</h2>\n<div class="cards">' + piece_cards["then-and-now"] +
+        '<section><h2>Earlier Pictures Of The System</h2>\n<div class="cards">'
         '<a class="card" href="system.html"><span class="cn">October 3, 2026</span><span class="ct">How The Whole System Works</span>'
         '<span class="cd">The structure as it stood in early October: one rulebook, four projects, two shared documents.</span></a>'
         '<a class="card" href="inside.html"><span class="cn">October 10, 2026</span><span class="ct">Inside Each Prompt</span>'
