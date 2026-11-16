@@ -76,8 +76,6 @@ That's heavy in a different way. The October leaks were about too few places for
 
 **5. The record is growing faster than it's read.** The Marketing project holds over three hundred documents now. Forty-five were written on Sunday alone. Saving takes a second. Finding takes knowing it's there, and anything not found doesn't help.
 
-**6. The system is a [Genesis seed](../genesis-seed/) too.** Building it is the most interesting work I have, so it grows over the plan. The top item on my list, the one that makes the money, didn't move on Sunday.
-
 ## The Direction
 
 None of this says stop.
@@ -91,6 +89,6 @@ None of this says stop.
 - **Retire on a schedule.** A skill that hasn't fired in a month gets packed away, out of the doorway, still in the repo if it's needed.
 - **Fewer front doors.** Most days should start from a handful of skills that call the rest, not a hundred knocking at once.
 - **Keep the core tiny.** The eleven rules work because they're eleven. The ring that's always on should stay small.
-- **Point it at the money.** The test for the system isn't how much it can do. It's whether the work that pays gets done faster because of it.
+- **Hold every piece to the purpose.** The library already has the test, in my words from November 13: does it make me better at what I do, or lighter to be? If it does neither, it goes.
 
 That last one is the measure.
