@@ -24,6 +24,11 @@ SLUGS = {1: "pull-method", 2: "one-long-prompt", 3: "assumptions-gate", 4: "all-
          7: "first-rule", 8: "purpose-over-process", 9: "repo"}
 
 EXTRA_CSS = """
+.deeper{display:block;border:2px solid var(--ink);padding:16px 18px;margin:8px 0 26px;text-decoration:none;color:inherit}
+.deeper:hover{background:var(--ink);color:var(--bg)}
+.deeper .dk{display:block;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#D2452B;margin-bottom:6px}
+.deeper .dt{display:block;font-size:20px;font-weight:bold;line-height:1.3;margin-bottom:6px}
+.deeper .dd{display:block;font-size:16px;line-height:1.5}
 .prose .tw{overflow-x:auto;margin:0 0 22px}
 .prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
 .prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
