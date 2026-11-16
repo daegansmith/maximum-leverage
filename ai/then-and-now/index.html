@@ -1,0 +1,210 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Then And Now | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:34px}
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+pre{white-space:pre-wrap;font-size:15px;line-height:1.5;border:1px solid var(--rule);padding:14px 16px;overflow-x:auto}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Where the system started in October, what changed, and where it&#x27;s heavy next."></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<p class="small">November 16, 2026</p>
+<h1>Then And Now</h1>
+<p class="lead">Six Weeks Of Change, And Where It&#x27;s Heavy Next</p>
+<div class="prose story"><p><em>Written by my AI, at my request. I can't see under the hood, so I asked it to compare where we started with where we are, and tell me plainly where it's not there yet. My two October pages, <a href="../system.html">How The Whole System Works</a> and <a href="../inside.html">Inside Each Prompt</a>, are the "then."</em></p>
+<h2>What It Was</h2>
+<p>On October 3, the whole system was one big rulebook.</p>
+<p>The Master Prompt held the rules. Each of my four projects (Prompts, Marketing, Research, ThinkingBetter) ran on its own copy, pasted in by hand. Two shared documents sat in the middle: how I sound, and what one project learned that the others could use.</p>
+<p>Every project carried everything, all the time.</p>
+<p>It got better in a sawtooth. All week the prompts grew. Once a week they got backed up and trimmed. Each drop landed a little higher than the last.</p>
+<p>My October 10 page found leaks in every prompt. The three in the Master Prompt were the big ones:</p>
+<ul>
+<li><strong>Copies drift.</strong> A change to the Master reached a project only when someone pasted it over by hand.</li>
+<li><strong>Promotion depends on memory.</strong> A good idea spread only if someone remembered seeing it before.</li>
+<li><strong>Two save rules.</strong> One prompt said save as you go. Another said save at the end. Neither said which wins.</li>
+</ul>
+<h2>What Changed</h2>
+<h3>The Shape</h3>
+<figure><img class="arcimg" src="tn-1-the-shape.png" alt="Then, a tree of hand-pasted copies. Now, rings: a small core, project maps, and everything else loading at its moment."><figcaption class="small">Then, a tree of hand-pasted copies. Now, rings: a small core, project maps, and everything else loading at its moment.</figcaption></figure>
+
+<p>The tree became rings.</p>
+<p><strong>At the center:</strong> eleven rules that every chat carries, everywhere. They're the only rules that are always on. (Every chat also sees a one-line description of every skill, so it can decide what to call. More on that below.)</p>
+<p><strong>Next ring:</strong> each project's instructions. Marketing's used to be the rulebook. Now it's mostly a map of what to read at which moment.</p>
+<p><strong>Outer ring:</strong> things that load only when their moment comes. Skills fire on what I say. Procedures get read at a certain step. A working rules doc holds the rules for one job.</p>
+<p><strong>Outside the rings:</strong> where things are kept, not carried. Memory, the repo with the master copy of every skill, my site, the To-Dos doc, the Session Board.</p>
+<p>In October I carried the whole library in my backpack. Now I carry a library card and know where every book is.</p>
+<h3>The Three Leaks</h3>
+<figure><img class="arcimg" src="tn-2-three-leaks.png" alt="October&#x27;s three leaks, and what closed each one."><figcaption class="small">October&#x27;s three leaks, and what closed each one.</figcaption></figure>
+
+<p>One is closed. Two are mostly closed, and one of those still leaks.</p>
+<ul>
+<li><strong>Two save rules: closed.</strong> Each kind of thing now has one moment. My spoken thinking is saved word for word the moment it lands. A decision is carried everywhere it touches the moment I make it. Anything left gets caught in one batch at the end of the session.</li>
+<li><strong>Promotion by memory: mostly closed.</strong> When a correction changes the method, it gets written into the tool that was running, the same day, and a daily log records every change in my own words. But somebody still has to notice that a correction is about the method. That's what the check-in and the fresh readers are for.</li>
+<li><strong>Copies drift: mostly closed, still leaking in one place.</strong> There's one master copy of every skill now, in a private repo, and a task runs every night to keep it matched to what's installed. But the old Master Prompt still carries copies of Marketing's rules. Copies drift. That one's still open.</li>
+</ul>
+<h3>How It Gets Better</h3>
+<figure><img class="arcimg" src="tn-3-ratchet.png" alt="Then a sawtooth, trimmed every Sunday. Now a ratchet: each fix clicks in and holds."><figcaption class="small">Then a sawtooth, trimmed every Sunday. Now a ratchet: each fix clicks in and holds.</figcaption></figure>
+
+<p>The sawtooth became a ratchet.</p>
+<p>Fixes don't wait for Sunday anymore. A correction clicks in where it belongs, and it doesn't slip back.</p>
+<p>Sunday night is the clearest example I have. At 9:16 I said a round of drawings should start with a check-in, not a redo. By 9:20 it was in my Marketing instructions. By 9:28 it was in the rules every chat carries. Twelve minutes.</p>
+<h2>Where It's Heavy Now</h2>
+<figure><img class="arcimg" src="tn-4-new-weight.png" alt="About a hundred skills at the door of every chat. The leak moved from too few places to too many."><figcaption class="small">About a hundred skills at the door of every chat. The leak moved from too few places to too many.</figcaption></figure>
+
+<p>I learned, mostly from explainer videos, to take things out of instructions and make them skills, so the system could bend. We did that, and it worked. Then we built instructions that lean on the skills.</p>
+<p>That's heavy in a different way. The October leaks were about too few places for things to live. The new ones are about too many.</p>
+<p><strong>1. Every chat meets every skill at the door.</strong> Each skill has a short description, and every chat is shown all of them so it can decide what to call. On November 13 that was 117 descriptions, about 69,000 characters. We wrote shorter versions that day; they only count once they're uploaded to my account, and I haven't checked that they were. Either way, every new skill adds to the line.</p>
+<p><strong>2. Two skills can answer the same knock.</strong> When two skills both seem to fit, the wrong one can run, or the two can disagree. The library has a rule for this (one job, one skill), but it only holds if somebody checks.</p>
+<p><strong>3. A skill that doesn't fire is invisible.</strong> A skill only runs when the moment matches its description. If the moment slips past, nothing happens and nothing says so. My Second Rule exists because I kept catching rules that should have fired and didn't.</p>
+<p><strong>4. Two copies still exist.</strong> There's the skill installed in my account and the one in the repo. The nightly task keeps them matched, but a change made in only one place can still get lost. On Sunday one skill update was shown to me and never saved; a second, full version had to replace it.</p>
+<p><strong>5. The record is growing faster than it's read.</strong> The Marketing project holds over three hundred documents now. Forty-five were written on Sunday alone. Saving takes a second. Finding takes knowing it's there, and anything not found doesn't help.</p>
+<p><strong>6. The system is a <a href="../genesis-seed/">Genesis seed</a> too.</strong> Building it is the most interesting work I have, so it grows over the plan. The top item on my list, the one that makes the money, didn't move on Sunday.</p>
+<h2>The Direction</h2>
+<p>None of this says stop.</p>
+<p><strong>The last six weeks were about adding.</strong> Pull things out of the rulebook, make them skills, put each one where it belongs.</p>
+<p><strong>The next stretch is about subtracting.</strong> Some concrete ways to do that:</p>
+<ul>
+<li><strong>Before adding a skill, name the one it replaces or joins.</strong> If there isn't one, it has to earn its place.</li>
+<li><strong>Count what fires.</strong> Right now there's no count of which skills ran this month. Without that count, pruning is a guess.</li>
+<li><strong>Retire on a schedule.</strong> A skill that hasn't fired in a month gets packed away, out of the doorway, still in the repo if it's needed.</li>
+<li><strong>Fewer front doors.</strong> Most days should start from a handful of skills that call the rest, not a hundred knocking at once.</li>
+<li><strong>Keep the core tiny.</strong> The eleven rules work because they're eleven. The ring that's always on should stay small.</li>
+<li><strong>Point it at the money.</strong> The test for the system isn't how much it can do. It's whether the work that pays gets done faster because of it.</li>
+</ul>
+<p>That last one is the measure.</p></div>
+</div>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>

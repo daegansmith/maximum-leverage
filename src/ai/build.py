@@ -136,6 +136,7 @@ def skills_page():
 PIECES = [
     ("genesis-seed", "November 15, 2026", "What one good idea does when it lands in me, drawn from a real Sunday: every save at its real time."),
     ("evolution-of-the-doodle", "November 15, 2026", "How my AI finally learned to doodle, and why the drawing comes last."),
+    ("then-and-now", "November 16, 2026", "Where the system started in October, what changed, and where it's heavy next."),
     ("the-reaction", "November 15, 2026", "Sunday drawn as an organic chemistry reaction: what each idea did to the next, and the questions that catalyzed it."),
 ]
 
@@ -383,7 +384,7 @@ def main():
         f'<a class="card" href="glossary/"><span class="ct">What Each Named Thing Is</span>'
         f'<span class="cd">{len(terms)} terms the stages use, in plain words, sorted by when each first appeared.</span></a>'
         '</div></section>\n'
-        '<section><h2>Earlier Pictures Of The System</h2>\n<div class="cards">'
+        '<section><h2>Pictures Of The System</h2>\n<div class="cards">' + piece_cards["then-and-now"] +
         '<a class="card" href="system.html"><span class="cn">October 3, 2026</span><span class="ct">How The Whole System Works</span>'
         '<span class="cd">The structure as it stood in early October: one rulebook, four projects, two shared documents.</span></a>'
         '<a class="card" href="inside.html"><span class="cn">October 10, 2026</span><span class="ct">Inside Each Prompt</span>'
