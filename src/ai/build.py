@@ -141,7 +141,7 @@ PIECES = [
 
 def piece_pages():
     """Build ai/<slug>/ for each Wait But Why piece from src/ai/pieces/<slug>.md. Images sit beside the page."""
-    out_cards = []
+    out_cards = {}
     for slug, date, desc in PIECES:
         text = (ROOT / f"src/ai/pieces/{slug}.md").read_text().strip()
         assert "\u2014" not in text, f"em dash in {slug}.md"
@@ -152,14 +152,14 @@ def piece_pages():
                                 f'<figcaption class="small">{html.escape(m.group(2).strip())}</figcaption></figure>',
                       body, flags=re.M)
         out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
-               f'<p class="small">{date} · A Wait But Why piece</p>\n'
+               f'<p class="small">{date}</p>\n'
                f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{html.escape(sub[3:])}</p>\n'
                f'<div class="prose story">{markdown.markdown(body)}</div>')
         (ROOT / f"ai/{slug}").mkdir(parents=True, exist_ok=True)
         (ROOT / f"ai/{slug}/index.html").write_text(page(title[2:], desc, out))
-        out_cards.append(f'<a class="card" href="{slug}/"><span class="cn">{date}</span><span class="ct">{html.escape(title[2:])}</span>'
+        out_cards[slug] = (f'<a class="card" href="{slug}/"><span class="cn">{date}</span><span class="ct">{html.escape(title[2:])}</span>'
                          f'<span class="cd">{html.escape(desc)}</span></a>')
-    return "".join(out_cards)
+    return out_cards
 
 
 def make_it_simple_page():
@@ -346,6 +346,7 @@ def main():
         '<p class="lead">How my way of working with Claude changed, told wall by wall: what kept going wrong, '
         'what broke it, what changed, and whether it held.</p>\n'
         f'<p class="small">Kept by Claude from the session record, which is why it says "he." Updated {UPDATED}.</p>\n'
+        '<section><h2>Start Here</h2>\n<div class="cards">' + piece_cards["genesis-seed"] + '</div></section>\n'
         '<section><h2>The Stages</h2>\n'
         '<p>Nine so far, in date order. Each one started with a wall. Tap a stage to open it.</p>\n'
         f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
@@ -360,10 +361,10 @@ def main():
         '<a class="card" href="coaching/"><span class="ct">What To Say First</span>'
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
         '</div></section>\n'
-        '<section><h2>Wait But Why Pieces</h2>\n<div class="cards">' + piece_cards + '</div></section>\n'
         '<section><h2>My Skills</h2>\n<div class="cards">'
         f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
+        + piece_cards["evolution-of-the-doodle"] +
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
         '<a class="card" href="hold-me-back/"><span class="cn">November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
