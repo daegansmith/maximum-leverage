@@ -133,6 +133,35 @@ def skills_page():
     return count
 
 
+PIECES = [
+    ("genesis-seed", "November 15, 2026", "What one good idea does when it lands in me, drawn from a real Sunday: every save at its real time."),
+    ("evolution-of-the-doodle", "November 15, 2026", "How my AI finally learned to doodle, and why the drawing comes last."),
+]
+
+
+def piece_pages():
+    """Build ai/<slug>/ for each Wait But Why piece from src/ai/pieces/<slug>.md. Images sit beside the page."""
+    out_cards = []
+    for slug, date, desc in PIECES:
+        text = (ROOT / f"src/ai/pieces/{slug}.md").read_text().strip()
+        assert "\u2014" not in text, f"em dash in {slug}.md"
+        title, _, rest = text.partition("\n\n")
+        sub, _, body = rest.partition("\n\n")
+        body = re.sub(r"^\[IMG: ([^|\]]+?) \| (.+?)\]$",
+                      lambda m: f'<figure><img class="arcimg" src="{m.group(1).strip()}" alt="{html.escape(m.group(2).strip(), quote=True)}">'
+                                f'<figcaption class="small">{html.escape(m.group(2).strip())}</figcaption></figure>',
+                      body, flags=re.M)
+        out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+               f'<p class="small">{date} · A Wait But Why piece</p>\n'
+               f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{html.escape(sub[3:])}</p>\n'
+               f'<div class="prose story">{markdown.markdown(body)}</div>')
+        (ROOT / f"ai/{slug}").mkdir(parents=True, exist_ok=True)
+        (ROOT / f"ai/{slug}/index.html").write_text(page(title[2:], desc, out))
+        out_cards.append(f'<a class="card" href="{slug}/"><span class="cn">{date}</span><span class="ct">{html.escape(title[2:])}</span>'
+                         f'<span class="cd">{html.escape(desc)}</span></a>')
+    return "".join(out_cards)
+
+
 def make_it_simple_page():
     """Build ai/make-it-simple/ from src/ai/make-it-simple.md. The doodles come from strips/draw.js."""
     text = (ROOT / "src/ai/make-it-simple.md").read_text().strip()
@@ -189,6 +218,7 @@ def hold_me_back_page():
 def main():
     n_skills = skills_page()
     make_it_simple_page()
+    piece_cards = piece_pages()
     ai_note_page()
     hold_me_back_page()
     text = SRC.read_text()
@@ -330,6 +360,7 @@ def main():
         '<a class="card" href="coaching/"><span class="ct">What To Say First</span>'
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
         '</div></section>\n'
+        '<section><h2>Wait But Why Pieces</h2>\n<div class="cards">' + piece_cards + '</div></section>\n'
         '<section><h2>My Skills</h2>\n<div class="cards">'
         f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
         f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
