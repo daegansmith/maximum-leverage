@@ -119,23 +119,41 @@ def table_rows(text):
     return rows[1:]
 
 
-def skills_page():
-    """Build ai/skills/ from src/ai/skills.md (Daegan's Skills Guide, first person). Returns the skill count."""
-    text = (ROOT / "src/ai/skills.md").read_text().strip()
-    assert "\u2014" not in text, "em dash in skills.md"
+def skills_page(src="src/ai/skills.md", out_dir="ai/skills", back=("../", "The Evolution"),
+                title_tag="My Claude Skills", desc="Every skill in Daegan Smith's Claude account, grouped by the job it does."):
+    """Build one skills page from a markdown source (first person). Returns the skill count.
+
+    In the source, {ai} stands for the path back to /ai/ and {skills} for the path back to /ai/skills/,
+    so the same links work at any depth."""
+    text = (ROOT / src).read_text().strip()
+    assert "\u2014" not in text, f"em dash in {src}"
+    depth = out_dir.count("/")  # ai/skills -> 1, ai/skills/all -> 2
+    to_ai = "../" * depth
+    text = text.replace("{ai}", to_ai).replace("{skills}", "../" * (depth - 1) if depth > 1 else "./")
     title, _, rest = text.partition("\n\n")
     lead, _, rest = rest.partition("\n\n")
     note, _, body = rest.partition("\n\n")
     count = sum(1 for line in body.splitlines()
                 if line.startswith("| ") and not line.startswith(("| Skill", "| Lens", "| ---")))
+    count += sum(1 for line in body.splitlines() if line.startswith("- **"))
     inner = re.sub(r"(<table>.*?</table>)", r'<div class="tw">\1</div>', md(body), flags=re.S)
-    out = ('<p><a class="back" href="../">&larr; The Evolution</a></p>\n'
+    out = (f'<p><a class="back" href="{back[0]}">&larr; {back[1]}</a></p>\n'
            f'<h1>{html.escape(title[2:])}</h1>\n<p class="lead">{inline(lead)}</p>\n'
            f'<p class="small">{inline(note)}</p>\n<div class="prose skl">{inner}</div>')
-    (ROOT / "ai/skills").mkdir(parents=True, exist_ok=True)
-    (ROOT / "ai/skills/index.html").write_text(
-        page("My Claude Skills", "Every skill in Daegan Smith's Claude account, grouped by the job it does.", out))
+    (ROOT / out_dir).mkdir(parents=True, exist_ok=True)
+    (ROOT / out_dir / "index.html").write_text(page(title_tag, desc, out))
     return count
+
+
+def all_skills_pages():
+    """/ai/skills/ is the 20 that do the work; /ai/skills/all/ is every skill; dated folders keep earlier versions."""
+    top = skills_page("src/ai/skills-top.md", "ai/skills", ("../", "The Evolution"), "The Skills That Do The Work",
+                      "The 20 Claude skills that do most of Daegan Smith's work, and a link to all the rest.")
+    full = skills_page("src/ai/skills.md", "ai/skills/all", ("../", "The Skills That Do The Work"), "Every Skill I Work With",
+                       "Every skill in Daegan Smith's Claude account, grouped by the job it does.")
+    skills_page("src/ai/skills-2026-11-13.md", "ai/skills/2026-11-13", ("../", "The Skills That Do The Work"),
+                "My Claude Skills (November 13, 2026)", "Daegan Smith's Claude skills as they stood on November 13, 2026.")
+    return top, full
 
 
 PIECES = [
@@ -223,7 +241,7 @@ def hold_me_back_page():
 
 
 def main():
-    n_skills = skills_page()
+    n_top, n_skills = all_skills_pages()
     make_it_simple_page()
     piece_cards = piece_pages()
     ai_note_page()
@@ -369,8 +387,8 @@ def main():
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
         '</div></section>\n'
         '<section><h2>My Skills</h2>\n<div class="cards">'
-        f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
-        f'<span class="cd">{n_skills} skills in my Claude account, grouped by the job each one does, with what I say to call it.</span></a>'
+        f'<a class="card" href="skills/"><span class="ct">The Skills That Do The Work</span>'
+        f'<span class="cd">The {n_top} of my {n_skills} skills that carry most of the load, grouped by how they run, with a link to every other one.</span></a>'
         + piece_cards["evolution-of-the-doodle"] +
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
