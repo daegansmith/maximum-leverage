@@ -4,7 +4,7 @@ Every skill in my Claude account, on one page, grouped by what it does: what it'
 
 Updated November 16, 2026. A skill is a written set of instructions Claude loads when the work calls for it, so a job gets done the same way every time. On November 13 I dropped the ml- prefix from every skill to make them my own. Earlier versions: [November 13]({skills}2026-11-13/) and [the 80/20 cut]({skills}2026-11-16-top/).
 
-<img class="arcimg" src="{skills}doodle.png" alt="Without a skill the robot makes something different every time. Holding a skill card, it makes the same thing every time." loading="lazy">
+<img class="arcimg" src="{skills}doodle.png" alt="Without a skill the robot cuts every cookie a different shape. With the skill, a cookie cutter, it comes out the same star every time." loading="lazy">
 
 ## Organization And My Day
 
