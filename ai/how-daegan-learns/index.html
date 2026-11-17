@@ -1,0 +1,250 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How I Learn Something Big Without Watching Everything | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.deeper{display:block;border:2px solid var(--ink);padding:16px 18px;margin:8px 0 26px;text-decoration:none;color:inherit}
+.deeper:hover{background:var(--ink);color:var(--bg)}
+.deeper .dk{display:block;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#D2452B;margin-bottom:6px}
+.deeper .dt{display:block;font-size:20px;font-weight:bold;line-height:1.3;margin-bottom:6px}
+.deeper .dd{display:block;font-size:16px;line-height:1.5}
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:44px;padding-top:22px;border-top:2px solid var(--ink);font-size:26px}
+.skl h3{font-size:14px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:26px 0 10px}
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+pre{white-space:pre-wrap;font-size:15px;line-height:1.5;border:1px solid var(--rule);padding:14px 16px;overflow-x:auto}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Draft: how Daegan learns something big without watching everything."><meta name="robots" content="noindex, nofollow"><style>.ph{border:2px dashed #999;color:#666;padding:14px 16px;margin:8px 0 26px;font-size:16px;line-height:1.5}.draft{border:2px solid #D2452B;padding:10px 14px;margin:0 0 24px;font-size:15px}</style></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<p class="draft"><b>Draft v2, November 17, 2026.</b> For Daegan to read and mark up. Not linked from anywhere, not for sharing yet.</p>
+<h1>How I Learn Something Big Without Watching Everything</h1>
+<div class="prose story"><p>Somebody hands you a big model you can't see, and says: get inside this.</p>
+<p>On November 17, 2026, that was me.</p>
+<p>My partner Jimmy had notes on how Corey Ganim runs his AI consulting business. Corey sells AI help to small businesses, and by his own account the model works. Jimmy had notes, a breakdown of one of Corey's calls, and two write-ups of his course.</p>
+<p>I couldn't watch it all. And watching all of it wouldn't have done what I needed.</p>
+<p>So I did what I learned to do in a bookstore.</p>
+<hr />
+<h2>The Bookstore Day</h2>
+<p>Years ago I bought Dan Roam's book, hoping it would help with my first seminar.</p>
+<p>I sat down with it in a Barnes &amp; Noble, and it did far more than that.</p>
+<p>It gave me a new language, and the language taught me how to learn.</p>
+<p>First I made a key. A mirror means this. A light bulb means this. An exclamation point means this.</p>
+<p>Then I put the symbols together to make concepts.</p>
+<p>Then I used them to learn the concepts.</p>
+<p>That's the part I didn't expect. I was trying to teach people, and I came to understand the ideas better myself.</p>
+<p>On Nov 17 I added two symbols to the key. You'll meet them below.</p>
+<p><img src="learns-1.png" alt="a pile of videos taller than the person, and one person holding a single question." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>I Started Building Before I Understood</h2>
+<p>I started building an offer before I could say what Corey does.</p>
+<p>Then I said it out loud: this rings hollow.</p>
+<p>I was building on a picture I didn't have.</p>
+<p>So I stopped and did the slower thing. I couldn't compare his model to ours until I could say his plainly.</p>
+<hr />
+<h2>One Question At A Time</h2>
+<p>I asked my AI questions of Jimmy's notes, one at a time, and I kept asking the same one:</p>
+<p>And then what happens?</p>
+<p>One answer was one step. Five answers made a ladder.</p>
+<p>A free 15-minute call. A second free call. A paid assessment at $999. A build, from $1,000 up to $10,000 and more. A monthly plan at $1,000 to $2,000.</p>
+<p>Every number here is as reported in the notes. They are Corey's own claims, and he sells a course. Nothing here is checked against his books.</p>
+<p><img src="learns-2.png" alt="the ladder, five steps, prices on them." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>The First New Symbol: The Gray Box</h2>
+<p>A gray box is a step you haven't seen.</p>
+<p>I didn't know what Corey says on the second call to sell the $999 assessment. So I drew that step as an empty gray box.</p>
+<p>A list can leave a missing step out and nothing looks wrong. A picture with a hole in it keeps nagging at you. That's my experience. I haven't tested it against a plain spreadsheet.</p>
+<p>The box kept me from inventing his pitch.</p>
+<hr />
+<h2>The Second New Symbol: The Wall</h2>
+<p>Free is one thing you do yourself. Paid is anything Corey does, or plans for you.</p>
+<p>That's the rule as reported in the notes, and the notes say why: his own members warn that free assessments with no next step turn into nothing.</p>
+<p>The wall is what keeps free from turning into unpaid work.</p>
+<p><img src="learns-3.png" alt="the ladder with a wall across it, and a gray box where the pitch should be." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>Then I Laid Mine Over His</h2>
+<p>Now I had a plain shape. By shape I mean the order of the steps, what moves a person from one to the next, and what each one costs.</p>
+<p>I set what Jimmy and I have built over Corey's steps, using his steps as the yardstick.</p>
+<p>It showed me where ours looks like his and where ours has holes.</p>
+<p>It did not show me that we can deliver what he delivers. A match is not a delivery.</p>
+<p><img src="learns-4.png" alt="two ladders, his and ours, overlapped, the gaps in red." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>The Number That Wouldn't Make Sense</h2>
+<p>Corey says an assessment takes about two hours of his own time. It sells for $999. By my arithmetic that's about $500 an hour.</p>
+<p>It looked strange until I asked who sets the rate.</p>
+<p>He does. He chose it. It isn't calculated from anything I can see.</p>
+<p>A number that looks wrong often has a person behind it who made a choice. Ask who set it.</p>
+<p><img src="learns-5.png" alt="one job drawn as two bars, the same two hours at two prices." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>Why His Biggest Build Looked Like Too Much</h2>
+<p>Corey's biggest build runs $5,000 to $10,000 and up, as reported.</p>
+<p>I looked at that next to the site I built for 2 Guys and a Genie, our local AI help business, and thought: that's a lot. $10,000 felt like not enough for what I put in.</p>
+<p>Then I saw why. Mine isn't one thing. It's a stack of things, built as they occurred to me. A name and a price with no definition can't be scoped. Corey scopes a build by estimating his hours and adding 20%, as reported. I never defined mine, so I couldn't estimate it.</p>
+<p>Is he smarter than me, or is he delivering a thinner version of what I built? I don't know, and nothing I can see from outside settles it. I don't need it settled to move.</p>
+<p><img src="learns-6.png" alt="one box splitting into a stack of smaller boxes." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<hr />
+<h2>Yeah, But</h2>
+<p><strong>You never watched Corey. How do you know that's his business?</strong>
+I don't. Everything here comes from Jimmy's notes, a breakdown of one call, and write-ups by people who took his course. It could be wrong or incomplete. That's why the numbers say "as reported," and why the gray boxes stay gray.</p>
+<p><strong>Isn't that copying him?</strong>
+No. I compared. I didn't adopt a thing. (I did start building an offer first, and that's the mistake that sent me back.)</p>
+<p><strong>Why not watch everything?</strong>
+Watching gives you his content. What I needed was the order and the holes. I asked for those directly.</p>
+<p><strong>Is the doodle a nicer table?</strong>
+I don't know. I haven't tested it.</p>
+<hr />
+<h2>What Stayed Gray</h2>
+<p>Four boxes are still gray.</p>
+<p>What Corey says on the second call to sell the $999. What the five build tiers include. What his list of agents holds (the AI helpers he says he builds for clients). How long people stay on the monthly plan.</p>
+<p>Two I closed, from the notes. "Help" is always paid, never free. And the monthly plan, as reported, is real work and not just calls: two calls a month, with something built on every call.</p>
+<p>I need the gray on the page, because a shape is only as true as its gray boxes are honest.</p>
+<p>Mark the gray.</p>
+<hr />
+<h2>What Kind Of Learning This Was</h2>
+<p>On Nov 17 I wanted the shape of something, and I got it. That's one level of the language.</p>
+<p>The other level is the bookstore one: draw it from every angle until I own the idea. I didn't do that here, and I won't pretend I did.</p>
+<p>You can use this on anything that's too big to take in whole.</p>
+<p>Ask one question: and then what happens?</p>
+<p>Draw each answer.</p>
+<p>Leave gray whatever you haven't seen.</p>
+<p>Then lay it over something you know and see what's missing.</p>
+<p><img src="learns-7.png" alt="the finished picture, gray boxes still showing, next to the two symbols added to the key." style="width:100%;height:auto;border:1px solid #ddd"></p></div>
+</div>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
