@@ -1,0 +1,314 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>You Don&#x27;t Own What You Remember. You Own What You Can See. | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.deeper{display:block;border:2px solid var(--ink);padding:16px 18px;margin:8px 0 26px;text-decoration:none;color:inherit}
+.deeper:hover{background:var(--ink);color:var(--bg)}
+.deeper .dk{display:block;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#D2452B;margin-bottom:6px}
+.deeper .dt{display:block;font-size:20px;font-weight:bold;line-height:1.3;margin-bottom:6px}
+.deeper .dd{display:block;font-size:16px;line-height:1.5}
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:44px;padding-top:22px;border-top:2px solid var(--ink);font-size:26px}
+.skl h3{font-size:14px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:26px 0 10px}
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+pre{white-space:pre-wrap;font-size:15px;line-height:1.5;border:1px solid var(--rule);padding:14px 16px;overflow-x:auto}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Draft: you don&#x27;t own what you remember, you own what you can see."><meta name="robots" content="noindex, nofollow"><style>.ph{border:2px dashed #999;color:#666;padding:14px 16px;margin:8px 0 26px;font-size:16px;line-height:1.5}.draft{border:2px solid #D2452B;padding:10px 14px;margin:0 0 24px;font-size:15px}</style></head>
+<body><div class="wrap">
+<p><a class="back" href="../">&larr; The Evolution</a></p>
+<p class="draft"><b>Draft v3, November 17, 2026.</b> For Daegan to read and mark up. Not linked from anywhere, not for sharing yet.</p>
+<h1>You Don&#x27;t Own What You Remember. You Own What You Can See.</h1>
+<div class="prose story"><h2>How I Use Claude To Learn Something All The Way Down</h2>
+<p>You've read about it.</p>
+<p>Maybe you've asked Claude about it.</p>
+<p>You could pass a quiz on it tomorrow.</p>
+<p>But if someone asked how it actually works, step by step, what leads to what...</p>
+<p>Or whether it's any good...</p>
+<p>You'd stall.</p>
+<p>I've been there.</p>
+<p>I found the way out a long time ago, at Duke.</p>
+<h2>A Little Thing Locks Into Place</h2>
+<p>I took microbiology at Duke.</p>
+<p>Most of it was what happens inside a cell.</p>
+<p>Gene transcription.</p>
+<p>Little things happening in an order.</p>
+<p>A little thing locks into a spot on the DNA, and that starts transcription.</p>
+<p>Read that in a textbook, and it's a pile of words.</p>
+<p>Draw it, and it just makes sense.</p>
+<p><img src="own-1.png" alt="A little thing locks onto the DNA and transcription starts." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<p>So I drew my notes.</p>
+<p>Then I drew them again.</p>
+<p>And again.</p>
+<p>Organic chemistry was my favorite class, for the same reason.</p>
+<p>How one thing connects to the next is how I think.</p>
+<h2>"Well, Look. What About Here?"</h2>
+<p>When I drew it rigorously, every so often I'd hit a spot where I couldn't draw the next step.</p>
+<p>Something was supposed to happen there.</p>
+<p>I didn't know what.</p>
+<p>So I'd take the drawing to office hours, point at the spot, and say:</p>
+<p>"Well, look. What about here?"</p>
+<p>More often than not, it wasn't me.</p>
+<p>It was something the professor hadn't covered.</p>
+<p>My notes weren't wrong.</p>
+<p>The drawing had shown me the true shape of what I'd been given, including the part that wasn't there.</p>
+<p>It doesn't always go that way.</p>
+<p>Sometimes the gap is you.</p>
+<p>Sometimes it's the source.</p>
+<p>Sometimes something got lost in translation, or you flat out misunderstood.</p>
+<p>The drawing doesn't tell you which.</p>
+<p>It tells you WHERE.</p>
+<p>It shows you the weak link in the chain of your whole understanding.</p>
+<p>Then you go ask, right there.</p>
+<p><img src="own-2.png" alt="A chain of steps with one empty link." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<p>Years later, I sat in a Barnes &amp; Noble with Dan Roam's book, The Back of the Napkin, trying to figure out how to teach my first seminar.</p>
+<p>I built my first key of symbols.</p>
+<p>A light bulb means this.</p>
+<p>An exclamation point means that.</p>
+<p>I meant it for teaching.</p>
+<p>I ended up learning better myself.</p>
+<p>That's when the study habit became a real tool.</p>
+<p>I've used it ever since.</p>
+<p>This time, I used it with Claude.</p>
+<h2>Starting With Nothing</h2>
+<p>My partner Jimmy and I help local business owners put AI to work.</p>
+<p>Jimmy follows a consultant who does the same thing.</p>
+<p>He wanted me to get into how this guy does it.</p>
+<p>I started with nothing.</p>
+<p>So I gave Claude what we had: Jimmy's notes on him, and our own process.</p>
+<p>(Claude can draw. Simple boxes and arrows, like a napkin sketch.)</p>
+<p>First, I had it draw how WE do it.</p>
+<p>Our shape. The one I already know.</p>
+<p>Then I asked questions about his, one at a time.</p>
+<p>Then:</p>
+<p>"Draw me the shape of what he's doing."</p>
+<h2>The Spot</h2>
+<p>It came back as a ladder of steps an owner climbs.</p>
+<p>A free 15-minute call.</p>
+<p>A second free call.</p>
+<p>A paid assessment.</p>
+<p>Then building things for the owner.</p>
+<p>Then a monthly plan.</p>
+<p>I looked at it and started talking it through.</p>
+<p>He does this.</p>
+<p>Then this.</p>
+<p>Then what happens here?</p>
+<p>And I got to the end of the second call.</p>
+<p>"I clearly don't know what's happening here."</p>
+<p>That's the call where a free conversation turns into a paid assessment.</p>
+<p>Every dollar after it depends on that yes.</p>
+<p>And I had nothing to put there.</p>
+<p><img src="own-3.png" alt="The ladder, with nothing at the end of the second call." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<p>So I did what I did at Duke.</p>
+<p>I asked.</p>
+<p>Again and again, until we hit the edge of what the notes could tell us, and what simply wasn't there.</p>
+<p>Nobody had written down what he says on that call.</p>
+<p>So that part of my drawing stays gray.</p>
+<p>And now I know exactly what to go find out.</p>
+<h2>"No, What I Did."</h2>
+<p>There was one more wall.</p>
+<p>He sells builds, done-for-you AI work, in tiers from about $1,000 to $10,000 and up.</p>
+<p>I couldn't see into them.</p>
+<p>A name and a price don't tell you what's inside.</p>
+<p>So I asked Claude: if these were things I'd created in our business, what would they look like?</p>
+<p>It came back with Jimmy's work.</p>
+<p>Not mine.</p>
+<p>How the hell would I know what Jimmy never told me he did?</p>
+<p>"No. What I did."</p>
+<p>Then it came back with my own work sitting on his ladder.</p>
+<p>And I got a sense.</p>
+<p>Some of it didn't line up.</p>
+<p>I laid his top tier, $10,000 and up, over everything I've built for our business.</p>
+<p>The copy. The emails. The skills that write the emails. The pages. The split tests.</p>
+<p>Ten thousand seemed like not enough for as much as I put in.</p>
+<p>But now I had a gauge I could touch.</p>
+<p>Not his labels.</p>
+<p>My own work, held up against his prices.</p>
+<p><img src="own-4.png" alt="Everything I built, stacked on his $10,000 step." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<h2>Then My Eye Could Go To Work</h2>
+<p>I know marketing.</p>
+<p>But I couldn't use any of it on his business while it was a pile of notes.</p>
+<p>Once I could see the shape, how one thing leads to the next and on what terms, I could look at it with a critical eye.</p>
+<p>The structure's good.</p>
+<p>This doesn't need to be here.</p>
+<p>That could be better over there.</p>
+<p><img src="own-5.png" alt="The same ladder, judged." style="width:100%;height:auto;border:1px solid #ddd"></p>
+
+<p>You can't judge a thing you can't see.</p>
+<p>I won't remember every tier he sells.</p>
+<p>I saved those to look back on.</p>
+<p>But the shape?</p>
+<p>I'm not going to forget it.</p>
+<p>Not because it was complex.</p>
+<p>Because I examined it.</p>
+<p>We drew it.</p>
+<p>I know where it still doesn't make sense for me.</p>
+<p>And I'm looking forward to building our own process right on top of it.</p>
+<h2>Remember This</h2>
+<p>You don't own what you remember.</p>
+<p>You own what you can see.</p>
+<p>Draw the shape.</p>
+<p>The spot that won't make sense is the weak link.</p>
+<p>Go ask, right there.</p>
+<h2>Try It Tonight</h2>
+<p>Pick one thing you want to own.</p>
+<p>A process. Someone's business. Something at work you nod along to and couldn't explain.</p>
+<ol>
+<li>
+<p>Give Claude what you have on it.</p>
+</li>
+<li>
+<p>Have it draw what you already know first: "Draw the shape of how I do this now."</p>
+</li>
+<li>
+<p>Then theirs: "Draw me the shape of what they're doing." Talk it through, step by step.</p>
+</li>
+<li>
+<p>Where it won't make sense, stop and ask right there. Keep asking until it closes or you find it isn't in the source. Leave that part gray.</p>
+</li>
+<li>
+<p>Lay it over yours. Ask what their pieces would look like in your world. When Claude hands you someone else's example, say: "No. Mine."</p>
+</li>
+<li>
+<p>Then judge it. What stays. What goes. What could be better.</p>
+</li>
+</ol>
+<p>Mine was the end of the second call.</p>
+<p>What's yours?</p></div>
+</div>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
