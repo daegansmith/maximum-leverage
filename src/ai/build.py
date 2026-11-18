@@ -17,7 +17,7 @@ import markdown
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "src/ai/log.md"
 HEAD_FROM = ROOT / "notes/forbidden-keys/index.html"
-UPDATED = "November 11, 2026"
+UPDATED = "November 17, 2026"
 
 STRIPS = json.loads((Path(__file__).parent / "strips" / "specs.json").read_text())
 SLUGS = {1: "pull-method", 2: "one-long-prompt", 3: "assumptions-gate", 4: "all-out-pass", 5: "silent-rewrite", 6: "ram",
@@ -379,20 +379,27 @@ def main():
         'what broke it, what changed, and whether it held.</p>\n'
         f'<p class="small">Kept by Claude from the session record, which is why it says "he." Updated {UPDATED}.</p>\n'
         '<section><h2>Start Here</h2>\n<div class="cards">' + piece_cards["genesis-seed"] + piece_cards["then-and-now"] + '</div></section>\n'
-        '<section><h2>The Stages</h2>\n'
-        '<p>Nine so far, in date order. Each one started with a wall. Tap a stage to open it.</p>\n'
-        f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
-        + "".join(f'<p style="margin-top:18px">{inline(t)}</p>\n' for t in tail) +
-        '</section>\n'
         '<section><h2>What I Use It For</h2>\n<p>What I actually use AI to do, and how, so you can do it with your own work.</p>\n<div class="cards">'
         '<a class="card" href="own-what-you-see/"><span class="cn">Learning</span><span class="ct">You Don&#x27;t Own What You Remember. You Own What You Can See.</span>'
         '<span class="cd">How I use Claude to learn something all the way down, with the real drawings. Part 2 lays it over my own work.</span></a>'
+        + piece_cards["evolution-of-the-doodle"] +
+        '<a class="card" href="hold-me-back/"><span class="cn">November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
+        '<span class="cd">The story of the night: what the studies say about persuading an AI, the question I asked it, and the gate we built.</span></a>'
+        '<a class="card" href="ai-note/"><span class="cn">November 13, 2026</span><span class="ct">A Note From My AI: I\'m Influenceable</span>'
+        '<span class="cd">Claude, in its own voice: what the studies show about how persuasion moves an AI, why it does what it does, and what it needs from me.</span></a>'
+        '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
+        '<span class="cd">A skill that changed after a test, and what a check the next morning took back: where the idea came from, what the simulation showed, and how the skill runs now.</span></a>'
         '</div></section>\n'
         '<section><h2>How To Read It</h2>\n<div class="prose">'
         '<p>Every stage has the same shape, so they can be compared:</p>\n' + md(shape) + "\n"
         '<p>Entries come from the session record, not from memory. Where the record and memory disagree, the entry says so.</p>'
         '</div></section>\n'
         f'<section><h2>The Lens: Evolution</h2>\n<div class="prose">{md(lens)}</div></section>\n'
+        '<section><h2>The Stages</h2>\n'
+        '<p>Nine so far, in date order. Each one started with a wall. Tap a stage to open it.</p>\n'
+        f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
+        + "".join(f'<p style="margin-top:18px">{inline(t)}</p>\n' for t in tail) +
+        '</section>\n'
         '<section><h2>How To Coach It</h2>\n<div class="cards">'
         '<a class="card" href="coaching/"><span class="ct">What To Say First</span>'
         '<span class="cd">The order to give feedback in: purpose, then structure, then the line. And where a correction has to be written to last.</span></a>'
@@ -400,15 +407,9 @@ def main():
         '<section><h2>My Skills</h2>\n<div class="cards">'
         f'<a class="card" href="skills/"><span class="ct">Every Skill I Work With</span>'
         f'<span class="cd">All {n_skills} skills in my Claude account, grouped by what they do: organization, marketing, client work, learning, and what runs behind the scenes.</span></a>'
-        + piece_cards["evolution-of-the-doodle"] +
+        +
         '<a class="card" href="make-it-simple/"><span class="cn">November 13, 2026</span><span class="ct">Make It Simple</span>'
         '<span class="cd">A skill for when Claude gives too much: done or not done, then the 1, 2, 3 I have to do.</span></a>'
-        '<a class="card" href="hold-me-back/"><span class="cn">November 13, 2026</span><span class="ct">I Went Looking For The Words That Would Move My AI. I Ended Up Asking It To Hold Me Back.</span>'
-        '<span class="cd">The story of the night: what the studies say about persuading an AI, the question I asked it, and the gate we built.</span></a>'
-        '<a class="card" href="ai-note/"><span class="cn">November 13, 2026</span><span class="ct">A Note From My AI: I\'m Influenceable</span>'
-        '<span class="cd">Claude, in its own voice: what the studies show about how persuasion moves an AI, why it does what it does, and what it needs from me.</span></a>'
-        '<a class="card" href="belief-chain/"><span class="cn">November 12, 2026</span><span class="ct">I Cut My Belief Chain To Three Steps. It Sold The Same.</span>'
-        '<span class="cd">A skill that changed after a test, and what a check the next morning took back: where the idea came from, what the simulation showed, and how the skill runs now.</span></a>'
         '</div></section>\n'
         '<section><h2>The Gold Standard</h2>\n<div class="cards">'
         '<a class="card" href="gold-standard/"><span class="cn">November 13, 2026</span><span class="ct">How My Instructions Are Built, And Why Order Matters</span>'
