@@ -384,6 +384,10 @@ def main():
         f'<div class="cards">\n' + "\n".join(cards) + "\n</div>\n"
         + "".join(f'<p style="margin-top:18px">{inline(t)}</p>\n' for t in tail) +
         '</section>\n'
+        '<section><h2>What I Use It For</h2>\n<p>What I actually use AI to do, and how, so you can do it with your own work.</p>\n<div class="cards">'
+        '<a class="card" href="own-what-you-see/"><span class="cn">Learning</span><span class="ct">You Don&#x27;t Own What You Remember. You Own What You Can See.</span>'
+        '<span class="cd">How I use Claude to learn something all the way down, with the real drawings. Part 2 lays it over my own work.</span></a>'
+        '</div></section>\n'
         '<section><h2>How To Read It</h2>\n<div class="prose">'
         '<p>Every stage has the same shape, so they can be compared:</p>\n' + md(shape) + "\n"
         '<p>Entries come from the session record, not from memory. Where the record and memory disagree, the entry says so.</p>'
