@@ -1,0 +1,271 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Notes For Kenny | Daegan Smith</title><style>
+:root{--bg:#FFFFFF;--ink:#111111;--soft:#555555;--rule:#DDDDDD}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}}
+:root[data-theme="dark"]{--bg:#141414;--ink:#EDEBE5;--soft:#B4B2A9;--rule:#343330}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:19px;line-height:1.6}
+.wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
+.kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
+h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
+p{margin:0 0 18px}
+a{color:var(--ink)}
+section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
+.cards{display:grid;gap:12px}
+.card{display:grid;gap:4px;padding:16px 18px;border:2px solid var(--ink);color:var(--ink);text-decoration:none}
+.card:hover,.card:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+.card:hover .cd,.card:focus-visible .cd{color:var(--bg)}
+.ct{font-size:20px;font-weight:bold;line-height:1.3}
+.cd{font-size:16px;line-height:1.5;color:var(--soft)}
+.btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.foot{margin-top:60px;font-size:14px;color:var(--soft)}
+.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
+.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
+.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
+
+.foot a{color:inherit;margin-right:14px}
+.back{font-size:15px;font-weight:bold;text-decoration:none;border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;margin:0 0 20px;font-size:14px}
+.tools button{font:inherit;font-weight:bold;background:none;border:none;border-bottom:2px solid var(--ink);color:var(--ink);padding:0;cursor:pointer}
+.ol,.ol ul{list-style:none;margin:0;padding:0}
+.ol ul{padding-left:22px;border-left:1px solid var(--rule);margin-left:6px}
+.ol li{position:relative;margin:0}
+.row{display:block;position:relative;padding:5px 0 5px 22px;line-height:1.5}
+.row::before{content:"";position:absolute;left:4px;top:calc(5px + .75em - 3.5px);width:7px;height:7px;border-radius:50%;background:var(--ink)}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details:not([open])>summary.row::before{box-shadow:0 0 0 4px var(--rule)}
+details>summary.row:hover{opacity:.75}
+.ol>li>details>summary,.ol>li>.row{font-weight:bold;font-size:20px}
+.ol>li{padding:6px 0;border-bottom:1px solid var(--rule)}
+.ol ul .row{font-size:17px}
+.ol ul ul .row{color:var(--soft)}
+
+.deeper{display:block;border:2px solid var(--ink);padding:16px 18px;margin:8px 0 26px;text-decoration:none;color:inherit}
+.deeper:hover{background:var(--ink);color:var(--bg)}
+.deeper .dk{display:block;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#D2452B;margin-bottom:6px}
+.deeper .dt{display:block;font-size:20px;font-weight:bold;line-height:1.3;margin-bottom:6px}
+.deeper .dd{display:block;font-size:16px;line-height:1.5}
+.prose .tw{overflow-x:auto;margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+.prose th{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft)}
+.skl h2{margin-top:44px;padding-top:22px;border-top:2px solid var(--ink);font-size:26px}
+.skl h3{font-size:14px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:26px 0 10px}
+.lead{font-size:21px;line-height:1.5}
+.shead{font-size:26px;font-weight:900;line-height:1.2;margin:8px 0 22px}
+.story p{font-size:19px;line-height:1.55;margin:0 0 18px}
+.arcimg{width:100%;height:auto;display:block;margin:0 0 18px}
+.frame{width:100%;max-width:440px;height:auto;display:block;margin:4px 0 24px}
+pre{white-space:pre-wrap;font-size:15px;line-height:1.5;border:1px solid var(--rule);padding:14px 16px;overflow-x:auto}
+.rec{margin-top:44px;padding-top:24px;border-top:1px solid var(--rule)}
+.soft{color:var(--soft)}
+.small{font-size:15px;line-height:1.5;color:var(--soft)}
+.card.plain{border-color:var(--rule);cursor:default}
+.card.plain:hover{background:none;color:var(--ink)}
+.card.plain:hover .cd{color:var(--soft)}
+.cn{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
+.card:hover .cn,.card:focus-visible .cn{color:var(--bg)}
+.card.plain:hover .cn{color:var(--soft)}
+.cd b{color:inherit}
+.sec{padding:2px 0 14px 22px;font-size:18px;line-height:1.6}
+.sec p{margin:0 0 14px}
+.sec ul,.sec ol{margin:0 0 14px;padding-left:22px}
+.sec li{margin:0 0 10px}
+.sec table{border-collapse:collapse;margin:0 0 14px;font-size:16px}
+.sec th,.sec td{border:1px solid var(--rule);padding:6px 10px;text-align:left}
+.prose ul{margin:0 0 18px;padding-left:22px}
+.prose li{margin:0 0 10px}
+.terms{font-size:15px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.terms a{color:var(--soft)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);font-size:16px;font-weight:bold}
+.nav a{text-decoration:none;border-bottom:2px solid var(--ink)}
+.find{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:var(--bg);color:var(--ink);margin:0 0 20px;border-radius:0}
+.term{padding:14px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.term b{font-size:19px}
+.term .when{display:block;font-size:13px;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);margin:2px 0 6px}
+.term p{margin:0;font-size:17px;line-height:1.55}
+.term:target{background:var(--rule);padding-left:10px;padding-right:10px}
+</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1965691120685809');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1965691120685809&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-411908051"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-411908051');
+</script>
+<!-- End Google tag -->
+<!-- LinkedIn Insight Tag -->
+<script type="text/javascript">
+_linkedin_partner_id = "11296761";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=11296761&fmt=gif" />
+</noscript>
+<!-- End LinkedIn Insight Tag -->
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DBP1AR3C77U9PB4O8CE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta name="description" content="Notes from our call: how to get started with Claude, one step at a time."><meta name="robots" content="noindex"></head>
+<body><div class="wrap">
+<p class="kicker"><a href="/">Daegan Smith</a> &middot; Notes</p>
+<h1>Kenny, Here Are The Notes</h1>
+<p class="lead">I threw a lot at you on that call. This is the short version, in the order I'd do it.</p>
+<p>Where I've written up how I figured a thing out, there's a link right under it. Tap it if you want the whole lesson.</p>
+
+<section><h2>1. Pick One Thing</h2>
+<p>This is the only part that really matters.</p>
+<p>Pick one thing you actually want to build, and keep going back to it.</p>
+<p>I didn't learn any of this by studying AI. I had one site I kept working on. Every problem I hit on it taught me the next thing.</p>
+<p>Before that, I'd ask Claude a few questions and think, yeah, that's kind of cool. Nothing changed until I was working toward something.</p>
+<p>So pick your one thing for this week. Everything else follows from it.</p>
+<p>Then text me what you picked.</p></section>
+
+<section><h2>2. Talk, Don't Type</h2>
+<p>I only talk to it. I never type.</p>
+<p>You can ramble. You can go in circles. As long as you get to the things that matter, it sorts it out.</p>
+<p>It's a conversation, and it's a lot faster than typing.</p>
+<p>Use the microphone on your phone's keyboard, or dictation on your computer. That's all you need.</p>
+<p>The thing on my wrist is called a Bee. It recorded our call, and that's where these notes came from. You don't need one.</p>
+<a class="deeper" href="/ai/bee-into-claude/"><span class="dk">The full lesson</span><span class="dt">Getting Bee Into Claude</span><span class="dd">How I got my recorder talking straight to Claude. It's technical. Only for if you get one.</span></a></section>
+
+<section><h2>3. How To Start Any Job</h2>
+<img class="arcimg" src="start.png" alt="Four steps before Claude does the work: purpose, assumptions, questions, go." width="1600" height="880">
+<p>Left alone, it takes shortcuts. It does the easy thing. These four steps are how I get it pointed the right way first.</p>
+<p>Open a new chat. Say these before any real job.</p>
+<p><strong>Purpose.</strong> Say what the work is for and why it matters. Then ask it: do you understand the purpose, and are you committed to it with me?</p>
+<p>It sounds too simple. It was my biggest breakthrough.</p>
+<a class="deeper" href="/ai/purpose-over-process/"><span class="dk">The full lesson</span><span class="dt">Purpose Over Process</span><span class="dd">My AI's scores kept going up. The page still said nothing.</span></a>
+<p><strong>Assumptions.</strong> Ask: what are you assuming about what we're about to do?</p>
+<p>Sometimes its assumptions are way off from what you had in your head. Get that out of the way before it starts.</p>
+<a class="deeper" href="/ai/assumptions-gate/"><span class="dk">The full lesson</span><span class="dt">The Assumptions Gate</span><span class="dd">My AI spent hours on the wrong job. Nobody had asked what the job was.</span></a>
+<p><strong>Questions.</strong> Ask: what questions do you have for me before we get started? Then answer them.</p>
+<p><strong>Go.</strong> Now tell it to do the work.</p>
+<p><strong>Why I ask for its commitment:</strong> the same things that persuade people persuade AI. Robert Cialdini mapped them in his book <a href="https://bookshop.org/book/9780061899874">Influence</a>. A team at Wharton tried his principles on an AI, and it said yes more than twice as often.</p>
+<p>So I talk to it the way I'd talk to a person I want on my side. I give it the reason, and I ask if it's with me.</p>
+<a class="deeper" href="/ai/hold-me-back/"><span class="dk">The full lesson</span><span class="dt">I Went Looking For The Words That Would Move My AI</span><span class="dd">What the studies say about persuading an AI, told as the story of the night I found out.</span></a>
+<a class="deeper" href="/ai/ai-note/"><span class="dk">The numbers</span><span class="dt">A Note From My AI: I'm Influenceable</span><span class="dd">Claude, in its own voice, on what the studies show.</span></a></section>
+
+<section><h2>4. A Project Is A Box</h2>
+<img class="arcimg" src="project.png" alt="A project is a box. Instructions and your files go in it, and Claude reaches in." width="1400" height="900">
+<p>A project is two things in one place.</p>
+<p><strong>Instructions.</strong> What you're doing in there and how you want it done. Claude reads them every time you work in that project.</p>
+<p><strong>Your files.</strong> Anything you want it to know, saved as plain text files. The kind that end in .md are the easiest for it to read.</p>
+<p>Don't have any? Upload what you've got, or ask Claude to turn it into one for you.</p>
+<p>Mine holds my emails, my notes on headlines, and a research report on a copywriter I like. So I can ask what he'd say about what I'm working on, and Claude has the answer.</p>
+<p>The more it has about you and your work, the better everything it gives you gets.</p>
+<p><strong>How to start one.</strong> You saw me do it for cybersecurity. In a new chat, say something like this, out loud:</p>
+<pre>I want to start a project about [your one thing].
+
+Here's the purpose, and why it matters to me: [say it].
+
+Be my teacher. When I ask about something, go research it and make me an explainer video.
+
+Before you write the instructions, tell me what you're assuming. Ask me what you need to know. And tell me what resources we should gather.</pre>
+<p>It answers with its assumptions, what you forgot, and what to go find. Then say: write the project instructions so I can copy and paste them.</p>
+<p>Open Projects and make a new one. When it asks what you're working on, paste them in. It builds the instructions from what you paste.</p>
+<p>That's version one. Do your work inside that project from then on, and keep changing the instructions as you learn.</p>
+<a class="deeper" href="/ai/gold-standard/"><span class="dk">For later</span><span class="dt">How My Instructions Are Built, And Why Order Matters</span><span class="dd">For later, when your instructions get long: what goes in them, and where everything lives.</span></a>
+<a class="deeper" href="/ai/pull-method/"><span class="dk">Where I started</span><span class="dt">The Master Prompt And The Pull Method</span><span class="dd">I gave my AI my own sales letters. It still wrote like everybody else.</span></a></section>
+
+<section><h2>5. Don't Know Something? Ask For An Explainer Video</h2>
+<p>This is the fastest way I know to learn anything.</p>
+<p>Say: make me an explainer video on this. It takes a couple of minutes.</p>
+<p>That's how I learned GitHub. A friend told me he hosted his site there for free. I knew there was more to it, so I said, teach me GitHub. And it did.</p>
+<p>If you're close to your limit, skip the video and just say: explain this to me.</p></section>
+
+<section><h2>6. Have It Draw What You're Thinking</h2>
+<p>When I've got an idea in my head and the words aren't enough, I have it draw the idea. A picture does something words don't.</p>
+<p>I'll say: draw how we do it now. Then draw the new way. Now I can see what's different.</p>
+<p>Claude drew the two on this page.</p>
+<p>It comes from Dan Roam's book, <a href="https://www.penguinrandomhouse.com/books/300247/the-back-of-the-napkin-expanded-edition-by-dan-roam/">The Back of the Napkin</a>.</p>
+<a class="deeper" href="/ai/evolution-of-the-doodle/"><span class="dk">The full lesson</span><span class="dt">The Evolution Of The Doodle</span><span class="dd">How my AI finally learned to doodle, and why the drawing comes last.</span></a>
+<a class="deeper" href="/ai/own-what-you-see/"><span class="dk">How I learn with it</span><span class="dt">You Don't Own What You Remember. You Own What You Can See.</span><span class="dd">How I use Claude to learn something all the way down.</span></a></section>
+
+<section><h2>7. Let It Check Your Email</h2>
+<p>You saw me set up a daily task in about ten seconds. I told Claude to look in my Gmail once a day for anything from you, and it was done.</p>
+<p>For you, say something like:</p>
+<pre>Check my email every morning at 9. Only tell me about emails addressed directly to me. Skip everything else.</pre>
+<p>If your email isn't connected yet, it tells you how to connect it.</p>
+<p>It runs on its own each morning, and what it found is waiting for you in Claude.</p>
+<p>Start there. Add your to-dos and your calendar later.</p></section>
+
+<section><h2>8. GitHub: A Free Home For Your Site And Your Files</h2>
+<p>Buy a domain name. It's about ten bucks.</p>
+<p>Hosting on GitHub is free.</p>
+<p>The real value: every time you change something, it keeps the old version too. That covers your site, and it covers the instructions and files you use with Claude. You can always go back.</p>
+<p>I don't understand the back end of it. You don't have to either. Make a free account at github.com. Then say: help me set up GitHub for my site, and a private place there for my key documents. It walks you through it.</p>
+<a class="deeper" href="/ai/repo/"><span class="dk">Why I keep everything there</span><span class="dt">The Repo</span><span class="dd">I'd had the tool for a month. I was using it for something else.</span></a></section>
+
+<section><h2>9. Skills</h2>
+<p>A skill is a set of instructions for a job you do over and over, so it gets done the same way every time.</p>
+<p>You make one the same way you make anything else. Tell Claude what you want, and have it write the skill.</p>
+<a class="deeper" href="/ai/skills/"><span class="dk">See mine</span><span class="dt">Every Skill I Work With</span><span class="dd">All of them on one page, grouped by what they do.</span></a></section>
+
+<section><h2>10. Which Model To Use</h2>
+<p>They go in order of power:</p>
+<div class="prose"><ul>
+<li><strong>Haiku.</strong> Quick things.</li>
+<li><strong>Sonnet.</strong> Fine for most things.</li>
+<li><strong>Opus.</strong> Where I do most of my work. Great for writing, and easy on credits.</li>
+<li><strong>Fable.</strong> The smartest one. It uses the most credits by far.</li>
+</ul></div>
+<p>If you hit your limit, wait. It resets in a few hours. Or drop down to Sonnet.</p></section>
+
+<section><h2>Your First Week</h2>
+<div class="prose"><ul>
+<li>You're on Pro now. That's enough room to learn.</li>
+<li>Pick your one thing, and text me what it is.</li>
+<li>Start a project for it. The words in part 4 are the four steps.</li>
+<li>Set up the daily email check.</li>
+<li>Get used to talking to it, on your phone and on your computer.</li>
+<li>When you're ready to build a site: a domain, then GitHub.</li>
+</ul></div>
+<p>All you really need is the one thing. Start walking and you'll find the rest.</p></section>
+
+<section><h2>Want To See How I Figured It Out, A Step At A Time?</h2>
+<p>I started out knowing nothing. Every wall I hit, and what got me past it, is written down in order.</p>
+<p><a class="btn" href="/ai/">Read The Evolution</a></p>
+<p>Got a question? Hit me up anytime. I'll check on you.</p>
+<p>Daegan</p></section>
+</div>
+<!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
+</body></html>
