@@ -34,6 +34,8 @@ GROUPS = [
         "index.html", "projects.html", "notes/index.html", "notes/*", "ai/index.html", "ai/*", "quotes/*", "stories/index.html", "stories/my-story/*", "stories/*",
         "testimonials/*", "invisible-funnel/index.html", "maximum-leverage/*", "work-with-me/*",
         "contact/*", "terms/*", "refunds/*", "privacy/*"]),
+    ("For friends", "What I know, written up for one friend at a time. Not linked from the public side of the site.", True, [
+        "kenny/index.html", "kenny/*"]),
     ("Local AI, now", "The Nov 9 night and what's running for it.", True, [
         "2guys-site/market-domination-map-v1.html", "fishers-nov9/index.html", "fishers-nov9/*",
         "leader-outreach/*", "workshop-v16.4-offer-v12.html", "client-pages.html", "before-after.html",
