@@ -35,7 +35,7 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .qotd:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 #111}
 #qotd{background:#DCEBFA}
 .qotd .kicker{font-size:13px;letter-spacing:1.5px;color:#111;margin:0 0 12px}
-.qotd blockquote{margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6;font-style:normal;color:#222;transition:opacity .4s}
+.qotd blockquote{margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6;font-style:normal;color:#222}
 .qotd figcaption{font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:normal;color:#222;margin:0 0 12px}
 .qotd a{font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:bold;color:#111;text-decoration:none;border-bottom:2px solid #111}
 @media (prefers-reduced-motion:reduce){.qotd,.qotd blockquote{transition:none}.qotd:hover{transform:none;box-shadow:8px 8px 0 #111}}
@@ -162,13 +162,18 @@ window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6
 <script>
 fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(function(list){
   if(!list.length)return;
-  // Start on a random testimonial, then move to the next every 7 seconds.
-  var i=Math.floor(Math.random()*list.length),q=document.getElementById("tst-text"),by=document.getElementById("tst-by");
-  function show(){var t=list[i];q.textContent="\u201C"+t.text+"\u201D";by.textContent="\u2014 "+t.name+(t.who?", "+t.who:"");}
-  show();document.getElementById("tst").hidden=false;
-  if(list.length>1&&!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){
-    setInterval(function(){q.style.opacity=0;setTimeout(function(){i=(i+1)%list.length;show();q.style.opacity=1;},400);},7000);
-  }
+  // Same schedule as the quote of the day: each visitor keeps a testimonial for a random 1 to 5 visits,
+  // then gets a new one. It never changes while the page is open (Daegan, Nov 26, 2026).
+  function rnd(n){return Math.floor(Math.random()*n);}
+  var idx=-1,left=0,seen=false;
+  try{idx=parseInt(localStorage.getItem("t_idx"),10);left=parseInt(localStorage.getItem("t_left"),10);seen=sessionStorage.getItem("t_seen")==="1";}catch(e){}
+  if(isNaN(idx)||idx<0||idx>=list.length){idx=rnd(list.length);left=1+rnd(5);}
+  else if(!seen){left=(isNaN(left)?1:left)-1;if(left<=0){var next=rnd(list.length);if(list.length>1){while(next===idx)next=rnd(list.length);}idx=next;left=1+rnd(5);}}
+  try{localStorage.setItem("t_idx",idx);localStorage.setItem("t_left",left);sessionStorage.setItem("t_seen","1");}catch(e){}
+  var t=list[idx];
+  document.getElementById("tst-text").textContent="\u201C"+t.text+"\u201D";
+  document.getElementById("tst-by").textContent="\u2014 "+t.name+(t.who?", "+t.who:"");
+  document.getElementById("tst").hidden=false;
 }).catch(function(){});
 </script>
 
