@@ -28,12 +28,16 @@ section{padding:40px 0 0;margin-top:40px;border-top:1px solid var(--rule)}
 .btn{display:inline-block;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);text-decoration:none;font-weight:bold;font-size:17px}
 .btn:hover{background:var(--bg);color:var(--ink)}
 .foot{margin-top:60px;font-size:14px;color:var(--soft)}
-.qotd{margin:0 0 32px;padding:20px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-.qotd blockquote{margin:0 0 10px;font-size:21px;line-height:1.5;font-style:italic}
-.qotd figcaption{font-size:15px;font-weight:bold;color:var(--soft);margin:0 0 12px}
-.qotd a{font-size:15px;font-weight:bold;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ink)}
-/* Rotating testimonial: Courier, regular, 16px, so it reads as its own voice */
-#tst blockquote{font-family:"Courier New",Courier,monospace;font-style:normal;font-size:16px;line-height:1.6}
+/* Impact boxes (locked Nov 26, 2026): testimonials tan, quote of the day light blue, hard black shadow. Fixed colors so they read the same in dark mode. */
+.qotd{margin:8px 8px 40px 0;padding:24px 24px 20px;background:#F6E3A1;color:#222;border:2px solid #111;box-shadow:8px 8px 0 #111;transition:transform .12s,box-shadow .12s}
+.qotd:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 #111}
+#qotd{background:#DCEBFA}
+.qotd .kicker{font-size:13px;letter-spacing:1.5px;color:#111;margin:0 0 12px}
+.qotd blockquote{margin:0 0 12px;font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.6;font-style:normal;color:#222;transition:opacity .4s}
+.qotd figcaption{font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:normal;color:#222;margin:0 0 12px}
+.qotd a{font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:bold;color:#111;text-decoration:none;border-bottom:2px solid #111}
+@media (prefers-reduced-motion:reduce){.qotd,.qotd blockquote{transition:none}.qotd:hover{transform:none;box-shadow:8px 8px 0 #111}}
+
 /* Newsletter (Flodesk inline form, restyled to one row) */
 .nl{padding:20px 0 24px;border-top:2px solid var(--ink)}
 .nl h2{margin:0 0 6px}
@@ -57,7 +61,8 @@ html body .nl .hide-last{display:none!important}
 .nl .ff-6aecd0b7cc612c11759b0cc4__label{color:var(--soft)!important;background:transparent!important}
 .nl .ff-6aecd0b7cc612c11759b0cc4__button{background:var(--ink)!important;color:var(--bg)!important;border:2px solid var(--ink)!important;box-shadow:none!important}
 .nl .ff-6aecd0b7cc612c11759b0cc4__button *{color:var(--bg)!important}
-@media (max-width:480px){html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{flex-wrap:wrap!important}html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__footer{flex:1 1 100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__button{width:100%!important}}
+/* Phones: name, email and button stack, left-aligned (Nov 26, 2026) */
+@media (max-width:560px){html body .nl .ff-6aecd0b7cc612c11759b0cc4__content{flex-direction:column!important;flex-wrap:nowrap!important}html body .nl .ff-6aecd0b7cc612c11759b0cc4__fields{flex:1 1 auto!important;flex-direction:column!important;width:100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__field{flex:1 1 auto!important;width:100%!important}.nl .ff-6aecd0b7cc612c11759b0cc4__control{width:100%!important;box-sizing:border-box!important}.nl .ff-6aecd0b7cc612c11759b0cc4__footer{flex:0 0 auto!important;align-self:flex-start!important}.nl .ff-6aecd0b7cc612c11759b0cc4__button{width:auto!important}}
 </style>
 <script>
 (function(w, d, t, h, s, n) {
@@ -154,10 +159,14 @@ window.fd('form', { formId: '6aecd0b7cc612c11759b0cc4', containerEl: '#fd-form-6
 </figure>
 <script>
 fetch("testimonials/rotate.json").then(function(r){return r.json();}).then(function(list){
-  if(!list.length)return;var t=list[Math.floor(Math.random()*list.length)];
-  document.getElementById("tst-text").textContent="\u201C"+t.text+"\u201D";
-  document.getElementById("tst-by").textContent="\u2014 "+t.name+(t.who?", "+t.who:"");
-  document.getElementById("tst").hidden=false;
+  if(!list.length)return;
+  // Start on a random testimonial, then move to the next every 7 seconds.
+  var i=Math.floor(Math.random()*list.length),q=document.getElementById("tst-text"),by=document.getElementById("tst-by");
+  function show(){var t=list[i];q.textContent="\u201C"+t.text+"\u201D";by.textContent="\u2014 "+t.name+(t.who?", "+t.who:"");}
+  show();document.getElementById("tst").hidden=false;
+  if(list.length>1&&!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){
+    setInterval(function(){q.style.opacity=0;setTimeout(function(){i=(i+1)%list.length;show();q.style.opacity=1;},400);},7000);
+  }
 }).catch(function(){});
 </script>
 
