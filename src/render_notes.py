@@ -45,7 +45,7 @@ def r(nodes):
     return "".join(o)
 JS="""<script>function tg(o){document.querySelectorAll('.ol details').forEach(function(d){d.open=o;});}</script>"""
 def page(title,by,body):
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{html.escape(title)} | Daegan Smith</title><style>{STYLE}{EXTRA}</style></head><body><div class="wrap">
+    return f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{html.escape(title)} | Daegan Smith</title><style>{STYLE}{EXTRA}</style></head><body><div class="wrap">
 <p><a class="back" href="../">&larr; Notes</a></p>
 <p class="kicker">{html.escape(by)}</p>
 <h1>{html.escape(title)}</h1>

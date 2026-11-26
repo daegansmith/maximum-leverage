@@ -79,7 +79,7 @@ def page(title, body, crumbs):
         f'<a href="{href}">{html.escape(label)}</a>' for label, href in crumbs
     )
     return f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>{html.escape(title)} | Daegan Smith</title>

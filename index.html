@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daegan Smith</title>
 <script>
@@ -15,6 +15,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Geneva,Ve
 .wrap{max-width:620px;margin:0 auto;padding:56px 20px 80px}
 .kicker{font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:0 0 10px}
 h1{font-size:44px;font-weight:900;letter-spacing:-0.5px;line-height:1.1;margin:0 0 24px}
+/* Phones: the name stays on one line */
+@media (max-width:560px){header h1{font-size:clamp(28px,9vw,40px);white-space:nowrap}}
 h2{font-size:24px;font-weight:bold;line-height:1.25;margin:0 0 14px}
 p{margin:0 0 18px}
 a{color:var(--ink)}
