@@ -34,7 +34,7 @@ li{margin:0 0 9px;max-width:34em}
 body.noslides .slides{display:none}
 .slides{margin:26px 0 0;padding:18px 0 0;border-top:1px dashed var(--rule)}
 .sgroup{font-size:14px;font-weight:600;letter-spacing:0.04em;color:var(--teal);margin:18px 0 10px}
-.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:22px}
 .slide{margin:0}
 .frame{aspect-ratio:16/9;background:var(--card);border:1px solid var(--rule);border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:12px 14px;gap:6px;overflow:visible}
 .frame p{margin:0;max-width:none}
@@ -59,7 +59,7 @@ body{margin:0}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .topbar .where{font-size:14px;color:var(--soft)}
 .topbar .where b{color:var(--teal);font-weight:600}
-.ctrl{display:flex;gap:8px;align-items:center}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .ctrl button{font:inherit;font-size:14px;padding:6px 12px;border-radius:8px;border:1px solid var(--rule);background:var(--card);color:var(--ink);cursor:pointer}
 .ctrl select{font:inherit;font-size:14px;padding:6px 8px;border-radius:8px;border:1px solid var(--rule);background:var(--card);color:var(--ink);max-width:180px}
 .dslide{display:none;flex-direction:column;gap:12px}
@@ -84,7 +84,7 @@ body.nonotes .notes{display:none}
 /* Oct 2: offer bullet text scales with the slide instead of a fixed size */
 .frame{container-type:inline-size}
 .lst.a3 .li{font-size:clamp(11px,2cqw,34px)}
-</style><!-- Meta Pixel Code -->
+.frame{overflow:hidden;max-width:100%}</style><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -140,7 +140,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
-</head><body>
+<!--phone-guard--><style id="phone-guard">html{-webkit-text-size-adjust:100%}body{overflow-wrap:break-word}img,video,iframe,svg,canvas{max-width:100%}img,video{height:auto}pre{max-width:100%;overflow-x:auto}</style><!--/phone-guard--></head><body>
 <div class="deckwrap">
 <div class="topbar"><p class="where" id="where"></p><div class="ctrl"><select id="jump" aria-label="Jump to section"></select><button type="button" id="prev" aria-label="Previous slide">←</button><button type="button" id="next" aria-label="Next slide">→</button><button type="button" id="notes">Hide notes</button></div></div>
 <div class="progress"><i id="bar"></i></div>

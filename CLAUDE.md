@@ -10,6 +10,15 @@ Terms · Refunds · Privacy · Contact, © Daegan Smith · Admin. After adding o
 
 It is safe to run repeatedly. It skips redirect pages, `admin/` (its builder adds the footer) and Adrianne's mockups under `kim/`.
 
+## Every page must fit a phone
+
+`src/footer.py` also puts a small "phone guard" style in each page's head (long words and links wrap; pictures, videos and frames never get wider than the screen). After adding or changing pages, run both, in this order, and fix anything the check reports before pushing:
+
+    python3 src/footer.py
+    python3 tools/mobile-check.py
+
+The check opens every page at 320px and 390px wide and fails any page that scrolls sideways or lacks the phone viewport tag. Grids use `minmax(min(300px,100%),1fr)`, never a bare `minmax(300px,1fr)`, so they shrink on small phones. The whole site stays white with black text (`data-theme="light"` on every page); don't add dark-mode styles back.
+
 ## Admin page (/admin/)
 
 Private. It is NOT in this repo (the repo is public). Cloudflare serves it at daegansmith.me/admin/ through the Worker `daegansmith-admin`, reading KV namespace `daegansmith-admin`, key `index.html`. Cloudflare Access locks it: only daegansmith@me.com gets in, with a code emailed to him. Never commit the Admin page or its list to this repo.

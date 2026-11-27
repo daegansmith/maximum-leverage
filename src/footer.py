@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""Put the standard site footer on every page of daegansmith.me.
+"""Put the standard site footer and the phone guard on every page of daegansmith.me.
 
 Run from the repo root after adding or regenerating any page:  python3 src/footer.py
 Safe to run again: it replaces its own footer and any older Terms/Refunds/Privacy footer.
+
+The phone guard is a few lines of CSS in <head> that stop the usual causes of sideways
+scrolling on phones: long words, web addresses and file IDs that can't wrap, and pictures,
+videos or frames wider than the screen. After changing pages, also run
+python3 tools/mobile-check.py to confirm every page fits a phone.
 
 Skipped: redirect pages, the admin page (its builder adds the footer itself),
 and Adrianne's site mockups under kim/ (they show her site, not this one).
@@ -27,6 +32,14 @@ def footer(is_home):
             f'</footer><!--/site-foot-->')
 
 
+GUARD = ('<!--phone-guard--><style id="phone-guard">'
+         'html{-webkit-text-size-adjust:100%}'
+         'body{overflow-wrap:break-word}'
+         'img,video,iframe,svg,canvas{max-width:100%}img,video{height:auto}'
+         'pre{max-width:100%;overflow-x:auto}'
+         '</style><!--/phone-guard-->')
+GUARD_RE = re.compile(r"<!--phone-guard-->.*?<!--/phone-guard-->", re.S)
+
 OURS = re.compile(r"<!--site-foot-->.*?<!--/site-foot-->\n*", re.S)
 OLD = re.compile(r'<p class="foot">(?:(?!</p>).)*?/?terms/(?:(?!</p>).)*?</p>', re.S)
 
@@ -44,6 +57,10 @@ def main():
         t = OURS.sub("", s)
         if not rel.startswith("2guys-site/"):
             t = OLD.sub("", t)
+        t = GUARD_RE.sub("", t)
+        h = t.lower().find("</head>")
+        if h >= 0:
+            t = t[:h] + GUARD + t[h:]
         i = t.lower().rfind("</body>")
         t = t[:i] + new + "\n" + t[i:] if i >= 0 else t + "\n" + new + "\n"
         if t != s:

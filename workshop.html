@@ -40,7 +40,7 @@ li{margin:0 0 9px;max-width:34em}
 body.noslides .slides{display:none}
 .slides{margin:26px 0 0;padding:18px 0 0;border-top:1px dashed var(--rule)}
 .sgroup{font-size:14px;font-weight:600;letter-spacing:0.04em;color:var(--teal);margin:18px 0 10px}
-.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:22px}
 .slide{margin:0}
 .frame{aspect-ratio:16/9;background:var(--card);border:1px solid var(--rule);border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:12px 14px;gap:6px;overflow:visible}
 .frame p{margin:0;max-width:none}
@@ -62,7 +62,7 @@ figcaption p{margin:0 0 4px;max-width:none;font-size:14px;line-height:1.45}
 /* Oct 2: offer bullet text scales with the slide instead of a fixed size */
 .frame{container-type:inline-size}
 .lst.a3 .li{font-size:clamp(11px,2cqw,34px)}
-</style>
+.frame{overflow:hidden;max-width:100%}</style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -119,7 +119,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->
-</head>
+<!--phone-guard--><style id="phone-guard">html{-webkit-text-size-adjust:100%}body{overflow-wrap:break-word}img,video,iframe,svg,canvas{max-width:100%}img,video{height:auto}pre{max-width:100%;overflow-x:auto}</style><!--/phone-guard--></head>
 <body>
 <div class="wrap">
 <p class="eyebrow">The Workshop</p>
