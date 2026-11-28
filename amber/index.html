@@ -36,112 +36,120 @@ details:last-of-type{border-bottom:1px solid var(--rule)}
 summary{font-weight:bold;cursor:pointer;font-size:18px}
 details .card{margin-top:12px}
 .sign{margin-top:26px;font-weight:bold}
+.form label.f{display:block;font-size:15px;font-weight:bold;margin:12px 0 4px}
+.form input[type=text],.form input[type=email]{width:100%;font:inherit;font-size:17px;padding:10px 12px;border:2px solid var(--ink);background:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px 14px;margin:6px 0 2px;font-size:16px}
+.chips label{display:flex;gap:6px;align-items:center}
+.out{display:none}
+.out.on{display:block}
 </style><!--phone-guard--><style id="phone-guard">html{-webkit-text-size-adjust:100%}body{overflow-wrap:break-word}img,video,iframe,svg,canvas{max-width:100%}img,video{height:auto}pre{max-width:100%;overflow-x:auto}</style><!--/phone-guard--></head><body><main class="wrap">
 <p class="draft">Rough draft</p>
 <p class="kicker">For Amber</p>
 <h1>Never miss the next one</h1>
-<p class="dek">Set it up once, in about 20 minutes. After that, catching a date takes one photo.</p>
+<p class="dek">A system that catches every McDonogh date for you, so nothing depends on you noticing it.</p>
 <figure><img src="focus.svg" alt="A doctor with her eyes on a big red heart, while small calendars and an envelope drift off the edge behind her." width="1400" height="840"></figure>
 
-<p>Amber, you spend your days taking care of people's hearts. That takes all of your focus.</p>
-<p>So the small dates slip behind you. A school meeting. A form. A pickup.</p>
-<p>That's not a flaw. Your attention is where it should be.</p>
-<p>And you already know the fix. Nobody in a hospital keeps track of a heart from memory. There's a monitor, and it beeps.</p>
-<p class="big">Let's put a monitor on your family's dates.</p>
+<p>Amber, your attention belongs on your patients. Nobody in a hospital keeps track of a heart from memory. There's a monitor, and it alarms.</p>
+<p class="big">This puts a monitor on your kids' school dates.</p>
 
-<h2>Why dates slip</h2>
-<p class="sub">It's the pile.</p>
-<p>A survey of 2,004 parents (Yahoo, 2024) found the average parent gets about <strong>4 emails a day</strong> about their kids, school and activities. About <strong>80 a month.</strong> That's the average. You have three kids.</p>
+<h2>Where the dates hide</h2>
+<p>McDonogh dates come from three places:</p>
+<ol class="flow">
+<li>The school calendar</li>
+<li>Emails and newsletters</li>
+<li>Apps, coaches and teachers</li>
+</ol>
+<p>The calendar is the easy one. The emails are where things get lost. Even McDonogh's own calendar says parent-teacher conference dates and sign-up instructions are announced in the school newsletters.</p>
 <figure><img src="gap.svg" alt="A pile of envelopes. One red envelope has fallen into the gap before it reaches the calendar." width="1400" height="840"></figure>
-<p>One date never makes it from the pile to your calendar. That's <strong>the gap.</strong> A calendar can only beep about what's on it.</p>
-<p>So there are two jobs: one calendar the whole family shares, and one photo to get each date onto it.</p>
+<p>The average parent gets about 4 emails a day about their kids (a Yahoo survey of 2,004 parents). With three kids, one slips. So the system reads the emails for you.</p>
 
-<h2>Set it up once</h2>
-<p class="sub">We're both Montessori kids, so I'll keep the talking short. Do it, and your phone tells you if you got it right. Tap each box as you finish.</p>
+<h2>How it works</h2>
 <figure><img src="family.svg" alt="A family of five, each holding a buzzing phone, under one shared calendar with one date marked." width="1400" height="840"></figure>
+<p>One Family calendar everyone shares. The school calendar feeds into it. Every morning ChatGPT reads your new school emails, puts every date on it, and sends you one short list. Everyone's phone buzzes before each event.</p>
+<p class="sub">Set it up once, about 30 minutes. Tap each box as you finish.</p>
 
 <div class="card">
-<label class="step"><input type="checkbox" data-k="s1"><span>1. Make a Family calendar</span></label>
-<p>Tap the button, sign in with your personal Gmail (not a hospital account), and start a family group. Google gives it a shared calendar called "Family," automatically.</p>
+<label class="step"><input type="checkbox" data-k="s1"><span>1. Make the Family calendar</span></label>
+<p>Sign in with your personal Gmail (not a hospital account), start a family group, and invite your husband. Google gives the group a shared calendar called "Family."</p>
 <div class="btns"><a class="btn" href="https://families.google.com/families">Start a family group</a></div>
-</div>
-
-<div class="card">
-<label class="step"><input type="checkbox" data-k="s2"><span>2. Invite the family</span></label>
-<p>Invite your husband by email, and any kid 13 or older with a phone. They open the email and tap "accept."</p>
-<p class="note">Younger kid, or no phone? Skip the invite. Put their name first on their events ("Name: dentist") and your phone buzzes for them.</p>
-</div>
-
-<div class="card">
-<label class="step"><input type="checkbox" data-k="s3"><span>3. Turn on the buzzes</span></label>
-<p>Tonight, just your phone and your husband's. The kids' phones can wait for the weekend.</p><p>Get the Google Calendar app and sign in. In the app, open Settings, tap <strong>Family</strong>, and add two notifications: <strong>1 day before</strong> and <strong>2 hours before.</strong> Add <strong>1 day before</strong> for all-day events too.</p>
+<p>Then on your phone and his: get the Google Calendar app, open Settings, tap <strong>Family</strong>, and set notifications to <strong>1 day before</strong> and <strong>2 hours before</strong> (and 1 day before for all-day events).</p>
 <div class="btns"><a class="btn" href="https://apps.apple.com/app/google-calendar/id909319292">iPhone app</a><a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.google.android.calendar">Android app</a></div>
-<p class="note">Each phone is set once. It doesn't copy from yours. If the app asks to send notifications, say yes.</p>
 </div>
 
 <div class="card">
-<label class="step"><input type="checkbox" data-k="s4"><span>4. Test it</span></label>
-<p>Add an event called <strong>TEST</strong> to the Family calendar, starting <strong>2 hours and 5 minutes from now.</strong></p>
-<p>In 5 minutes, both phones should buzz. One didn't? Redo step 3 on that phone. Then delete TEST.</p>
+<label class="step"><input type="checkbox" data-k="s2"><span>2. Plug in McDonogh's calendar</span></label>
+<p>On McDonogh's school calendar page, tap the link to add it to your Google Calendar. Every closing, half day and school-wide event shows up by itself, and changes update on their own.</p>
+<div class="btns"><a class="btn" href="https://www.mcdonogh.org/calendar/2025-2026-school-calendar">Open McDonogh's calendar</a></div>
+<p class="note">Your husband adds it on his account too. Turn on its notifications the same way as step 1.</p>
 </div>
-
-<h2>Every day: one photo</h2>
-<p class="sub">Whoever sees a date, catches it. Right then.</p>
-<figure><img src="snap.svg" alt="Snap the flyer with your phone, ChatGPT reads it, and the date lands on the calendar." width="1400" height="840"></figure>
 
 <div class="card hot">
-<h3>First, teach ChatGPT once</h3>
-<p>Tap "Copy this," open ChatGPT, paste, send. You only do this one time.</p>
-<div class="say" id="w1">Remember this for all my chats: whenever I send you a photo or screenshot with a date in it, read it and reply with only two things. First, the event: who it's for, what it is, the date, the start and end time, and the place. Second, a Google Calendar link I can tap to add it. Keep it short.</div>
-<div class="btns"><button class="btn" data-copy="w1">Copy this</button><a class="btn ghost" href="https://chatgpt.com/">Open ChatGPT</a></div>
+<label class="step"><input type="checkbox" data-k="s3"><span>3. Connect ChatGPT, then tell it about your family</span></label>
+<p>In ChatGPT: Settings, then Apps (or Connectors). Connect <strong>Gmail</strong> and <strong>Google Calendar</strong>. Say yes when it asks to edit events.</p>
+<p>Then fill this in. It stays on your phone; nothing is sent anywhere.</p>
+<div class="form">
+<label class="f" for="kids">Your kids' first names and grades</label>
+<input type="text" id="kids" placeholder="e.g. Sam (3rd), Lee (6th), Max (9th)">
+<label class="f" for="mail">The email school stuff comes to</label>
+<input type="email" id="mail" placeholder="you@gmail.com">
+<label class="f">Apps or portals you get school or team messages from</label>
+<div class="chips">
+<label><input type="checkbox" value="McDonogh parent portal / website account"> McDonogh portal</label>
+<label><input type="checkbox" value="Veracross"> Veracross</label>
+<label><input type="checkbox" value="ParentSquare"> ParentSquare</label>
+<label><input type="checkbox" value="Remind"> Remind</label>
+<label><input type="checkbox" value="TeamSnap"> TeamSnap</label>
+<label><input type="checkbox" value="GameChanger"> GameChanger</label>
+<label><input type="checkbox" value="SignUpGenius"> SignUpGenius</label>
+</div>
+<label class="f" for="other">Anything else (camps, lessons, clubs)</label>
+<input type="text" id="other" placeholder="e.g. swim club, piano teacher">
+<div class="btns"><button class="btn" id="make">Make my prompts</button></div>
+</div>
+<div class="out" id="out">
+<p style="margin-top:14px"><strong>Paste this into ChatGPT first:</strong></p>
+<div class="say" id="p1"></div>
+<div class="btns"><button class="btn" data-copy="p1">Copy this</button><a class="btn ghost" href="https://chatgpt.com/">Open ChatGPT</a></div>
+<p class="note">It reads your last two months of school email, adds what's coming up to the Family calendar, and tells you what still needs a sign-up.</p>
+</div>
+</div>
+
+<div class="card hot">
+<label class="step"><input type="checkbox" data-k="s4"><span>4. Turn on the daily sweep</span></label>
+<p>Paste this into ChatGPT once. It sets a reminder task that runs every morning, on its own.</p>
+<div class="say" id="p2">Fill in step 3 first and tap "Make my prompts." This box fills itself in.</div>
+<div class="btns"><button class="btn" data-copy="p2">Copy this</button></div>
+<p class="note">Turn on ChatGPT's notifications on your phone so the morning list reaches you.</p>
 </div>
 
 <div class="card">
-<h3>From then on</h3>
-<ol class="flow">
-<li>Photo the flyer, or screenshot the email or text</li>
-<li>In ChatGPT, tap +, add it, send</li>
-<li>Tap the link it gives you</li>
-<li>Check the time, choose "Family," Save</li>
-</ol>
-<p class="note">Link acting up? ChatGPT also wrote the event out. Type it into the Google Calendar app and choose "Family." If ChatGPT ever forgets the routine, paste the box above again.</p>
+<label class="step"><input type="checkbox" data-k="s5"><span>5. Test it</span></label>
+<p>Email yourself, from another address: "Test: Sam's field trip, next Friday, 9am." Then tell ChatGPT: <strong>"Run my school email sweep now."</strong></p>
+<p>The field trip should land on the Family calendar, and both phones should show it. Then delete it.</p>
 </div>
 
-<p class="note">Your husband doesn't use ChatGPT? He adds it straight in the app, or texts you the photo.</p>
-
-<h2>Sunday: ten minutes</h2>
+<h2>For the dates that never hit email</h2>
 <div class="card">
-<p>At dinner, open the week in the app and read it out loud. Anything that slipped past gets caught here.</p>
+<p><strong>Paper or a text?</strong> Snap a photo, send it to ChatGPT, say "Add this to our Family calendar."</p>
+<p><strong>Sunday at dinner:</strong> open the week in the app and read it out loud. Anything that slipped past gets caught here.</p>
 </div>
-
-<h2>Me too</h2>
-<p>I've missed plenty. The birthday I remembered at the last minute. The anniversary that snuck up on me. A bill I forgot to pay. Something I was supposed to pick up and didn't.</p>
-<p>So I stopped trusting my memory. Last month the city gave me a date to put my old couch out. I had AI put it on my calendar with two buzzes. Done.</p>
-<p>The people who look organized just have something beeping for them.</p>
 
 <h2>Tonight</h2>
-<p>Steps 1 to 4. When both phones buzz, text me.</p>
-<p class="big">The calendar remembers. You just catch it.</p>
+<p>Steps 1 to 5. When the test date lands, text me.</p>
+<p class="big">The calendar remembers. ChatGPT catches. You just show up.</p>
 <p class="sign">Daegan</p>
-
-<h2>Bonus ChatGPT tricks</h2>
-<p class="sub">Tap one to open it.</p>
-<details><summary>It reads any photo</summary>
-<div class="card"><p>Permission slips, team schedules, the lunch menu, a screenshot of a group text. Send it and ask:</p>
-<div class="say" id="w2">What dates and deadlines are in here?</div>
-<div class="btns"><button class="btn" data-copy="w2">Copy this</button></div></div></details>
-<details><summary>It can check your email (paid ChatGPT)</summary>
-<div class="card"><p>Connect Gmail in ChatGPT's settings once. Then ask:</p>
-<div class="say" id="w3">What emails from this week need a reply from me, or have a date in them?</div>
-<div class="btns"><button class="btn" data-copy="w3">Copy this</button></div></div></details>
-<details><summary>It can add events for you (paid ChatGPT)</summary>
-<div class="card"><p>Connect Google Calendar in ChatGPT's settings. If it asks permission to <em>edit</em> your events, it may be able to put dates on your calendar itself. Check each one landed on "Family."</p></div></details>
-<details><summary>It can nudge you every Sunday (paid ChatGPT)</summary>
-<div class="card"><div class="say" id="w4">Every Sunday at 5pm, remind me to look at our family calendar.</div>
-<div class="btns"><button class="btn" data-copy="w4">Copy this</button></div>
-<p class="note">Turn on ChatGPT's notifications on your phone so the reminder reaches you.</p></div></details>
 </main>
 <script>
+function v(id){return (document.getElementById(id).value||'').trim()}
+document.getElementById('make').addEventListener('click',function(){
+var kids=v('kids')||'my three kids',mail=v('mail')||'my Gmail',other=v('other');
+var apps=[].map.call(document.querySelectorAll('.chips input:checked'),function(c){return c.value});
+var src='McDonogh School (mcdonogh.org), teachers, coaches'+(apps.length?', '+apps.join(', '):'')+(other?', '+other:'');
+document.getElementById('p1').innerText='I want a system where no school or activity date is ever missed. My kids: '+kids+'. They go to McDonogh School in Owings Mills, Maryland. School email comes to '+mail+'. Dates come from: '+src+'.\n\nUsing my connected Gmail, search the last 60 days of email from those sources. Then:\n1. Add every upcoming date, deadline, conference, game or event to my Google Calendar called "Family". Start each title with the kid\'s name. Add reminders 1 day before and 2 hours before.\n2. List anything I still have to sign up for, register for or reply to, with its deadline. Conference sign-ups especially.\n3. List every sender address that sends school or activity dates, so the daily sweep can watch them.\n4. Give me any calendar links you find in those emails that I can subscribe to.\nKeep the answer short.';
+document.getElementById('p2').innerText='Every morning at 6:00 AM, run my school email sweep: search '+mail+' for new email from the last 24 hours from '+src+', and from the senders you listed for me. Find every date, deadline, sign-up, conference, game or event for '+kids+'. Add each one to my Google Calendar called "Family", with the kid\'s name first in the title and reminders 1 day before and 2 hours before. Then send me a short list: what you added, and anything I have to sign up for or reply to, with the deadline. If there is nothing new, just say "Nothing new."';
+document.getElementById('out').classList.add('on');
+document.getElementById('p1').scrollIntoView({behavior:'smooth',block:'center'});
+});
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
 var t=document.getElementById(b.getAttribute('data-copy')).innerText;
 function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1500)}
@@ -152,9 +160,9 @@ document.querySelectorAll('input[data-k]').forEach(function(c){
 var k='amber-'+c.getAttribute('data-k'),card=c.closest('.card');
 function paint(){card.classList.toggle('done',c.checked)}
 try{c.checked=localStorage.getItem(k)==='1'}catch(e){}
-paint();
-c.addEventListener('change',function(){paint();try{localStorage.setItem(k,c.checked?'1':'0')}catch(e){}});
+paint();c.addEventListener('change',function(){paint();try{localStorage.setItem(k,c.checked?'1':'0')}catch(e){}});
 });
 </script>
+
 <!--site-foot--><footer class="site-foot" style="max-width:620px;margin:60px auto 0;padding:0 24px 50px;font-family:Tahoma,Geneva,Verdana,sans-serif;font-size:14px;line-height:1.7;text-align:left;color:inherit;opacity:.65"><a href="/" style="color:inherit">Home</a> &middot; <a href="/terms/" style="color:inherit">Terms</a> &middot; <a href="/refunds/" style="color:inherit">Refunds</a> &middot; <a href="/privacy/" style="color:inherit">Privacy</a> &middot; <a href="/contact/" style="color:inherit">Contact</a><br>&copy; Daegan Smith &middot; <a href="/ai/" style="color:inherit;opacity:.6;text-decoration:none">Claude</a> &middot; <a href="https://claude.ai/artifact/DbWXMjjYmeCDTjt3jBJEUR" style="color:inherit;opacity:.6;text-decoration:none">Sessions</a> &middot; <a href="/admin/" style="color:inherit;opacity:.6;text-decoration:none">Admin</a></footer><!--/site-foot-->
 </body></html>
